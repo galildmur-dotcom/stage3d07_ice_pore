@@ -1,0 +1,38 @@
+LOCAL_RUNS/
+build/
+build-*/
+*.user
+
+# CMake and Qt Creator
+/build/
+/build-*/
+/cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.user
+*.user.*
+
+# FEM calculation results
+/LOCAL_RUNS/
+/LOCAL_RUNS_OPTIMIZED/
+/runs/
+/results/
+
+# Large generated numerical files
+*.msh
+*.vtu
+*.pvtu
+*.vtk
+*.bin
+
+# Compiled binaries
+*.exe
+*.dll
+*.o
+*.obj
+
+# Large archived calculation data
+/LOCAL_RUNS_OPTIMIZED.zip
+
+# Temporary calculation outputs
+/out_p10l_full_h0_step3_1/
