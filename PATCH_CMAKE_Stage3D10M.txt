@@ -1,0 +1,25 @@
+# Add AFTER the existing Stage 3D-10L target in CMakeLists.txt.
+# This program uses one original coupled history; perturbed meshes are used
+# only to evaluate the mechanical mesh-coordinate partial derivatives.
+add_executable(stage3d10m_shape_convergence
+  src/stage3d10m_shape_convergence.cpp)
+target_include_directories(stage3d10m_shape_convergence PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10m_shape_convergence PRIVATE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10m_shape_convergence PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10m_shape_convergence PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10m_shape_convergence PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10m_shape_convergence PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10m_shape_convergence PRIVATE Psapi)
+endif()
+add_dependencies(stage3d10m_shape_convergence stage3d08_geometry)
+add_test(NAME P10M_convergence_synthetic_regression
+  COMMAND stage3d10m_shape_convergence --selftest)

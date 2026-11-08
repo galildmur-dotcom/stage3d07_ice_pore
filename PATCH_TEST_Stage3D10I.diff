@@ -1,0 +1,47 @@
+--- a/tests/stage3d10h_production_preflight.cpp
++++ b/tests/stage3d10h_production_preflight.cpp
+@@ -17,10 +17,13 @@
+ struct Tiny{
+  Mesh m;
+  std::vector<uint8_t> bc;
+- Tiny(){
++ explicit Tiny(double shape=0.){
+   // Two nondegenerate affine Tet10s, centered inside the fixed B6 region.
+-  m.nodes={V{0,0,.030},V{.004,0,.030},V{.00015,.003,.03012},
+-           V{0,0,.034},V{.00025,.0003,.0265}};
++  m.nodes={V{0,0,.030},V{.004,0,.030},
++           V{.00015*(1.+shape),.003*(1.+.05*shape),.03012+.00012*shape},
++           V{0,0,.034},
++           V{.00025+.00030*shape,.0003+.00020*shape,
++             .030-.0035*(1.+.04*shape)}};
+   std::map<std::pair<int,int>,int> edges;
+   auto mid=[&](int a,int b){
+    if(a>b)std::swap(a,b);
+@@ -248,12 +251,19 @@
+   }
+  return report;
+ }
++
++#ifdef STAGE3D10I_PRODUCTION_ADJOINT
++#include "stage3d10i_production_adjoint.hpp"
++#endif
+ }
+ 
+ int main(){try{
+ #ifdef _OPENMP
+  omp_set_dynamic(0);omp_set_num_threads(4);
+ #endif
++#ifdef STAGE3D10I_PRODUCTION_ADJOINT
++ return p10i::run_tests();
++#else
+  const Tiny tiny;
+  const auto report=solver_parity(tiny);
+  std::cerr<<std::scientific<<std::setprecision(12)
+@@ -283,6 +293,7 @@
+   <<" checksum_rejection="<<replay.checksum_detected
+   <<" model_rejection="<<replay.model_detected<<'\n';
+  return 0;
++#endif
+ }catch(const std::exception& e){
+  std::cerr<<e.what()<<'\n';return 2;
+ }}

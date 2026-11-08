@@ -1,0 +1,13 @@
+Stage3D06 Qt Creator H1 update, 2026-10-10
+
+Changes (only):
+- CMakeLists.txt: added stage3d06_qt_H1 target and G06_QT_H1_launcher_dryrun CTest.
+- src/qt_creator_runner.cpp: new STAGE3D06_H1_DEFAULT, H1 EDV_VAR dt=300 tend=3600 quad=3.
+- docs: H1_QTCREATOR_START_HERE_RU.md.
+
+No changes to mechanics/thermal/material solvers, geometry, existing H2 defaults,
+checkpoint formats, parameters, or prior computed results.
+
+Verification (Linux GCC): 31/31 CTest PASS, stage3d06_qt_H1 --dry-run PASS;
+actual H1 E_VAR 300s thermal+spatial smoke PASS. Full H1 EDV_VAR 3600s NOT RUN.
+Windows MinGW compilation NOT TESTED for this incremental target.

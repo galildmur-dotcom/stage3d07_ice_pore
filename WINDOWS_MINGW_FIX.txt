@@ -1,0 +1,23 @@
+Stage3D06 Windows/Qt Creator fix, 2026-10-09
+
+Observed user log: GCC 13.1 / MinGW-w64 error in spatial_reology.cpp:
+(1) std::byte vs RPC byte ambiguity in windows.h
+(2) CONST macro from Windows SDK replacing Modulus::CONST.
+
+Correction:
+  * Removed Windows API includes from spatial_reology.cpp.
+  * Isolated Win32 peak-working-set query in src/win_process_memory.cpp.
+  * CMake compiles and links that implementation only on WIN32.
+  * No physics parameters, mesh, constitutive integration, or restart format changed.
+
+Qt Creator:
+  1. Close old project (or close/reopen Qt Creator).
+  2. Extract this complete archive to a new folder (recommended Stage3D06_WinFix).
+  3. Open CMakeLists.txt, configure Desktop MinGW 64-bit Release.
+  4. Build stage3d06_qt_check; run H0; then build/run stage3d06_qt_run (H2).
+  5. If Qt retains old configuration: Build > Clear CMake Configuration,
+     then Reconfigure; alternatively use a NEW empty build directory.
+
+Test claim: Linux GCC/Clang build and CTest are verifiable locally.
+Windows MinGW target cannot be compiled here without a Windows cross compiler;
+user must confirm building on their MinGW 13.1 Qt Creator kit.

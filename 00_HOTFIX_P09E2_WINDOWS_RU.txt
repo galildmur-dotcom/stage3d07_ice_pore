@@ -1,0 +1,18 @@
+Stage 3D-09E2 — исправление блокировки CSV на Windows
+
+Причина: trim_step_history() и trim_campaign() пытались заменить открытый для чтения CSV.
+Windows отклоняет fs::remove(path), пока ifstream не закрыт.
+
+Исправлено: входные потоки in.close() вызываются до rewrite_csv().
+
+Установка для нового расположения проекта:
+1. Закрыть все запущенные stage3d09e2_checkpoint_test и stage3d06_spatial (если есть).
+2. Распаковать этот ZIP в G:\ildar с заменой одного файла:
+   G:\ildar\Stage3D07\src\p09e2_checkpoint_policy.hpp
+3. В Qt Creator (Desktop MinGW Release) собрать stage3d09e2_checkpoint_test.
+4. Запустить stage3d09e2_checkpoint_test без аргументов.
+   Ожидается: P09E2_CHECKPOINT_TEST_OK policy=6h rollback=4/6 final=always
+5. Затем пересобрать stage3d09c_shape_three (его зависимости) перед запуском P09E.
+
+Старые расчеты/LOCAL_RUNS не изменять. Папку build удалять не нужно.
+Тестовые файлы в %%TEMP%%\p09e2_checkpoint_unit_test автоматически удаляются при успешном тесте.

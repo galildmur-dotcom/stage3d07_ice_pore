@@ -1,0 +1,18 @@
+# Stage 3D-10H: use the original production Tet10/EDV assembly from
+# spatial_reology.cpp and verify time-history replay on the same code path.
+add_executable(stage3d10h_production_replay tests/stage3d10h_production_preflight.cpp)
+target_include_directories(stage3d10h_production_replay PRIVATE src)
+if(MSVC)
+ target_compile_options(stage3d10h_production_replay PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10h_production_replay PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10h_production_replay PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+ target_sources(stage3d10h_production_replay PRIVATE src/win_process_memory.cpp)
+ target_link_libraries(stage3d10h_production_replay PRIVATE Psapi)
+endif()
+add_test(NAME P10H_real_spatial_replay_preflight
+ COMMAND stage3d10h_production_replay)

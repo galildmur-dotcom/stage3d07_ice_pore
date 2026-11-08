@@ -1,0 +1,15 @@
+# Stage 3D-10J: read-only H0 geometry/memory gate after Stage 3D-10I.
+# Add ONCE to the existing CMakeLists.txt, do not replace it.
+add_executable(stage3d10j_h0_geometry_preflight src/stage3d10j_h0_geometry_preflight.cpp)
+target_include_directories(stage3d10j_h0_geometry_preflight PRIVATE
+ "${CMAKE_CURRENT_BINARY_DIR}/generated" src)
+if(MSVC)
+ target_compile_options(stage3d10j_h0_geometry_preflight PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10j_h0_geometry_preflight PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10j_h0_geometry_preflight PRIVATE OpenMP::OpenMP_CXX)
+endif()
+add_test(NAME P10J_shape_transport_selftest
+ COMMAND stage3d10j_h0_geometry_preflight --selftest)

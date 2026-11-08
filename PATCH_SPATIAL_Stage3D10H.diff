@@ -1,0 +1,79 @@
+--- a/src/spatial_reology.cpp
++++ b/src/spatial_reology.cpp
+@@ -422,6 +422,8 @@
+  f.lastTime=time;return idx;
+ }
+ 
++#include "stage3d10h_retained_history.hpp"
++
+ void save_fields(const Mesh&m,const vector<double>&dT,const Field&f,const Work&w,const fs::path&path,double time){
+  ElementStats ev;ev.values=w.cell; // Compatible cell names + additional Psi diagnostic.
+  save_mech_vtu(m,f.u,dT,ev,path,time,&w.qp_peak);
+@@ -430,6 +432,8 @@
+ #ifndef STAGE3D07D_LIBRARY
+ int main(int argc,char**argv){try{
+  fs::path mesh,tempdir,out;string laws="ALL",mods="ALL",strTimes="900,1800,3600";Setting base;bool resume=false, postprocessOnly=false, finalVtuOnly=false;string vtuMode="";int requestedThreads=0;double checkpointHours=0.0;
++ ice3d::p10h::Budget adjointRetention;
++ bool adjointBudgetSpecified=false;
+  for(int i=1;i<argc;++i){string a=argv[i];auto val=[&](){if(i+1>=argc)throw runtime_error("Missing value for "+a);return string(argv[++i]);};
+  if(a=="--mesh")mesh=val();else if(a=="--temp-dir")tempdir=val();else if(a=="--out")out=val();
+  else if(a=="--law")laws=val();else if(a=="--modulus")mods=val();else if(a=="--times")strTimes=val();
+@@ -449,6 +453,8 @@
+  else if(a=="--threads")requestedThreads=stoi(val());else if(a=="--newton-tol")base.newtonTol=stod(val());
+  else if(a=="--vtu") {vtuMode=val();if(vtuMode!="none"&&vtuMode!="final"&&vtuMode!="all")throw runtime_error("P09E: --vtu none|final|all");}
+  else if(a=="--checkpoint-hours")checkpointHours=stod(val());
++ else if(a=="--adjoint-snapshot-steps")adjointRetention.interval=stoi(val());
++ else if(a=="--adjoint-max-disk-gb"){adjointRetention.max_gib=stod(val());adjointBudgetSpecified=true;}
+  else if(a=="--cg-tol")base.cgTol=stod(val());else if(a=="--resume")resume=true;else if(a=="--postprocess-only")postprocessOnly=true;else if(a=="--final-vtu-only")finalVtuOnly=true;
+  else throw runtime_error("unknown argument: "+a);
+  }
+@@ -458,6 +464,12 @@
+  if(requestedThreads>1)throw runtime_error("OpenMP support not built; --threads 1 only");
+  #endif
+  ice3d::p09e2::should_checkpoint(checkpointHours,0,false); // validate input
++ if(adjointRetention.interval<0)throw runtime_error("P10H snapshot period must be >=0");
++ if(adjointRetention.interval==0&&adjointBudgetSpecified)
++  throw runtime_error("P10H disk budget requires --adjoint-snapshot-steps");
++ if(adjointRetention.interval>0&&
++   (resume||postprocessOnly||laws=="ALL"||mods=="ALL"))
++  throw runtime_error("P10H initial integration: snapshots require one law/modulus and no --resume or --postprocess-only");
+  if(stage06_schwarz_core<1||stage06_schwarz_core>1024)throw runtime_error("--schwarz-core must be 1..1024");
+  stage06_cg_profile=p06.profile;
+  // This fast SpMV mode is a solver implementation choice, not a model change.
+@@ -468,6 +480,13 @@
+  vector<int> times;{istringstream in(strTimes);string tok;while(getline(in,tok,',')){int t=stoi(tok);if(t<=0||(!times.empty()&&t<=times.back()))throw runtime_error("times not increasing");times.push_back(t);}}
+  if(times.empty())throw runtime_error("no times");if(base.quad!=3&&base.quad!=4)throw runtime_error("quad 3 or 4");
+  auto imported=read_msh(mesh);auto&m=imported.mesh;auto Q=volume_q(base.quad);auto bc=bc_candidate(m);
++ if(adjointRetention.interval>0){
++  const auto bytes=ice3d::p10h::estimated_total(adjointRetention,m,Q.size(),int(times.size()));
++  cerr<<"[P10H] named adjoint-history snapshots enabled, interval_steps="
++      <<adjointRetention.interval<<" estimated_total_gib="
++      <<double(bytes)/(1024.*1024.*1024.)<<" max_gib="
++      <<adjointRetention.max_gib<<" (legacy restart.bin unchanged)\n"<<flush;
++ }
+  if(p06.optimized){auto start=Clock::now();p06.graph=build_bcsr_topology(m);p06.tGraph=p06elapsed(start);}
+  if(p06.optimized&&p06.cacheGeometry){
+    auto geoBegin=Clock::now();p06.geometry.resize(m.tets.size()*Q.size());p06.inB6.resize(m.tets.size());
+@@ -671,6 +690,10 @@
+       if(start>int(times.size())||(start>0 && abs(state.lastTime-times[start-1])>1e-8))
+          throw runtime_error("checkpoint incompatible with requested time grid");
+     }
++    if(adjointRetention.interval>0){
++      ice3d::p10h::retain(dest,m,set,state,0);
++      cerr<<"[P10H] retained initial state step=0\n"<<flush;
++    }
+     // If a crash occurred after the last checkpoint, trim unsaved CSV steps
+     // before reopening append streams, so no stale or duplicate functional rows.
+     if(start>0){
+@@ -768,6 +791,11 @@
+        cerr<<"[P09E2 CHECKPOINT] skipped t="<<times[k]
+            <<" elapsed_since_checkpoint_s="<<sinceCheckpoint<<"\n"<<flush;
+      }
++     if(ice3d::p10h::scheduled(adjointRetention,k+1,int(times.size()))){
++       ice3d::p10h::retain(dest,m,set,state,k+1);
++       cerr<<"[P10H] retained step="<<(k+1)
++           <<" time_s="<<times[k]<<"\n"<<flush;
++     }
+      long peak=peakMemoryKB();
+      if(p06.profile){
+       const double totalWall=p06elapsed(stepStart);const double totalCpu=double(std::clock()-cpuStart)/CLOCKS_PER_SEC;

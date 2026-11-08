@@ -1,0 +1,14 @@
+# Append ONCE to the existing CMakeLists.txt.  Do NOT replace the file.
+# Stage10D target remains available as independent dense-solver baseline.
+add_executable(stage3d10e_bcsr_transient_adjoint tests/stage3d10d_transient_adjoint.cpp)
+target_include_directories(stage3d10e_bcsr_transient_adjoint PRIVATE src)
+target_compile_definitions(stage3d10e_bcsr_transient_adjoint PRIVATE STAGE3D10E_SPARSE_ADJOINT)
+if(MSVC)
+ target_compile_options(stage3d10e_bcsr_transient_adjoint PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10e_bcsr_transient_adjoint PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10e_bcsr_transient_adjoint PRIVATE OpenMP::OpenMP_CXX)
+endif()
+add_test(NAME P10E_BCSR_transient_adjoint COMMAND stage3d10e_bcsr_transient_adjoint)

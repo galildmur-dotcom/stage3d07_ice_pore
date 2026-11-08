@@ -1,0 +1,19 @@
+# Stage 3D-10I — production nonlinear_step, checkpointed full-history adjoint,
+# independent nonlinear finite differences for all three real P09B objectives.
+add_executable(stage3d10i_production_adjoint tests/stage3d10h_production_preflight.cpp)
+target_include_directories(stage3d10i_production_adjoint PRIVATE src)
+target_compile_definitions(stage3d10i_production_adjoint PRIVATE STAGE3D10I_PRODUCTION_ADJOINT)
+if(MSVC)
+ target_compile_options(stage3d10i_production_adjoint PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10i_production_adjoint PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10i_production_adjoint PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+ target_sources(stage3d10i_production_adjoint PRIVATE src/win_process_memory.cpp)
+ target_link_libraries(stage3d10i_production_adjoint PRIVATE Psapi)
+endif()
+add_test(NAME P10I_production_checkpoint_adjoint_vs_FD
+ COMMAND stage3d10i_production_adjoint)

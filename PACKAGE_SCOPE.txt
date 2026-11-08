@@ -1,0 +1,7 @@
+Stage 3D-06, Qt Creator one-click variant (2026-10-09).
+
+The canonical 3D scientific setup, original source solvers and verified compact Stage 3D-06 sample data are retained. Added native cross-platform C++20 launcher, CMake targets stage3d06_qt_check (H0 E_CONST 300s) and stage3d06_qt_run (H2 EDV_VAR 3600s), integration test, and START_HERE_QT_CREATOR_RU.md. Qt Creator can build and launch both targets without PowerShell or command-line CMake; requires a working 64-bit C++ compiler and CMake within the selected Qt Creator Kit. Windows execution has not yet been verified.
+
+Contains canonical references, H0/H1/H2 Gmsh meshes, H0 300s thermal sequence, H0 six-branch 72-row campaign CSV, six 12-row time series, ParaView snapshots t=900,1800,3600 (PVD reduced to 3 frames), and one Linux restart.bin. It does not include all 72 VTU frames or final checkpoints for five branches. Stage 3D-06 H2 remains unverified; LOCAL_RUNS will be created locally on the user's computer, and is excluded from the ZIP. The optional pre-existing EDV_VAR 3600 restart.bin was produced in Linux and must not be assumed portable to Windows; the Qt launcher writes independent fresh state under LOCAL_RUNS.
+
+Refer to docs/STAGE3D06_REPORT.md for scientific limitations. No new H2 EDV numerical results are claimed in this packaging update.

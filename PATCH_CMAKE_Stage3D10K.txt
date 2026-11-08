@@ -1,0 +1,23 @@
+# Append to the EXISTING project CMakeLists.txt (after the Stage 3D-10I/J targets).
+# This target requires the previously installed 3D-10H and 3D-10I patches.
+add_executable(stage3d10k_h0_coupled_pilot src/stage3d10k_h0_coupled_pilot.cpp)
+target_include_directories(stage3d10k_h0_coupled_pilot PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10k_h0_coupled_pilot PRIVATE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10k_h0_coupled_pilot PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10k_h0_coupled_pilot PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10k_h0_coupled_pilot PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10k_h0_coupled_pilot PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10k_h0_coupled_pilot PRIVATE Psapi)
+endif()
+add_dependencies(stage3d10k_h0_coupled_pilot
+  stage3d08_geometry stage3d02_thermal)
+add_test(NAME P10K_H0_coupled_pilot_synthetic_regression
+  COMMAND stage3d10k_h0_coupled_pilot --selftest)
