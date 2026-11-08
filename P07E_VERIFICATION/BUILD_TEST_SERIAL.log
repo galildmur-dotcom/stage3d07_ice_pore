@@ -1,0 +1,3 @@
+CMake GCC 14.2 Release STAGE3D06P_OPENMP=OFF
+Targets stage3d07e_smooth stage3d07d_shells stage3d07_inventory: BUILT
+CTest filters ^(P07E_|P07D_|P07_inventory_): 8/8 PASSED

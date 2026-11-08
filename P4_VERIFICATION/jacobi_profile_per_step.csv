@@ -1,0 +1,2 @@
+law,modulus,time_s,dt_s,wall_s,cpu_s,graph_once_s,assembly_s,edv_s,geometry_s,scatter_s,pcg_s,gauge_s,output_s,checkpoint_s,newton_n,cg_n,relative_residual,peak_rss_kb,preconditioner,threads
+EDV,VAR,300,300,1.532398906,5.9682,0.080166136,0.918404097,0.408437203,0.591133962999988,0.071283967,0.568879789,8.7659e-05,0.041386961,0.003125132,2,842,3.13415861660408e-11,74100,jacobi,4

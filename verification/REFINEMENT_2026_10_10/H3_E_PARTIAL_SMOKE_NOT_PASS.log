@@ -1,0 +1,25 @@
+
+=== Stage3D06: Qt Creator native FEM run ===
+Mesh: H3, model: E_CONST, dt=300 s, tend=300 s, quadrature=3
+Source: "/mnt/data/Stage3D06_REFINE/Stage3D06"
+Output: "/mnt/data/Stage3D06_REFINE/Stage3D06/LOCAL_RUNS/H3_dt300_q3"
+Thermal exe: "/mnt/data/refine_build/cmake/stage3d02_thermal"
+Mechanical exe: "/mnt/data/refine_build/cmake/stage3d06_spatial"
+[1/2] Calculating full thermal history...
+
+[RUN] stage3d02_thermal
+Reading "H3.msh" n=112198 tets=81891
+Assembly nnz=3180784 min det=2.36503e-12 volume=0.000179996 top_area=0.0036 K1 mismatch=5.54027e-17
+step=1/1 t=300 top=-0.319332 avg=-0.1259 balance_rel=1.27067e-13 CG=411
+Finished "H3.msh" seconds=3.27476 uniformerr=0 max balance=1.27067e-13
+[2/2] Solving 3D quasistatic equilibrium (checkpoint resume ON)...
+
+[RUN] stage3d06_spatial
+mesh nodes=112198 tet=81891 q=27 hash=12758305842477648484
+integrated 15000/81891
+integrated 30000/81891
+integrated 45000/81891
+integrated 60000/81891
+integrated 75000/81891
+E_CONST Newton 0 residual=61.5786688 rel=1
+CG iteration 300 residual 0.0101470074

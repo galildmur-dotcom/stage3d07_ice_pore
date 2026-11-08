@@ -1,0 +1,7 @@
+mesh nodes=10845 tet=7388 q=27 hash=15620593449607464435
+EDV_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 8.78993385e-05
+EDV_VAR Newton 1 residual=0.0170862121 rel=0.000148916599
+CG iteration 300 residual 1.8787178e-05
+EDV_VAR Newton 2 residual=3.59603289e-09 rel=3.13415862e-11
+EDV VAR time=300 Newton=2 CG=842 residual=3.13416e-11 maxStress=0.133182 Psi6=0.000842899 PsiOmega=0.00117475 wall=1.48762

@@ -1,0 +1,32 @@
+
+=== Stage3D06: Qt Creator native FEM run ===
+Mesh: H2, model: EDV_VAR, dt=300 s, tend=300 s, quadrature=3
+SpMV: projected, preconditioner: jacobi, threads: 4
+Source: "/mnt/data/p3_work/Stage3D06P2"
+Output: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p2_projected/H2_dt300_q3"
+Thermal exe: "/mnt/data/p3_work/build/./stage3d02_thermal"
+Mechanical exe: "/mnt/data/p3_work/build/./stage3d06_spatial"
+[1/2] Calculating full thermal history...
+
+[RUN] stage3d02_thermal
+Reading "H2.msh" n=70389 tets=50486
+Assembly nnz=1974393 min det=4.57636e-12 volume=0.000179996 top_area=0.0036 K1 mismatch=7.13405e-17
+step=1/1 t=300 top=-0.319332 avg=-0.1259 balance_rel=1.96076e-13 CG=381
+Finished "H2.msh" seconds=1.83499 uniformerr=0 max balance=1.96076e-13
+[2/2] Solving 3D quasistatic equilibrium (checkpoint resume ON)...
+
+[RUN] stage3d06_spatial
+mesh nodes=70389 tet=50486 q=27 hash=1437690555695830498
+EDV_VAR Newton 0 residual=61.6879155 rel=1
+CG iteration 300 residual 0.0107075508
+CG iteration 600 residual 2.11482576e-05
+EDV_VAR Newton 1 residual=0.00954008869 rel=0.000154650852
+CG iteration 300 residual 0.000571709645
+CG iteration 600 residual 7.96048114e-06
+EDV_VAR Newton 2 residual=1.28121223e-09 rel=2.0769258e-11
+EDV VAR time=300 Newton=2 CG=1577 residual=2.07693e-11 maxStress=0.137598 Psi6=0.000843071 PsiOmega=0.00117408 wall=13.1844
+
+SUCCESS. Mechanical data: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p2_projected/H2_dt300_q3/mechanics"
+CSV summary: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p2_projected/H2_dt300_q3/mechanics/G06_campaign.csv"
+ParaView VTU: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p2_projected/H2_dt300_q3/mechanics/EDV_VAR"
+Qt Creator: close run or press Run again to resume/check completion.

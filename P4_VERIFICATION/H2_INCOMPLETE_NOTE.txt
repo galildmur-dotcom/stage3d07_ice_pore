@@ -1,0 +1,1 @@
+H2 IC0 trial: wall time exceeded 140 seconds, stopped before finishing Newton step 2 and before writing a checkpoint. There is NO verified H2 IC0 result. Do not claim speedup or numerical parity on H2.

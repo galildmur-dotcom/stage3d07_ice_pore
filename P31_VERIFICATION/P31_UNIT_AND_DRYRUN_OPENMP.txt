@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /mnt/data/p3_work/build_p31
+Test project /mnt/data/p3_work/build_p31
+    Start 59: P31_H0_all6_reference_fast_checkpoint
+1/1 Test #59: P31_H0_all6_reference_fast_checkpoint ...   Passed   34.90 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  34.90 sec

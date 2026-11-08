@@ -1,0 +1,4 @@
+P4 projected SpMV enabled with symmetric preconditioning; constrained CG vectors stay zero.
+mesh nodes=70389 tet=50486 q=27 hash=1437690555695830498
+EDV_VAR Newton 0 residual=61.6879155 rel=1
+EDV_VAR Newton 1 residual=0.0095401688 rel=0.000154652151

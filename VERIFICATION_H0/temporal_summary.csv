@@ -1,0 +1,2 @@
+mesh,modulus,dt_s,n_steps,maxS1_at_final_MPa,Phi6_at_final,j6,jOmega,max_equilibrium_rel,max_location_checked,max_gap_to_pore_mm,max_elem_0based
+H0,VAR,150,24,0.750726617370337,0.0135740273245556,0.008299958258239652,0.008231414566937005,3.10388594148345e-11,True,0.01240564120036629,3799

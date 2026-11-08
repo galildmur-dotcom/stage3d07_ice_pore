@@ -1,0 +1,77 @@
+{
+  "records": [
+    {
+      "mesh": "H0",
+      "modulus": "VAR",
+      "dt_s": 300,
+      "n_steps": 12,
+      "maxS1_at_final_MPa": 0.74995854989001,
+      "Phi6_at_final": 0.0135717563100654,
+      "j6": 0.008304336323304315,
+      "jOmega": 0.00823405885723575,
+      "max_equilibrium_rel": 7.34601173790217e-11,
+      "max_location_checked": false
+    },
+    {
+      "mesh": "H0",
+      "modulus": "VAR",
+      "dt_s": 150,
+      "n_steps": 24,
+      "maxS1_at_final_MPa": 0.750726617370337,
+      "Phi6_at_final": 0.0135740273245556,
+      "j6": 0.008299958258239652,
+      "jOmega": 0.008231414566937005,
+      "max_equilibrium_rel": 3.10388594148345e-11,
+      "max_location_checked": true,
+      "max_gap_to_pore_mm": 0.01240564120036629,
+      "max_elem_0based": 3799
+    },
+    {
+      "mesh": "H0",
+      "modulus": "VAR",
+      "dt_s": 75,
+      "n_steps": 48,
+      "maxS1_at_final_MPa": 0.75078827745669,
+      "Phi6_at_final": 0.0135674985688682,
+      "j6": 0.008287008401272633,
+      "jOmega": 0.008220885868750383,
+      "max_equilibrium_rel": 1.26822000103032e-11,
+      "max_location_checked": true,
+      "max_gap_to_pore_mm": 0.01240564120036629,
+      "max_elem_0based": 3799
+    }
+  ],
+  "differences": [
+    {
+      "dt_coarse_s": 300,
+      "dt_fine_s": 150,
+      "difference_j6": 4.378065064663053e-06,
+      "relative_difference_j6_pct": 0.052748037140027765,
+      "difference_jOmega": 2.6442902987446754e-06,
+      "relative_difference_jOmega_pct": 0.032124372758067066,
+      "difference_Phi6_at_final": -2.2710144902005763e-06,
+      "relative_difference_Phi6_at_final_pct": -0.016730587289243776,
+      "difference_maxS1_at_final_MPa": -0.0007680674803269838,
+      "relative_difference_maxS1_at_final_MPa_pct": -0.10230987719835868
+    },
+    {
+      "dt_coarse_s": 150,
+      "dt_fine_s": 75,
+      "difference_j6": 1.2949856967018128e-05,
+      "relative_difference_j6_pct": 0.15626697041877527,
+      "difference_jOmega": 1.0528698186622332e-05,
+      "relative_difference_jOmega_pct": 0.12807255026668735,
+      "difference_Phi6_at_final": 6.528755687400245e-06,
+      "relative_difference_Phi6_at_final_pct": 0.04812055556343334,
+      "difference_maxS1_at_final_MPa": -6.166008635299924e-05,
+      "relative_difference_maxS1_at_final_MPa_pct": -0.008212712985060714
+    }
+  ],
+  "orders": {
+    "j6": -1.5645708628119246,
+    "jOmega": -1.9933745920090025,
+    "Phi6_at_final": null,
+    "maxS1_at_final_MPa": 3.638824252782774
+  },
+  "PSI_at_t0": 7.5e-07
+}

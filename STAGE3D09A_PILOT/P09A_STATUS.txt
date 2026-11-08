@@ -1,0 +1,7 @@
+status=SUCCESS
+mesh=H0
+xi_set=GH3
+models=6
+node_trajectories=18
+dt=300
+tend=300

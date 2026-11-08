@@ -1,0 +1,4 @@
+Reading "H4.msh" n=221782 tets=164319
+Assembly nnz=6345484 min det=7.62636e-13 volume=0.000179996 top_area=0.0036 K1 mismatch=6.28837e-17
+step=1/1 t=300 top=-0.319332 avg=-0.1259 balance_rel=1.10554e-13 CG=521
+Finished "H4.msh" seconds=7.44327 uniformerr=0 max balance=1.10554e-13

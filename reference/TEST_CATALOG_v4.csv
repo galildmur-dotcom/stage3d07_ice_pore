@@ -1,0 +1,32 @@
+﻿test_id,subsystem,acceptance_condition,expected_artifact
+G01-01,geometry,"Physical tags correctly populated, unique external facets",group_counts.csv
+G01-02,geometry,"Watertight pore, domain cavity empty",topology report
+G01-03,Tet10,detJ > 0 at volume integration points and extra sample points,min_detJ
+G01-04,geometry integrals,3 levels H0 H1 H2 converge to analytic volume and area,errors/mesh
+G01-05,normals,n_c radial outward and first/second normal moment integrals,normal_errors
+G01-06,B6,fixed observation window inside outer domain; SI units,window_integrals
+G01-07,radius FD,"dV_ice/dR=-4πR0², dV_pore/dR=+4πR0²",FD comparison
+G01-08,translations,Mesh stays valid and |pore| invariant,translations CSV
+G01-09,harmonics,Orthonormality Y00 Y10 Y1x Y1y Y20 by spherical integration,Gram matrix
+G01-10,VTU,VTK TETRA10 index=24 correct and files load in ParaView,VTU inspection
+G02-01,thermal,Constant field and 1D slab analytical reference,T errors
+G02-02,thermal,"Robin sign, heat balance, transient temporal convergence",energy residual
+G03-01,E,"Patch tests, correct rigid modes and gauge, pure thermal expansion",u sigma errors
+MAT-T01,E(T),E_var(Tref)=E_const and κ=0 branches coincide,material values
+MAT-T02,E(T),"E_var>0, K>0,G>0, dE/dT negative, physical bounds",material sweep
+MAT-T03,E(T),Kelvin/Celsius and reference table exact,comparison CSV
+MAT-T04,E(T),Uniform Tref constant/var stress equality,FEM fields
+MAT-T05,E(T),Manufactured heterogeneous E(T) elastic test,residual
+MAT-T06,E(T),"dE/dT,dσ/dT analytic vs FD",derivative errors
+G04,ED,"Material point response, tangent, recovery",material tests
+G05,EDV,"Nonlinear update, dissipation, tangent FD",material tests
+G06,direct,E/ED/EDV × E_const/E_var pairwise matching thermal input,state and delta
+G07,functional,"j6 and jΩ correct normalized volume, smooth Ψ",quadrature tests
+G08,adjoint,Scalar parameter FD vs adjoint; E_var thermal modulus chain,FD/ADJ table
+G09,radius sensitivity,S_R via adjoint vs multi-delta FD,FD/ADJ table
+G10,translation,"S_Z via FD, X,Y absolute zero",symmetry errors
+G11,harmonics,S20 FD plus symmetry-forbidden modes,mode tests
+G12,convergence,mesh/time/domain convergence and small difference resolvability,error budget
+G13,GH,"EDV GH3 vs GH5 for M,D,S and E branch deltas",quadrature table
+G14,research,No claimed effect without quantified uncertainty,results table
+G15,manuscript,"Only 3D, source-supported and concise journal manuscript",article checklist

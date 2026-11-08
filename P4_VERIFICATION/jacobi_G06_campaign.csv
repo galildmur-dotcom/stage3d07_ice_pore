@@ -1,0 +1,2 @@
+law,modulus,time_s,dt_s,nodes,tet10,quad,Newton_steps,CG_steps,relative_residual,max_principal_MPa,Psi6,PsiOmega,volume6_m3,volume_m3,gauge_mean_uz_m,wall_seconds,max_local_NT,VmHWM_kB
+EDV,VAR,300,300,10845,7388,3,2,842,3.13415861660408e-11,0.133181779091632,0.000842899431996868,0.00117475462999296,9.00425784652305e-07,0.000179995815138682,1.60420663637019e-20,1.487623504,1,74100

@@ -1,0 +1,17 @@
+﻿stage,topic,work,output,gate,status
+3D-00,Постановка,"Фиксация области, BC, j6, Sinha F(T), E/ED/EDV",spec_v4,Утверждено,Завершено
+3D-01,3D геометрия и Tet10,"H0/H1/H2, Γc, Γtop, нормали, квадратуры, VTU, shape mesh","geom_integrals, mesh_quality",G01-01..10,Следующий
+3D-02,Теплопроводность,"ξ=0, затем сценарии, 1D reference без поры и энергия",thermal_residual,G02,Ожидает
+3D-03,Термоупругость E,"Patch tests, Candidate A, const/var E при T(T0)","u,σ,T",G03 MAT-T01..06,Ожидает
+3D-04,ED material point,"Релаксация, возврат, local tangent","ed,σ",G04,Ожидает
+3D-05,EDV material point,"Нелинейное обновление, tangent, dissipation","ev,σ",G05,Ожидает
+3D-06,Полная прямая задача,ξ=0 E/ED/EDV × E_const/E_var,"σ1,j6,jΩ,time series",G06,Ожидает
+3D-07,Функционал,"Объёмный/локальный интеграл, фикс. нормировка","j6,jΩ,Ψ",G07,Ожидает
+3D-08,Дискретное сопряжение,"Скалярный параметр охлаждения; FD vs ADJ, E(T) chain",dJ/dΔT0,G08,Ожидает
+3D-09,Радиус,"EDV, E_const/E_var, FD vs ADJ","S_R,DR",G09,Ожидает
+3D-10,Положение,"EDV, E_const/E_var, DX,DY symmetry, DZ FD","S_Z,DX,DY",G10,Ожидает
+3D-11,Сферические гармоники,"Y20, Y2m нули, Ylm ортогональность","S20,c_lm",G11,Ожидает
+3D-12,Сходимость,"3 сетки, dt, площадь/углы, расширение области, пары E","error_M,error_D,error_S,error_delta",G12,Ожидает
+3D-13,Стохастические квадратуры,"EDV E_const/E_var GH3 vs GH5, при необходимости GH7","M,D,S_R,S_Z,S20",G13,Ожидает
+3D-14,Основная серия,"Механические закономерности, E/ED/EDV, κ/E_ref отдельные pilot","tables,plots,uncertainty",G14,Ожидает
+3D-15,Статья,"Самостоятельная 3D рукопись 13–15 стр, 3D-only",manuscript,G15,Ожидает

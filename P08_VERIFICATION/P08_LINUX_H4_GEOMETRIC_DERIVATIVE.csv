@@ -1,0 +1,2 @@
+mode,delta_um,dV_ice_damplitude_m2,exact_dV_radial_m2,relative_error_radial,expected_zero_nonradial
+radius,5,-1.256640902447259e-05,-1.256637061435917e-05,3.056579707725842e-06,0

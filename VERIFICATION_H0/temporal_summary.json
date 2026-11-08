@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "mesh": "H0",
+      "modulus": "VAR",
+      "dt_s": 150,
+      "n_steps": 24,
+      "maxS1_at_final_MPa": 0.750726617370337,
+      "Phi6_at_final": 0.0135740273245556,
+      "j6": 0.008299958258239652,
+      "jOmega": 0.008231414566937005,
+      "max_equilibrium_rel": 3.10388594148345e-11,
+      "max_location_checked": true,
+      "max_gap_to_pore_mm": 0.01240564120036629,
+      "max_elem_0based": 3799
+    }
+  ],
+  "differences": [],
+  "orders": {},
+  "PSI_at_t0": 7.5e-07
+}

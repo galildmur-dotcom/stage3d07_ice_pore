@@ -1,0 +1,115 @@
+RUN: /mnt/data/p5_work/build/stage3d06_spatial --mesh /mnt/data/p5_work/Stage3D06P5/meshes/H0.msh --temp-dir /mnt/data/p4_work/Stage3D06P31/LOCAL_RUNS_OPTIMIZED/benchmark_p4_ic0/H0_dt300_q3/thermal --out /tmp/p3_all6_gz8fhu86/jacobi --law ALL --modulus ALL --times 300 --optimization on --spmv projected --preconditioner jacobi --schwarz-core 32 --cg-tol 1e-9 --newton-tol 1e-8 --profile --threads 4 --final-vtu-only
+mesh nodes=10845 tet=7388 q=27 hash=15620593449607464435
+E_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 5.11781507e-06
+E_CONST Newton 1 residual=1.09669551e-07 rel=9.56214051e-10
+E CONST time=300 Newton=1 CG=421 residual=9.56214e-10 maxStress=0.23653 Psi6=0.00345159 PsiOmega=0.00476909 wall=1.87122
+E_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 5.11501522e-06
+E_VAR Newton 1 residual=1.00916906e-07 rel=8.79551437e-10
+E VAR time=300 Newton=1 CG=421 residual=8.79551e-10 maxStress=0.236628 Psi6=0.00345274 PsiOmega=0.00477171 wall=1.87084
+ED_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 8.80181195e-05
+ED_CONST Newton 1 residual=5.00305383e-08 rel=4.3621865e-10
+ED CONST time=300 Newton=1 CG=571 residual=4.36219e-10 maxStress=0.133197 Psi6=0.000842975 PsiOmega=0.0011754 wall=1.97251
+ED_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 8.78993385e-05
+ED_VAR Newton 1 residual=5.29636465e-08 rel=4.61609985e-10
+ED VAR time=300 Newton=1 CG=571 residual=4.6161e-10 maxStress=0.133211 Psi6=0.000843113 PsiOmega=0.00117573 wall=2.0272
+EDV_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 8.80181195e-05
+EDV_CONST Newton 1 residual=0.0170728212 rel=0.000148858743
+CG iteration 300 residual 1.1777751e-05
+EDV_CONST Newton 2 residual=1.16495067e-09 rel=1.01572605e-11
+EDV CONST time=300 Newton=2 CG=1097 residual=1.01573e-11 maxStress=0.133168 Psi6=0.000842761 PsiOmega=0.00117443 wall=3.14399
+EDV_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 8.78993385e-05
+EDV_VAR Newton 1 residual=0.0170862499 rel=0.000148916928
+CG iteration 300 residual 1.17700691e-05
+EDV_VAR Newton 2 residual=1.16678983e-09 rel=1.01692741e-11
+EDV VAR time=300 Newton=2 CG=1097 residual=1.01693e-11 maxStress=0.133182 Psi6=0.000842899 PsiOmega=0.00117475 wall=3.12714
+RUN: /mnt/data/p5_work/build/stage3d06_spatial --mesh /mnt/data/p5_work/Stage3D06P5/meshes/H0.msh --temp-dir /mnt/data/p4_work/Stage3D06P31/LOCAL_RUNS_OPTIMIZED/benchmark_p4_ic0/H0_dt300_q3/thermal --out /tmp/p3_all6_gz8fhu86/as0 --law ALL --modulus ALL --times 300 --optimization on --spmv projected --preconditioner as0 --schwarz-core 32 --cg-tol 1e-9 --newton-tol 1e-8 --profile --threads 4 --final-vtu-only
+P4 projected SpMV enabled with symmetric preconditioning; constrained CG vectors stay zero.
+mesh nodes=10845 tet=7388 q=27 hash=15620593449607464435
+E_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 2.57061461e-09
+E_CONST Newton 1 residual=6.95842682e-08 rel=6.06708554e-10
+E CONST time=300 Newton=1 CG=301 residual=6.06709e-10 maxStress=0.23653 Psi6=0.00345159 PsiOmega=0.00476909 wall=1.9863
+E_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 2.59266406e-09
+E_VAR Newton 1 residual=7.17181568e-08 rel=6.25066805e-10
+E VAR time=300 Newton=1 CG=301 residual=6.25067e-10 maxStress=0.236628 Psi6=0.00345274 PsiOmega=0.00477171 wall=2.18598
+ED_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 5.78254583e-07
+ED_CONST Newton 1 residual=6.05112135e-08 rel=5.27600157e-10
+ED CONST time=300 Newton=1 CG=391 residual=5.276e-10 maxStress=0.133197 Psi6=0.000842975 PsiOmega=0.0011754 wall=2.20164
+ED_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 5.70877067e-07
+ED_VAR Newton 1 residual=6.15865562e-08 rel=5.36763822e-10
+ED VAR time=300 Newton=1 CG=391 residual=5.36764e-10 maxStress=0.133211 Psi6=0.000843113 PsiOmega=0.00117573 wall=2.08162
+EDV_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 5.78254583e-07
+EDV_CONST Newton 1 residual=0.017072821 rel=0.000148858741
+CG iteration 300 residual 1.61628298e-07
+EDV_CONST Newton 2 residual=1.16484501e-09 rel=1.01563392e-11
+EDV CONST time=300 Newton=2 CG=767 residual=1.01563e-11 maxStress=0.133168 Psi6=0.000842761 PsiOmega=0.00117443 wall=3.45782
+EDV_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 5.70877067e-07
+EDV_VAR Newton 1 residual=0.01708625 rel=0.000148916929
+CG iteration 300 residual 1.60868246e-07
+EDV_VAR Newton 2 residual=1.16665407e-09 rel=1.01680908e-11
+EDV VAR time=300 Newton=2 CG=767 residual=1.01681e-11 maxStress=0.133182 Psi6=0.000842899 PsiOmega=0.00117475 wall=3.7306
+RUN: /mnt/data/p5_work/build/stage3d06_spatial --mesh /mnt/data/p5_work/Stage3D06P5/meshes/H0.msh --temp-dir /mnt/data/p4_work/Stage3D06P31/LOCAL_RUNS_OPTIMIZED/benchmark_p4_ic0/H0_dt300_q3/thermal --out /tmp/p3_all6_gz8fhu86/as1 --law ALL --modulus ALL --times 300 --optimization on --spmv projected --preconditioner as1 --schwarz-core 32 --cg-tol 1e-9 --newton-tol 1e-8 --profile --threads 4 --final-vtu-only
+P4 projected SpMV enabled with symmetric preconditioning; constrained CG vectors stay zero.
+mesh nodes=10845 tet=7388 q=27 hash=15620593449607464435
+E_CONST Newton 0 residual=114.691424 rel=1
+E_CONST Newton 1 residual=5.3401981e-08 rel=4.6561442e-10
+E CONST time=300 Newton=1 CG=256 residual=4.65614e-10 maxStress=0.23653 Psi6=0.00345159 PsiOmega=0.00476909 wall=3.36268
+E_VAR Newton 0 residual=114.736787 rel=1
+E_VAR Newton 1 residual=5.0954133e-08 rel=4.44095868e-10
+E VAR time=300 Newton=1 CG=256 residual=4.44096e-10 maxStress=0.236628 Psi6=0.00345274 PsiOmega=0.00477171 wall=3.14616
+ED_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 7.00405635e-09
+ED_CONST Newton 1 residual=5.64803246e-08 rel=4.92454644e-10
+ED CONST time=300 Newton=1 CG=316 residual=4.92455e-10 maxStress=0.133197 Psi6=0.000842975 PsiOmega=0.0011754 wall=4.64634
+ED_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 7.17719938e-09
+ED_VAR Newton 1 residual=1.11847776e-07 rel=9.74820536e-10
+ED VAR time=300 Newton=1 CG=301 residual=9.74821e-10 maxStress=0.133211 Psi6=0.000843113 PsiOmega=0.00117573 wall=4.45196
+EDV_CONST Newton 0 residual=114.691424 rel=1
+CG iteration 300 residual 7.00405635e-09
+EDV_CONST Newton 1 residual=0.0170728205 rel=0.000148858736
+CG iteration 300 residual 1.53918581e-09
+EDV_CONST Newton 2 residual=1.16485044e-09 rel=1.01563866e-11
+EDV CONST time=300 Newton=2 CG=617 residual=1.01564e-11 maxStress=0.133168 Psi6=0.000842761 PsiOmega=0.00117443 wall=9.17844
+EDV_VAR Newton 0 residual=114.736787 rel=1
+CG iteration 300 residual 7.17719938e-09
+EDV_VAR Newton 1 residual=0.0170862504 rel=0.000148916933
+CG iteration 300 residual 1.54557966e-09
+EDV_VAR Newton 2 residual=1.16666051e-09 rel=1.01681469e-11
+EDV VAR time=300 Newton=2 CG=602 residual=1.01681e-11 maxStress=0.133182 Psi6=0.000842899 PsiOmega=0.00117475 wall=7.49281
+Nodes=10845 QP=199476 time=300 delta_u=8.78906015824544e-09 delta_ed=0 delta_ev=0 RESULT: PASS
+PASS E CONST as0 Jacobi CG 421 Schwarz CG 301
+Nodes=10845 QP=199476 time=300 delta_u=5.3268136691592e-09 delta_ed=0 delta_ev=0 RESULT: PASS
+PASS E CONST as1 Jacobi CG 421 Schwarz CG 256
+Nodes=10845 QP=199476 time=300 delta_u=8.73039094761318e-09 delta_ed=0 delta_ev=0 RESULT: PASS
+PASS E VAR as0 Jacobi CG 421 Schwarz CG 301
+Nodes=10845 QP=199476 time=300 delta_u=5.249621723068e-09 delta_ed=0 delta_ev=0 RESULT: PASS
+PASS E VAR as1 Jacobi CG 421 Schwarz CG 256
+Nodes=10845 QP=199476 time=300 delta_u=4.1816169896428e-09 delta_ed=6.94037264261507e-08 delta_ev=0 RESULT: PASS
+PASS ED CONST as0 Jacobi CG 571 Schwarz CG 391
+Nodes=10845 QP=199476 time=300 delta_u=5.87883240306435e-09 delta_ed=9.22667656707731e-08 delta_ev=0 RESULT: PASS
+PASS ED CONST as1 Jacobi CG 571 Schwarz CG 316
+Nodes=10845 QP=199476 time=300 delta_u=4.17604002704045e-09 delta_ed=6.96499177496879e-08 delta_ev=0 RESULT: PASS
+PASS ED VAR as0 Jacobi CG 571 Schwarz CG 391
+Nodes=10845 QP=199476 time=300 delta_u=7.62296224496944e-09 delta_ed=1.26139632374125e-07 delta_ev=0 RESULT: PASS
+PASS ED VAR as1 Jacobi CG 571 Schwarz CG 301
+Nodes=10845 QP=199476 time=300 delta_u=2.50143516418991e-12 delta_ed=1.9100826016183e-11 delta_ev=2.96135898796859e-11 RESULT: PASS
+PASS EDV CONST as0 Jacobi CG 1097 Schwarz CG 767
+Nodes=10845 QP=199476 time=300 delta_u=8.8004972049964e-13 delta_ed=1.3159857203984e-11 delta_ev=3.33001976919988e-11 RESULT: PASS
+PASS EDV CONST as1 Jacobi CG 1097 Schwarz CG 617
+Nodes=10845 QP=199476 time=300 delta_u=2.49786519822007e-12 delta_ed=1.87867359930746e-11 delta_ev=2.81259268854333e-11 RESULT: PASS
+PASS EDV VAR as0 Jacobi CG 1097 Schwarz CG 767
+Nodes=10845 QP=199476 time=300 delta_u=8.69007048843896e-13 delta_ed=1.24866401497594e-11 delta_ev=3.17361750619677e-11 RESULT: PASS
+PASS EDV VAR as1 Jacobi CG 1097 Schwarz CG 602
+P5 FEM PASS all six E/ED/EDV × CONST/VAR H0, Jacobi/AS0/AS1, checkpoint

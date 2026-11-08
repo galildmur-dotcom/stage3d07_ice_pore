@@ -1,0 +1,20 @@
+Internal ctest changing into directory: /mnt/data/p5_work/build_noomp
+Test project /mnt/data/p5_work/build_noomp
+    Start 64: P5_AS_partition
+1/7 Test #64: P5_AS_partition ..................   Passed    0.00 sec
+    Start 65: P5_AS_symmetric
+2/7 Test #65: P5_AS_symmetric ..................   Passed    0.00 sec
+    Start 66: P5_AS_mixed_spd
+3/7 Test #66: P5_AS_mixed_spd ..................   Passed    0.00 sec
+    Start 67: P5_AS_threads
+4/7 Test #67: P5_AS_threads ....................   Passed    0.00 sec
+    Start 68: P5_AS_regression
+5/7 Test #68: P5_AS_regression .................   Passed    0.00 sec
+    Start 69: P5_QT_H0_as0_dryrun
+6/7 Test #69: P5_QT_H0_as0_dryrun ..............   Passed    0.00 sec
+    Start 70: P5_QT_H0_as1_dryrun
+7/7 Test #70: P5_QT_H0_as1_dryrun ..............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   0.02 sec

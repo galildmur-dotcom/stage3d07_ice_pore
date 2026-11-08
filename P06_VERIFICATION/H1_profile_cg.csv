@@ -1,0 +1,2 @@
+law,modulus,time_s,cg_calls,cg_iterations,pcg_total_s,pcg_s_per_iteration,preconditioner,precond_setup_s,precond_apply_s,spmv_s,dot_s,vector_s
+EDV,VAR,300,2,1157,1.601195108,0.00138391971305099,jacobi,0.009230188,0.0624896489999999,1.335389323,0.0593153559999998,0.133924732

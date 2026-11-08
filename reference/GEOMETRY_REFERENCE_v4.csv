@@ -1,0 +1,14 @@
+﻿metric,value,units,source_formula
+R0_m,0.001,m,sphere radius
+V_D_m3,0.00018,m^3,volume outer box
+V_pore_m3,4.188790204786391e-09,m^3,4/3*pi*R0^3
+V_ice_m3,0.00017999581120979523,m^3,D minus sphere
+A_pore_m2,1.2566370614359172e-05,m^2,4*pi*R0^2
+V_B6_ice_m3,9.005898940290741e-07,m^3,4/3*pi*(6^3-1)*R0^3
+V_pore_fraction,2.3271056693257725e-05,1,volume porosity
+V_local_to_global,0.005003393623307078,1,local material volume fraction
+dV_ice_dR_m2,-1.2566370614359172e-05,m^2,sign of hole expansion
+dV_pore_dR_m2,1.2566370614359172e-05,m^2,sign of hole expansion
+normal_second_diag_m2,4.1887902047863905e-06,m^2,int n_i*n_i dA
+normal_second_offdiag_m2,0,m^2,int n_i*n_j i != j
+normal_first_vector_m2,0,m^2,"int n_i dA, all components"

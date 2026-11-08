@@ -1,0 +1,42 @@
+{
+  "mesh": "H0",
+  "dt_s": "300",
+  "tend_s": "3600",
+  "quad": "3",
+  "delta_um": "5",
+  "pore_radius_m": 0.001,
+  "pore_center_m": [
+    0.0,
+    0.0,
+    0.03
+  ],
+  "reconstruction": "L2-orthogonal low-modal projection, not full shape gradient",
+  "normal": "cavity to ice, n=e_r",
+  "y20_normalization": "sqrt(5/(16*pi))*(3*cos(theta)**2-1)",
+  "modal_derivatives": {
+    "D_mean_per_m": {
+      "R": 0.11009324256767175,
+      "tz": -0.0003959095570479909,
+      "y20": -0.01996443824077374
+    },
+    "D_variance_per_m": {
+      "R": 0.00022067253428505705,
+      "tz": -8.186869646774389e-07,
+      "y20": -4.066157455096973e-05
+    }
+  },
+  "test_projection_relative_errors": {
+    "D_mean_per_m": {
+      "R": 1.7967905774883885e-09,
+      "tz": 2.4998646234148146e-09,
+      "y20": 8.151957302440496e-09
+    },
+    "D_variance_per_m": {
+      "R": 1.8257316157150924e-09,
+      "tz": 2.4998553583407143e-09,
+      "y20": 8.22088110670554e-09
+    }
+  },
+  "vtk_points": 10226,
+  "vtk_triangles": 20448
+}

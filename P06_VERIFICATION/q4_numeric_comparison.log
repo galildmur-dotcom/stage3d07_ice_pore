@@ -1,0 +1,7 @@
+checkpoint_bitwise_equal= True
+{'time_s': '300', 'metric': 'Psi6', 'baseline': 0.000842902120683305, 'optimized': 0.000842902120683305, 'abs_diff': 0.0, 'rel_diff': 0.0, 'passed': True}
+{'time_s': '300', 'metric': 'PsiOmega', 'baseline': 0.00117483242049309, 'optimized': 0.00117483242049309, 'abs_diff': 0.0, 'rel_diff': 0.0, 'passed': True}
+{'time_s': '300', 'metric': 'maxS1_MPa', 'baseline': 0.134361898390788, 'optimized': 0.134361898390788, 'abs_diff': 0.0, 'rel_diff': 0.0, 'passed': True}
+{'time_s': 300.0, 'metric': 'u_maxnorm', 'baseline': 5.262489349932245e-07, 'optimized': 5.262489349932245e-07, 'abs_diff': 0.0, 'rel_diff': 0.0, 'passed': True}
+{'time_s': 300.0, 'metric': 'QP_state_maxnorm', 'baseline': 1.6158222910790683e-05, 'optimized': 1.6158222910790683e-05, 'abs_diff': 0.0, 'rel_diff': 0.0, 'passed': True}
+NUMERIC REGRESSION PASS

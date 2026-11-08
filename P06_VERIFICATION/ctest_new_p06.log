@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /mnt/data/build_opt_06
+Test project /mnt/data/build_opt_06
+    Start 44: P06_H0_EDV_4threads_numeric_regression
+1/1 Test #44: P06_H0_EDV_4threads_numeric_regression ...   Passed   10.87 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  10.88 sec

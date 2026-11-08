@@ -1,0 +1,15 @@
+Test project /mnt/data/p3_work/build_serial
+    Start 51: P3_MCSGS_small_1thread
+1/5 Test #51: P3_MCSGS_small_1thread ............   Passed    0.00 sec
+    Start 52: P3_MCSGS_parallel_large
+2/5 Test #52: P3_MCSGS_parallel_large ...........   Passed    0.00 sec
+    Start 53: P3_MCSGS_Tet10_adjacent_cliques
+3/5 Test #53: P3_MCSGS_Tet10_adjacent_cliques ...   Passed    0.00 sec
+    Start 55: P3_QT_H0_mcsgs_dryrun
+4/5 Test #55: P3_QT_H0_mcsgs_dryrun .............   Passed    0.00 sec
+    Start 56: P3_QT_H4_mcsgs_dryrun
+5/5 Test #56: P3_QT_H4_mcsgs_dryrun .............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.01 sec

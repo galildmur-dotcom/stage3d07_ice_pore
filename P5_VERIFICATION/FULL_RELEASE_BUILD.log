@@ -1,0 +1,789 @@
+[  1%] Building CXX object CMakeFiles/stage3d03_mechanical.dir/src/mechanical.cpp.o
+[  3%] Built target stage3d02_thermal
+[  5%] Building CXX object CMakeFiles/stage3d04_ed_point.dir/tests/ed_point.cpp.o
+[  6%] Building CXX object CMakeFiles/stage3d05_edv_point.dir/tests/edv_point.cpp.o
+[  7%] Building CXX object CMakeFiles/stage3d06_spatial.dir/src/spatial_reology.cpp.o
+In file included from /mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:3:
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp: In function 'Imported read_msh(const std::filesystem::__cxx11::path&, bool)':
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp:17:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |         ^~~
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp:17:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |                             ^~
+In file included from /mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:4:
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mul(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mult_t(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::invert_spd(const B3&, int)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:30:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   30 |   if(i==j){if(!(v>0.0) || !std::isfinite(v))
+      |            ^~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:31:117: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   31 |     throw std::runtime_error("P4 IC0 non-SPD pivot at node "+std::to_string(node)+", component "+std::to_string(i));c[i][j]=std::sqrt(v);}
+      |                                                                                                                     ^
+In file included from /mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:3,
+                 from /mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:5:
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp: In function 'Imported read_msh(const std::filesystem::__cxx11::path&, bool)':
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp:17:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |         ^~~
+/mnt/data/p5_work/Stage3D06P5/src/tet10_shared.hpp:17:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |                             ^~
+In file included from /mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:4:
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mul(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mult_t(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::invert_spd(const B3&, int)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:30:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   30 |   if(i==j){if(!(v>0.0) || !std::isfinite(v))
+      |            ^~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:31:117: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   31 |     throw std::runtime_error("P4 IC0 non-SPD pivot at node "+std::to_string(node)+", component "+std::to_string(i));c[i][j]=std::sqrt(v);}
+      |                                                                                                                     ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In member function 'void BCSR::init(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:69:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:69:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |                                        ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In member function 'int BCSR::pos(int, int) const':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:75:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:75:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |                                                                              ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'Assembled assemble_elastic(const Mesh&, const std::vector<double>&, bool, int, bool)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:215:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:215:89: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |                                                                                         ^~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'double vdot(const std::vector<double>&, const std::vector<double>&)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:264:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  264 |  for(size_t i=0;i<a.size();++i)s+=a[i]*b[i];return s;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:264:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  264 |  for(size_t i=0;i<a.size();++i)s+=a[i]*b[i];return s;}
+      |                                             ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'SolverInfo solve(Assembled&, const std::vector<unsigned char>&, std::vector<double>&, double, int)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:279:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:279:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |                                                        ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:298:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  298 |   for(size_t k=0;k<n;++k)p[k]=z[k]+beta*p[k];rz=rz2;
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:298:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  298 |   for(size_t k=0;k<n;++k)p[k]=z[k]+beta*p[k];rz=rz2;
+      |                                              ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'double principal_max(const double*)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:322:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:322:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |                    ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In lambda function:
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:330:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:330:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |                                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:331:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:331:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |                                                                        ^~~~~~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:332:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:332:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |                                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void save_mech_vtu(const Mesh&, const std::vector<double>&, const std::vector<double>&, const ElementStats&, std::filesystem::__cxx11::path, double, const std::vector<std::array<double, 5> >*)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:353:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:353:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |                                                      ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:355:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:355:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |                                                   ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:356:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:356:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:358:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:358:84: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |                                                                                    ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:359:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:359:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |                                  ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:366:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |      ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:366:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void patch_test(const Mesh&, const Assembled&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:408:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:408:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |                                ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:414:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:414:77: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |                                                                             ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In member function 'void BCSR::init(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:69:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:69:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |                                        ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void mms_test(const Mesh&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:433:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:433:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |                                 ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In member function 'int BCSR::pos(int, int) const':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:75:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:75:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |                                                                              ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'int main(int, char**)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:509:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  509 |  if(out.empty())throw runtime_error("Missing --out DIR");fs::create_directories(out);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:509:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  509 |  if(out.empty())throw runtime_error("Missing --out DIR");fs::create_directories(out);
+      |                                                          ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:511:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  511 |  if(mesh.empty())throw runtime_error("Missing --mesh");bool slab=mode=="slab"||mode=="mms"||mode=="tref";
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:511:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  511 |  if(mesh.empty())throw runtime_error("Missing --mesh");bool slab=mode=="slab"||mode=="mms"||mode=="tref";
+      |                                                        ^~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'Assembled assemble_elastic(const Mesh&, const std::vector<double>&, bool, int, bool)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:215:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:215:89: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |                                                                                         ^~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'SolverInfo solve(Assembled&, const std::vector<unsigned char>&, std::vector<double>&, double, int)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:279:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:279:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |                                                        ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'double principal_max(const double*)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:322:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:322:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |                    ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In lambda function:
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:330:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:330:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |                                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:331:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:331:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |                                                                        ^~~~~~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:332:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:332:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |                                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void save_mech_vtu(const Mesh&, const std::vector<double>&, const std::vector<double>&, const ElementStats&, std::filesystem::__cxx11::path, double, const std::vector<std::array<double, 5> >*)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:353:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:353:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |                                                      ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:355:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:355:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |                                                   ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:356:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:356:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:358:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:358:84: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |                                                                                    ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:359:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:359:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |                                  ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:366:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |      ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:366:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void patch_test(const Mesh&, const Assembled&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:408:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:408:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |                                ^
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:414:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:414:77: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |                                                                             ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: In function 'void mms_test(const Mesh&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:433:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:433:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |                                 ^~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp: In function 'uint64_t signature(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:55:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   55 |  for(const auto&t:m.tets)for(int a:t)mix(uint32_t(a));return h;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:55:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   55 |  for(const auto&t:m.tets)for(int a:t)mix(uint32_t(a));return h;
+      |                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp: In function 'void checkpoint(const std::filesystem::__cxx11::path&, const Mesh&, const Setting&, const Field&, int)':
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:373:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  373 |  if(fs::exists(where))fs::remove(where);fs::rename(tmp,where);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:373:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  373 |  if(fs::exists(where))fs::remove(where);fs::rename(tmp,where);
+      |                                         ^~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp: In function 'int restore(const std::filesystem::__cxx11::path&, const Mesh&, const Setting&, Field&)':
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:383:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  383 |  if(!in)throw runtime_error("checkpoint truncated");char x;if(in.read(&x,1))throw runtime_error("checkpoint trailing bytes");
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:383:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  383 |  if(!in)throw runtime_error("checkpoint truncated");char x;if(in.read(&x,1))throw runtime_error("checkpoint trailing bytes");
+      |                                                     ^~~~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp: In function 'int main(int, char**)':
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:423:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  423 |  if(times.empty())throw runtime_error("no times");if(base.quad!=3&&base.quad!=4)throw runtime_error("quad 3 or 4");
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/src/spatial_reology.cpp:423:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  423 |  if(times.empty())throw runtime_error("no times");if(base.quad!=3&&base.quad!=4)throw runtime_error("quad 3 or 4");
+      |                                                   ^~
+[  8%] Linking CXX executable stage3d04_ed_point
+[  8%] Built target stage3d04_ed_point
+[ 10%] Building CXX object CMakeFiles/stage3d06_convergence_report.dir/src/refinement_report.cpp.o
+[ 11%] Linking CXX executable stage3d05_edv_point
+[ 11%] Built target stage3d05_edv_point
+[ 12%] Building CXX object CMakeFiles/stage3d06_baseline_serial.dir/baseline_serial/spatial_reology.cpp.o
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp: At global scope:
+/mnt/data/p5_work/Stage3D06P5/src/mechanical.cpp:188:39: warning: 'std::shared_ptr<const BCSRTopology> build_bcsr_topology(const Mesh&)' defined but not used [-Wunused-function]
+  188 | static shared_ptr<const BCSRTopology> build_bcsr_topology(const Mesh&m){
+      |                                       ^~~~~~~~~~~~~~~~~~~
+In file included from /mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:3,
+                 from /mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:4:
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/tet10_shared.hpp: In function 'Imported read_msh(const std::filesystem::__cxx11::path&, bool)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/tet10_shared.hpp:17:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |         ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/tet10_shared.hpp:17:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |                             ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In member function 'void BCSR::init(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:37:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   37 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:37:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   37 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |                                        ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In member function 'int BCSR::pos(int, int) const':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:40:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   40 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-col.begin());}
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:40:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   40 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-col.begin());}
+      |                                                                              ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'Assembled assemble_elastic(const Mesh&, const std::vector<double>&, bool, int, bool)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:77:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   77 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:77:89: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   77 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |                                                                                         ^~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'SolverInfo solve(Assembled&, const std::vector<unsigned char>&, std::vector<double>&, double, int)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:123:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  123 |   for(size_t k=0;k<n;++k)p[k]=z[k]+beta*p[k];rz=rz2;
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:123:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  123 |   for(size_t k=0;k<n;++k)p[k]=z[k]+beta*p[k];rz=rz2;
+      |                                              ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'double principal_max(const double*)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:144:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  144 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:144:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  144 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |                    ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In lambda function:
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:152:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  152 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:152:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  152 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |                                                              ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:153:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  153 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:153:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  153 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |                                                                        ^~~~~~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:154:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  154 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:154:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  154 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |                                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'void save_mech_vtu(const Mesh&, const std::vector<double>&, const std::vector<double>&, const ElementStats&, std::filesystem::__cxx11::path, double, const std::vector<std::array<double, 5> >*)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:175:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  175 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:175:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  175 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |                                                      ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:177:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  177 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:177:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  177 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |                                                   ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:178:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  178 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:178:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  178 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:180:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  180 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:180:84: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  180 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |                                                                                    ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:181:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  181 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:181:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  181 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |                                  ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:188:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  188 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |      ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:188:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  188 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'void patch_test(const Mesh&, const Assembled&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:230:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  230 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:230:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  230 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |                                ^
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:236:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  236 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:236:77: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  236 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |                                                                             ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp: In function 'void mms_test(const Mesh&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:255:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  255 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/mechanical.cpp:255:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  255 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |                                 ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp: In function 'uint64_t signature(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:28:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   28 |  for(const auto&t:m.tets)for(int a:t)mix(uint32_t(a));return h;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:28:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   28 |  for(const auto&t:m.tets)for(int a:t)mix(uint32_t(a));return h;
+      |                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp: In function 'void checkpoint(const std::filesystem::__cxx11::path&, const Mesh&, const Setting&, const Field&, int)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:185:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  185 |  if(fs::exists(where))fs::remove(where);fs::rename(tmp,where);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:185:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  185 |  if(fs::exists(where))fs::remove(where);fs::rename(tmp,where);
+      |                                         ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp: In function 'int restore(const std::filesystem::__cxx11::path&, const Mesh&, const Setting&, Field&)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:195:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  195 |  if(!in)throw runtime_error("checkpoint truncated");char x;if(in.read(&x,1))throw runtime_error("checkpoint trailing bytes");
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:195:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  195 |  if(!in)throw runtime_error("checkpoint truncated");char x;if(in.read(&x,1))throw runtime_error("checkpoint trailing bytes");
+      |                                                     ^~~~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp: In function 'int main(int, char**)':
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:216:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  216 |  if(times.empty())throw runtime_error("no times");if(base.quad!=3&&base.quad!=4)throw runtime_error("quad 3 or 4");
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/baseline_serial/spatial_reology.cpp:216:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  216 |  if(times.empty())throw runtime_error("no times");if(base.quad!=3&&base.quad!=4)throw runtime_error("quad 3 or 4");
+      |                                                   ^~
+[ 14%] Linking CXX executable stage3d06_convergence_report
+[ 14%] Built target stage3d06_convergence_report
+[ 15%] Building CXX object CMakeFiles/stage3d06_spmv_benchmark.dir/tests/p2_spmv_benchmark.cpp.o
+In file included from /mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:3,
+                 from /mnt/data/p5_work/Stage3D06P5/tests/p2_spmv_benchmark.cpp:4:
+/mnt/data/p5_work/Stage3D06P5/tests/../src/tet10_shared.hpp: In function 'Imported read_msh(const std::filesystem::__cxx11::path&, bool)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/tet10_shared.hpp:17:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |         ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/tet10_shared.hpp:17:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   17 |         for(int&x:tags)f>>x;if(tags.empty())throw runtime_error("Missing physical tag");
+      |                             ^~
+In file included from /mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:4:
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mul(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:19:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:19:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mult_t(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:21:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:21:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::invert_spd(const B3&, int)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:30:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   30 |   if(i==j){if(!(v>0.0) || !std::isfinite(v))
+      |            ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/p4_block_ic0.hpp:31:117: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   31 |     throw std::runtime_error("P4 IC0 non-SPD pivot at node "+std::to_string(node)+", component "+std::to_string(i));c[i][j]=std::sqrt(v);}
+      |                                                                                                                     ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In member function 'void BCSR::init(const Mesh&)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:69:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:69:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   69 |   for(int i=0;i<n;++i)row[i+1]+=row[i];a.resize(keys.size());
+      |                                        ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In member function 'int BCSR::pos(int, int) const':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:75:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:75:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   75 |   if(it==hi||*it!=j)throw runtime_error("Missing block in stiffness matrix");return int(it-c.begin());}
+      |                                                                              ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'Assembled assemble_elastic(const Mesh&, const std::vector<double>&, bool, int, bool)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:215:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |  ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:215:89: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  215 |  if(theta.size()!=m.nodes.size())throw runtime_error("Temperature node count mismatch");Assembled A;A.K.init(m);
+      |                                                                                         ^~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'SolverInfo solve(Assembled&, const std::vector<unsigned char>&, std::vector<double>&, double, int)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:279:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:279:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  279 |   if(!(denom>0))throw runtime_error("Non SPD CG step");double a=rz/denom;
+      |                                                        ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'double principal_max(const double*)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:322:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:322:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  322 |   if(z<1e-13)break;double tau=(a[q][q]-a[p][p])/(2*a[p][q]);double t=(tau>=0?1:-1)/(abs(tau)+sqrt(1+tau*tau));double c=1/sqrt(1+t*t),srot=t*c;
+      |                    ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In lambda function:
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:330:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:330:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  330 |   if(start.rfind("<Points>",0)==0)p=all.find("<DataArray",p);p=all.find('>',p);if(p==string::npos)throw runtime_error("Invalid VTK array header");auto stop=all.find(end,p);
+      |                                                              ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:331:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:331:72: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  331 |   if(stop==string::npos)throw runtime_error("Missing VTK array close");istringstream in(all.substr(p+1,stop-p-1));vector<double>v(count);
+      |                                                                        ^~~~~~~~~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:332:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |   ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:332:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  332 |   for(auto&x:v)if(!(in>>x))throw runtime_error("VTK array too short");double extra;if(in>>extra)throw runtime_error("VTK array too long");return v;};
+      |                                                                       ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'void save_mech_vtu(const Mesh&, const std::vector<double>&, const std::vector<double>&, const ElementStats&, std::filesystem::__cxx11::path, double, const std::vector<std::array<double, 5> >*)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:353:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:353:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  353 |  for(auto v:m.nodes)f<<v.x<<" "<<v.y<<" "<<v.z<<"\n";f<<"</DataArray></Points><Cells><DataArray type=\"Int32\" Name=\"connectivity\" format=\"ascii\">\n";
+      |                                                      ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:355:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:355:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  355 |  for(size_t i=1;i<=m.tets.size();++i)f<<10*i<<" ";f<<"</DataArray><DataArray type=\"UInt8\" Name=\"types\" format=\"ascii\">\n";
+      |                                                   ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:356:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:356:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  356 |  for(size_t i=0;i<m.tets.size();++i)f<<"24 ";f<<"</DataArray></Cells>\n";
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:358:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:358:84: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  358 |  for(size_t i=0;i<m.nodes.size();++i)f<<u[3*i]<<" "<<u[3*i+1]<<" "<<u[3*i+2]<<"\n";f<<"</DataArray><DataArray type=\"Float64\" Name=\"Temperature_C\" format=\"ascii\">\n";
+      |                                                                                    ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:359:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:359:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  359 |  for(double v:theta)f<<v-20<<" ";f<<"</DataArray></PointData>\n<CellData>\n";
+      |                                  ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:366:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |      ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:366:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  366 |      for(const auto &v:*qp_peak)f<<v[c]<<" ";f<<"</DataArray>\n";}
+      |                                              ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'void patch_test(const Mesh&, const Assembled&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:408:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:408:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  408 |   if(dot(n,expect)<0)orient=-1;n=n*orient;
+      |                                ^
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:414:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:414:77: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  414 |  for(size_t i=0;i<u.size();++i)err+=(Ku[i]-boundary[i])*(Ku[i]-boundary[i]);double rel=sqrt(err)/scale;
+      |                                                                             ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp: In function 'void mms_test(const Mesh&, std::filesystem::__cxx11::path)':
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:433:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |   ^~
+/mnt/data/p5_work/Stage3D06P5/tests/../src/mechanical.cpp:433:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  433 |   if(face.tag==2)target={0,0,1};if(face.tag==3)target={0,0,-1};if(face.tag==4)target={-1,0,0};if(face.tag==5)target={1,0,0};if(face.tag==6)target={0,-1,0};if(face.tag==7)target={0,1,0};
+      |                                 ^~
+[ 16%] Linking CXX executable stage3d03_mechanical
+[ 16%] Built target stage3d03_mechanical
+[ 19%] Built target stage3d06_compare_restart
+[ 20%] Building CXX object CMakeFiles/stage3d06_p3_mcsgs_unit.dir/tests/p3_mcsgs_unit.cpp.o
+[ 21%] Linking CXX executable stage3d06_p3_mcsgs_unit
+[ 21%] Built target stage3d06_p3_mcsgs_unit
+[ 23%] Building CXX object CMakeFiles/stage3d06_p4_ic0_unit.dir/tests/p4_ic0_unit.cpp.o
+[ 24%] Linking CXX executable stage3d06_baseline_serial
+[ 24%] Built target stage3d06_baseline_serial
+In file included from /mnt/data/p5_work/Stage3D06P5/tests/p4_ic0_unit.cpp:1:
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mul(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |                                                                                            ^~~~~~
+[ 25%] Building CXX object CMakeFiles/stage3d06_p5_schwarz_unit.dir/tests/p5_schwarz_unit.cpp.o
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mult_t(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::invert_spd(const B3&, int)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:30:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   30 |   if(i==j){if(!(v>0.0) || !std::isfinite(v))
+      |            ^~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:31:117: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   31 |     throw std::runtime_error("P4 IC0 non-SPD pivot at node "+std::to_string(node)+", component "+std::to_string(i));c[i][j]=std::sqrt(v);}
+      |                                                                                                                     ^
+In file included from /mnt/data/p5_work/Stage3D06P5/src/p5_schwarz.hpp:8,
+                 from /mnt/data/p5_work/Stage3D06P5/tests/p5_schwarz_unit.cpp:1:
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mul(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:19:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   19 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*k+j]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::mult_t(const B3&, const B3&)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |  ^~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:21:92: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |  for(int i=0;i<3;++i)for(int k=0;k<3;++k)for(int j=0;j<3;++j) C[3*i+j]+=A[3*i+k]*B[3*j+k]; return C;}
+      |                                                                                            ^~~~~~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp: In function 'stage3d06::p4::B3 stage3d06::p4::invert_spd(const B3&, int)':
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:30:12: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   30 |   if(i==j){if(!(v>0.0) || !std::isfinite(v))
+      |            ^~
+/mnt/data/p5_work/Stage3D06P5/src/p4_block_ic0.hpp:31:117: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   31 |     throw std::runtime_error("P4 IC0 non-SPD pivot at node "+std::to_string(node)+", component "+std::to_string(i));c[i][j]=std::sqrt(v);}
+      |                                                                                                                     ^
+[ 26%] Linking CXX executable stage3d06_p4_ic0_unit
+[ 28%] Linking CXX executable stage3d06_spmv_benchmark
+[ 28%] Built target stage3d06_p4_ic0_unit
+[ 28%] Built target stage3d06_spmv_benchmark
+[ 29%] Linking CXX executable stage3d06_spatial
+[ 29%] Built target stage3d06_spatial
+[ 30%] Building CXX object CMakeFiles/stage3d06_qt_H1.dir/src/qt_creator_runner.cpp.o
+[ 33%] Building CXX object CMakeFiles/stage3d06_qt_run.dir/src/qt_creator_runner.cpp.o
+[ 33%] Building CXX object CMakeFiles/stage3d06_qt_check.dir/src/qt_creator_runner.cpp.o
+[ 34%] Linking CXX executable stage3d06_p5_schwarz_unit
+[ 34%] Built target stage3d06_p5_schwarz_unit
+[ 35%] Building CXX object CMakeFiles/stage3d06_qt_H0_dt300.dir/src/qt_creator_runner.cpp.o
+[ 37%] Linking CXX executable stage3d06_qt_check
+[ 38%] Linking CXX executable stage3d06_qt_run
+[ 39%] Linking CXX executable stage3d06_qt_H1
+[ 39%] Built target stage3d06_qt_run
+[ 39%] Built target stage3d06_qt_check
+[ 39%] Built target stage3d06_qt_H1
+[ 42%] Building CXX object CMakeFiles/stage3d06_qt_H1_dt150.dir/src/qt_creator_runner.cpp.o
+[ 42%] Building CXX object CMakeFiles/stage3d06_qt_H0_dt75.dir/src/qt_creator_runner.cpp.o
+[ 43%] Building CXX object CMakeFiles/stage3d06_qt_H0_dt150.dir/src/qt_creator_runner.cpp.o
+[ 44%] Linking CXX executable stage3d06_qt_H0_dt300
+[ 44%] Built target stage3d06_qt_H0_dt300
+[ 46%] Building CXX object CMakeFiles/stage3d06_qt_H1_dt75.dir/src/qt_creator_runner.cpp.o
+[ 47%] Linking CXX executable stage3d06_qt_H1_dt150
+[ 48%] Linking CXX executable stage3d06_qt_H0_dt150
+[ 50%] Linking CXX executable stage3d06_qt_H0_dt75
+[ 50%] Built target stage3d06_qt_H1_dt150
+[ 51%] Building CXX object CMakeFiles/stage3d06_qt_H2_dt150.dir/src/qt_creator_runner.cpp.o
+[ 51%] Built target stage3d06_qt_H0_dt150
+[ 52%] Building CXX object CMakeFiles/stage3d06_qt_diagnose_H1.dir/src/qt_creator_runner.cpp.o
+[ 52%] Built target stage3d06_qt_H0_dt75
+[ 53%] Building CXX object CMakeFiles/stage3d06_qt_diagnose_H2.dir/src/qt_creator_runner.cpp.o
+[ 55%] Linking CXX executable stage3d06_qt_H1_dt75
+[ 55%] Built target stage3d06_qt_H1_dt75
+[ 56%] Building CXX object CMakeFiles/stage3d06_campaign_plan.dir/src/refinement_campaign.cpp.o
+[ 57%] Linking CXX executable stage3d06_qt_H2_dt150
+[ 57%] Built target stage3d06_qt_H2_dt150
+[ 58%] Building CXX object CMakeFiles/stage3d06_campaign_phase1.dir/src/refinement_campaign.cpp.o
+[ 60%] Linking CXX executable stage3d06_qt_diagnose_H2
+[ 60%] Built target stage3d06_qt_diagnose_H2
+[ 61%] Linking CXX executable stage3d06_qt_diagnose_H1
+[ 62%] Building CXX object CMakeFiles/stage3d06_campaign_phase2.dir/src/refinement_campaign.cpp.o
+[ 62%] Built target stage3d06_qt_diagnose_H1
+[ 64%] Building CXX object CMakeFiles/stage3d06_campaign_phase3.dir/src/refinement_campaign.cpp.o
+[ 65%] Linking CXX executable stage3d06_campaign_plan
+[ 65%] Built target stage3d06_campaign_plan
+[ 66%] Building CXX object CMakeFiles/stage3d06_campaign_full.dir/src/refinement_campaign.cpp.o
+[ 67%] Linking CXX executable stage3d06_campaign_phase1
+[ 67%] Built target stage3d06_campaign_phase1
+[ 69%] Building CXX object CMakeFiles/stage3d06_benchmark_serial.dir/src/qt_benchmark_p.cpp.o
+[ 70%] Linking CXX executable stage3d06_campaign_phase2
+[ 70%] Built target stage3d06_campaign_phase2
+[ 71%] Building CXX object CMakeFiles/stage3d06_benchmark_optimized.dir/src/qt_benchmark_p.cpp.o
+[ 73%] Linking CXX executable stage3d06_campaign_phase3
+[ 73%] Built target stage3d06_campaign_phase3
+[ 74%] Building CXX object CMakeFiles/stage3d06_campaign_optimized.dir/src/qt_benchmark_p.cpp.o
+[ 75%] Linking CXX executable stage3d06_campaign_full
+[ 75%] Built target stage3d06_campaign_full
+[ 76%] Building CXX object CMakeFiles/stage3d06_benchmark_p2_legacy.dir/src/qt_benchmark_p.cpp.o
+[ 78%] Linking CXX executable stage3d06_benchmark_serial
+[ 78%] Built target stage3d06_benchmark_serial
+[ 79%] Building CXX object CMakeFiles/stage3d06_benchmark_p2_projected.dir/src/qt_benchmark_p.cpp.o
+[ 80%] Linking CXX executable stage3d06_campaign_optimized
+[ 82%] Linking CXX executable stage3d06_benchmark_optimized
+[ 82%] Built target stage3d06_campaign_optimized
+[ 83%] Building CXX object CMakeFiles/stage3d06_p3_qt_H0_mcsgs.dir/src/qt_benchmark_p.cpp.o
+[ 83%] Built target stage3d06_benchmark_optimized
+[ 84%] Building CXX object CMakeFiles/stage3d06_p3_qt_H4_mcsgs.dir/src/qt_benchmark_p.cpp.o
+[ 85%] Linking CXX executable stage3d06_benchmark_p2_legacy
+[ 85%] Built target stage3d06_benchmark_p2_legacy
+[ 87%] Building CXX object CMakeFiles/stage3d06_p31_qt_H0_mcsgs_fast.dir/src/qt_benchmark_p.cpp.o
+[ 88%] Linking CXX executable stage3d06_benchmark_p2_projected
+[ 88%] Built target stage3d06_benchmark_p2_projected
+[ 89%] Building CXX object CMakeFiles/stage3d06_p4_qt_H0_ic0.dir/src/qt_benchmark_p.cpp.o
+[ 91%] Linking CXX executable stage3d06_p3_qt_H4_mcsgs
+[ 92%] Linking CXX executable stage3d06_p3_qt_H0_mcsgs
+[ 92%] Built target stage3d06_p3_qt_H4_mcsgs
+[ 92%] Built target stage3d06_p3_qt_H0_mcsgs
+[ 93%] Building CXX object CMakeFiles/stage3d06_p5_qt_H0_as0.dir/src/qt_benchmark_p.cpp.o
+[ 94%] Building CXX object CMakeFiles/stage3d06_p5_qt_H0_as1.dir/src/qt_benchmark_p.cpp.o
+[ 96%] Linking CXX executable stage3d06_p31_qt_H0_mcsgs_fast
+[ 96%] Built target stage3d06_p31_qt_H0_mcsgs_fast
+[ 97%] Linking CXX executable stage3d06_p4_qt_H0_ic0
+[ 97%] Built target stage3d06_p4_qt_H0_ic0
+[ 98%] Linking CXX executable stage3d06_p5_qt_H0_as1
+[ 98%] Built target stage3d06_p5_qt_H0_as1
+[100%] Linking CXX executable stage3d06_p5_qt_H0_as0
+[100%] Built target stage3d06_p5_qt_H0_as0

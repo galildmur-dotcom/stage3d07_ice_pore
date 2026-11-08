@@ -1,0 +1,95 @@
+Test project /mnt/data/Stage3D06P2_Work/build
+      Start 50: P2_H0_EDV_projected_legacy_regression
+      Start 46: P2_SpMV_H0_4thread_correctness
+      Start 45: P2_SpMV_H0_1thread_correctness
+      Start 49: P2_Checkpoint_self_compare
+ 1/51 Test #49: P2_Checkpoint_self_compare ..................   Passed    0.03 sec
+      Start 47: P2_QT_legacy_dryrun
+ 2/51 Test #47: P2_QT_legacy_dryrun .........................   Passed    0.00 sec
+      Start 41: P06_QT_baseline_preset
+ 3/51 Test #41: P06_QT_baseline_preset ......................   Passed    0.00 sec
+      Start 42: P06_QT_optimized_preset
+ 4/51 Test #42: P06_QT_optimized_preset .....................   Passed    0.00 sec
+      Start 48: P2_QT_projected_dryrun
+ 5/51 Test #48: P2_QT_projected_dryrun ......................   Passed    0.00 sec
+      Start  1: MAT_T01_T02_T03_T06
+ 6/51 Test  #1: MAT_T01_T02_T03_T06 .........................   Passed    0.00 sec
+      Start  2: G03_01_affine_patch
+ 7/51 Test #45: P2_SpMV_H0_1thread_correctness ..............   Passed    0.12 sec
+      Start  3: MAT_T05_heterogeneous_manufactured
+ 8/51 Test #46: P2_SpMV_H0_4thread_correctness ..............   Passed    0.19 sec
+      Start  4: G03_01_Candidate_A_slab
+ 9/51 Test  #3: MAT_T05_heterogeneous_manufactured ..........   Passed    0.08 sec
+      Start  5: MAT_T04_same_temperature_reference
+10/51 Test  #4: G03_01_Candidate_A_slab .....................   Passed    0.07 sec
+      Start  6: G03_01_free_rigid_modes
+11/51 Test  #5: MAT_T04_same_temperature_reference ..........   Passed    0.15 sec
+      Start  7: G03_01_pure_free_expansion
+12/51 Test  #2: G03_01_affine_patch .........................   Passed    0.36 sec
+      Start  8: G04_reference
+13/51 Test  #8: G04_reference ...............................   Passed    0.00 sec
+      Start  9: G04_relaxation
+14/51 Test  #9: G04_relaxation ..............................   Passed    0.00 sec
+      Start 10: G04_recovery
+15/51 Test #10: G04_recovery ................................   Passed    0.00 sec
+      Start 11: G04_tangent
+16/51 Test #11: G04_tangent .................................   Passed    0.00 sec
+      Start 12: G04_temperature
+17/51 Test #12: G04_temperature .............................   Passed    0.00 sec
+      Start 13: G04_energy
+18/51 Test #13: G04_energy ..................................   Passed    0.00 sec
+      Start 14: G04_objectivity
+19/51 Test #14: G04_objectivity .............................   Passed    0.00 sec
+      Start 15: G04_restart
+20/51 Test #15: G04_restart .................................   Passed    0.00 sec
+      Start 16: G05_reference
+21/51 Test #16: G05_reference ...............................   Passed    0.00 sec
+      Start 17: G05_implicit
+22/51 Test #17: G05_implicit ................................   Passed    0.00 sec
+      Start 18: G05_tangent
+23/51 Test #18: G05_tangent .................................   Passed    0.00 sec
+      Start 19: G05_temperature
+24/51 Test #19: G05_temperature .............................   Passed    0.00 sec
+      Start 20: G05_energy
+25/51 Test #20: G05_energy ..................................   Passed    0.00 sec
+      Start 21: G05_objectivity
+26/51 Test #21: G05_objectivity .............................   Passed    0.00 sec
+      Start 22: G05_stress_control
+27/51 Test #22: G05_stress_control ..........................   Passed    0.00 sec
+      Start 23: G05_limits
+28/51 Test #23: G05_limits ..................................   Passed    0.00 sec
+      Start 24: G05_restart
+29/51 Test #24: G05_restart .................................   Passed    0.00 sec
+      Start 25: G05_temporal
+30/51 Test #25: G05_temporal ................................   Passed    0.01 sec
+      Start 26: G06_H0_E_smoke_900
+31/51 Test  #6: G03_01_free_rigid_modes .....................   Passed    0.31 sec
+      Start 27: G06_H0_72_steps_and_legacy_parity
+32/51 Test  #7: G03_01_pure_free_expansion ..................   Passed    0.30 sec
+      Start 28: G06_EDV_checkpoint_bitwise_resume
+33/51 Test #27: G06_H0_72_steps_and_legacy_parity ...........   Passed    1.44 sec
+      Start 29: G06_QT_native_launcher_dryrun
+34/51 Test #29: G06_QT_native_launcher_dryrun ...............   Passed    0.01 sec
+      Start 30: G06_QT_H1_launcher_dryrun
+35/51 Test #30: G06_QT_H1_launcher_dryrun ...................   Passed    0.00 sec
+      Start 32: G06_QT_H0_dt150_preset_dryrun
+36/51 Test #32: G06_QT_H0_dt150_preset_dryrun ...............   Passed    0.00 sec
+      Start 33: G06_QT_H0_dt75_preset_dryrun
+37/51 Test #33: G06_QT_H0_dt75_preset_dryrun ................   Passed    0.00 sec
+      Start 34: G06_QT_H1_dt150_preset_dryrun
+38/51 Test #34: G06_QT_H1_dt150_preset_dryrun ...............   Passed    0.01 sec
+      Start 35: G06_QT_H1_dt75_preset_dryrun
+39/51 Test #35: G06_QT_H1_dt75_preset_dryrun ................   Passed    0.01 sec
+      Start 36: G06_QT_H2_dt150_preset_dryrun
+40/51 Test #36: G06_QT_H2_dt150_preset_dryrun ...............   Passed    0.03 sec
+      Start 37: G06_QT_H1_QP_post_dryrun
+41/51 Test #37: G06_QT_H1_QP_post_dryrun ....................   Passed    0.00 sec
+      Start 38: G06_QT_H2_QP_post_dryrun
+42/51 Test #38: G06_QT_H2_QP_post_dryrun ....................   Passed    0.00 sec
+      Start 39: G06_QP_checkpoint_postprocess_consistency
+43/51 Test #39: G06_QP_checkpoint_postprocess_consistency ...   Passed    4.32 sec
+      Start 40: G06_REFINEMENT_H3_H4_PLAN
+44/51 Test #40: G06_REFINEMENT_H3_H4_PLAN ...................   Passed    0.01 sec
+      Start 43: P06_QT_campaign_preset
+45/51 Test #43: P06_QT_campaign_preset ......................   Passed    0.01 sec
+      Start 44: P06_H0_EDV_4threads_numeric_regression

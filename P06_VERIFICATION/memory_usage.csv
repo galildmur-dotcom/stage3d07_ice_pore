@@ -1,0 +1,11 @@
+mesh,variant,peak_rss_kb,source_log
+H0,baseline,70988,baseline_run.log
+H0,optimized,85412,H0_batch512_final.log
+H1,baseline,177460,H1_baseline.log
+H1,optimized,178548,H1_batch512_final.log
+H2,baseline,428548,H2_baseline.log
+H2,optimized,450064,H2_opt4_batch512.log
+H3,baseline,691160,H3_baseline.log
+H3,optimized,724332,H3_optimized.log
+H4,baseline,1380788,H4_baseline.log
+H4,optimized,1447128,H4_optimized.log

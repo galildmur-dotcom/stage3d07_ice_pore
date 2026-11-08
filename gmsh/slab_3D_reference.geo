@@ -1,0 +1,24 @@
+// G02-01 3D analytical cross-check: NO PORE, no B6, same SI materials and Robin.
+SetFactory("OpenCASCADE");
+Box(1)={-0.03,-0.03,0,0.06,0.06,0.05};
+eps=1e-6;
+ptop()   = Surface In BoundingBox{-0.03001,-0.03001,0.05-eps,0.03001,0.03001,0.05+eps};
+pbottom()= Surface In BoundingBox{-0.03001,-0.03001,-eps,0.03001,0.03001,eps};
+pxm()    = Surface In BoundingBox{-0.03-eps,-0.03001,-eps,-0.03+eps,0.03001,0.05001};
+pxp()    = Surface In BoundingBox{0.03-eps,-0.03001,-eps,0.03+eps,0.03001,0.05001};
+pym()    = Surface In BoundingBox{-0.03001,-0.03-eps,-eps,0.03001,-0.03+eps,0.05001};
+pyp()    = Surface In BoundingBox{-0.03001,0.03-eps,-eps,0.03001,0.03+eps,0.05001};
+Physical Volume("ICE_VOLUME",1)={1};
+Physical Surface("TOP_ROBIN",2)={ptop()};
+Physical Surface("BOTTOM_INSULATED",3)={pbottom()};
+Physical Surface("X_MINUS",4)={pxm()};
+Physical Surface("X_PLUS",5)={pxp()};
+Physical Surface("Y_MINUS",6)={pym()};
+Physical Surface("Y_PLUS",7)={pyp()};
+Mesh.MeshSizeMin=0.008;
+Mesh.MeshSizeMax=0.012;
+Mesh.MeshSizeExtendFromBoundary=0;
+Mesh.ElementOrder=2;
+Mesh.HighOrderOptimize=1;
+Mesh.MshFileVersion=2.2;
+Mesh.Binary=0;

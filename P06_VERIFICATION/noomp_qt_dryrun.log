@@ -1,0 +1,8 @@
+
+=== Stage3D06: Qt Creator native FEM run ===
+Mesh: H0, model: EDV_VAR, dt=300 s, tend=600 s, quadrature=3
+Source: "/mnt/data/Stage3D06P"
+Output: "/mnt/data/Stage3D06P/LOCAL_RUNS_OPTIMIZED/benchmark_optimized/H0_dt300_q3"
+Thermal exe: "/mnt/data/build_opt_noomp/stage3d02_thermal"
+Mechanical exe: "/mnt/data/build_opt_noomp/stage3d06_spatial"
+DRY RUN PASS: inputs and binaries exist; solvers were not executed.

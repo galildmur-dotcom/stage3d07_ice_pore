@@ -1,0 +1,85 @@
+Test project /mnt/data/refine_build/cmake
+      Start 28: G06_EDV_checkpoint_bitwise_resume
+      Start 26: G06_H0_E_smoke_900
+      Start 39: G06_QP_checkpoint_postprocess_consistency
+ 1/40 Test #39: G06_QP_checkpoint_postprocess_consistency ...   Passed    1.14 sec
+      Start 27: G06_H0_72_steps_and_legacy_parity
+ 2/40 Test #27: G06_H0_72_steps_and_legacy_parity ...........   Passed    0.90 sec
+      Start  2: G03_01_affine_patch
+ 3/40 Test #26: G06_H0_E_smoke_900 ..........................   Passed    2.26 sec
+      Start  7: G03_01_pure_free_expansion
+ 4/40 Test  #2: G03_01_affine_patch .........................   Passed    0.22 sec
+      Start  6: G03_01_free_rigid_modes
+ 5/40 Test  #6: G03_01_free_rigid_modes .....................   Passed    0.22 sec
+      Start  5: MAT_T04_same_temperature_reference
+ 6/40 Test  #7: G03_01_pure_free_expansion ..................   Passed    0.23 sec
+      Start  4: G03_01_Candidate_A_slab
+ 7/40 Test  #4: G03_01_Candidate_A_slab .....................   Passed    0.06 sec
+      Start  3: MAT_T05_heterogeneous_manufactured
+ 8/40 Test  #3: MAT_T05_heterogeneous_manufactured ..........   Passed    0.03 sec
+      Start 25: G05_temporal
+ 9/40 Test #25: G05_temporal ................................   Passed    0.01 sec
+      Start 29: G06_QT_native_launcher_dryrun
+10/40 Test #29: G06_QT_native_launcher_dryrun ...............   Passed    0.00 sec
+      Start 40: G06_REFINEMENT_H3_H4_PLAN
+11/40 Test #40: G06_REFINEMENT_H3_H4_PLAN ...................   Passed    0.00 sec
+      Start  1: MAT_T01_T02_T03_T06
+12/40 Test  #1: MAT_T01_T02_T03_T06 .........................   Passed    0.00 sec
+      Start  8: G04_reference
+13/40 Test  #8: G04_reference ...............................   Passed    0.00 sec
+      Start 32: G06_QT_H0_dt150_preset_dryrun
+14/40 Test #32: G06_QT_H0_dt150_preset_dryrun ...............   Passed    0.00 sec
+      Start 34: G06_QT_H1_dt150_preset_dryrun
+15/40 Test #34: G06_QT_H1_dt150_preset_dryrun ...............   Passed    0.00 sec
+      Start 11: G04_tangent
+16/40 Test #11: G04_tangent .................................   Passed    0.00 sec
+      Start 35: G06_QT_H1_dt75_preset_dryrun
+17/40 Test #35: G06_QT_H1_dt75_preset_dryrun ................   Passed    0.00 sec
+      Start 18: G05_tangent
+18/40 Test #18: G05_tangent .................................   Passed    0.00 sec
+      Start 30: G06_QT_H1_launcher_dryrun
+19/40 Test #30: G06_QT_H1_launcher_dryrun ...................   Passed    0.00 sec
+      Start  9: G04_relaxation
+20/40 Test  #9: G04_relaxation ..............................   Passed    0.00 sec
+      Start 19: G05_temperature
+21/40 Test #19: G05_temperature .............................   Passed    0.00 sec
+      Start 33: G06_QT_H0_dt75_preset_dryrun
+22/40 Test #33: G06_QT_H0_dt75_preset_dryrun ................   Passed    0.00 sec
+      Start 36: G06_QT_H2_dt150_preset_dryrun
+23/40 Test #36: G06_QT_H2_dt150_preset_dryrun ...............   Passed    0.00 sec
+      Start 38: G06_QT_H2_QP_post_dryrun
+24/40 Test  #5: MAT_T04_same_temperature_reference ..........   Passed    0.13 sec
+      Start 37: G06_QT_H1_QP_post_dryrun
+25/40 Test #38: G06_QT_H2_QP_post_dryrun ....................   Passed    0.00 sec
+      Start 24: G05_restart
+26/40 Test #37: G06_QT_H1_QP_post_dryrun ....................   Passed    0.00 sec
+      Start 14: G04_objectivity
+27/40 Test #24: G05_restart .................................   Passed    0.00 sec
+      Start 20: G05_energy
+28/40 Test #14: G04_objectivity .............................   Passed    0.00 sec
+      Start 22: G05_stress_control
+29/40 Test #20: G05_energy ..................................   Passed    0.00 sec
+      Start 15: G04_restart
+30/40 Test #22: G05_stress_control ..........................   Passed    0.00 sec
+      Start 16: G05_reference
+31/40 Test #15: G04_restart .................................   Passed    0.00 sec
+      Start 23: G05_limits
+32/40 Test #16: G05_reference ...............................   Passed    0.00 sec
+      Start 21: G05_objectivity
+33/40 Test #23: G05_limits ..................................   Passed    0.00 sec
+      Start 17: G05_implicit
+34/40 Test #21: G05_objectivity .............................   Passed    0.00 sec
+      Start 12: G04_temperature
+35/40 Test #17: G05_implicit ................................   Passed    0.00 sec
+      Start 10: G04_recovery
+36/40 Test #12: G04_temperature .............................   Passed    0.00 sec
+      Start 13: G04_energy
+37/40 Test #10: G04_recovery ................................   Passed    0.00 sec
+38/40 Test #13: G04_energy ..................................   Passed    0.00 sec
+39/40 Test #28: G06_EDV_checkpoint_bitwise_resume ...........   Passed   15.41 sec
+      Start 31: G06_QT_native_H0_E_chain
+40/40 Test #31: G06_QT_native_H0_E_chain ....................   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 40
+
+Total Test time (real) =  15.45 sec

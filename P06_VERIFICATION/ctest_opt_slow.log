@@ -1,0 +1,10 @@
+Internal ctest changing into directory: /mnt/data/build_opt_06
+Test project /mnt/data/build_opt_06
+    Start 28: G06_EDV_checkpoint_bitwise_resume
+1/2 Test #28: G06_EDV_checkpoint_bitwise_resume ...   Passed   13.37 sec
+    Start 31: G06_QT_native_H0_E_chain
+2/2 Test #31: G06_QT_native_H0_E_chain ............   Passed    2.12 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  15.50 sec

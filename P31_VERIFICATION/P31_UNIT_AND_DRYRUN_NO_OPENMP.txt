@@ -1,0 +1,14 @@
+Internal ctest changing into directory: /mnt/data/p3_work/build_p31_serial
+Test project /mnt/data/p3_work/build_p31_serial
+    Start 51: P3_MCSGS_small_1thread
+1/4 Test #51: P3_MCSGS_small_1thread ............   Passed    0.00 sec
+    Start 52: P3_MCSGS_parallel_large
+2/4 Test #52: P3_MCSGS_parallel_large ...........   Passed    0.00 sec
+    Start 53: P3_MCSGS_Tet10_adjacent_cliques
+3/4 Test #53: P3_MCSGS_Tet10_adjacent_cliques ...   Passed    0.00 sec
+    Start 57: P31_QT_H0_fast_dryrun
+4/4 Test #57: P31_QT_H0_fast_dryrun .............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.01 sec

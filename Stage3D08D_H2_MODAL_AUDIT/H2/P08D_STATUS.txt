@@ -1,0 +1,5 @@
+status=SUCCESS
+mesh=H2
+modes=R,tz,y20
+dt=300
+tend=3600

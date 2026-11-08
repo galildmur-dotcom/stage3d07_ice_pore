@@ -1,0 +1,7 @@
+platform,mesh,model,threads,preconditioner,trial,cg_iterations,pcg_total_s,precond_apply_s,step_wall_s
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs,1,347,0.922562687,0.707408704000001,1.909959537
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs,2,347,1.194604895,0.898103346,2.117010074
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs,3,347,1.143798463,0.841042306,2.026307851
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs-fast,1,347,0.948525585,0.665502527,1.765572106
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs-fast,2,347,1.00150314,0.717524425,1.887321063
+Linux GCC 14.2 Release,H0,EDV_VAR,4,mcsgs-fast,3,347,1.16829325,0.842179514,2.11972235

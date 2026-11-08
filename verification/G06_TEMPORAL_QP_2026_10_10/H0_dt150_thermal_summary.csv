@@ -1,0 +1,2 @@
+mesh,nodes,tet10,nnz,dt_s,t_end_s,xi,volume_m3,top_area_m2,min_detJ_m3,max_stiffness_partition_error,max_energy_balance_rel,max_pcg_residual_rel,max_pcg_iterations,uniform_err_K,wall_seconds
+H0.msh,10845,7388,294663,150,3600,0,0.0001799958151386905,0.003600000000000003,2.387081892275809e-11,8.738669510233166e-17,8.766904187863301e-12,4.98230415077027e-11,191,0,1.53299073

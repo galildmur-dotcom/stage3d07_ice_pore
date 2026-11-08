@@ -1,0 +1,4 @@
+Reading "H2.msh" n=70389 tets=50486
+Assembly nnz=1974393 min det=4.57636e-12 volume=0.000179996 top_area=0.0036 K1 mismatch=7.13405e-17
+step=1/1 t=300 top=-0.319332 avg=-0.1259 balance_rel=1.96076e-13 CG=381
+Finished "H2.msh" seconds=2.00646 uniformerr=0 max balance=1.96076e-13

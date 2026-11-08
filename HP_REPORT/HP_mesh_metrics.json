@@ -1,0 +1,29 @@
+[
+  {
+    "mesh": "HP.msh",
+    "nodes": 172031,
+    "tet10": 124641,
+    "pore_tri6": 4212,
+    "b6_tri6": 1176,
+    "pore_wall_nodes": 8426,
+    "pore_linear_area_m2": 1.2548001062371226e-05,
+    "pore_area_relative_deficit_linear": 0.0014618025006325475,
+    "pore_edge_median_mm": 0.08452153031284257,
+    "pore_edge_p90_mm": 0.08879855735161987,
+    "pore_edge_min_mm": 0.049612993384678554,
+    "pore_edge_max_mm": 0.1549986887004615,
+    "max_pore_radius_error_m": 5.204170427930421e-18,
+    "max_b6_radius_error_m": 1.0408340855860843e-17,
+    "sampled_positive_linear_jacobian_count": 4794,
+    "surface_tag_tri6": {
+      "2": 582,
+      "3": 582,
+      "4": 480,
+      "5": 480,
+      "6": 478,
+      "7": 478,
+      "8": 4212,
+      "9": 1176
+    }
+  }
+]

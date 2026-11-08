@@ -1,0 +1,29 @@
+
+=== Stage3D06: Qt Creator native FEM run ===
+Mesh: H0, model: EDV_VAR, dt=300 s, tend=300 s, quadrature=3
+SpMV: projected, preconditioner: mcsgs, threads: 4
+Source: "/mnt/data/p3_work/Stage3D06P2"
+Output: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p3_mcsgs/H0_dt300_q3"
+Thermal exe: "/mnt/data/p3_work/build/./stage3d02_thermal"
+Mechanical exe: "/mnt/data/p3_work/build/./stage3d06_spatial"
+[1/2] Calculating full thermal history...
+
+[RUN] stage3d02_thermal
+Reading "H0.msh" n=10845 tets=7388
+Assembly nnz=294663 min det=2.38708e-11 volume=0.000179996 top_area=0.0036 K1 mismatch=8.73867e-17
+step=1/1 t=300 top=-0.319327 avg=-0.125901 balance_rel=1.1403e-13 CG=211
+Finished "H0.msh" seconds=0.203433 uniformerr=0 max balance=1.1403e-13
+[2/2] Solving 3D quasistatic equilibrium (checkpoint resume ON)...
+
+[RUN] stage3d06_spatial
+P3 projected SpMV enabled with symmetric GS preconditioning; constrained CG vectors stay zero.
+mesh nodes=10845 tet=7388 q=27 hash=15620593449607464435
+EDV_VAR Newton 0 residual=114.736787 rel=1
+EDV_VAR Newton 1 residual=0.0170862062 rel=0.000148916548
+EDV_VAR Newton 2 residual=1.6218431e-09 rel=1.41353366e-11
+EDV VAR time=300 Newton=2 CG=347 residual=1.41353e-11 maxStress=0.133182 Psi6=0.000842899 PsiOmega=0.00117475 wall=1.89862
+
+SUCCESS. Mechanical data: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p3_mcsgs/H0_dt300_q3/mechanics"
+CSV summary: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p3_mcsgs/H0_dt300_q3/mechanics/G06_campaign.csv"
+ParaView VTU: "/mnt/data/p3_work/Stage3D06P2/LOCAL_RUNS_OPTIMIZED/benchmark_p3_mcsgs/H0_dt300_q3/mechanics/EDV_VAR"
+Qt Creator: close run or press Run again to resume/check completion.

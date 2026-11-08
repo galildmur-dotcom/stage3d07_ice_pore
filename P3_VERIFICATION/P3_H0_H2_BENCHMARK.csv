@@ -1,0 +1,4 @@
+mesh,law,modulus,dt_s,threads,spmv,preconditioner,parallel_assembly,cg_iterations,cg_total_s,preconditioner_apply_s,total_mechanical_wall_s,source
+H0,EDV,VAR,300,4,projected,jacobi,on,842,0.535027345,0.039793786,1.355282307,2026-10-14 Linux GCC 14.2 Release; one trial
+H2,EDV,VAR,300,4,projected,jacobi,on,1577,7.341823952,0.265417504,13.480425687,2026-10-14 Linux GCC 14.2 Release; one trial
+H0,EDV,VAR,300,4,projected,mcsgs,on,347,0.96438043,0.739873665,1.941848608,2026-10-14 Linux GCC 14.2 Release; one trial
