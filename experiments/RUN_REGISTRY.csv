@@ -1,0 +1,1 @@
+run_id,run_date,stage,mesh,model,temperature_model,gh_rule,dt_s,steps,geometry_mode,delta_um,git_commit,command_line,raw_path_G,archive_path_F,mesh_sha256,execution_status,verification_status,wall_s,notes
