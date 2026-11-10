@@ -1105,3 +1105,14 @@ add_test(NAME P10S_spatial_bins_selftest
 add_executable(stage3d10s_manifest_unit tests/stage3d10s_manifest_unit.cpp)
 target_include_directories(stage3d10s_manifest_unit PRIVATE src)
 add_test(NAME P10S_manifest_unit COMMAND stage3d10s_manifest_unit)
+
+# M02: explicit registration of completed Stage3D10S run manifests.
+# This target does not read FEM meshes or run numerical solvers.
+add_executable(ice3d_register_manifest tools/ice3d_register_manifest.cpp)
+if(MSVC)
+  target_compile_options(ice3d_register_manifest PRIVATE /O2 /W4)
+else()
+  target_compile_options(ice3d_register_manifest PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME ICE3D_registry_manifest_selftest
+  COMMAND ice3d_register_manifest --selftest)
