@@ -1065,11 +1065,25 @@ add_test(NAME P10R_radial_shell_selftest
 # Append once to the existing Stage3D07/CMakeLists.txt.
 # The modified P10P source in this package enables optional shell diagnostics
 # only when included by stage3d10s_spatial_partial.cpp.
+set(STAGE3D10S_GIT_COMMIT_AT_CONFIGURE "UNKNOWN")
+find_package(Git QUIET)
+if(GIT_FOUND)
+  execute_process(
+    COMMAND "${GIT_EXECUTABLE}" -C "${CMAKE_CURRENT_SOURCE_DIR}" rev-parse --verify HEAD
+    OUTPUT_VARIABLE STAGE3D10S_GIT_SHA_PROBE
+    RESULT_VARIABLE STAGE3D10S_GIT_PROBE_STATUS
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+    ERROR_QUIET)
+  if(STAGE3D10S_GIT_PROBE_STATUS EQUAL 0)
+    set(STAGE3D10S_GIT_COMMIT_AT_CONFIGURE "${STAGE3D10S_GIT_SHA_PROBE}")
+  endif()
+endif()
 add_executable(stage3d10s_spatial_partial src/stage3d10s_spatial_partial.cpp)
 target_include_directories(stage3d10s_spatial_partial PRIVATE
   src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
 target_compile_definitions(stage3d10s_spatial_partial PRIVATE
-  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}"
+  STAGE3D10S_GIT_COMMIT_AT_CONFIGURE="${STAGE3D10S_GIT_COMMIT_AT_CONFIGURE}")
 if(MSVC)
   target_compile_options(stage3d10s_spatial_partial PRIVATE /O2 /W4)
 else()
@@ -1087,3 +1101,7 @@ add_dependencies(stage3d10s_spatial_partial stage3d08_geometry)
 add_test(NAME P10S_spatial_bins_selftest
   COMMAND stage3d10s_spatial_partial --selftest)
 
+# Lightweight standalone manifest/sha256 tests: no mesh or FEM solve needed.
+add_executable(stage3d10s_manifest_unit tests/stage3d10s_manifest_unit.cpp)
+target_include_directories(stage3d10s_manifest_unit PRIVATE src)
+add_test(NAME P10S_manifest_unit COMMAND stage3d10s_manifest_unit)

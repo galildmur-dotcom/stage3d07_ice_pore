@@ -10,6 +10,10 @@
 #include <optional>
 #include <type_traits>
 
+#ifdef STAGE3D10S_SPATIAL_AUDIT
+#include "stage3d10s_run_manifest.hpp"
+#endif
+
 namespace p10n {
 namespace H=ice3d::p10l;
 namespace A=ice3d::p10c;
@@ -560,6 +564,11 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
                    base.mesh,volume_q(3).size()))/1073741824.<2.,
                "P10N final checkpoint >2 GiB");
  fs::create_directories(c.out);
+#ifdef STAGE3D10S_SPATIAL_AUDIT
+ ice3d::stage3d10s_manifest::RunManifest run_manifest(
+   c.out,c.mesh,deltas,c.dt,c.steps,c.mode,c.threads,c.cutoff_mm,
+   c.preflight,reuse,cache);
+#endif
  const auto pairs=build_pairs(c,base,deltas);
  base.temperatures=H::solve_forward(pairs.at(0).thermal,c.steps,double(c.dt));
  std::cout<<std::scientific<<std::setprecision(11)
@@ -579,6 +588,9 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
             <<" thermal_matrix_parity="<<parity<<'\n';
   }
   std::cout<<"P10N_PREFLIGHT_OK nonlinear_forward_solves=0\n";
+#ifdef STAGE3D10S_SPATIAL_AUDIT
+  run_manifest.complete(0);
+#endif
   return 0;
  }
  p10k::Forward nominal;
@@ -785,6 +797,9 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
      <<" max_mechanical_equilibrium_rel="<<worst_mech
      <<" max_thermal_equilibrium_rel="<<worst_heat
      <<" checkpoint_roundtrip_bitwise=1 wall_s="<<wall<<'\n';
+#ifdef STAGE3D10S_SPATIAL_AUDIT
+ run_manifest.complete(good?0:3);
+#endif
  return good?0:3;
 }
 } // namespace p10n

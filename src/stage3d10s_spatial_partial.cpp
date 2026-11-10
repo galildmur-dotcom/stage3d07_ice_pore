@@ -6,6 +6,7 @@
 
 int main(int argc,char**argv){
  try{
+  ice3d::stage3d10s_manifest::set_arguments(argc,argv);
   std::string delta_csv;
   fs::path reuse,cache;
   std::vector<char*> filtered{argv[0]};
