@@ -10,6 +10,10 @@
 #include <optional>
 #include <type_traits>
 
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+#include "stage3d10v_analytic_shape.hpp"
+#endif
+
 #ifdef STAGE3D10S_SPATIAL_AUDIT
 #include "stage3d10s_run_manifest.hpp"
 #endif
@@ -28,6 +32,9 @@ struct DeltaPair {
  double delta_um=0;
  p10k::Scenario plus,minus;
  H::Operator thermal;
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ std::vector<V> velocity;
+#endif
 };
 struct Partial {
  double mechanical=0,thermal=0,mechanical_eq=0,thermal_eq=0;
@@ -188,6 +195,19 @@ std::vector<double> parse_deltas(const std::string& csv){
 std::vector<DeltaPair> build_pairs(const p10k::Config& c,
                                    const p10k::Scenario& base,
                                    const std::vector<double>& deltas){
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ p10k::require(deltas.size()==1&&deltas.front()==0.,
+               "P10W requires one analytic direction, without delta");
+ DeltaPair p;
+ p.velocity=ice3d::p10v::velocity(base.mesh,c.mode,c.cutoff_mm);
+ p.thermal=H::assemble(base.mesh,p.velocity,double(c.dt));
+ p10k::require(p.thermal.max_ones_error<1e-7&&
+               p.thermal.max_directional_ones_error<1e-7,
+               "P10W thermal geometric operator identity failed");
+ std::vector<DeltaPair> result;
+ result.push_back(std::move(p));
+ return result;
+#else
  std::vector<DeltaPair> pairs;
  pairs.reserve(deltas.size());
  const auto mask=p10k::observation_elements(base.mesh);
@@ -225,6 +245,7 @@ std::vector<DeltaPair> build_pairs(const p10k::Config& c,
   pairs.push_back(std::move(p));
  }
  return pairs;
+#endif
 }
 
 #ifdef STAGE3D10S_SPATIAL_AUDIT
@@ -331,6 +352,12 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
   const A::Step state(base.mesh,quad,frame.temperature,frame.previous,
      double(c.dt),frame.repinned_u,pinned,Modulus::VAR,
      ice3d::p10b::Controls{true,true});
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+  // Differentiate the exact discrete QP operators once per time step.
+  // No +/- mesh construction and no finite-difference amplitude is used.
+  const auto analytic=ice3d::p10v::directional(base.mesh,quad,state,
+       pairs.front().velocity,mask,std::vector<F::Kind>(kinds.begin(),kinds.end()));
+#endif
   auto tangent=E::assemble_tangent_bcsr(base.mesh,state,topology);
   std::array<A::Output,3> adjoints;
   std::array<F::Sources,3> sources;
@@ -391,6 +418,28 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
   // The same adjoints and future history multipliers are reused for EVERY
   // delta.  No extra nonlinear solve, tangent assembly, or adjoint solve.
   for(size_t k=0;k<pairs.size();++k){
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+   for(size_t obs=0;obs<3;++obs){
+    auto& out=result[k][obs];
+    const double objective_term=weights[obs]*analytic.objective[obs];
+    double equilibrium_term=0.,history_term=0.;
+    for(size_t i=0;i<adjoints[obs].residual.size();++i)
+     equilibrium_term+=adjoints[obs].residual[i]*
+                       analytic.operator_change.residual[i];
+    for(size_t q=0;q<nq;++q)for(int a=0;a<6;++a){
+     history_term+=futures[obs][q].e_d[a]*
+                   analytic.operator_change.next[q].e_d[a];
+     history_term+=futures[obs][q].e_v[a]*
+                   analytic.operator_change.next[q].e_v[a];
+    }
+    out.objective_shape+=objective_term;
+    out.equilibrium_shape+=equilibrium_term;
+    out.history_shape+=history_term;
+    out.mechanical+=objective_term+equilibrium_term+history_term;
+    step_components.push_back({k,obs,n,objective_term,
+                               equilibrium_term,history_term});
+   }
+#else
    const auto& pair=pairs[k];
    const A::Step sp(pair.plus.mesh,quad,frame.temperature,frame.previous,
       double(c.dt),frame.repinned_u,pinned,Modulus::VAR,
@@ -474,6 +523,7 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
      spatial_rows.push_back({k,obs,b,n,local[b]});
 #endif
    }
+#endif // STAGE3D10W_ANALYTIC_SHAPE
   }
   for(size_t obs=0;obs<3;++obs){
    for(size_t i=0;i<nq;++i)for(int a=0;a<6;++a){
@@ -579,6 +629,11 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
     <<" deltas="<<deltas.size()<<" history_gib="<<held
     <<" state_buffers_gib="<<buffers<<'\n'<<std::flush;
  if(c.preflight){
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+  std::cout<<"P10W_PREFLIGHT_OK mode="<<c.mode
+           <<" geometry_partial=ANALYTIC_TET10"
+           <<" mechanical_forward_solves=0 central_fd_evaluations=0\n";
+#else
   for(size_t k=0;k<pairs.size();++k){
    const double parity=p10l::geometry_tangent_parity(
      pairs[k].thermal,pairs[k].plus.mesh,pairs[k].minus.mesh,
@@ -588,6 +643,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
             <<" thermal_matrix_parity="<<parity<<'\n';
   }
   std::cout<<"P10N_PREFLIGHT_OK nonlinear_forward_solves=0\n";
+#endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
   run_manifest.complete(0);
 #endif
@@ -626,10 +682,24 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
 #endif
  const double wall=std::chrono::duration<double>(
       std::chrono::steady_clock::now()-start).count();
- std::ofstream csv(c.out/"P10N_DELTA_SCAN.csv");
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ constexpr const char* gradient_file="P10W_ANALYTIC_ADJOINT.csv";
+ constexpr const char* component_file="P10W_COMPONENTS.csv";
+ constexpr const char* time_file="P10W_STEP_COMPONENTS.csv";
+ constexpr const char* method_column="geometry_derivative_method,";
+ constexpr const char* method_value="ANALYTIC_TET10,";
+#else
+ constexpr const char* gradient_file="P10N_DELTA_SCAN.csv";
+ constexpr const char* component_file="P10P_PARTIAL_COMPONENTS.csv";
+ constexpr const char* time_file="P10P_STEP_COMPONENTS.csv";
+ constexpr const char* method_column="";
+ constexpr const char* method_value="";
+#endif
+ std::ofstream csv(c.out/gradient_file);
  p10k::require(bool(csv),"P10N CSV creation failed");
  csv<<"mesh,nodes,tet10,pore_tri6,pore_median_edge_mm,B6_volume_m3,"
-       "dt_s,steps,horizon_s,delta_um,mode,law,modulus,functional,objective,"
+       "dt_s,steps,horizon_s,delta_um,mode,"<<method_column<<
+       "law,modulus,functional,objective,"
        "mechanical_partial_per_m,thermal_adjoint_per_m,total_adjoint_per_m,"
        "mechanical_equilibrium_rel,thermal_equilibrium_rel,thermal_CG_iterations,"
        "history_gib,wall_s,forward_solve_count,adjoint_solve_count\n";
@@ -641,7 +711,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
   csv<<c.mesh.stem().string()<<','<<base.mesh.nodes.size()<<','
       <<base.mesh.tets.size()<<','<<pore_faces<<','<<hedge*1e3<<','<<vb6<<','
       <<c.dt<<','<<c.steps<<','<<c.steps*c.dt<<','<<pairs[k].delta_um<<','
-      <<c.mode<<",EDV,VAR,"<<names[obs]<<','<<nominal.objective[obs]<<','
+      <<c.mode<<','<<method_value<<"EDV,VAR,"<<names[obs]<<','<<nominal.objective[obs]<<','
       <<g.mechanical<<','<<g.thermal<<','<<g.mechanical+g.thermal<<','
       <<g.mechanical_eq<<','<<g.thermal_eq<<','<<g.thermal_cg<<','
       <<held<<','<<wall<<','<<(reuse.empty()?1:0)<<','<<c.steps*3<<'\n';
@@ -649,9 +719,9 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
   worst_heat=std::max(worst_heat,g.thermal_eq);
  }
  csv.close();p10k::require(bool(csv),"P10N CSV write failed");
- std::ofstream part(c.out/"P10P_PARTIAL_COMPONENTS.csv");
+ std::ofstream part(c.out/component_file);
  p10k::require(bool(part),"P10P components CSV creation failed");
- part<<"mesh,delta_um,mode,functional,objective,"
+ part<<"mesh,delta_um,mode,"<<method_column<<"functional,objective,"
         "explicit_objective_shape_per_m,equilibrium_residual_shape_per_m,"
         "internal_history_shape_per_m,total_mechanical_shape_per_m,"
         "thermal_adjoint_per_m,total_adjoint_per_m,"
@@ -669,7 +739,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
   worst_partition_rel=std::max(worst_partition_rel,error/scale);
   p10k::require(error<1.e-9*scale,
                 "P10P algebraic partition differs from P10N mechanical partial");
-  part<<c.mesh.stem().string()<<','<<pairs[k].delta_um<<','<<c.mode<<','
+  part<<c.mesh.stem().string()<<','<<pairs[k].delta_um<<','<<c.mode<<','<<method_value
       <<names[obs]<<','<<nominal.objective[obs]<<','
       <<g.objective_shape<<','<<g.equilibrium_shape<<','<<g.history_shape<<','
       <<g.mechanical<<','<<g.thermal<<','<<g.mechanical+g.thermal<<','
@@ -677,17 +747,17 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
       <<error<<'\n';
  }
  part.close();p10k::require(bool(part),"P10P components CSV write failed");
- std::ofstream steps_csv(c.out/"P10P_STEP_COMPONENTS.csv");
+ std::ofstream steps_csv(c.out/time_file);
  p10k::require(bool(steps_csv),"P10P step CSV creation failed");
- steps_csv<<"mesh,delta_um,time_step,time_s,functional,"
+ steps_csv<<"mesh,delta_um,time_step,time_s,functional,"<<method_column<<
             "explicit_objective_shape_per_m,equilibrium_residual_shape_per_m,"
             "internal_history_shape_per_m,total_mechanical_shape_per_m\n";
  steps_csv<<std::setprecision(17);
  for(const auto& row:step_components){
   const double sum=row.objective+row.equilibrium+row.history;
   steps_csv<<c.mesh.stem().string()<<','<<pairs[row.delta_index].delta_um
-           <<','<<row.step<<','<<row.step*c.dt<<','<<names[row.observable]
-           <<','<<row.objective<<','<<row.equilibrium<<','<<row.history
+           <<','<<row.step<<','<<row.step*c.dt<<','<<names[row.observable]<<','<<method_value
+           <<row.objective<<','<<row.equilibrium<<','<<row.history
            <<','<<sum<<'\n';
  }
  steps_csv.close();p10k::require(bool(steps_csv),"P10P step CSV write failed");
@@ -781,13 +851,29 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
    <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
    <<" mechanical_adjoint_solves="<<c.steps*3<<'\n'<<std::flush;
 #endif
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ std::cout<<"P10W_COMPONENT_AUDIT_OK mesh="<<c.mesh.stem().string()
+#else
  std::cout<<"P10P_COMPONENT_AUDIT_OK mesh="<<c.mesh.stem().string()
+#endif
           <<" deltas="<<pairs.size()<<" steps="<<c.steps
           <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
           <<" mechanical_adjoint_solves="<<c.steps*3
           <<" worst_component_partition_rel="<<worst_partition_rel
           <<" step_component_rows="<<step_components.size()<<'\n'<<std::flush;
  const bool good=worst_mech<1e-6&&worst_heat<1e-7;
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ std::cout<<(good?"P10W_ANALYTIC_ADJOINT_OK":"P10W_ANALYTIC_ADJOINT_FAIL")
+     <<" mesh="<<c.mesh.stem().string()<<" mode="<<c.mode
+     <<" steps="<<c.steps<<" dt="<<c.dt
+     <<" geometry_partial=ANALYTIC_TET10"
+     <<" central_fd_evaluations=0"
+     <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
+     <<" mechanical_adjoint_solves="<<c.steps*3
+     <<" max_mechanical_equilibrium_rel="<<worst_mech
+     <<" max_thermal_equilibrium_rel="<<worst_heat
+     <<" checkpoint_roundtrip_bitwise=1 wall_s="<<wall<<'\n';
+#else
  std::cout<<(good?"P10N_DELTA_SCAN_OK":"P10N_DELTA_SCAN_FAIL")
      <<" mesh="<<c.mesh.stem().string()<<" deltas="<<deltas.size()
      <<" steps="<<c.steps<<" dt="<<c.dt
@@ -797,6 +883,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
      <<" max_mechanical_equilibrium_rel="<<worst_mech
      <<" max_thermal_equilibrium_rel="<<worst_heat
      <<" checkpoint_roundtrip_bitwise=1 wall_s="<<wall<<'\n';
+#endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
  run_manifest.complete(good?0:3);
 #endif

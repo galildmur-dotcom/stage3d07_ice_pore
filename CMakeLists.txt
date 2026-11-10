@@ -1106,6 +1106,43 @@ add_executable(stage3d10s_manifest_unit tests/stage3d10s_manifest_unit.cpp)
 target_include_directories(stage3d10s_manifest_unit PRIVATE src)
 add_test(NAME P10S_manifest_unit COMMAND stage3d10s_manifest_unit)
 
+# Stage3D10V: analytic curved-Tet10 geometry derivatives at fixed EDV state.
+# This is an independent, tiny reference-element test, not a production solve.
+add_executable(stage3d10v_analytic_shape_unit
+  tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10v_analytic_shape_unit PRIVATE src)
+if(MSVC)
+ target_compile_options(stage3d10v_analytic_shape_unit PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10v_analytic_shape_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10V_Tet10_analytic_shape_derivatives
+  COMMAND stage3d10v_analytic_shape_unit)
+
+# Stage3D10W: one full EDV_VAR transient adjoint with analytic geometric
+# partials. P10N/P/S retain their old finite-difference reference behavior.
+add_executable(stage3d10w_analytic_adjoint
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10w_analytic_adjoint PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10w_analytic_adjoint PRIVATE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+ target_compile_options(stage3d10w_analytic_adjoint PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10w_analytic_adjoint PRIVATE
+   -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10w_analytic_adjoint PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+ target_sources(stage3d10w_analytic_adjoint PRIVATE src/win_process_memory.cpp)
+ target_link_libraries(stage3d10w_analytic_adjoint PRIVATE Psapi)
+endif()
+add_test(NAME P10W_analytic_adjoint_selftest
+  COMMAND stage3d10w_analytic_adjoint --selftest)
+
 # M02: explicit registration of completed Stage3D10S run manifests.
 # This target does not read FEM meshes or run numerical solvers.
 add_executable(ice3d_register_manifest tools/ice3d_register_manifest.cpp)
