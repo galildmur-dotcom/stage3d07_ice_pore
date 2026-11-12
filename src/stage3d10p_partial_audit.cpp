@@ -355,8 +355,14 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
 #ifdef STAGE3D10W_ANALYTIC_SHAPE
   // Differentiate the exact discrete QP operators once per time step.
   // No +/- mesh construction and no finite-difference amplitude is used.
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+  // For P10Y, wait for the three adjoints so each QP's exact residual
+  // derivative can be contracted directly into its physical radial shell.
+  ice3d::p10v::Derivative analytic;
+#else
   const auto analytic=ice3d::p10v::directional(base.mesh,quad,state,
        pairs.front().velocity,mask,std::vector<F::Kind>(kinds.begin(),kinds.end()));
+#endif
 #endif
   auto tangent=E::assemble_tangent_bcsr(base.mesh,state,topology);
   std::array<A::Output,3> adjoints;
@@ -414,6 +420,14 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
     heat_sources[obs][std::size_t(n)][i]=
        pullbacks[obs].temperature[i]+weights[obs]*sources[obs].temperature[i];
   }
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+  const ice3d::p10v::ShellAudit shell_audit{
+   shells,{&adjoints[0].residual,&adjoints[1].residual,
+           &adjoints[2].residual},spatial::bins};
+  analytic=ice3d::p10v::directional(base.mesh,quad,state,
+      pairs.front().velocity,mask,
+      std::vector<F::Kind>(kinds.begin(),kinds.end()),&shell_audit);
+#endif
 
   // The same adjoints and future history multipliers are reused for EVERY
   // delta.  No extra nonlinear solve, tangent assembly, or adjoint solve.
@@ -438,6 +452,27 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
     out.mechanical+=objective_term+equilibrium_term+history_term;
     step_components.push_back({k,obs,n,objective_term,
                                equilibrium_term,history_term});
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    std::array<spatial::Components,spatial::bins> local{};
+    for(std::size_t bin=0;bin<spatial::bins;++bin){
+     local[bin].objective=weights[obs]*analytic.objective_by_shell[obs][bin];
+     local[bin].equilibrium=analytic.equilibrium_by_shell[obs][bin];
+    }
+    for(std::size_t q=0;q<nq;++q){
+     double h=0.;
+     for(int a=0;a<6;++a){
+      h+=futures[obs][q].e_d[a]*
+                     analytic.operator_change.next[q].e_d[a];
+      h+=futures[obs][q].e_v[a]*
+                     analytic.operator_change.next[q].e_v[a];
+     }
+     local[shells[q]].history+=h;
+    }
+    spatial::verify_partition(local,
+       {objective_term,equilibrium_term,history_term},n,obs,k);
+    for(std::size_t bin=0;bin<spatial::bins;++bin)
+     spatial_rows.push_back({k,obs,bin,n,local[bin]});
+#endif
    }
 #else
    const auto& pair=pairs[k];
@@ -765,9 +800,18 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
  p10k::require(spatial_rows.size()==deltas.size()*3*
               std::size_t(c.steps)*spatial::bins,
               "P10S unexpected number of per-shell rows");
- std::ofstream shell_csv(c.out/"P10S_STEP_SHELL_COMPONENTS.csv");
- std::ofstream summary_csv(c.out/"P10S_SHELL_SUMMARY.csv");
- std::ofstream audit_csv(c.out/"P10S_PARTITION_AUDIT.csv");
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ constexpr const char* shell_name="P10Y_STEP_SHELL_COMPONENTS.csv";
+ constexpr const char* summary_name="P10Y_SHELL_SUMMARY.csv";
+ constexpr const char* audit_name="P10Y_PARTITION_AUDIT.csv";
+#else
+ constexpr const char* shell_name="P10S_STEP_SHELL_COMPONENTS.csv";
+ constexpr const char* summary_name="P10S_SHELL_SUMMARY.csv";
+ constexpr const char* audit_name="P10S_PARTITION_AUDIT.csv";
+#endif
+ std::ofstream shell_csv(c.out/shell_name);
+ std::ofstream summary_csv(c.out/summary_name);
+ std::ofstream audit_csv(c.out/audit_name);
  p10k::require(bool(shell_csv)&&bool(summary_csv)&&bool(audit_csv),
                "P10S cannot write CSV diagnostics");
  for(auto* csv:{&shell_csv,&summary_csv,&audit_csv})
@@ -844,7 +888,13 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
  for(auto* csv:{&shell_csv,&summary_csv,&audit_csv}){
   csv->close();p10k::require(bool(*csv),"P10S incomplete CSV write");
  }
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ std::cout<<"P10Y_ANALYTIC_SHELL_PARTITION_OK mesh="<<c.mesh.stem().string()
+   <<" geometry_partial=ANALYTIC_TET10 central_fd_evaluations=0"
+   <<" thermal_shape_by_shell=NOT_INCLUDED"
+#else
  std::cout<<"P10S_SPATIAL_PARTITION_OK mesh="<<c.mesh.stem().string()
+#endif
    <<" deltas="<<deltas.size()<<" steps="<<c.steps
    <<" bins="<<spatial::bins<<" step_shell_rows="<<spatial_rows.size()
    <<" worst_partition_rel="<<spatial_worst

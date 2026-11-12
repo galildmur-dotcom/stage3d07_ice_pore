@@ -171,7 +171,11 @@ class RunManifest {
     if (!file) throw std::runtime_error("Cannot create RUN_MANIFEST.json.tmp");
     file << "{\n  \"schema_version\": 1,\n"
          << "  \"run_id\": " << json_string(out_.filename().string()) << ",\n"
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+         << "  \"program\": \"stage3d10y_analytic_shell_audit\",\n"
+#else
          << "  \"program\": \"stage3d10s_spatial_partial\",\n"
+#endif
          << "  \"status\": " << json_string(status) << ",\n"
          << "  \"started_at_utc\": " << json_string(started_) << ",\n"
          << "  \"updated_at_utc\": " << json_string(utc_now()) << ",\n"
@@ -213,9 +217,15 @@ class RunManifest {
       file << json_string(arguments()[i]);
     }
     file << "],\n  \"produced_files\": [";
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    constexpr std::array<const char*, 6> expected{{
+       "P10N_DELTA_SCAN.csv", "P10P_PARTIAL_COMPONENTS.csv", "P10P_STEP_COMPONENTS.csv",
+       "P10Y_PARTITION_AUDIT.csv", "P10Y_SHELL_SUMMARY.csv", "P10Y_STEP_SHELL_COMPONENTS.csv"}};
+#else
     constexpr std::array<const char*, 6> expected{{
        "P10N_DELTA_SCAN.csv", "P10P_PARTIAL_COMPONENTS.csv", "P10P_STEP_COMPONENTS.csv",
        "P10S_PARTITION_AUDIT.csv", "P10S_SHELL_SUMMARY.csv", "P10S_STEP_SHELL_COMPONENTS.csv"}};
+#endif
     bool first = true;
     for (const auto* filename : expected) {
       if (fs::is_regular_file(out_ / filename)) {

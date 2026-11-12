@@ -60,13 +60,31 @@ struct Derivative {
  p10c::Output operator_change; // dR/dshape, dPhi/dshape at frozen state
  std::vector<double> objective; // normalized spatial dJ/dshape for each kind
  double observed_volume=0.,observed_volume_derivative=0.;
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ // Only the diagnostic target stores a shell decomposition. Production P10W
+ // retains its original memory use and exactly the same numerical path.
+ std::vector<std::vector<double>> objective_by_shell;
+ std::vector<std::vector<double>> equilibrium_by_shell;
+#endif
 };
+
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+struct ShellAudit {
+ const std::vector<std::uint8_t>& qp_shells;
+ std::vector<const std::vector<double>*> adjoints;
+ std::size_t bin_count=0;
+};
+#endif
 
 inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
                               const p10c::Step& step,
                               const std::vector<V>& nodal_velocity,
                               const std::vector<uint8_t>& observation_mask,
-                              const std::vector<p10f::Kind>& kinds){
+                              const std::vector<p10f::Kind>& kinds
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+                              ,const ShellAudit* shell_audit=nullptr
+#endif
+                              ){
  if(nodal_velocity.size()!=mesh.nodes.size() ||
     observation_mask.size()!=mesh.tets.size() ||
     step.qps.size()!=mesh.tets.size()*quad.size() ||
@@ -77,6 +95,24 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
  out.operator_change.next.resize(step.qps.size());
  out.objective.assign(kinds.size(),0.);
  std::vector<double> numerator(kinds.size(),0.),d_numerator(kinds.size(),0.);
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ std::vector<double> shell_dvolume;
+ std::vector<std::vector<double>> shell_dnumerator;
+ if(shell_audit){
+  if(shell_audit->qp_shells.size()!=step.qps.size() ||
+     shell_audit->adjoints.size()!=kinds.size() ||
+     shell_audit->bin_count==0)
+   throw std::invalid_argument("P10Y: invalid shell audit dimensions");
+  for(const auto* a:shell_audit->adjoints)
+   if(!a || a->size()!=step.u.size())
+    throw std::invalid_argument("P10Y: invalid adjoint dimensions");
+  out.objective_by_shell.assign(kinds.size(),
+                      std::vector<double>(shell_audit->bin_count,0.));
+  out.equilibrium_by_shell=out.objective_by_shell;
+  shell_dnumerator=out.objective_by_shell;
+  shell_dvolume.assign(shell_audit->bin_count,0.);
+ }
+#endif
 
  for(size_t e=0;e<mesh.tets.size();++e){
   const auto& ids=mesh.tets[e];
@@ -84,6 +120,14 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
    const auto qid=e*quad.size()+iq;
    const auto& b=quad[iq];
    const auto& qp=step.qps[qid];
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+   std::size_t bin=0;
+   if(shell_audit){
+    bin=shell_audit->qp_shells[qid];
+    if(bin>=shell_audit->bin_count)
+     throw std::invalid_argument("P10Y: QP shell index out of range");
+   }
+#endif
    V dr{},ds{},dt{},d_dr{},d_ds{},d_dt{};
    for(int a=0;a<10;++a){
     const V x=mesh.nodes[ids[a]],v=nodal_velocity[ids[a]];
@@ -118,14 +162,23 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
    for(int a=0;a<30;++a){
     const int global=3*ids[a/3]+a%3;
     if(step.constrained[global])continue;
-    out.operator_change.residual[global]+=
+    const double local_change=
       dv*edv::dot(qp.B[a],qp.law.response.sigma)+
       qp.volume*(edv::dot(dB[a],qp.law.response.sigma)+
                  edv::dot(qp.B[a],law.d_sigma));
+    out.operator_change.residual[global]+=local_change;
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    if(shell_audit)for(std::size_t k=0;k<kinds.size();++k)
+     out.equilibrium_by_shell[k][bin]+=
+         (*shell_audit->adjoints[k])[global]*local_change;
+#endif
    }
    if(!observation_mask[e])continue;
    out.observed_volume+=qp.volume;
    out.observed_volume_derivative+=dv;
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+   if(shell_audit)shell_dvolume[bin]+=dv;
+#endif
    for(size_t k=0;k<kinds.size();++k){
     const auto src=p10f::point_source(qp,kinds[k]);
     const double d_point=p10b::euclid_dot(src.lambda_sigma,law.d_sigma)+
@@ -134,6 +187,11 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
         p10b::euclid_dot(src.direct_strain,deps);
     numerator[k]+=qp.volume*src.value;
     d_numerator[k]+=dv*src.value+qp.volume*d_point;
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    if(shell_audit){
+     shell_dnumerator[k][bin]+=dv*src.value+qp.volume*d_point;
+    }
+#endif
    }
   }
  }
@@ -143,6 +201,12 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
   const double average=numerator[k]/out.observed_volume;
   out.objective[k]=(d_numerator[k]-
          average*out.observed_volume_derivative)/out.observed_volume;
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+  if(shell_audit)for(std::size_t bin=0;bin<shell_audit->bin_count;++bin)
+   out.objective_by_shell[k][bin]=
+      (shell_dnumerator[k][bin]-average*shell_dvolume[bin])/
+       out.observed_volume;
+#endif
  }
  return out;
 }

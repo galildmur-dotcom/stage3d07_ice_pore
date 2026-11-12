@@ -6,12 +6,19 @@
 
 int main(int argc,char** argv){
  try{
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+  ice3d::stage3d10s_manifest::set_arguments(argc,argv);
+#endif
   std::vector<char*> filtered{argv[0]};
   fs::path reuse,cache;
   bool explicit_mesh=false,explicit_out=false;
   for(int i=1;i<argc;++i){
    const std::string arg=argv[i];
    if(arg=="--help"){
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    std::cout<<"stage3d10y_analytic_shell_audit: exact P10W derivative"
+     " by physical radial Gauss-point shells. Thermal partial remains global.\n";
+#endif
     std::cout<<"stage3d10w_analytic_adjoint --mesh MSH --out NEW_DIR "
      "--steps 6 --dt 150 --mode R|tz|y20 --cutoff-mm 5 "
      "[--threads 4] [--preflight] [--reuse-forward BIN] "
@@ -40,12 +47,24 @@ int main(int argc,char** argv){
   omp_set_dynamic(0);omp_set_num_threads(c.threads);
 #endif
   if(c.selftest){
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+   p10k::require(p10n::spatial::shell(-1.e-6)==0 &&
+     p10n::spatial::shell(.019999)==0 &&
+     p10n::spatial::shell(.02)==1 &&
+     p10n::spatial::shell(.1)==3 &&
+     p10n::spatial::shell(15.)==9,
+     "P10Y radial shell boundaries");
+#endif
    const int result=p10i::run_tests();
    // This tests the inherited reverse solver, not the new analytic coupling.
    // P10V has its own directional-derivative unit test.  Full-gradient
    // verification still requires independent H0 P10N finite differences.
    if(result==0)std::cout<<"P10W_DEPENDENCY_SELFTEST_OK"
                           " analytic_coupling_verified=0\n";
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+   if(result==0)std::cout<<"P10Y_SHELL_BINS_SELFTEST_OK bins="
+                          <<p10n::spatial::bins<<'\n';
+#endif
    return result;
   }
   p10k::require(explicit_mesh&&explicit_out,

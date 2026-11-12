@@ -1143,6 +1143,44 @@ endif()
 add_test(NAME P10W_analytic_adjoint_selftest
   COMMAND stage3d10w_analytic_adjoint --selftest)
 
+# Stage3D10Y: the same exact P10W Tet10 geometric derivative, now apportioned
+# by Gauss-point radius. The original P10W and the FD-based P10S are unchanged.
+add_executable(stage3d10y_analytic_shell_audit
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10y_analytic_shell_audit PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10y_analytic_shell_audit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+ target_compile_options(stage3d10y_analytic_shell_audit PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10y_analytic_shell_audit PRIVATE
+   -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+ target_link_libraries(stage3d10y_analytic_shell_audit PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+ target_sources(stage3d10y_analytic_shell_audit PRIVATE src/win_process_memory.cpp)
+ target_link_libraries(stage3d10y_analytic_shell_audit PRIVATE Psapi)
+endif()
+add_test(NAME P10Y_analytic_shell_selftest
+  COMMAND stage3d10y_analytic_shell_audit --selftest)
+add_executable(stage3d10y_analytic_shell_unit
+  tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10y_analytic_shell_unit PRIVATE src)
+target_compile_definitions(stage3d10y_analytic_shell_unit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT)
+if(MSVC)
+ target_compile_options(stage3d10y_analytic_shell_unit PRIVATE /O2 /W4)
+else()
+ target_compile_options(stage3d10y_analytic_shell_unit PRIVATE
+   -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10Y_analytic_shell_partition_unit
+  COMMAND stage3d10y_analytic_shell_unit)
+
 # M02: explicit registration of completed Stage3D10S run manifests.
 # This target does not read FEM meshes or run numerical solvers.
 add_executable(ice3d_register_manifest tools/ice3d_register_manifest.cpp)

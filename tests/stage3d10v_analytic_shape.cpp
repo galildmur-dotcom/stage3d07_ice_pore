@@ -124,6 +124,42 @@ int main(){try{
                                       ice3d::p10b::Modulus::VAR}){
    const Step baseline(mesh,quad,T,old,150.,u,bc,modulus,flags);
    const auto exact=ice3d::p10v::directional(mesh,quad,baseline,vel,mask,kinds);
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+   // Verify exact QP shell reconstruction independently of the production
+   // transient solver. Alternate bins within each curved Tet10 element.
+   std::vector<std::uint8_t> shells(baseline.qps.size());
+   for(std::size_t q=0;q<shells.size();++q)shells[q]=q%2;
+   std::vector<std::vector<double>> lambdas(kinds.size(),
+                                      std::vector<double>(u.size()));
+   std::vector<const std::vector<double>*> adjoints;
+   for(std::size_t k=0;k<kinds.size();++k){
+    for(std::size_t i=0;i<u.size();++i)
+     lambdas[k][i]=1.e4*std::sin(.4*double(i+1)+double(k));
+    adjoints.push_back(&lambdas[k]);
+   }
+   const ice3d::p10v::ShellAudit audit{shells,adjoints,2};
+   const auto split=ice3d::p10v::directional(mesh,quad,baseline,
+                                              vel,mask,kinds,&audit);
+   check(error_vector(split.operator_change.residual,
+                      exact.operator_change.residual)<1.e-13,
+         "shell audit modified global residual derivative");
+   for(std::size_t k=0;k<kinds.size();++k){
+    const auto& obj=split.objective_by_shell[k];
+    const auto& eq=split.equilibrium_by_shell[k];
+    const double reconstructed=obj[0]+obj[1];
+    check(std::abs(reconstructed-exact.objective[k])<=
+          1.e-8*std::max({1.e-12,std::abs(obj[0]),std::abs(obj[1]),
+                           std::abs(exact.objective[k])}),
+          "normalized objective shell partition");
+    double global_eq=0.;
+    for(std::size_t i=0;i<u.size();++i)
+     global_eq+=lambdas[k][i]*exact.operator_change.residual[i];
+    check(std::abs(eq[0]+eq[1]-global_eq)<=
+          1.e-12*std::max({1.e-12,std::abs(eq[0]),std::abs(eq[1]),
+                           std::abs(global_eq)}),
+          "adjoint equilibrium shell partition");
+   }
+#endif
    for(const double h:std::array{2.e-6,1.e-6,5.e-7}){
     const auto mp=shifted(mesh,vel,h),mm=shifted(mesh,vel,-h);
     const Step plus(mp,quad,T,old,150.,u,bc,modulus,flags);
@@ -156,6 +192,9 @@ int main(){try{
  check(max_h<2e-4,"analytic EDV history vs independent FD");
  check(max_j<2e-4,"analytic normalized functional vs independent FD");
  std::cout<<"P10V_ANALYTIC_SHAPE_UNIT_OK\n";
+#ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ std::cout<<"P10Y_ANALYTIC_SHELL_UNIT_OK models=6 functionals=4 bins=2\n";
+#endif
  return 0;
 }catch(const std::exception& e){
  std::cerr<<"P10V_ANALYTIC_SHAPE_UNIT_FAIL "<<e.what()<<'\n';
