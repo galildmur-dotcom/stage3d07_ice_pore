@@ -1,0 +1,3 @@
+# Stable LF-delimited compact CSV. SVG is a generated vector graphic.
+*.csv text eol=lf
+figures/*.svg binary
