@@ -1,0 +1,4 @@
+# Preserve original audit CSV, Windows CRLF logs and generated SVG byte-for-byte.
+*.csv -text -diff
+*.svg -text -diff
+*.txt -text -diff
