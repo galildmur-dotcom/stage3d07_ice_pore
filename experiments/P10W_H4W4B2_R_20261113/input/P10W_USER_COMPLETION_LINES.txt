@@ -1,0 +1,2 @@
+P10W_COMPONENT_AUDIT_OK mesh=H4W4B2 deltas=1 steps=6 nonlinear_forward_solves=1 mechanical_adjoint_solves=18 worst_component_partition_rel=1.01658635981e-16 step_component_rows=18
+P10W_ANALYTIC_ADJOINT_OK mesh=H4W4B2 mode=R steps=6 dt=150 geometry_partial=ANALYTIC_TET10 central_fd_evaluations=0 nonlinear_forward_solves=1 mechanical_adjoint_solves=18 max_mechanical_equilibrium_rel=1.04194342337e-08 max_thermal_equilibrium_rel=4.96971323760e-11 checkpoint_roundtrip_bitwise=1 wall_s=1.43425128127e+04

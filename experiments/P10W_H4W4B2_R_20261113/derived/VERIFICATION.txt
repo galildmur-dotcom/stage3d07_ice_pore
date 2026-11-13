@@ -1,0 +1,16 @@
+P10W H4W4B2 evidence checks (generated on 2026-11-13)
+Original CSV #1 sha256: 64caac9d71cc46753debeb3503d13fd62d851655da78237fe27311f8d9bbf140
+Original CSV #2 sha256: 91a76f79d74e1a4b18fd8ed4acdffd8fb4e1d7dce3fc83979b269788935aeacf
+Rows checked: 3 in each file
+Matching functionals: j6,jpeak,jen
+Objective, total, thermal: exact textual-value comparison of same Decimal values between CSV: PASS
+Mechanical + thermal == total within 1e-14 1/m: PASS
+Explicit + equilibrium + EDV history == mechanical within 1e-13 1/m: PASS
+P10W component error < 1e-12 1/m: PASS
+Reported P10W max mechanical equilibrium rel: 1.04194342337e-08
+Reported P10W max thermal equilibrium rel: 4.96971323760e-11
+Reported P10W checkpoint_roundtrip_bitwise: 1
+Reported P10W wall_s: 14342.5128127
+RUN_MANIFEST.json absent: expected for P10W implementation in archived protocol (not generated in original program); do not fabricate it.
+Git commit / exe hash / mesh file hash: NOT VERIFIED for this actual calculation.
+Validation of exact discrete derivative vs FD, spatial convergence, measured peak RAM: NOT established by these checks.
