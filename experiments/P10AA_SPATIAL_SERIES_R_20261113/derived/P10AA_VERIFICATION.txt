@@ -1,0 +1,7 @@
+P10AA_CONSISTENCY_OK 7_meshes=1 functionals=3 rows=21 transitions=7
+P10AA_LAST_H4W4B2_PRIMARY_MATCH_OK objective_and_derivative=1 analytic_tet10=1
+P10AA_JPEAK_WALL_DELTAS  H4_to_H4W2=0.0283995335546243 H4W2_to_H4W4B2=0.00364805413880509 ratio=7.784844324
+P10AA_JPEAK_BULK_DELTA  H4W2_to_H4W2B20=-6.99809375603877e-05 wall_to_bulk_abs_ratio=52.129254994
+P10AA_JPEAK_COMPONENT_DELTA_SUM_CHECK delta_full=0.0036480541388050902 sum_parts=0.0036480541388080531 abs_parts=0.079838276998272978 cancellation_abs_over_net=21.88516781
+P10AA_CONVERGENCE_PROOF=NO
+P10AA_NOTE=Do not infer Richardson order or exact error bounds from mixed non-nested mesh families.
