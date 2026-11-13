@@ -1,0 +1,17 @@
+P10Z geometry-only mesh audit; NOT FEM verification or shape-derivative convergence.
+Q3 is the 27-point rule used by P10Y volume_q(3); Q4 is a 64-point geometric check.
+Full-sphere volume reference valid only where a whole shell is within the solid domain.
+N_eff is weight concentration, NOT independent sampling size.
+Radial node span is a nodal proxy, not exact curved-element radial thickness.
+center_m=(0.0, 0.0, 0.03) radius_mm=1.0 edges_mm=[0.0, 0.02, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 5.0, 15.0]
+orders=[3, 4] chunk_elements=300
+{'mesh': 'H4', 'sha256': '4530988fd07d8268e024a5e738fb921b76374fe97b2f0a480218c9e0964049b9', 'n_nodes': 221782, 'tet10': 164319, 'all_element_records': 170383, 'seconds': 3.4841622998937964}
+{'mesh': 'H4W2', 'sha256': 'de96486d592634e08214134d5a32ea4bb375cc4ef351d0ad16da8ea1f2583623', 'n_nodes': 261076, 'tet10': 190222, 'all_element_records': 201224, 'seconds': 4.080058600055054}
+H4 shell=0 Q3_volume_mm3=0.259064921512578 Q4_volume_mm3=0.2601087085632897 Q4_vs_Q3_rel=0.00401288775
+H4 shell=1 Q3_volume_mm3=0.4061818764228808 Q4_volume_mm3=0.3949238093493341 Q4_vs_Q3_rel=-0.0285069343
+H4 shell=2 Q3_volume_mm3=0.7293938257621455 Q4_volume_mm3=0.7330133695829586 Q4_vs_Q3_rel=0.00493789605
+H4 shell=3 Q3_volume_mm3=2.597762305625247 Q4_volume_mm3=2.606092830309402 Q4_vs_Q3_rel=0.00319655716
+H4W2 shell=0 Q3_volume_mm3=0.2632060478080853 Q4_volume_mm3=0.2571015918509211 Q4_vs_Q3_rel=-0.0237433612
+H4W2 shell=1 Q3_volume_mm3=0.3993514932806911 Q4_volume_mm3=0.4038049510511048 Q4_vs_Q3_rel=0.0110287349
+H4W2 shell=2 Q3_volume_mm3=0.7249006060769947 Q4_volume_mm3=0.7252228564115117 Q4_vs_Q3_rel=0.000444346633
+H4W2 shell=3 Q3_volume_mm3=2.605945440905868 Q4_volume_mm3=2.606332494409587 Q4_vs_Q3_rel=0.000148505037

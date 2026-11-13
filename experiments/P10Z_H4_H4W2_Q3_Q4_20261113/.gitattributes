@@ -1,0 +1,4 @@
+# Original numeric evidence: preserve bytes and SHA256 independently of Windows autocrlf.
+*.csv -text -diff
+*.txt -text -diff
+*.svg -text -diff

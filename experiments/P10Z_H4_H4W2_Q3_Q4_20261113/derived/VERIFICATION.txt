@@ -1,0 +1,10 @@
+PASS: SHA-256 P10Z_MESH_QP_SHELL_METRICS.csv = 51e9bad4c090c2ad9380dd2d929339d032faa5f7261469695e76fcf8da514858
+PASS: SHA-256 P10Z_RADIAL_CUMULATIVE.csv = f013c9209eac6ef9b871f71efee105ee90927665d0bd22c2e72ae94153d4a414
+PASS: SHA-256 P10Z_MESH_AUDIT_LOG.txt = 4517f8ccb005d8b80ec1ceaddb716ca7f7cd3cc18cd97f87cd5c1f7be1a72cc5
+PASS: H4 Q3: 10 bins, 16 cumulative cuts, 4436613 GP, volume=179995.811232253851 mm3, no negative distances
+PASS: H4 Q4: 10 bins, 16 cumulative cuts, 10516416 GP, volume=179995.811232253502 mm3, no negative distances
+PASS: H4 |V_Q4 - V_Q3|=3.49245965e-10 mm3
+PASS: H4W2 Q3: 10 bins, 16 cumulative cuts, 5135994 GP, volume=179995.811211226333 mm3, no negative distances
+PASS: H4W2 Q4: 10 bins, 16 cumulative cuts, 12174208 GP, volume=179995.811211225955 mm3, no negative distances
+PASS: H4W2 |V_Q4 - V_Q3|=3.78349796e-10 mm3
+Статус: только геометрический аудит, без FEM, без доказательства сходимости D_RJ.
