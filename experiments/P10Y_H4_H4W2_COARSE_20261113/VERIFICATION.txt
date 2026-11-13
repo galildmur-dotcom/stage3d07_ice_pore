@@ -1,0 +1,10 @@
+P10Y H4/H4W2 data-only coarse-bin verification, 2026-11-13
+SHA256 P10Y_H4_SHELL_SUMMARY.csv d35d52899826f81427c098a58fed3e5606de30cb1fe636aee468636baf1797a1
+SHA256 P10Y_H4W2_SHELL_SUMMARY.csv c8cbd10c05679267b48c53b54eeaaf49b3b30eb6acc8b7fea04dbc90344613e6
+30 rows per source, common bins, same mode R and delta_um=0.
+Each mechanical component reconstructs explicit+equilibrium+history within 1e-11 per m.
+All coarse and cumulative balances independently checked within 1e-11 per m.
+Heat adjoint contribution is NOT spatially partitioned. No FEM calculations. Not a convergence proof.
+jpeak: total_delta_mech=2.851464221374389e-02 fine_cancellation=38.65659724 coarse_cancellation=20.03365631
+j6: total_delta_mech=8.176594332203607e-06 fine_cancellation=20.06934475 coarse_cancellation=12.37447687
+jen: total_delta_mech=1.925484919718806e-06 fine_cancellation=21.16872763 coarse_cancellation=19.48999491
