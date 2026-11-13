@@ -1,0 +1,5 @@
+# Keep original CSV byte-for-byte (including source CRLF), do not reformat.
+*.csv -text -diff
+# Graph files are generated artefacts, preserved exactly as supplied.
+*.png -text -diff
+*.svg -text -diff

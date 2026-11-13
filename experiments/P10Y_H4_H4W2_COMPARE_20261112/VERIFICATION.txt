@@ -1,0 +1,8 @@
+P10Y H4/H4W2 radial comparison verification, 2026-11-12
+H4: 3 functionals; worst_partition_rel=1.513593008950635e-13; reference=1.513593008950000e-13
+H4W2: 3 functionals; worst_partition_rel=2.801101326437366e-13; reference=2.801101326440000e-13
+jpeak: delta=2.8514642213743779e-02; abs-shell-delta-sum=1.1022790393898281e+00; cancellation=38.65659724x
+j6: delta=8.1765943322035530e-06; abs-shell-delta-sum=1.6409889055189834e-04; cancellation=20.06934475x
+jen: delta=1.9254849197178304e-06; abs-shell-delta-sum=4.0760065815038569e-05; cancellation=21.16872763x
+Thermal shape partial is NOT spatially partitioned.
+Neither spatial convergence nor elementwise max location is established.
