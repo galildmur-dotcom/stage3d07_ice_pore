@@ -9,6 +9,9 @@
 // no atomics, no data races, and no symmetry assumption on numerical blocks.
 // The solver uses block-Jacobi-preconditioned BiCGStab for K and K^T.
 #include <algorithm>
+#include <cstdint>
+#include <iomanip>
+#include <iostream>
 #include <cmath>
 #include <stdexcept>
 #include <vector>
@@ -139,7 +142,11 @@ struct IterativeResult{
  double relative_residual=0;
 };
 
-inline IterativeResult solve_bicgstab(BCSR& K,const std::vector<uint8_t>& bc,
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+#include "stage3d10af_gmres_fallback.inc"
+#endif
+
+inline IterativeResult solve_bicgstab_core(BCSR& K,const std::vector<uint8_t>& bc,
                                      const std::vector<double>& rhs,
                                      bool transpose,
                                      double tolerance=2e-13,int maxiter=400,
@@ -191,9 +198,50 @@ inline IterativeResult solve_bicgstab(BCSR& K,const std::vector<uint8_t>& bc,
  multiply(K,result.x,Ax,bc,transpose,map);
  for(size_t i=0;i<n;++i)Ax[i]-=rhs[i];
  result.relative_residual=norm(Ax)/base;
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ if(!std::isfinite(result.relative_residual))
+  throw std::runtime_error("P10E: BiCGStab nonfinite verified residual");
+ if(result.relative_residual>std::max(2e-11,5*tolerance))
+  std::cout<<"P10AF_BICGSTAB_REJECTED iterations="<<result.iterations
+           <<" requested_tolerance="<<tolerance
+           <<" verified_relative_residual="<<result.relative_residual
+           <<'\n'<<std::flush;
+#endif
  if(result.relative_residual>std::max(2e-11,5*tolerance))
   throw std::runtime_error("P10E: BiCGStab failed verified residual");
  return result;
+}
+
+
+// Keep the original public API. In P10W only, the final unsuccessful
+// BiCGStab retry falls back to a different Krylov method on the SAME system.
+// No change is made to the constitutive law, the adjoint RHS or acceptance
+// criteria. Non-P10W targets always use the original solver exclusively.
+inline IterativeResult solve_bicgstab(BCSR& K,const std::vector<uint8_t>& bc,
+                                      const std::vector<double>& rhs,
+                                      bool transpose,
+                                      double tolerance=2e-13,int maxiter=400,
+                                      const ReverseGraph* map=nullptr){
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ try{
+  return solve_bicgstab_core(K,bc,rhs,transpose,tolerance,maxiter,map);
+ }catch(const std::runtime_error& e){
+  // The existing P10P caller tries 1e-11/2400, 2e-10/3600,
+  // and 1e-9/5000. Only the THIRD failure activates the fallback.
+  if(!(tolerance>=1e-9 && maxiter>=5000) ||
+     std::string(e.what()).rfind("P10E: BiCGStab",0)!=0)throw;
+  std::cout<<"P10AF_GMRES_FALLBACK after=BiCGStab_retries"
+           <<" restart=40 maxiter=4800 tolerance=2e-10\n"<<std::flush;
+  const auto answer=solve_gmres_fallback(K,bc,rhs,transpose,map,
+                                          2e-10,4800,40);
+  std::cout<<"P10AF_GMRES_SOLVED iterations="<<answer.iterations
+           <<" verified_relative_residual="<<answer.relative_residual
+           <<'\n'<<std::flush;
+  return answer;
+ }
+#else
+ return solve_bicgstab_core(K,bc,rhs,transpose,tolerance,maxiter,map);
+#endif
 }
 
 } // namespace ice3d::p10e
