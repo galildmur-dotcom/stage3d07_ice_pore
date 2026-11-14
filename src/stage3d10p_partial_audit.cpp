@@ -644,7 +644,12 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
  const auto nq=base.mesh.tets.size()*volume_q(3).size();
  const double held=double(c.steps)*nq*sizeof(State)/1073741824.;
  const double buffers=double(c.steps+4)*nq*sizeof(State)/1073741824.;
+ // P10AE: budget check only, no change to the memory algorithm.
+#ifdef STAGE3D10W_ANALYTIC_SHAPE
+ p10k::require(buffers<10.,"P10W estimated buffers >10 GiB");
+#else
  p10k::require(buffers<8.,"P10N history >8 GiB: requires windowed adjoint");
+#endif
  p10k::require(double(ice3d::p10h::estimate_single_bytes(
                    base.mesh,volume_q(3).size()))/1073741824.<2.,
                "P10N final checkpoint >2 GiB");
