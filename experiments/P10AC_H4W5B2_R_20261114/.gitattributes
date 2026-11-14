@@ -1,0 +1,3 @@
+# Raw CSV and log files: preserve exactly as received; avoid Windows CRLF normalization.
+*.csv -text -diff
+*.txt -text -diff
