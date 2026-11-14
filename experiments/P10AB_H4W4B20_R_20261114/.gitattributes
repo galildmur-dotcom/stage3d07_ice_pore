@@ -1,0 +1,2 @@
+# Preserve original CSV bytes (CRLF) and avoid Windows text normalization.
+*.csv -text -diff
