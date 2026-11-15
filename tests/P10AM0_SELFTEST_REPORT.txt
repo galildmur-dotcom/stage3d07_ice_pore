@@ -1,0 +1,14 @@
+P10AM0 geometry-only test, executed in the assistant container on 2026-11-15
+$ python tools/p10am0_surface_geometry.py --selftest
+P10AM0_SELFTEST_OK tri6_partition=1 triangle_rules=1 planar_area=1
+
+Independent synthetic closed octahedron approximation to a sphere:
+- 8 quadratic Tri6, 18 nodes, 12 closed corner edges
+- all six interpolation nodes per triangle on nominal sphere R=1 mm
+- normalized geometry: area_Q6_vs_sphere_rel=-0.08360919527842903
+- volume_Q6_vs_sphere_rel=-0.14904085315735538
+- sampled_max_radial_departure_um=96.80928433371533
+- orientation_flip_faces=0, no degeneracy
+This is a deliberately coarse, synthetic, non-project mesh.
+The nonzero geometric error between interpolation nodes is expected.
+No results on actual Stage3D07 W2/W4/W5 meshes were calculated here.

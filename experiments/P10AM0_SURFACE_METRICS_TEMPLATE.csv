@@ -1,0 +1,4 @@
+mesh,expected_pore_tri6,source,processed,proven_geometry_convergence
+W2,6636,H4W2.msh,NO,NO
+W4,19140,H4W4B2.msh,NO,NO
+W5,25758,H4W5B2_P10AC.msh,NO,NO
