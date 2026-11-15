@@ -5,6 +5,7 @@
 #include "stage3d10p_partial_audit.cpp"
 #include <fstream>
 #include <iomanip>
+#include "stage3d10ah_nullmode_probe.inc"
 
 namespace p10ag {
 namespace E=ice3d::p10e;
@@ -158,7 +159,10 @@ int run(const p10k::Config& c,const fs::path& cache){
  std::cout<<"P10AG_MATRIX_READY blocks="<<K.a.size()
    <<" rhs_norm="<<std::scientific<<m.rhs_norm<<'\n'<<std::flush;
  verify_probe(K,pinned,state,graph,m);
+ const auto null_mode=p10ah::inspect(K,pinned,rhs,m.min_rayleigh,&graph);
  fs::create_directories(c.out);
+ p10ah::save(c.out/"P10AH_NULLMODE_DIAGNOSTIC.csv",c.mesh.stem().string(),null_mode);
+ p10ah::report(null_mode);
  std::ofstream csv(c.out/"P10AG_STEP6_DIAGNOSTIC.csv");
  require(bool(csv),"cannot write output csv");
  csv<<"mesh,tet10,step,functional,free_dofs,pinned_dofs,rhs_norm,rhs_constrained_norm,"
@@ -221,6 +225,7 @@ int main(int argc,char** argv){
     p10ag::verify_probe(tangent,small.bc,step,gr,check);
     p10ag::require(check.jvp_rel<1e-10&&check.vjp_rel<1e-10,
       "small P10C JVP/VJP vs P10E tangent failed");
+    p10ah::selftest();
     std::cout<<"P10AG_SELFTEST_OK transpose=1 constraints=1 symmetry=1"
       <<" jvp_rel="<<check.jvp_rel<<" vjp_rel="<<check.vjp_rel<<'\n';
     return 0;
