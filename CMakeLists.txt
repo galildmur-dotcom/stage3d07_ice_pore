@@ -1191,3 +1191,23 @@ else()
 endif()
 add_test(NAME ICE3D_registry_manifest_selftest
   COMMAND ice3d_register_manifest --selftest)
+
+# P10AG: isolated step-6 operator diagnostics; no FEM forward or Krylov solve.
+add_executable(stage3d10ag_step6_diagnostic src/stage3d10ag_step6_diagnostic.cpp)
+target_include_directories(stage3d10ag_step6_diagnostic PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10ag_step6_diagnostic PRIVATE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10ag_step6_diagnostic PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10ag_step6_diagnostic PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10ag_step6_diagnostic PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10ag_step6_diagnostic PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10ag_step6_diagnostic PRIVATE Psapi)
+endif()
