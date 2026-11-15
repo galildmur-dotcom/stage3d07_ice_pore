@@ -6,6 +6,7 @@
 #include <fstream>
 #include <iomanip>
 #include "stage3d10ah_nullmode_probe.inc"
+#include "stage3d10ai_projected_cg_probe.inc"
 
 namespace p10ag {
 namespace E=ice3d::p10e;
@@ -119,7 +120,7 @@ void verify_probe(const BCSR& K,const std::vector<uint8_t>& bc,
  }
 }
 
-int run(const p10k::Config& c,const fs::path& cache){
+int run(const p10k::Config& c,const fs::path& cache,bool projected_cg){
  require(c.steps==6&&c.dt==150,"requires 6 steps of 150 s");
  require(c.mode=="R","requires shape mode R");
  require(fs::is_regular_file(c.mesh),"mesh is missing");
@@ -163,6 +164,10 @@ int run(const p10k::Config& c,const fs::path& cache){
  fs::create_directories(c.out);
  p10ah::save(c.out/"P10AH_NULLMODE_DIAGNOSTIC.csv",c.mesh.stem().string(),null_mode);
  p10ah::report(null_mode);
+ if(projected_cg){
+  const auto p10ai_result=p10ai::solve_probe(K,pinned,rhs,&graph,1500,std::cout);
+  p10ai::save(c.out/"P10AI_PROJECTED_CG.csv",p10ai_result);
+ }
  std::ofstream csv(c.out/"P10AG_STEP6_DIAGNOSTIC.csv");
  require(bool(csv),"cannot write output csv");
  csv<<"mesh,tet10,step,functional,free_dofs,pinned_dofs,rhs_norm,rhs_constrained_norm,"
@@ -226,14 +231,18 @@ int main(int argc,char** argv){
     p10ag::require(check.jvp_rel<1e-10&&check.vjp_rel<1e-10,
       "small P10C JVP/VJP vs P10E tangent failed");
     p10ah::selftest();
+    p10ai::selftest();
     std::cout<<"P10AG_SELFTEST_OK transpose=1 constraints=1 symmetry=1"
       <<" jvp_rel="<<check.jvp_rel<<" vjp_rel="<<check.vjp_rel<<'\n';
     return 0;
   }
   fs::path reuse;
+  bool projected_cg=false;
   std::vector<char*> filtered{argv[0]};
   for(int i=1;i<argc;++i){
-   if(std::string(argv[i])=="--reuse-forward"){
+   if(std::string(argv[i])=="--p10ai-projected-cg"){
+    projected_cg=true;
+   }else if(std::string(argv[i])=="--reuse-forward"){
     if(++i>=argc)throw std::runtime_error("missing --reuse-forward value");
     reuse=argv[i];
    }else filtered.push_back(argv[i]);
@@ -242,7 +251,7 @@ int main(int argc,char** argv){
 #ifdef _OPENMP
   omp_set_dynamic(0); omp_set_num_threads(c.threads);
 #endif
-  return p10ag::run(c,reuse);
+  return p10ag::run(c,reuse,projected_cg);
  }catch(const std::exception& e){
   std::cerr<<"P10AG_ERROR "<<e.what()<<'\n';return 2;
  }
