@@ -144,6 +144,7 @@ struct IterativeResult{
 
 #ifdef STAGE3D10W_ANALYTIC_SHAPE
 #include "stage3d10af_gmres_fallback.inc"
+#include "stage3d10aj_projected_pcg_fallback.inc"
 #endif
 
 inline IterativeResult solve_bicgstab_core(BCSR& K,const std::vector<uint8_t>& bc,
@@ -230,11 +231,11 @@ inline IterativeResult solve_bicgstab(BCSR& K,const std::vector<uint8_t>& bc,
   // and 1e-9/5000. Only the THIRD failure activates the fallback.
   if(!(tolerance>=1e-9 && maxiter>=5000) ||
      std::string(e.what()).rfind("P10E: BiCGStab",0)!=0)throw;
-  std::cout<<"P10AF_GMRES_FALLBACK after=BiCGStab_retries"
-           <<" restart=40 maxiter=4800 tolerance=2e-10\n"<<std::flush;
-  const auto answer=solve_gmres_fallback(K,bc,rhs,transpose,map,
-                                          2e-10,4800,40);
-  std::cout<<"P10AF_GMRES_SOLVED iterations="<<answer.iterations
+  std::cout<<"P10AJ_PROJECTED_PCG_FALLBACK after=BiCGStab_retries"
+           <<" maxiter=2000 projected_tolerance=2e-10\n"<<std::flush;
+  const auto answer=solve_projected_pcg_fallback(K,bc,rhs,transpose,map,
+                                                 2e-10,2000);
+  std::cout<<"P10AJ_PROJECTED_PCG_SOLVED iterations="<<answer.iterations
            <<" verified_relative_residual="<<answer.relative_residual
            <<'\n'<<std::flush;
   return answer;
