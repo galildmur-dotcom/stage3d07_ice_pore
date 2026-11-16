@@ -1211,3 +1211,24 @@ if(WIN32)
   target_sources(stage3d10ag_step6_diagnostic PRIVATE src/win_process_memory.cpp)
   target_link_libraries(stage3d10ag_step6_diagnostic PRIVATE Psapi)
 endif()
+
+# Stage3D10AG / LIT08: frozen-history peak moment under fixed Q3, varied B6 masks.
+add_executable(stage3d10ag_frozen_mask src/stage3d10ag_frozen_mask.cpp)
+target_include_directories(stage3d10ag_frozen_mask PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10ag_frozen_mask PRIVATE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10ag_frozen_mask PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10ag_frozen_mask PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10ag_frozen_mask PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10ag_frozen_mask PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10ag_frozen_mask PRIVATE Psapi)
+endif()
+add_test(NAME LIT08_frozen_history_mask_selftest
+  COMMAND stage3d10ag_frozen_mask --selftest)
