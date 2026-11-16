@@ -1,0 +1,6 @@
+P10AM0 geometry-only surface audit. NOT FEM error, not shape derivative convergence.
+Uses sampled Gaussian points on Gmsh quadratic Tri6 (Q6 reference).
+Sphere center=(0,0,0.03) m, radius=0.001 m.
+W2 SHA256=de96486d592634e08214134d5a32ea4bb375cc4ef351d0ad16da8ea1f2583623 pore_faces=6636
+W4 SHA256=3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7 pore_faces=19140
+W5 SHA256=db50a10fc2a12870bf6e678e2ef0be496feba218b1010f9e65f8669f67d093a8 pore_faces=25758

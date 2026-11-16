@@ -1,0 +1,4 @@
+# SHA256 byte-for-byte of user-provided files before CRLF -> LF normalization
+878e01a72ee1d0f1fa06c69d62d434c885810bd733edc30905294ee8cebfc34d  LIT04_B6_H3_H4.csv
+95fb97fcccc13594f99f535e28c64df9f51d6baf50e3160b1e992533cd6bc026  LIT04_B6_W2_W4_W5.csv
+a63ed0f7802a0359baa9a778e85f41a851461442d04b0051d5ce70d5e9190ab6  P10AM0_MANIFEST.txt
