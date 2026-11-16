@@ -1,0 +1,8 @@
+P10AV_H1_PREFLIGHT_OK
+no_forward_or_adjoint_solve=1
+mesh_sha256=394ee339073fe6eacfd58c549ad0b0218a9bdadf8f36a2ca435a1ca3fad0598d
+exe_sha256=c3422bb35108319ef9c9b9ec5476ebdf5e7ee85e4a4755f3259bab730f84806a
+mesh=G:\ildar\Stage3D07\P10M_MESHES\H1.msh
+out=G:\ildar\Stage3D07\LOCAL_RUNS\P10AV_H1_PREFLIGHT_20261116
+P10N_PREFLIGHT mesh=H1 nodes=27757 tet10=19412 pore_tri6=282 pore_median_edge_mm=3.22666366108e-01 B6_volume_m3=9.00546205877e-07 steps=6 dt=150 deltas=1 history_gib=2.81162023544e-01 state_buffers_gib=4.68603372574e-01
+P10W_PREFLIGHT_OK mode=R geometry_partial=ANALYTIC_TET10 mechanical_forward_solves=0 central_fd_evaluations=0
