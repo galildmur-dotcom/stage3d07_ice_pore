@@ -1,0 +1,16 @@
+P10AM4_PRE_FEM_GATES_OK
+base_sha256=3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7
+new_sha256=1c9522544ad0097e2f51716df87a4ebd94ba17725852341a1f8672973f2de1ee
+base_tet10=261091
+new_tet10=297091
+new_nodes=427823
+all_boundary_tags_2_to_9_identical=1
+B6_interface_consistent=1
+B6_selected_Tet10_change=36000
+volume_Q3_base_mm3=179995.8112099697
+volume_Q3_star_mm3=179995.8112099697
+volume_Q3_relative_difference=0
+P10W_state_buffers_gib=7.17174142599
+P10Z_Q3_Q4_positive_jacobians=1
+P10W_prefight_ok=1
+WARNING: this validates geometric/numerical gates, NOT FEM spatial convergence.

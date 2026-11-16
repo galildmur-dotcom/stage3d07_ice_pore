@@ -1,0 +1,29 @@
+P10AM3 exact-isoparametric star subdivision; geometry-only pilot.
+No change to ANY original Tri6 surface faces, no new boundary nodes.
+Selection: originally full Tet10 corner radial range [0.250000, 2.000000] mm from the pore wall, seed=1729, selected=12000.
+WARNING: Q3 points in split elements change; this is a fixed-boundary V+quadrature-redistribution experiment, not a pure V-error estimate.
+source_mesh=H4W4B2.msh
+source_sha256=3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7
+output_mesh=H4W4B2_VSTAR12000_P10AM3.msh
+output_sha256=1c9522544ad0097e2f51716df87a4ebd94ba17725852341a1f8672973f2de1ee
+nodes_before=367823
+nodes_after=427823
+tet10_before=261091
+tet10_after=297091
+tri6_before=23504
+tri6_after=23504
+selected_parents=12000
+eligible_parents=145310
+parent_element_ids_sha256=499b02382e2fae3756651a7a0ed8eabc48fc94dcf50431cd7996505524cf29ba
+band_inner_mm=0.25
+band_outer_mm=2.0
+seed=1729
+pin_node_original_id=45795
+pin_node_unchanged=1
+b6_parent_centroid_elements=240371
+boundary_faces_exactly_preserved=1
+selected_parent_star_topology_verified=1
+min_checked_jacobian_m3=2.0157624498742901e-13
+state_buffers_gib_estimate=7.171741425991058
+quad_order=3
+time_s=11.558312299894169
