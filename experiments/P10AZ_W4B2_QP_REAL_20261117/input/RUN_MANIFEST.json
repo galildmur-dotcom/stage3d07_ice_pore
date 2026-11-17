@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "P10AZ_W4B2_R_QP_AUDIT_20261117",
+  "program": "stage3d10y_analytic_shell_audit",
+  "status": "completed",
+  "started_at_utc": "2026-11-17T08:53:51Z",
+  "updated_at_utc": "2026-11-17T12:01:55Z",
+  "exit_code": 0,
+  "elapsed_manifest_wall_s": 11283.6914901,
+  "code": {
+    "git_commit_at_cmake_configure": "UNKNOWN",
+    "executable_sha256": "96122bbfeb3d82d034eae3576ca2fd17885e71e1d4608903640bc7ae7f7a114a"
+  },
+  "input": {
+    "mesh": "G:\\ildar\\Stage3D07\\P10M_MESHES\\H4W4B2.msh",
+    "mesh_sha256": "3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7",
+    "output_dir": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10AZ_W4B2_R_QP_AUDIT_20261117",
+    "model": "EDV",
+    "temperature_model": "VAR",
+    "stochastic_quadrature": null,
+    "dt_s": 150,
+    "steps": 6,
+    "geometry_mode": "R",
+    "delta_um": [0],
+    "threads": 4,
+    "cutoff_mm": 5,
+    "preflight": false,
+    "reuse_forward": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10W_H4W4B2_R_FULL_20261113\\forward_history.bin",
+    "forward_cache": ""
+  },
+  "argv": ["G:\\ildar\\Stage3D07\\build\\Desktop_MinGW_Release\\stage3d10az_targeted_qp_probe.exe", "--mesh", "G:\\ildar\\Stage3D07\\P10M_MESHES\\H4W4B2.msh", "--out", "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10AZ_W4B2_R_QP_AUDIT_20261117", "--steps", "6", "--dt", "150", "--mode", "R", "--cutoff-mm", "5", "--threads", "4", "--reuse-forward", "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10W_H4W4B2_R_FULL_20261113\\forward_history.bin"],
+  "produced_files": ["P10Y_PARTITION_AUDIT.csv", "P10Y_SHELL_SUMMARY.csv", "P10Y_STEP_SHELL_COMPONENTS.csv"],
+  "exception_message": null
+}
