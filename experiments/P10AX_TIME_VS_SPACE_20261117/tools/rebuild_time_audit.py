@@ -14,6 +14,7 @@ from pathlib import Path
 
 SHA = '4ff42a2cc44eb033053766c3041ac52e6210dd2c'
 SOURCE = 'experiments/P10AX_H1_COMPLETED_SPATIOTEMPORAL_20261116/derived/P10AX_216_VERIFIED_STEP_COMPONENTS.csv'
+SPATIAL = 'experiments/P10Y_FOUR_MESH_RADIAL_20261117/derived/P10Y_FOUR_MESH_9_METRICS.csv'
 AUDITS = {
     'H4': ('experiments/P10Y_H4_H4W2_COMPARE_20261112/input/P10Y_H4_PARTITION_AUDIT.csv', 'H4'),
     'W2B2': ('experiments/P10Y_H4W2_R_20261112/data/P10Y_PARTITION_AUDIT.csv', 'H4W2'),
@@ -84,10 +85,18 @@ def run(repo, source, outdir, check_audits):
                 d=step_sum-global_sum
                 if abs(d)>1.e-9:
                     raise ValueError(f'P10AX to P10Y global disagreement {mesh} {f} {c}: {d}')
-                entry[c+'_P10AX_sum_per_m']=fmt(step_sum)
+                entry[c+'_P10AX_total_per_m']=fmt(step_sum)
                 entry[c+'_P10Y_global_per_m']=fmt(global_sum)
                 entry[c+'_P10AX_minus_P10Y_per_m']=fmt(d)
             parity.append(entry)
+    spatial_path = repo/SPATIAL
+    if spatial_path.exists():
+        spatial_index = {(r['pair'],r['functional']):r for r in read_csv(spatial_path)}
+        if len(spatial_index)!=9: raise ValueError('Bad spatial P10Y metrics')
+    elif check_audits:
+        raise FileNotFoundError(spatial_path)
+    else:
+        spatial_index = {}
     for a,b,axis in PAIRS:
         for f in FUNCTIONALS:
             pair=a+'_to_'+b
@@ -95,15 +104,15 @@ def run(repo, source, outdir, check_audits):
             for i in range(1,7):
                 x=index[(a,f,i)];y=index[(b,f,i)]
                 row={'pair':pair,'refinement_axis':axis,'functional':f,
-                     'time_step':i,'time_s':i*150,'source_origin_from':x['origin'], 'source_origin_to':y['origin']}
+                     'time_step':i,'time_s':i*150,'origin_a':x['origin'], 'origin_b':y['origin']}
                 for c,field in COLS.items():
                     av,bv=float(x[field]),float(y[field]);d=bv-av
-                    row[c+'_from_per_m']=fmt(av)
-                    row[c+'_to_per_m']=fmt(bv)
+                    row[c+'_a_per_m']=fmt(av)
+                    row[c+'_b_per_m']=fmt(bv)
                     row['delta_'+c+'_per_m']=fmt(d)
                     signed[c].append(d)
                 den=abs(signed['mechanical'][-1])
-                row['local_step_component_cancellation']=fmt(math.fsum(abs(signed[k][-1]) for k in ('explicit','equilibrium','history'))/den) if den>0 else ''
+                row['step_component_cancellation']=fmt(math.fsum(abs(signed[k][-1]) for k in ('explicit','equilibrium','history'))/den) if den>0 else ''
                 steps.append(row)
             net=math.fsum(signed['mechanical']); tL1=math.fsum(abs(v) for v in signed['mechanical'])
             if abs(math.fsum(math.fsum(signed[c]) for c in ('explicit','equilibrium','history'))-net)>1.e-10:
@@ -115,24 +124,31 @@ def run(repo, source, outdir, check_audits):
                'global_delta_mechanical_per_m':fmt(net),
                'L1_time_mechanical_per_m':fmt(tL1),
                'time_cancellation_ratio':fmt(tL1/abs(net)),
-               'sum_abs_time_and_components_per_m':fmt(math.fsum(abs(v) for c in ('explicit','equilibrium','history') for v in signed[c])),
-               'joint_time_component_cancellation_ratio':fmt(math.fsum(abs(v) for c in ('explicit','equilibrium','history') for v in signed[c])/abs(net)),
-               'sign_pattern':signs,'max_abs_time_step':largest+1,'max_abs_time_s':150*(largest+1),
-               'late_600_900_signed_fraction':fmt(last3/net),
-               'late_750_900_signed_fraction':fmt(math.fsum(signed['mechanical'][4:])/net)}
+               'time_and_component_abs_sum_per_m':fmt(math.fsum(abs(v) for c in ('explicit','equilibrium','history') for v in signed[c])),
+               'time_and_component_cancel_ratio':fmt(math.fsum(abs(v) for c in ('explicit','equilibrium','history') for v in signed[c])/abs(net)),
+               'step_signs':signs,'max_abs_time_step':largest+1,'max_abs_time_s':150*(largest+1),
+               'late_600_to_900_signed_fraction':fmt(last3/net),
+               'late_750_to_900_signed_fraction':fmt(math.fsum(signed['mechanical'][4:])/net)}
             for c in COLS:
                 s['global_delta_'+c+'_per_m']=fmt(math.fsum(signed[c]))
                 s['L1_time_'+c+'_per_m']=fmt(math.fsum(abs(v) for v in signed[c]))
+            reference = spatial_index.get((pair,f))
+            if reference is None:
+                s['spatial_shell_cancellation_ratio'] = ''
+            else:
+                if abs(float(reference['global_delta_mechanical_per_m'])-net)>1.e-9:
+                    raise ValueError('Spatial/temporal mismatch '+pair+f)
+                s['spatial_shell_cancellation_ratio'] = reference['intermesh_cancellation_ratio']
             summary.append(s)
     assert len(steps)==54 and len(summary)==9
-    write_csv(outdir/'P10AX_54_TIME_STEP_INTERMESH_COMPONENTS.csv',steps)
-    write_csv(outdir/'P10AX_9_TIME_CANCELLATION_METRICS.csv',summary)
-    if parity: write_csv(outdir/'P10AX_12_P10Y_GLOBAL_PARITY.csv',parity)
+    write_csv(outdir/'P10AX_54_STEP_COMPONENT_DIFFERENCES.csv',steps)
+    write_csv(outdir/'P10AX_9_TEMPORAL_METRICS.csv',summary)
+    if parity: write_csv(outdir/'P10AX_12_P10Y_PARITY.csv',parity)
     print('P10AX_TIME_AUDIT_OK steps=54 comparisons=9 parity='+str(len(parity)))
     for s in summary:
         if s['functional']=='jpeak':
             print(s['pair'], 'net=',s['global_delta_mechanical_per_m'],
-                  'Kt=',s['time_cancellation_ratio'],'signs=',s['sign_pattern'])
+                  'Kt=',s['time_cancellation_ratio'],'signs=',s['step_signs'])
 
 if __name__=='__main__':
     p=argparse.ArgumentParser()
