@@ -1,3 +1,7 @@
+> **Актуальная точка входа в научный проект Stage3D07 для нового чата ChatGPT (18.11.2026): [START_NEW_CHAT.md](START_NEW_CHAT.md).** Рабочая исследовательская ветка и последние результаты P10BE перечислены там. Этот README ниже сохраняет историческое описание Stage3D06.
+
+---
+
 # Stage 3D-06-P — оптимизированная сборка
 
 **Новая точка входа:** [README_QTCREATOR_RU.md](README_QTCREATOR_RU.md), результаты: [P06_VERIFICATION/RESULTS_SUMMARY_RU.md](P06_VERIFICATION/RESULTS_SUMMARY_RU.md). Исходные физические этапы сохранены ниже без изменения.
