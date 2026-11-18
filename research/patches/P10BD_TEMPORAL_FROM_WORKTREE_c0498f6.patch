@@ -248,10 +248,22 @@ index cf00b83..886f605 100644
  #endif
  #ifdef STAGE3D10S_SPATIAL_AUDIT
 diff --git a/src/stage3d10w_analytic_adjoint.cpp b/src/stage3d10w_analytic_adjoint.cpp
-index 047012d..904af41 100644
+index 047012d..fe36c68 100644
 --- a/src/stage3d10w_analytic_adjoint.cpp
 +++ b/src/stage3d10w_analytic_adjoint.cpp
-@@ -15,6 +15,10 @@ int main(int argc,char** argv){
+@@ -10,11 +10,22 @@ int main(int argc,char** argv){
+   ice3d::stage3d10s_manifest::set_arguments(argc,argv);
+ #endif
+   std::vector<char*> filtered{argv[0]};
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++  // The shared legacy P10K parser caps steps at 12. Only the independent
++  // P10BD target can run 18 steps; parse a legal placeholder then restore
++  // the requested 18 before ANY preflight or forward/adjoint execution.
++  char parser_steps_12[]="12";
++  bool requested_18_steps=false;
++#endif
+   fs::path reuse,cache;
+   bool explicit_mesh=false,explicit_out=false;
    for(int i=1;i<argc;++i){
     const std::string arg=argv[i];
     if(arg=="--help"){
@@ -262,7 +274,36 @@ index 047012d..904af41 100644
  #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
      std::cout<<"stage3d10y_analytic_shell_audit: exact P10W derivative"
       " by physical radial Gauss-point shells. Thermal partial remains global.\n";
-@@ -64,6 +68,15 @@ int main(int argc,char** argv){
+@@ -31,6 +42,16 @@ int main(int argc,char** argv){
+       arg=="--geometry-exe")
+     throw std::invalid_argument(
+       "P10W: finite-difference geometry options are forbidden");
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++   if(arg=="--steps" && i+1<argc &&
++      std::string(argv[i+1])=="18"){
++    filtered.push_back(argv[i]);
++    filtered.push_back(parser_steps_12);
++    ++i;
++    requested_18_steps=true;
++    continue;
++   }
++#endif
+    if(arg=="--reuse-forward"||arg=="--forward-cache"){
+     p10k::require(i+1<argc,"P10W missing value after "+arg);
+     const fs::path path=argv[++i];
+@@ -42,7 +63,10 @@ int main(int argc,char** argv){
+     filtered.push_back(argv[i]);
+    }
+   }
+-  const auto c=p10k::parse(int(filtered.size()),filtered.data());
++  auto c=p10k::parse(int(filtered.size()),filtered.data());
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++  if(requested_18_steps)c.steps=18;
++#endif
+ #ifdef _OPENMP
+   omp_set_dynamic(0);omp_set_num_threads(c.threads);
+ #endif
+@@ -64,6 +88,15 @@ int main(int argc,char** argv){
  #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
     if(result==0)std::cout<<"P10Y_SHELL_BINS_SELFTEST_OK bins="
                            <<p10n::spatial::bins<<'\n';
