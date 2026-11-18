@@ -1,0 +1,11 @@
+pearson_signed=0.382068297
+pearson_abs=0.50661247
+spearman_abs=0.710516763
+top10pct_overlap_count=11
+top10pct_jaccard=0.379310345
+top20pct_overlap_count=31
+top20pct_jaccard=0.632653061
+pole_share_B20=0.870057548
+pole_share_W5=0.877965629
+middle6bands_share_B20=0.0367866319
+middle6bands_share_W5=0.0309591866
