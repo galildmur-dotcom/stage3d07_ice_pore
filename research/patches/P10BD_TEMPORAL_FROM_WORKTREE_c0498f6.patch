@@ -1,0 +1,325 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e7e9680..18beb69 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1245,6 +1245,44 @@ else()
+ endif()
+ add_test(NAME P10BA_polar_analytic_unit COMMAND stage3d10ba_polar_unit)
+ 
++# P10BD: fixed H2 mesh, fixed 900 s horizon, full-time polar QP derivative.
++# Kept independent from P10BA: its 5/6 step baseline stays bitwise unchanged.
++add_executable(stage3d10bd_temporal_polar_audit
++  src/stage3d10w_analytic_adjoint.cpp)
++target_include_directories(stage3d10bd_temporal_polar_audit PRIVATE
++  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
++target_compile_definitions(stage3d10bd_temporal_polar_audit PRIVATE
++  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
++  STAGE3D10AZ_QP_PROBE STAGE3D10BA_POLAR_AUDIT
++  STAGE3D10BD_TEMPORAL_AUDIT
++  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
++if(MSVC)
++  target_compile_options(stage3d10bd_temporal_polar_audit PRIVATE /O2 /W4)
++else()
++  target_compile_options(stage3d10bd_temporal_polar_audit PRIVATE
++    -O2 -Wall -Wextra -Wpedantic)
++endif()
++if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
++  target_link_libraries(stage3d10bd_temporal_polar_audit PRIVATE OpenMP::OpenMP_CXX)
++endif()
++if(WIN32)
++  target_sources(stage3d10bd_temporal_polar_audit PRIVATE src/win_process_memory.cpp)
++  target_link_libraries(stage3d10bd_temporal_polar_audit PRIVATE Psapi)
++endif()
++add_test(NAME P10BD_temporal_polar_preflight
++  COMMAND stage3d10bd_temporal_polar_audit --selftest)
++add_executable(stage3d10bd_temporal_unit tests/stage3d10v_analytic_shape.cpp)
++target_include_directories(stage3d10bd_temporal_unit PRIVATE src)
++target_compile_definitions(stage3d10bd_temporal_unit PRIVATE
++  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10AZ_QP_PROBE
++  STAGE3D10BA_POLAR_AUDIT STAGE3D10BD_TEMPORAL_AUDIT)
++if(MSVC)
++  target_compile_options(stage3d10bd_temporal_unit PRIVATE /O2 /W4)
++else()
++  target_compile_options(stage3d10bd_temporal_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
++endif()
++add_test(NAME P10BD_temporal_polar_unit COMMAND stage3d10bd_temporal_unit)
++
+ add_executable(stage3d10y_analytic_shell_unit
+   tests/stage3d10v_analytic_shape.cpp)
+ target_include_directories(stage3d10y_analytic_shell_unit PRIVATE src)
+diff --git a/src/stage3d10ba_polar_export.hpp b/src/stage3d10ba_polar_export.hpp
+index 6bcba4a..107cc2d 100644
+--- a/src/stage3d10ba_polar_export.hpp
++++ b/src/stage3d10ba_polar_export.hpp
+@@ -42,10 +42,14 @@ inline int radial_index(double distance_mm,int shell){
+  return std::clamp(int(std::floor(radial_count*(distance_mm-a)/(b-a))),0,9);
+ }
+ 
+-inline void write_step_polar(const std::filesystem::path& out,
++// The common implementation also serves P10BD, where all backward time steps
++// are recorded. The original P10BA entry point below remains unchanged.
++inline void write_step_polar_impl(const std::filesystem::path& out,
+     const std::string& mesh_name,const p10v::QpProbe& probe,int step,
++    int dt,int first_step,const std::string& stage,
+     const std::array<std::array<double,3>,2>& expected){
+- if(step!=5&&step!=6)throw std::invalid_argument("P10BA step must be 5 or 6");
++ if(step<1||step>first_step||dt<1||first_step<1)
++  throw std::invalid_argument(stage+" invalid temporal index");
+  if(!(probe.observed_volume>0.)||probe.futures==nullptr)
+   throw std::runtime_error("P10BA missing QP normalization");
+  std::array<std::array<std::array<Cell,polar_count>,radial_count>,2> grid{};
+@@ -122,20 +126,20 @@ inline void write_step_polar(const std::filesystem::path& out,
+                    total_abs_component,"P10BA history shell");
+  }
+ 
+- auto open_append=[&](const char* name,const char* hdr){
++ auto open_append=[&](const std::string& name,const char* hdr){
+   const auto path=out/name;
+   const bool exists=std::filesystem::exists(path);
+-  if((step==6&&exists)||(step==5&&!exists))
+-   throw std::runtime_error("P10BA unexpected output existence: "+path.string());
++  if((step==first_step&&exists)||(step!=first_step&&!exists))
++   throw std::runtime_error(stage+" unexpected output existence: "+path.string());
+   std::ofstream f(path,std::ios::app);
+   if(!f)throw std::runtime_error("P10BA cannot write: "+path.string());
+   f<<std::setprecision(17);
+   if(!exists)f<<hdr<<'\n';
+   return f;
+  };
+- auto rows=open_append("P10BA_QP_POLAR_RADIAL.csv",
++ auto rows=open_append(stage+"_QP_POLAR_RADIAL.csv",
+   "mesh,time_step,time_s,shell_lower_mm,shell_upper_mm,radial_subbin,radial_lower_mm,radial_upper_mm,polar_band,mu_lower,mu_upper,qp_count,positive_qp,negative_qp,qp_volume_m3,explicit_per_m,equilibrium_per_m,history_per_m,total_mechanical_per_m,positive_mechanical_per_m,negative_mechanical_per_m");
+- auto audit=open_append("P10BA_POLAR_PARTITION_AUDIT.csv",
++ auto audit=open_append(stage+"_POLAR_PARTITION_AUDIT.csv",
+   "mesh,time_step,time_s,shell_lower_mm,shell_upper_mm,radial_subbins,polar_bands,qp_count,qp_volume_m3,total_mechanical_per_m,max_partition_rel");
+  constexpr std::array<double,2> minmm{.02,.05},maxmm{.05,.1};
+  for(int s=0;s<2;++s){
+@@ -143,7 +147,7 @@ inline void write_step_polar(const std::filesystem::path& out,
+    const double dr=(maxmm[s]-minmm[s])/radial_count;
+    for(int j=0;j<polar_count;++j){
+     const Cell& b=grid[s][i][j];
+-    rows<<mesh_name<<','<<step<<','<<150*step<<','<<minmm[s]<<','<<maxmm[s]<<','
++    rows<<mesh_name<<','<<step<<','<<dt*step<<','<<minmm[s]<<','<<maxmm[s]<<','
+         <<i<<','<<(minmm[s]+i*dr)<<','<<(minmm[s]+(i+1)*dr)<<','
+         <<j<<','<<(-1.+.2*j)<<','<<(-1.+.2*(j+1))<<','
+         <<b.nq<<','<<b.positive_qp<<','<<b.negative_qp<<','<<b.volume<<','
+@@ -153,10 +157,28 @@ inline void write_step_polar(const std::filesystem::path& out,
+    }
+   }
+   const Cell& b=direct_shell[s];
+-  audit<<mesh_name<<','<<step<<','<<150*step<<','<<minmm[s]<<','<<maxmm[s]<<','
++  audit<<mesh_name<<','<<step<<','<<dt*step<<','<<minmm[s]<<','<<maxmm[s]<<','
+        <<radial_count<<','<<polar_count<<','<<b.nq<<','<<b.volume<<','
+        <<b.components.sum()<<','<<worst_rel[s]<<'\n';
+  }
+  if(!rows||!audit)throw std::runtime_error("P10BA output write failed");
+ }
++
++inline void write_step_polar(const std::filesystem::path& out,
++    const std::string& mesh_name,const p10v::QpProbe& probe,int step,
++    const std::array<std::array<double,3>,2>& expected){
++ if(step!=5&&step!=6)throw std::invalid_argument("P10BA step must be 5 or 6");
++ write_step_polar_impl(out,mesh_name,probe,step,150,6,"P10BA",expected);
++}
++
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++inline void write_step_polar_temporal(const std::filesystem::path& out,
++    const std::string& mesh_name,const p10v::QpProbe& probe,int step,
++    int dt,int steps,const std::array<std::array<double,3>,2>& expected){
++ if(!((dt==150&&steps==6)||(dt==75&&steps==12)||
++      (dt==50&&steps==18)))
++  throw std::invalid_argument("P10BD permits only 150/75/50 s for 900 s");
++ write_step_polar_impl(out,mesh_name,probe,step,dt,steps,"P10BD",expected);
++}
++#endif
+ } // namespace ice3d::p10ba
+diff --git a/src/stage3d10p_partial_audit.cpp b/src/stage3d10p_partial_audit.cpp
+index cf00b83..886f605 100644
+--- a/src/stage3d10p_partial_audit.cpp
++++ b/src/stage3d10p_partial_audit.cpp
+@@ -429,7 +429,13 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
+ #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+ #ifdef STAGE3D10AZ_QP_PROBE
+   ice3d::p10v::QpProbe qp_probe;
+-  if(n==5 || n==6){
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++  // Capture every step. Comparisons across dt must integrate identical 900 s.
++  const bool take_probe=true;
++#else
++  const bool take_probe=n==5 || n==6;
++#endif
++  if(take_probe){
+    qp_probe.futures=&futures[1];
+    qp_probe.objective_index=1;
+    qp_probe.weight=weights[1];
+@@ -437,7 +443,7 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
+   const ice3d::p10v::ShellAudit shell_audit{
+    shells,{&adjoints[0].residual,&adjoints[1].residual,
+            &adjoints[2].residual},spatial::bins,
+-           (n==5 || n==6)?&qp_probe:nullptr};
++           take_probe?&qp_probe:nullptr};
+ #else
+   const ice3d::p10v::ShellAudit shell_audit{
+    shells,{&adjoints[0].residual,&adjoints[1].residual,
+@@ -490,18 +496,28 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
+     spatial::verify_partition(local,
+        {objective_term,equilibrium_term,history_term},n,obs,k);
+ #ifdef STAGE3D10AZ_QP_PROBE
++#ifndef STAGE3D10BD_TEMPORAL_AUDIT
+     if(obs==1 && (n==5 || n==6))
+       ice3d::p10az::write_step_probe(c.out,c.mesh.stem().string(),
+             base.mesh,qp_probe,n,
+             {{{local[1].objective,local[1].equilibrium,local[1].history},
+               {local[2].objective,local[2].equilibrium,local[2].history}}});
++#endif
+ #ifdef STAGE3D10BA_POLAR_AUDIT
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++    if(obs==1)
++      ice3d::p10ba::write_step_polar_temporal(c.out,c.mesh.stem().string(),
++            qp_probe,n,c.dt,c.steps,
++            {{{local[1].objective,local[1].equilibrium,local[1].history},
++              {local[2].objective,local[2].equilibrium,local[2].history}}});
++#else
+     if(obs==1 && (n==5 || n==6))
+       ice3d::p10ba::write_step_polar(c.out,c.mesh.stem().string(),
+             qp_probe,n,
+             {{{local[1].objective,local[1].equilibrium,local[1].history},
+               {local[2].objective,local[2].equilibrium,local[2].history}}});
+ #endif
++#endif
+ #endif
+     for(std::size_t bin=0;bin<spatial::bins;++bin)
+      spatial_rows.push_back({k,obs,bin,n,local[bin]});
+@@ -659,8 +675,17 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
+  p10k::require(fs::is_regular_file(c.mesh),"P10N mesh not found");
+  p10k::require(c.steps*c.dt==900,"P10N requires steps*dt=900 s");
+ #ifdef STAGE3D10AZ_QP_PROBE
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++ p10k::require(((c.steps==6&&c.dt==150)||
++                (c.steps==12&&c.dt==75)||
++                (c.steps==18&&c.dt==50))&&
++               c.mode=="R"&&c.cutoff_mm==5.,
++               "P10BD requires (steps,dt)=(6,150),(12,75),(18,50),"
++               " --mode R --cutoff-mm 5");
++#else
+  p10k::require(c.steps==6&&c.dt==150&&c.mode=="R"&&c.cutoff_mm==5.,
+                "P10AZ requires --steps 6 --dt 150 --mode R --cutoff-mm 5");
++#endif
+ #endif
+  p10k::require(!fs::exists(c.out),"P10N --out must be a NEW folder");
+  p10k::require(reuse.empty()||fs::is_regular_file(reuse),
+@@ -977,6 +1002,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
+      <<" checkpoint_roundtrip_bitwise=1 wall_s="<<wall<<'\n';
+ #endif
+ #ifdef STAGE3D10AZ_QP_PROBE
++#ifndef STAGE3D10BD_TEMPORAL_AUDIT
+  if(good){
+   for(const char* name:{"P10AZ_QP_SIGN_AUDIT.csv",
+      "P10AZ_TOP_ELEMENTS.csv","P10AZ_QP_RADIAL_SUBBINS.csv"})
+@@ -988,8 +1014,22 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
+    <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
+  }
+ #endif
++#endif
+ #ifdef STAGE3D10BA_POLAR_AUDIT
+  if(good){
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++  for(const char* name:{"P10BD_QP_POLAR_RADIAL.csv",
++                         "P10BD_POLAR_PARTITION_AUDIT.csv"})
++   p10k::require(fs::is_regular_file(c.out/name),
++                 std::string("P10BD missing polar output: ")+name);
++  std::cout<<"P10BD_TEMPORAL_POLAR_OK mesh="<<c.mesh.stem().string()
++   <<" steps="<<c.steps<<" dt="<<c.dt
++   <<" full_horizon_s="<<c.steps*c.dt
++   <<" shells=1,2 radial_subbins=10 polar_bands=10"
++   <<" rows="<<200*c.steps
++   <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
++   <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
++#else
+   for(const char* name:{"P10BA_QP_POLAR_RADIAL.csv",
+                          "P10BA_POLAR_PARTITION_AUDIT.csv"})
+    p10k::require(fs::is_regular_file(c.out/name),
+@@ -998,6 +1038,7 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
+    <<" steps=5,6 shells=1,2 radial_subbins=10 polar_bands=10"
+    <<" rows=400 nonlinear_forward_solves="<<(reuse.empty()?1:0)
+    <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
++#endif
+  }
+ #endif
+ #ifdef STAGE3D10S_SPATIAL_AUDIT
+diff --git a/src/stage3d10w_analytic_adjoint.cpp b/src/stage3d10w_analytic_adjoint.cpp
+index 047012d..904af41 100644
+--- a/src/stage3d10w_analytic_adjoint.cpp
++++ b/src/stage3d10w_analytic_adjoint.cpp
+@@ -15,6 +15,10 @@ int main(int argc,char** argv){
+   for(int i=1;i<argc;++i){
+    const std::string arg=argv[i];
+    if(arg=="--help"){
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++    std::cout<<"P10BD temporal pilot: (steps,dt)=(6,150),(12,75),"
++     "(18,50), fixed horizon 900 s, polar QP contributions for ALL steps.\n";
++#endif
+ #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+     std::cout<<"stage3d10y_analytic_shell_audit: exact P10W derivative"
+      " by physical radial Gauss-point shells. Thermal partial remains global.\n";
+@@ -64,6 +68,15 @@ int main(int argc,char** argv){
+ #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+    if(result==0)std::cout<<"P10Y_SHELL_BINS_SELFTEST_OK bins="
+                           <<p10n::spatial::bins<<'\n';
++#endif
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++   p10k::require(ice3d::p10ba::radial_count==10&&
++                 ice3d::p10ba::polar_count==10&&
++                 ice3d::p10ba::polar_index(-1.)==0&&
++                 ice3d::p10ba::polar_index(1.)==9,
++                 "P10BD polar bins selftest failed");
++   if(result==0)std::cout<<"P10BD_TEMPORAL_BINS_SELFTEST_OK"
++       " allowed_dt=150,75,50 horizon_s=900\n";
+ #endif
+    return result;
+   }
+diff --git a/tests/stage3d10v_analytic_shape.cpp b/tests/stage3d10v_analytic_shape.cpp
+index 0429b58..03a0c13 100644
+--- a/tests/stage3d10v_analytic_shape.cpp
++++ b/tests/stage3d10v_analytic_shape.cpp
+@@ -231,6 +231,29 @@ int main(){try{
+       std::size_t lines=0;std::string line;
+       while(std::getline(f,line))++lines;
+       check(lines==5,"P10BA expected 4 audit rows + header"); }
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++    // Exercise the new all-step exporter without solving a costly 3D pilot.
++    // Reverse adjoint order is steps, steps-1, ..., 1.
++    for(const auto time:std::array<std::array<int,2>,3>{{
++          {150,6},{75,12},{50,18}}}){
++     const int dt=time[0],steps=time[1];
++     const auto tmp=output/("P10BD_dt"+std::to_string(dt));
++     fs::create_directories(tmp);
++     for(int n=steps;n>=1;--n)
++      ice3d::p10ba::write_step_polar_temporal(
++       tmp,"SYNTHETIC_TET10",synthetic,n,dt,steps,outputExpected);
++     { std::ifstream f(tmp/"P10BD_QP_POLAR_RADIAL.csv");
++       std::size_t lines=0;std::string line;
++       while(std::getline(f,line))++lines;
++       check(lines==1+std::size_t(200*steps),
++             "P10BD expected all time/polar cells"); }
++     { std::ifstream f(tmp/"P10BD_POLAR_PARTITION_AUDIT.csv");
++       std::size_t lines=0;std::string line;
++       while(std::getline(f,line))++lines;
++       check(lines==1+std::size_t(2*steps),
++             "P10BD expected every time/shell audit row"); }
++    }
++#endif
+ #endif
+     check(fs::is_regular_file(output/"P10AZ_QP_SIGN_AUDIT.csv"),
+           "P10AZ cannot write QP signature CSV");
+@@ -301,6 +324,10 @@ int main(){try{
+ #ifdef STAGE3D10BA_POLAR_AUDIT
+  std::cout<<"P10BA_POLAR_UNIT_OK equal_area=1 qp_coordinates=1"
+           " 400_rows=1 shell_radial_parity=1\n";
++#ifdef STAGE3D10BD_TEMPORAL_AUDIT
++ std::cout<<"P10BD_TEMPORAL_UNIT_OK schedules=3 all_step_polar_rows="
++          "1200,2400,3600 original_p10ba_preserved=1\n";
++#endif
+ #endif
+ #endif
+ #endif
