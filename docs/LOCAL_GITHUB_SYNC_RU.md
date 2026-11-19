@@ -1,12 +1,13 @@
 # Stage3D07: как связаны локальный ПК, GitHub и PORE ONE CLICK
 
-Актуализация: **18.11.2026**. Репозиторий GitHub: `galildmur-dotcom/stage3d07_ice_pore`.
+Актуализация: **19.11.2026**. Репозиторий GitHub: `galildmur-dotcom/stage3d07_ice_pore`.
 
 ## Три разных хранилища
 
 1. **ПК `G:\ildar\Stage3D07`:** исходный код, локальные изменения и большие исходные FEM-расчёты. Состояние Git здесь независимо от состояния GitHub. По экспорту P10BF локальный `HEAD=c0498f6d...`, а пять файлов имели `M/??`; это не чистый снимок сборки.
 2. **GitHub, `master`:** постоянная точка входа `START_NEW_CHAT.md`, а не автоматически самый новый научный код.
 3. **GitHub, `research/p10bb-w5b2-20261118`:** актуальная доказательная ветка для P10AZ–P10BF, первичных CSV и исследовательских документов. Она может отличаться от локального `master` на ПК.
+4. **GitHub, `research/p10bg-source-integration-20261119`:** отдельная ветка-кандидат с семью восстановленными файлами на штатных путях `src/`, `tests/`, `CMakeLists.txt`; Linux C++ unit/selftest пройдены, но CMake/MinGW и актуальный Windows HEAD ещё не сверены. **Не сливать и не запускать старый PORE push автоматически.** Протокол — `research/P10BG_SOURCE_INTEGRATION_20261119.md`.
 
 `git push` передаёт только закоммиченные изменения **конкретной ветки** на **указанный remote**. ZIP в чате и `Snapshot-For-ChatGPT.ps1` не выполняют `push`; загрузка файла в ChatGPT сама по себе не обновляет GitHub. `origin` может указывать на исторический GitFlic, поэтому наличие Git на ПК само по себе не удостоверяет связь с GitHub.
 
@@ -29,6 +30,7 @@ git fetch --dry-run origin
 - [`tools/PORE_GIT_TOOLS_20261113/`](../tools/PORE_GIT_TOOLS_20261113/README_REPOSITORY_RU.md): 13 оригинальных файлов, аудит возможностей и рисков. Редакция P10Z 13.11; **архив, не рекомендуемая актуальная кнопка для GitHub**.
 - `tools/P10BF_EXPORT_ONECLICK.cmd`, `tools/p10bf_collect_provenance.py`: компактный читающий экспорт с SHA, созданный позднее для P10BF, не меняет пользовательский Git.
 - `scripts/p10bb_verify_primaries.py`: чисто читающая самостоятельная проверка трёх оригинальных P10BB CSV и опубликованных таблиц.
+- [`tools/P10BG_SOURCE_CHECK_20261119/`](../tools/P10BG_SOURCE_CHECK_20261119/README_RU.md): новый **только читающий** One Click для сверки актуального Git HEAD и SHA-256 семи локальных файлов. Архив `tools/P10BG_SOURCE_CHECK_ONECLICK_20261119.zip` содержит CMD и PS1; в проект на G: не пишет, не запускает компиляцию или FEM. На Windows пока не испытан.
 
 ## Что сохранять для следующего чата
 
