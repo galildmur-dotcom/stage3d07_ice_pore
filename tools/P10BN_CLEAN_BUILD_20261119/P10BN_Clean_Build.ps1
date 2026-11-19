@@ -4,6 +4,7 @@ param([string]$ProjectRoot = 'G:\ildar\Stage3D07')
 # Only reads the original project and its existing Qt Creator CMakeCache.
 # Clone, build and reports are created in a NEW SIBLING directory.
 # The script never runs FEM and never changes original Git refs or working files.
+# R2: fix PowerShell 5.1 integer + '/' status formatting in both checks.
 $ErrorActionPreference = 'Stop'
 $expectedHead = '90fd2559c0224ac0a7d2dbe2fe081a6a319080e4'
 $branch = 'research/p10bi-local-seven-sources-20261119'
@@ -157,6 +158,7 @@ try {
     [void](New-Item -ItemType Directory -Path $logsRoot)
     $reportFile = Join-Path $outputRoot 'P10BN_RESULT.txt'
     Add-Report 'P10BN ISOLATED CLEAN WINDOWS BUILD (NO FEM)'
+    Add-Report 'TOOL_REVISION=P10BN_R2_STATUS_FORMAT_FIX'
     Add-Report ('DATE_LOCAL=' + (Get-Date).ToString('o'))
     Add-Report ('EXPECTED_SHA=' + $expectedHead)
     Add-Report ('TARGET_BRANCH=' + $branch)
@@ -174,7 +176,8 @@ try {
     $headBefore = $originalHead.Lines[0]
     Add-Report ('ORIGINAL_HEAD_BEFORE=' + $originalHead.Lines[0])
     $originalStatus = Get-SafeStatus $git $resolvedRoot
-    $statusBefore = $originalStatus.Staged + '/' + $originalStatus.Unstaged + '/' + $originalStatus.Untracked
+    # Avoid Int32 + '/' coercion on Windows PowerShell 5.1.
+    $statusBefore = ('{0}/{1}/{2}' -f $originalStatus.Staged, $originalStatus.Unstaged, $originalStatus.Untracked)
     Add-Report ('ORIGINAL_STATUS_BEFORE=' + $statusBefore)
 
     $oldCache = Join-Path $resolvedRoot 'build\Desktop_MinGW_Release\CMakeCache.txt'
@@ -279,7 +282,7 @@ try {
                     $originalAfter = Invoke-Native $git @('-C', $resolvedRoot, 'rev-parse', 'HEAD')
                     Require-Ok $originalAfter 'original final HEAD query'
                     $statusAfterObj = Get-SafeStatus $git $resolvedRoot
-                    $statusAfter = $statusAfterObj.Staged + '/' + $statusAfterObj.Unstaged + '/' + $statusAfterObj.Untracked
+                    $statusAfter = ('{0}/{1}/{2}' -f $statusAfterObj.Staged, $statusAfterObj.Unstaged, $statusAfterObj.Untracked)
                     Add-Report ('ORIGINAL_HEAD_AFTER=' + $originalAfter.Lines[0])
                     Add-Report ('ORIGINAL_STATUS_AFTER=' + $statusAfter)
                     if ($originalAfter.Lines[0] -cne $headBefore -or $statusAfter -cne $statusBefore) {
