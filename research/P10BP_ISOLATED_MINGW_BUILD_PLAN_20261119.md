@@ -1,0 +1,31 @@
+# P10BP — следующая чистая сборка с установленным MinGW GNU 13.1.0
+
+Дата 19.11.2026. **Статус: реализован исполняемый план/инструмент, Windows запуск P10BP пока не получен.**
+
+## Исходные факты
+
+P10BM: исходники опубликованы на отдельной GitHub ветке `research/p10bi-local-seven-sources-20261119`, точный SHA `90fd2559c0224ac0a7d2dbe2fe081a6a319080e4` доступен; семь исходников совпали с P10BG-кандидатом. P10BH: четыре unit/selftest старых Windows EXE прошли, но build provenance EXE неизвестен. P10BN R1 и R2 остановились **до** clone/build: R1 — Int32-форматирование, R2 — защищённый отказ из-за JOM.
+
+P10BO — первичный Windows `P10BO_TOOLCHAIN_REPORT.txt` (SHA-256 `7887b95b6910880e02ac350a7442aa14a8c58e5762ff852ecf28c4eb3d9f300b`): compiler `C:/mingw64/bin/g++.exe`, ID GNU, version 13.1.0, platform MinGW, Release, OpenMP ON. Старый CMake generator `NMake Makefiles JOM` и `CMAKE_MAKE_PROGRAM=jom`; `jom.exe`, `mingw32-make.exe`, `g++.exe` не обнаружены в обычном PATH. **Факт отсутствия make в PATH не равен отсутствию файла `C:\mingw64\bin\mingw32-make.exe`**.
+
+## Исполняемое решение
+
+Поскольку [официальный CMake MinGW Makefiles](https://cmake.org/cmake/help/latest/generator/MinGW%20Makefiles.html) требует `mingw32-make` под Windows/MinGW, P10BP проверяет **конкретный** `C:\mingw64\bin\mingw32-make.exe` перед любыми clone/configure/build. При его наличии использует **новую** отдельную `MinGW Makefiles` конфигурацию с точно проверенным GNU13.1.0 компилятором, не изменяя старую JOM конфигурацию. Если make отсутствует, только первичный STOP+ZIP; никаких скачиваний/установок или неконтролируемых замен.
+
+После preflight и явного ввода `BUILD P10BP` создаётся отдельная папка `G:\ildar\P10BP_ATTEST_*` с клоном публичной GitHub ветки, checkout exact SHA и новым CMake build. Логируемые команды по смыслу:
+
+```text
+cmake -S <new_clone> -B <new_build> -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=C:/mingw64/bin/g++.exe -DCMAKE_MAKE_PROGRAM=C:/mingw64/bin/mingw32-make.exe -DSTAGE3D06P_OPENMP=ON
+cmake --build <new_build> --config Release --target stage3d10v_analytic_shape_unit stage3d10y_analytic_shell_unit stage3d10be_temporal_unit stage3d10be_temporal_polar_audit --parallel 4
+```
+
+Запуски: три `*_unit.exe` без аргументов и `stage3d10be_temporal_polar_audit.exe --selftest`. Все четыре коротких теста требуют exit 0 и контрольные маркеры. Сохраняются configure/build logs, SHA-256 новых EXE, stdout/stderr тестов, исходный SHA и Git status до/после. ZIP отчёта `P10BP_EVIDENCE.zip` **не включает** EXE, огромные FEM данные и полный CMakeCache. Старый `G:\ildar\Stage3D07` не изменяется.
+
+## Приёмка и ограничения
+
+- Результат `P10BP_NEW_WINDOWS_BUILD_AND_FOUR_TESTS_OK` **не объявлять** без независимой проверки содержимого `P10BP_EVIDENCE.zip` и контрольных маркеров.
+- Новый генератор отличается от старого JOM: успешный P10BP аттестует **новые** EXE из exact SHA, но не доказывает происхождение или битовую идентичность исторических P10BE EXE.
+- Оценка времени 5–20 мин, ОЗУ 2–8 GiB (не измерения); свободное место на G: желательно ≥3 GiB. Никаких больших FEM запусков.
+- После инженерного подтверждения следующий научный приоритет — пространственно-временная сходимость полной `D_RJ` и приполюсная компенсация компонентов P10BB/P10BE/P10AZ; прямую/сопряжённую задачи каждого опыта решать на одной сетке по P10AO. Сходимость пока **не доказана**.
+
+Инструмент: `tools/P10BP_MINGW_CLEAN_BUILD_ONECLICK_20261119.zip`, русская инструкция `tools/P10BP_MINGW_CLEAN_BUILD_20261119/README_RU.md`. Следующий пользовательский файл — **один `P10BP_EVIDENCE.zip`**. При STOP не повторять без анализа.
