@@ -1167,6 +1167,161 @@ if(WIN32)
 endif()
 add_test(NAME P10Y_analytic_shell_selftest
   COMMAND stage3d10y_analytic_shell_audit --selftest)
+
+# P10AZ: full P10Y math, additional targeted Q3/element diagnostic only.
+# No changes to the original P10Y target or its outputs.
+add_executable(stage3d10az_targeted_qp_probe
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10az_targeted_qp_probe PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10az_targeted_qp_probe PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
+  STAGE3D10AZ_QP_PROBE
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10az_targeted_qp_probe PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10az_targeted_qp_probe PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10az_targeted_qp_probe PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10az_targeted_qp_probe PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10az_targeted_qp_probe PRIVATE Psapi)
+endif()
+add_test(NAME P10AZ_probe_preflight
+  COMMAND stage3d10az_targeted_qp_probe --selftest)
+
+# Independent tiny reference-element check of the QP capture path.
+add_executable(stage3d10az_qp_probe_unit
+  tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10az_qp_probe_unit PRIVATE src)
+target_compile_definitions(stage3d10az_qp_probe_unit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10AZ_QP_PROBE)
+if(MSVC)
+  target_compile_options(stage3d10az_qp_probe_unit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10az_qp_probe_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10AZ_qp_probe_analytic_unit COMMAND stage3d10az_qp_probe_unit)
+
+# P10BA: independent target, retaining all P10AZ output and numerical paths.
+# Adds only 10 equal-area polar bands per existing radial subbin.
+add_executable(stage3d10ba_polar_radial_audit
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10ba_polar_radial_audit PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10ba_polar_radial_audit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
+  STAGE3D10AZ_QP_PROBE STAGE3D10BA_POLAR_AUDIT
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10ba_polar_radial_audit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10ba_polar_radial_audit PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10ba_polar_radial_audit PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10ba_polar_radial_audit PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10ba_polar_radial_audit PRIVATE Psapi)
+endif()
+add_test(NAME P10BA_polar_preflight
+  COMMAND stage3d10ba_polar_radial_audit --selftest)
+
+add_executable(stage3d10ba_polar_unit tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10ba_polar_unit PRIVATE src)
+target_compile_definitions(stage3d10ba_polar_unit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10AZ_QP_PROBE
+  STAGE3D10BA_POLAR_AUDIT)
+if(MSVC)
+  target_compile_options(stage3d10ba_polar_unit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10ba_polar_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10BA_polar_analytic_unit COMMAND stage3d10ba_polar_unit)
+
+# P10BD: fixed H2 mesh, fixed 900 s horizon, full-time polar QP derivative.
+# Kept independent from P10BA: its 5/6 step baseline stays bitwise unchanged.
+add_executable(stage3d10bd_temporal_polar_audit
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10bd_temporal_polar_audit PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10bd_temporal_polar_audit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
+  STAGE3D10AZ_QP_PROBE STAGE3D10BA_POLAR_AUDIT
+  STAGE3D10BD_TEMPORAL_AUDIT
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10bd_temporal_polar_audit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10bd_temporal_polar_audit PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10bd_temporal_polar_audit PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10bd_temporal_polar_audit PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10bd_temporal_polar_audit PRIVATE Psapi)
+endif()
+add_test(NAME P10BD_temporal_polar_preflight
+  COMMAND stage3d10bd_temporal_polar_audit --selftest)
+add_executable(stage3d10bd_temporal_unit tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10bd_temporal_unit PRIVATE src)
+target_compile_definitions(stage3d10bd_temporal_unit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10AZ_QP_PROBE
+  STAGE3D10BA_POLAR_AUDIT STAGE3D10BD_TEMPORAL_AUDIT)
+if(MSVC)
+  target_compile_options(stage3d10bd_temporal_unit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10bd_temporal_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10BD_temporal_polar_unit COMMAND stage3d10bd_temporal_unit)
+
+# P10BE: one new H2 full forward+adjoint at dt=25 s (36 time steps).
+# Separate executable, leaving the validated P10BD 150/75/50 targets intact.
+add_executable(stage3d10be_temporal_polar_audit
+  src/stage3d10w_analytic_adjoint.cpp)
+target_include_directories(stage3d10be_temporal_polar_audit PRIVATE
+  src tests "${CMAKE_CURRENT_BINARY_DIR}/generated")
+target_compile_definitions(stage3d10be_temporal_polar_audit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10S_SPATIAL_AUDIT
+  STAGE3D10AZ_QP_PROBE STAGE3D10BA_POLAR_AUDIT
+  STAGE3D10BD_TEMPORAL_AUDIT STAGE3D10BE_TEMPORAL_AUDIT
+  STAGE3D10K_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
+if(MSVC)
+  target_compile_options(stage3d10be_temporal_polar_audit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10be_temporal_polar_audit PRIVATE
+    -O2 -Wall -Wextra -Wpedantic)
+endif()
+if(STAGE3D06P_OPENMP AND OpenMP_CXX_FOUND)
+  target_link_libraries(stage3d10be_temporal_polar_audit PRIVATE OpenMP::OpenMP_CXX)
+endif()
+if(WIN32)
+  target_sources(stage3d10be_temporal_polar_audit PRIVATE src/win_process_memory.cpp)
+  target_link_libraries(stage3d10be_temporal_polar_audit PRIVATE Psapi)
+endif()
+add_test(NAME P10BE_temporal_polar_preflight
+  COMMAND stage3d10be_temporal_polar_audit --selftest)
+add_executable(stage3d10be_temporal_unit tests/stage3d10v_analytic_shape.cpp)
+target_include_directories(stage3d10be_temporal_unit PRIVATE src)
+target_compile_definitions(stage3d10be_temporal_unit PRIVATE
+  STAGE3D10Y_ANALYTIC_SHELL_AUDIT STAGE3D10AZ_QP_PROBE
+  STAGE3D10BA_POLAR_AUDIT STAGE3D10BD_TEMPORAL_AUDIT
+  STAGE3D10BE_TEMPORAL_AUDIT)
+if(MSVC)
+  target_compile_options(stage3d10be_temporal_unit PRIVATE /O2 /W4)
+else()
+  target_compile_options(stage3d10be_temporal_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
+endif()
+add_test(NAME P10BE_temporal_polar_unit COMMAND stage3d10be_temporal_unit)
+
 add_executable(stage3d10y_analytic_shell_unit
   tests/stage3d10v_analytic_shape.cpp)
 target_include_directories(stage3d10y_analytic_shell_unit PRIVATE src)

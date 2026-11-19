@@ -69,10 +69,33 @@ struct Derivative {
 };
 
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+// P10AZ: diagnostic-only capture of exact frozen-state Q3 contributions.
+// The recorder is active only for the selected peak functional, bins and
+// steps. It never changes the residual, objective or EDV update.
+#ifdef STAGE3D10AZ_QP_PROBE
+struct QpProbeRecord {
+ std::size_t element=0,qp=0,bin=0;
+ double distance_mm=0,volume=0,d_volume=0,d_numerator=0;
+ double equilibrium=0,history=0;
+#ifdef STAGE3D10BA_POLAR_AUDIT
+ double polar_mu=0.; // cos(theta) about actual spherical pore centre
+#endif
+};
+struct QpProbe {
+ const std::vector<State>* futures=nullptr;
+ std::size_t objective_index=1; // peak moment in [j6,peak,energy]
+ double weight=1.;
+ double observed_volume=0.,average=0.;
+ std::vector<QpProbeRecord> records;
+};
+#endif
 struct ShellAudit {
  const std::vector<std::uint8_t>& qp_shells;
  std::vector<const std::vector<double>*> adjoints;
  std::size_t bin_count=0;
+#ifdef STAGE3D10AZ_QP_PROBE
+ QpProbe* probe=nullptr;
+#endif
 };
 #endif
 
@@ -111,6 +134,15 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
   out.equilibrium_by_shell=out.objective_by_shell;
   shell_dnumerator=out.objective_by_shell;
   shell_dvolume.assign(shell_audit->bin_count,0.);
+#ifdef STAGE3D10AZ_QP_PROBE
+  if(shell_audit->probe){
+   const auto* history=shell_audit->probe->futures;
+   if(!history||history->size()!=step.qps.size()||
+      shell_audit->probe->objective_index>=kinds.size())
+    throw std::invalid_argument("P10AZ invalid QP probe dimensions");
+   shell_audit->probe->records.clear();
+  }
+#endif
  }
 #endif
 
@@ -159,6 +191,32 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
    }
    const auto law=qp.law.jvp(deps,0.,State{});
    out.operator_change.next[qid]=law.d_new;
+#ifdef STAGE3D10AZ_QP_PROBE
+   QpProbeRecord probe_record;
+   bool probe_selected=false;
+   if(shell_audit && shell_audit->probe && (bin==1||bin==2)){
+    probe_selected=true;
+    V x{};
+    for(int a=0;a<10;++a)x=x+mesh.nodes[ids[a]]*b.N[a];
+    probe_record.element=e;
+    probe_record.qp=iq;
+    probe_record.bin=bin;
+    probe_record.distance_mm=(norm(x-V{0.,0.,.03})-.001)*1000.;
+#ifdef STAGE3D10BA_POLAR_AUDIT
+    const V radial=x-V{0.,0.,.03};
+    const double r=norm(radial);
+    if(!(r>0.))throw std::runtime_error("P10BA QP at pore centre");
+    probe_record.polar_mu=std::clamp(radial.z/r,-1.,1.);
+#endif
+    probe_record.volume=qp.volume;
+    probe_record.d_volume=dv;
+    const auto& fut=(*shell_audit->probe->futures)[qid];
+    for(int a=0;a<6;++a){
+     probe_record.history+=fut.e_d[a]*law.d_new.e_d[a];
+     probe_record.history+=fut.e_v[a]*law.d_new.e_v[a];
+    }
+   }
+#endif
    for(int a=0;a<30;++a){
     const int global=3*ids[a/3]+a%3;
     if(step.constrained[global])continue;
@@ -167,12 +225,24 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
       qp.volume*(edv::dot(dB[a],qp.law.response.sigma)+
                  edv::dot(qp.B[a],law.d_sigma));
     out.operator_change.residual[global]+=local_change;
+#ifdef STAGE3D10AZ_QP_PROBE
+    if(probe_selected)
+     probe_record.equilibrium+=
+       (*shell_audit->adjoints[shell_audit->probe->objective_index])[global]*
+       local_change;
+#endif
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
     if(shell_audit)for(std::size_t k=0;k<kinds.size();++k)
      out.equilibrium_by_shell[k][bin]+=
          (*shell_audit->adjoints[k])[global]*local_change;
 #endif
    }
+#ifdef STAGE3D10AZ_QP_PROBE
+   if(probe_selected && !observation_mask[e]){
+    probe_record.d_volume=0.; // outside B6: no objective numerator OR denominator
+    shell_audit->probe->records.push_back(probe_record);
+   }
+#endif
    if(!observation_mask[e])continue;
    out.observed_volume+=qp.volume;
    out.observed_volume_derivative+=dv;
@@ -187,18 +257,32 @@ inline Derivative directional(const Mesh& mesh,const std::vector<GaussQ>& quad,
         p10b::euclid_dot(src.direct_strain,deps);
     numerator[k]+=qp.volume*src.value;
     d_numerator[k]+=dv*src.value+qp.volume*d_point;
+#ifdef STAGE3D10AZ_QP_PROBE
+    if(probe_selected && k==shell_audit->probe->objective_index)
+     probe_record.d_numerator=dv*src.value+qp.volume*d_point;
+#endif
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
     if(shell_audit){
      shell_dnumerator[k][bin]+=dv*src.value+qp.volume*d_point;
     }
 #endif
    }
+#ifdef STAGE3D10AZ_QP_PROBE
+   if(probe_selected) shell_audit->probe->records.push_back(probe_record);
+#endif
   }
  }
  if(!(out.observed_volume>0.))
   throw std::runtime_error("P10V: empty observation region");
  for(size_t k=0;k<kinds.size();++k){
   const double average=numerator[k]/out.observed_volume;
+#ifdef STAGE3D10AZ_QP_PROBE
+   if(shell_audit && shell_audit->probe &&
+      k==shell_audit->probe->objective_index){
+    shell_audit->probe->observed_volume=out.observed_volume;
+    shell_audit->probe->average=average;
+   }
+#endif
   out.objective[k]=(d_numerator[k]-
          average*out.observed_volume_derivative)/out.observed_volume;
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
