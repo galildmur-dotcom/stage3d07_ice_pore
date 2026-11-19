@@ -25,3 +25,9 @@ P10BL: 56 достижимых коммитов, 1122 объектов, 818 blob
 Пользователь пришлёт **только `P10BM_PUSH_RESULT.txt`**. Успех следует признавать лишь при `RESULT=P10BM_REMOTE_BRANCH_PUBLISHED_AND_VERIFIED` (или `ALREADY_PUBLISHED_VERIFIED_NO_PUSH`) с точным SHA `90fd2559c0224ac0a7d2dbe2fe081a6a319080e4` на целевой удалённой ветке. После этого независимо через GitHub проверить наличие точного коммита/ветки и включить прямую ссылку в `START_NEW_CHAT.md`, `docs/PROJECT_STATE.md`, `docs/RESEARCH_LOG.md`.
 
 Даже после успешного push Git-история и работоспособность старых `.exe` — **разные доказательства**. Исторические P10BE EXE нельзя приписывать SHA `90fd...` без независимого compile log, compiler/CMake и EXE SHA. Полная пространственная сходимость аналитической форменной производной не доказана и остаётся следующим научным приоритетом.
+
+## Завершение после P10BM_PUSH_RESULT.txt, 19.11.2026
+
+Отчёт получен: `PUSH 56`, `GIT_PUSH_EXIT=0`, `REMOTE_HEAD_AFTER=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4`, `RESULT=P10BM_REMOTE_BRANCH_PUBLISHED_AND_VERIFIED`. Через GitHub **независимо** подтверждены наличие новой ветки и коммита (разница ветка↔SHA `identical`, ahead=behind=0), доступность прежнего родителя `c0498f6...` и список ровно семи файлов последнего коммита. Все 7 Git blob SHA совпали с ранее подготовленным P10BG кандидатом. Подробно: `research/evidence/P10BM_WINDOWS_RESULT_20261119/README_RU.md`.
+
+**Статус P10BM: закрыт успешно.** Новые Win EXE / full CMake build от этого не возникли; следующая задача — независимая аттестация чистой Windows-сборки.
