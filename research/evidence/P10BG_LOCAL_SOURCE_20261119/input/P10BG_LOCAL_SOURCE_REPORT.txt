@@ -1,0 +1,29 @@
+P10BG LOCAL SOURCE CHECK (read-only)
+time_local=2026-11-19T13:34:49.5511564+05:00
+project_root=G:\ildar\Stage3D07
+expected_set=P10BF archived user source files plus later P10AZ/P10V originals
+No source/build/mesh/Local_Runs files were modified.
+git_HEAD_exit=0
+  c0498f6dc98628b62eff996a76844297c7a35094
+git_branch_exit=0
+  master
+git_status_seven_paths_exit=0
+   M CMakeLists.txt
+   M src/stage3d10p_partial_audit.cpp
+   M src/stage3d10v_analytic_shape.hpp
+   M src/stage3d10w_analytic_adjoint.cpp
+   M tests/stage3d10v_analytic_shape.cpp
+  ?? src/stage3d10az_probe_export.hpp
+  ?? src/stage3d10ba_polar_export.hpp
+source[CMakeLists.txt]=EXACT_SHA256 actual_sha256=453f41a086b1284a7c4da4bba2e343b106edae602adc2ee180fa9fd91abbbddf
+source[src\stage3d10p_partial_audit.cpp]=EXACT_SHA256 actual_sha256=73cdbf9ee75de9f32ae8490baeedd760b00797670a4c6c869277405e45963f7a
+source[src\stage3d10w_analytic_adjoint.cpp]=EXACT_SHA256 actual_sha256=70873515734edaa42ce96366e636fa6c385a114cd08564817b283fadeccdcd46
+source[src\stage3d10v_analytic_shape.hpp]=EXACT_SHA256 actual_sha256=ad9b5f8d24dcbbbd7678a01a32ef5947e198173c779c7e4efe1da48beca4f7e3
+source[src\stage3d10az_probe_export.hpp]=EXACT_SHA256 actual_sha256=9bf6b9729da9e2ff698ef8f890fcc88b8d3fb2ef787708992605a72d0ec8e57d
+source[src\stage3d10ba_polar_export.hpp]=EXACT_SHA256 actual_sha256=92b81c258b11fad8ccd4915d215f567cbdf61b642c61e9dbe47732b294ead373
+source[tests\stage3d10v_analytic_shape.cpp]=EXACT_SHA256 actual_sha256=f5c70aba380da9a45c234b33c8ac2f90879d1d59784033a759b7193ab111ca12
+exact_source_matches=7/7
+DIFFERENT_BYTES alone does not prove a numerical difference: compare contents before any replacement.
+Do not run git pull, patch import, or CMake reconfigure merely because this check differs.
+report=G:\Downloads\P10BG_SOURCE_CHECK_ONECLICK_20261119\P10BG_SOURCE_CHECK_20261119_133449_16388\P10BG_LOCAL_SOURCE_REPORT.txt
+hash_csv=G:\Downloads\P10BG_SOURCE_CHECK_ONECLICK_20261119\P10BG_SOURCE_CHECK_20261119_133449_16388\P10BG_SHA256.csv

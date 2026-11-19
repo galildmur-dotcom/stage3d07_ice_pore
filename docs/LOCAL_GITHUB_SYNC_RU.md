@@ -32,6 +32,8 @@ git fetch --dry-run origin
 - `scripts/p10bb_verify_primaries.py`: чисто читающая самостоятельная проверка трёх оригинальных P10BB CSV и опубликованных таблиц.
 - [`tools/P10BG_SOURCE_CHECK_20261119/`](../tools/P10BG_SOURCE_CHECK_20261119/README_RU.md): новый **только читающий** One Click для сверки актуального Git HEAD и SHA-256 семи локальных файлов. Архив `tools/P10BG_SOURCE_CHECK_ONECLICK_20261119.zip` содержит CMD и PS1; в проект на G: не пишет, не запускает компиляцию или FEM. На Windows пока не испытан.
 
+**Фактическая проверка 19.11:** Windows P10BG One Click завершил работу, отчёты получены (`research/evidence/P10BG_LOCAL_SOURCE_20261119/`), все 7/7 источников совпали по SHA. Локальная ветка по-прежнему `master`, HEAD `c0498f6…`, пять изменённых и два новых файла. **Не переносить код повторно** и не делать `git pull`: это не решит проблему фиксации локальных файлов. Сначала локальные CMake/MinGW Release unit/selftest по `research/evidence/P10BG_LOCAL_SOURCE_20261119/P10BH_WINDOWS_UNIT_CHECK_20261119.md`, затем согласованная локальная Git-фиксация только этих семи файлов.
+
 ## Что сохранять для следующего чата
 
 После значимого запуска/публикации фиксировать: `run_id`; цель Qt Creator; дату; аргументы; имя сетки и её SHA-256; SHA-256 фактического EXE; Git HEAD на ПК; `git status --short`; состояние `origin`/ветки; SHA первичных CSV; что действительно проверено. Не заполнять отсутствующий SHA догадкой. Обновлять `docs/PROJECT_STATE.md` и `master/START_NEW_CHAT.md`, оставлять ссылку на конкретную рабочую ветку, не переписывая исторические `RUN_MANIFEST.json`.
