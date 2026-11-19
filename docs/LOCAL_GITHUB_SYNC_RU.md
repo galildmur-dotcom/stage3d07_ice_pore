@@ -31,8 +31,11 @@ git fetch --dry-run origin
 - `tools/P10BF_EXPORT_ONECLICK.cmd`, `tools/p10bf_collect_provenance.py`: компактный читающий экспорт с SHA, созданный позднее для P10BF, не меняет пользовательский Git.
 - `scripts/p10bb_verify_primaries.py`: чисто читающая самостоятельная проверка трёх оригинальных P10BB CSV и опубликованных таблиц.
 - [`tools/P10BG_SOURCE_CHECK_20261119/`](../tools/P10BG_SOURCE_CHECK_20261119/README_RU.md): новый **только читающий** One Click для сверки актуального Git HEAD и SHA-256 семи локальных файлов. Архив `tools/P10BG_SOURCE_CHECK_ONECLICK_20261119.zip` содержит CMD и PS1; в проект на G: не пишет, не запускает компиляцию или FEM. На Windows пока не испытан.
+- [`tools/P10BI_LOCAL_COMMIT_20261119/`](../tools/P10BI_LOCAL_COMMIT_20261119/README_RU.md): **следующий этап после P10BH** — One Click, который сначала проверяет точные семь SHA/статусов и HEAD, создаёт семь независимых резервных копий, а **только после ручного `COMMIT 7`** делает отдельную локальную ветку и один коммит семи путей. Архив: `tools/P10BI_LOCAL_COMMIT_ONECLICK_20261119.zip`. Без push/pull, без FEM. На Windows пока не запущен; ожидается **один** `P10BI_RESULT.txt`. Протокол: `research/P10BI_LOCAL_SEVEN_SOURCE_COMMIT_20261119.md`.
 
 **Фактическая проверка 19.11:** Windows P10BG One Click завершил работу, отчёты получены (`research/evidence/P10BG_LOCAL_SOURCE_20261119/`), все 7/7 источников совпали по SHA. Локальная ветка по-прежнему `master`, HEAD `c0498f6…`, пять изменённых и два новых файла. **Не переносить код повторно** и не делать `git pull`: это не решит проблему фиксации локальных файлов. Сначала локальные CMake/MinGW Release unit/selftest по `research/evidence/P10BG_LOCAL_SOURCE_20261119/P10BH_WINDOWS_UNIT_CHECK_20261119.md`, затем согласованная локальная Git-фиксация только этих семи файлов.
+
+**После P10BH:** пользователь предоставил вывод четырёх успешных Windows unit/selftest. Подготовлен P10BI для точечной локальной фиксации семи файлов; на момент публикации **P10BI не запущен и локальный коммит не подтверждён**. После него **не нажимать старый push** без анализа remote/историй; пользователь должен передать только `P10BI_RESULT.txt`.
 
 ## Что сохранять для следующего чата
 
