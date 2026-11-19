@@ -112,7 +112,7 @@ try {
     [void](New-Item -ItemType Directory -Path $logsRoot)
     $reportFile = Join-Path $outputRoot 'P10BQ_RESULT.txt'
     Add-Report 'P10BQ FOUR EXISTING WINDOWS TESTS (NO CLONE, BUILD OR FEM)'
-    Add-Report 'TOOL_REVISION=P10BQ_R1_DIRECT_NATIVE_LASTEXITCODE'
+    Add-Report 'TOOL_REVISION=P10BQ_R2_EXACT_REPORT_LINES_FIX'
     Add-Report ('DATE_LOCAL=' + (Get-Date).ToString('o'))
     Add-Report ('OUTPUT_ROOT=' + $outputRoot)
     Add-Report ('EXPECTED_SHA=' + $expectedHead)
@@ -137,11 +137,22 @@ try {
 
     $inputReport = Join-Path $p10bpRoot 'P10BP_RESULT.txt'
     if (-not (Test-Path -LiteralPath $inputReport -PathType Leaf)) { throw 'P10BP_RESULT.txt missing.' }
-    $inputText = [System.IO.File]::ReadAllText($inputReport)
-    foreach ($required in @('EXPECTED_SHA=' + $expectedHead, 'SOURCE_BEFORE_BUILD_CLEAN=YES',
-        'CONFIGURE_EXIT=0', 'BUILD_EXIT=0', 'RESULT=P10BP_STOPPED: Selftest failed: stage3d10v_analytic_shape_unit')) {
-        if (-not $inputText.Contains($required)) { throw ('P10BP report does not confirm: ' + $required) }
+    $inputLines = [System.IO.File]::ReadAllLines($inputReport)
+    # In PS 5.1, the expression @('prefix' + $var, 'other', ...) can become
+    # ONE string joined from multiple values. P10BQ R1 stopped on that bug.
+    # Parenthesized independent array entries and an explicit cardinality guard.
+    $requiredReportLines = @(
+        ('EXPECTED_SHA=' + $expectedHead)
+        ('SOURCE_BEFORE_BUILD_CLEAN=YES')
+        ('CONFIGURE_EXIT=0')
+        ('BUILD_EXIT=0')
+        ('RESULT=P10BP_STOPPED: Selftest failed: stage3d10v_analytic_shape_unit')
+    )
+    if ($requiredReportLines.Count -ne 5) { throw 'Internal P10BQ report-check list must contain exactly 5 lines.' }
+    foreach ($required in $requiredReportLines) {
+        if (-not ($inputLines -ccontains $required)) { throw ('P10BP report does not confirm exact line: ' + $required) }
     }
+    Add-Report 'P10BP_REQUIRED_REPORT_LINES_VERIFIED=5/5'
     $inputReportHash = (Get-FileHash -Algorithm SHA256 -LiteralPath $inputReport).Hash.ToLowerInvariant()
     Add-Report ('REUSED_P10BP_RESULT_SHA256=' + $inputReportHash)
 
