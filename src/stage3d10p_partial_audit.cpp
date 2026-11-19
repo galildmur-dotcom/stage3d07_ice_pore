@@ -17,6 +17,12 @@
 #ifdef STAGE3D10S_SPATIAL_AUDIT
 #include "stage3d10s_run_manifest.hpp"
 #endif
+#ifdef STAGE3D10AZ_QP_PROBE
+#include "stage3d10az_probe_export.hpp"
+#endif
+#ifdef STAGE3D10BA_POLAR_AUDIT
+#include "stage3d10ba_polar_export.hpp"
+#endif
 
 namespace p10n {
 namespace H=ice3d::p10l;
@@ -421,9 +427,28 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
        pullbacks[obs].temperature[i]+weights[obs]*sources[obs].temperature[i];
   }
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
+#ifdef STAGE3D10AZ_QP_PROBE
+  ice3d::p10v::QpProbe qp_probe;
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+  // Capture every step. Comparisons across dt must integrate identical 900 s.
+  const bool take_probe=true;
+#else
+  const bool take_probe=n==5 || n==6;
+#endif
+  if(take_probe){
+   qp_probe.futures=&futures[1];
+   qp_probe.objective_index=1;
+   qp_probe.weight=weights[1];
+  }
+  const ice3d::p10v::ShellAudit shell_audit{
+   shells,{&adjoints[0].residual,&adjoints[1].residual,
+           &adjoints[2].residual},spatial::bins,
+           take_probe?&qp_probe:nullptr};
+#else
   const ice3d::p10v::ShellAudit shell_audit{
    shells,{&adjoints[0].residual,&adjoints[1].residual,
            &adjoints[2].residual},spatial::bins};
+#endif
   analytic=ice3d::p10v::directional(base.mesh,quad,state,
       pairs.front().velocity,mask,
       std::vector<F::Kind>(kinds.begin(),kinds.end()),&shell_audit);
@@ -470,6 +495,30 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
     }
     spatial::verify_partition(local,
        {objective_term,equilibrium_term,history_term},n,obs,k);
+#ifdef STAGE3D10AZ_QP_PROBE
+#ifndef STAGE3D10BD_TEMPORAL_AUDIT
+    if(obs==1 && (n==5 || n==6))
+      ice3d::p10az::write_step_probe(c.out,c.mesh.stem().string(),
+            base.mesh,qp_probe,n,
+            {{{local[1].objective,local[1].equilibrium,local[1].history},
+              {local[2].objective,local[2].equilibrium,local[2].history}}});
+#endif
+#ifdef STAGE3D10BA_POLAR_AUDIT
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+    if(obs==1)
+      ice3d::p10ba::write_step_polar_temporal(c.out,c.mesh.stem().string(),
+            qp_probe,n,c.dt,c.steps,
+            {{{local[1].objective,local[1].equilibrium,local[1].history},
+              {local[2].objective,local[2].equilibrium,local[2].history}}});
+#else
+    if(obs==1 && (n==5 || n==6))
+      ice3d::p10ba::write_step_polar(c.out,c.mesh.stem().string(),
+            qp_probe,n,
+            {{{local[1].objective,local[1].equilibrium,local[1].history},
+              {local[2].objective,local[2].equilibrium,local[2].history}}});
+#endif
+#endif
+#endif
     for(std::size_t bin=0;bin<spatial::bins;++bin)
      spatial_rows.push_back({k,obs,bin,n,local[bin]});
 #endif
@@ -625,6 +674,24 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
  const auto start=std::chrono::steady_clock::now();
  p10k::require(fs::is_regular_file(c.mesh),"P10N mesh not found");
  p10k::require(c.steps*c.dt==900,"P10N requires steps*dt=900 s");
+#ifdef STAGE3D10AZ_QP_PROBE
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+#ifdef STAGE3D10BE_TEMPORAL_AUDIT
+ p10k::require(c.steps==36&&c.dt==25&&c.mode=="R"&&c.cutoff_mm==5.,
+               "P10BE requires --steps 36 --dt 25 --mode R --cutoff-mm 5");
+#else
+ p10k::require(((c.steps==6&&c.dt==150)||
+                (c.steps==12&&c.dt==75)||
+                (c.steps==18&&c.dt==50))&&
+               c.mode=="R"&&c.cutoff_mm==5.,
+               "P10BD requires (steps,dt)=(6,150),(12,75),(18,50),"
+               " --mode R --cutoff-mm 5");
+#endif
+#else
+ p10k::require(c.steps==6&&c.dt==150&&c.mode=="R"&&c.cutoff_mm==5.,
+               "P10AZ requires --steps 6 --dt 150 --mode R --cutoff-mm 5");
+#endif
+#endif
  p10k::require(!fs::exists(c.out),"P10N --out must be a NEW folder");
  p10k::require(reuse.empty()||fs::is_regular_file(reuse),
                "P10N --reuse-forward file does not exist");
@@ -938,6 +1005,52 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
      <<" max_mechanical_equilibrium_rel="<<worst_mech
      <<" max_thermal_equilibrium_rel="<<worst_heat
      <<" checkpoint_roundtrip_bitwise=1 wall_s="<<wall<<'\n';
+#endif
+#ifdef STAGE3D10AZ_QP_PROBE
+#ifndef STAGE3D10BD_TEMPORAL_AUDIT
+ if(good){
+  for(const char* name:{"P10AZ_QP_SIGN_AUDIT.csv",
+     "P10AZ_TOP_ELEMENTS.csv","P10AZ_QP_RADIAL_SUBBINS.csv"})
+   p10k::require(fs::is_regular_file(c.out/name),
+                 std::string("P10AZ missing QP output: ")+name);
+  std::cout<<"P10AZ_QP_PROBE_OK mesh="<<c.mesh.stem().string()
+   <<" steps=5,6 bins=1,2 functional=jpeak"
+   <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
+   <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
+ }
+#endif
+#endif
+#ifdef STAGE3D10BA_POLAR_AUDIT
+ if(good){
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+  for(const char* name:{"P10BD_QP_POLAR_RADIAL.csv",
+                         "P10BD_POLAR_PARTITION_AUDIT.csv"})
+   p10k::require(fs::is_regular_file(c.out/name),
+                 std::string("P10BD missing polar output: ")+name);
+  std::cout<<"P10BD_TEMPORAL_POLAR_OK mesh="<<c.mesh.stem().string()
+   <<" steps="<<c.steps<<" dt="<<c.dt
+   <<" full_horizon_s="<<c.steps*c.dt
+   <<" shells=1,2 radial_subbins=10 polar_bands=10"
+   <<" rows="<<200*c.steps
+   <<" nonlinear_forward_solves="<<(reuse.empty()?1:0)
+   <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
+#ifdef STAGE3D10BE_TEMPORAL_AUDIT
+  std::cout<<"P10BE_TEMPORAL_POLAR_OK mesh="<<c.mesh.stem().string()
+   <<" steps="<<c.steps<<" dt="<<c.dt
+   <<" full_horizon_s="<<c.steps*c.dt
+   <<" bins=200 rows="<<200*c.steps<<'\n';
+#endif
+#else
+  for(const char* name:{"P10BA_QP_POLAR_RADIAL.csv",
+                         "P10BA_POLAR_PARTITION_AUDIT.csv"})
+   p10k::require(fs::is_regular_file(c.out/name),
+                 std::string("P10BA missing polar output: ")+name);
+  std::cout<<"P10BA_POLAR_PARTITION_OK mesh="<<c.mesh.stem().string()
+   <<" steps=5,6 shells=1,2 radial_subbins=10 polar_bands=10"
+   <<" rows=400 nonlinear_forward_solves="<<(reuse.empty()?1:0)
+   <<" mechanical_adjoint_solves="<<c.steps*3<<'\n';
+#endif
+ }
 #endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
  run_manifest.complete(good?0:3);

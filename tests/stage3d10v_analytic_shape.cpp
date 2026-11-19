@@ -4,6 +4,12 @@
 #define STAGE3D06_LIBRARY
 #include "mechanical.cpp"
 #include "stage3d10v_analytic_shape.hpp"
+#ifdef STAGE3D10AZ_QP_PROBE
+#include "stage3d10az_probe_export.hpp"
+#endif
+#ifdef STAGE3D10BA_POLAR_AUDIT
+#include "stage3d10ba_polar_export.hpp"
+#endif
 #include <iomanip>
 #include <random>
 
@@ -137,9 +143,147 @@ int main(){try{
      lambdas[k][i]=1.e4*std::sin(.4*double(i+1)+double(k));
     adjoints.push_back(&lambdas[k]);
    }
+#ifdef STAGE3D10AZ_QP_PROBE
+   ice3d::p10v::QpProbe qp_probe;
+   std::vector<State> future(baseline.qps.size());
+   for(auto& state:future)for(int a=0;a<6;++a){
+    state.e_d[a]=random_value(gen,1e-4);
+    state.e_v[a]=random_value(gen,1e-4);
+   }
+   qp_probe.futures=&future;
+   qp_probe.objective_index=1;
+   qp_probe.weight=.173;
+   const ice3d::p10v::ShellAudit audit{shells,adjoints,2,&qp_probe};
+#else
    const ice3d::p10v::ShellAudit audit{shells,adjoints,2};
+#endif
    const auto split=ice3d::p10v::directional(mesh,quad,baseline,
                                               vel,mask,kinds,&audit);
+#ifdef STAGE3D10AZ_QP_PROBE
+   check(!qp_probe.records.empty(),"empty QP probe");
+   double j=0,eq=0,h=0;
+   for(const auto& v:qp_probe.records){
+    j+=qp_probe.weight*(v.d_numerator-qp_probe.average*v.d_volume)/
+       qp_probe.observed_volume;
+    eq+=v.equilibrium;
+    h+=v.history;
+   }
+   check(relative(j,qp_probe.weight*split.objective_by_shell[1][1])<1e-12,
+         "QP probe normalized objective mismatch");
+   check(relative(eq,split.equilibrium_by_shell[1][1])<1e-12,
+         "QP probe adjoint equilibrium mismatch");
+   double independent_h=0;
+   for(std::size_t q=0;q<baseline.qps.size();++q)if(shells[q]==1)
+    for(int a=0;a<6;++a){
+     independent_h+=future[q].e_d[a]*split.operator_change.next[q].e_d[a];
+     independent_h+=future[q].e_v[a]*split.operator_change.next[q].e_v[a];
+    }
+   check(relative(h,independent_h)<1e-12,"QP probe history mismatch");
+   // Also test actual CSV exporter (not only captured in-memory fields).
+   if(flags.delayed && flags.viscous && modulus==ice3d::p10b::Modulus::VAR){
+    namespace fs=std::filesystem;
+    const fs::path output=fs::temp_directory_path()/"p10az_test_qp_export";
+    fs::remove_all(output);
+    fs::create_directories(output);
+    const std::array<std::array<double,3>,2> expected{{
+     {0.,0.,0.},
+     {qp_probe.weight*split.objective_by_shell[1][1],
+       split.equilibrium_by_shell[1][1],independent_h}
+    }};
+    // Unit test uses alternating bins 0 and 1, whereas the exporter targets
+    // physical bins 1 and 2; the writer is separately exercised by a
+    // hand-made mapped copy with bin 2 for the second synthetic group.
+    auto synthetic=qp_probe;
+    for(auto& rec:synthetic.records)rec.bin=2;
+    const std::array<std::array<double,3>,2> outputExpected{{
+      {0.,0.,0.},expected[1]
+    }};
+    ice3d::p10az::write_step_probe(output,"SYNTHETIC_TET10",mesh,
+                                     synthetic,6,outputExpected);
+    ice3d::p10az::write_step_probe(output,"SYNTHETIC_TET10",mesh,
+                                     synthetic,5,outputExpected);
+#ifdef STAGE3D10BA_POLAR_AUDIT
+    check(ice3d::p10ba::polar_index(-1.)==0&&
+          ice3d::p10ba::polar_index(-.81)==0&&
+          ice3d::p10ba::polar_index(0.)==5&&
+          ice3d::p10ba::polar_index(1.)==9,
+          "P10BA polar cell boundary mapping");
+    for(const auto& r:qp_probe.records)
+     check(std::isfinite(r.polar_mu)&&r.polar_mu>=-1.&&r.polar_mu<=1.,
+           "P10BA QP spherical polar cosine");
+    // Explicitly span the equal-area polar bins in the small synthetic mesh;
+    // their geometric coverage in this element-level unit is not physical.
+    for(std::size_t i=0;i<synthetic.records.size();++i)
+     synthetic.records[i].polar_mu=-.9+.2*double(i%10);
+    ice3d::p10ba::write_step_polar(output,"SYNTHETIC_TET10",
+                                  synthetic,6,outputExpected);
+    ice3d::p10ba::write_step_polar(output,"SYNTHETIC_TET10",
+                                  synthetic,5,outputExpected);
+    check(fs::is_regular_file(output/"P10BA_QP_POLAR_RADIAL.csv"),
+          "P10BA cannot write polar CSV");
+    check(fs::is_regular_file(output/"P10BA_POLAR_PARTITION_AUDIT.csv"),
+          "P10BA cannot write polar audit CSV");
+    { std::ifstream f(output/"P10BA_QP_POLAR_RADIAL.csv");
+      std::size_t lines=0;std::string line;
+      while(std::getline(f,line))++lines;
+      check(lines==401,"P10BA expected 400 data rows + header"); }
+    { std::ifstream f(output/"P10BA_POLAR_PARTITION_AUDIT.csv");
+      std::size_t lines=0;std::string line;
+      while(std::getline(f,line))++lines;
+      check(lines==5,"P10BA expected 4 audit rows + header"); }
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+    // Exercise the new all-step exporter without solving a costly 3D pilot.
+    // Reverse adjoint order is steps, steps-1, ..., 1.
+    for(const auto time:std::array<std::array<int,2>,3>{{
+          {150,6},{75,12},{50,18}}}){
+     const int dt=time[0],steps=time[1];
+     const auto tmp=output/("P10BD_dt"+std::to_string(dt));
+     fs::create_directories(tmp);
+     for(int n=steps;n>=1;--n)
+      ice3d::p10ba::write_step_polar_temporal(
+       tmp,"SYNTHETIC_TET10",synthetic,n,dt,steps,outputExpected);
+     { std::ifstream f(tmp/"P10BD_QP_POLAR_RADIAL.csv");
+       std::size_t lines=0;std::string line;
+       while(std::getline(f,line))++lines;
+       check(lines==1+std::size_t(200*steps),
+             "P10BD expected all time/polar cells"); }
+     { std::ifstream f(tmp/"P10BD_POLAR_PARTITION_AUDIT.csv");
+       std::size_t lines=0;std::string line;
+       while(std::getline(f,line))++lines;
+       check(lines==1+std::size_t(2*steps),
+             "P10BD expected every time/shell audit row"); }
+    }
+#ifdef STAGE3D10BE_TEMPORAL_AUDIT
+    // The 25 s refinement contributes 36*200=7200 fixed spatial cells.
+    // It has no dependence on any calculated P10BD historical output.
+    {
+     constexpr int dt=25,steps=36;
+     const auto tmp=output/"P10BE_dt25";
+     fs::create_directories(tmp);
+     for(int n=steps;n>=1;--n)
+      ice3d::p10ba::write_step_polar_temporal(
+       tmp,"SYNTHETIC_TET10",synthetic,n,dt,steps,outputExpected);
+     { std::ifstream f(tmp/"P10BD_QP_POLAR_RADIAL.csv");
+       std::size_t lines=0;std::string line;
+       while(std::getline(f,line))++lines;
+       check(lines==7201,"P10BE expected 7200 full-time polar cells"); }
+     { std::ifstream f(tmp/"P10BD_POLAR_PARTITION_AUDIT.csv");
+       std::size_t lines=0;std::string line;
+       while(std::getline(f,line))++lines;
+       check(lines==73,"P10BE expected 72 time/shell audit rows"); }
+    }
+#endif
+#endif
+#endif
+    check(fs::is_regular_file(output/"P10AZ_QP_SIGN_AUDIT.csv"),
+          "P10AZ cannot write QP signature CSV");
+    check(fs::is_regular_file(output/"P10AZ_QP_RADIAL_SUBBINS.csv"),
+          "P10AZ cannot write QP subbins CSV");
+    check(fs::is_regular_file(output/"P10AZ_TOP_ELEMENTS.csv"),
+          "P10AZ cannot write top elements CSV");
+    fs::remove_all(output);
+   }
+#endif
    check(error_vector(split.operator_change.residual,
                       exact.operator_change.residual)<1.e-13,
          "shell audit modified global residual derivative");
@@ -194,6 +338,23 @@ int main(){try{
  std::cout<<"P10V_ANALYTIC_SHAPE_UNIT_OK\n";
 #ifdef STAGE3D10Y_ANALYTIC_SHELL_AUDIT
  std::cout<<"P10Y_ANALYTIC_SHELL_UNIT_OK models=6 functionals=4 bins=2\n";
+#ifdef STAGE3D10AZ_QP_PROBE
+ std::cout<<"P10AZ_QP_PROBE_UNIT_OK objective=1 equilibrium=1 history=1"
+          " csv_output=1 repeated_append=1\n";
+#ifdef STAGE3D10BA_POLAR_AUDIT
+ std::cout<<"P10BA_POLAR_UNIT_OK equal_area=1 qp_coordinates=1"
+          " 400_rows=1 shell_radial_parity=1\n";
+#ifdef STAGE3D10BD_TEMPORAL_AUDIT
+ std::cout<<"P10BD_TEMPORAL_UNIT_OK schedules=3 all_step_polar_rows="
+          "1200,2400,3600 original_p10ba_preserved=1\n";
+#ifdef STAGE3D10BE_TEMPORAL_AUDIT
+ std::cout<<"P10BE_TEMPORAL_UNIT_OK schedules=4"
+          " dt25_steps=36 polar_rows=7200 audit_rows=72"
+          " legacy_p10bd_preserved=1\n";
+#endif
+#endif
+#endif
+#endif
 #endif
  return 0;
 }catch(const std::exception& e){
