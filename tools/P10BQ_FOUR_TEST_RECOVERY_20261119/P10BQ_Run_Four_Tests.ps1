@@ -112,7 +112,7 @@ try {
     [void](New-Item -ItemType Directory -Path $logsRoot)
     $reportFile = Join-Path $outputRoot 'P10BQ_RESULT.txt'
     Add-Report 'P10BQ FOUR EXISTING WINDOWS TESTS (NO CLONE, BUILD OR FEM)'
-    Add-Report 'TOOL_REVISION=P10BQ_R2_EXACT_REPORT_LINES_FIX'
+    Add-Report 'TOOL_REVISION=P10BQ_R3_MARKER_PREFIX_WITH_FIELDS_FIX'
     Add-Report ('DATE_LOCAL=' + (Get-Date).ToString('o'))
     Add-Report ('OUTPUT_ROOT=' + $outputRoot)
     Add-Report ('EXPECTED_SHA=' + $expectedHead)
@@ -201,8 +201,15 @@ try {
             $result = Invoke-Native $exePaths[$i] $argsForTest $log
             Add-Report ('TEST_EXIT_' + $target + '=' + [string]$result.Exit)
             if ($null -eq $result.Exit -or $result.Exit -ne 0) { throw ('Native process exit is not 0: ' + $target) }
-            $exactMarkers = @($result.Lines | Where-Object { $_.Trim() -ceq $markers[$i] })
-            if ($exactMarkers.Count -ne 1) { throw ('Expected one exact marker not found: ' + $markers[$i]) }
+            # P10V prints a standalone marker. P10Y/P10BE print a marker followed
+            # by diagnostic fields on the same line. R2 rejected those valid lines.
+            # Anchor to the START and require whitespace or end after the token;
+            # do not accept an incidental substring or a longer similar token.
+            $markerPattern = '^' + [regex]::Escape($markers[$i]) + '(?:\s|$)'
+            $matchingMarkers = @($result.Lines | Where-Object { $_ -cmatch $markerPattern })
+            if ($matchingMarkers.Count -ne 1) {
+                throw ('Expected one anchored marker line, found ' + $matchingMarkers.Count + ': ' + $markers[$i])
+            }
             Add-Report ('TEST_MARKER_' + $target + '=' + $markers[$i])
             Add-Report ('TEST_LOG_SHA256_' + $target + '=' + (Get-FileHash -Algorithm SHA256 -LiteralPath $log).Hash.ToLowerInvariant())
         }

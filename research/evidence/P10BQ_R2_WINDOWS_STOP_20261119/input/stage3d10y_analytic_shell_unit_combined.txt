@@ -1,0 +1,3 @@
+P10V_ANALYTIC_SHAPE_UNIT residual_rel=5.4808975582e-09 history_rel=3.0865923249e-07 functional_rel=3.3692518365e-06 models=6 functionals=4 quadrature_points=27
+P10V_ANALYTIC_SHAPE_UNIT_OK
+P10Y_ANALYTIC_SHELL_UNIT_OK models=6 functionals=4 bins=2
