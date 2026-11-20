@@ -321,3 +321,14 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **C — методический приоритет:** top40/200 по согласованному рангу |Δ_bulk|/V и |Δ_wall|/V, 31 полярная ячейка, охват 81.00092%/77.72263% spatial L1; 3/40 непересечения с raw integrals top40. Данная эвристика предназначена лишь для планирования mesh-only M1, не для доказанного апостериорного error estimator.
 
 **D — неизвестно/не доказано:** причина полярного механизма, φ-профиль, сингулярность решения vs численный эффект, физические 4D поля, quality-gated M1 .msh, пространственная/полная локальная временная сходимость. P10CI mesh-only next; physical M1 requires new specific permission under D-017.
+
+
+## N-P10CI R1 — geometric pole quality audit, safe preparation only, 20.11.2026
+
+**A — scope correction:** 200 P10CH candidate cells cover **0.020–0.100 mm**, not all B6 (0–5mm). Polar L1 shares 87.00575%/87.79656% spatial and 94.45117% H2 temporal and ~20% QP/volume shares refer to that thin shell alone. Published P10CH scientific report explicitly corrected, no numerical rewriting.
+
+**B — deterministic synthetic program evidence:** P10CI Python3 standard-library Gmsh2 reader, straight-corner Tet10 mean-ratio, angular φ sector occupancy and corner span, centroid cell crossing, separate previously uncovered 0–20μm; exactly pinned expected .msh SHA/counts. Syntax PASS; regular-tetra unit q1 PASS; miniature 10-node Tet10 parse PASS; synthetic 3-mesh output 600+30 rows/12 groups + ZIP CRC PASS; missing mesh root STOP evidence PASS. Source: research/proposals/P10CI_MESH_AUDIT_R1_20261120/, protocol: research/P10CI_POLE_MESH_GEOMETRY_READINESS_R1_20261120.md.
+
+**C — limited proposed pilot:** ZIP P10CI_MESH_AUDIT_R1_20261120.zip SHA256 039b945b9c46e46107410e26732c011185504f81e825a0f36768d9c50fe865b8 36063B 5/5 CRC PASS, separate distribution to investigator; one-click reads existing Windows G: meshes only, outputs new small evidence, physical FEM=0. Runtime 2–10min/RAM <1.5GiB are estimates, not measured caps.
+
+**D — unknown:** Actual Windows source mesh SHA/gate, angular/quality distributions, true curved Tet10 QP Jacobians, physical φ-resolved adjoint, mesh-quality causality, adaptive M1 geometry and any physical GO. Await one P10CI_EVIDENCE.zip or STOP. D-017 unchanged, no physical FEM permission.
