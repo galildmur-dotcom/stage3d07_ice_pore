@@ -1,6 +1,6 @@
 # PROJECT_STATE — текущее состояние проекта
 
-Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §40.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
+Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §41.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
 
 ## 1. Научная задача
 
@@ -335,3 +335,11 @@ R1 подтвердил неизменность исходного Git `HEAD=90
 **Предел:** не скомпилировано на Windows GNU13.1, не внедрено в `stage3d10p_partial_audit.cpp`, тепловые `psi_n` и физическая история не решались, H0/H2 не запускались, сеточной/временной сходимости `D_R jpeak` нет, старый P10BE_H2 EXE provenance=UNKNOWN. Все материалы: `research/P10BW_EXACT_P10L_THERMAL_QP_NATIVE_UNIT_20261120.md`, `research/proposals/P10BW_THERMAL_QP_20261120/`, `research/evidence/P10BW_NATIVE_UNIT_20261120/derived/`.
 
 **Следующий только подготовительный P10BX:** изолированное подключение этого opt-in recorder в точную P10P thermal adjoint-ветку **только для jpeak**, проверка по каждому шагу с исходным CSR-глобальным контрактом; отдельная native Windows unit/preflight **после** точного подтверждения Windows текущей ветки/dirty 0/7/4 и согласования формы поставки. **Никакого H0/H2 FEM/Qt запуска пока не разрешено**; пользовательских файлов сейчас не требуется. D-012/P10AO и `SPATIAL_CONVERGENCE_NOT_PROVEN` неизменны.
+
+## 41. P10BX — изолированная opt-in интеграция thermal QP в точный P10P/P10W (20.11.2026)
+
+**Уровень B только для сборки/native unit/selftest, без FEM.** Из GitHub source истории exact `90fd2559c0224ac0a7d2dbe2fe081a6a319080e4` восстановлены все **35/35** рекурсивных `src/`/`tests/` зависимостей полного P10W; Git blob SHAs побайтово совпали. P10P исходный `b1bab738…`, P10W `0cf18583…`, P10L `2169d1b7…`, геометрия `5bd5928e…` сохранены неизменными в clean Linux копии. В отдельном **review-only** proposal P10P под `STAGE3D10BX_THERMAL_QP_DIAGNOSTIC` включён проверяемый P10BW `contract_step` точно **после** `H::solve` thermal adjoint, только `jpeak`, `obs=1`, с теми же `psi_n, theta_n, theta_(n-1), dt, ambient_n` и analytic P10W velocity. Производственная сумма `D.mass/D.conduct/D.robinload` осталась вычисляющей `result[0][1].thermal`, QP только диагностирует. Реальный будущий запуск должен выдавать 100 radial×polar volume bins плюс отдельный top Robin на каждом шаге, с покроковым и суммарным CSR контролем; **эти CSV пока не существуют**.
+
+Linux g++14.2/C++20 компилировал полный исходный P10W `-O0` и полный opt-in P10W `-O0/-O2` (exit 0; наследованные исходниковые предупреждения), отдельный новый wrapper unit `-O2 -Wall -Wextra -Wpedantic` без предупреждений. Синтетический 2×Tet10+Tri6 unit — **8/8** (7 R/tz/y20/top Robin конфигураций + 1 reject bad input), максимум абсолютной невязки QP↔CSR **3.641531520771e−14**, max scaled relative **4.726113378191e−14**. Исходный/opt-in штатные `--selftest` завершились exit 0 и дали одинаковый stdout `P10W_DEPENDENCY_SELFTEST_OK analytic_coupling_verified=0`. Это **не исполнение** новой QP ветви внутри полного физического `reverse_scan`; даже `--preflight` был исключён, потому что вызывает физический `H::solve_forward`.
+
+Отчёт `research/P10BX_THERMAL_QP_OPTIN_INTEGRATION_20261120.md`, review-код `research/proposals/P10BX_THERMAL_QP_20261120/`, stdout/preflight `research/evidence/P10BX_NATIVE_INTEGRATION_20261120/derived/`. Windows dirty tree и Git histories не менялись, текущий Windows SHA повторно не читался. Исторический P10BE_H2 EXE SHA `UNKNOWN`; физическое thermal radial/polar поле и spatial/time convergence полной `D_R jpeak` **НЕ доказаны**. Следующий **P10BY — только согласованный заранее** clean review/Windows SHA/index preflight и ресурсно ограниченная H0-проба **после отдельного решения исследователя**, без H2/One Click/многосеточной кампании сейчас.
