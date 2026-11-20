@@ -1,5 +1,7 @@
 # P10CD — H1: адресная радиально-полярная локализация тепловой производной формы, подготовка без FEM
 
+> **Обновление после Windows R1 evidence (20.11.2026):** safe readiness `P10CD_H1_READINESS_OK_NO_FEM` ПОДТВЕРЖДЕНА — H1 mesh SHA/формат/счётчики и pinned P10CA EXE SHA совпали, original Git сохранён; **PHYSICAL_FEM_RUNS=0**. Исторический раздел ниже оставлен как состояние подготовки до получения ZIP. Подробный аудит: `research/P10CD_R1_WINDOWS_H1_READINESS_SAFE_VERIFIED_20261120.md`. Физическая H1 thermal QP локализация **НЕ санкционирована и НЕ исполнена**.
+
 **Дата:** 20.11.2026. **Состояние:** `P10CD_H1_READINESS_TOOL_PREPARED_NO_FEM`, Windows readiness **PENDING**, physical H1 **NOT_AUTHORIZED**. Это научный протокол и безопасная кнопка проверки входов, а не новый результат H1.
 
 ## 1. Зачем опыт, если P10AW H1 уже существует

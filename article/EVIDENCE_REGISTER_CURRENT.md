@@ -297,3 +297,12 @@
 **C — допустимая проектная оценка:** H1 19412 Tet10 ×64 QP×6 steps = 7454208 total thermal volume QP, 606 local radial/polar step rows +6 audit expected. Prerequisite one-click проверяет H1 mesh 27757 nodes /19412 Tet10/282 pore Tri6/2536 total Tri6 и pinned P10CA EXE SHA, никакой сборки. Будущая физика условно оценена 8–15min, proposed guard 20min/8GiB/1.5GiB, **без санкции и без запуска**. Протокол research/P10CD_H1_THERMAL_QP_RADIAL_POLAR_TARGET_PROTOCOL_SAFE_PREPARED_20261120.md и derived audit.
 
 **D — не доказано:** H1 thermal QP/CSR radial/polar физически ещё не получена. Точная Windows mesh/EXE/Git attestation ожидает P10CD_EVIDENCE.zip. P10CB short native exit0 не доказывает исторические H0/H1 physical exit0. Повтор глобального H1 не нужен, новая однократная локальная H1 требует отдельного разрешения; D-015 consumed. SPATIAL_CONVERGENCE_NOT_PROVEN и FULL_TEMPORAL_CONVERGENCE_NOT_PROVEN.
+
+
+## P10CD Windows R1 — H1 exact read-only readiness PASS, H1 thermal-QP FEM still unauthorized (20.11.2026)
+
+**B — первичный Windows источник:** ZIP P10CD_EVIDENCE.zip 912 B SHA256 6b1def1a73072084d59a5be22d7affbeec5fa9375a2f2aff0e68d076750be607, integrity PASS 1/1; PS1 SHA 1e2bda6becfa03480c646bf9d1a4c34815f85ce7f615bc3730143fa257f64db9 совпал с прежним R1 инструментом. H1 mesh SHA 394ee339073fe6eacfd58c549ad0b0218a9bdadf8f36a2ca435a1ca3fad0598d, 27757 nodes/19412 Tet10/2536 Tri6/282 pore/314 top, 21948 records. Existing Windows P10CA EXE SHA 17c31f426245317271245e340d68fa5de1e4eb144b7be986167505e14cbed924 и original dirty Git HEAD/status/fingerprint до/после совпали. Только read-only, PHYSICAL_FEM_RUNS=0.
+
+**C — независимый аудит:** 19/19 P10CD manifest/result fields и 7/7 arithmetic/unchanged-Git invariants PASS, 1242368 thermal volume QP per step, 7454208 in 6, 5024 top Robin per step (all expected for future). RESULT=P10CD_H1_READINESS_OK_NO_FEM, status CLOSED_SAFE_ONLY. Оригиналы research/evidence/P10CD_R1_WINDOWS_READINESS_VERIFIED_20261120/input/ и derived отдельно; report research/P10CD_R1_WINDOWS_H1_READINESS_SAFE_VERIFIED_20261120.md.
+
+**D — не установлено:** H1 physical thermal QP step bins 606 и audits 6 ещё не создавались, local per-shell/per-polar thermal derivative не измерена на H1, native future physical ExitCode unknown. P10CA old H0 и P10AW old H1 physical native exit0 unknown. Spatial/time convergence не доказаны. D-015 H0 authorization used, новая H1 локальная thermal QP физика только при отдельной санкции с exact SHA и ограничениями ресурсов.
