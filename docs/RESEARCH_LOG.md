@@ -562,3 +562,7 @@ P10CD R1 CLOSED_SAFE_ONLY; future H1 thermal QP per-step 606 local bins/6 audit 
 ## 20.11.2026 — P10CF component decomposition, H0/H1
 
 Read-only сравнение четырех слагаемых P10W R/jpeak из H0 и H1: explicit shape −15.64648→−15.07030, equilibrium +14.55432→+13.93038, EDV +4.19347→+3.57668, thermal +0.06638→+0.07006, total +3.16769→+2.50682 1/м. Mechanical subtotal=first3 3.10131→2.43676. H0→H1 full jpeak −20.863%, j6 −0.6113%, jen +1.0462%; strong cancellation. Основание: `research/P10CF_H0_H1_SHAPE_COMPONENT_COMPARISON_20261120.md`. Других FEM=0, сходимость не доказана.
+
+## 20.11.2026 — P10CG 4D density and adaptive mesh decision (read-only planning)
+
+Восстановлено из GitHub прежнее предложение P10BB M1→M2→M3/M4 после временной проверки; численный статус P10BE: global dt150 vs25 0.07812% while local L1 dt50 vs25 1.72234% and 45/200 non-contracting cells. Требование пользователя: сохранять signed component contributions as (d,theta,phi,time) bins, where sum over cells/time matches scalar full D_R jpeak(t_f); retain geometric/equilibrium/EDV history/thermal mass-diffusion-Robin separately. Не путать time-step contribution to a fixed target with D_R J(t) series. Предлагается начинать offline adaptivity/mesh quality pilot и conditional GO gate, но разрешений на physical FEM/автоматическую адаптацию нет. Документ: `research/P10CG_4D_ADJOINT_PARTITION_AND_ADAPTIVE_MESH_DECISION_20261120.md`.
