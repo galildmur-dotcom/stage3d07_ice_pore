@@ -1,6 +1,6 @@
 # PROJECT_STATE — текущее состояние проекта
 
-Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §46.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
+Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §47.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
 
 ## 1. Научная задача
 
@@ -525,3 +525,11 @@ QP cell-volume redistribution predictor signed spatial mismatch corr=0.8425 bulk
 **Unit/safety:** synthetic signed coarsening, нулевая coarse сумма STOP, corrupted SHA STOP, декартова инвариантность к φ-вращению, ось θ=0/π PASS. Python3 syntax PASS, 200-cell candidate CSV, JSON machine audit, θ×distance four-panel PNG созданы и сохранены. **NEW_FEM=0, GMSH=0, M1_MESH=0**. Механическая полярная концентрация устойчива как spatial comparison ranking, причина больших shape-derivative values и повышенная относительная истинная погрешность не доказаны; физические thermal/φ/t distributions отсутствуют, все B6 и wall0–20µm не оценены. D-017 unchanged.
 
 Отчёт `research/P10CM_MULTISCALE_SIGNED_M1_HFIELD_OFFLINE_PILOT_20261120.md`, код `research/proposals/P10CM_MULTISCALE_M1_20261120/p10cm_offline_multiscale_m1_pilot.py`, derived `research/evidence/P10CM_OFFLINE_20261120/derived/`. Следующий **P10CN** — только автономная Cartesian smoothing/gradation unit + размер/бюджет на существующих данных, без новой M1 `.msh`/FEM; само создание M1 `.msh` и physical FEM потребует отдельного согласия. P10CD H1 one-shot закрыт, spatial/temporal convergence unproven.
+
+## 47. P10CN — axis-regular meridional smoothing offline, 9 cost proxies; NO M1 `.msh` (20.11.2026)
+
+Завершён небольшой математический P10CN пилот **только по P10CM 200-cell `(d,μ)` весам** в 20–100µm: CSV SHA `428a1d3b1d7b84e10a6c44762f0222c831a5f917283c872e06eaa11eff0781eb`, JSON SHA `3eea935277c91b7877f8660c68d3322cf7660fb871ffbaf5e74843afe5a12737`, verified 200 rows/votes 151/9/9/31. Предложена **зеркальная по ρ** положительная Gaussian meridional свёртка с объемными QP весами — гарантия finite `φ` rotation invariance, evenness ρ, `∂ρ S(axis)=0`, без `1/sinθ`. Это 2D meridional proxy, **не** точная 3D convolution, не thermal shape и не production h-field. Synthetic constant preservation, analytical smoothing gradient vs FD-only-unit, axis/rotation and source SHA corrupted STOP PASS.
+
+Девять `(ell_mm,alpha)` сценариев: ell=.10/.20/.35 и alpha=.25/.50/1.00; изотропный cube-law local **proxy** Tet count factor 1.137…2.266, max sampled relative log-h gradient 0.217…5.120/mm. Демонстрационный ell=.20mm/alpha=.50: min htrial/h0=.706822, local count volume proxy ×1.390813, max sampled |grad ln hrel|=.900625/mm, exact computed axis transverse gradient=0. Это не реальное h0, B6/Gmsh Tet10 count, memory/time or quality prediction. Физический параметр smoothing и alpha не утверждены. Исходный 0–20µm и вся остальная B6 не покрыты.
+
+Artifacts: `research/P10CN_AXIS_REGULAR_MERIDIONAL_SMOOTHING_OFFLINE_20261120.md`; Python reproducible `research/proposals/P10CN_MERIDIONAL_SMOOTHING_20261120/p10cn_axis_regular_smoothing_unit.py`; JSON+200 row CSV+PNG `research/evidence/P10CN_OFFLINE_20261120/derived/`. Source code Python syntax/unit PASS. FEM=0/Gmsh=0/new mesh=0, D-017 unchanged. **Следующий небольшой P10CO** — безопасная read-only калибровка доступности исходной h0/quality baseline H4W4B2 по P10CI/QP агрегатам и честный бюджет: если B6 данных нет, NOT_CALIBRATED, никаких новых .msh/FEM без нового явного согласия.
