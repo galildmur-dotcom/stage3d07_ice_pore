@@ -310,3 +310,14 @@
 ## N-P10CD-R2 — H1 physical QP/CSR, 20.11.2026
 
 Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1809bd1361bb3694ef032733b52b92bddb3b5d` (8 ZIP entries / 95 289 uncompressed bytes; primary bytes retained in the conversation, not yet mirrored as Git blob). Independent 606+6 row audit PASS, native physical exit0, H1 mesh and pinned EXE exact. Total jpeak/R 2.506815720518801/m; thermal 0.070059905955387/m; max step QP/CSR error 1.73e−14/m. Research report `research/P10CD_R2_H1_REAL_PHYSICAL_QP_CSR_AUDIT_20261120.md`. Limits: H0 native exit unknown, spatial and full temporal convergence unproven.
+
+
+## N-P10CH — полярная локализация различий, offline индикатор M1 и 4D unit-only (20.11.2026)
+
+**A — воспроизводимая read-only обработка уже опубликованных CSV:** точные SHA P10BB H4W4B2/H4W4B20/H4W5B2 и P10BE H2 записаны в research/P10CH_POLE_LOCALIZATION_OFFLINE_M1_PREPARATION_20261120.md; 200 совпадающих radial/μ bins, spatial t900s и H2 dt50−25. В двух крайних полярных полосах L1 доли |Δ| 87.00575%/87.79656% spatial и 94.45117% temporal при 20.49956% QP и 20.03495% QP volume. Эти числа характеризуют абсолютную межрасчётную разность, не истинную ошибку. Derived 200-cell CSV + audit и Python с SHA gate находятся в research/evidence/P10CH_OFFLINE_20261120/derived/ и research/proposals/P10CH_ADAPTIVE_M1_OFFLINE_20261120/.
+
+**B — unit-only:** независимый C++20 signed 4D bin aggregator по (r,μ,φ,time), с шестью компонентами, boundary/outside, синтетический native PASS 1080 bins/3 steps, conservation_abs 2.20228566e−20, FEM=0. research/proposals/P10CH_4D_UNIT_20261120/. Это не integration/physical verification.
+
+**C — методический приоритет:** top40/200 по согласованному рангу |Δ_bulk|/V и |Δ_wall|/V, 31 полярная ячейка, охват 81.00092%/77.72263% spatial L1; 3/40 непересечения с raw integrals top40. Данная эвристика предназначена лишь для планирования mesh-only M1, не для доказанного апостериорного error estimator.
+
+**D — неизвестно/не доказано:** причина полярного механизма, φ-профиль, сингулярность решения vs численный эффект, физические 4D поля, quality-gated M1 .msh, пространственная/полная локальная временная сходимость. P10CI mesh-only next; physical M1 requires new specific permission under D-017.
