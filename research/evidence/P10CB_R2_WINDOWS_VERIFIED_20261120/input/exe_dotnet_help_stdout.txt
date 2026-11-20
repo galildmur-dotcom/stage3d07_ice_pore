@@ -1,0 +1,3 @@
+stage3d10w_analytic_adjoint --mesh MSH --out NEW_DIR --steps 6 --dt 150 --mode R|tz|y20 --cutoff-mm 5 [--threads 4] [--preflight] [--reuse-forward BIN] [--forward-cache NEW_BIN] [--selftest]
+Geometric partials are exact discrete Tet10 derivatives; no --delta-scan-um is accepted.
+
