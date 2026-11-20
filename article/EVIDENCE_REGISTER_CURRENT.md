@@ -343,3 +343,11 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **C (open hypotheses):** geometric coordinate conditioning near θ=0,π, sub-bin QP occupancy, true mechanical/adjoint pole concentration and temporal integration could all contribute; causes remain unresolved. Candidate adaptive M1 refinement must use signed multi-resolution and quality-gated evidence, not raw 3–5µm bin L1 alone.
 
 **D (not proven):** no curved Tet10 QP-Jacobian positivity check, no physical φ-resolved mechanical/thermal (d,θ,φ,t) field, no adaptive M1 .msh, no new FEM, no spatial or local temporal convergence, no certified a posteriori error. New P10CK is offline/unit-only. D-017 continues. Report/code/input evidence on research branch, source commit `8e3cfa790db46bc38188f59237bc3a9740539d64`.
+
+## N-P10CK — Gmsh curved Tet10 source, signed 4D synthetic unit and P10BA 2D replay, 20.11.2026
+
+**A primary/limited:** Gmsh native Tet10 vs internal solver edge order reconciled by actual `swap(t[8],t[9])`. Three hash-pinned original P10BA CSV t900 ×200 (d,μ) cells verify explicit+equilibrium+history mechanical sums and signed radial 20→2→1 closure. No original φ-resolved mechanical/thermal physical fields.
+
+**B unit/prepared:** independent 27Qp curved Tet10 synthetic Kronecker10/10, affine27/27, folded-negative sampled QP detected with positive corner det, Gmsh2 parser and STOP. 14400 synthetic (d,μ,φ,t) ×6 signed component accumulator with 7 multiscale closures, max abs 2.17e-19. Boundary/outside explicit. Real `.msh` P10CK Windows R1 NOT EXECUTED. Prepared one-shot package 101871B SHA `ffc706cf411050f1161b61a47135b56bffb38470a3272cb12a067a617e28cb72`.
+
+**C/D:** proposed M1 GO gate demands 600 exact P10BA QP-count cells, QP-volume relative ≤1e-8, sampled positive Jacobians, Cartesian/φ-axis check and signed multiscale robustness. These are proposed diagnostics, not an a posteriori error estimator. Neither 27QP sampling nor existing physical data prove continuum positivity/convergence, full 4D field, mechanism of pole localization or readiness for physical M1. D-017 unchanged. Report `research/P10CK_CURVED_TET10_QP_SOURCE_AND_4D_UNIT_20261120.md`.

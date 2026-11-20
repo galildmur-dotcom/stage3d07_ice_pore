@@ -1,6 +1,6 @@
 # PROJECT_STATE — текущее состояние проекта
 
-Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §43.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
+Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §44.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
 
 ## 1. Научная задача
 
@@ -497,3 +497,13 @@ R1 Windows P10CB_EVIDENCE.zip: 822 B, SHA-256 57b654c9eb194dcb0a1b161266d0e08284
 QP cell-volume redistribution predictor signed spatial mismatch corr=0.8425 bulk,0.8681 wall; diagnostic equal-QP-volume rescaling diminishes |Δ| about47.5%/50.7%. Не является аджойнт-коррекцией/апостериорной оценкой; H2 same mesh не объясняется. Инструмент P10CI считал corner proxies, 100% fine radial-bin crossing by tet corners; графики 2D (d,μ) **не 4D physical fields**.
 
 Протокол `research/P10CJ_POLAR_ERROR_AND_BINNING_AUDIT_20261120.md`; скрипт `research/proposals/P10CJ_ANALYSIS_20261120/p10cj_evidence_analysis.py`; machine audit `research/evidence/P10CJ_ANALYSIS_20261120/derived/`. Evidence/source commit `8e3cfa790db46bc38188f59237bc3a9740539d64`. **P10CK следующий только offline/unit-only**: curved Tet10 Jacobian QP check + phi geometry, signed multiresolution 4D accumulator and quality-gated M1 size-field design. **No FEM, remesh or physical M1 authorization**; D-017 действует, P10CD H1 one-shot закрыт, пространственная и локальная временная сходимость не доказаны.
+
+## 20.11.2026 — P10CK R1 source/unit complete, physical Windows QP mesh audit pending
+
+В первичных исходниках подтверждено согласование Gmsh Tet10 edge order (01,12,20,03,23,13) с внутренним порядком solver (01,12,20,03,13,23): `src/tet10_shared.hpp::read_msh` выполняет `swap(t[8],t[9])`. Это не новая ошибка решателя. Независимый Python3 curved Tet10 unit PASS: 10/10 nodal, 27/27 affine QP, положительная искривлённая геометрия, искусственная отрицательная curved QP при положительном corner det, мини-Gmsh2 parser, axis, STOP path.
+
+Синтетический signed 4D accumulator PASS: 20 radial×10 μ×12 φ×6 time = 14400 cell-times, 3 механические + 3 тепловые компоненты, 7 проекций сохраняют signed sums (max abs 2.17e-19 synthetic units), boundary/outside separately. Реального 4D поля в production нет. Независимый real P10BA replay PASS для 200 физических (d,μ) ячеек ×3 meshes на t900: mechanical explicit/equilibrium/history; radial signed 20→2→1 closure. Локальные 20–100µm signed mechanical sums: H4W4B2 −0.73533845089/m, H4W4B20 −0.73418356124/m, H4W5B2 −0.74008036682/m. Это НЕ global D_Rjpeak, не физическая thermal/φ/time декомпозиция.
+
+Подготовлен один read-only Windows R1 пакет `P10CK_CURVED_TET10_QP_R1_20261120.zip`, SHA256 `ffc706cf411050f1161b61a47135b56bffb38470a3272cb12a067a617e28cb72`, 101871B, ZIP 10/10 PASS, CMD CRLF. Скрипт сверит SHA 3 `.msh` +3 P10BA CSV; 27-QP Jacobian и (d,μ,φ) geometry; P10BA count/volume parity 600 cells. Самих оригинальных `.msh` в среде ассистента нет, поэтому curved QP real check **PENDING**. Estimate i7-7700K 3–15min, RAM <1.5GiB низкая уверенность, time budget900s; one-shot STOP без повтора.
+
+Научный отчёт `research/P10CK_CURVED_TET10_QP_SOURCE_AND_4D_UNIT_20261120.md`, proposal `research/proposals/P10CK_CURVED_TET10_QP_R1_20261120/`, unit evidence `research/evidence/P10CK_UNIT_20261120/derived/`; source commit `84a13025dbdff6277606237be0b2b4530bcb554d`. Следующий единственный вход: один `P10CK_EVIDENCE.zip` или STOP; большие `.msh` не запрашивать. D-017: никакого физического FEM M1–M4, M1 `.msh` отсутствует, P10CD H1 one-shot закрыт, сходимость НЕ доказана.
