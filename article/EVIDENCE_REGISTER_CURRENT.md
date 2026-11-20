@@ -306,3 +306,7 @@
 **C — независимый аудит:** 19/19 P10CD manifest/result fields и 7/7 arithmetic/unchanged-Git invariants PASS, 1242368 thermal volume QP per step, 7454208 in 6, 5024 top Robin per step (all expected for future). RESULT=P10CD_H1_READINESS_OK_NO_FEM, status CLOSED_SAFE_ONLY. Оригиналы research/evidence/P10CD_R1_WINDOWS_READINESS_VERIFIED_20261120/input/ и derived отдельно; report research/P10CD_R1_WINDOWS_H1_READINESS_SAFE_VERIFIED_20261120.md.
 
 **D — не установлено:** H1 physical thermal QP step bins 606 и audits 6 ещё не создавались, local per-shell/per-polar thermal derivative не измерена на H1, native future physical ExitCode unknown. P10CA old H0 и P10AW old H1 physical native exit0 unknown. Spatial/time convergence не доказаны. D-015 H0 authorization used, новая H1 локальная thermal QP физика только при отдельной санкции с exact SHA и ограничениями ресурсов.
+
+## N-P10CD-R2 — H1 physical QP/CSR, 20.11.2026
+
+Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1809bd1361bb3694ef032733b52b92bddb3b5d` (8 ZIP entries / 95 289 uncompressed bytes; primary bytes retained in the conversation, not yet mirrored as Git blob). Independent 606+6 row audit PASS, native physical exit0, H1 mesh and pinned EXE exact. Total jpeak/R 2.506815720518801/m; thermal 0.070059905955387/m; max step QP/CSR error 1.73e−14/m. Research report `research/P10CD_R2_H1_REAL_PHYSICAL_QP_CSR_AUDIT_20261120.md`. Limits: H0 native exit unknown, spatial and full temporal convergence unproven.
