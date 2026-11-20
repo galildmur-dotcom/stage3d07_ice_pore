@@ -1,6 +1,6 @@
 # PROJECT_STATE — текущее состояние проекта
 
-Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §47.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
+Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §48.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
 
 ## 1. Научная задача
 
@@ -533,3 +533,10 @@ QP cell-volume redistribution predictor signed spatial mismatch corr=0.8425 bulk
 Девять `(ell_mm,alpha)` сценариев: ell=.10/.20/.35 и alpha=.25/.50/1.00; изотропный cube-law local **proxy** Tet count factor 1.137…2.266, max sampled relative log-h gradient 0.217…5.120/mm. Демонстрационный ell=.20mm/alpha=.50: min htrial/h0=.706822, local count volume proxy ×1.390813, max sampled |grad ln hrel|=.900625/mm, exact computed axis transverse gradient=0. Это не реальное h0, B6/Gmsh Tet10 count, memory/time or quality prediction. Физический параметр smoothing и alpha не утверждены. Исходный 0–20µm и вся остальная B6 не покрыты.
 
 Artifacts: `research/P10CN_AXIS_REGULAR_MERIDIONAL_SMOOTHING_OFFLINE_20261120.md`; Python reproducible `research/proposals/P10CN_MERIDIONAL_SMOOTHING_20261120/p10cn_axis_regular_smoothing_unit.py`; JSON+200 row CSV+PNG `research/evidence/P10CN_OFFLINE_20261120/derived/`. Source code Python syntax/unit PASS. FEM=0/Gmsh=0/new mesh=0, D-017 unchanged. **Следующий небольшой P10CO** — безопасная read-only калибровка доступности исходной h0/quality baseline H4W4B2 по P10CI/QP агрегатам и честный бюджет: если B6 данных нет, NOT_CALIBRATED, никаких новых .msh/FEM без нового явного согласия.
+
+
+## 48. P10CO — original h0 size availability on B6: NOT CALIBRATED, no FEM/mesh (20.11.2026)
+
+Read-only P10CI Windows real pinned 3-mesh aggregate CSV (SHA gates 3/3) и P10CN trial CSV+JSON (2/2) independently audited. Source `.msh` raw bytes not available to assistant; `max_corner_edge_p50_mm` is the **per-cell median of element maximum straight-corner edge length**, not `h0(x)` or curved Tet10 QP quality. 600 20–100um bins +30 0–20um bins reconciled with exact P10CI mesh counts. On H4W4B2 261091 original Tet10 split by corner centroid: 18518 at0–20um, 29288 at20–100um, 192565 at100um–5mm B6, 20720 outside B6; H4W4B20 18525/29577/254258/20692; H4W5B2 26465/35331/192965/20788. Only 19.888%/15.909%/24.256% of **inside-B6 centroid elements** have published local `(d,μ)` edge proxy; rest 80.112%/84.091%/75.744% has count but no per-bin h0 metrics. Baseline H4W4B2 20–100um centroid-weighted **mean of cell median max-corner-edge** =0.094889mm (not pooled median/h0).
+
+For illustrative P10CN ell=.20mm alpha=.50 baseline H4W4B2 20–100um, count-weighted cube q^-3 proxy gives 29288→40756.3 `N_shell_trial/N_shell=1.391571`; if **all other** original tets and transitions unrealistically unchanged, whole original Tet10 ratio 1.043925. This is NOT an actual Gmsh mesh, forecast or resource upper bound. P10CN QP-volume-weighted local factor1.390813 differs as expected. Source/derived files and graph published: `research/P10CO_H0_BASELINE_SIZE_COVERAGE_AND_RESOURCE_BOUND_20261120.md`, `research/proposals/P10CO_BASELINE_H0_AUDIT_20261120/p10co_baseline_h0_coverage_audit.py`, `research/evidence/P10CO_OFFLINE_20261120/derived/`. All sources SHA/count PASS; FEM=0, Gmsh=0, M1 `.msh` not generated. D-017 unchanged; full B6 `h0` and budget `NOT_CALIBRATED`. Next P10CP **new version** of safely pinned Windows READ-ONLY source mesh size-profile for 100um–5mm only, no reuse/repeat one-shot P10CI or P10CK, one small evidence ZIP, before any physical M1 permission.

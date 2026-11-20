@@ -373,3 +373,12 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **A/B exact limited:** P10CM primary 200-cell vote/3 SHA verified, positive volume-weighted mirrored 2D meridional kernel, finite and constant-preserving, ∂ρ=0 on axis by construction; synthetic Cartesian rotations φ invariant, both θ=0/π checked, independent FD-only kernel-gradient unit tolerance 2e−7/mm, source SHA corruption STOP. Nine parameter probes: volume-only `N_shell_trial/N_base` proxy 1.137…2.266 and max sampled relative `|∇ln(htrial/h0)|` 0.217…5.120/mm; illustrative ell=.20mm,alpha=.50 factor1.390813, grad .900625/mm. **NOT** actual 3D convolution, physical h0 calibration, whole-B6 mesh count, convergence, or error estimator. Raw CSV weight inputs contain only mechanical 20–100µm t900, no φ/time/thermal local values.
 
 **D unresolved:** real 3D h0, Gmsh .msh/curved Tet10 quality, RAM, full derivative, radial 0–20µm, true polar cause, full 4D and spatial/time convergence. Artifacts `research/P10CN_AXIS_REGULAR_MERIDIONAL_SMOOTHING_OFFLINE_20261120.md`, `research/proposals/P10CN_MERIDIONAL_SMOOTHING_20261120/`, `research/evidence/P10CN_OFFLINE_20261120/derived/`. FEM=0, Gmsh=0, D-017 unchanged; next P10CO baseline geometry gate offline, no new mesh/FEM.
+
+
+## N-P10CO — P10CI per-cell h0 proxy cannot calibrate full B6 (20.11.2026)
+
+**A, limited:** SHA-verified P10CI 3 aggregate original CSV (600+30 mesh cells) + P10CN 200 trial CSV/JSON, independent exact sum of centroid count per each of 3 pinned mesh identities. Only 19.888%/15.909%/24.256% of elements with **corner centroids inside B6** possess per-bin corner-edge proxies (0–100um); remaining B6 100um–5mm has only aggregate counts. H4W4B2 weighted mean of 200 individual cell max-edge median values 0.094889mm, not actual 3D h0 field.
+
+**B descriptive:** H4W4B2 conditional q^-3 count proxy for 20–100um 29288→40756.3 (×1.391571); formal whole-original count proxy ×1.043925 if all outside elements and transition unchanged, an *unrealistic* algebraic counterfactual, no upper resource bound. Does not establish actual Tet10 quality, memory, M1 geometry, FEM accuracy, spatial/temporal convergence.
+
+**D:** full B6 local baseline h0(x), Phi/time/thermal physical fields, reason of polar concentration unknown. P10CO status `H0_FULL_B6_NOT_CALIBRATED_NO_MESH_NO_FEM`, script/CSV/JSON/PNG in research P10CO folders. Next P10CP new one-shot READ-ONLY size audit 100um–5mm on pinned original .msh, NOT new mesh/FEM, no repeat earlier tools. D-017 unchanged.

@@ -1,0 +1,85 @@
+{
+  "H4W4B2_20_100um_only_trial": {
+    "baseline_centroid_tets": 29288,
+    "condition_is_a_physical_mesh_prediction": false,
+    "conditional_total_tet_proxy_if_every_other_element_and_transition_unchanged": 272559.34490390716,
+    "conditional_total_tet_proxy_ratio": 1.0439247040453603,
+    "different_weights_count_vs_volume_expected": true,
+    "new_local_centroid_count_cube_proxy": 40756.34490390716,
+    "relative_local_count_cube_proxy": 1.3915714594341422,
+    "source_p10cn_volume_weighted_local_proxy": 1.3908129139683871
+  },
+  "full_B6_element_count_ram_wall_estimate": "NOT_AVAILABLE",
+  "full_B6_h0_status": "NOT_CALIBRATED_MISSING_100UM_TO_B6_LOCAL_SIZE",
+  "mesh": {
+    "H4W4B2": {
+      "0_20_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.07300021119817333,
+      "20_100_corner_maxedge_p50_cell_max_mm": 0.12294234777428094,
+      "20_100_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.09488897247082516,
+      "20_100_corner_maxedge_p50_cell_min_mm": 0.07623482289560683,
+      "actual_full_3d_h0_function_available": false,
+      "centroid_0_20um": 18518,
+      "centroid_100um_to_B6": 192565,
+      "centroid_20_100um": 29288,
+      "centroid_outside_B6": 20720,
+      "corner_edge_median_is_actual_h0": false,
+      "reported_source_mesh_sha256": "3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7",
+      "source_nodes_reported": 367823,
+      "source_tet10_reported": 261091,
+      "total_centroid_0_to_100um_fraction_of_B6": 0.19888422480249282,
+      "unprofiled_B6_centroid_fraction": 0.8011157751975072
+    },
+    "H4W4B20": {
+      "0_20_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.07284188784315936,
+      "20_100_corner_maxedge_p50_cell_max_mm": 0.12195467664559184,
+      "20_100_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.09467167669648045,
+      "20_100_corner_maxedge_p50_cell_min_mm": 0.07666564812556255,
+      "actual_full_3d_h0_function_available": false,
+      "centroid_0_20um": 18525,
+      "centroid_100um_to_B6": 254258,
+      "centroid_20_100um": 29577,
+      "centroid_outside_B6": 20692,
+      "corner_edge_median_is_actual_h0": false,
+      "reported_source_mesh_sha256": "94ab3df693265dbb4e7e723eb3c54642f4c385a465d91a1db4436ab66adc6715",
+      "source_nodes_reported": 449522,
+      "source_tet10_reported": 323052,
+      "total_centroid_0_to_100um_fraction_of_B6": 0.15908850377033998,
+      "unprofiled_B6_centroid_fraction": 0.84091149622966
+    },
+    "H4W5B2": {
+      "0_20_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.06573941577627893,
+      "20_100_corner_maxedge_p50_cell_max_mm": 0.12160390336799659,
+      "20_100_corner_maxedge_p50_cell_median_weighted_mean_mm": 0.08912146249676076,
+      "20_100_corner_maxedge_p50_cell_min_mm": 0.06969235311077655,
+      "actual_full_3d_h0_function_available": false,
+      "centroid_0_20um": 26465,
+      "centroid_100um_to_B6": 192965,
+      "centroid_20_100um": 35331,
+      "centroid_outside_B6": 20788,
+      "corner_edge_median_is_actual_h0": false,
+      "reported_source_mesh_sha256": "db50a10fc2a12870bf6e678e2ef0be496feba218b1010f9e65f8669f67d093a8",
+      "source_nodes_reported": 393998,
+      "source_tet10_reported": 275549,
+      "total_centroid_0_to_100um_fraction_of_B6": 0.24256459976213,
+      "unprofiled_B6_centroid_fraction": 0.75743540023787
+    }
+  },
+  "mesher_calls": 0,
+  "new_mesh_created": false,
+  "physical_fem_runs": 0,
+  "protocol": "P10CO_EXISTING_H0_SIZE_PROXY_COVERAGE_NO_MESH_NO_FEM",
+  "source_P10CI_member_sha256": {
+    "P10CI_0_TO_20UM_UNCOVERED_POLE_GEOMETRY.csv": "5cf06f11a9221cfee20e725cadf0d25b858475f67b897fd7246a41f5e745777d",
+    "P10CI_200CELL_MESH_GEOMETRY.csv": "db22675c116b1d151e86c73726cc4e2aeba21bcb4c41c099ee4e5d2e4d3e9f61",
+    "P10CI_MESH_COUNTS.csv": "4c6da8910f96eacd75179c0415197cd0c5b47fafca77b07e212561aea844b788"
+  },
+  "source_P10CN_sha256": {
+    "P10CN_200CELL_MERIDIONAL_SMOOTHING.csv": "365ebf4591ce2b1a5d91835f25eab96f75656008e5248cca831391da245bfbba",
+    "P10CN_SMOOTHING_SENSITIVITY.json": "75e1b65f7b3823595585a55cdff1ff5da40735e14b997990aa0009e8aa8bdb80"
+  },
+  "source_msh_sha256_reported_only": {
+    "H4W4B2": "3f6bf10717e566c5268e0b716e13c887365e0d3c61e46c156fdbe6ba1aa3d2c7",
+    "H4W4B20": "94ab3df693265dbb4e7e723eb3c54642f4c385a465d91a1db4436ab66adc6715",
+    "H4W5B2": "db50a10fc2a12870bf6e678e2ef0be496feba218b1010f9e65f8669f67d093a8"
+  }
+}
