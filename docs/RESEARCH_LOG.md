@@ -554,3 +554,7 @@ P10CD R1 CLOSED_SAFE_ONLY; future H1 thermal QP per-step 606 local bins/6 audit 
 ## 20.11.2026 — физический P10CD R2 H1, QP/CSR и локальная знаковая компенсация
 
 Исходный ZIP SHA256 `f95ca025a417537758430e3ecb1809bd1361bb3694ef032733b52b92bddb3b5d`, 8/8 CRC PASS. Одна физическая H1, native exit0, 407.813s, native analytical adjoint R, 6×150s EDV_VAR ξ0, 4 threads; mesh/exe SHA exact; original Git 0/7/4 preserved. 606 radial/polar rows + 6 step audit; max |QP−CSR|=1.731e−14/m. H1 D_R jpeak=2.506815720518801/m, thermal=0.070059905955387/m. H0→H1 near-wall 0–2mm negative magnitude drops 97.72% while 2–5mm positive remains near 0.07/m, illustrating bin-wise grid sensitivity. Report: `research/P10CD_R2_H1_REAL_PHYSICAL_QP_CSR_AUDIT_20261120.md`. Full spatial/temporal convergence not proven; no further physical launch authorized.
+
+## 20.11.2026 — P10CE angular presentation of thermal shape derivative
+
+По явному запросу исследователя проведён read-only углово-радиальный анализ H0/H1 QP CSV. Угловые полосы определяются μ=cosθ с Δμ=.2, θ от +z; φ сейчас интегрирован. 8 радиальных оболочек до 5мм; heatmaps H0, H1, Δ и полярный маргинал. Знак полярного вклада меняется H0 между bin3/4 (~101.54°), H1 bin2/3 (~113.58°). Значения интегральные на корзину, не плотность; нули внешних оболочек заданы support shape velocity. Новый FEM не запускался. Подробная запись `research/P10CE_H0_H1_THETA_RADIAL_READONLY_ANALYSIS_20261120.md`.
