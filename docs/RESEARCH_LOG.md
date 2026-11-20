@@ -558,3 +558,7 @@ P10CD R1 CLOSED_SAFE_ONLY; future H1 thermal QP per-step 606 local bins/6 audit 
 ## 20.11.2026 — P10CE angular presentation of thermal shape derivative
 
 По явному запросу исследователя проведён read-only углово-радиальный анализ H0/H1 QP CSV. Угловые полосы определяются μ=cosθ с Δμ=.2, θ от +z; φ сейчас интегрирован. 8 радиальных оболочек до 5мм; heatmaps H0, H1, Δ и полярный маргинал. Знак полярного вклада меняется H0 между bin3/4 (~101.54°), H1 bin2/3 (~113.58°). Значения интегральные на корзину, не плотность; нули внешних оболочек заданы support shape velocity. Новый FEM не запускался. Подробная запись `research/P10CE_H0_H1_THETA_RADIAL_READONLY_ANALYSIS_20261120.md`.
+
+## 20.11.2026 — P10CF component decomposition, H0/H1
+
+Read-only сравнение четырех слагаемых P10W R/jpeak из H0 и H1: explicit shape −15.64648→−15.07030, equilibrium +14.55432→+13.93038, EDV +4.19347→+3.57668, thermal +0.06638→+0.07006, total +3.16769→+2.50682 1/м. Mechanical subtotal=first3 3.10131→2.43676. H0→H1 full jpeak −20.863%, j6 −0.6113%, jen +1.0462%; strong cancellation. Основание: `research/P10CF_H0_H1_SHAPE_COMPONENT_COMPARISON_20261120.md`. Других FEM=0, сходимость не доказана.
