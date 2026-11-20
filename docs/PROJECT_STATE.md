@@ -1,6 +1,6 @@
 # PROJECT_STATE — текущее состояние проекта
 
-Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §42.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
+Дата первоначального паспорта: **2026-11-11**. **Последняя фактическая актуализация: 2026-11-20, §43.** Более ранние разделы сохраняют историю решений на дату их записи, включая упоминания GitFlic/старых HEAD.
 
 ## 1. Научная задача
 
@@ -486,3 +486,14 @@ R1 Windows P10CB_EVIDENCE.zip: 822 B, SHA-256 57b654c9eb194dcb0a1b161266d0e08284
 Подготовлен безопасный ZIP P10CI_MESH_AUDIT_R1_20261120.zip SHA256 dfccd540f21d7634907a66ab775ecce9c52bb215baf8ab68c6124c968bbd0a92 (36073B, ZIP 5/5 PASS), одно CMD + Python3 standard library; никакой Qt/FEM/GMsh/Windows Git mutation. Тесты: Python syntax/straight-corner regular-tet unit PASS, mini Gmsh2 Tet10 parser 1/1, synthetic three-mesh end-to-end 600 candidate+30 uncovered wall rows/12 group rows PASS, missing mesh STOP evidence PASS. На фактических Windows .msh **не выполнялся**. Программа после exact SHA gate строит straight-corner tetra quality/edge/midside deviation/φ span+sector occupancy, radial/polar centroid-cross. Это только геометрические прокси, не Tet10 QP/Jacobian и не физический 4D D_R jpeak.
 
 Научный протокол research/P10CI_POLE_MESH_GEOMETRY_READINESS_R1_20261120.md; исходники research/proposals/P10CI_MESH_AUDIT_R1_20261120/. Следующий единственный вход от исследователя: один небольшой P10CI_EVIDENCE.zip или сообщение STOP после одной ручной безопасной кнопки; большие .msh присылать не надо. Потом оценить φ/quality correlations, сформировать проект M1 size-field/mesh-only quality gate, и только по отдельному согласованию physical M1. D-017 и закрытие P10CD H1 сохраняются. FEM=0; SPATIAL_CONVERGENCE_NOT_PROVEN, FULL_LOCAL_TEMPORAL_CONVERGENCE_NOT_PROVEN.
+
+
+## 20.11.2026 — P10CI R1 реальный Windows mesh-only PASS; P10CJ независимый разбор полярной локализации
+
+Пользователь предоставил `P10CI_EVIDENCE.zip` SHA256 `8ff592f3d7696975e41b76946df6d438a378e816e04d56e532f0549bf2366e96`, CRC 5/5. Сверен Windows `RESULT=P10CI_MESH_ONLY_GEOMETRY_OK_NO_FEM`: три pinned `.msh` hash/count PASS, 600/600 строк объёмной геометрии совпали с P10CH (d,μ) cells, 30 рядов для неохваченного 0–20мкм, 12 групп. Результат **реально завершённого инструмента** P10CI R1, а не прежняя подготовка PENDING. Точные пять исходных файлов теперь опубликованы в `research/evidence/P10CI_WINDOWS_GEOMETRY_20261120/input/`; первичный ZIP сохранён как пользовательское вложение.
+
+**P10CJ read-only:** для H4W4B2 20–100мкм corner Tet10 q05 poles=0.54832 vs middle=0.55720, phi corner span p90=18.42° vs 5.50°; 0 q<0.1, 0 negative straight-corner tet, но curved Tet10 QP Jacobian не измерен. Spearman(phi span, spatial |Δ|)≈0.674 global, within polar μ band −0.052 — общий эффект обусловлен полярной географией, причинность φ не доказана. P10CH fine-bin Σ|Δ| bulk=0.03224464, wall=0.04114915, H2 dt=0.02274965 1/м; после signed radial aggregation into one 20–100мкм shell ×10μ retain 8.6553%, 11.8595%, 19.0346% (остаток компенсируется знаками). Базовая абсолютная механическая масса вклада at two poles=88.646%, относительное пространственное L1 несогласие poles **ниже** middle (bulk 3.953% vs4.609%; wall5.090% vs5.524%), хотя temporal H2 poles1.830% vs middle0.859%.
+
+QP cell-volume redistribution predictor signed spatial mismatch corr=0.8425 bulk,0.8681 wall; diagnostic equal-QP-volume rescaling diminishes |Δ| about47.5%/50.7%. Не является аджойнт-коррекцией/апостериорной оценкой; H2 same mesh не объясняется. Инструмент P10CI считал corner proxies, 100% fine radial-bin crossing by tet corners; графики 2D (d,μ) **не 4D physical fields**.
+
+Протокол `research/P10CJ_POLAR_ERROR_AND_BINNING_AUDIT_20261120.md`; скрипт `research/proposals/P10CJ_ANALYSIS_20261120/p10cj_evidence_analysis.py`; machine audit `research/evidence/P10CJ_ANALYSIS_20261120/derived/`. Evidence/source commit `8e3cfa790db46bc38188f59237bc3a9740539d64`. **P10CK следующий только offline/unit-only**: curved Tet10 Jacobian QP check + phi geometry, signed multiresolution 4D accumulator and quality-gated M1 size-field design. **No FEM, remesh or physical M1 authorization**; D-017 действует, P10CD H1 one-shot закрыт, пространственная и локальная временная сходимость не доказаны.

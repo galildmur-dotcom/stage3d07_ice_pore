@@ -332,3 +332,14 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **C — limited proposed pilot:** ZIP P10CI_MESH_AUDIT_R1_20261120.zip SHA256 dfccd540f21d7634907a66ab775ecce9c52bb215baf8ab68c6124c968bbd0a92 36073B 5/5 CRC PASS, separate distribution to investigator; one-click reads existing Windows G: meshes only, outputs new small evidence, physical FEM=0. Runtime 2–10min/RAM <1.5GiB are estimates, not measured caps.
 
 **D — unknown:** Actual Windows source mesh SHA/gate, angular/quality distributions, true curved Tet10 QP Jacobians, physical φ-resolved adjoint, mesh-quality causality, adaptive M1 geometry and any physical GO. Await one P10CI_EVIDENCE.zip or STOP. D-017 unchanged, no physical FEM permission.
+
+
+## N-P10CJ — независимая проверка геометрии сеток и signed radial bin cancellation (20.11.2026)
+
+**A (primary data verified in exact limited scope):** P10CI Windows mesh-only ZIP SHA `8ff592f3d7696975e41b76946df6d438a378e816e04d56e532f0549bf2366e96`, original 5 member SHA in `research/P10CJ_POLAR_ERROR_AND_BINNING_AUDIT_20261120.md`; pinned 3/3 existing mesh identities, 600/600 joins, 30 new near-wall rows, no FEM. Mechanical H4W4B2 baseline abs contributions two polar bands 88.646% of 20–100µm local sum. Signed Δ reaggregation from 20 to 1 radial cell per μ retains bulk8.655%, wall11.859%, H2-temporal19.035% of respective fine-scale Σ|Δ|. These are observable differences of computed partitions, not absolute errors relative to the continuum solution.
+
+**B (diagnostic only):** straight-corner Tet10 q05 poles0.5483 vs middle0.5572, φ span90 18.42° vs5.50°; no q<.1 or nonpositive *corner* tet. Spearman globalφ span vs abs bulkΔ .674 but within-polar-band−.052. Polar relative spatial mismatch is not greater than mid group for the chosen group-wise normalization (3.95%/4.61%, 5.09%/5.52%). QP-bin volume redistribution correlates with signed spatial Δ .843/.868 and equal-QP-volume proxy reduces Σ|Δ| by47.5%/50.7%; rescaling must **not** enter the physical adjoint.
+
+**C (open hypotheses):** geometric coordinate conditioning near θ=0,π, sub-bin QP occupancy, true mechanical/adjoint pole concentration and temporal integration could all contribute; causes remain unresolved. Candidate adaptive M1 refinement must use signed multi-resolution and quality-gated evidence, not raw 3–5µm bin L1 alone.
+
+**D (not proven):** no curved Tet10 QP-Jacobian positivity check, no physical φ-resolved mechanical/thermal (d,θ,φ,t) field, no adaptive M1 .msh, no new FEM, no spatial or local temporal convergence, no certified a posteriori error. New P10CK is offline/unit-only. D-017 continues. Report/code/input evidence on research branch, source commit `8e3cfa790db46bc38188f59237bc3a9740539d64`.
