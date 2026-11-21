@@ -434,3 +434,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CX — Windows Gmsh4.15.2 version discriminator (21.11.2026)
 
 **Prepared package, not a completed Windows run:** six-file ZIP `research/packages/P10CX_R1_2D_SURFACE_GMSH4152_WINDOWS_20261121.zip` SHA256 ad7ee12ab0e7be2f878ae9517d7a8ebdd9d04d6b9123a5fed920f50ee2be9e21; stdlib synthetic and old 4.13.1 MSH2 replay pass, Windows version unverified. 2D only, 3D Tet10 and shape-derivative fields absent. Result must be original user `P10CX_EVIDENCE.zip` or explicit STOP before any scientific comparison.
+
+## N-P10CX-R1/R2 — first real Windows archive is version-probe STOP (21.11.2026)
+
+**Original Windows R1 evidence:** ZIP bf3148f065cff01af6e602955e41fad94b90d52021fdbc05ff1cc9f61931bb1d CRC1/1 with `P10CX_RESULT.txt`; source3/3 SHA PASS and GMESH EXE SHA `317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1`, but blank native exit `gmsh -version`. Neither 2D nor 3D mesh was generated. **R2 proposal only:** one new standalone safe Windows version-gate + 2D package SHA 8098a39ed1fb98dceb205afdba810ab78935258540b1586a08d95913a63a46e3, ZIP6/6, no real Windows verification yet. No new polar-quality or shape derivative evidence.

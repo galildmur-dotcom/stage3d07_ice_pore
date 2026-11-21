@@ -666,3 +666,7 @@ Post-P10CV first 2D-only `.msh` original SHA256 `3e71273ce32c700d63d453c697bacba
 ## 2026-11-21 — P10CX prepared Windows-only 2D 4.15.2 [SOURCE+SYNTHETIC, WINDOWS PENDING]
 
 New one-shot Windows 2D-only ZIP `research/packages/P10CX_R1_2D_SURFACE_GMSH4152_WINDOWS_20261121.zip` SHA256 ad7ee12ab0e7be2f878ae9517d7a8ebdd9d04d6b9123a5fed920f50ee2be9e21, CRC6/6 PASS, pinned source3/3. Stdlib Python reader synthetic unit PASS and 4.13.1 P10CW MSH2 parity exact (74592 pore Tri6, qmin0.0747478, 120 angular bins). No Windows Gmsh4.15.2 real run yet; no 3D/FEM. Next one evidence ZIP or STOP; report P10CX prepared.
+
+## 2026-11-21 — P10CX R1 evidence STOP, isolated R2 native version recovery [NO NEW MESH/FEM]
+
+User ZIP SHA256 bf3148f065cff01af6e602955e41fad94b90d52021fdbc05ff1cc9f61931bb1d CRC1/1, one RESULT.txt 711 B, tool marker R1, source SHA3/3 PASS, EXE SHA 317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1. STOP_REASON blank native exit for gmsh -version, original version stdout/stderr absent, never reached 2D Gmsh/Python. New R2 ZIP SHA 8098a39ed1fb98dceb205afdba810ab78935258540b1586a08d95913a63a46e3 with strict .NET Process ExitCode/15s version guard and source+EXE pinning, original R1 preserved. ZIP CRC6/6, stdlib unit/replay PASS; Windows run PENDING. No new 2D, 3D or FEM results. See P10CX R1 STOP/R2 recovery report.
