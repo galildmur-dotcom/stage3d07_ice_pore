@@ -178,7 +178,7 @@ def main(argv: list[str]) -> int:
     # Marker is written BEFORE physical Popen; a failed attempt cannot repeat.
     folder.mkdir(exist_ok=False)
     manifest = {
-        "protocol": "P10DD_R1_ONE_H0_4D", "status": "started",
+        "protocol": "P10DD_R2_ONE_H0_4D", "status": "started",
         "mesh": str(H0), "mesh_sha256": h0_hash,
         "exe": str(exe), "exe_sha256": exe_hash,
         "forward_cache": str(cache) if cache else None,

@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
-TARGET = ROOT / "research/packages/P10DD_R1_M0_H0_FULL4D_WINDOWS_20261121.zip"
+TARGET = ROOT / "research/packages/P10DD_R2_M0_H0_FULL4D_WINDOWS_20261121.zip"
 SUFFIXES = {".cpp", ".hpp", ".inc"}
 EXTRA = (
     "CMakeLists.txt", "stage3d10dd_m0_full4d.cpp",

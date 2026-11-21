@@ -38,6 +38,11 @@ add_executable(p10dd_4d_synthetic_unit p10dd_4d_synthetic_unit.cpp)
 target_include_directories(p10dd_4d_synthetic_unit PRIVATE
  "${STAGE3D07_SOURCE_ROOT}/src" "${STAGE3D07_SOURCE_ROOT}/tests"
  "${CMAKE_CURRENT_SOURCE_DIR}")
+# The synthetic TU includes the legacy P10K harness, whose Config default
+# needs a concrete source root.  Without this definition Windows MinGW stops
+# at STAGE3D06_ROOT_DIR (which is not defined in the isolated P10DD bundle).
+target_compile_definitions(p10dd_4d_synthetic_unit PRIVATE
+ STAGE3D10K_SOURCE_ROOT="${normalized_source}")
 target_compile_options(p10dd_4d_synthetic_unit PRIVATE -O2 -Wall -Wextra -Wpedantic)
 target_link_libraries(p10dd_4d_synthetic_unit PRIVATE OpenMP::OpenMP_CXX)
 
