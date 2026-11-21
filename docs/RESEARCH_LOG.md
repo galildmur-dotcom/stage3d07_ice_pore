@@ -662,3 +662,7 @@ D-018A expressly approved by researcher; first U0 is geometry control; before ph
 ## 2026-11-21 — P10CW: physical pore surface generated, Gmsh4.13.1 [SURFACE-MESH ONLY, NO 3D/FEM]
 
 Post-P10CV first 2D-only `.msh` original SHA256 `3e71273ce32c700d63d453c697bacbaa938e12f3a915b79defb14c8c1269f2a4`, available in temporary scratch (not Git), 74592 Tri6 pore and hmax p50 20.015um. Exact 120/120 μφ bin count=74592, 20.0077% polar area and polar/mid median hmax ratio1.00203. Detected one southern μ0 φ3 corner sliver quality0.074748 with edges43.85/24.53/19.41um; all other Tri6 q≥0.2. Source runtime actual Gmsh4.13.1, **not Windows 4.15.2**, no Tet10/no FEM. STOP for 3D pending cross-version bounded surface QC; full proof report `research/P10CW_U1_PORE_SURFACE_REAL_MESH_QA_20261121.md`.
+
+## 2026-11-21 — P10CX prepared Windows-only 2D 4.15.2 [SOURCE+SYNTHETIC, WINDOWS PENDING]
+
+New one-shot Windows 2D-only ZIP `research/packages/P10CX_R1_2D_SURFACE_GMSH4152_WINDOWS_20261121.zip` SHA256 ad7ee12ab0e7be2f878ae9517d7a8ebdd9d04d6b9123a5fed920f50ee2be9e21, CRC6/6 PASS, pinned source3/3. Stdlib Python reader synthetic unit PASS and 4.13.1 P10CW MSH2 parity exact (74592 pore Tri6, qmin0.0747478, 120 angular bins). No Windows Gmsh4.15.2 real run yet; no 3D/FEM. Next one evidence ZIP or STOP; report P10CX prepared.

@@ -430,3 +430,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CW — first pore Tri6 surface mesh on U1_geo (21.11.2026)
 
 **2D surface evidence only:** original Gmsh4.13.1 MSH2 SHA256 3e71273ce32c700d63d453c697bacbaa938e12f3a915b79defb14c8c1269f2a4 (kept outside Git); 74592 physical pore Tri6, all angular120 bins nonempty, hmax p50=20.015µm, polar/mid median hmax ratio1.00203, but one south pole sliver with q=0.074748. Read-only QA script and 120-bin JSON in P10CW derived folder. Exact Gmsh4.15.2 cross-check and all 3D Tet10/QP/FEM properties unverified. **STOP_SURFACE_POLE_SLIVER**; no mechanical shape derivative conclusion.
+
+## N-P10CX — Windows Gmsh4.15.2 version discriminator (21.11.2026)
+
+**Prepared package, not a completed Windows run:** six-file ZIP `research/packages/P10CX_R1_2D_SURFACE_GMSH4152_WINDOWS_20261121.zip` SHA256 ad7ee12ab0e7be2f878ae9517d7a8ebdd9d04d6b9123a5fed920f50ee2be9e21; stdlib synthetic and old 4.13.1 MSH2 replay pass, Windows version unverified. 2D only, 3D Tet10 and shape-derivative fields absent. Result must be original user `P10CX_EVIDENCE.zip` or explicit STOP before any scientific comparison.
