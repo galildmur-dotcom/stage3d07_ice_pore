@@ -1,0 +1,55 @@
+{
+  "result": "P10CT_R2_INDEPENDENT_FULL_QP_PASS_BUT_U0_UNDERRESOLVED_FOR_LOCAL_DERIVATIVE",
+  "original_evidence_sha256": "92c7a902c41d7ded08c2431c057c849f1463848deca14182d925545450766240",
+  "zip_crc_files": 7,
+  "original_mesh_sha256": "1a4690d1c57c8b520d596f9a864f754a8d84151bfd1fdd36f56631488779c6a3",
+  "gmsh_new_calls_in_R2": 0,
+  "physical_FEM_runs": 0,
+  "tet10": 90725,
+  "tri6": 11636,
+  "gmsh_R1_reported_all_entity_elements": 102726,
+  "R2_physical_tag_exported_elements": 102361,
+  "element_count_scope_difference": 365,
+  "qp_27_count": 2449575,
+  "nonpositive_curved_qp_count": 0,
+  "nonpositive_corner_det_count": 0,
+  "min_sampled_detJ_m3": 1.6243123752183856e-11,
+  "corner_quality_min": 0.19285931419238336,
+  "corner_quality_below_0p1": 0,
+  "pore_wall_tri6": 20,
+  "pore_wall_max_radial_node_error_mm": 4.7704895589362195e-15,
+  "tet10_centroid_by_zone": {
+    "corner_centroid_inside_pore": 1,
+    "0_20um": 0,
+    "20_100um": 0,
+    "100um_5mm": 570,
+    "outside_B6": 90154
+  },
+  "corner_centroid_inside_pore_cell": {
+    "mu_bin": 0,
+    "phi_sector": 11,
+    "hmax_mm": 1.071119171832825
+  },
+  "physical_nearwall_0_100um_centroid_count": 0,
+  "physical_nearwall_0_100um_polar_centroid_count": 0,
+  "R2_original_polar_0_100um_flag": true,
+  "R2_original_flag_false_positive_reason": "included corner centroid inside pore in ZONES[:2]",
+  "corrected_physical_polar_0_100um_has_tet_centroids": false,
+  "B6_0p1_to_5mm": {
+    "tet10": 570,
+    "hmax_p50_mm": 3.2070091757744894,
+    "polar_vs_mid_hmax_p50_ratio": 0.9887334257658937
+  },
+  "outside_B6": {
+    "tet10": 90154,
+    "hmax_p50_mm": 3.4736548439500465,
+    "polar_vs_mid_hmax_p50_ratio": 1.0016992432829133
+  },
+  "physical_FEM_readiness": "STOP_U0_TOO_COARSE_NEAR_PORE",
+  "limitations": [
+    "positive 27QP samples do not prove detJ positivity throughout curved tets",
+    "centroid coverage is not absence of physical material/physical QP contributions",
+    "no 4D mechanical/thermal fields or shape derivative on U0",
+    "global corner-volume closure cannot establish near-wall resolution"
+  ]
+}
