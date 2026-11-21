@@ -1,0 +1,31 @@
+{
+  "protocol": "P10DP_P10DO_READONLY_PREFLIGHT_INDEPENDENT_AUDIT",
+  "status": "P10DP_WINDOWS_M1_LABEL_AND_GEO_PARSE_VERIFIED",
+  "m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "m1_nodes": 14145,
+  "m1_tet10": 9736,
+  "m1_pore_tri6": 178,
+  "label_counts": {
+    "zero": 9477,
+    "one": 21,
+    "intermediate": 238
+  },
+  "nonzero_centroid_kappa_tets": 259,
+  "nonzero_centroid_kappa_fraction": 0.026602300739523417,
+  "full_centroid_kappa_fraction": 0.0021569433032046013,
+  "mean_kappa_at_linear_centroid": 0.011878045408035928,
+  "native_gmsh_version": "4.15.2",
+  "native_geo_parse_exit": 0,
+  "preflight_duration_s": 4.364927,
+  "native_gmsh_m2_meshing": "NOT_LAUNCHED",
+  "native_m2_27qp_validation": "NOT_PERFORMED",
+  "physical_FEM_runs": 0,
+  "one_shot_marker_creation": "NOT_IN_FIRST_BUTTON_CODE_PATH_NOT_DIRECTLY_READ_ON_WINDOWS",
+  "independence_limit": "raw M1.msh and native gmsh.exe not supplied, SHA/counts based on Windows JSON; source package pinned",
+  "interpretation": "κ(x) smooth globally; centroid counts only, not number of changed elements after remesh",
+  "second_mesh_only_button": "PRECONDITIONS_VERIFIED_BUT_NOT_EXECUTED",
+  "original_user_zip_sha256": "07e2deabd25288ac422f27b72f00a551d68088e7e7ad731efe5e900a9750cdc9",
+  "source_zip_sha256": "6c6f4f574e6a8c436d8319e059e5d1341c8ecbeda5ba38fbc2587c03abb15535",
+  "original_zip_crc_members": "3/3_PASS",
+  "synthetic_negative_cases_rejected": 6
+}
