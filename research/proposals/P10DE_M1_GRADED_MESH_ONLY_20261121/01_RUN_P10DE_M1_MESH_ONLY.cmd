@@ -7,19 +7,20 @@ echo NO FEM. No file in G:\ildar\Stage3D07 will be modified.
 echo Gmsh 4.15.2, H0 exact SHA, full curved 27QP QA, one-shot.
 echo.
 where py.exe >nul 2>nul
-if not errorlevel 1 (
-  py -3 "%~dp0P10DE_one_click_m1.py"
-  set "RC=%ERRORLEVEL%"
-  goto DONE
-)
+if not errorlevel 1 goto USING_PY
 where python.exe >nul 2>nul
-if not errorlevel 1 (
-  python "%~dp0P10DE_one_click_m1.py"
-  set "RC=%ERRORLEVEL%"
-  goto DONE
-)
+if not errorlevel 1 goto USING_PYTHON
 echo P10DE STOP: Python 3 was not found.
 set "RC=2"
+goto DONE
+:USING_PY
+py -3 "%~dp0P10DE_one_click_m1.py"
+set "RC=%ERRORLEVEL%"
+goto DONE
+:USING_PYTHON
+python "%~dp0P10DE_one_click_m1.py"
+set "RC=%ERRORLEVEL%"
+goto DONE
 :DONE
 echo.
 echo P10DE process exit: %RC%

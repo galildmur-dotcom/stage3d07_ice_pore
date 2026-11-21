@@ -61,6 +61,11 @@ def build() -> None:
         with tempfile.TemporaryDirectory(prefix="p10de_bundle_test_") as td:
             root = Path(td)
             z.extractall(root)
+            cmd = (root / "01_RUN_P10DE_M1_MESH_ONLY.cmd").read_bytes()
+            if (b"\xef\xbb\xbf" in cmd[:3] or b"\r\n" not in cmd or
+                    b":USING_PY\r\n" not in cmd or
+                    b":USING_PYTHON\r\n" not in cmd):
+                raise RuntimeError("Windows CMD CRLF/BOM/exit-flow gate failed")
             r = subprocess.run([sys.executable, str(root / "P10DE_one_click_m1.py"),
                                 "--selftest"], text=True, capture_output=True, timeout=90, cwd=td)
             if r.returncode != 0 or "P10DE_ONECLICK_SYNTHETIC_OK" not in r.stdout:
