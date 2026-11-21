@@ -438,3 +438,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CX-R1/R2 — first real Windows archive is version-probe STOP (21.11.2026)
 
 **Original Windows R1 evidence:** ZIP bf3148f065cff01af6e602955e41fad94b90d52021fdbc05ff1cc9f61931bb1d CRC1/1 with `P10CX_RESULT.txt`; source3/3 SHA PASS and GMESH EXE SHA `317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1`, but blank native exit `gmsh -version`. Neither 2D nor 3D mesh was generated. **R2 proposal only:** one new standalone safe Windows version-gate + 2D package SHA 8098a39ed1fb98dceb205afdba810ab78935258540b1586a08d95913a63a46e3, ZIP6/6, no real Windows verification yet. No new polar-quality or shape derivative evidence.
+
+## N-P10CY — real Windows R2 surface geometry accepted (21.11.2026)
+
+**Original evidence** ZIP `27766d2ab11b38aeb964e91909035fe8a8665ea1d7fa403ae03f3afbd7535e86`, CRC9/9, 4.15.2 native code0, 2D 4.417s private.2743GiB, sourceSHA3/3, 74578 pore Tri6, qmin0.48062286/q<0.1=0, 120 angular bins, edge hmedian20.0128um. Independent R2 CSV/JSON bin closure PASS, original ZIP saved, derived JSON+script reproducible. Previous Linux4.13.1 had 1 poor Tri6 (q.074748), count TV across120 cells .510%; **not proof software version alone caused change**. Windows 3D mesh, 27QP curved Tet10, transient thermo-mechanics, true polar derivative cause UNPROVEN. Research report P10CY.
