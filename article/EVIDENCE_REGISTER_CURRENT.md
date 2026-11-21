@@ -382,3 +382,9 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **B descriptive:** H4W4B2 conditional q^-3 count proxy for 20–100um 29288→40756.3 (×1.391571); formal whole-original count proxy ×1.043925 if all outside elements and transition unchanged, an *unrealistic* algebraic counterfactual, no upper resource bound. Does not establish actual Tet10 quality, memory, M1 geometry, FEM accuracy, spatial/temporal convergence.
 
 **D:** full B6 local baseline h0(x), Phi/time/thermal physical fields, reason of polar concentration unknown. P10CO status `H0_FULL_B6_NOT_CALIBRATED_NO_MESH_NO_FEM`, script/CSV/JSON/PNG in research P10CO folders. Next P10CP new one-shot READ-ONLY size audit 100um–5mm on pinned original .msh, NOT new mesh/FEM, no repeat earlier tools. D-017 unchanged.
+
+## N-P10CP — ПОДГОТОВЛЕН инструмент измерения исходной 3D геометрии, данных ещё нет (21.11.2026)
+
+**P, prepared-only:** new Windows One Click P10CP R1 SHA `000a94879d90466870aab9fa429393687c24700259874fec25a9651857f69d37`, in-memory synthetic unit and STOP/ZIP QA PASS. Real 3 original pinned `.msh` **не доступны ассистенту, не считаны программой P10CP**, новых измеренных size/quality rows 100µm–5mm нет. Design: 24 d×10 μ×12 φ, 3 meshes; exact per-cell straight-corner edge/quality stats and global count gates, no raw mesh export.
+
+**A established from P10CO/P10CI, not P10CP:** expected far-B6 centroid Tet10 count 192565/254258/192965; P10CI per-cell geometry currently only 0–100µm. **D unknown:** true 3D h0 Gmsh target, full B6 curved 27QP quality, actual M1 resource, polar gradient cause, physical separate `(r,θ,φ,t)` mechanical/thermal derivative. The prepared status does NOT raise the evidentiary level of any scientific proposition. See `research/P10CP_B6_ORIGINAL_MESH_PROFILE_PREPARED_20261121.md`; next accept one new P10CP EVIDENCE ZIP and independently verify. D-017 unchanged, FEM/Gmsh=0.
