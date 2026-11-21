@@ -1,0 +1,26 @@
+{
+  "protocol": "P10DQ_P10DO_WINDOWS_STOP_INDEPENDENT_READ_ONLY_AUDIT",
+  "status": "P10DQ_TIMEOUT_AND_1D_STALL_VERIFIED",
+  "p10do_zip_sha256": "547ce2c801b058658439ff157735dca1e28c4931b5da56f4b71e96a61723e220",
+  "p10do_full_log_sha256": "dfff37bd5efb8b0f375106426b29dd7ddd70897c42df1776f4ba79d5dea1780f",
+  "zip_member_count": 5,
+  "zip_crc_all_pass": true,
+  "native_gmsh_version": "4.15.2",
+  "p10do_stop_reason": "P10DO_STOP_GMSH_WALL_900S",
+  "gmesh_3d_argv_started": true,
+  "last_observed_stage": "1D curves 14 and 17",
+  "2d_or_3d_mesh_observed": false,
+  "m2_mesh_sha256": null,
+  "m2_geometry_qa_performed": false,
+  "physical_fem_runs": 0,
+  "m1_original_successful_native_gmsh_wall_s": 0.5044569000019692,
+  "p10do_wall_bound_s": 900,
+  "runtime_ratio_lower_bound": 1784.0969168951535,
+  "m1_label_counts": {
+    "zero": 9477,
+    "one": 21,
+    "intermediate": 238
+  },
+  "independence_limits": "Only Windows manifest/log; no native field values, no raw M2 mesh. Root cause of slow 1D meshing NOT proven.",
+  "next": "P10DQ separate one-shot, 5 isolated Gmsh -1 variants, no P10DO rerun, no FEM"
+}
