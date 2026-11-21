@@ -642,3 +642,7 @@ Six pinned source SHA PASS: P10CI corner centroid 600 cells, P10BA 3×200 t900 Q
 ## 2026-11-21 — P10CT R1: подготовка одного U0 mesh-only Windows [SOURCE+UNIT, NO REAL MESH]
 
 Первая по D-018 квазиравномерная U0 по всему объёму, h=2мм только geometry QA. Подготовлены One Click с Gmsh 4.15.2 и Python QC геометрии в 4 радиальных зонах ×10 μ×12 φ, sampled curved 27QP, особая проверка полюсов. Python synthetic tests 3/3, ZIP CRC 8/8, исходные GEO Git blob parity 2/2 PASS. ZIP SHA256 f7058193d162ccb02389716a9aa2467b85746c2a66b108dc388964e81fe3b65c. Реальных Gmsh/.msh/FEM=0; причина полярной аномалии UNKNOWN. Отчёт research/P10CT_U0_MESH_ONLY_PREPARED_20261121.md.
+
+## 2026-11-21 — P10CT R1 Windows evidence: U0 created, Python-QA STOP; R2 only read-only (MEASURED + PREPARED)
+
+Оригинальный R1 ZIP 06fceca8... CRC5/5, Gmsh exit0 wall6.862s peak0.277GiB, U0 131380 nodes/102726 all-type elements, MSH 16218389B SHA 1a4690d1...; warning Gmsh -1.03771 / 1 jac<0 stage UNKNOWN; high-order optimization reports success. Python QA yielded no JSON/CSV, STOP with truncated traceback; final Tet10 curved validity/polar geometry UNKNOWN. Independent original ZIP hash/field/Gmsh count audit PASS. R2 read-only one-shot prepared (ZIP 200565c7..., synthetic3/3, no new Gmsh/FEM): pinned .msh SHA, full Python stderr and 27QP all Tet10, separate inside-pore straight-centroid proxy zone. Read research/P10CT_R1_WINDOWS_AUDIT_AND_R2_READONLY_RECOVERY_20261121.md. Next one R2 evidence ZIP; R1 never rerun.

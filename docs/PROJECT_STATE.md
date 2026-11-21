@@ -572,3 +572,13 @@ Python QA проверяет фактические hmax p5/p50/p95, quality, ф
 Отчёт research/P10CT_U0_MESH_ONLY_PREPARED_20261121.md, пакет research/packages/P10CT_R1_U0_MESH_ONLY_WINDOWS_20261121.zip, исходники research/proposals/P10CT_U0_MESH_ONLY_R1_20261121/.
 
 **Следующий шаг пользователя:** скачать и распаковать новый ZIP вне проекта, однократно открыть 01_RUN_P10CT_U0_MESH_ONLY.cmd, передать только P10CT_EVIDENCE.zip или STOP. Большой .msh оставить локально. Новый physical FEM U0/M1–M4 не разрешён D-017/D-018; один H1 P10CD уже закрыт.
+
+## 54. P10CT R1 оригинальная U0: реальный Gmsh exit0, Python-QA STOP; R2 read-only восстановление подготовлено (21.11.2026)
+
+Принят оригинальный P10CT_EVIDENCE.zip SHA256 06fceca8df77018a706c2de79bcada2978a079b1086114235201a2ed7c47c895, CRC5/5, 5/5 source SHA и unit exit0. Gmsh R1 впервые создал одну квазиравномерную по всему объёму U0: h=2мм target, 2 потока, native exit0, wall6.862с, private peak0.277GiB, 131380 nodes, 102726 **всех типов** элементов (Tet10 count UNKNOWN), новая MSH2 ASCII 16218389B SHA256 1a4690d1c57c8b520d596f9a864f754a8d84151bfd1fdd36f56631488779c6a3. Физический FEM=0.
+
+Gmsh предупредил worst distortion −1.03771 и 1 element with jac<0, но stdout после high-order optimize содержит Optimization succeeded. **Не известно**, относится ли предупреждение к состоянию до коррекции: конечная инверсия НЕ доказана. R1 Python-QA аварийно завершился, stdout0B, JSON/CSV нет, PowerShell записал только начало Traceback. Гипотеза о corner-centroid внутри сферической поры — не установленная причина STOP. Следовательно, действительная U0 .msh существует, но geometry QA/полюса/curved quality **НЕ ПРОВЕРЕНЫ**, физический запуск недопустим.
+
+Отчёт research/P10CT_R1_WINDOWS_AUDIT_AND_R2_READONLY_RECOVERY_20261121.md; raw ZIP под research/evidence/P10CT_R1_WINDOWS_20261121/input/, независимый скрипт/JSON-derived в proposals/evidence. Подготовлен **только читающий R2** ZIP research/packages/P10CT_R2_READONLY_U0_QA_WINDOWS_20261121.zip SHA256 200565c7ddcc7cafa109ac5230050533f34b9a8c925e3f8bda320bbc637ac28a (26539B), CRC6/6, synthetic 3/3 PASS, Linux missing-source STOP/ZIP PASS. R2 сохраняет full Python stderr, SHA-gates старую .msh, проверяет 27QP **всех** Tet10, выделяет самостоятельную зону corner-centroid-inside-pore (5×10×12=600), ID худших элементов и обе полярные области. R2 реальную Windows .msh пока НЕ прочитал.
+
+**Следующий единственный шаг пользователя:** один раз запустить 01_RUN_P10CT_R2_READONLY_QA.cmd из отдельного нового каталога и прислать P10CT_R2_EVIDENCE.zip или STOP. **R1 Gmsh не повторять.** U0 FEM и M1–M4 не разрешены D-017/D-018.

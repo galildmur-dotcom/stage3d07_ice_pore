@@ -1,0 +1,27 @@
+{
+  "result": "P10CT_R1_ORIGINAL_GMSH_COMPLETED_QA_NOT_ESTABLISHED",
+  "original_zip_sha256": "06fceca8df77018a706c2de79bcada2978a079b1086114235201a2ed7c47c895",
+  "zip_crc_count": 5,
+  "source_sha_gates": "PASS_5_OF_5",
+  "unit_status": "PASS_EXIT_0",
+  "gmsh_native_exit": 0,
+  "gmsh_wall_seconds": 6.862,
+  "gmsh_peak_private_gib": 0.277,
+  "gmsh_total_nodes": 131380,
+  "gmsh_all_elements": 102726,
+  "tet10_count": "UNKNOWN_UNTIL_QA",
+  "gmsh_mesh_bytes": 16218389,
+  "gmsh_mesh_sha256": "1a4690d1c57c8b520d596f9a864f754a8d84151bfd1fdd36f56631488779c6a3",
+  "gmsh_high_order_optimization_warning": {
+    "worst_distortion_reported": -1.03771,
+    "elements_with_negative_jac_reported": 1,
+    "time_or_stage": "UNKNOWN_INITIAL_VS_FINAL",
+    "final_curved_27qp_inversions": "UNKNOWN"
+  },
+  "first_python_QA_stdout_bytes": 0,
+  "first_python_QA_summary": "ABSENT",
+  "first_python_QA_traceback": "TRUNCATED_BY_POWERSHELL_LAUNCHER",
+  "physical_FEM_runs": 0,
+  "conclusion": "one uniform U0 .msh created; not yet validated; NEVER run FEM on this evidence alone",
+  "recovery": "read same SHA-pinned mesh only, 27 QP all Tet10, capture complete Python traceback"
+}
