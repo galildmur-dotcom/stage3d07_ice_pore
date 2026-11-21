@@ -442,3 +442,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CY — real Windows R2 surface geometry accepted (21.11.2026)
 
 **Original evidence** ZIP `27766d2ab11b38aeb964e91909035fe8a8665ea1d7fa403ae03f3afbd7535e86`, CRC9/9, 4.15.2 native code0, 2D 4.417s private.2743GiB, sourceSHA3/3, 74578 pore Tri6, qmin0.48062286/q<0.1=0, 120 angular bins, edge hmedian20.0128um. Independent R2 CSV/JSON bin closure PASS, original ZIP saved, derived JSON+script reproducible. Previous Linux4.13.1 had 1 poor Tri6 (q.074748), count TV across120 cells .510%; **not proof software version alone caused change**. Windows 3D mesh, 27QP curved Tet10, transient thermo-mechanics, true polar derivative cause UNPROVEN. Research report P10CY.
+
+## N-P10CZ — 3D resource scaling from approved U1_geo field (21.11.2026)
+
+**Analytic model ONLY:** piecewise radialised P10CV h(d), `I=156785.811962`, coefficient examples C4.0323/8.4853/12/20 produce N(Tet10) proxies 632210/1330372/1881430/3135716 and state buffer proxies 10.83/22.78/32.22/53.70GiB (historic H4W5B20 scaled), not measured Gmsh/Windows memory or rigorous bounds. R2 real wall Tri6=74578 used only for surface calibration. No actual 3D mesh/FEM and no 27QP curved verification. Next bounded 3D mesh-only pilot requires separate tested one-shot with STOP gates. Research P10CZ, script+derived JSON.

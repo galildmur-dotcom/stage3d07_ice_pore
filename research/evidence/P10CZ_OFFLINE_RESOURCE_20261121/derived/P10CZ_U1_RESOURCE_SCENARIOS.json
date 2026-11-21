@@ -1,0 +1,108 @@
+{
+  "result": "P10CZ_U1_RADIAL_RESOURCE_MODEL_ONLY_NO_MESH_NO_FEM",
+  "geometry": "60x60x50 mm box minus R1mm pore; distance field radialised to R13mm",
+  "source": "P10CV GEO Threshold fields 3 and 4 combined with Max field 5",
+  "h_values_mm": {
+    "wall": 0.02,
+    "band": 0.2,
+    "far": 2.0,
+    "transition_d_mm": [
+      0.0,
+      0.02,
+      0.1,
+      0.8,
+      1.8181818181818183,
+      5.0,
+      12.0
+    ]
+  },
+  "surface_measured": {
+    "tri6_pore_415": 74578,
+    "hmax_p50_um": 20.012807470767772,
+    "surface_count_coefficient": 2.3769327972225183,
+    "equilateral_surface_coefficient": 2.3094010767585034
+  },
+  "whole_U0_observed_coefficient": 4.032316058477824,
+  "regular_tet_coefficient": 8.48528137423857,
+  "radial_sections": [
+    {
+      "d_lower_mm": 0.0,
+      "d_upper_mm": 0.02,
+      "volume_mm3": 0.25638747085456604,
+      "volume_over_hcubed": 32048.433856817963
+    },
+    {
+      "d_lower_mm": 0.02,
+      "d_upper_mm": 0.1,
+      "volume_mm3": 1.130102086929731,
+      "volume_over_hcubed": 54501.42744605134
+    },
+    {
+      "d_lower_mm": 0.1,
+      "d_upper_mm": 0.8,
+      "volume_mm3": 18.853744711743545,
+      "volume_over_hcubed": 26376.096347327923
+    },
+    {
+      "d_lower_mm": 0.8,
+      "d_upper_mm": 1.8181818181818183,
+      "volume_mm3": 69.32623397105871,
+      "volume_over_hcubed": 8665.779246036927
+    },
+    {
+      "d_lower_mm": 1.8181818181818183,
+      "d_upper_mm": 5.0,
+      "volume_mm3": 811.0234257884874,
+      "volume_over_hcubed": 10401.762919309696
+    },
+    {
+      "d_lower_mm": 5.0,
+      "d_upper_mm": 12.0,
+      "volume_mm3": 8297.99339568184,
+      "volume_over_hcubed": 3442.6586565094785
+    }
+  ],
+  "far_box_region": {
+    "r_lower_mm": 13.0,
+    "outer_volume_mm3": 170797.2279200843,
+    "volume_over_hcubed": 21349.653490010536
+  },
+  "total_volume_over_hcubed": 156785.81196206386,
+  "scenarios": [
+    {
+      "label": "observed_U0_whole_volume_calibration",
+      "coefficient": 4.032316058477824,
+      "tet10_proxy": 632210,
+      "buffers_gib_linear_proxy": 10.826939674236394,
+      "mesh_mib_U0_bytes_per_tet_proxy": 107.78098481118371
+    },
+    {
+      "label": "ideal_regular_tet_geometry",
+      "coefficient": 8.48528137423857,
+      "tet10_proxy": 1330372,
+      "buffers_gib_linear_proxy": 22.783340448884093,
+      "mesh_mib_U0_bytes_per_tet_proxy": 226.80562973048924
+    },
+    {
+      "label": "higher_density_illustration",
+      "coefficient": 12.0,
+      "tet10_proxy": 1881430,
+      "buffers_gib_linear_proxy": 32.2205090589754,
+      "mesh_mib_U0_bytes_per_tet_proxy": 320.75159758742836
+    },
+    {
+      "label": "stress_illustration",
+      "coefficient": 20.0,
+      "tet10_proxy": 3135716,
+      "buffers_gib_linear_proxy": 53.70084843162567,
+      "mesh_mib_U0_bytes_per_tet_proxy": 534.5859959790473
+    }
+  ],
+  "caveats": [
+    "No actual 3D mesh; field-distance sampling and Gmsh size overrides unmeasured",
+    "Coefficients are scenario proxies, not rigorous element-count bounds",
+    "RAM from historic H4W5B20 state buffers, not Gmsh/Windows RSS",
+    "MSH bytes from earlier U0, not guaranteed for fine U1",
+    "No FEM permitted and no physical M1 mesh exists"
+  ]
+}
