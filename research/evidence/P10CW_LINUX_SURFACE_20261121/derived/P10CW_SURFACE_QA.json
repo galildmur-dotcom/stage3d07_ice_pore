@@ -1,0 +1,922 @@
+{
+  "status": "P10CW_PORE_WALL_TRI6_SURFACE_QA_ONLY_NO_TET_NO_FEM",
+  "gmsh_runtime": "4.13.1",
+  "mesh_sha256": "3e71273ce32c700d63d453c697bacbaa938e12f3a915b79defb14c8c1269f2a4",
+  "physical_groups": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ]
+  ],
+  "tri6_pore": 74592,
+  "pore_chord_area_mm2": 12.565341190442377,
+  "sphere_cad_area_mm2": 12.566370614359172,
+  "area_relative_error": -8.191895244745361e-05,
+  "hmax_um_p5_p50_p95": [
+    19.601376200391147,
+    20.01500931882796,
+    22.334778669783358
+  ],
+  "min_corner_quality": 0.07474784370275224,
+  "corner_quality_p5_p50_p95": [
+    0.954453690038442,
+    0.999711589006179,
+    0.9999999999999998
+  ],
+  "corner_quality_below_0p1": 1,
+  "corner_quality_below_0p2": 1,
+  "corner_quality_below_0p1_polar": 1,
+  "corner_quality_below_0p2_polar": 1,
+  "worst_corner_quality_mu_phi_bins": [
+    0,
+    3
+  ],
+  "worst_corner_quality_hmax_um": 43.84729562474503,
+  "worst_corner_quality_edge_um": [
+    43.84729562474503,
+    24.52779422772848,
+    19.41365176361327
+  ],
+  "worst_corner_quality_mu": -0.9999981004732009,
+  "worst_corner_quality_phi_deg": 95.630202955291,
+  "worst_corner_quality_centroid_mm": [
+    -0.00019119201762187384,
+    0.0019393996506334166,
+    29.000163083760746
+  ],
+  "nonpositive_corner_area": 0,
+  "max_radial_node_deviation_um": 5.421010862427522e-12,
+  "polar_tri6": 14962,
+  "polar_chord_area_fraction": 0.20007739627400897,
+  "polar_vs_mid_median_hmax_ratio": 1.0020310882597714,
+  "mu_phi_bins": [
+    {
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10426498540574573,
+      "hmax_p50_um": 20.166283737973814
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 1,
+      "count_tri6": 629,
+      "chord_area_mm2": 0.10472702521639782,
+      "hmax_p50_um": 20.102600710276317
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 2,
+      "count_tri6": 637,
+      "chord_area_mm2": 0.10460389608194635,
+      "hmax_p50_um": 20.05996867522334
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 3,
+      "count_tri6": 623,
+      "chord_area_mm2": 0.10578705776887717,
+      "hmax_p50_um": 20.02684163738013
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 4,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10307252577698844,
+      "hmax_p50_um": 20.108194420063626
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "count_tri6": 614,
+      "chord_area_mm2": 0.10493783293422351,
+      "hmax_p50_um": 20.017894988269305
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10502886587704931,
+      "hmax_p50_um": 20.037548738941524
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 7,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10455026770041426,
+      "hmax_p50_um": 20.085624680052703
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 8,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10503960106148169,
+      "hmax_p50_um": 20.018715065245733
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "count_tri6": 626,
+      "chord_area_mm2": 0.10606656825039552,
+      "hmax_p50_um": 20.013942510845652
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10359507693773731,
+      "hmax_p50_um": 20.11399913088518
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 11,
+      "count_tri6": 632,
+      "chord_area_mm2": 0.10483193639916963,
+      "hmax_p50_um": 20.141740803734663
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 0,
+      "count_tri6": 632,
+      "chord_area_mm2": 0.10464851487718355,
+      "hmax_p50_um": 20.076125584539476
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 1,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10537804418327597,
+      "hmax_p50_um": 20.067185016926167
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 2,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10482228283643709,
+      "hmax_p50_um": 20.01494479671246
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 3,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10469093652198258,
+      "hmax_p50_um": 20.035602379732122
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 4,
+      "count_tri6": 615,
+      "chord_area_mm2": 0.10466489467482049,
+      "hmax_p50_um": 20.002103157191907
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 5,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10498395835618068,
+      "hmax_p50_um": 20.034629554472108
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 6,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10458881897622338,
+      "hmax_p50_um": 20.023363264613682
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 7,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10455099923673823,
+      "hmax_p50_um": 20.030146198022695
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 8,
+      "count_tri6": 610,
+      "chord_area_mm2": 0.10409677786420737,
+      "hmax_p50_um": 20.005478394115876
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 9,
+      "count_tri6": 614,
+      "chord_area_mm2": 0.10519655573715872,
+      "hmax_p50_um": 20.004242391000616
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 10,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10427897056618046,
+      "hmax_p50_um": 20.01928908579598
+    },
+    {
+      "mu_bin": 1,
+      "phi_bin": 11,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10432773065641454,
+      "hmax_p50_um": 20.021286789576852
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 0,
+      "count_tri6": 632,
+      "chord_area_mm2": 0.10449381470442251,
+      "hmax_p50_um": 20.016669857904375
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 1,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10430481998336817,
+      "hmax_p50_um": 20.00956451976026
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 2,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10478575056696257,
+      "hmax_p50_um": 20.021100634136243
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 3,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10517579424971162,
+      "hmax_p50_um": 20.01773474127221
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 4,
+      "count_tri6": 609,
+      "chord_area_mm2": 0.10438088399823353,
+      "hmax_p50_um": 20.001176117254932
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 5,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10490301443688203,
+      "hmax_p50_um": 20.01607613186357
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 6,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10473113498476776,
+      "hmax_p50_um": 20.00976781704203
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 7,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.104844229916522,
+      "hmax_p50_um": 20.000000000026848
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 8,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10489974301753081,
+      "hmax_p50_um": 20.00132251708669
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 9,
+      "count_tri6": 615,
+      "chord_area_mm2": 0.1044611954370646,
+      "hmax_p50_um": 20.005044911465447
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 10,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10493614810090557,
+      "hmax_p50_um": 20.02648959948707
+    },
+    {
+      "mu_bin": 2,
+      "phi_bin": 11,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10501147796367409,
+      "hmax_p50_um": 20.00440328911389
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 0,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10498343921275698,
+      "hmax_p50_um": 20.011478343789186
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 1,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10517375811235073,
+      "hmax_p50_um": 20.01384695747754
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 2,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.1047226156248287,
+      "hmax_p50_um": 20.014870684527185
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 3,
+      "count_tri6": 609,
+      "chord_area_mm2": 0.1047177365201209,
+      "hmax_p50_um": 20.01082432738763
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 4,
+      "count_tri6": 625,
+      "chord_area_mm2": 0.10534804611205653,
+      "hmax_p50_um": 20.00376309571753
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 5,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10418621700508963,
+      "hmax_p50_um": 20.008532914932776
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 6,
+      "count_tri6": 612,
+      "chord_area_mm2": 0.10456983105030987,
+      "hmax_p50_um": 20.000971928796915
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 7,
+      "count_tri6": 623,
+      "chord_area_mm2": 0.10500482040490072,
+      "hmax_p50_um": 20.00925791681696
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 8,
+      "count_tri6": 613,
+      "chord_area_mm2": 0.1046111666791735,
+      "hmax_p50_um": 20.008635041318815
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 9,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.1049801109140955,
+      "hmax_p50_um": 20.02938865484751
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 10,
+      "count_tri6": 616,
+      "chord_area_mm2": 0.10455720772754627,
+      "hmax_p50_um": 20.010207374515655
+    },
+    {
+      "mu_bin": 3,
+      "phi_bin": 11,
+      "count_tri6": 627,
+      "chord_area_mm2": 0.1049211058357839,
+      "hmax_p50_um": 20.00746737381417
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 0,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10543558010178497,
+      "hmax_p50_um": 20.016560307868286
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 1,
+      "count_tri6": 605,
+      "chord_area_mm2": 0.10429493334023565,
+      "hmax_p50_um": 20.000000000451685
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 2,
+      "count_tri6": 633,
+      "chord_area_mm2": 0.10465908736918475,
+      "hmax_p50_um": 20.01215824856892
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 3,
+      "count_tri6": 637,
+      "chord_area_mm2": 0.10476771707020767,
+      "hmax_p50_um": 20.018043086456167
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 4,
+      "count_tri6": 615,
+      "chord_area_mm2": 0.10372367598743552,
+      "hmax_p50_um": 20.021253645736742
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 5,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10513878295766613,
+      "hmax_p50_um": 20.004294799905374
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 6,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.1046179504392018,
+      "hmax_p50_um": 20.00591658697348
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 7,
+      "count_tri6": 606,
+      "chord_area_mm2": 0.10448627039810984,
+      "hmax_p50_um": 20.032146994606553
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 8,
+      "count_tri6": 615,
+      "chord_area_mm2": 0.105055279002446,
+      "hmax_p50_um": 20.000609492701937
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 9,
+      "count_tri6": 630,
+      "chord_area_mm2": 0.10422658476442427,
+      "hmax_p50_um": 20.000212741825866
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 10,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10496112861360268,
+      "hmax_p50_um": 20.015576382784374
+    },
+    {
+      "mu_bin": 4,
+      "phi_bin": 11,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10423762545885816,
+      "hmax_p50_um": 20.00953662002535
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 0,
+      "count_tri6": 611,
+      "chord_area_mm2": 0.10406877900376588,
+      "hmax_p50_um": 20.006298538211762
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 1,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10477155018294249,
+      "hmax_p50_um": 20.000720684246904
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 2,
+      "count_tri6": 627,
+      "chord_area_mm2": 0.10466409189091483,
+      "hmax_p50_um": 20.010077618910127
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 3,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10496396317691029,
+      "hmax_p50_um": 20.006087819721166
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 4,
+      "count_tri6": 630,
+      "chord_area_mm2": 0.10531372711095904,
+      "hmax_p50_um": 20.02652893985932
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 5,
+      "count_tri6": 616,
+      "chord_area_mm2": 0.10441395190166014,
+      "hmax_p50_um": 20.010787908357504
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 6,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10459784769799611,
+      "hmax_p50_um": 20.001209046664403
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 7,
+      "count_tri6": 627,
+      "chord_area_mm2": 0.10492278961996464,
+      "hmax_p50_um": 20.01527081836373
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 8,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10437763284808126,
+      "hmax_p50_um": 20.068617046124032
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 9,
+      "count_tri6": 630,
+      "chord_area_mm2": 0.10437438088139128,
+      "hmax_p50_um": 20.008038657581658
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 10,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.1043982104878383,
+      "hmax_p50_um": 20.006486258248287
+    },
+    {
+      "mu_bin": 5,
+      "phi_bin": 11,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.1045303727265375,
+      "hmax_p50_um": 20.04928647605098
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 0,
+      "count_tri6": 623,
+      "chord_area_mm2": 0.10449740092636922,
+      "hmax_p50_um": 20.02283580006001
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 1,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10432447720436733,
+      "hmax_p50_um": 20.039705107112905
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 2,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10558760089033824,
+      "hmax_p50_um": 20.00782412068744
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 3,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10536953198228872,
+      "hmax_p50_um": 20.017468331128367
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 4,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10414416532958704,
+      "hmax_p50_um": 20.012186059710253
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 5,
+      "count_tri6": 614,
+      "chord_area_mm2": 0.10441279692691395,
+      "hmax_p50_um": 20.005183102688548
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 6,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10456364692484796,
+      "hmax_p50_um": 20.015918727864207
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 7,
+      "count_tri6": 630,
+      "chord_area_mm2": 0.1049276535534934,
+      "hmax_p50_um": 20.012347989029756
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 8,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10499573646811736,
+      "hmax_p50_um": 20.011667216433825
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 9,
+      "count_tri6": 632,
+      "chord_area_mm2": 0.10575138584785816,
+      "hmax_p50_um": 20.007289446687274
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 10,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10449631798617984,
+      "hmax_p50_um": 20.005880978051188
+    },
+    {
+      "mu_bin": 6,
+      "phi_bin": 11,
+      "count_tri6": 625,
+      "chord_area_mm2": 0.10488070640385122,
+      "hmax_p50_um": 20.02516051499428
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 0,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10471091391455264,
+      "hmax_p50_um": 20.09666810746832
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 1,
+      "count_tri6": 611,
+      "chord_area_mm2": 0.10417220624832647,
+      "hmax_p50_um": 20.000161052659106
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 2,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10469228065923046,
+      "hmax_p50_um": 20.05528283354802
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 3,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10428414116801073,
+      "hmax_p50_um": 20.06038514059534
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 4,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.1040568828660345,
+      "hmax_p50_um": 20.028036632092082
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 5,
+      "count_tri6": 626,
+      "chord_area_mm2": 0.10472452045290509,
+      "hmax_p50_um": 20.02712646631721
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 6,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10463033380291548,
+      "hmax_p50_um": 20.010456856875575
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 7,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10521781306778145,
+      "hmax_p50_um": 20.009735713962016
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 8,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10409614368597118,
+      "hmax_p50_um": 20.000000002378844
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 9,
+      "count_tri6": 629,
+      "chord_area_mm2": 0.1045316399013183,
+      "hmax_p50_um": 20.026325650672863
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 10,
+      "count_tri6": 625,
+      "chord_area_mm2": 0.10523902962392916,
+      "hmax_p50_um": 20.020645609880773
+    },
+    {
+      "mu_bin": 7,
+      "phi_bin": 11,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10486061783865067,
+      "hmax_p50_um": 20.021825798570553
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 0,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10448812769786885,
+      "hmax_p50_um": 20.065811823641756
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 1,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10533140130897502,
+      "hmax_p50_um": 20.000000000038497
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 2,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10515254044175142,
+      "hmax_p50_um": 20.034524538120063
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 3,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.1044563218945751,
+      "hmax_p50_um": 20.03786527846804
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 4,
+      "count_tri6": 627,
+      "chord_area_mm2": 0.10506114764270884,
+      "hmax_p50_um": 20.04430710691985
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 5,
+      "count_tri6": 613,
+      "chord_area_mm2": 0.10451680119416984,
+      "hmax_p50_um": 20.000000000248757
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 6,
+      "count_tri6": 622,
+      "chord_area_mm2": 0.10468371355669855,
+      "hmax_p50_um": 20.017074908941737
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 7,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10436738862572428,
+      "hmax_p50_um": 20.02804320868462
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 8,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10448793662647039,
+      "hmax_p50_um": 20.014765388770062
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 9,
+      "count_tri6": 631,
+      "chord_area_mm2": 0.10478042975563572,
+      "hmax_p50_um": 20.00601878335485
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 10,
+      "count_tri6": 624,
+      "chord_area_mm2": 0.10477115414315216,
+      "hmax_p50_um": 20.001538957876924
+    },
+    {
+      "mu_bin": 8,
+      "phi_bin": 11,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10410107512456053,
+      "hmax_p50_um": 20.05082133542802
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "count_tri6": 623,
+      "chord_area_mm2": 0.10510634350967533,
+      "hmax_p50_um": 20.04734749815192
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 1,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.1045704209192755,
+      "hmax_p50_um": 20.000000002953055
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 2,
+      "count_tri6": 612,
+      "chord_area_mm2": 0.10407565139181202,
+      "hmax_p50_um": 20.041269785465065
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "count_tri6": 620,
+      "chord_area_mm2": 0.10562146289455691,
+      "hmax_p50_um": 20.02792816228291
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 4,
+      "count_tri6": 618,
+      "chord_area_mm2": 0.10370991181003898,
+      "hmax_p50_um": 20.021679151644378
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "count_tri6": 635,
+      "chord_area_mm2": 0.10551780834642564,
+      "hmax_p50_um": 20.081334224543777
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "count_tri6": 628,
+      "chord_area_mm2": 0.10422399583825522,
+      "hmax_p50_um": 20.03262480895749
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 7,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10520364560522552,
+      "hmax_p50_um": 20.014274625973833
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 8,
+      "count_tri6": 617,
+      "chord_area_mm2": 0.10484803728380823,
+      "hmax_p50_um": 20.02605357995115
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 9,
+      "count_tri6": 621,
+      "chord_area_mm2": 0.10526207064376121,
+      "hmax_p50_um": 20.048476543046085
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 10,
+      "count_tri6": 619,
+      "chord_area_mm2": 0.10399210208587514,
+      "hmax_p50_um": 20.076114546977077
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 11,
+      "count_tri6": 630,
+      "chord_area_mm2": 0.10540365893913038,
+      "hmax_p50_um": 20.122646113404773
+    }
+  ]
+}

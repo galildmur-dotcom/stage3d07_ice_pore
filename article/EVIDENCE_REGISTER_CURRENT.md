@@ -426,3 +426,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CV — angle-neutral U1_geo candidate (21.11.2026)
 
 **Decision approved; source only:** D-018A allows geometry-only local radial refinement before first physical baseline. `gmsh/P10CV_U1_GEO_ANGULAR_NEUTRAL_CANDIDATE.geo` is a proposed Gmsh field with no polar/azimuthal input, wall20um/band200um/far2mm, source SHA256 85ee63351ff8e7c1b7720f8ba360aac1d4e6c381f776e3fa66f130e73f17aca7. No Gmsh syntax/runtime, physical mesh or FEM evidence; no demonstrated θ/φ neutrality of an actual mesh. P10CV design report in `research/`.
+
+## N-P10CW — first pore Tri6 surface mesh on U1_geo (21.11.2026)
+
+**2D surface evidence only:** original Gmsh4.13.1 MSH2 SHA256 3e71273ce32c700d63d453c697bacbaa938e12f3a915b79defb14c8c1269f2a4 (kept outside Git); 74592 physical pore Tri6, all angular120 bins nonempty, hmax p50=20.015µm, polar/mid median hmax ratio1.00203, but one south pole sliver with q=0.074748. Read-only QA script and 120-bin JSON in P10CW derived folder. Exact Gmsh4.15.2 cross-check and all 3D Tet10/QP/FEM properties unverified. **STOP_SURFACE_POLE_SLIVER**; no mechanical shape derivative conclusion.
