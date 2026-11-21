@@ -1,0 +1,97 @@
+{
+  "protocol": "P10BF_STAGE3D07_SOURCE_AND_P10BB_EVIDENCE_EXPORT_V1",
+  "created_local": "2026-11-18T22:29:06.129354+05:00",
+  "root": "G:\\ildar\\Stage3D07",
+  "read_only_on_project": true,
+  "git_head": {
+    "exit_code": 0,
+    "stdout": "c0498f6dc98628b62eff996a76844297c7a35094",
+    "stderr": ""
+  },
+  "git_source_status": {
+    "exit_code": 0,
+    "stdout": "M CMakeLists.txt\n M src/stage3d10p_partial_audit.cpp\n M src/stage3d10w_analytic_adjoint.cpp\n M tests/stage3d10v_analytic_shape.cpp\n?? src/stage3d10ba_polar_export.hpp",
+    "stderr": ""
+  },
+  "source_files": {
+    "CMakeLists.txt": {
+      "sha256": "453f41a086b1284a7c4da4bba2e343b106edae602adc2ee180fa9fd91abbbddf",
+      "bytes": 70711
+    },
+    "src/stage3d10ba_polar_export.hpp": {
+      "sha256": "92b81c258b11fad8ccd4915d215f567cbdf61b642c61e9dbe47732b294ead373",
+      "bytes": 8807
+    },
+    "src/stage3d10p_partial_audit.cpp": {
+      "sha256": "73cdbf9ee75de9f32ae8490baeedd760b00797670a4c6c869277405e45963f7a",
+      "bytes": 49173
+    },
+    "src/stage3d10w_analytic_adjoint.cpp": {
+      "sha256": "70873515734edaa42ce96366e636fa6c385a114cd08564817b283fadeccdcd46",
+      "bytes": 4768
+    },
+    "tests/stage3d10v_analytic_shape.cpp": {
+      "sha256": "f5c70aba380da9a45c234b33c8ac2f90879d1d59784033a759b7193ab111ca12",
+      "bytes": 16315
+    }
+  },
+  "current_executables": {
+    "stage3d10az_targeted_qp_probe.exe": {
+      "sha256_now": "96122bbfeb3d82d034eae3576ca2fd17885e71e1d4608903640bc7ae7f7a114a",
+      "bytes": 823220
+    },
+    "stage3d10ba_polar_radial_audit.exe": {
+      "sha256_now": "3f3a4b5dadfdeec2b29076cab6de5511d3ddceae8fdf75b1a6e5980d281a2395",
+      "bytes": 833636
+    },
+    "stage3d10bd_temporal_polar_audit.exe": {
+      "sha256_now": "c53696b37a823454dfb3896d9758562f0d2196edc3ebd70b549607151dfb762e",
+      "bytes": 793038
+    },
+    "stage3d10be_temporal_polar_audit.exe": {
+      "sha256_now": "adfe6f1854e6108fdefa726950698cc6c91d6aab599e2adcb5c1e0402c08c419",
+      "bytes": 793635
+    }
+  },
+  "csv_candidates": [
+    {
+      "path": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BA_W4B20_R_POLAR_20261117_232909\\P10BA_QP_POLAR_RADIAL.csv",
+      "rows": 400,
+      "step6_two_shells_per_m": -0.7341835612385406,
+      "classification": "H4W4B20",
+      "sha256": "3803ed656045384727109952c9331c4e073e4cec9f718a3a7770ecf3a28bd1be"
+    },
+    {
+      "path": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BA_W4B2_R_POLAR_20261117_232909\\P10BA_QP_POLAR_RADIAL.csv",
+      "rows": 400,
+      "step6_two_shells_per_m": -0.7353384508918306,
+      "classification": "H4W4B2",
+      "sha256": "219b237e42305f1e4db3089f6501bdd59034dc664f9eee83c5bdc0888e15d447"
+    },
+    {
+      "path": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BB_W5B2_R_POLAR_20261118_100120\\P10BA_QP_POLAR_RADIAL.csv",
+      "rows": 400,
+      "step6_two_shells_per_m": -0.7400803668164199,
+      "classification": "H4W5B2",
+      "sha256": "8ad499250082e919942e8ea105ed0b21463cfd5083085af3f004ee293294c11c"
+    }
+  ],
+  "selected_csv": {
+    "H4W4B2": {
+      "source": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BA_W4B2_R_POLAR_20261117_232909\\P10BA_QP_POLAR_RADIAL.csv",
+      "sha256": "219b237e42305f1e4db3089f6501bdd59034dc664f9eee83c5bdc0888e15d447",
+      "bytes": 108008
+    },
+    "H4W4B20": {
+      "source": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BA_W4B20_R_POLAR_20261117_232909\\P10BA_QP_POLAR_RADIAL.csv",
+      "sha256": "3803ed656045384727109952c9331c4e073e4cec9f718a3a7770ecf3a28bd1be",
+      "bytes": 110677
+    },
+    "H4W5B2": {
+      "source": "G:\\ildar\\Stage3D07\\LOCAL_RUNS\\P10BB_W5B2_R_POLAR_20261118_100120\\P10BA_QP_POLAR_RADIAL.csv",
+      "sha256": "8ad499250082e919942e8ea105ed0b21463cfd5083085af3f004ee293294c11c",
+      "bytes": 110364
+    }
+  },
+  "warnings": []
+}

@@ -1,0 +1,1 @@
+P10BY_READONLY_SHA256_GATE_OK original=35 proposal=5 total=40 negative_memory_control=1 filesystem_writes=0

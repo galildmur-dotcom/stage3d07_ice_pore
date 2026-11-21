@@ -14,6 +14,13 @@
 #include "stage3d10v_analytic_shape.hpp"
 #endif
 
+#ifdef STAGE3D10DD_FULL4D
+#ifndef STAGE3D10W_ANALYTIC_SHAPE
+#error "P10DD requires exact analytic Tet10 geometry, not finite differences"
+#endif
+#include "stage3d10dd_4d_partition.hpp"
+#endif
+
 #ifdef STAGE3D10S_SPATIAL_AUDIT
 #include "stage3d10s_run_manifest.hpp"
 #endif
@@ -316,6 +323,10 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
                                        const p10k::Forward& nominal,
                                        const std::vector<DeltaPair>& pairs,
                                        std::vector<StepComponents>& step_components
+#ifdef STAGE3D10DD_FULL4D
+                                       ,std::vector<ice3d::p10dd::Snapshot>& mech4d
+                                       ,std::vector<ice3d::p10dd::Snapshot>& heat4d
+#endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
                                        ,std::vector<spatial::Row>& spatial_rows
 #endif
@@ -346,6 +357,15 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
  std::vector<GradientSet> result(pairs.size());
  step_components.clear();
  step_components.reserve(pairs.size()*3*std::size_t(c.steps));
+#ifdef STAGE3D10DD_FULL4D
+ p10k::require(pairs.size()==1&&c.mode=="R"&&c.steps==6&&c.dt==150,
+#ifdef STAGE3D10DK_M1_FULL4D
+    "P10DK supports one accepted M1 R direction, 6x150s only");
+#else
+    "P10DD supports one exact H0 R direction, 6x150s only");
+#endif
+ mech4d.resize(std::size_t(c.steps));heat4d.resize(std::size_t(c.steps));
+#endif
  for(int n=c.steps;n>=1;--n){
   const auto begin=std::chrono::steady_clock::now();
   const auto& frame=nominal.frames.at(std::size_t(n-1));
@@ -427,6 +447,28 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
   analytic=ice3d::p10v::directional(base.mesh,quad,state,
       pairs.front().velocity,mask,
       std::vector<F::Kind>(kinds.begin(),kinds.end()),&shell_audit);
+#endif
+#ifdef STAGE3D10DD_FULL4D
+  // All per-step mechanical adjoints and future EDV multipliers are now known.
+  // Recompute the identical per-QP analytic derivative for localization only.
+  auto local4d=ice3d::p10dd::mechanical_step(base.mesh,quad,state,
+       pairs.front().velocity,mask,adjoints[1].residual,
+       futures[1],weights[1]);
+  const auto check_mech=local4d.sum();
+  ice3d::p10dd::expect_close(check_mech.explicit_objective,
+        weights[1]*analytic.objective[1],"mechanical step explicit");
+  double ref_eq=0.,ref_history=0.;
+  for(size_t i=0;i<adjoints[1].residual.size();++i)
+   ref_eq+=adjoints[1].residual[i]*analytic.operator_change.residual[i];
+  for(size_t q=0;q<nq;++q)for(int a=0;a<6;++a){
+   ref_history+=futures[1][q].e_d[a]*analytic.operator_change.next[q].e_d[a];
+   ref_history+=futures[1][q].e_v[a]*analytic.operator_change.next[q].e_v[a];
+  }
+  ice3d::p10dd::expect_close(check_mech.equilibrium,ref_eq,
+                              "mechanical step equilibrium");
+  ice3d::p10dd::expect_close(check_mech.history,ref_history,
+                              "mechanical step history");
+  mech4d[std::size_t(n-1)]=std::move(local4d);
 #endif
 
   // The same adjoints and future history multipliers are reused for EVERY
@@ -603,16 +645,34 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
     difference[std::size_t(i)]=base.temperatures[std::size_t(n)][std::size_t(i)]-
                                base.temperatures[std::size_t(n-1)][std::size_t(i)];
    const double ambient=H::ambient(n*double(c.dt),0.);
+#ifdef STAGE3D10DD_FULL4D
+   double thermal_csr_step=0.;
+#endif
    for(size_t k=0;k<pairs.size();++k){
     const auto& D=pairs[k].thermal.shape;
     std::vector<double> mass,conduct;
     D.mul(D.mass,difference,mass);
     D.mul(D.conduct,base.temperatures[std::size_t(n)],conduct);
-    for(int i=0;i<heat.n;++i)
-     result[k][obs].thermal+=psi[std::size_t(i)]*(mass[std::size_t(i)]+
+    for(int i=0;i<heat.n;++i){
+     const double term=psi[std::size_t(i)]*(mass[std::size_t(i)]+
               double(c.dt)*conduct[std::size_t(i)]-
               double(c.dt)*D.robinload[std::size_t(i)]*ambient);
+     result[k][obs].thermal+=term;
+#ifdef STAGE3D10DD_FULL4D
+     if(obs==1)thermal_csr_step+=term;
+#endif
+    }
    }
+#ifdef STAGE3D10DD_FULL4D
+   if(obs==1){
+    auto t=ice3d::p10dd::thermal_step(base.mesh,pairs.front().velocity,
+       psi,base.temperatures[std::size_t(n)],
+       base.temperatures[std::size_t(n-1)],double(c.dt),ambient);
+    ice3d::p10dd::expect_close(t.sum().thermal(),thermal_csr_step,
+                               "thermal step QP versus CSR");
+    heat4d[std::size_t(n-1)]=std::move(t);
+   }
+#endif
    next=std::move(psi);
   }
   for(auto& row:result){row[obs].thermal_eq=worst;row[obs].thermal_cg=iterations;}
@@ -714,11 +774,23 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
  p10i::configure_production();
  identical_field(restored,nominal.final_state);
  std::vector<StepComponents> step_components;
+#ifdef STAGE3D10DD_FULL4D
+ std::vector<ice3d::p10dd::Snapshot> mech4d,heat4d;
+#endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
  std::vector<spatial::Row> spatial_rows;
+#ifdef STAGE3D10DD_FULL4D
+ auto grads=reverse_scan(base,c,nominal,pairs,step_components,
+                          mech4d,heat4d,spatial_rows);
+#else
  auto grads=reverse_scan(base,c,nominal,pairs,step_components,spatial_rows);
+#endif
+#else
+#ifdef STAGE3D10DD_FULL4D
+ auto grads=reverse_scan(base,c,nominal,pairs,step_components,mech4d,heat4d);
 #else
  auto grads=reverse_scan(base,c,nominal,pairs,step_components);
+#endif
 #endif
  const double wall=std::chrono::duration<double>(
       std::chrono::steady_clock::now()-start).count();
@@ -801,6 +873,19 @@ int run(const p10k::Config& c,const std::vector<double>& deltas,
            <<','<<sum<<'\n';
  }
  steps_csv.close();p10k::require(bool(steps_csv),"P10P step CSV write failed");
+#ifdef STAGE3D10DD_FULL4D
+ // This is a signed physical QP localization of the SAME production gradient.
+ // Component-wise mechanical closure and all-step thermal/total closure are
+ // mandatory; failure throws instead of leaving plausible-looking 4D CSV.
+ const auto& g4d=grads.at(0).at(1);
+ ice3d::p10dd::Parts global4d;
+ global4d.explicit_objective=g4d.objective_shape;
+ global4d.equilibrium=g4d.equilibrium_shape;
+ global4d.history=g4d.history_shape;
+ global4d.diffusion=g4d.thermal; // Reference for thermal SUM, not diffusion only.
+ ice3d::p10dd::write_csv(c.out,c.mesh.stem().string(),c.steps,c.dt,
+                         mech4d,heat4d,global4d);
+#endif
 #ifdef STAGE3D10S_SPATIAL_AUDIT
  p10k::require(spatial_rows.size()==deltas.size()*3*
               std::size_t(c.steps)*spatial::bins,

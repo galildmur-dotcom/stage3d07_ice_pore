@@ -1,0 +1,247 @@
+{
+  "status": "P10CR_OFFLINE_SUPPORT_BINNING_AUDIT_OK_NO_FEM",
+  "sources_sha256": {
+    "P10CI_EVIDENCE_READONLY_20261120/P10CI_200CELL_MESH_GEOMETRY.csv": "db22675c116b1d151e86c73726cc4e2aeba21bcb4c41c099ee4e5d2e4d3e9f61",
+    "stage3d07_readonly/experiments/P10BB_W5B2_SPHERICAL_20261118/input/H4W4B2_P10BA_QP_POLAR_RADIAL.csv": "219b237e42305f1e4db3089f6501bdd59034dc664f9eee83c5bdc0888e15d447",
+    "stage3d07_readonly/experiments/P10BB_W5B2_SPHERICAL_20261118/input/H4W4B20_P10BA_QP_POLAR_RADIAL.csv": "3803ed656045384727109952c9331c4e073e4cec9f718a3a7770ecf3a28bd1be",
+    "stage3d07_readonly/experiments/P10BB_W5B2_SPHERICAL_20261118/input/H4W5B2_P10BA_QP_POLAR_RADIAL.csv": "8ad499250082e919942e8ea105ed0b21463cfd5083085af3f004ee293294c11c",
+    "P10CM_200CELL_MULTISCALE_M1_PROPOSAL.csv": "428a1d3b1d7b84e10a6c44762f0222c831a5f917283c872e06eaa11eff0781eb",
+    "P10CQ_INDEPENDENT_P10CP_B6_AUDIT.json": "33ed65373f828475ff0a964f17273845faefb20a2346039ead352b151ba6961a"
+  },
+  "definition": "20–100um only t900 mechanical P10BA; P10CI straight-corner centroid volumes vs P10BA per-QP shell volumes. Normalize before TV, not error estimator.",
+  "per_mesh": {
+    "H4W4B2": {
+      "original_tet10_centroids_20_100um": 29288,
+      "p10ba_QP_count_20_100um": 699571,
+      "qp_corner_total_volume_ratio": 0.979698968340392,
+      "normalized_QP_vs_centroid_TV_200cells": 0.11385700242894392,
+      "normalized_QP_vs_centroid_TV_20cells": 0.0848352947419619,
+      "normalized_QP_vs_centroid_TV_10cells": 0.0022787948496854407,
+      "cell_level_QP_over_corner_volume_ratio_p05_p50_p95": [
+        0.6793397560234635,
+        0.9010408512716419,
+        1.8448846163566297
+      ],
+      "polar_share_of_QP_vs_centroid_L1": 0.19116044864431642,
+      "polar_volume_share_QP": 0.20034951511156734,
+      "polar_volume_share_corner_centroid": 0.19863652378400898,
+      "polar_cross_corner_fraction": 0.089506696050178,
+      "middle_cross_corner_fraction": 0.2717089229979905,
+      "centroid_radial_cross_fraction_20_100um": 1.0,
+      "centroid_radial_cross_fraction_100um_5mm": 0.8567392828395607,
+      "azimuth_or_physical_phi_derivative_available": false,
+      "TV_vs_radial_groups": {
+        "1": 0.0022787948496854407,
+        "2": 0.0848352947419619,
+        "4": 0.09698949134920258,
+        "5": 0.08208084323816907,
+        "10": 0.1051202321666291,
+        "20": 0.11385700242894392
+      },
+      "per_radial_normalized_share_L1_gap": [
+        0.004003636421342138,
+        0.013390441604474067,
+        0.016080358260606643,
+        0.008957570341658106,
+        0.007043180291671464,
+        0.007997333679343903,
+        0.008951594109414682,
+        0.011837339069998289,
+        0.010332177038126854,
+        0.004924844674624513,
+        0.018367368470638596,
+        0.039795107327873974,
+        0.027911761440025468,
+        0.011096005268727189,
+        0.004711264589235772,
+        0.004442150156646104,
+        0.006715874429067266,
+        0.008269121984363668,
+        0.006092427344706121,
+        0.006794448355343043
+      ],
+      "per_mu_normalized_share_L1_gap": [
+        0.022252116761797395,
+        0.024218990285761362,
+        0.021921130880158974,
+        0.025894690188927972,
+        0.020573801937905593,
+        0.023503604961050473,
+        0.02349589840092582,
+        0.02068634247584182,
+        0.02388963439608795,
+        0.021277794569430488
+      ]
+    },
+    "H4W4B20": {
+      "original_tet10_centroids_20_100um": 29577,
+      "p10ba_QP_count_20_100um": 703267,
+      "qp_corner_total_volume_ratio": 0.9708274522872312,
+      "normalized_QP_vs_centroid_TV_200cells": 0.11204512865858943,
+      "normalized_QP_vs_centroid_TV_20cells": 0.07684589581636297,
+      "normalized_QP_vs_centroid_TV_10cells": 0.0028994387472861954,
+      "cell_level_QP_over_corner_volume_ratio_p05_p50_p95": [
+        0.668026455199833,
+        0.9048278669762148,
+        2.0091706597075367
+      ],
+      "polar_share_of_QP_vs_centroid_L1": 0.18478410888435937,
+      "polar_volume_share_QP": 0.20023282357822145,
+      "polar_volume_share_corner_centroid": 0.1996317697574364,
+      "polar_cross_corner_fraction": 0.08654970760233918,
+      "middle_cross_corner_fraction": 0.2702611054594778,
+      "centroid_radial_cross_fraction_20_100um": 1.0,
+      "centroid_radial_cross_fraction_100um_5mm": 0.8063817067702884,
+      "azimuth_or_physical_phi_derivative_available": false,
+      "TV_vs_radial_groups": {
+        "1": 0.0028994387472861954,
+        "2": 0.07684589581636297,
+        "4": 0.09955118308770405,
+        "5": 0.08347548164902553,
+        "10": 0.1007770524327566,
+        "20": 0.11204512865858943
+      },
+      "per_radial_normalized_share_L1_gap": [
+        0.005087680175352298,
+        0.015248486398290129,
+        0.013922050541865266,
+        0.008891462823238112,
+        0.009070967478607906,
+        0.008796929822439051,
+        0.0062127394570276155,
+        0.009576901763250389,
+        0.009855252948912955,
+        0.0026948554525536377,
+        0.019533124593696632,
+        0.03762959979993521,
+        0.026361939348371638,
+        0.013781477319817236,
+        0.004281662344846573,
+        0.006754996356435203,
+        0.005168163385433321,
+        0.006319151064815161,
+        0.007322871839881772,
+        0.007579944402408783
+      ],
+      "per_mu_normalized_share_L1_gap": [
+        0.02206551281730282,
+        0.02209836206881777,
+        0.02375967296079823,
+        0.020876990006194477,
+        0.02432543744144179,
+        0.023230540849589438,
+        0.022270641655831876,
+        0.023687553932528815,
+        0.022432739893954796,
+        0.01934280569071887
+      ]
+    },
+    "H4W5B2": {
+      "original_tet10_centroids_20_100um": 35331,
+      "p10ba_QP_count_20_100um": 853750,
+      "qp_corner_total_volume_ratio": 0.9696006894976953,
+      "normalized_QP_vs_centroid_TV_200cells": 0.09465174850947888,
+      "normalized_QP_vs_centroid_TV_20cells": 0.05362999912756293,
+      "normalized_QP_vs_centroid_TV_10cells": 0.003929475685752498,
+      "cell_level_QP_over_corner_volume_ratio_p05_p50_p95": [
+        0.6967886637664475,
+        0.9108913971497647,
+        1.8604824077395543
+      ],
+      "polar_share_of_QP_vs_centroid_L1": 0.20039913368116066,
+      "polar_volume_share_QP": 0.20022332974909113,
+      "polar_volume_share_corner_centroid": 0.20165216866532143,
+      "polar_cross_corner_fraction": 0.08919476944253268,
+      "middle_cross_corner_fraction": 0.25596807525119364,
+      "centroid_radial_cross_fraction_20_100um": 1.0,
+      "centroid_radial_cross_fraction_100um_5mm": 0.8577462234083901,
+      "azimuth_or_physical_phi_derivative_available": false,
+      "TV_vs_radial_groups": {
+        "1": 0.003929475685752498,
+        "2": 0.05362999912756293,
+        "4": 0.06837675385263726,
+        "5": 0.08164095819691278,
+        "10": 0.08788733392440642,
+        "20": 0.09465174850947888
+      },
+      "per_radial_normalized_share_L1_gap": [
+        0.009430052989221746,
+        0.014078470075545949,
+        0.0094767317592152,
+        0.007881845627141738,
+        0.007833629114249766,
+        0.009125614117358873,
+        0.009241611346140214,
+        0.00454541627349353,
+        0.004264471907068032,
+        0.014217810713302343,
+        0.03331035637011773,
+        0.024903459102911817,
+        0.009205481989753038,
+        0.0046974676096986235,
+        0.002464689066253185,
+        0.007847950773896792,
+        0.004166452298158913,
+        0.0034946199972570903,
+        0.0032958317113208875,
+        0.005821534176852307
+      ],
+      "per_mu_normalized_share_L1_gap": [
+        0.01904481869645806,
+        0.016041950746698244,
+        0.017546651423433368,
+        0.020981160235743878,
+        0.020798328615250623,
+        0.02123569280282117,
+        0.01859854376274036,
+        0.018644447903499086,
+        0.01752046472335771,
+        0.01889143810895525
+      ]
+    }
+  },
+  "signed_mechanical_crosscheck": {
+    "bulk": {
+      "comparison": "H4W4B20-H4W4B2",
+      "sum_abs_signed_cell_delta_per_m": 0.03224464137858,
+      "polar_fraction_L1_delta": 0.8700575475141478,
+      "volume_only_diagnostic_using_QP_cell_volumes": {
+        "pearson": 0.8425255373609186,
+        "uncentered_r2": 0.7082878104397854,
+        "prediction_L1_over_actual_L1": 0.9562120515552903
+      },
+      "volume_only_diagnostic_using_corner_centroid_cell_volumes": {
+        "pearson": -0.1905376935230312,
+        "uncentered_r2": -9.780769350362567,
+        "prediction_L1_over_actual_L1": 2.8470036186832344
+      },
+      "spearman_abs_delta_vs_abs_QP_corner_share_gap": -0.035912397809945255,
+      "within_mu_rank_corr_abs_delta_vs_abs_QP_corner_share_gap": 0.033383458646616605
+    },
+    "wall": {
+      "comparison": "H4W5B2-H4W4B2",
+      "sum_abs_signed_cell_delta_per_m": 0.041149149345771685,
+      "polar_fraction_L1_delta": 0.8779656291598037,
+      "volume_only_diagnostic_using_QP_cell_volumes": {
+        "pearson": 0.8681179213337884,
+        "uncentered_r2": 0.7531983727944972,
+        "prediction_L1_over_actual_L1": 0.8408676626113927
+      },
+      "volume_only_diagnostic_using_corner_centroid_cell_volumes": {
+        "pearson": -0.22359643879274987,
+        "uncentered_r2": -45.450542326491934,
+        "prediction_L1_over_actual_L1": 5.062549712930293
+      },
+      "spearman_abs_delta_vs_abs_QP_corner_share_gap": 0.029343733593339836,
+      "within_mu_rank_corr_abs_delta_vs_abs_QP_corner_share_gap": 0.13729323308270683
+    }
+  },
+  "limitations": {
+    "targeted_true_shape_gradient_error": "NOT_IDENTIFIABLE_FROM_AGGREGATED_DATA",
+    "centroid_assignment_causal_role": "NOT_IDENTIFIABLE_WITHOUT_ELEMENT_LEVEL_QP_AND_GRADIENT",
+    "QP_vs_corner_gap_may_include_curved_geometry": "YES",
+    "t900_20_100um_not_all_B6": "YES",
+    "thermal_phi_time_physical_distribution": "NOT_AVAILABLE",
+    "new_Gmsh_or_FEM": 0
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "protocol": "P10DI_READ_ONLY_P10DG_R1_GEOMETRY_STOP_REANALYSIS",
+  "original_status_preserved": "P10DG_STOP_NO_FEM/GEOMETRY_QA_STOP",
+  "original_only_failure": "global unpaired median Tet10 volume ratio outside 0.65-0.95",
+  "h0_mesh_sha256_windows_report": "e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8",
+  "m1_mesh_sha256_windows_report": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "native_gmsh_exit": 0,
+  "native_gmsh_wall_s": 0.5044569000019692,
+  "windows_m1_mesh_size_bytes": 1650651,
+  "total_launcher_wall_s": 15.238806,
+  "H0_Tet10": 7388,
+  "M1_Tet10": 9736,
+  "H0_pore_Tri6": 136,
+  "M1_pore_Tri6": 178,
+  "H0_reported_curved27QP_samples": 199476,
+  "M1_reported_curved27QP_samples": 262872,
+  "corner_and_curved27QP_quality_reported": "PASS_BOTH_MESHES",
+  "native_run_FEM": 0,
+  "unpaired_global_median_volume_ratio": 0.3569307045734595,
+  "curved_volume_ratio_M1_over_H0": 0.9999999899607365,
+  "typical_mean_volume_ratio_from_curved_volume_and_counts": 0.7588331887664257,
+  "mean_volume_reduction_percent": 24.11668112335743,
+  "Tet10_count_ratio": 1.3178126691932863,
+  "preexisting_band_gate_issues": [],
+  "polar_and_all_mu_bin_descriptive_checks": [
+    {
+      "mu_bin": 0,
+      "H0_tet10": 715,
+      "M1_tet10": 923,
+      "Tet10_count_ratio": 1.290909090909091,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7796347782831334
+    },
+    {
+      "mu_bin": 1,
+      "H0_tet10": 897,
+      "M1_tet10": 1155,
+      "Tet10_count_ratio": 1.2876254180602007,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7691403462839123
+    },
+    {
+      "mu_bin": 2,
+      "H0_tet10": 856,
+      "M1_tet10": 1126,
+      "Tet10_count_ratio": 1.3154205607476634,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7578902625893092
+    },
+    {
+      "mu_bin": 3,
+      "H0_tet10": 768,
+      "M1_tet10": 977,
+      "Tet10_count_ratio": 1.2721354166666667,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.8301859720313969
+    },
+    {
+      "mu_bin": 4,
+      "H0_tet10": 727,
+      "M1_tet10": 965,
+      "Tet10_count_ratio": 1.327372764786795,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7541514939374457
+    },
+    {
+      "mu_bin": 5,
+      "H0_tet10": 676,
+      "M1_tet10": 951,
+      "Tet10_count_ratio": 1.4068047337278107,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.6627349014355343
+    },
+    {
+      "mu_bin": 6,
+      "H0_tet10": 721,
+      "M1_tet10": 999,
+      "Tet10_count_ratio": 1.3855755894590847,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7475288582746722
+    },
+    {
+      "mu_bin": 7,
+      "H0_tet10": 790,
+      "M1_tet10": 1020,
+      "Tet10_count_ratio": 1.2911392405063291,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.6955733565281554
+    },
+    {
+      "mu_bin": 8,
+      "H0_tet10": 654,
+      "M1_tet10": 834,
+      "Tet10_count_ratio": 1.275229357798165,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.7010134629025861
+    },
+    {
+      "mu_bin": 9,
+      "H0_tet10": 584,
+      "M1_tet10": 786,
+      "Tet10_count_ratio": 1.345890410958904,
+      "H0_weighted_mean_matched_radial_bin_median_ratios": 0.6972834151282357
+    }
+  ],
+  "reanalysis_under_mean_plus_preexisting_band_ranges": "WOULD_PASS_SCREEN__NOT_ORIGINAL_QA_PASS_OR_FEM_AUTHORIZATION",
+  "limitations": "No raw .msh here. Reported geometry/27QP counts, detJ and mesh SHA cannot be independently recomputed. Mean volume is a ratio of total reported curved volumes / Tet10 count; not per-element matching. Mu-cell ratios are ratios of medians from different meshes, not elementwise ratios. A posteriori mean-vs-median criterion change needs an explicit scientific decision.",
+  "radial_bands": [
+    {
+      "radial_band": "0_20um",
+      "H0_tet10": 1,
+      "M1_tet10": 0,
+      "ratio_weighted_mu_bin_medians": null,
+      "gated": false
+    },
+    {
+      "radial_band": "20_100um",
+      "H0_tet10": 85,
+      "M1_tet10": 115,
+      "ratio_weighted_mu_bin_medians": 0.6887204306400392,
+      "gated": false
+    },
+    {
+      "radial_band": "100_500um",
+      "H0_tet10": 373,
+      "M1_tet10": 500,
+      "ratio_weighted_mu_bin_medians": 0.7233513776728349,
+      "gated": true
+    },
+    {
+      "radial_band": "0p5_1p5mm",
+      "H0_tet10": 1504,
+      "M1_tet10": 2261,
+      "ratio_weighted_mu_bin_medians": 0.6758006389210093,
+      "gated": true
+    },
+    {
+      "radial_band": "1p5_5mm",
+      "H0_tet10": 2316,
+      "M1_tet10": 3075,
+      "ratio_weighted_mu_bin_medians": 0.7240751781271195,
+      "gated": true
+    },
+    {
+      "radial_band": "5_18mm",
+      "H0_tet10": 1246,
+      "M1_tet10": 1497,
+      "ratio_weighted_mu_bin_medians": 0.7880375298354299,
+      "gated": true
+    },
+    {
+      "radial_band": "18mm_plus",
+      "H0_tet10": 1863,
+      "M1_tet10": 2288,
+      "ratio_weighted_mu_bin_medians": 0.8288117394351014,
+      "gated": true
+    }
+  ],
+  "matched_radial_mu_bins": 60,
+  "H0_tet10_covered_in_matched_bins": 7387,
+  "matched_bin_ratio_weighted_q10": 0.6281422750655705,
+  "matched_bin_ratio_weighted_q50": 0.7315295656330673,
+  "matched_bin_ratio_weighted_q90": 0.8737247063191264,
+  "matched_bin_ratio_weighted_mean": 0.7422958603921477,
+  "matched_bin_ratio_min": 0.4766160501236293,
+  "matched_bin_ratio_max": 0.9605448150041662,
+  "matched_bins_below_0p55": [
+    {
+      "radial_band": "20_100um",
+      "mu_bin": 0,
+      "H0_count": 12,
+      "M1_count": 12,
+      "local_volume_ratio": 0.4766160501236293
+    }
+  ],
+  "matched_bins_above_1p15": [],
+  "original_zip_sha256": "93e934b5950bd8a94906084d68bd51babe911fb036908ffcbb0d6855bea201c2",
+  "original_zip_size_bytes": 12095,
+  "zip_crc8_and_source_sha12": "PASS"
+}

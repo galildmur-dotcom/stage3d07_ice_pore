@@ -1,0 +1,5 @@
+P10BV_TET10_TRI6_UNIT_OK dt_s=150 mass=-1.617256647391e-04 diffusion=-2.420052706261e+00 robin=+2.949814390856e-02 total=-2.390716288017e+00 independent_fd_rel=9.066e-11
+P10BV_TET10_TRI6_UNIT_OK dt_s=75 mass=-1.617256647391e-04 diffusion=-1.210026353130e+00 robin=+1.474907195428e-02 total=-1.195439006841e+00 independent_fd_rel=8.947e-11
+P10BV_TET10_TRI6_UNIT_OK dt_s=50 mass=-1.617256647391e-04 diffusion=-8.066842354203e-01 robin=+9.832714636186e-03 total=-7.970132464488e-01 independent_fd_rel=1.053e-10
+P10BV_TET10_TRI6_UNIT_OK dt_s=25 mass=-1.617256647391e-04 diffusion=-4.033421177101e-01 robin=+4.916357318093e-03 total=-3.985874860568e-01 independent_fd_rel=1.051e-10
+P10BV_LOCAL_HEAT_SHAPE_IDENTITY_OK checks=4 FEM=0 max_independent_fd_rel=1.053e-10 production_Cpp_executed=NO

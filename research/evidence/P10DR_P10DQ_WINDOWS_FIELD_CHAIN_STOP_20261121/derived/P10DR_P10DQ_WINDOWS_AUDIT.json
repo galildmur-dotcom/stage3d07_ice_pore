@@ -1,0 +1,51 @@
+{
+  "audit": "P10DR_ORIGINAL_P10DQ_INDEPENDENT_AUDIT_PASS",
+  "evidence_zip_sha256": "35e859aefb089b1bdb08a02570009a956424585b691fc72b65e46aca519020f2",
+  "zip_crc": "12/12",
+  "p10dq_source_zip_sha256": "c79787de1788d98c5499e0263293fd3ce3100bc779c6891b5f6b7f74221c2905",
+  "accepted_original_m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "native_gmsh_version_per_manifest": "4.15.2",
+  "executed": [
+    {
+      "name": "A_BASE_M1_FIELD2",
+      "status": "PASS",
+      "native_exit": 0,
+      "wall_s": 0.21737109997775406,
+      "peak_private_polled": 4825088,
+      "mesh_bytes": 280,
+      "mesh_sha256": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+      "log_bytes": 4204
+    },
+    {
+      "name": "B_F2_MATHEVAL_PROXY",
+      "status": "PASS",
+      "native_exit": 0,
+      "wall_s": 0.43332430004375055,
+      "peak_private_polled": 8249344,
+      "mesh_bytes": 280,
+      "mesh_sha256": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+      "log_bytes": 4221
+    },
+    {
+      "name": "C_F5_LINEAR_DIAGNOSTIC",
+      "status": "TIMEOUT_25S",
+      "native_exit": 1,
+      "wall_s": 25.100681199983228,
+      "peak_private_polled": 245936128,
+      "mesh_bytes": 0,
+      "mesh_sha256": null,
+      "log_bytes": 1166
+    }
+  ],
+  "not_executed": [
+    "D_F5_POWER_EXACT",
+    "E_F5_ORIGINAL_LOGEXP"
+  ],
+  "geometry_parse_pass": 5,
+  "observed_last_1d_curve": "14/17",
+  "total_physical_FEM": 0,
+  "M2_3D_mesh": 0,
+  "scientific_inference": "F2 MathEval proxy is fast; a variant using F5 and its F3/F4 dependency chain stalls at 1D. The precise cause remains UNKNOWN.",
+  "scope_warning": "MSH2 files of 280 bytes are not an independent 1D topology audit: native Gmsh log is the evidence for 244 nodes/135 elements.",
+  "windows_text_translation": "Generated Windows GEO was CRLF, released P10DQ source LF; equality checked after CRLF-to-LF only."
+}

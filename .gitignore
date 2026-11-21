@@ -36,3 +36,7 @@ CMakeCache.txt
 
 # Temporary calculation outputs
 /out_p10l_full_h0_step3_1/
+
+# Python interpreter caches (never publish alongside scientific source).
+__pycache__/
+*.pyc

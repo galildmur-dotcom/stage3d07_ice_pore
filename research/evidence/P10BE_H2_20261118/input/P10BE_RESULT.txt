@@ -1,0 +1,21 @@
+P10BE_H2_DT25_COMPARE_OK
+mesh=H2 steps=6,12,18,36 dt=150,75,50,25 horizon=900s
+spherical_cells=200 radial_bins=20 equal_mu_polar_bands=10 azimuth_integrated=1
+observed_cell_L1_150_75=0.079013493220771017
+observed_cell_L1_150_75_relative_to_dt25_L1=0.059819903113925127
+observed_cell_Linf_150_75=0.0092534726440231807
+observed_cell_L1_75_50=0.024085556838385817
+observed_cell_L1_75_50_relative_to_dt25_L1=0.018234805446349017
+observed_cell_Linf_75_50=0.0027594408965094519
+observed_cell_L1_50_25=0.022749654104949588
+observed_cell_L1_50_25_relative_to_dt25_L1=0.017223413988683715
+observed_cell_Linf_50_25=0.0025565038726688971
+observed_cell_L1_150_25=0.12579159950556437
+observed_cell_L1_150_25_relative_to_dt25_L1=0.095234889488348906
+observed_cell_Linf_150_25=0.01456941741320153
+observed_radial_bins_with_shrinking_75_50_to_50_25=14/20
+observed_cells_with_shrinking_75_50_to_50_25=155/200
+CAUTION: inter-dt differences are NOT proven discretization errors.
+CAUTION: temporal step contributions are NOT physical thermal waves.
+CAUTION: polar/radial partition covers mechanical near-wall term only; thermal adjoint stays global.
+CAUTION: temporal convergence cannot establish spatial convergence.

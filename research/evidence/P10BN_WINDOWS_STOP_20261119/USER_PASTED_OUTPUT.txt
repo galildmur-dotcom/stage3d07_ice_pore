@@ -1,0 +1,14 @@
+P10BN ISOLATED CLEAN WINDOWS BUILD (NO FEM)
+DATE_LOCAL=2026-11-19T17:03:06.8815341+05:00
+EXPECTED_SHA=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4
+TARGET_BRANCH=research/p10bi-local-seven-sources-20261119
+OUTPUT_ROOT=G:\ildar\P10BN_ATTEST_20261119_170306_6872
+ORIGINAL_HEAD_BEFORE=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4
+RESULT=P10BN_STOPPED: Не удается преобразовать значение "/" в тип "System.Int32". Ошибка: "Входная строка имела неверный формат."
+Do not delete anything or rerun blindly; send the evidence package for diagnosis.
+ORIGINAL_FINAL_READ_FAILED=YES
+P10BN report: G:\ildar\P10BN_ATTEST_20261119_170306_6872\P10BN_RESULT.txt
+P10BN evidence ZIP: G:\ildar\P10BN_ATTEST_20261119_170306_6872\P10BN_EVIDENCE.zip
+P10BN exit code: 2
+
+NOTE: Transcription of key content of user-pasted console output, not an attached primary file.

@@ -1,0 +1,33 @@
+{
+  "evidence_sha256": "d81af9ea55542642c3e5738b2f64aac0df8c696a55677f4e2806a2558204ca3e",
+  "p10ca_thermal_sha256": "a650c0f485f8c329e0eb42a57e4bf65ca2e178c640c3793af8926fc40b3bbf7c",
+  "mesh_sha256": "e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8",
+  "exe_sha256_from_manifest_unverified": "aa82db368a040cd4a6844783f3ff6541c64106dd0a51c54c1534035ffe657716",
+  "cache_sha256_from_manifest_unverified": "4db1406d5c993fc0b0ff8126c228f2823a81a55414f8bcc38a86aebea66e689f",
+  "run_directory": "G:\\Downloads\\P10DD_R2_M0_H0_FULL4D_WINDOWS_20261121\\P10DD_OUTPUT\\P10DD_M0_H0_20261121_084542",
+  "native_exit_code": 0,
+  "wall_s": 74.07750489999307,
+  "private_peak_gib": 0.8938102722167969,
+  "rows": 7206,
+  "old_p10ca_thermal_cells_compared": 606,
+  "mechanical_per_m": 3.1013122993311333,
+  "thermal_per_m": 0.06637955208275938,
+  "total_per_m": 3.1676918514138928,
+  "max_global_closure_error_per_m": 1.9984014443252818e-14,
+  "old_p10ca_global_error_per_m": 1.9984014443252818e-14,
+  "p10ca_2d_vs_p10dd_phi_marginal_max_abs_error": {
+    "mass_per_m": 1.3010426069826053e-17,
+    "diffusion_per_m": 5.724587470723463e-17,
+    "robin_per_m": 0.0,
+    "total_per_m": 6.938893903907228e-17,
+    "volume_m3": 2.405573570202213e-19
+  },
+  "total_binned_l1_per_m": 18.176978574420392,
+  "both_polar_caps_binned_abs_share": 0.5253657102989843,
+  "both_polar_caps_mechanical_qp_share": 0.17724438027632397,
+  "first_0p1mm_radial_binned_abs_share": 0.42448770362257293,
+  "first_0p1mm_radial_mechanical_qp_share": 0.021486294090517156,
+  "last_two_steps_binned_abs_share": 0.7787606029914735,
+  "thermal_robin_per_m": 0.0,
+  "interpretation_limit": "Absolute values are computed AFTER 4D-bin aggregation, not as a per-quadrature-point L1 norm. One H0 does not establish spatial convergence or the cause of polar concentration."
+}

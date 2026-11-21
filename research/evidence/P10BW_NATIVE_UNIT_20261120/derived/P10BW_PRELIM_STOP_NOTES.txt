@@ -1,0 +1,16 @@
+P10BW_PRELIM_NATIVE_UNIT_GEOMETRY_STOP
+REVISION=PRELIM_1
+SYNTHETIC_MESH=generate(1,1,1)
+STDERR=P10BW_STOP reason=P10L: nonpositive Jacobian
+EXIT_CODE=2
+RESULT=PRELIM_1_STOPPED_NOT_A_PHYSICAL_FEM_RESULT
+
+REVISION=PRELIM_2
+SYNTHETIC_MESH=generate(2,3,4)
+STDERR=P10BW_STOP reason=P10L: nonpositive Jacobian
+EXIT_CODE=2
+RESULT=PRELIM_2_STOPPED_NOT_A_PHYSICAL_FEM_RESULT
+
+DIAGNOSIS=Both artificially coarse radial cubed-sphere geometries have a nonpositive curved-Tet10 Jacobian under P10L's exact preflight; this does not establish a defect in the thermal derivative.
+CORRECTION=Use a geometrically verified explicit synthetic two-Tet10 shared-face mesh and separate remote Tri6 face. Final code/test results recorded in P10BW_NATIVE_UNIT_OUTPUT.txt.
+FEM=0
