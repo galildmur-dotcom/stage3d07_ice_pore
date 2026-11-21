@@ -1,0 +1,68 @@
+{
+  "status": "P10DU_ORIGINAL_P10DT_WINDOWS_NESTED_CONSTANT_STOP_AUDIT_PASS",
+  "original_p10dt_evidence_sha256": "9c4602ac29a08dd8faa5e977990a3f138f73a39c242dcc3167b09f23bf46d414",
+  "p10dt_released_source_zip_sha256": "f540adb8f7e9dc4a58fea8ebe5784c99fe4f2607cb6b82cf5ac65dd398b1eb08",
+  "evidence_zip_crc": "12/12",
+  "source_sha": "8/8",
+  "generated_geo_sha": "3/3",
+  "full_native_log_tail_integrity": "3/3",
+  "native_geo_parse_exits": "3/3",
+  "genuine_gmsh_exe_sha256_only_from_windows_manifest": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "accepted_m1_sha256_only_from_windows_manifest": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "variants": [
+    {
+      "name": "A_DIRECT_CONSTANT_F6",
+      "status": "PASS",
+      "native_exit": 0,
+      "wall_s": 0.2127667999593541,
+      "peak_private_polled": 4833280,
+      "mesh_bytes": 280,
+      "mesh_sha256": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+      "reported_nodes_elements": [
+        244,
+        135
+      ],
+      "log_bytes": 4221
+    },
+    {
+      "name": "B_NESTED_CONSTANT_F3",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.06582839996554,
+      "peak_private_polled": 246009856,
+      "mesh_bytes": 0,
+      "mesh_sha256": null,
+      "reported_nodes_elements": null,
+      "log_bytes": 1152
+    },
+    {
+      "name": "C_DIRECT_SPATIAL_CLAMP_F6",
+      "status": "PASS",
+      "native_exit": 0,
+      "wall_s": 0.2080693999887444,
+      "peak_private_polled": 4812800,
+      "mesh_bytes": 280,
+      "mesh_sha256": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+      "reported_nodes_elements": [
+        244,
+        135
+      ],
+      "log_bytes": 4251
+    }
+  ],
+  "sum_native_wall_s": 15.486664599913638,
+  "max_peak_private_bytes": 246009856,
+  "mesh_2d_runs": 0,
+  "mesh_3d_runs": 0,
+  "physical_FEM_runs": 0,
+  "root_cause_from_evidence_alone": "The B-only nested MathEval F3 reference stalls although the A direct constant and C inline spatial clamp both finish; the logs alone cannot expose the internal cause.",
+  "independent_gmsh4152_source_fact": {
+    "official_readonly_mirror": "https://github.com/gmsh-project/gmsh/blob/gmsh_4_15_2/src/mesh/Field.cpp#L979-L1039",
+    "reentrancy_code": "https://github.com/gmsh-project/gmsh/blob/gmsh_4_15_2/src/mesh/Field.cpp#L1141-L1175",
+    "git_blob_sha": "427911696c813c5543caa37b527a985775fa6d4e",
+    "finding": "MathEvalExpression::evaluate invokes referenced Field::operator() synchronously; MathEvalField::operator() wraps its entire expression evaluation in a named OpenMP critical(MathEvalField), and the source comment explicitly says this design is not reentrant and a MathEval field cannot reference another MathEval field.",
+    "limitation": "Source was independently read for tag gmsh_4_15_2; the exact Windows executable build flags are known only indirectly through the user's exe SHA manifest, not an independent binary/source build attestation."
+  },
+  "limits": "The fast 280-byte exported MSH2 files are not in the evidence; 244 nodes /135 elements come from native logs, not independently audited physical 1D mesh topology. Only one bounded original Windows P10DT sequence is observed.",
+  "next_step": "P10DT one-shot CONSUMED: never rerun. Source-only mathematically flatten all nested MathEval field references in a candidate with the original C1 kappa and 0..20% target-volume envelope. Any new native Gmsh attempt requires explicit separate authorization; no M2 -2/-3/FEM now."
+}
