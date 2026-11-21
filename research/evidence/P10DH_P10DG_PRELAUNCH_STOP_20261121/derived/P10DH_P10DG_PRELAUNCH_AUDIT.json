@@ -1,0 +1,20 @@
+{
+  "protocol": "P10DH_R1_P10DG_REAL_WINDOWS_PRELAUNCH_STOP_AUDIT",
+  "original_evidence_sha256": "55af9103f2cae7a2d99a1fded640068ec69833d79482bd81adec4b27428a33f0",
+  "original_evidence_size_bytes": 2408,
+  "zip_crc": "PASS_3_OF_3",
+  "source_sha12": "PASS_12_OF_12",
+  "h0_sha256_attested": "e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8",
+  "gmsh_version_attested": "4.15.2",
+  "synthetic_tests_attested": "PASS",
+  "stop_reason": "P10DG_STOP: manual one-shot phrase not confirmed",
+  "one_shot_marker_created_by_this_run": false,
+  "one_shot_marker_conclusion_basis": "pinned source control flow and trace before launch",
+  "gmsh_launched_by_this_run": false,
+  "m1_mesh_created_by_this_run": false,
+  "m1_geometry_QA": "NOT_PERFORMED",
+  "physical_FEM_runs": 0,
+  "wall_clock_seconds_until_stop": 12.291501,
+  "next_step": "RERUN_SAME_PACKAGE_WITH_EXACT_MANUAL_PHRASE_AFTER_CONFIRMING_MARKER_ABSENT",
+  "limitations": "Manifest and traceback are Windows tool self-reports; without M1.msh no independent geometry, volumetric ratio or 27QP Tet10 audit is possible."
+}
