@@ -654,3 +654,7 @@ R2 original evidence ZIP SHA256 92c7a902c41d7ded08c2431c057c849f1463848deca14182
 ## 2026-11-21 — P10CU uniform-global-h feasibility [ANALYTIC ONLY, FEM=0]
 
 P10CT R2 source baseline 90725 Tet10 at target 2mm and missing 0–100um corner-centroids, combined with earlier H4W5B20 475544 Tet10 /8.14395 GiB state-buffers proxy. Cubic count at h=.5mm 5.8064 million Tet10 and buffer proxy ~99.44 GiB, h=.1mm 725.8 million/~12430 GiB; **neither Gmsh prediction nor peak RSS**. Suggest D-018 adjustment for angle-neutral local mesh-only refinement before physical baseline; user approval outstanding, no M1/FEM/mesher executed. `research/P10CU_UNIFORM_GLOBAL_H_FEASIBILITY_GATE_20261121.md`.
+
+## 2026-11-21 — D-018A/P10CV angle-neutral CAD size-field candidate [USER APPROVED DECISION, SOURCE-ONLY]
+
+D-018A expressly approved by researcher; first U0 is geometry control; before physical baseline angle-neutral local mesh-only U1_geo allowed. New Gmsh source `gmsh/P10CV_U1_GEO_ANGULAR_NEUTRAL_CANDIDATE.geo`, SHA256 85ee63351ff8e7c1b7720f8ba360aac1d4e6c381f776e3fa66f130e73f17aca7, candidate wall20um/band200um/far2mm, NO synthetic Gmsh validation, NO new mesh/FEM. P10CV protocol under `research/`. GitHub publication attempted with explicit approval but failed credential gate; remote unchanged.

@@ -422,3 +422,7 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 ## N-P10CU — uniform U0 feasibility (21.11.2026)
 
 **Analytic planning inference, not measured physical result:** P10CT R2 actual 90725 Tet10 at global target h2mm and previously published H4W5B20 475544 Tet10 /8.14395 GiB state buffers imply under simplistic h^-3 and linear buffer proxies ~5.8064m Tet10 /99.44 GiB at h=.5mm. True nearwall curved QP coverage, actual mesher scaling, peak RAM, polar physics and shape-derivative convergence are **not proven**. Proposed conditional D-018 revision remains unapproved. No new FEM/Gmsh. `research/P10CU_UNIFORM_GLOBAL_H_FEASIBILITY_GATE_20261121.md`.
+
+## N-P10CV — angle-neutral U1_geo candidate (21.11.2026)
+
+**Decision approved; source only:** D-018A allows geometry-only local radial refinement before first physical baseline. `gmsh/P10CV_U1_GEO_ANGULAR_NEUTRAL_CANDIDATE.geo` is a proposed Gmsh field with no polar/azimuthal input, wall20um/band200um/far2mm, source SHA256 85ee63351ff8e7c1b7720f8ba360aac1d4e6c381f776e3fa66f130e73f17aca7. No Gmsh syntax/runtime, physical mesh or FEM evidence; no demonstrated θ/φ neutrality of an actual mesh. P10CV design report in `research/`.
