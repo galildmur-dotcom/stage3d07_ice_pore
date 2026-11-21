@@ -359,7 +359,11 @@ std::vector<GradientSet> reverse_scan(const p10k::Scenario& base,
  step_components.reserve(pairs.size()*3*std::size_t(c.steps));
 #ifdef STAGE3D10DD_FULL4D
  p10k::require(pairs.size()==1&&c.mode=="R"&&c.steps==6&&c.dt==150,
+#ifdef STAGE3D10DK_M1_FULL4D
+    "P10DK supports one accepted M1 R direction, 6x150s only");
+#else
     "P10DD supports one exact H0 R direction, 6x150s only");
+#endif
  mech4d.resize(std::size_t(c.steps));heat4d.resize(std::size_t(c.steps));
 #endif
  for(int n=c.steps;n>=1;--n){
