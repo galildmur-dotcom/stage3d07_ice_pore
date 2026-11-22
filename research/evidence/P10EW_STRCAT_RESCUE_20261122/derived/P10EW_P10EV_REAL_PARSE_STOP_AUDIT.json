@@ -1,0 +1,19 @@
+{
+  "protocol": "P10EW_INDEPENDENT_ORIGINAL_P10EV_NATIVE_PARSE_STOP",
+  "uploaded_zip_sha256": "eaa181421a55d4cf23a3393466fff045baf8e1d66dd7eda19d2dd62c211fe752",
+  "uploaded_zip_crc_members": 10,
+  "M1_SHA256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "old_P10EU_GEO_SHA256": "4c4a4aeb4f97bfec350e1e057a57e275d436c09d63a02438a8acfe4ad386253a",
+  "original_field_expression_characters": 4198,
+  "native_Gmsh_version_from_pinned_binary": "4.15.2",
+  "native_parse_attempts": 2,
+  "parse_A_original_M1_field2": "PASS",
+  "parse_B_original_P10EU_inline_C1": "STOP_STRING_TOO_LONG",
+  "native_mesh_3d_attempts": 0,
+  "FEM_attempts": 0,
+  "new_M2": "NONE",
+  "one_authorized_3d_attempt_consumed": false,
+  "real_D025": "UNKNOWN",
+  "correction": "StrCat of seven <=600-character GEO quoted literals reconstructs original 4198-character expression",
+  "status": "P10EV_REAL_PREFLIGHT_STOP_PARSER_LEXER_LIMIT_NO_M2_NO_FEM"
+}

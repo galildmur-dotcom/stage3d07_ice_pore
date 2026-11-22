@@ -1,0 +1,28 @@
+{
+  "revision": "P10EW_R1_STRCAT_GEO_LEXER_1023_SOURCE_RESCUE",
+  "failure": "P10EV native -parse_and_exit STOP; Gmsh4.15.2 Gmsh.l parsestring char tmp[1024]",
+  "original_P10EU_GEO_SHA256": "4c4a4aeb4f97bfec350e1e057a57e275d436c09d63a02438a8acfe4ad386253a",
+  "original_MathEval_expression_SHA256": "d031acf416ae908c1c07240cac035148e2a12abb3f49164135b6bc8504b90ca9",
+  "new_P10EW_GEO_SHA256": "d68570270dfb5ca2232d8fc94486e5638223b3604c933312b4036d5bb8d19b72",
+  "reconstructed_MathEval_expression_SHA256": "d031acf416ae908c1c07240cac035148e2a12abb3f49164135b6bc8504b90ca9",
+  "math_expression_identical_byte_for_byte": true,
+  "mathematical_contract": "P10EU/P10ET C1, alpha17, kappa0 unchanged",
+  "original_literal_length": 4198,
+  "strcat_chunk_characters": [
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    598
+  ],
+  "max_quoted_field_literal": 600,
+  "Gmsh_4_15_2_lexer_max_literal_characters": 1023,
+  "MathEval_fields": 1,
+  "nested_MathEval_fields": 0,
+  "native_Gmsh_runs": 0,
+  "M2_3D_runs": 0,
+  "FEM_runs": 0,
+  "status": "P10EW_SOURCE_ONLY_READY_NATIVE_WINDOWS_PARSE_UNVERIFIED"
+}
