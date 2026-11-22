@@ -970,3 +970,14 @@ both [0.75,0.85] in both QP resolutions. No claim of FEM or full
 spatial convergence. Researcher additionally ordered zero manual typed
 confirmation in all future one-click launches; retain SHA and markers.
 
+## 2026-11-22 — P10FI actual M2 neighbour jump vs exact P10EY field
+
+Using exact 4197-char safe-compiled MathEval and P10FB MSH2, all 10094
+centroid field values and 19541 interior corner neighbours were checked.
+Near polar 419 pairs, 95 q>1.25; 92/95 have prescribed centroid h ratio
+<1.05 and all95 <1.10. North 52/214 severe, south 43/205.
+Largest south q2.069 vs field p1.010. This isolates a mismatch between
+smooth design field and discrete mesh response, but does not uniquely
+attribute to remeshing topology vs curvature; D025 polar geometry remains
+PASS, FEM0. Report P10FI_REAL_M2_NEIGHBOUR_JUMP_VS_C1_FIELD_LOCALIZATION_20261122.md.
+
