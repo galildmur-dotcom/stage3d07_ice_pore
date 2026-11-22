@@ -1,0 +1,5 @@
+{
+  "schema": "P10FP_WAIT_FOR_PREVIOUS_PHYSICS",
+  "status": "NO_NEXT_RECIPE_UNTIL_M0_GEOMETRY_AND_PHYSICS_ARE_REVIEWED",
+  "instruction": "Start with M0 bootstrap. After M0 physical evidence is reviewed, receive a SHA-pinned M0-to-M1 uniform recipe and replace this ACTIVE.json."
+}

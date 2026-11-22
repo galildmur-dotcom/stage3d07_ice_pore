@@ -1,0 +1,10 @@
+{
+  "schema": "P10FP_ADAPT_V2",
+  "kind": "uniform",
+  "parent_mesh": "M0",
+  "new_mesh": "M1",
+  "parent_mesh_sha256": "FILL_FROM_REAL_M0_MESH_EVIDENCE_AFTER_REVIEW",
+  "parent_geo_sha256": "FILL_FROM_REAL_M0_MESH_EVIDENCE_AFTER_REVIEW",
+  "alpha": 0.20,
+  "scientific_basis": "First homogeneous relative refinement; no physical localization indicator. Template is not ACTIVE until M0 is independently reviewed."
+}
