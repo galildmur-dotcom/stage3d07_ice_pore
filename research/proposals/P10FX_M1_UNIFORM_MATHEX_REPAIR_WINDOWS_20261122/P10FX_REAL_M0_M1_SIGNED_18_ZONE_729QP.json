@@ -1,0 +1,393 @@
+{
+  "protocol": "P10FW_REAL_18_ZONE_SIGNED_HEMISPHERE_CALIBRATION",
+  "M0_SHA": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "failed_M1_SHA": "f281d253571db095b90790326f503dfa3f6fe3a1dc5cb5c904fca2787dfe4275",
+  "original_msh_not_published": true,
+  "target_actual_Veff_ratio_everywhere": 0.825,
+  "required_actual_range": [
+    0.8,
+    0.85
+  ],
+  "source_only_field_model": "new_h3_h0=0.8*(0.825/observed_q); C1_interp_18_zones",
+  "limitations": [
+    "empirical linear bias assumption; Gmsh remeshing nonlinear",
+    "18 physical zones, not pointwise or Tet-to-Tet mapping",
+    "predicted field must pass real 729QP tests after one native Gmsh"
+  ],
+  "sample_levels": {
+    "7": {
+      "zones18": [
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.8429115104407281,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9787504260899667,
+          "new_nominal_h3_h0": 0.7830003408719733
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 1.0965158361219431,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.7523831146094383,
+          "new_nominal_h3_h0": 0.6019064916875506
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.8334102695009471,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9899086082704701,
+          "new_nominal_h3_h0": 0.7919268866163761
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.8286046606899208,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9956497219229741,
+          "new_nominal_h3_h0": 0.7965197775383794
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7748293182100316,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0647506239256277,
+          "new_nominal_h3_h0": 0.8518004991405023
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7468459686983481,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.1046454484287622,
+          "new_nominal_h3_h0": 0.8837163587430098
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7886725744616231,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0460614793955214,
+          "new_nominal_h3_h0": 0.8368491835164172
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.9421654237365398,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.8756424076019764,
+          "new_nominal_h3_h0": 0.7005139260815811
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7773377006632233,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0613147918801715,
+          "new_nominal_h3_h0": 0.8490518335041374
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.874661210301965,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9432223474448808,
+          "new_nominal_h3_h0": 0.7545778779559047
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.840312831574375,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9817772251011739,
+          "new_nominal_h3_h0": 0.7854217800809392
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7915833413569497,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0422149594327828,
+          "new_nominal_h3_h0": 0.8337719675462263
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7683298043977549,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0737576432384597,
+          "new_nominal_h3_h0": 0.8590061145907678
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7660645730536224,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0769327143160452,
+          "new_nominal_h3_h0": 0.8615461714528363
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7998595507397508,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0314310796651711,
+          "new_nominal_h3_h0": 0.825144863732137
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7896374822218536,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0447832310070244,
+          "new_nominal_h3_h0": 0.8358265848056196
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7910028440601593,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.042979815047612,
+          "new_nominal_h3_h0": 0.8343838520380896
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.81057555009996,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0177953182750963,
+          "new_nominal_h3_h0": 0.8142362546200771
+        }
+      ],
+      "M0_min_jac": 2.4556950542989098e-11,
+      "M1_min_jac": 1.686265561054566e-11
+    },
+    "9": {
+      "zones18": [
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.8447789349471028,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9765868511525547,
+          "new_nominal_h3_h0": 0.7812694809220438
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 1.0959055811319807,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.7528020791242276,
+          "new_nominal_h3_h0": 0.6022416632993821
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.8378122217727393,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9847075258157135,
+          "new_nominal_h3_h0": 0.7877660206525708
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.8285670176112101,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9956949558268756,
+          "new_nominal_h3_h0": 0.7965559646615006
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7716262903608726,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0691704135873412,
+          "new_nominal_h3_h0": 0.855336330869873
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7493326492958831,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.1009796527286224,
+          "new_nominal_h3_h0": 0.880783722182898
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.789483976236181,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.044986376966306,
+          "new_nominal_h3_h0": 0.8359891015730447
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.9382937647562277,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.8792555497950454,
+          "new_nominal_h3_h0": 0.7034044398360364
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7809229313810381,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0564422772692985,
+          "new_nominal_h3_h0": 0.8451538218154389
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.8770638549003814,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.940638467074561,
+          "new_nominal_h3_h0": 0.7525107736596489
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.8397849298669092,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 0.9823943853466716,
+          "new_nominal_h3_h0": 0.7859155082773374
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7920693170506257,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0415755063862289,
+          "new_nominal_h3_h0": 0.8332604051089832
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.770165744732371,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0711979929549886,
+          "new_nominal_h3_h0": 0.856958394363991
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7652177214988439,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0781245347847663,
+          "new_nominal_h3_h0": 0.8624996278278131
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7997171052284794,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0316147980407362,
+          "new_nominal_h3_h0": 0.825291838432589
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.7906571395424777,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0434358443628233,
+          "new_nominal_h3_h0": 0.8347486754902588
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "measured_M1_over_M0": 0.7909454910616759,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.043055443545943,
+          "new_nominal_h3_h0": 0.8344443548367544
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "measured_M1_over_M0": 0.8102670321113931,
+          "nominal_previous_h3": 0.8,
+          "target_actual_Veff": 0.825,
+          "source_only_compensation_ratio": 1.0181828549166263,
+          "new_nominal_h3_h0": 0.8145462839333012
+        }
+      ],
+      "M0_min_jac": 2.4235572551891975e-11,
+      "M1_min_jac": 1.6848801794913752e-11
+    }
+  },
+  "max_signed_zone_q_343_to_729_delta": 0.004401952271792187,
+  "no_new_native_Gmsh_FEM": true
+}
