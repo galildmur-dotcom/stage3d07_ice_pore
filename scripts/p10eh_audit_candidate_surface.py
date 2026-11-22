@@ -14,6 +14,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from p10ee_audit_pore_surface_sizing_source_only import tri_basis, surface_areas
+import p10ed_verify_original_m1_m2_raw_spatial as historical
 
 EXPECTED_MSH = "96f5c9a5d88811ef6b68cc46acabe094dbdd8f4b7441025ee39864bcbab4d1c7"
 MESH_NAME = "P10EF_R2_SURFACE_2D_CANDIDATE.msh"
@@ -103,6 +104,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--evidence", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--m1", type=Path)
+    parser.add_argument("--old-m2", type=Path)
     args = parser.parse_args()
     with zipfile.ZipFile(args.evidence) as z:
         assert z.testzip() is None
@@ -116,6 +119,29 @@ def main():
            "gmsh_invocations": 0, "fem_invocations": 0,
            "quadrature": {str(n): analyze(mesh, n) for n in (3,5,9,15)},
            "comparison_to_recorded": {}}
+    if args.m1 and args.old_m2:
+        old_meshes = {
+           "original_m1": historical.parse_msh2(args.m1, historical.M1_SHA),
+           "historical_m2": historical.parse_msh2(args.old_m2, historical.M2_SHA),
+        }
+        out["paired_fixed_zone_comparison"] = {}
+        candidate_bins = out["quadrature"]["15"]["bins"]
+        for name, mesh_data in old_meshes.items():
+            source_tri = mesh_data["nodes"][mesh_data["pore_tri6"]]
+            baseline = analyze(source_tri, 15)["bins"]
+            comparison = {}
+            for zone, b in baseline.items():
+                c = candidate_bins[zone]
+                comparison[zone] = {
+                    "candidate_over_reference_effective_tri6_area":
+                         c["effective_tri6_area_m2"]/b["effective_tri6_area_m2"],
+                    "reference_effective_tri6_count": b["effective_tri6_count"],
+                    "candidate_effective_tri6_count": c["effective_tri6_count"],
+                    "reference_zone_area_m2": b["area_m2"],
+                    "candidate_zone_area_m2": c["area_m2"],
+                    "candidate_area_weighted_nominal_target_ratio": c["area_weighted_nominal_target_ratio"],
+                }
+            out["paired_fixed_zone_comparison"][name] = comparison
     latest = out["quadrature"]["15"]
     out["comparison_to_recorded"]["full_area_absolute_m2"] = abs(
        latest["total_pore_area_m2"]-recorded["candidate_2d"]["curved_pore_area_m2"])
