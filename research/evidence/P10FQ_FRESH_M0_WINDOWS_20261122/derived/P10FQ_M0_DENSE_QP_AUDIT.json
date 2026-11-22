@@ -1,0 +1,37 @@
+{
+  "protocol": "P10FQ_FRESH_M0_INDEPENDENT_343_729QP",
+  "mesh": "M0",
+  "mesh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "nodes": 11699,
+  "tet10": 7992,
+  "tri6_tags": {
+    "2": 164,
+    "3": 162,
+    "4": 138,
+    "5": 138,
+    "6": 138,
+    "7": 142,
+    "8": 160,
+    "9": 312
+  },
+  "max_pore_surface_radius_error_m": 4.9873299934333204e-18,
+  "qp343": {
+    "order": 7,
+    "total_curved_qp": 2741256,
+    "nonpositive": 0,
+    "minimum_detj": 2.4556950542989098e-11,
+    "maximum_detj": 1.6637709084046888e-06,
+    "integrated_volume_m3": 0.0001799958140411267,
+    "max_element_detj_ratio": 2.2118330103107193
+  },
+  "qp729": {
+    "order": 9,
+    "total_curved_qp": 5826168,
+    "nonpositive": 0,
+    "minimum_detj": 2.4235572551891975e-11,
+    "maximum_detj": 1.6637709084046888e-06,
+    "integrated_volume_m3": 0.00017999581404112665,
+    "max_element_detj_ratio": 2.245773410841744
+  },
+  "gate": "PASS_DENSE_SAMPLED_GEOMETRY_NO_FEM"
+}

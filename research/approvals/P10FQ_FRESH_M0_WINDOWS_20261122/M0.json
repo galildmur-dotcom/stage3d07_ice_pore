@@ -1,0 +1,39 @@
+{
+  "schema": "P10FQ_FRESH_M0_GEOMETRY_GO_V1",
+  "status": "RESEARCHER_APPROVED_FOR_PHYSICS",
+  "mesh": "M0",
+  "mesh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "regime": {
+    "steps": 6,
+    "dt": 150,
+    "cutoff_mm": 5,
+    "threads": 4,
+    "law": "EDV_VAR",
+    "xi": 0,
+    "B6_mm": 5
+  },
+  "approved_utc_date": "2026-11-22",
+  "origin": "fresh user-generated M0 on Gmsh 4.15.2 Windows, not historical H0",
+  "evidence_zip_sha256": "12484d482b5dd98c407101e6dfb0fa10bcb8726ca0056a433cc94beb9f12a1bc",
+  "baseline_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "canonical_cad_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "native_gmsh_exit_code": 0,
+  "geometry_qa": {
+    "nodes": 11699,
+    "tet10": 7992,
+    "pore_tri6": 160,
+    "physical_surface_tags": [2, 3, 4, 5, 6, 7, 8, 9],
+    "curved_qp27": 215784,
+    "curved_qp343": 2741256,
+    "curved_qp729": 5826168,
+    "nonpositive_jacobian_samples": 0,
+    "minimum_detj_729qp": 2.4235572551891975e-11,
+    "maximum_element_detj_ratio_729qp": 2.245773410841744,
+    "integrated_volume_m3_729qp": 0.00017999581404112665,
+    "max_pore_surface_radius_error_m": 4.9873299934333204e-18,
+    "near_polar_neighbor_q_p95": 1.351203795264295,
+    "near_polar_neighbor_q_p99": 1.4990690659517814
+  },
+  "review": "GEOMETRY_GO_FOR_FIRST_FRESH_SAME_MESH_R_FORWARD_AND_ANALYTIC_ADJOINT; sampled positive Jacobians do not prove continuum positivity or physics convergence; inspect near-polar contributions after M0 physics",
+  "fem_attempts_at_review": 0
+}
