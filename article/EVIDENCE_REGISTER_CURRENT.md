@@ -655,3 +655,11 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **B — reproducible derived-only evidence:** scripts/p10ed_verify_original_m1_m2_raw_spatial.py, report research/P10ED_ORIGINAL_M1_M2_RAW_CURVED27QP_POLAR_SPATIAL_VERIFICATION_20261122.md; compact JSON +two CSV research/evidence/P10ED_RAW_M1_M2_20261122/derived. In same fixed physical polar 0–0.1mm, local curved effective cell volume M2/M1=**0.989995** vs target **0.8**, north0.932511, south1.048814; 0.1–0.5mm polar1.002182 vs κ-QP target0.910658. The QP-discontinuous spatial clipping was tested with 3³/5³/7³/9³ points and analytic cap-volume comparison. 40→38 pore-polar surface Tri6 (total pore Tri6 178→170).
 
 **D — scientific limitation:** spatial matched-zone cell-density statistic, not paired tets or proof of derivative convergence, not a proof that Gmsh ignored MathEval F6. M2 geometry PASS, physical adaptive M2 acceptance/FEM STOP; one-shot P10EA consumed; no Gmsh/FEM/cache/markers/new raw meshes. Next only source-only review of Gmsh field-to-actual-mesh response.
+
+## N-P10EE — direct pore surface Tri6 area and global background field P10EA source gate (22.11.2026)
+
+**A:** original P10EA R1 release SHA8b1650ae... shows global F6 MathEval Background Field=6 over CAD; official Gmsh4.15.2 §1.2.2 describes local size fields. Native log verifies Frontal-Delaunay 2D sphere patches before HXT 3D (boundary not altered). Original raw M1/M2 SHA pins from P10ED checked; no raw MSH Git publication.
+
+**B:** scripts/p10ee_audit_pore_surface_sizing_source_only.py directly integrates raw pore Tri6 surface curved area at 9/25/81/225 QP and matches analytic cap area; source target Tri6 area M2/M1 0.861774, observed fixed-location polar area north1.076960/south1.038407/both1.057067. Derived JSON research/evidence/P10EE_PORE_SURFACE_SIZING_20261122/derived; full report research/P10EE_PORE_SURFACE_SIZING_CAUSAL_GATE_SOURCE_ONLY_20261122.md.
+
+**D:** surface under-refinement is directly measured and likely constrains 3D polar adaptation; sole mechanism not proved; global F6 was *not* omitted on the pore surface. No second20% factor or new native/physical run. P10EA one-shot consumed. Future candidate would test 2D mesher variants under new consent with 2D surface plus 3D volume criteria.
