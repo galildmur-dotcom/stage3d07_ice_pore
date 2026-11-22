@@ -229,3 +229,22 @@ P10ET исходниково предложил **одно C¹ простран�
 первичные хеши и Derived JSON/CSV доступны в исследовательской ветке.
 Будущий Gmsh `.geo`, mesh-only запуск и физический FEM требуют своих
 отдельных этапов; новые жёсткие пороги на плавность, `N_Tet10` и φ не вводятся.
+
+## 8. P10EU — исходниковая реализация единого поля Gmsh (22.11.2026)
+
+Математическое C¹ поле P10ET перенесено в один 4198-символьный
+Gmsh MathEval Field6; отсутствуют рекурсивные MathEval Field3/4/5.
+Точная сферическая CAD, Physical Surface PORE_WALL=8,
+Physical Volume ICE_VOLUME=1, алгоритмы 2D5/3D10 и Tet10 сохранились.
+Приоритет background управляется Mesh.MeshSizeFromPoints=0,
+Mesh.MeshSizeFromCurvature=0, Mesh.MeshSizeExtendFromBoundary=0,
+Mesh.MeshSizeFactor=1. Алгебраическая проверка 7620 координат дала
+max относительную невязку2.7246553e−16 с P10ET, включая стенку и
+C¹-стыки. **Это не native Gmsh и не построенная M2.**
+Исходники нового GEO, SHA, Windows source-only preflight и ограничения:
+research/P10EU_UNIFIED_C1_GMSH_SOURCE_AND_SAFE_WINDOWS_PREFLIGHT_20261122.md.
+Для практического D-025 обязателен новый independently QA native
+mesh-only опыт после разрешения исследователя и измеренный fixed3D
+north/south Tet10 Veff ratio0.75–0.85, 343→729QP. Tri6 area и соседние
+перепады размера — диагностика плавности, не самостоятельные новые
+числовые барьеры. При κ0 сохранять прежний локальный размер.
