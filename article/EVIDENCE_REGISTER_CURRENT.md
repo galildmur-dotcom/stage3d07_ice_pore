@@ -793,3 +793,11 @@ Original ZIP CRC19/19, raw M2 SHAff6500e2..., native Gmsh -3 exit0,
 full FEM and sensitivity convergence remain unproven.
 `research/P10FG_P10FB_REAL_M2_FIXED3D_POLAR_QP_AND_NONINTERACTIVE_POLICY_20261122.md`.
 
+### N-P10FJ — real P10FB straight/curved neighbour geometry separation
+
+On the same 95 P10FI near-polar pairs: 87 already show corner q>1.25;
+curved p95/max q1.7498/2.0693 versus corner1.6469/1.9001.
+Curved changes extremes, does not solely explain adjacent jumps.
+No new Gmsh/FEM, D025 fixed3D polar PASS unchanged.
+`research/P10FJ_P10FB_CORNER_VS_CURVED_POLAR_NEIGHBOUR_AUDIT_20261122.md`.
+

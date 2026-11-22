@@ -981,3 +981,13 @@ smooth design field and discrete mesh response, but does not uniquely
 attribute to remeshing topology vs curvature; D025 polar geometry remains
 PASS, FEM0. Report P10FI_REAL_M2_NEIGHBOUR_JUMP_VS_C1_FIELD_LOCALIZATION_20261122.md.
 
+## 2026-11-22 — P10FJ isolate straight-corner versus curved27QP polar M2 jumps
+
+On the same 95 severe near-polar face-neighbour pairs P10FI,
+87 have q_corner>1.25 (north47/52, south40/43). Median q_corner
+1.3361 versus q_curved1.3411, p95 1.6469 versus1.7498;
+maximum1.9001 versus2.0693. Curved-vs-corner volume correction ratio
+across faces p95 1.0624/max1.1355; curvature is not the unique cause,
+but contributes to the extreme tails. Corner shape/aspect diagnostics
+recorded, no new mesh/FEM. Report P10FJ_P10FB_CORNER_VS_CURVED_POLAR_NEIGHBOUR_AUDIT_20261122.md.
+
