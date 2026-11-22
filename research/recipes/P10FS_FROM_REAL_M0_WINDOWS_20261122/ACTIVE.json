@@ -1,0 +1,17 @@
+{
+  "schema": "P10FP_ADAPT_V2",
+  "kind": "uniform",
+  "parent_mesh": "M0",
+  "new_mesh": "M1",
+  "parent_mesh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "parent_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "alpha": 0.2,
+  "scientific_basis": "P10FS: first independently reviewed new-series M0 R physical result; uniform reference refinement kappa=1 throughout the 3D domain. Physical M0 has strong signed polar/radial/time cancellation, so M0->M1 is the planned controlled homogeneous 20% characteristic-volume target; no local physics-derived kappa is applied until after independently reviewed M1 physics.",
+  "previous_physics_evidence_sha256": "b5191c4f23a2a07f09b6615c52d258c119f891813e85d789fac63209710a48f4",
+  "previous_physics_mode": "R",
+  "previous_physics_DR_jpeak_per_m": 2.9136218640590257,
+  "target_h_ratio_everywhere": 0.9283177667225558,
+  "target_volume_ratio_everywhere": 0.8,
+  "review_status": "RESEARCHER_RELEASED_FOR_ONE_M0_TO_M1_GMSH_MESH_ATTEMPT_NO_FEM",
+  "review_date_utc": "2026-11-22"
+}

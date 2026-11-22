@@ -1,0 +1,511 @@
+{
+  "protocol": "P10FS_FRESH_M0_SIGNED_R_4D_POSTRUN_INDEPENDENT",
+  "evidence_zip_sha256": "b5191c4f23a2a07f09b6615c52d258c119f891813e85d789fac63209710a48f4",
+  "mesh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "baseline_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "result": "PASS_PHYSICAL_M0_READY_FOR_SHA_PINNED_UNIFORM_M1_RECIPE",
+  "runtime_seconds": 128.76238400000148,
+  "peak_private_memory_bytes": 1056518144,
+  "fresh_forward": true,
+  "forward_solves": 1,
+  "mechanical_adjoint_solves": 18,
+  "central_fd_evaluations": 0,
+  "independent_4d": {
+    "status": "P10FN_INDEPENDENT_4D_CLOSURE_PASS",
+    "mechanical": 2.8483401992397552,
+    "thermal": 0.06528166481937835,
+    "total": 2.9136218640591336,
+    "rows": 7206,
+    "tet10": 7992,
+    "mode": "R",
+    "mesh": "M0"
+  },
+  "functionals": {
+    "j6": {
+      "objective": 0.0021779682071984977,
+      "mechanical_partial_per_m": 0.023937233933268947,
+      "thermal_adjoint_per_m": 0.0023395365988001177,
+      "total_adjoint_per_m": 0.026276770532069064,
+      "mechanical_equilibrium_rel": 1.232084008150446e-11,
+      "thermal_equilibrium_rel": 4.753813771379523e-11
+    },
+    "jpeak": {
+      "objective": 0.04803034131789259,
+      "mechanical_partial_per_m": 2.8483401992396478,
+      "thermal_adjoint_per_m": 0.065281664819378,
+      "total_adjoint_per_m": 2.9136218640590257,
+      "mechanical_equilibrium_rel": 8.27919548823045e-08,
+      "thermal_equilibrium_rel": 4.258487027888515e-11
+    },
+    "jen": {
+      "objective": 0.0008726222166301226,
+      "mechanical_partial_per_m": 0.01594100324391643,
+      "thermal_adjoint_per_m": 0.0005994666977160953,
+      "total_adjoint_per_m": 0.016540469941632528,
+      "mechanical_equilibrium_rel": 2.3272662914103003e-11,
+      "thermal_equilibrium_rel": 4.9730422635274766e-11
+    }
+  },
+  "components": {
+    "j6": {
+      "explicit_objective_shape_per_m": -0.30548032069573444,
+      "equilibrium_residual_shape_per_m": 0.33693405442187857,
+      "internal_history_shape_per_m": -0.007516499792875148,
+      "total_mechanical_shape_per_m": 0.023937233933268947,
+      "thermal_adjoint_per_m": 0.0023395365988001177,
+      "total_adjoint_per_m": 0.026276770532069064,
+      "cancellation_ratio": 27.15146105528875
+    },
+    "jpeak": {
+      "explicit_objective_shape_per_m": -15.392458713187487,
+      "equilibrium_residual_shape_per_m": 14.26204743165376,
+      "internal_history_shape_per_m": 3.978751480773375,
+      "total_mechanical_shape_per_m": 2.8483401992396478,
+      "thermal_adjoint_per_m": 0.065281664819378,
+      "total_adjoint_per_m": 2.9136218640590257,
+      "cancellation_ratio": 11.808019854718506
+    },
+    "jen": {
+      "explicit_objective_shape_per_m": -0.04211546132605628,
+      "equilibrium_residual_shape_per_m": 0.057671701201737084,
+      "internal_history_shape_per_m": 0.0003847633682356331,
+      "total_mechanical_shape_per_m": 0.01594100324391643,
+      "thermal_adjoint_per_m": 0.0005994666977160953,
+      "total_adjoint_per_m": 0.016540469941632528,
+      "cancellation_ratio": 6.283916034849164
+    }
+  },
+  "signed4d": {
+    "by_time": [
+      {
+        "index": 1,
+        "rows": 1201,
+        "total_per_m": 0.08686736571458843,
+        "sum_abs_bin_total_per_m": 0.1105086659991504,
+        "mechanical_per_m": 0.08943149777239341,
+        "thermal_per_m": -0.002564132057804986,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      },
+      {
+        "index": 2,
+        "rows": 1201,
+        "total_per_m": 0.35618751953413347,
+        "sum_abs_bin_total_per_m": 0.44151206277892807,
+        "mechanical_per_m": 0.3646789852470344,
+        "thermal_per_m": -0.008491465712900916,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      },
+      {
+        "index": 3,
+        "rows": 1201,
+        "total_per_m": 0.9371014149255034,
+        "sum_abs_bin_total_per_m": 1.1402237900086287,
+        "mechanical_per_m": 0.9517371795049085,
+        "thermal_per_m": -0.014635764579405236,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      },
+      {
+        "index": 4,
+        "rows": 1201,
+        "total_per_m": 1.7053239331905332,
+        "sum_abs_bin_total_per_m": 2.048504813203228,
+        "mechanical_per_m": 1.709926897423499,
+        "thermal_per_m": -0.004602964232965761,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      },
+      {
+        "index": 5,
+        "rows": 1201,
+        "total_per_m": 1.095410095053911,
+        "sum_abs_bin_total_per_m": 5.364315599315917,
+        "mechanical_per_m": 1.0536896133324425,
+        "thermal_per_m": 0.04172048172146835,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      },
+      {
+        "index": 6,
+        "rows": 1201,
+        "total_per_m": -1.2672684643595353,
+        "sum_abs_bin_total_per_m": 7.834944908262607,
+        "mechanical_per_m": -1.3211239740405223,
+        "thermal_per_m": 0.05385550968098689,
+        "mechanical_qp": 215784,
+        "thermal_qp": 511488
+      }
+    ],
+    "by_radial": [
+      {
+        "index": 0,
+        "rows": 720,
+        "total_per_m": -2.397459746927152,
+        "sum_abs_bin_total_per_m": 2.8745166402200066,
+        "mechanical_per_m": -2.397154691641812,
+        "thermal_per_m": -0.0003050552853400292,
+        "mechanical_qp": 11580,
+        "thermal_qp": 32976
+      },
+      {
+        "index": 1,
+        "rows": 720,
+        "total_per_m": -2.1110448315114065,
+        "sum_abs_bin_total_per_m": 2.7574564757221007,
+        "mechanical_per_m": -2.1106011921800416,
+        "thermal_per_m": -0.0004436393313652157,
+        "mechanical_qp": 10374,
+        "thermal_qp": 22536
+      },
+      {
+        "index": 2,
+        "rows": 720,
+        "total_per_m": -0.8399453146463869,
+        "sum_abs_bin_total_per_m": 1.5069307656524586,
+        "mechanical_per_m": -0.8395102490770657,
+        "thermal_per_m": -0.00043506556932112523,
+        "mechanical_qp": 8118,
+        "thermal_qp": 13074
+      },
+      {
+        "index": 3,
+        "rows": 720,
+        "total_per_m": 0.10364306032622846,
+        "sum_abs_bin_total_per_m": 1.1810277542008927,
+        "mechanical_per_m": 0.1050288599915933,
+        "thermal_per_m": -0.0013857996653648382,
+        "mechanical_qp": 13110,
+        "thermal_qp": 34752
+      },
+      {
+        "index": 4,
+        "rows": 720,
+        "total_per_m": 0.5422080791982866,
+        "sum_abs_bin_total_per_m": 0.913633202372166,
+        "mechanical_per_m": 0.5450375086526085,
+        "thermal_per_m": -0.0028294294543218953,
+        "mechanical_qp": 34746,
+        "thermal_qp": 80874
+      },
+      {
+        "index": 5,
+        "rows": 720,
+        "total_per_m": 1.6958805870408433,
+        "sum_abs_bin_total_per_m": 1.7233442785566748,
+        "mechanical_per_m": 1.70058994580252,
+        "thermal_per_m": -0.004709358761676506,
+        "mechanical_qp": 125802,
+        "thermal_qp": 299592
+      },
+      {
+        "index": 6,
+        "rows": 720,
+        "total_per_m": 2.79661763428675,
+        "sum_abs_bin_total_per_m": 2.848623660476271,
+        "mechanical_per_m": 2.790387539644919,
+        "thermal_per_m": 0.006230094641831081,
+        "mechanical_qp": 316710,
+        "thermal_qp": 749898
+      },
+      {
+        "index": 7,
+        "rows": 720,
+        "total_per_m": 3.123722396291971,
+        "sum_abs_bin_total_per_m": 3.134477062367888,
+        "mechanical_per_m": 3.054562478047034,
+        "thermal_per_m": 0.06915991824493686,
+        "mechanical_qp": 276600,
+        "thermal_qp": 655578
+      },
+      {
+        "index": 8,
+        "rows": 720,
+        "total_per_m": 0.0,
+        "sum_abs_bin_total_per_m": 0.0,
+        "mechanical_per_m": 0.0,
+        "thermal_per_m": 0.0,
+        "mechanical_qp": 173142,
+        "thermal_qp": 410706
+      },
+      {
+        "index": 9,
+        "rows": 720,
+        "total_per_m": 0.0,
+        "sum_abs_bin_total_per_m": 0.0,
+        "mechanical_per_m": 0.0,
+        "thermal_per_m": 0.0,
+        "mechanical_qp": 324522,
+        "thermal_qp": 768942
+      }
+    ],
+    "by_polar": [
+      {
+        "index": 0,
+        "rows": 720,
+        "total_per_m": -1.7701306333695717,
+        "sum_abs_bin_total_per_m": 3.767280854269425,
+        "mechanical_per_m": -1.7306000991272197,
+        "thermal_per_m": -0.03953053424235203,
+        "mechanical_qp": 124728,
+        "thermal_qp": 295272
+      },
+      {
+        "index": 1,
+        "rows": 720,
+        "total_per_m": 0.6083923718518582,
+        "sum_abs_bin_total_per_m": 1.0815506547341558,
+        "mechanical_per_m": 0.6310692916419081,
+        "thermal_per_m": -0.022676919790049883,
+        "mechanical_qp": 149706,
+        "thermal_qp": 355464
+      },
+      {
+        "index": 2,
+        "rows": 720,
+        "total_per_m": 0.8379604124074338,
+        "sum_abs_bin_total_per_m": 0.8645242833405048,
+        "mechanical_per_m": 0.8480579589853786,
+        "thermal_per_m": -0.010097546577944814,
+        "mechanical_qp": 148800,
+        "thermal_qp": 353412
+      },
+      {
+        "index": 3,
+        "rows": 720,
+        "total_per_m": 0.7834334773387631,
+        "sum_abs_bin_total_per_m": 0.8675625010043736,
+        "mechanical_per_m": 0.7842761460415266,
+        "thermal_per_m": -0.000842668702763459,
+        "mechanical_qp": 133524,
+        "thermal_qp": 314556
+      },
+      {
+        "index": 4,
+        "rows": 720,
+        "total_per_m": 0.7428398677413605,
+        "sum_abs_bin_total_per_m": 0.8898006111623681,
+        "mechanical_per_m": 0.7366066319250876,
+        "thermal_per_m": 0.006233235816272885,
+        "mechanical_qp": 126966,
+        "thermal_qp": 302964
+      },
+      {
+        "index": 5,
+        "rows": 720,
+        "total_per_m": 0.805201442988721,
+        "sum_abs_bin_total_per_m": 0.961875168075549,
+        "mechanical_per_m": 0.7926019683611639,
+        "thermal_per_m": 0.01259947462755708,
+        "mechanical_qp": 126996,
+        "thermal_qp": 299790
+      },
+      {
+        "index": 6,
+        "rows": 720,
+        "total_per_m": 0.9606381293123549,
+        "sum_abs_bin_total_per_m": 1.0613172691298158,
+        "mechanical_per_m": 0.9426148646415081,
+        "thermal_per_m": 0.018023264670846837,
+        "mechanical_qp": 123462,
+        "thermal_qp": 293058
+      },
+      {
+        "index": 7,
+        "rows": 720,
+        "total_per_m": 1.1295298009749524,
+        "sum_abs_bin_total_per_m": 1.1592281586767479,
+        "mechanical_per_m": 1.1055012070714232,
+        "thermal_per_m": 0.024028593903529395,
+        "mechanical_qp": 137874,
+        "thermal_qp": 327396
+      },
+      {
+        "index": 8,
+        "rows": 720,
+        "total_per_m": 0.9994772107104052,
+        "sum_abs_bin_total_per_m": 1.4075543699863133,
+        "mechanical_per_m": 0.9673918004241466,
+        "thermal_per_m": 0.03208541028625856,
+        "mechanical_qp": 118788,
+        "thermal_qp": 280614
+      },
+      {
+        "index": 9,
+        "rows": 720,
+        "total_per_m": -2.183720215897144,
+        "sum_abs_bin_total_per_m": 4.879315969189205,
+        "mechanical_per_m": -2.2291795707251674,
+        "thermal_per_m": 0.045459354828023775,
+        "mechanical_qp": 103860,
+        "thermal_qp": 246402
+      }
+    ],
+    "by_azimuth": [
+      {
+        "index": 0,
+        "rows": 600,
+        "total_per_m": 0.20714292937895404,
+        "sum_abs_bin_total_per_m": 1.427058641444062,
+        "mechanical_per_m": 0.20181036805733277,
+        "thermal_per_m": 0.00533256132162124,
+        "mechanical_qp": 101202,
+        "thermal_qp": 240420
+      },
+      {
+        "index": 1,
+        "rows": 600,
+        "total_per_m": 0.2493378965156982,
+        "sum_abs_bin_total_per_m": 1.3885325143630238,
+        "mechanical_per_m": 0.24385167696431917,
+        "thermal_per_m": 0.005486219551379052,
+        "mechanical_qp": 115938,
+        "thermal_qp": 273996
+      },
+      {
+        "index": 2,
+        "rows": 600,
+        "total_per_m": 0.24413808436825457,
+        "sum_abs_bin_total_per_m": 1.452567793663238,
+        "mechanical_per_m": 0.23880247862554888,
+        "thermal_per_m": 0.005335605742705707,
+        "mechanical_qp": 103680,
+        "thermal_qp": 245634
+      },
+      {
+        "index": 3,
+        "rows": 600,
+        "total_per_m": 0.2706100684210263,
+        "sum_abs_bin_total_per_m": 1.2814686091020957,
+        "mechanical_per_m": 0.26541886277333987,
+        "thermal_per_m": 0.0051912056476864175,
+        "mechanical_qp": 103158,
+        "thermal_qp": 245820
+      },
+      {
+        "index": 4,
+        "rows": 600,
+        "total_per_m": 0.08512335650315359,
+        "sum_abs_bin_total_per_m": 1.632751966894117,
+        "mechanical_per_m": 0.07983332370037269,
+        "thermal_per_m": 0.005290032802780901,
+        "mechanical_qp": 112446,
+        "thermal_qp": 267114
+      },
+      {
+        "index": 5,
+        "rows": 600,
+        "total_per_m": 0.42252110390103437,
+        "sum_abs_bin_total_per_m": 1.3804523600372824,
+        "mechanical_per_m": 0.4171299476338605,
+        "thermal_per_m": 0.0053911562671739004,
+        "mechanical_qp": 96846,
+        "thermal_qp": 228840
+      },
+      {
+        "index": 6,
+        "rows": 600,
+        "total_per_m": 0.3084470230881374,
+        "sum_abs_bin_total_per_m": 1.3533660274910095,
+        "mechanical_per_m": 0.3030538120340726,
+        "thermal_per_m": 0.005393211054064786,
+        "mechanical_qp": 106392,
+        "thermal_qp": 251220
+      },
+      {
+        "index": 7,
+        "rows": 600,
+        "total_per_m": 0.2878319394514893,
+        "sum_abs_bin_total_per_m": 1.3467680686374057,
+        "mechanical_per_m": 0.28231703120717677,
+        "thermal_per_m": 0.0055149082443125,
+        "mechanical_qp": 114276,
+        "thermal_qp": 271518
+      },
+      {
+        "index": 8,
+        "rows": 600,
+        "total_per_m": 0.21864025273407375,
+        "sum_abs_bin_total_per_m": 1.372937244862638,
+        "mechanical_per_m": 0.2132262293564633,
+        "thermal_per_m": 0.0054140233776104425,
+        "mechanical_qp": 104400,
+        "thermal_qp": 247794
+      },
+      {
+        "index": 9,
+        "rows": 600,
+        "total_per_m": 0.19275336200495705,
+        "sum_abs_bin_total_per_m": 1.4998402318460158,
+        "mechanical_per_m": 0.18687068147308997,
+        "thermal_per_m": 0.005882680531867061,
+        "mechanical_qp": 106404,
+        "thermal_qp": 251526
+      },
+      {
+        "index": 10,
+        "rows": 600,
+        "total_per_m": 0.1754803508316979,
+        "sum_abs_bin_total_per_m": 1.432315918898211,
+        "mechanical_per_m": 0.16999412252309173,
+        "thermal_per_m": 0.005486228308606183,
+        "mechanical_qp": 123762,
+        "thermal_qp": 294090
+      },
+      {
+        "index": 11,
+        "rows": 600,
+        "total_per_m": 0.25159549686065746,
+        "sum_abs_bin_total_per_m": 1.3719504623293595,
+        "mechanical_per_m": 0.24603166489108733,
+        "thermal_per_m": 0.005563831969570145,
+        "mechanical_qp": 106200,
+        "thermal_qp": 250956
+      }
+    ],
+    "by_region": [
+      {
+        "index": "TOP_ROBIN",
+        "rows": 6,
+        "total_per_m": 0.0,
+        "sum_abs_bin_total_per_m": 0.0,
+        "mechanical_per_m": 0.0,
+        "thermal_per_m": 0.0,
+        "mechanical_qp": 0,
+        "thermal_qp": 0
+      },
+      {
+        "index": "VOLUME",
+        "rows": 7200,
+        "total_per_m": 2.913621864059134,
+        "sum_abs_bin_total_per_m": 16.940009839568457,
+        "mechanical_per_m": 2.8483401992397557,
+        "thermal_per_m": 0.06528166481937833,
+        "mechanical_qp": 1294704,
+        "thermal_qp": 3068928
+      }
+    ],
+    "near_polar_d_le_0p5mm_bins_0_and_9": {
+      "index": 0,
+      "rows": 720,
+      "total_per_m": -5.175773345257416,
+      "sum_abs_bin_total_per_m": 7.35031874727486,
+      "mechanical_per_m": -5.17649925512909,
+      "thermal_per_m": 0.0007259098716740099,
+      "mechanical_qp": 18798,
+      "thermal_qp": 44610
+    },
+    "volume_global": {
+      "index": 0,
+      "rows": 7200,
+      "total_per_m": 2.913621864059134,
+      "sum_abs_bin_total_per_m": 16.940009839568457,
+      "mechanical_per_m": 2.8483401992397557,
+      "thermal_per_m": 0.06528166481937833,
+      "mechanical_qp": 1294704,
+      "thermal_qp": 3068928
+    }
+  },
+  "note": "No convergence statement is possible from a single new-series M0."
+}
