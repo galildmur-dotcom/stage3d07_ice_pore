@@ -1,0 +1,54 @@
+{
+  "protocol": "P10EB_INDEPENDENT_P10EA_R1_WINDOWS_PREFLIGHT_ORIGINAL_AUDIT",
+  "status": "P10EB_ORIGINAL_P10EA_NATIVE_GEO_PARSE2_AND_M1_LABEL_PASS_NO_M2_NO_FEM",
+  "original_evidence_sha256": "36d90b7c583614317c770f66d51c8729c57a4eb5f059fefdbac37b838e5d5ee3",
+  "source_release_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+  "original_evidence_zip_members": 8,
+  "source_package_zip_members": 24,
+  "original_m1_sha256_windows_manifest_only": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "native_gmsh_exe_sha256_windows_manifest_only": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "f6_geo_sha256_independently_rehashed": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "baseline_geo_sha256_independently_rehashed": "c6ec88a3fe91db0f3c369391a91aefbd1bc83f1d3033b38a985c3033c605ddd8",
+  "cad_geo_sha256_independently_rehashed": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "source_pin_count_reported": 23,
+  "math_points_reported": 17075,
+  "native_parse_attempts": 2,
+  "native_parse_walls_seconds": {
+    "A_ORIGINAL_M1_FIELD2": 0.0253639,
+    "B_EXACT_INLINE_F6": 0.0208628
+  },
+  "windows_preflight_wall_seconds_from_manifest": 11.39346,
+  "free_ram_bytes_reported": 58514984960,
+  "free_disk_bytes_reported": 8020674437120,
+  "original_m1_tet10_labelled": 9736,
+  "label_counts": {
+    "zero": 9477,
+    "one": 21,
+    "intermediate": 238
+  },
+  "label_kappa_mean_centroid": 0.011878045408035928,
+  "target_local_volume_ratio": [
+    0.8,
+    1.0
+  ],
+  "native_1d_2d_3d_attempts": 0,
+  "physical_FEM_attempts": 0,
+  "raw_original_m1_binary_sha_independently_checked": false,
+  "raw_gmsh_exe_binary_sha_independently_checked": false,
+  "m2_mesh_created": false,
+  "m2_curved27qp_QA": false,
+  "m2_realized_9zone_volumes": false,
+  "p10ea_02_marker_consumption_in_this_preflight": false,
+  "current_windows_markers_directly_inspected": false,
+  "negative_mutations_stopped": [
+    "tamper F6 GEO",
+    "tamper baseline",
+    "wrong M1 SHA",
+    "fake native 3D",
+    "fake parse success",
+    "native parse CLI changed to -3",
+    "native parse missing completion",
+    "bad Tet10 label count"
+  ],
+  "negative_stopped_count": 8
+}
