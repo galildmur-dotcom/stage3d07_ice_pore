@@ -67,10 +67,16 @@ def main() -> int:
             "qp_per_tet": order**3,
             "zone_effective_volume_ratio_M2_over_M1": zone_ratio,
             "north_south_effective_volume_ratio_M2_over_M1": ns_ratio,
+            "m1_zone_effective_tet_volume_m3": ra["qp_effective_tet_volume_m3"],
+            "m2_zone_effective_tet_volume_m3": rb["qp_effective_tet_volume_m3"],
+            "m1_north_south_effective_tet_volume_m3": ra["qp_north_south_effective_tet_volume_m3"],
+            "m2_north_south_effective_tet_volume_m3": rb["qp_north_south_effective_tet_volume_m3"],
             "zone_geometric_volume_ratio_M2_over_M1": [
                 vb/va for va, vb in zip(ra["qp_spatial_volumes_m3"], rb["qp_spatial_volumes_m3"])],
             "m1_region_volume_m3": ra["qp_spatial_volumes_m3"],
             "m2_region_volume_m3": rb["qp_spatial_volumes_m3"],
+            "m1_north_south_region_volume_m3": ra["qp_north_south_region_volume_m3"],
+            "m2_north_south_region_volume_m3": rb["qp_north_south_region_volume_m3"],
         }
 
     hot = (RAD[0], POL[0])
@@ -78,6 +84,7 @@ def main() -> int:
            "first QP region must be full kappa=1 near-pore polar cap")
     q3, q5, q7, q9 = (refinements[str(o)]["zone_effective_volume_ratio_M2_over_M1"][0]
                         for o in (3, 5, 7, 9))
+    north_q9, south_q9 = refinements["9"]["north_south_effective_volume_ratio_M2_over_M1"][:2]
     output = {
         "protocol": "P10EM_ORIGINAL_P10EK_M2_INDEPENDENT_FIXED_3D_QP_SPATIAL",
         "raw_mesh_sha256": {"M1": M1_SHA, "P10EK_M2": P10EK_M2_SHA},
@@ -97,6 +104,10 @@ def main() -> int:
             "orders_3_5_7_9_ratio": [q3, q5, q7, q9],
             "largest_last_order_change": abs(q9-q7),
             "order9_below_0p8_warning": q9 < .8,
+            "order9_north_ratio": north_q9,
+            "order9_south_ratio": south_q9,
+            "region_level_D023_characteristic_volume_gate": (
+                "STOP_BELOW_0P8" if q9 < .8 else "NOT_AUTO_GO"),
         },
         "interpretation_limits": [
             "fixed physical zones compare effective volumes, not identical Tet10 elements",
