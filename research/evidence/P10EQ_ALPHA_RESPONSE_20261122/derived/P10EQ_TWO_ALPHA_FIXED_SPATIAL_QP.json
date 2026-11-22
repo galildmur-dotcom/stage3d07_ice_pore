@@ -1,0 +1,191 @@
+{
+  "protocol": "P10EQ_TWO_ALPHA_REALIZED_FIXED_3D_SPATIAL_RESPONSE_SOURCE_ONLY",
+  "status": "ALPHA_SCALAR_BACKTRACKING_NOT_RELIABLE_D025_BAND_STOP_NO_FEM",
+  "raw_meshes_not_published": true,
+  "no_new_Gmsh_no_FEM": true,
+  "M1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "observed_meshes": {
+    "P10EK_alpha20": "f7183efdaff22b0ed7c281104ee00e18499c0d53f087100e08959a7d4a43250b",
+    "P10EN_alpha17": "04a5a16111ebfa1219cd628355b83eb2b5e7bf0d3238c08a3fff118377bfc8f0"
+  },
+  "fixed_physical_region": "distance0..100um abs(mu)>=0.8; north/south separated",
+  "effective_local_tet_volume": "fixed zone volume / fractional intersecting Tet10 count",
+  "rows": [
+    {
+      "region": "north",
+      "qp_per_tet": 27,
+      "alpha20_M2_over_M1": 0.731570580615645,
+      "alpha17_M2_over_M1": 0.7334586794198048,
+      "alpha20_reduction_percent": 26.842941938435505,
+      "alpha17_reduction_percent": 26.65413205801952,
+      "delta_ratio_after_alpha_decrease": 0.0018880988041598545,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "south",
+      "qp_per_tet": 27,
+      "alpha20_M2_over_M1": 0.8100890766669692,
+      "alpha17_M2_over_M1": 0.9097081921729919,
+      "alpha20_reduction_percent": 18.991092333303083,
+      "alpha17_reduction_percent": 9.029180782700807,
+      "delta_ratio_after_alpha_decrease": 0.09961911550602276,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "both_poles",
+      "qp_per_tet": 27,
+      "alpha20_M2_over_M1": 0.7704657093805444,
+      "alpha17_M2_over_M1": 0.8151883919494978,
+      "alpha20_reduction_percent": 22.953429061945563,
+      "alpha17_reduction_percent": 18.481160805050223,
+      "delta_ratio_after_alpha_decrease": 0.0447226825689534,
+      "alpha17_new_band_pass": true,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "north",
+      "qp_per_tet": 125,
+      "alpha20_M2_over_M1": 0.7202664161391512,
+      "alpha17_M2_over_M1": 0.7137582150997444,
+      "alpha20_reduction_percent": 27.97335838608488,
+      "alpha17_reduction_percent": 28.624178490025564,
+      "delta_ratio_after_alpha_decrease": -0.006508201039406858,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": true
+    },
+    {
+      "region": "south",
+      "qp_per_tet": 125,
+      "alpha20_M2_over_M1": 0.7960407532570718,
+      "alpha17_M2_over_M1": 0.8766512594088578,
+      "alpha20_reduction_percent": 20.39592467429282,
+      "alpha17_reduction_percent": 12.33487405911422,
+      "delta_ratio_after_alpha_decrease": 0.080610506151786,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "both_poles",
+      "qp_per_tet": 125,
+      "alpha20_M2_over_M1": 0.7578699732197715,
+      "alpha17_M2_over_M1": 0.7915036021015515,
+      "alpha20_reduction_percent": 24.213002678022853,
+      "alpha17_reduction_percent": 20.849639789844854,
+      "delta_ratio_after_alpha_decrease": 0.03363362888178001,
+      "alpha17_new_band_pass": true,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "north",
+      "qp_per_tet": 343,
+      "alpha20_M2_over_M1": 0.71966440370632,
+      "alpha17_M2_over_M1": 0.7191836193401918,
+      "alpha20_reduction_percent": 28.033559629368,
+      "alpha17_reduction_percent": 28.08163806598082,
+      "delta_ratio_after_alpha_decrease": -0.0004807843661281952,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": true
+    },
+    {
+      "region": "south",
+      "qp_per_tet": 343,
+      "alpha20_M2_over_M1": 0.8114575393340572,
+      "alpha17_M2_over_M1": 0.8864909149226039,
+      "alpha20_reduction_percent": 18.854246066594282,
+      "alpha17_reduction_percent": 11.35090850773961,
+      "delta_ratio_after_alpha_decrease": 0.07503337558854672,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "both_poles",
+      "qp_per_tet": 343,
+      "alpha20_M2_over_M1": 0.7651709340337666,
+      "alpha17_M2_over_M1": 0.7981627604797704,
+      "alpha20_reduction_percent": 23.482906596623344,
+      "alpha17_reduction_percent": 20.18372395202296,
+      "delta_ratio_after_alpha_decrease": 0.03299182644600385,
+      "alpha17_new_band_pass": true,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "north",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.7242307903067793,
+      "alpha17_M2_over_M1": 0.7201707321225406,
+      "alpha20_reduction_percent": 27.57692096932207,
+      "alpha17_reduction_percent": 27.982926787745942,
+      "delta_ratio_after_alpha_decrease": -0.004060058184238713,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": true
+    },
+    {
+      "region": "south",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.8031802142081156,
+      "alpha17_M2_over_M1": 0.8864601880672247,
+      "alpha20_reduction_percent": 19.681978579188442,
+      "alpha17_reduction_percent": 11.35398119327753,
+      "delta_ratio_after_alpha_decrease": 0.08327997385910912,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    {
+      "region": "both_poles",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.763502464700943,
+      "alpha17_M2_over_M1": 0.7986062309655798,
+      "alpha20_reduction_percent": 23.649753529905702,
+      "alpha17_reduction_percent": 20.13937690344202,
+      "delta_ratio_after_alpha_decrease": 0.03510376626463685,
+      "alpha17_new_band_pass": true,
+      "alpha_decrease_did_not_coarsen_region": false
+    }
+  ],
+  "order9": {
+    "north": {
+      "region": "north",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.7242307903067793,
+      "alpha17_M2_over_M1": 0.7201707321225406,
+      "alpha20_reduction_percent": 27.57692096932207,
+      "alpha17_reduction_percent": 27.982926787745942,
+      "delta_ratio_after_alpha_decrease": -0.004060058184238713,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": true
+    },
+    "south": {
+      "region": "south",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.8031802142081156,
+      "alpha17_M2_over_M1": 0.8864601880672247,
+      "alpha20_reduction_percent": 19.681978579188442,
+      "alpha17_reduction_percent": 11.35398119327753,
+      "delta_ratio_after_alpha_decrease": 0.08327997385910912,
+      "alpha17_new_band_pass": false,
+      "alpha_decrease_did_not_coarsen_region": false
+    },
+    "both_poles": {
+      "region": "both_poles",
+      "qp_per_tet": 729,
+      "alpha20_M2_over_M1": 0.763502464700943,
+      "alpha17_M2_over_M1": 0.7986062309655798,
+      "alpha20_reduction_percent": 23.649753529905702,
+      "alpha17_reduction_percent": 20.13937690344202,
+      "delta_ratio_after_alpha_decrease": 0.03510376626463685,
+      "alpha17_new_band_pass": true,
+      "alpha_decrease_did_not_coarsen_region": false
+    }
+  },
+  "interpretation": [
+    "alpha reduction .20 to .17 did not coarsen the north kappa1 region",
+    "south region coarsened past the new 15 percent minimum refinement",
+    "both-poles aggregate passes but hides opposite local violations",
+    "smooth axisymmetric source h does not guarantee monotone realized Tet10 volume",
+    "the topology sensitivity explanation is plausible, not a proven unique mechanism",
+    "next stage should analyze realized M1 local sizes and spatial gradation before another one-shot mesh"
+  ],
+  "physical_FEM_allowed": false
+}
