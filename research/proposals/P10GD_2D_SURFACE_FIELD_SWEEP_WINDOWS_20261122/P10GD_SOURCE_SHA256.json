@@ -1,0 +1,30 @@
+{
+  "revision": "P10GD_R1_SURFACE_FIELD_SWEEP_ONLY_NO_3D_NO_FEM",
+  "theta_values": [
+    0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1
+  ],
+  "native_3d_max_attempts": 0,
+  "FEM_max_attempts": 0,
+  "M0_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "M1V_sha256": "c3f69d3d6f3d88333f2aec7a5aa13db535f9eed4e76ba6c29bed4b88fa31ea06",
+  "M1W_sha256": "fe77956c50534bfd0b6f84954b07f195e6449648bd71d5a6640d048aea9a5df2",
+  "files": {
+    "01_P10GD_2D_ONLY_NO_3D_NO_FEM.cmd": "fcfd8bae668ca3224471a818cc10dfe1d34a23caecc7830bb733774ac1ef2c90",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "P10FX_REAL_M0_M1_SIGNED_18_ZONE_729QP.json": "47077642f63d7fb3ebc7ac7940f09901417128c845874ad2d9d90ec82e0f0249",
+    "P10FX_uniform_math.py": "d6c6976bd4476566957572daecceea6f9dc14195b06ded3c7c8ba6e96e28ecdf",
+    "P10GA_M0_M1V_SIGNED18_343_729QP.json": "d641a289676dad1b6bf6d9bb2f6e5e2fa979335dafb1820492b901c35dee4304",
+    "P10GB_adapt_math.py": "341133b8a77b8fa5f76863d41c47e7ab7ace204a4fa7aee916a4e18e811f3ef4",
+    "P10GD_surface_sweep.py": "777ce9ef62c26a400451dd5a6fe74c063ca00103eaa940583d8d404924c38b55",
+    "README_P10GD_RU.md": "6781a46fd3fe4bc2be701fd67741ba6c0f2759326d19fd3d640b0083b0a1e369",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}
