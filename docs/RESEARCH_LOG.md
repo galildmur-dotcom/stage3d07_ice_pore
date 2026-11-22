@@ -875,3 +875,7 @@ Investigator answered explicit «разрешаю» for **one new native Gmsh `-
 ## 2026-11-22 — P10EI: source-only azimuthal angular-bin Tri6 audit of P10EF R2
 
 Verified exact private original M1/M2/B SHA, no new Gmsh/FEM. Curved Tri6 matching 24 fixed mu×phi physical bins, 5²→35² QP, strong phi variation despite axisymmetric kappa=1: southern B/M1 quarter ratios 0.73369, 0.91262, 0.93765, 0.58200; northern 0.90282, 0.96076, 0.74377, 0.69494, vs polar area target0.86177. Weighted RMS target-relative deviation 13.83%, worst32.46%; 25→35QP stable, individual bins have low N_eff and are diagnostic only. Surface ratios cannot prove actual 3D Tet10 volume constraint. P10EI source/derived/report committed; 3D Gmsh and FEM remain STOP.
+
+## 2026-11-22 — D-023A: smoothness required, not uniformity across azimuth
+
+Investigator explicitly clarified that uniformity of realized Tri6/Tet10 sizes is not an acceptance requirement. Smoothness of prescribed h(x) and κ(x), acceptable local element quality/gradation, sequential refinement M1→...→MN, and convergence of analytical shape derivatives are required. P10EI sector variability is a diagnostic observation, not standalone STOP or a reason for artificial phi-equalization. The D-023 20% per-step characteristic local-volume limit is unchanged. Documentation corrected source-only; no Gmsh/FEM.
