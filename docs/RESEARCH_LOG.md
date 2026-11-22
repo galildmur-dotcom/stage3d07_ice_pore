@@ -991,3 +991,12 @@ across faces p95 1.0624/max1.1355; curvature is not the unique cause,
 but contributes to the extreme tails. Corner shape/aspect diagnostics
 recorded, no new mesh/FEM. Report P10FJ_P10FB_CORNER_VS_CURVED_POLAR_NEIGHBOUR_AUDIT_20261122.md.
 
+## 2026-11-22 — P10FK real P10FB M2 polar corner anisotropy and orientation
+
+Same 419 near-polar neighbour pairs divided into severe95/nonsevere324.
+Median max PCA-axis ratio3.909/3.012, max corner-edge aspect2.201/1.987,
+max affine condition6.476/4.977, mean radial alignment of longest
+edge0.502/0.729. North severe52 (alignment0.643), south43 (0.456).
+Association with q jumps is not a causal proof or hard quality gate.
+No new Gmsh/FEM; report P10FK_P10FB_POLAR_CORNER_ORIENTATION_AND_ASPECT_AUDIT_20261122.md.
+
