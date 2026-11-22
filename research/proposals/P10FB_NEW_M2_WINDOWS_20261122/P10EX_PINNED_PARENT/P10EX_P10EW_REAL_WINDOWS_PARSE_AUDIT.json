@@ -1,0 +1,18 @@
+{
+  "protocol": "P10EX_INDEPENDENT_ORIGINAL_P10EW_NATIVE_WINDOWS_PARSE2_AUDIT",
+  "original_evidence_zip_sha256": "ca9a6dcd0127a6c7a3aeeef21e822b0674c58a2886c4671a9fe5d49351c79821",
+  "zip_crc_members": 10,
+  "status": "P10EW_REAL_WINDOWS_PARSE2_PASS_NO_NEW_M2_NO_FEM",
+  "accepted_M1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "corrected_C1_GEO_sha256": "d68570270dfb5ca2232d8fc94486e5638223b3604c933312b4036d5bb8d19b72",
+  "Gmsh_4_15_2_exe_sha256": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "native_parse_A_M1_Field2": "PASS",
+  "native_parse_B_StrCat_C1_Field6": "PASS",
+  "original_4198_character_expression_byte_exact": true,
+  "native_Gmsh_3d_attempts": 0,
+  "FEM_attempts": 0,
+  "authorized_new_3d_attempt_spent": false,
+  "new_M2_raw": "NOT_GENERATED",
+  "real_D025_north_south": "UNKNOWN",
+  "next_action": "new isolated guarded one native Gmsh -3 M2; real curved27QP and fixed 343/729QP D025 audit before any FEM"
+}

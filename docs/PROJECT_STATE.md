@@ -985,3 +985,71 @@ P10DK independent auditor и новый scripts/p10dm_verify_real_m1_pair_h0.py 
 **C (безопасное исправление):** новый **только SOURCE-ONLY** `gmsh/P10EY_M2_C1_JOINT_STRCAT_SIGN_SOURCE_ONLY.geo` меняет единственно `+-` на `-`, то есть `A+(-c)B=A-cB` при c=.0031079955054980225. Новая MathEval 4197 символов разбита StrCat на [600×6,597], без соседних бинарно-унарных операторов. Независимые 2000 сравнений исходного и исправленного поля: максимальное относительное различие **0**; 7620 точек против P10ET C¹ PASS. Никаких новых Gmsh -1/-2/-3, raw M2 или FEM здесь не выполнено. Протокол `research/P10EY_REAL_P10EX_ONESHOT_MATHEX_STOP_AND_SIGN_SOURCE_REPAIR_20261122.md`, публичный derived JSON `research/evidence/P10EY_P10EX_REAL_MATHEX_STOP_20261122/derived/`. Оригинальный user ZIP/partial MSH не публиковать.
 
 **D (следующий один шаг):** после **отдельного разрешения** готовить маленькую ограниченную **native Gmsh -1** пробу компиляции и реального вычисления исправленного MathEval на коротких отрезках север/юг/κ0; не пытаться новую -3 или FEM. Только после actual MathEx eval PASS отдельно спрашивать новое разрешение на одну новую 3D mesh-only M2. Ранее выданное разрешение P10EX полностью использовано; действующий D025 north/south [0.75,0.85] и гладкость поля неизменны.
+## 117. P10EZ — разрешена и подготовлена одна новая 1D MathEx проба (22.11.2026)
+
+После фактического P10EX MathEx STOP и P10EY source-only коррекции
+исследователь ответил «разрешаю» на продолжение последнего минимального
+этапа. Подготовлен изолированный P10EZ Windows one-shot **только `gmsh -1`**
+на трёх коротких линиях север/юг/экватор, с точным перенесённым
+4197-символьным P10EY `Field6` (SHA2aec3e26...), Gmsh4.15.2 EXE
+SHA317c4339..., 24h proof, двумя постоянными маркерами,
+лимитами20с/2GiB/10MiB mesh/2MiB log. **На данный момент новый native
+Gmsh не выполнен, 3D M2=0, D025 UNKNOWN, FEM=0.** Подробный научный
+контракт `research/P10EZ_AUTHORIZED_ONE_NATIVE_MATHEX_1D_WINDOWS_PREPARED_20261122.md`.
+Действующие старые P10EX/P10EW/P10EV кнопки не запускать. После
+оригинального `P10EZ_EVIDENCE.zip` выполнить независимый аудит и лишь
+затем решать, разрешать ли одну новую полноценную mesh-only M2.
+
+## 118. P10FA — оригинальный P10EZ native 1D PASS аудирован (22.11.2026)
+
+Получены оригинальные preflight `P10EZ_EVIDENCE.zip` SHA0ebeb155... (CRC3/3)
+и single-native `P10EZ_EVIDENCE(1).zip` SHAd4da0b31... (CRC5/5).
+P10EZ native Gmsh4.15.2 `-1` exit0, 0.2055с, peak private7.27MB,
+1 попытка, stop=null, все 3 линии физически представлены по 5 Line2-node
+elements: NORTH101/SOUTH102/EQUATOR103, raw 18nodes/15 physical Line elements
+SHA6b06224f.... Native 2D/3D=0, FEM=0; accepted M2 отсутствует,
+D025 UNKNOWN. Первичные ZIP остаются приватными. Полный протокол
+`research/P10FA_REAL_P10EZ_NATIVE_THREE_LINE_PASS_AUDIT_20261122.md`.
+P10EZ one-shot израсходован, его 02 и старую P10EX 02 не повторять;
+новая 3D M2 требует отдельного явного разрешения исследователя.
+
+## 119. P10FB — новая одноразовая 3D M2 программа подготовлена, Gmsh не запускался (22.11.2026)
+
+По разрешению исследователя подготовлен P10FB с точным P10EY MathEx
+4197 символов (single sign repair), исходной P10DG M1 и новой отдельной
+парой marker/proof. Source SHA pin, inherited P10EX parent ZIP SHA,
+synthetic duplicate-marker STOP, Linux native STOP и extracted ZIP selftest
+PASS; ZIP SHA543edf1e..., 70 членов CRC PASS. Реальный native -3=0,
+M2=NONE, D025=UNKNOWN, FEM=0. Контракт
+`research/P10FB_NEW_ONE_M2_SIGN_REPAIR_WINDOWS_SOURCE_PREPARED_20261122.md`.
+GitHub публикация предыдущих локальных P10EZ/P10FA пока не состоялась:
+push через HTTPS остановлен отсутствием учётных данных, не заявлять
+remote SHA без проверки. Старый P10EX one-shot не повторять.
+
+## 120. P10FG — реальная P10FB M2, полярный D025 QP PASS; ввод фраз отменён (22.11.2026)
+
+Пользователь передал оригинальный `P10FB_EVIDENCE.zip` SHA0eb033cc..., CRC19/19;
+raw M2 SHAff6500e2... (пересчитан из ZIP), native Gmsh -3 exit0,
+14723 nodes/10094 Tet10/194 pore Tri6, curved27QP Jacobians positive0 issues,
+FEM0. Независимый расчёт той же фиксированной север/юг области 0–100мкм
+и μ≥0.8 на новой M2 и ранее опубликованном P10ER M1 baseline:
+343→729QP север `0.755036→0.756974`, юг `0.790824→0.793518`;
+оба в требуемой полосе [0.75,0.85], геометрический полярный
+D025 **PASS в оговорённых QP пределах**, гладкость соседних размеров
+и физические производные ещё PENDING. Протокол `research/P10FG_P10FB_REAL_M2_FIXED3D_POLAR_QP_AND_NONINTERACTIVE_POLICY_20261122.md`.
+По новому решению пользователя будущие One Click кнопки не должны
+требовать ввода ручных фраз или символов, и по возможности путей;
+SHA/fresh-proof/one-shot markers/caps и запрет повтора сохраняются.
+
+## 121. P10FH — реальная M2 D025 polar PASS, дискретная гладкость требует исследования (22.11.2026)
+
+На P10FB M2 по curved27QP face-neighbour characteristic h ratio
+полярный p95=1.42574, 95/419=22.67% граней q>1.25;
+исходная P10DG M1 p95=1.31633 и50/393=12.72%.
+Это ухудшение **дискретной соседней регулярности**, не нарушение
+математического C¹ размерного поля и не автоматический STOP D025;
+полярный 343/729QP D025 остаётся внутри [.75,.85] обоими полюсами.
+До FEM следующая read-only задача — пространственно локализовать
+соседние q>1.25 и отделить реальный градиент h(x) от remeshing
+topology effects. Протокол `research/P10FH_P10FB_ADJACENT_TET10_SMOOTHNESS_AUDIT_20261122.md`.
+

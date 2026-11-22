@@ -769,3 +769,27 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **B (изолированная воспроизводимая причина):** исходная Gmsh MathEx4.15.2 parsearithmetic1 запрещает `+-`, а native caret col1526 точно указывает на единственный в 4198-символьном Field6 `+-0.0031079955...` на col1524. Ранее P10EW GEO parse PASS не означал MathEval evaluation PASS. Новый `gmsh/P10EY_M2_C1_JOINT_STRCAT_SIGN_SOURCE_ONLY.geo` заменяет один токен `+-` на математически эквивалентный `-`, 4197 символов StrCat chunks600×6+597, без других математических изменений. Independently Python original/repaired 2000 точек relative0, P10ET C¹ 7620 points PASS. **Новый native Gmsh0, FEM0**. Исходный пользовательский ZIP/partial MSH остаются приватными, в Git только derived JSON.
 
 **C (следующий научный эксперимент):** перед новой полноценной -3 подготовить/санкционировать **один короткий ограниченный native Gmsh -1** тест вычисления исправленного MathEval в κ1 север/юг и κ0, с новым отдельным marker и одним минимальным evidence ZIP. Это отдельное разрешение: прежняя P10EX -3 уже израсходована. Даже после functional MathEx PASS новый 3D mesh-only и FEM потребуют отдельных решений; действующий D025 north/south real Veff 343→729QP [0.75,0.85]. Полный протокол `research/P10EY_REAL_P10EX_ONESHOT_MATHEX_STOP_AND_SIGN_SOURCE_REPAIR_20261122.md`.
+### N-P10EZ — Windows native MathEx 1D diagnostic prepared, not executed
+
+Authorized one-shot test uses exact SHA-pinned P10EY Field6 on independent
+north/south/equator 1D line curves. Current evidence level is **SOURCE/UNIT
+ONLY**: native 1D PENDING; accepted M2=NONE; measured D025=UNKNOWN;
+forward/adjoint/FEM=0. Protocol:
+`research/P10EZ_AUTHORIZED_ONE_NATIVE_MATHEX_1D_WINDOWS_PREPARED_20261122.md`.
+
+### N-P10FA — original native 1D Gmsh MathEx PASS, 3D D025 pending
+
+Original P10EZ Windows native exit0, 0.2055s, 3×5 one-dimensional elements;
+both ZIP CRC PASS, original MSH SHA pinned. This confirms a bounded 1D
+MathEx/mesh smoke test, **not** 3D M2 or polar volume ratio.
+See `research/P10FA_REAL_P10EZ_NATIVE_THREE_LINE_PASS_AUDIT_20261122.md`.
+
+### N-P10FG — real P10FB mesh and fixed3D polar D025 positive geometry evidence
+
+Original ZIP CRC19/19, raw M2 SHAff6500e2..., native Gmsh -3 exit0,
+10094 Tet10, curved27QP positive; 343/729QP north ratios
+0.755036/0.756974, south0.790824/0.793518 vs archived P10ER M1.
+**Geometric D025 polar-band PASS only**; adjacent-element smoothness,
+full FEM and sensitivity convergence remain unproven.
+`research/P10FG_P10FB_REAL_M2_FIXED3D_POLAR_QP_AND_NONINTERACTIVE_POLICY_20261122.md`.
+

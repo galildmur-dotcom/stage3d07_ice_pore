@@ -1,0 +1,20 @@
+{
+  "revision": "P10DV_R1_EXACT_INLINE_C1_KAPPA20_SOURCE_ONLY_NO_GMSH_NO_FEM",
+  "native_gmsh_runs": 0,
+  "mesh_1d_2d_3d_runs": 0,
+  "physical_FEM": false,
+  "accepted_original_m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "original_p10dn_geo_sha256": "d948d7b2b29d70435bbf58bc4ee22f91de353e9162fd954f6fe56a2a40f3ca4f",
+  "original_p10dn_source_zip_sha256": "2f0e4a222a35fba618f9123f6235325bd09af9ce0cdb67d425a0c94ce906489b",
+  "p10dt_source_zip_sha256": "f540adb8f7e9dc4a58fea8ebe5784c99fe4f2607cb6b82cf5ac65dd398b1eb08",
+  "p10dt_windows_evidence_zip_sha256": "9c4602ac29a08dd8faa5e977990a3f138f73a39c242dcc3167b09f23bf46d414",
+  "gmsh_4_15_2_Field_cpp_git_blob_sha": "427911696c813c5543caa37b527a985775fa6d4e",
+  "files": {
+    "01_P10DV_SOURCE_MATH_ONLY.cmd": "7edabf1ca3b501aded26a2229139c87203e7f1bd2a2c92b2ba00ea9866b76dc6",
+    "P10DN_M2_FIELD20.geo": "d948d7b2b29d70435bbf58bc4ee22f91de353e9162fd954f6fe56a2a40f3ca4f",
+    "P10DV_M2_INLINE_FIELD20.geo": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+    "P10DV_inline_source_unit.py": "7feedec7b6e2927c8a4e322cfd5cba3ef76892734d08c51ef0e4fe0899c5f93b",
+    "README_P10DV_RU.md": "dc9a3dbf00e9d4b70c55371f34e9f77d1ba47c08cd37a570c442fa3a0aa8c5bc",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}

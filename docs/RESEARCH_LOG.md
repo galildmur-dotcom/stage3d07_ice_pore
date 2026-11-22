@@ -937,3 +937,36 @@ New independent P10EX R1 Windows source ZIP129786B SHA84a0570c... CRC58/58 inclu
 User original private P10EX_EVIDENCE.zip14051B SHA330f1a39... CRC14/14 independently audited against all exact source/M1/exe/native log SHA pins. Gmsh4.15.2 real -parse2 PASS followed by exactly one consumed one-shot -3: native exit1, polled wall2.8109744s, peak private253898752B, log23443B; first error `mathex::parse() Invalid expression` in Field6 (not GEO lexer), then empty pore surfaces 7/8 and HXT3D fail; 20 warnings/5 errors, partial unaccepted mesh3124 nodes/1584 elements, raw M2 SHA unknown, no real D025, FEM0. **P10EX 02 must never run again; both permanent one-shot markers remain immutable.**
 
 Exact MathEx error caret zero-index1526 located immediately after unique `+-` at 1524–1525 from the 4198-character C1 sizing expression. Official Gmsh4.15.2 `mathex.cpp` parsearithmetic1 explicitly prohibits consecutive plus/minus tokens; previous P10EW native `-parse_and_exit` did not compile the field evaluator, and Python source AST accepted `+-`. New independently generated P10EY GEO changes `+-` to `-` **only** (math equivalent), expression4197, StrCat parts [600×6,597], 2000-point old/new parity relative0 and P10ET 7620 point C1 PASS. Pure source-only: **no further Gmsh/M2/FEM**. Proposed next distinct experiment is one **separately authorized bounded native -1 MathEval evaluation smoke test**, with fresh guard/proof/evidence, before any newly authorized -3. Full report `research/P10EY_REAL_P10EX_ONESHOT_MATHEX_STOP_AND_SIGN_SOURCE_REPAIR_20261122.md`.
+## 2026-11-22 — P10EZ authorized isolated one-shot MathEx 1D prepared
+
+After latest P10EY source-only sign correction, researcher permitted the next
+short native diagnostic. Prepared isolated three-curve Windows Gmsh -1 candidate
+with byte-identical P10EY 4197-character MathEval StrCat Field6, exact source
+SHA pin, Gmsh4.15.2 EXE SHA pin, fresh 24h proof, exclusive persistent
+one-shot markers, watchdog20s/2GiB private/10MiB mesh/2MiB log, and compact
+original evidence ZIP. Python source selftest PASS; **no native Windows run,
+no 3D M2, no FEM, no D025 evidence**. One original P10EZ_EVIDENCE.zip
+is needed after researcher runs 01 and (upon PASS) exactly one 02.
+See `research/P10EZ_AUTHORIZED_ONE_NATIVE_MATHEX_1D_WINDOWS_PREPARED_20261122.md`.
+
+## 2026-11-22 — P10FA original P10EZ Windows one 1D PASS independently audited
+
+Two original ZIPs CRC3/3 and CRC5/5, original manifest/native log/MSH2
+independently checked. One Gmsh4.15.2 -1 native exit0, 0.2055s,
+peak private7.266MB, no Errors; physical NORTH101/SOUTH102/EQUATOR103
+five line elements each (18 nodes, 15 exported elements), raw MSH
+SHA6b06224f... . This is a MathEx 1D smoke PASS only: no measured
+3D volume response, no accepted M2, no D025 and no FEM. P10EZ one-shot
+consumed. Detailed report P10FA_REAL_P10EZ_NATIVE_THREE_LINE_PASS_AUDIT_20261122.md.
+
+## 2026-11-22 — P10FG real P10FB M2 D025 fixed north/south geometry PASS
+
+Original user ZIP SHA0eb033cc... CRC19/19 with raw M2 SHAff6500e2...
+independently hashed. Gmsh4.15.2 native -3 exit0, 10094 Tet10,
+curved27QP geometry PASS, physical FEM0. Independent fixed3D effective
+Tet volume uses actual M2 7^3/9^3 QP and published pinned P10ER M1
+baseline: north 0.755036/0.756974, south 0.790824/0.793518;
+both [0.75,0.85] in both QP resolutions. No claim of FEM or full
+spatial convergence. Researcher additionally ordered zero manual typed
+confirmation in all future one-click launches; retain SHA and markers.
+
