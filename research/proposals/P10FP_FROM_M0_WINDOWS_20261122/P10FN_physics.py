@@ -64,6 +64,17 @@ def compiler():
     raise RuntimeError("MinGW g++.exe unavailable; set P10FN_GPP to existing Qt Creator MinGW compiler path")
 
 
+def compiler_environment(toolchain):
+    """Qt MinGW's cc1plus.exe loads libwinpthread-1.dll from its own bin.
+
+    A full path to g++.exe alone is insufficient: every subprocess involved
+    in compilation must inherit this PATH, not just the final physics EXE.
+    """
+    env = os.environ.copy()
+    env["PATH"] = str(toolchain.parent) + os.pathsep + env.get("PATH", "")
+    return env
+
+
 def ensure_binary():
     # Rebuild when any source inventory/compiler changed; pin EXE afterwards.
     toolchain = compiler()
@@ -87,13 +98,15 @@ def ensure_binary():
                "-I", str(HERE), str(HERE/"stage3d10fn_any_mesh_full4d.cpp"),
                str(HERE/"src"/"win_process_memory.cpp"), "-lpsapi",
                "-o", str(temp_exe)]
+    env = compiler_environment(toolchain)
+    print("P10FR_COMPILING: Qt MinGW bin added to PATH:", toolchain.parent, flush=True)
+    print("P10FR_COMPILER_LOG:", log, flush=True)
     with log.open("x", encoding="utf-8") as sink:
-        result = subprocess.run(command, cwd=HERE, stdin=subprocess.DEVNULL,
+        result = subprocess.run(command, cwd=HERE, env=env, stdin=subprocess.DEVNULL,
                                 stdout=sink, stderr=subprocess.STDOUT,
                                 timeout=900, check=False)
     need(result.returncode == 0 and temp_exe.is_file(), "MinGW compilation failed; see " + str(log))
-    env = os.environ.copy()
-    env["PATH"] = str(toolchain.parent) + os.pathsep + env.get("PATH", "")
+    print("P10FR_COMPILE_SUCCESS: running EXE guard selftest", flush=True)
     checked = subprocess.run([str(temp_exe), "--selftest"], cwd=HERE, env=env,
                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                              text=True, timeout=90, check=False)
@@ -108,15 +121,27 @@ def ensure_binary():
 
 def selftest():
     record = approvals(allow_empty=True)
-    assert record == {}, "new M0 experiment must start without any historical approvals"
+    # The initial ZIP has no approvals, but the user MUST add M0.json after
+    # P10FQ geometry GO. The check launcher must continue to pass then.
+    if record:
+        need("M0" in record and
+             record["M0"].get("schema") == "P10FQ_FRESH_M0_GEOMETRY_GO_V1",
+             "approval folder is not anchored in independently reviewed fresh M0")
     assert len(CSV) == 5 and REGIME["dt"] * REGIME["steps"] == 900
-    print("P10FP_FRESH_SERIES_PHYSICS_SELFTEST_OK no_FEM=1 no_historic_approvals=1")
+    example = Path("synthetic_bin") / "g++.exe"
+    assert compiler_environment(example)["PATH"].split(os.pathsep)[0] == str(example.parent)
+    print("P10FP_FRESH_SERIES_PHYSICS_SELFTEST_OK no_FEM=1 approved_meshes="+
+          ",".join(sorted(record, key=lambda m:int(m[1:]))))
 
 
 def run(mesh_arg, mode):
     require_windows()
+    print("P10FR_PREFLIGHT: checking source SHA and M0 approval",flush=True)
     validate_source()
     approved = approvals()
+    need("M0" in approved and
+         approved["M0"].get("schema") == "P10FQ_FRESH_M0_GEOMETRY_GO_V1",
+         "fresh-series root M0 approval missing; historical mesh approvals forbidden")
     need(mode in ("R", "tz", "y20"), "unsupported shape mode")
     if mesh_arg == "LATEST":
         options = [k for k in approved if (MESHES/(k+".msh")).is_file()]
@@ -128,7 +153,9 @@ def run(mesh_arg, mode):
     digest = sha256(file)
     need(digest == approved[mesh_arg]["mesh_sha256"],
          "mesh SHA does not match approved geometry (no FEM)")
+    print("P10FR_PREFLIGHT: approved",mesh_arg,"SHA",digest,"; checking Tet10 curved geometry",flush=True)
     qa = mesh_audit(file)
+    print("P10FR_PREFLIGHT: mesh QA PASS",qa["tet10"],"Tet10; locating/building MinGW solver",flush=True)
     toolchain, build = ensure_binary()
     marker = RUNS / "P10FN_LOCKS" / (f"PHYS_{mesh_arg}_{mode}_{digest[:16]}_{build['exe_sha256'][:12]}.json")
     need(not marker.exists(), "physical attempt already consumed for this mesh/mode/executable")
@@ -151,6 +178,7 @@ def run(mesh_arg, mode):
     env["PATH"] = str(toolchain.parent) + os.pathsep + env.get("PATH", "")
     env["P10FN_ONE_SHOT_MARKER"] = str(local_marker)
     log = folder / "P10FN_SOLVER_STDOUT_STDERR.txt"
+    print("P10FR_FEM_START:", mesh_arg, mode,"; 6 x 150s, one-shot marker consumed",flush=True)
     try:
         manifest["command"] = cmd
         manifest.update(capped_process(cmd, cwd=HERE, log=log, wall_s=21600,
