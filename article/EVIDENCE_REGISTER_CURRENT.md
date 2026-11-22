@@ -663,3 +663,11 @@ Primary user archive `P10CD_EVIDENCE(1).zip` SHA256 `f95ca025a417537758430e3ecb1
 **B:** scripts/p10ee_audit_pore_surface_sizing_source_only.py directly integrates raw pore Tri6 surface curved area at 9/25/81/225 QP and matches analytic cap area; source target Tri6 area M2/M1 0.861774, observed fixed-location polar area north1.076960/south1.038407/both1.057067. Derived JSON research/evidence/P10EE_PORE_SURFACE_SIZING_20261122/derived; full report research/P10EE_PORE_SURFACE_SIZING_CAUSAL_GATE_SOURCE_ONLY_20261122.md.
 
 **D:** surface under-refinement is directly measured and likely constrains 3D polar adaptation; sole mechanism not proved; global F6 was *not* omitted on the pore surface. No second20% factor or new native/physical run. P10EA one-shot consumed. Future candidate would test 2D mesher variants under new consent with 2D surface plus 3D volume criteria.
+
+## N-P10EF — source-only 2D mesher contrast, future bounded native pending (22.11.2026)
+
+**A:** original P10EA F6 SHA32f8f959..., CAD SHA8029a6..., original M1 SHAca6b6b65..., existing P10EA M2 alg6 SHAba1f1a..., P10EE direct Tri6 north/south area ratio M2/M1 1.076960/1.038407 vs target0.8^(2/3)=0.861774. No new mesh/raw file.
+
+**B:** source-only package research/packages/P10EF_R1_2D_DELAUNAY_SOURCE_ONLY_WINDOWS_20261122.zip SHA256 **7f4910c4fdcf669a386d687fc0eccd110b963614aceaee2bcf712a945771823a**, 8982B CRC7/7 PIN6/6, candidate alg5 GEO SHA2765018d... differs from alg6 control by one inserted line only; CAD/κ preserved. Negative4/4+isolated tamper STOP, builder research/proposals/P10EF_2D_DELAUNAY_SOURCE_ONLY_20261122/P10EF_build_source_package.py, full report research/P10EF_R1_PORE_SURFACE_DELAUNAY2D_SOURCE_ONLY_READY_20261122.md.
+
+**D:** only source-safe 01 in ZIP, no native 2D/3D runner, no FEM or marker write; B native behavior entirely unknown. Next candidate test could be ONE NEW separately authorized P10EF-only Gmsh -2 B followed by surface Tri6-QP both poles; then separate future 3D decision. P10EA -3 consumed, no repeats/marker deletion.

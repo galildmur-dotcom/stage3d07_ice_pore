@@ -1,0 +1,23 @@
+{
+  "revision": "P10EF_R1_2D_DELAUNAY_ONLY_SOURCE_PREP",
+  "mode": "SOURCE_ONLY_NO_NATIVE",
+  "original_m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "historical_m2_alg6_sha256": "ba1f1a0553a568c1b399acadd52bce1c1dc32e8d1c6b3ab1ce6759c547e5dee5",
+  "p10ea_r1_parent_release_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+  "exact_f6_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "cad_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "gmsh_version_for_any_future_separately_authorized_test": "4.15.2",
+  "native_gmsh_attempts_allowed_now": 0,
+  "physical_fem_attempts_allowed_now": 0,
+  "mesh_2d_algorithm_control": 6,
+  "mesh_2d_algorithm_candidate": 5,
+  "source_only_diff": "insert exactly one Mesh.Algorithm = 5; before Background Field=6;",
+  "files": {
+    "01_P10EF_CHECK_SOURCE_ONLY.cmd": "fc3f93fafd42bdaa647251b45b654d663592fab2b0472bf24aa29a3f5dbbac7f",
+    "A_P10EA_EXACT_F6_ALG6_CONTROL.geo": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+    "B_P10EF_EXACT_F6_ALG5_SURFACE_ONLY.geo": "2765018d8ddd2e83f28bd60af7c87b65172ac5da8389ede187d8bb9eea9d74c5",
+    "P10EF_SOURCE_CHECK.py": "28fcca360e8b10cf7882f6c8edcc8a458af2dad8f68cacab4ca9ebbda061faa9",
+    "README_P10EF_RU.md": "ecfc287a03824af649e38380630137f0ecd7aa3b53415ffb27e79439f315aa1d",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}
