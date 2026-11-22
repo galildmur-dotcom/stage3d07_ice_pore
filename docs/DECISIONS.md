@@ -205,3 +205,30 @@
 ## D-022 — одна отдельная P10EF R2 native 2D Delaunay5 surface-only попытка — УТВЕРЖДЕНО 22.11.2026
 
 На предложенное строго ограниченное продолжение P10EF R1 исследователь ответил **«разрешаю»**: это санкционирует только **один новый** bounded native Gmsh4.15.2 **`-2`** запуск 2D поверхности B Delaunay5 по exact F6/CAD/κ; **не** запуск контрольного A 2D, не прежнюю P10EA -3 (уже израсходована), не новый -3, не FEM/forward/adjoint/H0 cache. Оригинальная геометрически принятая M1 только P10DG SHA ca6b6b65..., historical M2 P10EA SHAba1f1a... только read-only сравнение. Перед запуском требуются source/GEO/EXE/M1/M2 safe01 native GEO `-parse_and_exit` PASS, proof≤24ч, button02 с точной фразой **RUN ONE P10EF 2D SURFACE**. Две эксклюзивные новые P10EF R2 local/profile метки расходуются **непосредственно перед native `-2`**, не очищать даже при fail/timeout/QA STOP. Пределы native wall120с, опрашиваемой private memory2GiB, 2D mesh25MiB, log4MiB, `-nt2`; дальнейший read-only Tri6 surface15²QP audit, без automatic GO к 3D/FEM. Результат сообщается оригинальным приватным evidence с исходной новой 2D MSH. Нельзя публиковать raw mesh в публичном Git, старые one-shot markers не изменять. Исходный source-only пакет R1 неизменен; отдельный пакет R2 готов только как код, Windows native выполнение **PENDING**. Ссылка на протокол `research/P10EG_P10EF_R2_ONE_2D_SURFACE_LAUNCHER_SOURCE_PREPARED_20261122.md`.
+
+## D-026 — разрешена одна новая native mesh-only M2 по P10EU C¹, без FEM (22.11.2026)
+
+После проверенного source-only P10EU исследователь ответил **«разрешаю»**
+на точное предложение подготовить и провести **одну новую**
+контролируемую M2 mesh-only попытку. Вновь санкционирован только
+**один** native Gmsh4.15.2 -3 с исходной P10DG M1 SHAca6b6b65...
+и единым P10EU C¹ MathEval GEO SHA4c4a4aeb...; прежде нужны
+отдельный Windows safe01, проверка source pins и native parse двух
+GEO. После fresh proof ≤24ч одна safe02 и точное подтверждение
+RUN ONE P10EV M2 3D MESH, новый неиспользованный локальный и
+глобальный P10EV marker, расходуемые прямо перед -3 и **никогда
+не удаляемые** даже при STOP. Старые P10EA/P10EK/P10EN маркеры,
+машинные кэши и исходные raw MSH не менять.
+
+Ограничения: -nt2, 900 секунд на Gmsh, 8GiB private memory,
+750MiB raw MSH, 16MiB full log, QA 300 секунд. Источник:
+research/P10EV_C1_ONE_NEW_M2_WINDOWS_MESH_ONLY_PREPARED_20261122.md
+и исходниковая Windows ZIP SHA20a7a322.... Сама подготовка пакета
+**не подтверждает реальный native запуск**; до evidence остаётся
+P10EV M2=PENDING. **Физика FEM=0** в пакете и не санкционирована.
+Прежнее D-025 неизменно: GO только после независимого actual
+north и south 3D объёмного коэффициента [0.75,0.85] при κ=1,
+343→729QP; κ=0 стремиться сохранять, плавность важна,
+Tri6-area и азимутальная равномерность не самостоятельные hard-gates.
+Даже после geometry+D-025 GO прямой и сопряжённый FEM на одной
+принятой M2 требуют **следующего отдельного разрешения**.
