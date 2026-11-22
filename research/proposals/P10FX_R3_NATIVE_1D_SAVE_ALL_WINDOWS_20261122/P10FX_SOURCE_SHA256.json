@@ -1,0 +1,24 @@
+{
+  "revision": "P10FX_R3_NATIVE_1D_SAVE_ALL_AND_M1V_NO_FEM",
+  "parent_M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "parent_M0_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "original_failed_M1_msh_sha256": "f281d253571db095b90790326f503dfa3f6fe3a1dc5cb5c904fca2787dfe4275",
+  "original_failed_M1_geo_sha256": "968ef2ed3f64160d51d1983ead31216758d164fa665fa7e6a9044f8fc04d64e8",
+  "candidate_name": "M1V_CANDIDATE",
+  "native_3d_max_attempts": 1,
+  "FEM_max_attempts": 0,
+  "preflight_requires_native_1d_mathex": true,
+  "files": {
+    "P10FX_one_click_m1v.py": "fe5dc10526c5af31e8312610283112e8a0247e1e70c2007c033b10b96fe69d05",
+    "P10FX_uniform_math.py": "d6c6976bd4476566957572daecceea6f9dc14195b06ded3c7c8ba6e96e28ecdf",
+    "01_P10FX_SAFE_PREFLIGHT_ONLY.cmd": "15844159143c27102481b83c6d564ffc8da72cdd2508eb07e73d72704aec3413",
+    "02_P10FX_ONE_M1V_3D_ONLY.cmd": "76bed7547d29c94f94671e1bc4c12151eb99343870716401be733a50f0b60083",
+    "README_P10FX_RU.md": "02fdfd911855b1e4a6b24c6a00562d9601f04cc88a3e53494cb08821d29cd10c",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10FN_mesh_qa.py": "d8912f166821c06826e8bc9e8474a09bc4b6b3a591c179360b61cc38f4fb0a2f",
+    "P10CK_curved_qp_audit.py": "6386d37ade7c6cadcfdfdb511e01a06310ea9c974ee4fd7878a704bcdac9dc90",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+    "P10FX_REAL_M0_M1_SIGNED_18_ZONE_729QP.json": "47077642f63d7fb3ebc7ac7940f09901417128c845874ad2d9d90ec82e0f0249"
+  }
+}
