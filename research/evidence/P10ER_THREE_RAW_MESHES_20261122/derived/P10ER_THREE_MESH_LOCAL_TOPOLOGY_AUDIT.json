@@ -1,0 +1,1059 @@
+{
+  "protocol": "P10ER_THREE_EXACT_RAW_MSH2_LOCAL_VOLUME_FACE_TOPOLOGY_SOURCE_ONLY",
+  "status": "SOURCE_ONLY_LOCAL_FORENSICS_NOT_D025_GO_NO_FEM",
+  "original_raw_sha256_private": {
+    "M1": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+    "P10EK_M2": "f7183efdaff22b0ed7c281104ee00e18499c0d53f087100e08959a7d4a43250b",
+    "P10EN_M2": "04a5a16111ebfa1219cd628355b83eb2b5e7bf0d3238c08a3fff118377bfc8f0"
+  },
+  "raw_meshes_not_published": true,
+  "new_native_Gmsh_attempts": 0,
+  "new_forward_adjoint_FEM_attempts": 0,
+  "geometric_full_volume_rule": "P10ED direct curved Tet10 27QP",
+  "fixed_region_indicator_rule": "Gauss-Duffy 7^3/9^3 QP; descriptive subzones, not independent pass bands",
+  "region_definitions": [
+    {
+      "name": "north_polar_0_100um",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_polar_0_50um",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        4.9999999999999996e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_polar_50_100um",
+      "hemisphere": "north",
+      "d_m": [
+        4.9999999999999996e-05,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_polar_mu_0p8_0p9",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        0.9
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_polar_mu_0p9_1",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.9,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_taper_0_100um",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.6,
+        0.8
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_off_0_100um",
+      "hemisphere": "north",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0,
+        0.6
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "north_polar_phi_0",
+      "hemisphere": "north",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    {
+      "name": "north_polar_phi_1",
+      "hemisphere": "north",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        1.5707963267948966,
+        3.141592653589793
+      ]
+    },
+    {
+      "name": "north_polar_phi_2",
+      "hemisphere": "north",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        3.141592653589793,
+        4.71238898038469
+      ]
+    },
+    {
+      "name": "north_polar_phi_3",
+      "hemisphere": "north",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        4.71238898038469,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_0_100um",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_0_50um",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        4.9999999999999996e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_50_100um",
+      "hemisphere": "south",
+      "d_m": [
+        4.9999999999999996e-05,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_mu_0p8_0p9",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.8,
+        0.9
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_mu_0p9_1",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.9,
+        1
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_taper_0_100um",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0.6,
+        0.8
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_off_0_100um",
+      "hemisphere": "south",
+      "d_m": [
+        0.0,
+        9.999999999999999e-05
+      ],
+      "abs_mu": [
+        0,
+        0.6
+      ],
+      "phi_rad": [
+        0,
+        6.283185307179586
+      ]
+    },
+    {
+      "name": "south_polar_phi_0",
+      "hemisphere": "south",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    {
+      "name": "south_polar_phi_1",
+      "hemisphere": "south",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        1.5707963267948966,
+        3.141592653589793
+      ]
+    },
+    {
+      "name": "south_polar_phi_2",
+      "hemisphere": "south",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        3.141592653589793,
+        4.71238898038469
+      ]
+    },
+    {
+      "name": "south_polar_phi_3",
+      "hemisphere": "south",
+      "d_m": [
+        0,
+        0.0001
+      ],
+      "abs_mu": [
+        0.8,
+        1
+      ],
+      "phi_rad": [
+        4.71238898038469,
+        6.283185307179586
+      ]
+    }
+  ],
+  "mesh_diagnostics": {
+    "M1": {
+      "mesh": "M1",
+      "original_geometry": {
+        "mesh": "M1",
+        "nodes": 14145,
+        "tet10": 9736,
+        "pore_tri6": 178,
+        "curved_27qp": 262872,
+        "corner_nonpositive": 0,
+        "curved_nonpositive": 0,
+        "curved_min_det_m3": 2.8293422503502565e-11,
+        "curved_volume_sum_m3": 0.00017999581333166654,
+        "curved_CAD_rel_error": 1.1788448217586733e-08,
+        "max_pore_spherical_node_abs_radial_error_m": 4.7704895589362195e-18,
+        "pore_cap_surface_corner_edges": {
+          "both_poles": {
+            "tri6": 40,
+            "median_corner_edge_mm": 0.3901806440322558
+          },
+          "north": {
+            "tri6": 20,
+            "median_corner_edge_mm": 0.39018064403210756
+          },
+          "south": {
+            "tri6": 20,
+            "median_corner_edge_mm": 0.39018064403225616
+          },
+          "taper": {
+            "tri6": 35,
+            "median_corner_edge_mm": 0.40332584527315524
+          },
+          "off": {
+            "tri6": 103,
+            "median_corner_edge_mm": 0.40618021859645764
+          }
+        },
+        "centroid_positive_kappa_tet10": 259,
+        "centroid_full_kappa_tet10": 21
+      },
+      "M1_field2_near_target_h_mm": 0.42855883184652976,
+      "centroid_local_geometry": {
+        "north_polar_centroids": {
+          "centroid_tet_count": 9,
+          "cell_volume_m3": {
+            "count": 9,
+            "median": 8.854652930439716e-12,
+            "p10": 8.385073278989295e-12,
+            "p90": 1.058691347915736e-11,
+            "p95": 1.1776542478079872e-11,
+            "p99": 1.2728245677217883e-11,
+            "maximum": 1.2966171477002387e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 9,
+            "median": 0.20688254385382387,
+            "p10": 0.2031584433464636,
+            "p90": 0.21929523808303975,
+            "p95": 0.2271122876913979,
+            "p99": 0.23336592737808445,
+            "maximum": 0.2349293372997561
+          }
+        },
+        "south_polar_centroids": {
+          "centroid_tet_count": 12,
+          "cell_volume_m3": {
+            "count": 12,
+            "median": 6.771851983322245e-12,
+            "p10": 5.559134400272113e-12,
+            "p90": 1.2213321416680177e-11,
+            "p95": 1.282384147105262e-11,
+            "p99": 1.3192197955397374e-11,
+            "maximum": 1.328428707648356e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 12,
+            "median": 0.18917949835115377,
+            "p10": 0.1771281139989676,
+            "p90": 0.23019898779888134,
+            "p95": 0.23403921998700516,
+            "p99": 0.23627593137470862,
+            "maximum": 0.23683510922163448
+          }
+        },
+        "north_polar_0_500um": {
+          "centroid_tet_count": 64,
+          "cell_volume_m3": {
+            "count": 64,
+            "median": 1.489912285995716e-11,
+            "p10": 8.951552426513557e-12,
+            "p90": 2.5345007373404064e-11,
+            "p95": 2.76812887590283e-11,
+            "p99": 3.459459336685741e-11,
+            "maximum": 3.535793059958764e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 64,
+            "median": 0.24605911250715684,
+            "p10": 0.20762821141743878,
+            "p90": 0.29374031314200705,
+            "p95": 0.30249160783905826,
+            "p99": 0.32582845793362275,
+            "maximum": 0.3282179130196962
+          }
+        },
+        "south_polar_0_500um": {
+          "centroid_tet_count": 69,
+          "cell_volume_m3": {
+            "count": 69,
+            "median": 1.5838820784514192e-11,
+            "p10": 7.720003772152864e-12,
+            "p90": 2.694975498506995e-11,
+            "p95": 3.2860248747581925e-11,
+            "p99": 3.8029864464022755e-11,
+            "maximum": 3.850831056071941e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 69,
+            "median": 0.2511352148637764,
+            "p10": 0.19757975399327538,
+            "p90": 0.29981349868532986,
+            "p95": 0.3199933352436967,
+            "p99": 0.33628281805701477,
+            "maximum": 0.3376899651132273
+          }
+        },
+        "off_0_100um": {
+          "centroid_tet_count": 67,
+          "cell_volume_m3": {
+            "count": 67,
+            "median": 9.12533334544755e-12,
+            "p10": 6.53667719581439e-12,
+            "p90": 1.1090694366238356e-11,
+            "p95": 1.2147773846499555e-11,
+            "p99": 1.3940395394143669e-11,
+            "maximum": 1.3976704208518914e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 67,
+            "median": 0.20896950437930026,
+            "p10": 0.18697411648219278,
+            "p90": 0.2230069647586918,
+            "p95": 0.22984794226675556,
+            "p99": 0.24067160937992851,
+            "maximum": 0.2408804708399564
+          }
+        }
+      },
+      "pore_surface_tri6": {
+        "north_mu_ge_0p8": {
+          "tri6_count": 20,
+          "corner_edge_mm": {
+            "count": 60,
+            "median": 0.3901806440321075,
+            "p10": 0.3256327382256392,
+            "p90": 0.45849119502129526,
+            "p95": 0.4616976705577647,
+            "p99": 0.5014353800347208,
+            "maximum": 0.5375896688396207
+          }
+        },
+        "south_mu_le_m0p8": {
+          "tri6_count": 20,
+          "corner_edge_mm": {
+            "count": 60,
+            "median": 0.39018064403225616,
+            "p10": 0.3078588988220791,
+            "p90": 0.4594286225453189,
+            "p95": 0.5336143769113753,
+            "p99": 0.5669965534049092,
+            "maximum": 0.5669965534049092
+          }
+        },
+        "off_abs_mu_le_0p6": {
+          "tri6_count": 103,
+          "corner_edge_mm": {
+            "count": 309,
+            "median": 0.40618021859645764,
+            "p10": 0.33320269841850114,
+            "p90": 0.43722552414734034,
+            "p95": 0.46234921466663875,
+            "p99": 0.5199929181256634,
+            "maximum": 0.5389925259557722
+          }
+        }
+      },
+      "face_smoothness_diagnostics": {
+        "internal_corner_faces": 18879,
+        "boundary_corner_faces": 1186,
+        "h_jump_ratio_all_adjacent": {
+          "count": 18879,
+          "median": 1.0949526116101596,
+          "p10": 1.0137884540553184,
+          "p90": 1.280030345626907,
+          "p95": 1.3504270921428267,
+          "p99": 1.5134786115538987,
+          "maximum": 1.9287000020842466
+        },
+        "h_jump_ratio_near_polar_adjacent": {
+          "count": 393,
+          "median": 1.1081642117317583,
+          "p10": 1.0147596492183166,
+          "p90": 1.281569957369041,
+          "p95": 1.3163252870286837,
+          "p99": 1.3997952244151812,
+          "maximum": 1.5554138668260182
+        },
+        "near_polar_count_h_jump_gt_1p25": 50,
+        "note": "cube root of curved-volume ratio of face neighbours, not imposed field C1 test"
+      }
+    },
+    "P10EK_M2": {
+      "mesh": "P10EK_M2",
+      "original_geometry": {
+        "mesh": "P10EK_M2",
+        "nodes": 14593,
+        "tet10": 9988,
+        "pore_tri6": 194,
+        "curved_27qp": 269676,
+        "corner_nonpositive": 0,
+        "curved_nonpositive": 0,
+        "curved_min_det_m3": 5.111333837943514e-12,
+        "curved_volume_sum_m3": 0.0001799958132609534,
+        "curved_CAD_rel_error": 1.1395588472851159e-08,
+        "max_pore_spherical_node_abs_radial_error_m": 4.7704895589362195e-18,
+        "pore_cap_surface_corner_edges": {
+          "both_poles": {
+            "tri6": 44,
+            "median_corner_edge_mm": 0.3713102703579973
+          },
+          "north": {
+            "tri6": 22,
+            "median_corner_edge_mm": 0.37230905633578604
+          },
+          "south": {
+            "tri6": 22,
+            "median_corner_edge_mm": 0.3691302154208798
+          },
+          "taper": {
+            "tri6": 39,
+            "median_corner_edge_mm": 0.3786860552686901
+          },
+          "off": {
+            "tri6": 111,
+            "median_corner_edge_mm": 0.39926625276479855
+          }
+        },
+        "centroid_positive_kappa_tet10": 274,
+        "centroid_full_kappa_tet10": 32
+      },
+      "M1_field2_near_target_h_mm": 0.42855883184652976,
+      "centroid_local_geometry": {
+        "north_polar_centroids": {
+          "centroid_tet_count": 19,
+          "cell_volume_m3": {
+            "count": 19,
+            "median": 6.38430518877811e-12,
+            "p10": 4.744442945895292e-12,
+            "p90": 9.438939172122532e-12,
+            "p95": 9.932797929953471e-12,
+            "p99": 1.0783772303338409e-11,
+            "maximum": 1.0996515896684642e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 19,
+            "median": 0.18551166065449237,
+            "p10": 0.16802336383250424,
+            "p90": 0.21132729504208853,
+            "p95": 0.21493084153162287,
+            "p99": 0.2208857891406288,
+            "maximum": 0.2223745260428803
+          }
+        },
+        "south_polar_centroids": {
+          "centroid_tet_count": 13,
+          "cell_volume_m3": {
+            "count": 13,
+            "median": 5.7148934220716656e-12,
+            "p10": 4.121977192175682e-12,
+            "p90": 9.587180746688404e-12,
+            "p95": 1.0197497983216162e-11,
+            "p99": 1.090216554342471e-11,
+            "maximum": 1.1078332433476847e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 13,
+            "median": 0.1787870445029361,
+            "p10": 0.1603284191939553,
+            "p90": 0.2124365209955155,
+            "p95": 0.21673437493910103,
+            "p99": 0.2216866104206368,
+            "maximum": 0.22292466929102076
+          }
+        },
+        "north_polar_0_500um": {
+          "centroid_tet_count": 74,
+          "cell_volume_m3": {
+            "count": 74,
+            "median": 1.2296429263401348e-11,
+            "p10": 5.984466725614668e-12,
+            "p90": 2.736491513050217e-11,
+            "p95": 3.259289003440879e-11,
+            "p99": 4.839732152050353e-11,
+            "maximum": 5.532761438426573e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 74,
+            "median": 0.23079602955995632,
+            "p10": 0.18154720071730196,
+            "p90": 0.3013236399979831,
+            "p95": 0.3193593281108426,
+            "p99": 0.3641307888176923,
+            "maximum": 0.3810488438292003
+          }
+        },
+        "south_polar_0_500um": {
+          "centroid_tet_count": 75,
+          "cell_volume_m3": {
+            "count": 75,
+            "median": 1.2333795317348173e-11,
+            "p10": 5.6970963104685865e-12,
+            "p90": 2.502143616610086e-11,
+            "p95": 3.024868937477075e-11,
+            "p99": 4.2191119572902466e-11,
+            "maximum": 4.8893486084234776e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 75,
+            "median": 0.231046243731569,
+            "p10": 0.17860113179841608,
+            "p90": 0.29248476108565924,
+            "p95": 0.311514358877326,
+            "p99": 0.34780355021442333,
+            "maximum": 0.36566523104256266
+          }
+        },
+        "off_0_100um": {
+          "centroid_tet_count": 80,
+          "cell_volume_m3": {
+            "count": 80,
+            "median": 8.701750123275979e-12,
+            "p10": 6.344668084832731e-12,
+            "p90": 1.2193575829742854e-11,
+            "p95": 1.3548673376713893e-11,
+            "p99": 1.5825486034798345e-11,
+            "maximum": 1.7165493988049354e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 80,
+            "median": 0.2056847900211412,
+            "p10": 0.1851269084884944,
+            "p90": 0.23016601143565904,
+            "p95": 0.23839248805457433,
+            "p99": 0.25101328068353496,
+            "maximum": 0.2579598418559706
+          }
+        }
+      },
+      "pore_surface_tri6": {
+        "north_mu_ge_0p8": {
+          "tri6_count": 22,
+          "corner_edge_mm": {
+            "count": 66,
+            "median": 0.37230905633578604,
+            "p10": 0.22264032653498841,
+            "p90": 0.4789739950310325,
+            "p95": 0.4922533433446299,
+            "p99": 0.5313436327784777,
+            "maximum": 0.5313436327784777
+          }
+        },
+        "south_mu_le_m0p8": {
+          "tri6_count": 22,
+          "corner_edge_mm": {
+            "count": 66,
+            "median": 0.3691302154208798,
+            "p10": 0.22264032653499027,
+            "p90": 0.4409358168344819,
+            "p95": 0.45799408827738486,
+            "p99": 0.49460986095388443,
+            "maximum": 0.5057333022512123
+          }
+        },
+        "off_abs_mu_le_0p6": {
+          "tri6_count": 111,
+          "corner_edge_mm": {
+            "count": 333,
+            "median": 0.39926625276479855,
+            "p10": 0.3204108232487914,
+            "p90": 0.48367026672656416,
+            "p95": 0.5145616908221455,
+            "p99": 0.5520998586942719,
+            "maximum": 0.5625181229117888
+          }
+        }
+      },
+      "face_smoothness_diagnostics": {
+        "internal_corner_faces": 19329,
+        "boundary_corner_faces": 1294,
+        "h_jump_ratio_all_adjacent": {
+          "count": 19329,
+          "median": 1.1010381468470805,
+          "p10": 1.0177426425429856,
+          "p90": 1.289226377583528,
+          "p95": 1.361889080471785,
+          "p99": 1.5141783206104524,
+          "maximum": 2.398522928729645
+        },
+        "h_jump_ratio_near_polar_adjacent": {
+          "count": 423,
+          "median": 1.1385127439175786,
+          "p10": 1.017698220494653,
+          "p90": 1.3329585521672713,
+          "p95": 1.4053819176227613,
+          "p99": 1.738278078240764,
+          "maximum": 2.0705172430489274
+        },
+        "near_polar_count_h_jump_gt_1p25": 95,
+        "note": "cube root of curved-volume ratio of face neighbours, not imposed field C1 test"
+      }
+    },
+    "P10EN_M2": {
+      "mesh": "P10EN_M2",
+      "original_geometry": {
+        "mesh": "P10EN_M2",
+        "nodes": 14632,
+        "tet10": 10020,
+        "pore_tri6": 192,
+        "curved_27qp": 270540,
+        "corner_nonpositive": 0,
+        "curved_nonpositive": 0,
+        "curved_min_det_m3": 6.046117722583678e-12,
+        "curved_volume_sum_m3": 0.0001799958133287441,
+        "curved_CAD_rel_error": 1.177221209403001e-08,
+        "max_pore_spherical_node_abs_radial_error_m": 4.9873299934333204e-18,
+        "pore_cap_surface_corner_edges": {
+          "both_poles": {
+            "tri6": 44,
+            "median_corner_edge_mm": 0.3720794493852327
+          },
+          "north": {
+            "tri6": 22,
+            "median_corner_edge_mm": 0.3697496958258696
+          },
+          "south": {
+            "tri6": 22,
+            "median_corner_edge_mm": 0.3722961158053854
+          },
+          "taper": {
+            "tri6": 39,
+            "median_corner_edge_mm": 0.38061949432304676
+          },
+          "off": {
+            "tri6": 109,
+            "median_corner_edge_mm": 0.40016901716620545
+          }
+        },
+        "centroid_positive_kappa_tet10": 270,
+        "centroid_full_kappa_tet10": 25
+      },
+      "M1_field2_near_target_h_mm": 0.42855883184652976,
+      "centroid_local_geometry": {
+        "north_polar_centroids": {
+          "centroid_tet_count": 16,
+          "cell_volume_m3": {
+            "count": 16,
+            "median": 5.383555934255752e-12,
+            "p10": 4.7397245921530325e-12,
+            "p90": 9.422758859246226e-12,
+            "p95": 1.050023248439853e-11,
+            "p99": 1.123788212046791e-11,
+            "maximum": 1.1422294529485256e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 16,
+            "median": 0.17526102669115234,
+            "p10": 0.1679774478189362,
+            "p90": 0.21105846438408415,
+            "p95": 0.21891693612681246,
+            "p99": 0.22395005178140065,
+            "maximum": 0.2252083306950477
+          }
+        },
+        "south_polar_centroids": {
+          "centroid_tet_count": 9,
+          "cell_volume_m3": {
+            "count": 9,
+            "median": 6.1043169613034936e-12,
+            "p10": 4.43512340083288e-12,
+            "p90": 1.0569937002589909e-11,
+            "p95": 1.0684380647313217e-11,
+            "p99": 1.0775935563091862e-11,
+            "maximum": 1.0798824292036523e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 9,
+            "median": 0.18275910614325858,
+            "p10": 0.1642752234744738,
+            "p90": 0.21945822365191883,
+            "p95": 0.22024604613484428,
+            "p99": 0.2208763041211846,
+            "maximum": 0.2210338686177697
+          }
+        },
+        "north_polar_0_500um": {
+          "centroid_tet_count": 71,
+          "cell_volume_m3": {
+            "count": 71,
+            "median": 1.3337709726185923e-11,
+            "p10": 5.12761857681829e-12,
+            "p90": 2.343190959981339e-11,
+            "p95": 2.54024641662254e-11,
+            "p99": 2.795085391355648e-11,
+            "maximum": 3.096772140130051e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 71,
+            "median": 0.23715216139872544,
+            "p10": 0.1724402209925677,
+            "p90": 0.2861558053686924,
+            "p95": 0.2939622611033862,
+            "p99": 0.30331802831721416,
+            "maximum": 0.31402899579862487
+          }
+        },
+        "south_polar_0_500um": {
+          "centroid_tet_count": 75,
+          "cell_volume_m3": {
+            "count": 75,
+            "median": 1.4461849750909549e-11,
+            "p10": 6.391948940621964e-12,
+            "p90": 2.6153419927868867e-11,
+            "p95": 2.8443291743683635e-11,
+            "p99": 3.324610548856258e-11,
+            "maximum": 3.3296812363365585e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 75,
+            "median": 0.24363589961594312,
+            "p10": 0.18555783676312634,
+            "p90": 0.29683081365257846,
+            "p95": 0.30522689206899684,
+            "p99": 0.32154879526249813,
+            "maximum": 0.32171221655461063
+          }
+        },
+        "off_0_100um": {
+          "centroid_tet_count": 72,
+          "cell_volume_m3": {
+            "count": 72,
+            "median": 8.869631246195424e-12,
+            "p10": 6.195521058808096e-12,
+            "p90": 1.2894473214756875e-11,
+            "p95": 1.4924186207294752e-11,
+            "p99": 1.6265886632178508e-11,
+            "maximum": 1.8527910522611097e-11
+          },
+          "h_cube_root_volume_mm": {
+            "count": 72,
+            "median": 0.20699849205658855,
+            "p10": 0.18366375022419254,
+            "p90": 0.23449460294071742,
+            "p95": 0.2462042032671711,
+            "p99": 0.2531590423488343,
+            "maximum": 0.26461156106705086
+          }
+        }
+      },
+      "pore_surface_tri6": {
+        "north_mu_ge_0p8": {
+          "tri6_count": 22,
+          "corner_edge_mm": {
+            "count": 66,
+            "median": 0.3697496958258696,
+            "p10": 0.22250489638957843,
+            "p90": 0.4402656219066332,
+            "p95": 0.46155040294312366,
+            "p99": 0.49493555923553284,
+            "maximum": 0.506598834190405
+          }
+        },
+        "south_mu_le_m0p8": {
+          "tri6_count": 22,
+          "corner_edge_mm": {
+            "count": 66,
+            "median": 0.3722961158053854,
+            "p10": 0.22250489638958024,
+            "p90": 0.48068486935607746,
+            "p95": 0.4948862277577278,
+            "p99": 0.5326460717489929,
+            "maximum": 0.5326460717489929
+          }
+        },
+        "off_abs_mu_le_0p6": {
+          "tri6_count": 109,
+          "corner_edge_mm": {
+            "count": 327,
+            "median": 0.40016901716620545,
+            "p10": 0.314711372153436,
+            "p90": 0.49303022351439557,
+            "p95": 0.5205174590865599,
+            "p99": 0.5607163443442947,
+            "maximum": 0.5802177756972896
+          }
+        }
+      },
+      "face_smoothness_diagnostics": {
+        "internal_corner_faces": 19394,
+        "boundary_corner_faces": 1292,
+        "h_jump_ratio_all_adjacent": {
+          "count": 19394,
+          "median": 1.1010276106761303,
+          "p10": 1.0174179774119962,
+          "p90": 1.28559995524298,
+          "p95": 1.3636499948787761,
+          "p99": 1.5349921702861904,
+          "maximum": 2.3334478973049047
+        },
+        "h_jump_ratio_near_polar_adjacent": {
+          "count": 410,
+          "median": 1.135430331489352,
+          "p10": 1.0208571608719412,
+          "p90": 1.3351644332027095,
+          "p95": 1.401598399864954,
+          "p99": 1.7250248316927854,
+          "maximum": 2.0915307189563013
+        },
+        "near_polar_count_h_jump_gt_1p25": 77,
+        "note": "cube root of curved-volume ratio of face neighbours, not imposed field C1 test"
+      }
+    }
+  },
+  "topological_diagnostics_M1_to_M2": {
+    "P10EK_M2": {
+      "common_all_corner_points": 115,
+      "common_pore_corner_points": 3,
+      "common_pore_triangles": 0,
+      "M1_all_corner_points": 1909,
+      "M1_pore_corner_points": 91,
+      "M1_pore_triangles": 178,
+      "M2_all_corner_points": 1980,
+      "M2_pore_corner_points": 99,
+      "M2_pore_triangles": 194,
+      "nearest_polar_centroid_distance_mm": {
+        "count": 149,
+        "median": 0.13041558643993545,
+        "p10": 0.07365111227075408,
+        "p90": 0.19923191708011312,
+        "p95": 0.2152029309887638,
+        "p99": 0.27425653375126324,
+        "maximum": 0.3109822278807125
+      }
+    },
+    "P10EN_M2": {
+      "common_all_corner_points": 115,
+      "common_pore_corner_points": 3,
+      "common_pore_triangles": 0,
+      "M1_all_corner_points": 1909,
+      "M1_pore_corner_points": 91,
+      "M1_pore_triangles": 178,
+      "M2_all_corner_points": 1984,
+      "M2_pore_corner_points": 98,
+      "M2_pore_triangles": 192,
+      "nearest_polar_centroid_distance_mm": {
+        "count": 146,
+        "median": 0.12468477995854393,
+        "p10": 0.07206540957073418,
+        "p90": 0.19251231082436854,
+        "p95": 0.21527499887787624,
+        "p99": 0.2576171411169162,
+        "maximum": 0.2827161646626246
+      }
+    }
+  },
+  "proposed_smooth_local_field_family_only": {
+    "polar_weight_smoothstep_C1_test": "PASS",
+    "alpha_values_calibrated": false,
+    "field_family": "h(x)=Field2(x)*(1-kappa(x)*(alpha_N*w_N(mu)+alpha_S*w_S(mu)))**(1/3)",
+    "north_weight": "w_N(mu)=S((mu-0.6)/0.2)",
+    "south_weight": "w_S(mu)=S((-mu-0.6)/0.2)",
+    "smoothstep": "S(t)=clip(t,0,1)^2*(3-2*clip(t,0,1))",
+    "constraint": "0<=alpha_N,alpha_S<1, calibrated from raw realized data; no new mesh issued"
+  },
+  "interpretation_limits": [
+    "subzone quadrature and rare-tet statistics are descriptive and require convergence review",
+    "corner-face neighbour jump is a quality diagnostic; no accepted quantitative smoothness threshold",
+    "coordinate-point 1e-11m coincidences are indicative, not an exact topology match",
+    "M1/M2 centroid nearest-neighbour positions do not pair tetrahedra",
+    "two alpha trials cannot uniquely separate size-field response from remeshing topology",
+    "a source C1 smooth field does not guarantee local realized volume or FEM accuracy"
+  ]
+}
