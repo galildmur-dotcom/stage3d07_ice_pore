@@ -879,3 +879,7 @@ Verified exact private original M1/M2/B SHA, no new Gmsh/FEM. Curved Tri6 matchi
 ## 2026-11-22 — D-023A: smoothness required, not uniformity across azimuth
 
 Investigator explicitly clarified that uniformity of realized Tri6/Tet10 sizes is not an acceptance requirement. Smoothness of prescribed h(x) and κ(x), acceptable local element quality/gradation, sequential refinement M1→...→MN, and convergence of analytical shape derivatives are required. P10EI sector variability is a diagnostic observation, not standalone STOP or a reason for artificial phi-equalization. The D-023 20% per-step characteristic local-volume limit is unchanged. Documentation corrected source-only; no Gmsh/FEM.
+
+## 2026-11-22 — P10EK Alg5 3D M2 guarded source preparation, physical stage conditional
+
+User requested M2 mesh and physical solution. Newly isolated P10EK R1 package inherits exact source-pinned P10EA 3D guard and changes *only* surface Mesh.Algorithm from 6 to 5 in an otherwise exact F6/CAD/κ/Tet10/HXT3D10 source. New local/profile one-shot markers, one native -3 after separate preflight, bounded resource caps and curved27QP QA. Source-only isolated selftest and negative STOP pass; Gmsh physical/mesh not run in assistant environment. FEM explicitly absent; on successful independent M2 geometry/adaptivity review plan fresh M2 forward and adjoint on same M2, no H0/M1 cache reuse, analytic shape derivative. Prior EAs and EFs one-shot markers remain consumed.
