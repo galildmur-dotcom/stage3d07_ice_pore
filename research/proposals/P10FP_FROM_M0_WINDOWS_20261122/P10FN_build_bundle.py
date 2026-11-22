@@ -11,8 +11,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 SOURCE = ROOT / "research/packages/P10DL_R1_M1_FRESH_FORWARD_ONE_SHOT_WINDOWS_20261121.zip"
-OUTPUT = ROOT / "research/packages/P10FP_FRESH_M0_MN_WINDOWS_20261122.zip"
-REV = "P10FP_R2_FRESH_M0_TO_MN_TWO_STAGE_WORKFLOW_NO_INPUT"
+OUTPUT = ROOT / "research/packages/P10FP_R3_VISIBLE_M0_MN_WINDOWS_20261122.zip"
+REV = "P10FP_R3_VISIBLE_RESULT_NO_INPUT"
 
 
 def selected_source():
