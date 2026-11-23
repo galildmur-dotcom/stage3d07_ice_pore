@@ -801,3 +801,8 @@ Curved changes extremes, does not solely explain adjacent jumps.
 No new Gmsh/FEM, D025 fixed3D polar PASS unchanged.
 `research/P10FJ_P10FB_CORNER_VS_CURVED_POLAR_NEIGHBOUR_AUDIT_20261122.md`.
 
+
+### N-P10GG — 2D CAD pole-rotation Windows release [SOURCE/UNIT ONLY]
+
+ZIP `research/packages/P10GG_R1_CAD_POLE_TWO_2D_ONLY_WINDOWS_20261123.zip` SHA256 `88662559e9874c49675aee953326b0450ab0516e9cad12e8ee8ed83e8eed8d4b` (15166B, 7 files) прошёл CRC/extracted selftest/Linux native STOP/tamper STOP и шесть offline source+synthetic Tri6/mocked run тестов. Две модели M0-original / CAD-parametric-axis rotated 90° при том же Field3 × 0.825^(1/3), только native Gmsh4.15.2 `-parse_and_exit` и два `-2` в будущем, без -3/FEM. Реальные Windows -2 PENDING; Tri6 результаты UNKNOWN, новая M1 NONE, FEM0. Единственный будущий первичный вход — `P10GG_CAD_POLE_2D_EVIDENCE.zip`. Не считать source-only проверку доказательством качества поверхности. Отчёт `research/P10GG_R1_CAD_POLE_ROTATION_TWO_SURFACE_MESH_WINDOWS_PREPARED_20261123.md`.
+
