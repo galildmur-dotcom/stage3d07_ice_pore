@@ -1,0 +1,2038 @@
+{
+  "protocol": "P10GZ_R1_REAL_P10GY_12_4D_TIME_LEVELS_INDEPENDENT_AUDIT",
+  "outer_zip_sha256": "0b62cc5799a242cceb86c5e283113c4b634e6169ea91476b4faf9dec6296d760",
+  "inner_count": 12,
+  "mesh_sha256": {
+    "M0": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+    "M1": "47460969be26c2bd0a15e0b1425806fa350aa09aa2b4ac9f80605b433fc65ca7"
+  },
+  "source_7_level_timestep_s": [
+    150,
+    75,
+    60,
+    50,
+    45,
+    36,
+    25
+  ],
+  "all_14_physical_ZIP_CRC_SHA_NATIVE_4D_CLOSURE_PASS": true,
+  "independent_QP_and_4D_bin_support_PASS": true,
+  "time_projection_method": "interval-conservative piecewise-constant (diagnostic, not exact 4D field)",
+  "result": {
+    "grids": {
+      "M0": {
+        "150": {
+          "dt": 150,
+          "steps": 6,
+          "global": {
+            "j6": {
+              "J": 0.0021779682071984977,
+              "D_R": 0.026276770532069064
+            },
+            "jpeak": {
+              "J": 0.04803034131789259,
+              "D_R": 2.9136218640590257
+            },
+            "jen": {
+              "J": 0.0008726222166301226,
+              "D_R": 0.016540469941632528
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -15.392458713187459,
+            "mech_equilibrium_per_m": 14.262047431653817,
+            "mech_history_per_m": 3.9787514807733966,
+            "thermal_mass_per_m": 0.0005340356281389007,
+            "thermal_diffusion_per_m": 0.06474762919123946,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.8483401992397606,
+            "thermal_total_per_m": 0.06528166481937837,
+            "total_per_m": 2.9136218640591314
+          },
+          "global_delta_from_25": {
+            "j6": 0.00015896731048880078,
+            "jpeak": 0.05364557156606109,
+            "jen": 0.0010733509956171068
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 2.5944735038434024,
+            "mech_equilibrium_per_m": 5.013303584132212,
+            "mech_history_per_m": 3.9014363578626954,
+            "thermal_mass_per_m": 0.002290455735206837,
+            "thermal_diffusion_per_m": 0.008588335790482017,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 1.0976837515346014,
+            "thermal_total_per_m": 0.00853683668832085,
+            "total_per_m": 1.093380172204268
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 7.02891574288325,
+            "mech_equilibrium_per_m": 7.170559111755138,
+            "mech_history_per_m": 5.323281000793526,
+            "thermal_mass_per_m": 0.055185966360869476,
+            "thermal_diffusion_per_m": 0.29691873817798725,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 7.23103387016571,
+            "thermal_total_per_m": 0.30895742561197825,
+            "total_per_m": 7.281648960880216
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 128.76238400000148,
+          "native_peak_private_bytes": 1056518144
+        },
+        "75": {
+          "dt": 75,
+          "steps": 12,
+          "global": {
+            "j6": {
+              "J": 0.002171026046772436,
+              "D_R": 0.026138190649525765
+            },
+            "jpeak": {
+              "J": 0.048033883600640544,
+              "D_R": 2.8744425170856167
+            },
+            "jen": {
+              "J": 0.0008420099307936399,
+              "D_R": 0.015857631670779172
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.534641585036397,
+            "mech_equilibrium_per_m": 12.049769182770941,
+            "mech_history_per_m": 5.290946303482912,
+            "thermal_mass_per_m": 0.0007489675114846998,
+            "thermal_diffusion_per_m": 0.06761964835682349,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.8060739012174523,
+            "thermal_total_per_m": 0.06836861586830814,
+            "total_per_m": 2.8744425170857695
+          },
+          "global_delta_from_25": {
+            "j6": 2.0387427945502135e-05,
+            "jpeak": 0.014466224592652122,
+            "jen": 0.0003905127247637516
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 1.0337523208449015,
+            "mech_equilibrium_per_m": 2.364894651814984,
+            "mech_history_per_m": 2.0747039052412646,
+            "thermal_mass_per_m": 0.0012528010800369061,
+            "thermal_diffusion_per_m": 0.003173777523823749,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.39364704125243893,
+            "thermal_total_per_m": 0.0031832815178058733,
+            "total_per_m": 0.3922002095736746
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 4.787242351308837,
+            "mech_equilibrium_per_m": 4.35106238840307,
+            "mech_history_per_m": 2.753851260845262,
+            "thermal_mass_per_m": 0.031233493756487447,
+            "thermal_diffusion_per_m": 0.1787753958194823,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 4.414887483374305,
+            "thermal_total_per_m": 0.18502525278569187,
+            "total_per_m": 4.442863201137354
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 248.49648709991015,
+          "native_peak_private_bytes": 1186779136
+        },
+        "60": {
+          "dt": 60,
+          "steps": 15,
+          "global": {
+            "j6": {
+              "J": 0.002170880683730241,
+              "D_R": 0.02612461062439369
+            },
+            "jpeak": {
+              "J": 0.0480619481623552,
+              "D_R": 2.868988599478251
+            },
+            "jen": {
+              "J": 0.0008365474679644102,
+              "D_R": 0.015734085105829024
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.401376790360548,
+            "mech_equilibrium_per_m": 11.536421087406962,
+            "mech_history_per_m": 5.665041209512054,
+            "thermal_mass_per_m": 0.0007982574500812962,
+            "thermal_diffusion_per_m": 0.06810483546975876,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.8000855065584678,
+            "thermal_total_per_m": 0.06890309291984001,
+            "total_per_m": 2.868988599478303
+          },
+          "global_delta_from_25": {
+            "j6": 6.807402813426011e-06,
+            "jpeak": 0.009012306985286322,
+            "jen": 0.00026696615981360375
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.7249340572229453,
+            "mech_equilibrium_per_m": 1.7284834252064103,
+            "mech_history_per_m": 1.554083727248111,
+            "thermal_mass_per_m": 0.0009294739460702666,
+            "thermal_diffusion_per_m": 0.002175987344018374,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.26811950869994916,
+            "thermal_total_per_m": 0.002199351347308035,
+            "total_per_m": 0.2671541549384039
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 3.7573748947059658,
+            "mech_equilibrium_per_m": 3.2879691398996993,
+            "mech_history_per_m": 1.9966478733007336,
+            "thermal_mass_per_m": 0.022336358953056017,
+            "thermal_diffusion_per_m": 0.1335494880643564,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 3.471215444532817,
+            "thermal_total_per_m": 0.13791262324721942,
+            "total_per_m": 3.4917011210362503
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 306.11067810002714,
+          "native_peak_private_bytes": 1251807232
+        },
+        "50": {
+          "dt": 50,
+          "steps": 18,
+          "global": {
+            "j6": {
+              "J": 0.0021710736269406183,
+              "D_R": 0.02611886765201097
+            },
+            "jpeak": {
+              "J": 0.04808607433607082,
+              "D_R": 2.8658662856899855
+            },
+            "jen": {
+              "J": 0.0008330528383054348,
+              "D_R": 0.015654605107446436
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.32230017423468,
+            "mech_equilibrium_per_m": 11.173685343204394,
+            "mech_history_per_m": 5.945242540687844,
+            "thermal_mass_per_m": 0.0008322544030444747,
+            "thermal_diffusion_per_m": 0.06840632162958753,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.7966277096575554,
+            "thermal_total_per_m": 0.069238576032632,
+            "total_per_m": 2.865866285690185
+          },
+          "global_delta_from_25": {
+            "j6": 1.0644304307069752e-06,
+            "jpeak": 0.005889993197020882,
+            "jen": 0.00018748616143101499
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.5189320110797235,
+            "mech_equilibrium_per_m": 1.2738713606196725,
+            "mech_history_per_m": 1.1642512106051321,
+            "thermal_mass_per_m": 0.0006894176865974181,
+            "thermal_diffusion_per_m": 0.0015323754448130673,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.1878636313969368,
+            "thermal_total_per_m": 0.0015561254439461583,
+            "total_per_m": 0.18719901943142403
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 2.881539801013236,
+            "mech_equilibrium_per_m": 2.5822842366962897,
+            "mech_history_per_m": 1.5505943620776823,
+            "thermal_mass_per_m": 0.01761584339281663,
+            "thermal_diffusion_per_m": 0.1038425626902869,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.6606024593736564,
+            "thermal_total_per_m": 0.10757526189732079,
+            "total_per_m": 2.671485307885842
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 363.71018010005355,
+          "native_peak_private_bytes": 1317793792
+        },
+        "45": {
+          "dt": 45,
+          "steps": 20,
+          "global": {
+            "j6": {
+              "J": 0.0021712642089148273,
+              "D_R": 0.0261170737116926
+            },
+            "jpeak": {
+              "J": 0.04809978415281214,
+              "D_R": 2.8644653896864254
+            },
+            "jen": {
+              "J": 0.0008313524930948053,
+              "D_R": 0.015615784807819158
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.286014440807087,
+            "mech_equilibrium_per_m": 10.985143940152856,
+            "mech_history_per_m": 6.095936278283819,
+            "thermal_mass_per_m": 0.0008495838252188905,
+            "thermal_diffusion_per_m": 0.06855002823166914,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.7950657776295866,
+            "thermal_total_per_m": 0.06939961205688805,
+            "total_per_m": 2.8644653896864765
+          },
+          "global_delta_from_25": {
+            "j6": -7.295098876647366e-07,
+            "jpeak": 0.0044890971934608,
+            "jen": 0.00014866586180373696
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.41574544267802294,
+            "mech_equilibrium_per_m": 1.0360192595056117,
+            "mech_history_per_m": 0.954640458398538,
+            "thermal_mass_per_m": 0.0005618369862338136,
+            "thermal_diffusion_per_m": 0.0012173941557184352,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.14880766861863165,
+            "thermal_total_per_m": 0.0012389556156261266,
+            "total_per_m": 0.1482858687281221
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 2.4171665398541653,
+            "mech_equilibrium_per_m": 2.113059429415519,
+            "mech_history_per_m": 1.2211422090952555,
+            "thermal_mass_per_m": 0.013433378220573215,
+            "thermal_diffusion_per_m": 0.08072672284111987,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.216958402541045,
+            "thermal_total_per_m": 0.08349082967404431,
+            "total_per_m": 2.2272043720644645
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 410.307507700054,
+          "native_peak_private_bytes": 1361207296
+        },
+        "36": {
+          "dt": 36,
+          "steps": 25,
+          "global": {
+            "j6": {
+              "J": 0.0021717763505958313,
+              "D_R": 0.026115775531254253
+            },
+            "jpeak": {
+              "J": 0.04812725123182228,
+              "D_R": 2.862221057378151
+            },
+            "jen": {
+              "J": 0.0008283750578126878,
+              "D_R": 0.015547534396091425
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.226663703312939,
+            "mech_equilibrium_per_m": 10.632068104809482,
+            "mech_history_per_m": 6.3871390228704605,
+            "thermal_mass_per_m": 0.0008813148441135208,
+            "thermal_diffusion_per_m": 0.06879631816698951,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.792543424367002,
+            "thermal_total_per_m": 0.06967763301110305,
+            "total_per_m": 2.8622210573781053
+          },
+          "global_delta_from_25": {
+            "j6": -2.027690326009829e-06,
+            "jpeak": 0.0022447648851864344,
+            "jen": 8.041545007600459e-05
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.2293895419454655,
+            "mech_equilibrium_per_m": 0.5878284042545928,
+            "mech_history_per_m": 0.5496708162695533,
+            "thermal_mass_per_m": 0.00031928544129367656,
+            "thermal_diffusion_per_m": 0.0006617930552724227,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.08035045782805596,
+            "thermal_total_per_m": 0.0006753641519186189,
+            "total_per_m": 0.08007420110603859
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 1.4660620984455452,
+            "mech_equilibrium_per_m": 1.235502468430686,
+            "mech_history_per_m": 0.7002512347624433,
+            "thermal_mass_per_m": 0.0077919977923192624,
+            "thermal_diffusion_per_m": 0.04770979263090396,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 1.3829302306453208,
+            "thermal_total_per_m": 0.049300444419345266,
+            "total_per_m": 1.3898381672143412
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 500.9769750999985,
+          "native_peak_private_bytes": 1468792832
+        },
+        "25": {
+          "dt": 25,
+          "steps": 36,
+          "global": {
+            "j6": {
+              "J": 0.00217272003741907,
+              "D_R": 0.026117803221580263
+            },
+            "jpeak": {
+              "J": 0.04816572243405135,
+              "D_R": 2.8599762924929646
+            },
+            "jen": {
+              "J": 0.0008248898003812562,
+              "D_R": 0.01546711894601542
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.165581792120468,
+            "mech_equilibrium_per_m": 10.173044417300718,
+            "mech_history_per_m": 6.782517903436577,
+            "thermal_mass_per_m": 0.000920996751629333,
+            "thermal_diffusion_per_m": 0.06907476712448139,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.7899805286168182,
+            "thermal_total_per_m": 0.0699957638761107,
+            "total_per_m": 2.8599762924929304
+          },
+          "global_delta_from_25": {
+            "j6": 0.0,
+            "jpeak": 0.0,
+            "jen": 0.0
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.0,
+            "mech_equilibrium_per_m": 0.0,
+            "mech_history_per_m": 0.0,
+            "thermal_mass_per_m": 0.0,
+            "thermal_diffusion_per_m": 0.0,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.0,
+            "thermal_total_per_m": 0.0,
+            "total_per_m": 0.0
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 0.0,
+            "mech_equilibrium_per_m": 0.0,
+            "mech_history_per_m": 0.0,
+            "thermal_mass_per_m": 0.0,
+            "thermal_diffusion_per_m": 0.0,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.0,
+            "thermal_total_per_m": 0.0,
+            "total_per_m": 0.0
+          },
+          "zero_mechanical_qp_spatial_bins": 2,
+          "native_wall_s": 720.4773568999954,
+          "native_peak_private_bytes": 1708978176
+        }
+      },
+      "M1": {
+        "150": {
+          "dt": 150,
+          "steps": 6,
+          "global": {
+            "j6": {
+              "J": 0.0021779529699953865,
+              "D_R": 0.026208475306294204
+            },
+            "jpeak": {
+              "J": 0.04787812312991559,
+              "D_R": 2.6527658236630978
+            },
+            "jen": {
+              "J": 0.0008726676646476245,
+              "D_R": 0.016583206624233203
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -14.575750020985648,
+            "mech_equilibrium_per_m": 13.577802420674146,
+            "mech_history_per_m": 3.5958493271277154,
+            "thermal_mass_per_m": 0.0008356340088930339,
+            "thermal_diffusion_per_m": 0.05402846283824983,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.597901726816211,
+            "thermal_total_per_m": 0.05486409684714286,
+            "total_per_m": 2.6527658236633584
+          },
+          "global_delta_from_25": {
+            "j6": 0.0001282878677132636,
+            "jpeak": 0.023959774419075597,
+            "jen": 0.0010727117355325572
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 2.5523685480921703,
+            "mech_equilibrium_per_m": 4.653415401906136,
+            "mech_history_per_m": 3.571890398912628,
+            "thermal_mass_per_m": 0.002257468770091989,
+            "thermal_diffusion_per_m": 0.008714720534859251,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.9261376854324399,
+            "thermal_total_per_m": 0.00875628123552562,
+            "total_per_m": 0.9213911612869136
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 6.769994593830822,
+            "mech_equilibrium_per_m": 6.750375275810823,
+            "mech_history_per_m": 4.866185000023834,
+            "thermal_mass_per_m": 0.05484020475258612,
+            "thermal_diffusion_per_m": 0.28404326679361436,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 6.601947521817043,
+            "thermal_total_per_m": 0.29652533800686076,
+            "total_per_m": 6.644046724537502
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 156.8189079000149,
+          "native_peak_private_bytes": 1271615488
+        },
+        "75": {
+          "dt": 75,
+          "steps": 12,
+          "global": {
+            "j6": {
+              "J": 0.002171020607071996,
+              "D_R": 0.026088188841947954
+            },
+            "jpeak": {
+              "J": 0.04789145536080091,
+              "D_R": 2.6322461691667725
+            },
+            "jen": {
+              "J": 0.0008420539065294405,
+              "D_R": 0.01590059904188127
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.759385175638982,
+            "mech_equilibrium_per_m": 11.540737073653341,
+            "mech_history_per_m": 4.792634635622547,
+            "thermal_mass_per_m": 0.0010250444949413517,
+            "thermal_diffusion_per_m": 0.05723459103505342,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.573986533636908,
+            "thermal_total_per_m": 0.05825963552999473,
+            "total_per_m": 2.632246169166902
+          },
+          "global_delta_from_25": {
+            "j6": 8.001403367013937e-06,
+            "jpeak": 0.0034401199227502843,
+            "jen": 0.0003901041531806249
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 1.0223284337764738,
+            "mech_equilibrium_per_m": 2.1891891366960063,
+            "mech_history_per_m": 1.9000227264179887,
+            "thermal_mass_per_m": 0.0012371966652278575,
+            "thermal_diffusion_per_m": 0.003195233078788096,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.32904172675521715,
+            "thermal_total_per_m": 0.0032694453003324717,
+            "total_per_m": 0.32740796689622753
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 4.608299337721102,
+            "mech_equilibrium_per_m": 4.100699457846347,
+            "mech_history_per_m": 2.51916753084105,
+            "thermal_mass_per_m": 0.030956610033164408,
+            "thermal_diffusion_per_m": 0.17042740852904406,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 4.02445972754621,
+            "thermal_total_per_m": 0.17691581801861223,
+            "total_per_m": 4.047512580565101
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 302.6062252999982,
+          "native_peak_private_bytes": 1427939328
+        },
+        "60": {
+          "dt": 60,
+          "steps": 15,
+          "global": {
+            "j6": {
+              "J": 0.0021708770144662436,
+              "D_R": 0.026078307495496802
+            },
+            "jpeak": {
+              "J": 0.04792130643024243,
+              "D_R": 2.630238663254301
+            },
+            "jen": {
+              "J": 0.0008365910537556109,
+              "D_R": 0.015777150516883547
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.631839287102007,
+            "mech_equilibrium_per_m": 11.069202853696767,
+            "mech_history_per_m": 5.134013150870483,
+            "thermal_mass_per_m": 0.0010684253392564107,
+            "thermal_diffusion_per_m": 0.05779352044982952,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.5713767174652533,
+            "thermal_total_per_m": 0.05886194578908592,
+            "total_per_m": 2.630238663254331
+          },
+          "global_delta_from_25": {
+            "j6": -1.8799430841383302e-06,
+            "jpeak": 0.001432614010278943,
+            "jen": 0.00026665562818290085
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.7177386012357577,
+            "mech_equilibrium_per_m": 1.5992060208545498,
+            "mech_history_per_m": 1.423300441044466,
+            "thermal_mass_per_m": 0.0009181695962348654,
+            "thermal_diffusion_per_m": 0.002184457132147669,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.22356918439790396,
+            "thermal_total_per_m": 0.002255677039286949,
+            "total_per_m": 0.22247292611521852
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 3.611053982658568,
+            "mech_equilibrium_per_m": 3.099859933808024,
+            "mech_history_per_m": 1.8265224297564842,
+            "thermal_mass_per_m": 0.0221374550144486,
+            "thermal_diffusion_per_m": 0.12697511369783293,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 3.161899693968352,
+            "thermal_total_per_m": 0.13158041435952683,
+            "total_per_m": 3.1785237030809066
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 372.55709480005316,
+          "native_peak_private_bytes": 1506242560
+        },
+        "50": {
+          "dt": 50,
+          "steps": 18,
+          "global": {
+            "j6": {
+              "J": 0.002171071089654815,
+              "D_R": 0.02607503820985143
+            },
+            "jpeak": {
+              "J": 0.04794658484522904,
+              "D_R": 2.629350034484849
+            },
+            "jen": {
+              "J": 0.0008330961407770125,
+              "D_R": 0.015697747031818227
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.555888145444921,
+            "mech_equilibrium_per_m": 10.736254855853222,
+            "mech_history_per_m": 5.389739274485384,
+            "thermal_mass_per_m": 0.0010983314221225016,
+            "thermal_diffusion_per_m": 0.058145718169006676,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.5701059848936865,
+            "thermal_total_per_m": 0.059244049591129194,
+            "total_per_m": 2.6293500344848137
+          },
+          "global_delta_from_25": {
+            "j6": -5.149228729510458e-06,
+            "jpeak": 0.000543985240826661,
+            "jen": 0.00018725214311758089
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.5142042524397175,
+            "mech_equilibrium_per_m": 1.1781866844108506,
+            "mech_history_per_m": 1.0663044455869992,
+            "thermal_mass_per_m": 0.000681159192780056,
+            "thermal_diffusion_per_m": 0.0015342720801129121,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.15635383674421224,
+            "thermal_total_per_m": 0.0015947487933281304,
+            "total_per_m": 0.1555952721938442
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 2.7739536067149806,
+            "mech_equilibrium_per_m": 2.430765937775864,
+            "mech_history_per_m": 1.4183205957191252,
+            "thermal_mass_per_m": 0.017443183731735142,
+            "thermal_diffusion_per_m": 0.09885981901803152,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.422984223527883,
+            "thermal_total_per_m": 0.10274453687329951,
+            "total_per_m": 2.432514189915582
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 447.20026230008807,
+          "native_peak_private_bytes": 1584431104
+        },
+        "45": {
+          "dt": 45,
+          "steps": 20,
+          "global": {
+            "j6": {
+              "J": 0.002171262221254108,
+              "D_R": 0.02607448358117248
+            },
+            "jpeak": {
+              "J": 0.047960858611437285,
+              "D_R": 2.6290460118396513
+            },
+            "jen": {
+              "J": 0.0008313956462151792,
+              "D_R": 0.015658968513570425
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.520933219575095,
+            "mech_equilibrium_per_m": 10.56327141952502,
+            "mech_history_per_m": 5.527278970965832,
+            "thermal_mass_per_m": 0.0011135705599615094,
+            "thermal_diffusion_per_m": 0.05831527036380754,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.56961717091576,
+            "thermal_total_per_m": 0.05942884092376907,
+            "total_per_m": 2.6290460118395287
+          },
+          "global_delta_from_25": {
+            "j6": -5.703857408459467e-06,
+            "jpeak": 0.00023996259562908406,
+            "jen": 0.00014847362486977884
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.41213117194642035,
+            "mech_equilibrium_per_m": 0.9580308661093465,
+            "mech_history_per_m": 0.8743400986041201,
+            "thermal_mass_per_m": 0.0005551563336152987,
+            "thermal_diffusion_per_m": 0.001216790383482384,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.12372069493913268,
+            "thermal_total_per_m": 0.0012692033457718252,
+            "total_per_m": 0.12312350049286905
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 2.3245144126436226,
+            "mech_equilibrium_per_m": 1.9900036051163548,
+            "mech_history_per_m": 1.1170206094976642,
+            "thermal_mass_per_m": 0.013309219331632881,
+            "thermal_diffusion_per_m": 0.07671117966978705,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.0172457991924015,
+            "thermal_total_per_m": 0.07960378643270141,
+            "total_per_m": 2.025126004047983
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 492.82603590004146,
+          "native_peak_private_bytes": 1637318656
+        },
+        "36": {
+          "dt": 36,
+          "steps": 25,
+          "global": {
+            "j6": {
+              "J": 0.0021717753221999186,
+              "D_R": 0.026075420372866275
+            },
+            "jpeak": {
+              "J": 0.0479893196772811,
+              "D_R": 2.628741561665169
+            },
+            "jen": {
+              "J": 0.0008284179280564605,
+              "D_R": 0.015590799500882324
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.463548305901742,
+            "mech_equilibrium_per_m": 10.239461439559049,
+            "mech_history_per_m": 5.793078025319736,
+            "thermal_mass_per_m": 0.0011414650007996348,
+            "thermal_diffusion_per_m": 0.05860893768732299,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.5689911589770342,
+            "thermal_total_per_m": 0.05975040268812263,
+            "total_per_m": 2.628741561665164
+          },
+          "global_delta_from_25": {
+            "j6": -4.767065714665619e-06,
+            "jpeak": -6.44875788533561e-05,
+            "jen": 8.03046121816784e-05
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.2276377707446167,
+            "mech_equilibrium_per_m": 0.5434048449398149,
+            "mech_history_per_m": 0.50344723435139,
+            "thermal_mass_per_m": 0.0003155379453401944,
+            "thermal_diffusion_per_m": 0.0006587241752071002,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.066673748802193,
+            "thermal_total_per_m": 0.0006916837697350174,
+            "total_per_m": 0.06635491968493545
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 1.4079408505393562,
+            "mech_equilibrium_per_m": 1.1631606419509908,
+            "mech_history_per_m": 0.6409818812436006,
+            "thermal_mass_per_m": 0.0077270059072426225,
+            "thermal_diffusion_per_m": 0.04519569298421628,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 1.2593741846532494,
+            "thermal_total_per_m": 0.046913785786163766,
+            "total_per_m": 1.2641742526426574
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 614.7190443999134,
+          "native_peak_private_bytes": 1768071168
+        },
+        "25": {
+          "dt": 25,
+          "steps": 36,
+          "global": {
+            "j6": {
+              "J": 0.0021727201248650293,
+              "D_R": 0.02608018743858094
+            },
+            "jpeak": {
+              "J": 0.048028967738686576,
+              "D_R": 2.628806049244022
+            },
+            "jen": {
+              "J": 0.0008249322980467146,
+              "D_R": 0.015510494888700646
+            }
+          },
+          "global_parts": {
+            "mech_explicit_per_m": -13.404035152718507,
+            "mech_equilibrium_per_m": 9.81872439357015,
+            "mech_history_per_m": 6.1539936278911185,
+            "thermal_mass_per_m": 0.0011763315857936563,
+            "thermal_diffusion_per_m": 0.05894684891547165,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 2.5686828687427683,
+            "thermal_total_per_m": 0.06012318050126532,
+            "total_per_m": 2.628806049244032
+          },
+          "global_delta_from_25": {
+            "j6": 0.0,
+            "jpeak": 0.0,
+            "jen": 0.0
+          },
+          "spatial_integrated_L1_vs_25": {
+            "mech_explicit_per_m": 0.0,
+            "mech_equilibrium_per_m": 0.0,
+            "mech_history_per_m": 0.0,
+            "thermal_mass_per_m": 0.0,
+            "thermal_diffusion_per_m": 0.0,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.0,
+            "thermal_total_per_m": 0.0,
+            "total_per_m": 0.0
+          },
+          "time_projected_4D_L1_vs_25": {
+            "mech_explicit_per_m": 0.0,
+            "mech_equilibrium_per_m": 0.0,
+            "mech_history_per_m": 0.0,
+            "thermal_mass_per_m": 0.0,
+            "thermal_diffusion_per_m": 0.0,
+            "thermal_robin_per_m": 0.0,
+            "mechanical_total_per_m": 0.0,
+            "thermal_total_per_m": 0.0,
+            "total_per_m": 0.0
+          },
+          "zero_mechanical_qp_spatial_bins": 0,
+          "native_wall_s": 881.1195899000159,
+          "native_peak_private_bytes": 2057166848
+        }
+      }
+    },
+    "intermesh": {
+      "150": {
+        "jpeak_signed_delta": -0.2608560403959279,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 7.003324285403403,
+          "mech_equilibrium_per_m": 4.888450285283781,
+          "mech_history_per_m": 1.6294701067479465,
+          "thermal_mass_per_m": 0.004578760019679313,
+          "thermal_diffusion_per_m": 0.0339513753242074,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.893322281595469,
+          "thermal_total_per_m": 0.03469835363449687,
+          "total_per_m": 6.9024240245186315
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.997029861959543,
+          "mech_equilibrium_per_m": 4.747897454489656,
+          "mech_history_per_m": 1.6203767705103536,
+          "thermal_mass_per_m": 0.002743552322080283,
+          "thermal_diffusion_per_m": 0.018101943790973636,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.843932012976645,
+          "thermal_total_per_m": 0.018691723808983478,
+          "total_per_m": 5.852404420736904
+        },
+        "jpeak_local_4D_L1": 6.9024240245186315,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 73.88728196910387,
+          "near_wall_0_100um": 67.8195561813488,
+          "late_time_600_900": 81.56571428266345,
+          "intersection_polar_near_late": 53.15076505945741
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 150,
+            "L1": 0.05810017210672559,
+            "signed": -0.010872161133956214
+          },
+          {
+            "start_s": 150,
+            "end_s": 300,
+            "L1": 0.19365347037783875,
+            "signed": -0.038553835166257114
+          },
+          {
+            "start_s": 300,
+            "end_s": 450,
+            "L1": 0.41001771959067873,
+            "signed": -0.08862941206854548
+          },
+          {
+            "start_s": 450,
+            "end_s": 600,
+            "L1": 0.6106412040266009,
+            "signed": -0.14606476860884587
+          },
+          {
+            "start_s": 600,
+            "end_s": 750,
+            "L1": 2.081355416671638,
+            "signed": -0.08730197936399672
+          },
+          {
+            "start_s": 750,
+            "end_s": 900,
+            "L1": 3.548656041745148,
+            "signed": 0.11056611594583093
+          }
+        ]
+      },
+      "75": {
+        "jpeak_signed_delta": -0.24219634791884426,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.476996654964444,
+          "mech_equilibrium_per_m": 4.468016372444007,
+          "mech_history_per_m": 2.1487622862264386,
+          "thermal_mass_per_m": 0.005045217703696551,
+          "thermal_diffusion_per_m": 0.036198207348847614,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.537479844890386,
+          "thermal_total_per_m": 0.03710526137088621,
+          "total_per_m": 6.545721688924725
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.4730241216835935,
+          "mech_equilibrium_per_m": 4.319761037573956,
+          "mech_history_per_m": 2.1311889503134127,
+          "thermal_mass_per_m": 0.0026857838482559123,
+          "thermal_diffusion_per_m": 0.017907151560059623,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.391928670947482,
+          "thermal_total_per_m": 0.018489805205553378,
+          "total_per_m": 5.4000804148630905
+        },
+        "jpeak_local_4D_L1": 6.545721688924725,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 73.13180921618347,
+          "near_wall_0_100um": 67.28618614283647,
+          "late_time_600_900": 83.01596341956464,
+          "intersection_polar_near_late": 52.9426175638857
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 75,
+            "L1": 0.006678017500517668,
+            "signed": -0.001164854659324465
+          },
+          {
+            "start_s": 75,
+            "end_s": 150,
+            "L1": 0.023258838120583936,
+            "signed": -0.004223813605334544
+          },
+          {
+            "start_s": 150,
+            "end_s": 225,
+            "L1": 0.050981928940827925,
+            "signed": -0.00962225771146652
+          },
+          {
+            "start_s": 225,
+            "end_s": 300,
+            "L1": 0.09098755899427224,
+            "signed": -0.01781489045947289
+          },
+          {
+            "start_s": 300,
+            "end_s": 375,
+            "L1": 0.14423269283189,
+            "signed": -0.029371180330353783
+          },
+          {
+            "start_s": 375,
+            "end_s": 450,
+            "L1": 0.20839732693121146,
+            "signed": -0.044674387608830676
+          },
+          {
+            "start_s": 450,
+            "end_s": 525,
+            "L1": 0.2689423882052669,
+            "signed": -0.06273991510302038
+          },
+          {
+            "start_s": 525,
+            "end_s": 600,
+            "L1": 0.3182490145758962,
+            "signed": -0.0789121125677997
+          },
+          {
+            "start_s": 600,
+            "end_s": 675,
+            "L1": 0.4938743889861534,
+            "signed": -0.08191788364012415
+          },
+          {
+            "start_s": 675,
+            "end_s": 750,
+            "L1": 1.0126272738494921,
+            "signed": -0.05109483448069926
+          },
+          {
+            "start_s": 750,
+            "end_s": 825,
+            "L1": 2.06735782954866,
+            "signed": 0.04585950504303676
+          },
+          {
+            "start_s": 825,
+            "end_s": 900,
+            "L1": 1.8601344304399536,
+            "signed": 0.09348027720453106
+          }
+        ]
+      },
+      "60": {
+        "jpeak_signed_delta": -0.2387499362239498,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.392210097203346,
+          "mech_equilibrium_per_m": 4.4052229379783,
+          "mech_history_per_m": 2.2968373318076214,
+          "thermal_mass_per_m": 0.005135747081754496,
+          "thermal_diffusion_per_m": 0.036872552032789274,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.471827006929941,
+          "thermal_total_per_m": 0.03778534791324412,
+          "total_per_m": 6.48014668700544
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.3883559354437836,
+          "mech_equilibrium_per_m": 4.253770989364542,
+          "mech_history_per_m": 2.2767872982700874,
+          "thermal_mass_per_m": 0.002668803791027806,
+          "thermal_diffusion_per_m": 0.017865011919196004,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.309627748777217,
+          "thermal_total_per_m": 0.01844472806309743,
+          "total_per_m": 5.317803539802862
+        },
+        "jpeak_local_4D_L1": 6.48014668700544,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 72.94522097427537,
+          "near_wall_0_100um": 67.16075249976839,
+          "late_time_600_900": 83.39010381855184,
+          "intersection_polar_near_late": 52.88838340312187
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 60,
+            "L1": 0.003147889944484522,
+            "signed": -0.0005393440337545805
+          },
+          {
+            "start_s": 60,
+            "end_s": 120,
+            "L1": 0.01128624299487713,
+            "signed": -0.0019994537474728566
+          },
+          {
+            "start_s": 120,
+            "end_s": 180,
+            "L1": 0.025112168749532104,
+            "signed": -0.004599852663453963
+          },
+          {
+            "start_s": 180,
+            "end_s": 240,
+            "L1": 0.045042801674892025,
+            "signed": -0.008514806959498446
+          },
+          {
+            "start_s": 240,
+            "end_s": 300,
+            "L1": 0.07156677682812962,
+            "signed": -0.013948570015804601
+          },
+          {
+            "start_s": 300,
+            "end_s": 360,
+            "L1": 0.10508197757965478,
+            "signed": -0.02115497653806617
+          },
+          {
+            "start_s": 360,
+            "end_s": 420,
+            "L1": 0.1453051316305947,
+            "signed": -0.030357009920138785
+          },
+          {
+            "start_s": 420,
+            "end_s": 480,
+            "L1": 0.1883808445589216,
+            "signed": -0.04146764906043851
+          },
+          {
+            "start_s": 480,
+            "end_s": 540,
+            "L1": 0.22494765148802817,
+            "signed": -0.0535419487365292
+          },
+          {
+            "start_s": 540,
+            "end_s": 600,
+            "L1": 0.25647415166804227,
+            "signed": -0.06400918144450904
+          },
+          {
+            "start_s": 600,
+            "end_s": 660,
+            "L1": 0.34844097468832735,
+            "signed": -0.06783717133122805
+          },
+          {
+            "start_s": 660,
+            "end_s": 720,
+            "L1": 0.5961540406872085,
+            "signed": -0.05677927110098946
+          },
+          {
+            "start_s": 720,
+            "end_s": 780,
+            "L1": 1.0751886973584257,
+            "signed": -0.01876064072255161
+          },
+          {
+            "start_s": 780,
+            "end_s": 840,
+            "L1": 1.8831240609299025,
+            "signed": 0.0627049827999249
+          },
+          {
+            "start_s": 840,
+            "end_s": 900,
+            "L1": 1.500893276224419,
+            "signed": 0.08205495725054636
+          }
+        ]
+      },
+      "50": {
+        "jpeak_signed_delta": -0.23651625120513664,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.34084164082074,
+          "mech_equilibrium_per_m": 4.369460788312252,
+          "mech_history_per_m": 2.407827486937089,
+          "thermal_mass_per_m": 0.005196314459416988,
+          "thermal_diffusion_per_m": 0.03725780225630721,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.429919828485098,
+          "thermal_total_per_m": 0.03819343175687418,
+          "total_per_m": 6.438359652613654
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.336881539856585,
+          "mech_equilibrium_per_m": 4.215381012916146,
+          "mech_history_per_m": 2.38582440290748,
+          "thermal_mass_per_m": 0.002656337158126767,
+          "thermal_diffusion_per_m": 0.01783647998089146,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.25665475280027,
+          "thermal_total_per_m": 0.018413363678327698,
+          "total_per_m": 5.264849158895758
+        },
+        "jpeak_local_4D_L1": 6.438359652613654,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 72.82169486688497,
+          "near_wall_0_100um": 67.07380977868564,
+          "late_time_600_900": 83.65488754641923,
+          "intersection_polar_near_late": 52.85848787865092
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 50,
+            "L1": 0.001663079311864636,
+            "signed": -0.00028146707486187964
+          },
+          {
+            "start_s": 50,
+            "end_s": 100,
+            "L1": 0.00612808628081828,
+            "signed": -0.0010665931614026445
+          },
+          {
+            "start_s": 100,
+            "end_s": 150,
+            "L1": 0.013879050559756877,
+            "signed": -0.002485812872941733
+          },
+          {
+            "start_s": 150,
+            "end_s": 200,
+            "L1": 0.025110589927556493,
+            "signed": -0.004627486806635767
+          },
+          {
+            "start_s": 200,
+            "end_s": 250,
+            "L1": 0.04004553007831742,
+            "signed": -0.007578184469313671
+          },
+          {
+            "start_s": 250,
+            "end_s": 300,
+            "L1": 0.058911945388875474,
+            "signed": -0.011444140607142324
+          },
+          {
+            "start_s": 300,
+            "end_s": 350,
+            "L1": 0.08190922582265922,
+            "signed": -0.01635474876314167
+          },
+          {
+            "start_s": 350,
+            "end_s": 400,
+            "L1": 0.10907498187210063,
+            "signed": -0.02243481149789061
+          },
+          {
+            "start_s": 400,
+            "end_s": 450,
+            "L1": 0.13919335535405022,
+            "signed": -0.02971895257254411
+          },
+          {
+            "start_s": 450,
+            "end_s": 500,
+            "L1": 0.1689271290832357,
+            "signed": -0.037986447296155496
+          },
+          {
+            "start_s": 500,
+            "end_s": 550,
+            "L1": 0.1927814893197028,
+            "signed": -0.046519622773099456
+          },
+          {
+            "start_s": 550,
+            "end_s": 600,
+            "L1": 0.21473266238673694,
+            "signed": -0.05381707814599646
+          },
+          {
+            "start_s": 600,
+            "end_s": 650,
+            "L1": 0.27094058068712384,
+            "signed": -0.0573050345644007
+          },
+          {
+            "start_s": 650,
+            "end_s": 700,
+            "L1": 0.4052736094935849,
+            "signed": -0.05308049525705638
+          },
+          {
+            "start_s": 700,
+            "end_s": 750,
+            "L1": 0.663721798354046,
+            "signed": -0.03569682711017118
+          },
+          {
+            "start_s": 750,
+            "end_s": 800,
+            "L1": 1.0791670662574493,
+            "signed": 0.0020226305812705847
+          },
+          {
+            "start_s": 800,
+            "end_s": 850,
+            "L1": 1.709089058284427,
+            "signed": 0.06922723788307172
+          },
+          {
+            "start_s": 850,
+            "end_s": 900,
+            "L1": 1.2578104141513484,
+            "signed": 0.07263158330304333
+          }
+        ]
+      },
+      "45": {
+        "jpeak_signed_delta": -0.23541937784677414,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.316827121939265,
+          "mech_equilibrium_per_m": 4.354301240025616,
+          "mech_history_per_m": 2.4675835302948648,
+          "thermal_mass_per_m": 0.005227031605971593,
+          "thermal_diffusion_per_m": 0.03744693222149444,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.409947644939234,
+          "thermal_total_per_m": 0.03839742091028188,
+          "total_per_m": 6.418479226028721
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.312801695500586,
+          "mech_equilibrium_per_m": 4.198840149764643,
+          "mech_history_per_m": 2.444453557639632,
+          "thermal_mass_per_m": 0.002649751269891777,
+          "thermal_diffusion_per_m": 0.017822136150030473,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.230753964190976,
+          "thermal_total_per_m": 0.01839731132596453,
+          "total_per_m": 5.23893309657165
+        },
+        "jpeak_local_4D_L1": 6.418479226028721,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 72.75977771280625,
+          "near_wall_0_100um": 67.03713341678389,
+          "late_time_600_900": 84.86555529722311,
+          "intersection_polar_near_late": 53.20426834949343
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 45,
+            "L1": 0.0011384252195937783,
+            "signed": -0.00019150053667258175
+          },
+          {
+            "start_s": 45,
+            "end_s": 90,
+            "L1": 0.004267532830126708,
+            "signed": -0.000735904868013782
+          },
+          {
+            "start_s": 90,
+            "end_s": 135,
+            "L1": 0.009779295162158187,
+            "signed": -0.0017309679770085773
+          },
+          {
+            "start_s": 135,
+            "end_s": 180,
+            "L1": 0.01782570735082446,
+            "signed": -0.0032393244295511603
+          },
+          {
+            "start_s": 180,
+            "end_s": 225,
+            "L1": 0.028527895955832036,
+            "signed": -0.005315672362804431
+          },
+          {
+            "start_s": 225,
+            "end_s": 270,
+            "L1": 0.0420371832952649,
+            "signed": -0.008022789899196046
+          },
+          {
+            "start_s": 270,
+            "end_s": 315,
+            "L1": 0.05850860351031548,
+            "signed": -0.011438697672787749
+          },
+          {
+            "start_s": 315,
+            "end_s": 360,
+            "L1": 0.07805096452761037,
+            "signed": -0.015653295173391066
+          },
+          {
+            "start_s": 360,
+            "end_s": 405,
+            "L1": 0.10063691465591335,
+            "signed": -0.020745374533507468
+          },
+          {
+            "start_s": 405,
+            "end_s": 450,
+            "L1": 0.12529390131825577,
+            "signed": -0.026727257594581524
+          },
+          {
+            "start_s": 450,
+            "end_s": 495,
+            "L1": 0.1497679319094958,
+            "signed": -0.03344896930239211
+          },
+          {
+            "start_s": 495,
+            "end_s": 540,
+            "L1": 0.17045850735142948,
+            "signed": -0.04046532152974069
+          },
+          {
+            "start_s": 540,
+            "end_s": 585,
+            "L1": 0.18510832613571798,
+            "signed": -0.04688069016669584
+          },
+          {
+            "start_s": 585,
+            "end_s": 630,
+            "L1": 0.2180223219664628,
+            "signed": -0.05119115923159183
+          },
+          {
+            "start_s": 630,
+            "end_s": 675,
+            "L1": 0.2925181255029184,
+            "signed": -0.05114030218340952
+          },
+          {
+            "start_s": 675,
+            "end_s": 720,
+            "L1": 0.4418008912990161,
+            "signed": -0.04359589462181161
+          },
+          {
+            "start_s": 720,
+            "end_s": 765,
+            "L1": 0.6898799693026938,
+            "signed": -0.02444462131797364
+          },
+          {
+            "start_s": 765,
+            "end_s": 810,
+            "L1": 1.064749715895707,
+            "signed": 0.01150734447944006
+          },
+          {
+            "start_s": 810,
+            "end_s": 855,
+            "L1": 1.6049258876285135,
+            "signed": 0.07069707671457526
+          },
+          {
+            "start_s": 855,
+            "end_s": 900,
+            "L1": 1.1351811252108706,
+            "signed": 0.06734394436016825
+          }
+        ]
+      },
+      "36": {
+        "jpeak_signed_delta": -0.2334794957129822,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.276453940053024,
+          "mech_equilibrium_per_m": 4.331212362109281,
+          "mech_history_per_m": 2.5830461295111737,
+          "thermal_mass_per_m": 0.005287404163793712,
+          "thermal_diffusion_per_m": 0.03781469901859875,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.374972576462322,
+          "thermal_total_per_m": 0.0387819136650025,
+          "total_per_m": 6.383139139760562
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.272360302179273,
+          "mech_equilibrium_per_m": 4.175296145263275,
+          "mech_history_per_m": 2.557731955479447,
+          "thermal_mass_per_m": 0.002637295352824245,
+          "thermal_diffusion_per_m": 0.017795813888493307,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.1851007906255235,
+          "thermal_total_per_m": 0.01836765850355279,
+          "total_per_m": 5.193257760293693
+        },
+        "jpeak_local_4D_L1": 6.383139139760562,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 72.6509672317466,
+          "near_wall_0_100um": 66.96360562715714,
+          "late_time_600_900": 85.705578609446,
+          "intersection_polar_near_late": 53.35300676264013
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 36,
+            "L1": 0.0004967505539009559,
+            "signed": -8.27008403947851e-05
+          },
+          {
+            "start_s": 36,
+            "end_s": 72,
+            "L1": 0.0019359609397384715,
+            "signed": -0.00032823600209560985
+          },
+          {
+            "start_s": 72,
+            "end_s": 108,
+            "L1": 0.004562763757756008,
+            "signed": -0.000789993009999283
+          },
+          {
+            "start_s": 108,
+            "end_s": 144,
+            "L1": 0.008485876182598035,
+            "signed": -0.0015010738958253652
+          },
+          {
+            "start_s": 144,
+            "end_s": 180,
+            "L1": 0.013748390518795717,
+            "signed": -0.002485211782340546
+          },
+          {
+            "start_s": 180,
+            "end_s": 216,
+            "L1": 0.020393248978769075,
+            "signed": -0.0037645145793679885
+          },
+          {
+            "start_s": 216,
+            "end_s": 252,
+            "L1": 0.028487503138078872,
+            "signed": -0.005363987893375539
+          },
+          {
+            "start_s": 252,
+            "end_s": 288,
+            "L1": 0.03809017366222908,
+            "signed": -0.0073139318874766044
+          },
+          {
+            "start_s": 288,
+            "end_s": 324,
+            "L1": 0.049263366399885766,
+            "signed": -0.009650375016070037
+          },
+          {
+            "start_s": 324,
+            "end_s": 360,
+            "L1": 0.062047321282601785,
+            "signed": -0.012412408243456035
+          },
+          {
+            "start_s": 360,
+            "end_s": 396,
+            "L1": 0.07644792841397999,
+            "signed": -0.01563424425869643
+          },
+          {
+            "start_s": 396,
+            "end_s": 432,
+            "L1": 0.09212475462690961,
+            "signed": -0.019329632854157675
+          },
+          {
+            "start_s": 432,
+            "end_s": 468,
+            "L1": 0.10838320570060933,
+            "signed": -0.02346720491940415
+          },
+          {
+            "start_s": 468,
+            "end_s": 504,
+            "L1": 0.12391909834968251,
+            "signed": -0.02793708600581818
+          },
+          {
+            "start_s": 504,
+            "end_s": 540,
+            "L1": 0.13717871104477997,
+            "signed": -0.0325109722251979
+          },
+          {
+            "start_s": 540,
+            "end_s": 576,
+            "L1": 0.14686775303244337,
+            "signed": -0.0367990595536032
+          },
+          {
+            "start_s": 576,
+            "end_s": 612,
+            "L1": 0.16229279373625052,
+            "signed": -0.040207389199943114
+          },
+          {
+            "start_s": 612,
+            "end_s": 648,
+            "L1": 0.19210734629737744,
+            "signed": -0.041898384586804935
+          },
+          {
+            "start_s": 648,
+            "end_s": 684,
+            "L1": 0.25073247897024786,
+            "signed": -0.04075597756105458
+          },
+          {
+            "start_s": 684,
+            "end_s": 720,
+            "L1": 0.3507118478403216,
+            "signed": -0.03535519417590384
+          },
+          {
+            "start_s": 720,
+            "end_s": 756,
+            "L1": 0.5012938173496629,
+            "signed": -0.02393474412353726
+          },
+          {
+            "start_s": 756,
+            "end_s": 792,
+            "L1": 0.7130470832790962,
+            "signed": -0.004370166041247722
+          },
+          {
+            "start_s": 792,
+            "end_s": 828,
+            "L1": 1.0025287143506796,
+            "signed": 0.025856752385065046
+          },
+          {
+            "start_s": 828,
+            "end_s": 864,
+            "L1": 1.385190269880756,
+            "signed": 0.06974704159428569
+          },
+          {
+            "start_s": 864,
+            "end_s": 900,
+            "L1": 0.912801981473412,
+            "signed": 0.05680919896346615
+          }
+        ]
+      },
+      "25": {
+        "jpeak_signed_delta": -0.23117024324894242,
+        "native_4D_L1_by_component": {
+          "mech_explicit_per_m": 6.232941907769504,
+          "mech_equilibrium_per_m": 4.311946381671498,
+          "mech_history_per_m": 2.739822347159535,
+          "thermal_mass_per_m": 0.005360056847266779,
+          "thermal_diffusion_per_m": 0.038273080470349184,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 6.332677053102774,
+          "thermal_total_per_m": 0.03926216853445143,
+          "total_per_m": 6.340921181721143
+        },
+        "time_integrated_spatial_L1_by_component": {
+          "mech_explicit_per_m": 6.228646534561361,
+          "mech_equilibrium_per_m": 4.154265415054811,
+          "mech_history_per_m": 2.7115827793077845,
+          "thermal_mass_per_m": 0.0026210107071042996,
+          "thermal_diffusion_per_m": 0.01776272973534218,
+          "thermal_robin_per_m": 0.0,
+          "mechanical_total_per_m": 5.131050922251086,
+          "thermal_total_per_m": 0.018330035936180086,
+          "total_per_m": 5.139206946952185
+        },
+        "jpeak_local_4D_L1": 6.340921181721143,
+        "absolute_4D_L1_shares_percent": {
+          "polar_caps": 72.52042866487784,
+          "near_wall_0_100um": 66.8666374886389,
+          "late_time_600_900": 84.37502816822503,
+          "intersection_polar_near_late": 52.80337960021808
+        },
+        "time_step_L1": [
+          {
+            "start_s": 0,
+            "end_s": 25,
+            "L1": 0.00011765957162759478,
+            "signed": -1.944059897402466e-05
+          },
+          {
+            "start_s": 25,
+            "end_s": 50,
+            "L1": 0.000491956276967339,
+            "signed": -8.1781313851159e-05
+          },
+          {
+            "start_s": 50,
+            "end_s": 75,
+            "L1": 0.0012235052326844318,
+            "signed": -0.00020597005678091754
+          },
+          {
+            "start_s": 75,
+            "end_s": 100,
+            "L1": 0.0023709209373254294,
+            "signed": -0.00040502660244675335
+          },
+          {
+            "start_s": 100,
+            "end_s": 125,
+            "L1": 0.003963357884205107,
+            "signed": -0.000687568019071944
+          },
+          {
+            "start_s": 125,
+            "end_s": 150,
+            "L1": 0.006014944835060325,
+            "signed": -0.0010597375160277848
+          },
+          {
+            "start_s": 150,
+            "end_s": 175,
+            "L1": 0.00853041560107332,
+            "signed": -0.0015266301000620387
+          },
+          {
+            "start_s": 175,
+            "end_s": 200,
+            "L1": 0.011517908463491874,
+            "signed": -0.0020932104335223607
+          },
+          {
+            "start_s": 200,
+            "end_s": 225,
+            "L1": 0.014989287693249392,
+            "signed": -0.0027648908632650214
+          },
+          {
+            "start_s": 225,
+            "end_s": 250,
+            "L1": 0.018961842922871938,
+            "signed": -0.0035478982636364008
+          },
+          {
+            "start_s": 250,
+            "end_s": 275,
+            "L1": 0.023449426992916023,
+            "signed": -0.0044494901045946215
+          },
+          {
+            "start_s": 275,
+            "end_s": 300,
+            "L1": 0.02846410467403588,
+            "signed": -0.005478014318715089
+          },
+          {
+            "start_s": 300,
+            "end_s": 325,
+            "L1": 0.034024666596937855,
+            "signed": -0.006642745651034886
+          },
+          {
+            "start_s": 325,
+            "end_s": 350,
+            "L1": 0.04013473000437211,
+            "signed": -0.007953379522293233
+          },
+          {
+            "start_s": 350,
+            "end_s": 375,
+            "L1": 0.04680096570571868,
+            "signed": -0.009419035009858752
+          },
+          {
+            "start_s": 375,
+            "end_s": 400,
+            "L1": 0.054018841236185666,
+            "signed": -0.011046622744588761
+          },
+          {
+            "start_s": 400,
+            "end_s": 425,
+            "L1": 0.06166531319152286,
+            "signed": -0.01283847428749987
+          },
+          {
+            "start_s": 425,
+            "end_s": 450,
+            "L1": 0.06960647608313325,
+            "signed": -0.014789199523705849
+          },
+          {
+            "start_s": 450,
+            "end_s": 475,
+            "L1": 0.0775786877095451,
+            "signed": -0.016881822181669684
+          },
+          {
+            "start_s": 475,
+            "end_s": 500,
+            "L1": 0.08523907602584348,
+            "signed": -0.019083322196462527
+          },
+          {
+            "start_s": 500,
+            "end_s": 525,
+            "L1": 0.0922676042681133,
+            "signed": -0.02133977194849164
+          },
+          {
+            "start_s": 525,
+            "end_s": 550,
+            "L1": 0.0981009540279795,
+            "signed": -0.023571281123906995
+          },
+          {
+            "start_s": 550,
+            "end_s": 575,
+            "L1": 0.10266429767423968,
+            "signed": -0.025666960663247432
+          },
+          {
+            "start_s": 575,
+            "end_s": 600,
+            "L1": 0.10857020490988102,
+            "signed": -0.027480083539808922
+          },
+          {
+            "start_s": 600,
+            "end_s": 625,
+            "L1": 0.11895463065820525,
+            "signed": -0.028823567524221994
+          },
+          {
+            "start_s": 625,
+            "end_s": 650,
+            "L1": 0.1348249589085984,
+            "signed": -0.029465842184000224
+          },
+          {
+            "start_s": 650,
+            "end_s": 675,
+            "L1": 0.16085153297212174,
+            "signed": -0.029127098419723794
+          },
+          {
+            "start_s": 675,
+            "end_s": 700,
+            "L1": 0.19887509899988523,
+            "signed": -0.027475860798130476
+          },
+          {
+            "start_s": 700,
+            "end_s": 725,
+            "L1": 0.25348483127100147,
+            "signed": -0.024125775539508336
+          },
+          {
+            "start_s": 725,
+            "end_s": 750,
+            "L1": 0.3249864564520914,
+            "signed": -0.018632471280023113
+          },
+          {
+            "start_s": 750,
+            "end_s": 775,
+            "L1": 0.4160870724026734,
+            "signed": -0.010490324872181267
+          },
+          {
+            "start_s": 775,
+            "end_s": 800,
+            "L1": 0.5306526354261066,
+            "signed": 0.0008710565745052024
+          },
+          {
+            "start_s": 800,
+            "end_s": 825,
+            "L1": 0.6727554242693025,
+            "signed": 0.016090917873043536
+          },
+          {
+            "start_s": 825,
+            "end_s": 850,
+            "L1": 0.8457939644441775,
+            "signed": 0.03588390007258331
+          },
+          {
+            "start_s": 850,
+            "end_s": 875,
+            "L1": 1.0547727083028975,
+            "signed": 0.061096881456265156
+          },
+          {
+            "start_s": 875,
+            "end_s": 900,
+            "L1": 0.6381147190951,
+            "signed": 0.04206029797601135
+          }
+        ]
+      }
+    },
+    "fine_pair_dt36_25_temporal_vs_intermesh_spatial_L1_ratios": {
+      "mech_explicit_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.2293895419454655,
+        "M1_minus_M0_spatial_L1_dt25": 6.228646534561361,
+        "ratio": 0.03682815209895673
+      },
+      "mech_equilibrium_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.5878284042545928,
+        "M1_minus_M0_spatial_L1_dt25": 4.154265415054811,
+        "ratio": 0.14149996341695878
+      },
+      "mech_history_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.5496708162695533,
+        "M1_minus_M0_spatial_L1_dt25": 2.7115827793077845,
+        "ratio": 0.2027121651841563
+      },
+      "thermal_mass_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.00031928544129367656,
+        "M1_minus_M0_spatial_L1_dt25": 0.0026210107071042996,
+        "ratio": 0.12181767912212157
+      },
+      "thermal_diffusion_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.0006617930552724227,
+        "M1_minus_M0_spatial_L1_dt25": 0.01776272973534218,
+        "ratio": 0.03725739597082678
+      },
+      "thermal_robin_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.0,
+        "M1_minus_M0_spatial_L1_dt25": 0.0,
+        "ratio": null
+      },
+      "mechanical_total_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.08035045782805596,
+        "M1_minus_M0_spatial_L1_dt25": 5.131050922251086,
+        "ratio": 0.01565964926982341
+      },
+      "thermal_total_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.0006916837697350174,
+        "M1_minus_M0_spatial_L1_dt25": 0.018330035936180086,
+        "ratio": 0.037734992563203985
+      },
+      "total_per_m": {
+        "max_M0_M1_temporal_L1_dt36_vs25": 0.08007420110603859,
+        "M1_minus_M0_spatial_L1_dt25": 5.139206946952185,
+        "ratio": 0.01558104235392325
+      }
+    },
+    "local_spatial_signal_vs_time_sensitivity": {
+      "signal_L1": 5.139206946952185,
+      "noise_max_between_two_meshes_L1": 0.09897849283151539,
+      "signal_mass_share_where_signal_gt_2x_time_percent": 99.97742419426046,
+      "signal_mass_share_where_signal_gt_5x_time_percent": 99.69945241811514,
+      "signal_mass_share_where_signal_gt_10x_time_percent": 98.98997924130805,
+      "number_spatial_bins_signal_le_time": 251,
+      "number_spatial_bins_total": 1200,
+      "note": "sensitivity analysis of *spatial time-integrated* signed total; ratios 2/5/10 are diagnostics, not frozen acceptance gates"
+    },
+    "time_resolved_reconstruction_sensitivity": {
+      "time_projection": "25s piecewise-constant conservative reconstruction",
+      "signal_L1_4D": 6.340921181721143,
+      "max_per_4D_bin_temporal_perturbation_L1": 1.614708313457566,
+      "noise_L1_over_signal_L1": 0.254648854193655,
+      "signal_mass_share_where_signal_gt_2x_time_percent": 89.87042190779378,
+      "signal_mass_share_where_signal_gt_5x_time_percent": 63.34533158343135,
+      "number_time_spatial_bins_signal_le_time": 16112,
+      "number_time_spatial_bins_total": 43200,
+      "warning": "interpolated diagnostic only: not exact physical common-time QP re-integration"
+    },
+    "reconstructed_4D_time_window_sensitivity": {
+      "25": {
+        "time_window_s": 25,
+        "intermesh_L1": 6.340921181721143,
+        "temporal_max_per_bin_L1": 1.614708313457566,
+        "noise_to_signal_ratio": 0.254648854193655,
+        "signal_mass_where_gt_5x_temporal_percent": 63.34533158343135
+      },
+      "50": {
+        "time_window_s": 50,
+        "intermesh_L1": 6.3308499902621405,
+        "temporal_max_per_bin_L1": 1.5850439071446503,
+        "noise_to_signal_ratio": 0.2503682616998825,
+        "signal_mass_where_gt_5x_temporal_percent": 61.45440019993498
+      },
+      "75": {
+        "time_window_s": 75,
+        "intermesh_L1": 6.317235259941994,
+        "temporal_max_per_bin_L1": 1.123779534042947,
+        "noise_to_signal_ratio": 0.17789103742406226,
+        "signal_mass_where_gt_5x_temporal_percent": 78.85029518550802
+      },
+      "150": {
+        "time_window_s": 150,
+        "intermesh_L1": 6.240942591064455,
+        "temporal_max_per_bin_L1": 0.6119967591721173,
+        "noise_to_signal_ratio": 0.0980615908962776,
+        "signal_mass_where_gt_5x_temporal_percent": 88.83023050011471
+      }
+    },
+    "crossmesh_indicator_dt36_vs25_stability_by_component": {
+      "mech_explicit_per_m": {
+        "L1_delta_mesh_dt25": 6.228646534561361,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.06919853067904433,
+        "drift_ratio": 0.011109721878593885
+      },
+      "mech_equilibrium_per_m": {
+        "L1_delta_mesh_dt25": 4.154265415054811,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.17131575002498992,
+        "drift_ratio": 0.04123851822373983
+      },
+      "mech_history_per_m": {
+        "L1_delta_mesh_dt25": 2.7115827793077845,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.1542701510633572,
+        "drift_ratio": 0.05689302655283105
+      },
+      "thermal_mass_per_m": {
+        "L1_delta_mesh_dt25": 0.0026210107071042996,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 1.6778888062492915e-05,
+        "drift_ratio": 0.006401686195715805
+      },
+      "thermal_diffusion_per_m": {
+        "L1_delta_mesh_dt25": 0.01776272973534218,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 7.723775360615311e-05,
+        "drift_ratio": 0.004348304272877302
+      },
+      "thermal_robin_per_m": {
+        "L1_delta_mesh_dt25": 0.0,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.0,
+        "drift_ratio": null
+      },
+      "mechanical_total_per_m": {
+        "L1_delta_mesh_dt25": 5.131050922251086,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.059690446996182304,
+        "drift_ratio": 0.011633181564683246
+      },
+      "thermal_total_per_m": {
+        "L1_delta_mesh_dt25": 0.018330035936180086,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 7.74465894758986e-05,
+        "drift_ratio": 0.004225119347585861
+      },
+      "total_per_m": {
+        "L1_delta_mesh_dt25": 5.139206946952185,
+        "L1_delta_of_crossmesh_indicators_dt36_vs25": 0.05972542551539005,
+        "drift_ratio": 0.011621525681274678
+      }
+    },
+    "time_resolved_crossmesh_indicator_stability": {
+      "L1_delta_mesh_dt25": 6.340921181721143,
+      "L1_delta_of_crossmesh_indicator_dt36_vs25": 0.5839477471397267,
+      "drift_ratio": 0.09209194222805706,
+      "warning": "reconstruction-based; time windows do not exactly align for dt36"
+    }
+  }
+}
