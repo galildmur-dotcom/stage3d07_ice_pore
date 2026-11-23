@@ -1,0 +1,25 @@
+{
+  "revision": "P10GH_R1_TWO_OCC_PARAMETERIZATIONS_2D_ONLY_NO_FEM",
+  "date": "2026-11-23",
+  "model": "Stage3D07",
+  "parent_M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "canonical_M0_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "canonical_OCC_CAD_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "uniform_volume_target": 0.825,
+  "size_scale": 0.9378887276834518,
+  "surface_variants": [
+    "original",
+    "CAD_poles_rotated_90_about_X"
+  ],
+  "native_2d_attempts": 2,
+  "native_3d_attempts": 0,
+  "FEM_attempts": 0,
+  "files": {
+    "01_P10GH_PREFLIGHT_ONLY.cmd": "28611bad61c97e39d46972355e1de3077756a9243b02b9134d9f9ef03ddd0c94",
+    "02_P10GH_ONE_2D_PAIR_ONLY.cmd": "bd24e6bfc503c6b6c6577b6e0ce8cf9a6dd9f33dae33aca8d8dabf8ce2246fc6",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "P10GH_surface_compare.py": "f54b48dea70176a467a04b19fe7271e73e0a5b3cbfb7d66ed0de530502511b5c",
+    "README_P10GH_RU.md": "160ed52215f714f4530eddd4a282005762340a2b0e7955e62d472f581d00a1d4",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}

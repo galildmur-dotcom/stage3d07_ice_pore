@@ -806,3 +806,8 @@ No new Gmsh/FEM, D025 fixed3D polar PASS unchanged.
 
 ZIP `research/packages/P10GG_R1_CAD_POLE_TWO_2D_ONLY_WINDOWS_20261123.zip` SHA256 `88662559e9874c49675aee953326b0450ab0516e9cad12e8ee8ed83e8eed8d4b` (15166B, 7 files) прошёл CRC/extracted selftest/Linux native STOP/tamper STOP и шесть offline source+synthetic Tri6/mocked run тестов. Две модели M0-original / CAD-parametric-axis rotated 90° при том же Field3 × 0.825^(1/3), только native Gmsh4.15.2 `-parse_and_exit` и два `-2` в будущем, без -3/FEM. Реальные Windows -2 PENDING; Tri6 результаты UNKNOWN, новая M1 NONE, FEM0. Единственный будущий первичный вход — `P10GG_CAD_POLE_2D_EVIDENCE.zip`. Не считать source-only проверку доказательством качества поверхности. Отчёт `research/P10GG_R1_CAD_POLE_ROTATION_TWO_SURFACE_MESH_WINDOWS_PREPARED_20261123.md`.
 
+
+
+### N-P10GH — фактический P10GG STOP до построения; P10GH SOURCE PASS, native 2D ожидается (23.11.2026)
+
+Первичный P10GG_02_RESULT.txt (SHA256 84fed93f34bb1052e6ca38a28dd058da25ca424e1eb26d0dcb9d9fff7a78ec83) содержит 'generated GEO changed since preflight', EXIT=2. По коду это CRLF/LF mismatch текстовой записи generated GEO на Windows в собственном инструменте, до native -2 и до permanent markers; не свидетельствует о качестве Gmsh или 3D. Исправлен отдельный P10GH R1 ('xb' bytes+SHA) с 8 автономными PASS и запретом при существующих старых P10GG markers. ZIP SHA256 fca8b6b5847442fe650daaa5972020985e452f3392c6d97e3d8bc16e200f4295. Ожидается реальный Windows P10GH evidence. Ни 2D improvement, ни 3D quality, ни M1/FEM convergence НЕ ДОКАЗАНЫ. D-027 не изменён. Протокол research/P10GH_R1_P10GG_PREMESH_CRLF_STOP_AND_BYTE_STABLE_REISSUE_20261123.md.

@@ -1010,3 +1010,8 @@ No new Gmsh/FEM; report P10FK_P10FB_POLAR_CORNER_ORIENTATION_AND_ASPECT_AUDIT_20
 
 Исходные M0 GEO SHAac6981b0… и OCC SHA8029a6ed… проверены. Новый P10GG использует ровно одинаковое C¹ Field3 × 0.825^(1/3) и отличается только поворотом CAD-полюсов сферы; никаких иных геометрических модификаций. 6 offline source/synthetic Tri6/mocked run tests PASS, 7-file ZIP CRC/extract/selftest/Linux STOP/tamper STOP PASS, SHA256 `88662559e9874c49675aee953326b0450ab0516e9cad12e8ee8ed83e8eed8d4b` (15166B). Реальные Windows Gmsh4.15.2 -parse/-2 НЕ выполнялись, 3D=0, FEM=0. 01 только source+parse, 02 строго две защищённые native -2 с permanent markers и ограничениями. После одного P10GG_CAD_POLE_2D_EVIDENCE.zip нужен независимый аудит; прежние сетки и markers не трогать. Протокол `research/P10GG_R1_CAD_POLE_ROTATION_TWO_SURFACE_MESH_WINDOWS_PREPARED_20261123.md`.
 
+
+
+## 2026-11-23 — P10GH: входной STOP P10GG и исправление переноса строк [ФАКТ / SOURCE TEST; НЕТ MESH]
+
+Фактический P10GG_02_RESULT.txt: P10GG_STOP 'generated GEO changed since preflight', check_exit_code=2; file SHA 84fed93f34bb1052e6ca38a28dd058da25ca424e1eb26d0dcb9d9fff7a78ec83. Причина установлена аудитом исходников: CRLF Windows при записи .geo текстовым режимом против LF-хешей, а не Gmsh/mesh failure. По исходному порядку proof_gate расположен до marker creation и до -2; 2D не выполнялся. Старую P10GG 02 не повторять. P10GH — отдельный байтово стабильный релиз (open 'xb', каждое GEO SHA) + 8 офлайн PASS, ZIP SHA fca8b6b5847442fe650daaa5972020985e452f3392c6d97e3d8bc16e200f4295. Native Windows P10GH пока не запускался. Требуется 01 preflight и одна 02, один P10GH_CAD_POLE_2D_EVIDENCE.zip. 3D=0, FEM=0. Отчёт research/P10GH_R1_P10GG_PREMESH_CRLF_STOP_AND_BYTE_STABLE_REISSUE_20261123.md.

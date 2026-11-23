@@ -1109,3 +1109,10 @@ ZIP `research/packages/P10GG_R1_CAD_POLE_TWO_2D_ONLY_WINDOWS_20261123.zip`, SHA2
 
 От пользователя после Windows PASS требуется один `P10GG_CAD_POLE_2D_EVIDENCE.zip`; при раннем STOP только `P10GG_01_RESULT.txt` или `P10GG_02_RESULT.txt`. Последующий научный анализ: реальные q_corner полюсов, curved surface Jacobian, радиус и physical2–9; затем один будущий HXT10 3D-кандидат с предрегистрацией D-027 thresholds. 2D результаты не дают FEM GO. Протокол: `research/P10GG_R1_CAD_POLE_ROTATION_TWO_SURFACE_MESH_WINDOWS_PREPARED_20261123.md`.
 
+
+
+## §127. P10GG 02 pre-mesh CRLF STOP → P10GH R1 byte-stable reissue (23.11.2026)
+
+Получен от исследователя только P10GG_02_RESULT.txt (SHA256 84fed93f34bb1052e6ca38a28dd058da25ca424e1eb26d0dcb9d9fff7a78ec83): P10GG_STOP 'generated GEO changed since preflight', exit=2. Аудит исходника установил систематическую ошибку P10GG: текстовая запись GEO на Windows конвертирует LF→CRLF; proof_gate сравнивает hashes с исходными LF. STOP до создания постоянных markers и до обоих gmsh -2 (по коду); фактические marker-файлы на ПК не обследованы. Старый 02 не повторять.
+
+Отдельный выпуск P10GH R1 записывает шесть GEO в бинарном 'xb' и сразу проверяет SHA фактических байтов против source_selftest. Добавлены 2 регрессии Windows CRLF и mock preflight→proof; всего 8 тестов PASS, ZIP/CRC/tamper/Linux STOP PASS. Старые P10GG markers при наличии блокируют P10GH, исторические папки не меняются. Новый P10GH только 01 parse preflight, затем один 02 с двумя native -2 (каждый ≤120с/2GiB/2 thread), нет -3/FEM. ZIP research/packages/P10GH_R1_CAD_POLE_TWO_2D_ONLY_WINDOWS_20261123.zip SHA256 fca8b6b5847442fe650daaa5972020985e452f3392c6d97e3d8bc16e200f4295, 15929 B. Native Windows Gmsh P10GH = пока 0, новая M1 отсутствует. Сохраняются D-027 (Veff ratio 0.80–0.85 + hard CAD/Tet10/coverage; legacy 18/18 diagnostic), M0 pin и старые STOP. Протокол research/P10GH_R1_P10GG_PREMESH_CRLF_STOP_AND_BYTE_STABLE_REISSUE_20261123.md.
