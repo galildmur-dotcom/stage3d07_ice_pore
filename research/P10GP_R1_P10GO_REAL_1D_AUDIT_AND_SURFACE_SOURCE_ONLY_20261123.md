@@ -24,3 +24,9 @@ Source-only скрипт не вызывает `gmsh.exe`, `-2`, `-3` или FEM
 Перед native 2D требуется отдельный согласованный ограниченный Windows запускатель: точный EXE SHA, preflight, byte-stable GEO, два собственных one-shot markers, явно ограниченные время/RAM/вывод, отдельные каталоги A/B, запрет 3D/FEM, оригинальные журналы и evidence ZIP. После него независимая проверка Tri6 surfaces (physical groups, pore/B6 closure, curved QP, physical north/south q и edge sizes) определит, можно ли вообще предлагать отдельный 3D опыт.
 
 Frozen D-027: global QV729 M1/M0 в [0.80,0.85], physical near-polar QV729 ≤0.98, CAD/curved Tri6/Tet10 и положительный 27/343/729QP detJ; 18 подписанных зон только полная диагностика, не 18/18 hard. M1 STOP, FEM=0.
+
+## Дополнение P10GP R2 — защищённый Windows 2D подготовлен, native ещё 0
+
+Подготовлен новый отдельный Windows ZIP `research/proposals/P10GP_SURFACE_SOURCE_ONLY_20261123/P10GP_R2_GUARDED_WINDOWS_2D_ONLY.zip`, SHA-256 `0c33c23fa8d47d1dc536a978039fd5b6528848c1034f258fe27f23b3a80da266`. Пять файлов, CRC и byte-pin; offline extracted selftest, native-disabled Linux STOP и изменённый source archive STOP подтверждены. Включает два CMD 01 preflight parse-only и 02 новую **не выполненную** пару bounded `-2`: 120с/2GiB/2 threads каждый, новые local+profile one-shot markers, видимый heartbeat 2с, независимые MSH2/Tri6 QA и явные распределения фактической длины рёбер в физических north/south/equator. Original P10GO/source pins/M0 не изменялись. Полная инструкция: `research/proposals/P10GP_SURFACE_SOURCE_ONLY_20261123/README_P10GP_R2_WINDOWS_RU.md`.
+
+**Следующий разрешительный барьер:** исследователь отдельно решает, разрешить ли один новый Windows `02` surface-only. Пока только подготовка; native 2D=0, native 3D=0, FEM=0. Не повторять старые P10GL/P10GM/P10GN/P10GO 02.
