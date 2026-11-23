@@ -1,5 +1,10 @@
 # RESEARCH_LOG — журнал исследования
 
+## 2026-11-23 — P10GL R1: отдельно авторизована одна новая HXT10 3D попытка P10GK; только SOURCE/UNIT PASS [НЕ ИЗМЕРЕНО 3D]
+
+После real P10GK Gmsh4.15.2 parse-only PASS исследователь сказал «разрешаю» на один новый bounded `gmsh -3` без FEM. Подготовлена отдельная 15-файловая ZIP-сборка SHA256 `4f4b9ee0c60ad4d664e605f5c110f4de6cc934fc8afd43f87a68a69fc77a0252` 59 439 bytes. Содержит исходный P10GK C¹ α=.06, архив реального parse-only, истинный prereg P10GJ M0-only frozen D-027 SHA2dcb1ae0..., read-only 27QP/Tri6/Tet10 QA. Кнопка01 независимый M0/12 221 C¹/math eval + native `-parse_and_exit` без meshing; кнопка02 после PASS в24h один Gmsh4.15.2 HXT10 Tet10 `-3` с двумя permanent markers, job memory≤8GiB, 900s, -nt2, MSH2, FEM0. 8/8 offline/mock тестов PASS (в т.ч. watchdog STOP блокирует повтор), ZIP CRC/extract/LINUX STOP/tamper STOP PASS; independent postnative 343/729QP selftest PASS. **Реальных P10GL -3 0, M1 еще нет, никакого GO/FEM**. Не менять D-027: global [.8,.85], near physical poles q≤.98, 18 signed diagnostic. Сценарий `research/P10GL_R1_ONE_AUTHORIZED_P10GK_C1_HXT10_WINDOWS_PREPARED_20261123.md`.
+
+
 ## 2026-11-23 — P10GK real Windows Gmsh4.15.2 `-parse_and_exit`: PASS, SHA/CRC независимый аудит [ИЗМЕРЕНО; NO MESH]
 
 Прислан ZIP исходных Windows preflight данных SHA `6af4dac68f1335aa714b02702ef7c305624ea46622b067fd5aacee6bde89305f`, CRC7/7. Исходные GEO, manifest/policy SHA, Gmsh4.15.2 exe SHA, M0 SHA, native parse log SHA совпали с опубликованным P10GK исходником; логи показывают один `-parse_and_exit`/read CAD/Field; exit0, Gmsh wall≈0.0169с, без 1D/2D/3D meshing/FEM. 12 221 MathEval проверок max discrepancy 3.33e−16 и C¹ 4 seams PASS. Независимый скрипт `scripts/p10gk_verify_native_parse_evidence.py`: PASS. **Ещё нет нового P10GK M1, нет native HXT10 `-3` authorization и FEM; реальный P10GJ D-027 STOP остаётся.** Запросить отдельное разрешение для одной bounded native Gmsh -3 попытки P10GK; не менять D-027 thresholds. Отчёт `research/P10GK_R1_REAL_WINDOWS_PARSE_ONLY_INDEPENDENT_AUDIT_PASS_20261123.md`, machine-readable verdict и archival ZIP в research/evidence.
