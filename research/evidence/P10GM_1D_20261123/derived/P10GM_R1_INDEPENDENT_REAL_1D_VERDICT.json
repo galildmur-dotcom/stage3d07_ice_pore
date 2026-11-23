@@ -1,0 +1,50 @@
+{
+  "revision": "P10GM_R1_INDEPENDENT_REAL_WINDOWS_1D_AB_C_AUDIT",
+  "input_evidence_sha256": "6b047f5dd485433987b1a518ad9c164f7a0fbf0747312c616dc31d84b8acfe34",
+  "zip_crc_pass": true,
+  "zip_member_count": 17,
+  "all_included_geo_byte_pinned": true,
+  "all_included_native_logs_sha_pinned": true,
+  "cases": [
+    {
+      "case": "A_F3_BASELINE",
+      "result": "PASS_1D",
+      "native_wall_s": 0.5100563999731094,
+      "native_exit_code": 0,
+      "stop_reason": "",
+      "peak_private_bytes_polled": 0,
+      "gmsh_1d_completed_log": true,
+      "mesh_bytes_in_evidence": false
+    },
+    {
+      "case": "B_F6_LINKED",
+      "result": "TIMEOUT_30S",
+      "native_wall_s": 30.124506899970584,
+      "native_exit_code": 1,
+      "stop_reason": "WALL_LIMIT",
+      "peak_private_bytes_polled": 246083584,
+      "gmsh_1d_completed_log": false,
+      "mesh_bytes_in_evidence": false
+    },
+    {
+      "case": "C_F7_INLINE",
+      "result": "TIMEOUT_30S",
+      "native_wall_s": 30.1282606999157,
+      "native_exit_code": 1,
+      "stop_reason": "WALL_LIMIT",
+      "peak_private_bytes_polled": 246067200,
+      "gmsh_1d_completed_log": false,
+      "mesh_bytes_in_evidence": false
+    }
+  ],
+  "independent_verdict": "A_F3_PASS_B_F6_TIMEOUT_C_F7_TIMEOUT_FIELD_EVALUATION_SUSPECT",
+  "causal_finding": "New composed south-pole MathEval field path triggers reproducible 1D stall; exact subexpression/root cause UNKNOWN",
+  "limitation": "A mesh SHA appears in manifest but raw 1D MSH is not included; completion verified via native log; no independent 1D element audit",
+  "previous_P10GL_one_shot": "CONSUMED_NEVER_REPEAT",
+  "native_2d_attempts_in_provided_evidence": 0,
+  "native_3d_attempts_in_provided_evidence": 0,
+  "FEM_attempts_in_provided_evidence": 0,
+  "M1_geometry_GO": false,
+  "FEM_GO": false,
+  "proposed_next_isolated_1d": "Field[7].F = F3 alone (no southern factor), then simple scaling or lower-bound control in a new separately authorized bounded diagnostic"
+}
