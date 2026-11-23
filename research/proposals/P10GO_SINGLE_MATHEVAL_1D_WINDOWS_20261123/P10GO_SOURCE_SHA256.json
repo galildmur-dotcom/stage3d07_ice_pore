@@ -1,0 +1,16 @@
+{
+  "FEM_allowed": false,
+  "files": {
+    "01_P10GO_PREFLIGHT_NO_MESH.cmd": "000fe314ac7d030e3eebe924767dccb21a482c53d6992df35974f17350f40328",
+    "02_P10GO_ONE_1D_SINGLE_FIELD_TEST.cmd": "b7fdceedd1ee153a80c71b8aedf02ec2cd0567d68a621b434f073a68c21b3bf3",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10GK_R1_C1_SOUTH_POLE_SOURCE_ONLY_20261123.zip": "4cc0390df4cc2277078ee0d8bca281bd77e3606ec4128e943cc10c243caf9d05",
+    "P10GO_1d_probe.py": "0f95b86e9f126f7de98a6617a0634cde2e2f3c779bbea6a3d17b220664c1bfd0",
+    "README_P10GO_RU.md": "357f02196824868b0cdb8cdb9e999044c6cb3e2f44bfb46afce7b6e952a1213c"
+  },
+  "native_1d_cases_max": 2,
+  "native_2d_allowed": false,
+  "native_3d_allowed": false,
+  "revision": "P10GO_R1_SINGLE_C1_MATHEVAL_SOURCE_AND_BOUNDED_1D_NO_3D_FEM",
+  "wall_s_per_case": 30
+}
