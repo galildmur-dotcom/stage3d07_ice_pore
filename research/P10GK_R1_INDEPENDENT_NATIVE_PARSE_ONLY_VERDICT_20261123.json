@@ -1,0 +1,24 @@
+{
+  "revision": "P10GK_R1_C1_SOUTH_FOCUS_SOURCE_ONLY",
+  "evidence_zip_sha256": "6af4dac68f1335aa714b02702ef7c305624ea46622b067fd5aacee6bde89305f",
+  "original_zip_files": 7,
+  "zip_crc": "PASS_7_OF_7",
+  "source_and_geo_sha256": "EXACT_PINNED_BYTES",
+  "native_windows_gmsh_version": "4.15.2",
+  "native_exe_sha256": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "native_parse_only_exit_code": 0,
+  "native_gmsh_parse_log_sha256": "27a752bbba6f0ac9713d2feb0b372e7d46c0e4199d43c71bbbd6cf31ee604d71",
+  "source_QA_sampled_points": 12221,
+  "max_independent_MathEval_ratio_error": 3.3306690738754696e-16,
+  "local_size_factor_range": [
+    0.94,
+    1.0
+  ],
+  "C1_seams_tested": 4,
+  "native_new_mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "source_preflight_status": "PASS_NATIVE_PARSE_ONLY",
+  "native_3d_meshing_authorized": false,
+  "new_HXT10_M1_measured": false,
+  "next_step": "SEPARATE_USER_PERMISSION_REQUIRED_FOR_ONE_NEW_3D_MESH_ONLY_ATTEMPT"
+}

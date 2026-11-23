@@ -1,5 +1,10 @@
 # RESEARCH_LOG — журнал исследования
 
+## 2026-11-23 — P10GK real Windows Gmsh4.15.2 `-parse_and_exit`: PASS, SHA/CRC независимый аудит [ИЗМЕРЕНО; NO MESH]
+
+Прислан ZIP исходных Windows preflight данных SHA `6af4dac68f1335aa714b02702ef7c305624ea46622b067fd5aacee6bde89305f`, CRC7/7. Исходные GEO, manifest/policy SHA, Gmsh4.15.2 exe SHA, M0 SHA, native parse log SHA совпали с опубликованным P10GK исходником; логи показывают один `-parse_and_exit`/read CAD/Field; exit0, Gmsh wall≈0.0169с, без 1D/2D/3D meshing/FEM. 12 221 MathEval проверок max discrepancy 3.33e−16 и C¹ 4 seams PASS. Независимый скрипт `scripts/p10gk_verify_native_parse_evidence.py`: PASS. **Ещё нет нового P10GK M1, нет native HXT10 `-3` authorization и FEM; реальный P10GJ D-027 STOP остаётся.** Запросить отдельное разрешение для одной bounded native Gmsh -3 попытки P10GK; не менять D-027 thresholds. Отчёт `research/P10GK_R1_REAL_WINDOWS_PARSE_ONLY_INDEPENDENT_AUDIT_PASS_20261123.md`, machine-readable verdict и archival ZIP в research/evidence.
+
+
 ## 2026-11-23 — P10GK R1: C¹ южное локальное поле размеров, SOURCE/UNIT PASS, REAL -3 0 [ПРОЕКТ]
 
 По результату измеренной P10GJ HXT10 M1 (Global QV729=0.823069 PASS, south 0–500µm QV729=1.002260>0.98 STOP), подготовлено без новых запусков Gmsh MathEval-поле: сохраняет исходные OCC CAD axis P10GH, M0 C¹ F3, общий h factor, добавляет `F6=F3*(1−0.06*Wr*Ws)` с C¹ smoothstep радиально d≤0.5мм plateau→1мм fade и угловым физическим Z-south mu≤−0.8 plateau→−0.6 fade. Поле корректирует только юг, коэффициент относительного h∈[.94,1], alpha=0.06 **незамещаемая пробная гипотеза**, НЕ гарантия геометрического сгущения HXT. Все D-027 hard-gates неизменны. Source QA 12 221 точек, ошибка 3.33e−16, 7/7 unittest/mock и ZIP integrity PASS. Пакет 12 файлов SHA256 `4cc0390df4cc2277078ee0d8bca281bd77e3606ec4128e943cc10c243caf9d05`. Следующий только Windows Gmsh `-parse_and_exit` (no mesh/no FEM) по одному клику; real Gmsh P10GK не выполнен, P10GJ marker consumed. Подробности `research/P10GK_R1_C1_SOUTH_POLE_SOURCE_ONLY_PREPARED_20261123.md`.
