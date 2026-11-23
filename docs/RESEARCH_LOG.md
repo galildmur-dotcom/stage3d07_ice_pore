@@ -1,5 +1,10 @@
 # RESEARCH_LOG — журнал исследования
 
+## 2026-11-23 — P10GJ R1: одна разрешённая native Windows HXT10 3D попытка подготовлена [SOURCE/UNIT PASS, НЕ ИЗМЕРЕНО]
+
+Пользователь одобрил переход к одному guarded native `gmsh -3` без FEM. Упакованы 17 входных файлов (SHA256 релиза `dc06817ee9a505220de02aab1aba1c4111d32a2db9f9d927ab8d66037bc87999`) и два однокнопочных Windows шага: 01 независимая M0-only prereg D-027 + parse-only; 02 одноразовый P10GH CAD-pole rotated HXT10 factor `0.9378887276834518`, ≤900с, 8GiB, 2 threads. 7 mock/unit тестов + 27/343/729 affine/inverted/signed самотесты PASS. Старый 18/18 не hard; глобальный QV 0.80–0.85 + CAD/Tet10/слой/полюса/населённые макрозоны hard, числа фиксируются до native 3D. **Новых P10GJ native -3 пока не было, 3D M1/FEM НЕ ПОЛУЧЕНЫ.** После присланного evidence ZIP выполнить `scripts/p10gj_offline_343_729_adjudicate.py`; preliminary 27QP не GO. Подробный протокол: `research/P10GJ_R1_D027_FROZEN_GATES_ONE_ROTATED_HXT10_WINDOWS_PREPARED_20261123.md`.
+
+
 Записи добавляются по мере получения фактических результатов. Разделять измеренное, проверенное и рабочую интерпретацию. Дату запуска не восстанавливать без исходного журнала.
 
 

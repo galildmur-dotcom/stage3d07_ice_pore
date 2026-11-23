@@ -1,0 +1,335 @@
+{
+  "protocol": "P10GJ_M0_FIXED_SIGNED18_343_729QP_BASELINE_FROM_P10GC",
+  "original_archived_path": "research/evidence/P10GC_M1W_UNIFORM_ALL_VOLUME_20261122/derived/P10GC_M0_M1W_SIGNED18_343_729QP.json",
+  "original_protocol": "P10GC_INDEPENDENT_M0_M1W_FIXED_18_SIGNED_ZONES_343_729QP",
+  "canonical_M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "M0": {
+    "nodes": 11699,
+    "tet10": 7992,
+    "tri6_tags": {
+      "2": 164,
+      "3": 162,
+      "4": 138,
+      "5": 138,
+      "6": 138,
+      "7": 142,
+      "8": 160,
+      "9": 312
+    },
+    "pore_radius_max_error_m": 4.9873299934333204e-18,
+    "volume_m3": 0.00017999581404112684,
+    "min_det27": 2.7196224040800853e-11,
+    "pore_surface": {
+      "tri6": 160,
+      "median_corner_edge_mm": 0.4208089463668801,
+      "north_polar_tri": 18,
+      "south_polar_tri": 20,
+      "north_polar_median_edge_mm": 0.4423142854659441,
+      "south_polar_median_edge_mm": 0.3796211235793562
+    }
+  },
+  "levels": {
+    "7": {
+      "qp_per_tet": 343,
+      "min_curved_jac_M0": 2.4556950542989098e-11,
+      "qp_total_volume_M0_m3": 0.0001799958140411265,
+      "zones18": [
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.1694514380947829e-11,
+          "M0_region_volume_m3": 1.3992391279108506e-10,
+          "M0_Neff": 11.964918613383617
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 9.831491859757833e-12,
+          "M0_region_volume_m3": 1.3851623741874291e-10,
+          "M0_Neff": 14.089035458160346
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.3548323219579193e-11,
+          "M0_region_volume_m3": 1.409478890624129e-10,
+          "M0_Neff": 10.403345622779636
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.4501939780920378e-11,
+          "M0_region_volume_m3": 1.3967458256309588e-10,
+          "M0_Neff": 9.631441357028674
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.3800820964056114e-11,
+          "M0_region_volume_m3": 4.146375933179967e-10,
+          "M0_Neff": 30.044415067618782
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.4559147470151696e-11,
+          "M0_region_volume_m3": 4.1516542340424676e-10,
+          "M0_Neff": 28.51577843107877
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.0357734286966886e-11,
+          "M0_region_volume_m3": 8.578512264237641e-10,
+          "M0_Neff": 42.1388359987076
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.8422750198091637e-11,
+          "M0_region_volume_m3": 8.532905916641236e-10,
+          "M0_Neff": 46.31722096261793
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.1906400574923065e-11,
+          "M0_region_volume_m3": 8.573626358345739e-10,
+          "M0_Neff": 39.137540323079065
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.166283510357516e-11,
+          "M0_region_volume_m3": 8.553318825962037e-10,
+          "M0_Neff": 39.48383849605367
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.1429058993132592e-11,
+          "M0_region_volume_m3": 2.569049407638709e-9,
+          "M0_Neff": 119.88624458320903
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.149075644225092e-11,
+          "M0_region_volume_m3": 2.5734961279941265e-9,
+          "M0_Neff": 119.74897835306633
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 7.9814249278635e-9,
+          "M0_region_volume_m3": 0.000004720903964101504,
+          "M0_Neff": 591.4863582341825
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.251343420564853e-8,
+          "M0_region_volume_m3": 0.000015896379416058496,
+          "M0_Neff": 706.0841660518482
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.545457341267102e-8,
+          "M0_region_volume_m3": 0.000010160496127896823,
+          "M0_Neff": 657.4426777491221
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 3.404655665309231e-8,
+          "M0_region_volume_m3": 0.000030145222397211446,
+          "M0_Neff": 885.4117820009701
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.5266807760664196e-8,
+          "M0_region_volume_m3": 0.00005711901774378126,
+          "M0_Neff": 2260.634516430886
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.603142891435591e-8,
+          "M0_region_volume_m3": 0.00006194383914456637,
+          "M0_Neff": 2379.5789062660847
+        }
+      ]
+    },
+    "9": {
+      "qp_per_tet": 729,
+      "min_curved_jac_M0": 2.4235572551891975e-11,
+      "qp_total_volume_M0_m3": 0.000179995814041126,
+      "zones18": [
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.1710867134670668e-11,
+          "M0_region_volume_m3": 1.3934330065212309e-10,
+          "M0_Neff": 11.898632189207369
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 9.808745854451966e-12,
+          "M0_region_volume_m3": 1.388391498078913e-10,
+          "M0_Neff": 14.15462811128656
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.3517070180830867e-11,
+          "M0_region_volume_m3": 1.3737988824403667e-10,
+          "M0_Neff": 10.163436780764883
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.4560109304182326e-11,
+          "M0_region_volume_m3": 1.39065149217205e-10,
+          "M0_Neff": 9.551106129214233
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.3836271441798253e-11,
+          "M0_region_volume_m3": 4.167826064222265e-10,
+          "M0_Neff": 30.12246530254965
+        },
+        {
+          "radial_zone": "0_100um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.4548553672480663e-11,
+          "M0_region_volume_m3": 4.164529515204056e-10,
+          "M0_Neff": 28.6250414230624
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.0289285398219703e-11,
+          "M0_region_volume_m3": 8.543597392728066e-10,
+          "M0_Neff": 42.10891229061093
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 1.8488926511018937e-11,
+          "M0_region_volume_m3": 8.578682490817817e-10,
+          "M0_Neff": 46.39902963379262
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.1820738693412058e-11,
+          "M0_region_volume_m3": 8.56474021147468e-10,
+          "M0_Neff": 39.250459536736386
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.1622614525839254e-11,
+          "M0_region_volume_m3": 8.553013026687875e-10,
+          "M0_Neff": 39.55586877094319
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.1440299867951066e-11,
+          "M0_region_volume_m3": 2.5737348090845543e-9,
+          "M0_Neff": 120.04192221825078
+        },
+        {
+          "radial_zone": "100_500um",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.1483923072786565e-11,
+          "M0_region_volume_m3": 2.5672696370025134e-9,
+          "M0_Neff": 119.49724583842156
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 7.947427211858771e-9,
+          "M0_region_volume_m3": 0.0000046989166971336744,
+          "M0_Neff": 591.2500450613974
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "polar_abs_mu_ge_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.253453073016952e-8,
+          "M0_region_volume_m3": 0.000015917369078547652,
+          "M0_Neff": 706.3545839557809
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "north",
+          "M0_Veff_m3": 1.548936235468715e-8,
+          "M0_region_volume_m3": 0.000010189510088787607,
+          "M0_Neff": 657.8392225232058
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "taper_abs_mu_0p6_0p8",
+          "hemisphere": "south",
+          "M0_Veff_m3": 3.4001362685380234e-8,
+          "M0_region_volume_m3": 0.000030094683924259867,
+          "M0_Neff": 885.1022884797454
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "north",
+          "M0_Veff_m3": 2.5262207066454772e-8,
+          "M0_region_volume_m3": 0.00005710635167108596,
+          "M0_Neff": 2260.5448336664317
+        },
+        {
+          "radial_zone": "500um_plus",
+          "polar_zone": "off_abs_mu_le_0p6",
+          "hemisphere": "south",
+          "M0_Veff_m3": 2.6046640303264224e-8,
+          "M0_region_volume_m3": 0.00006197902971050742,
+          "M0_Neff": 2379.540278088766
+        }
+      ]
+    }
+  }
+}
