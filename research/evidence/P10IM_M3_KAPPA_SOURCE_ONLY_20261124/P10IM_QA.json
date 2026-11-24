@@ -1,0 +1,256 @@
+{
+  "protocol": "P10IM_R1_SOURCE_ONLY_KAPPA_HYPOTHESES",
+  "no_FEM_no_Gmsh": true,
+  "n_bins": 1200,
+  "unsupported_mechanical_QP_bins": [],
+  "weights": "(1-beta)*mean(normalized absolute 3 mechanical Δ)+beta*mean(normalized absolute 2 thermal Δ)",
+  "time_uncertainty": "M1 dt36-to25 diagnostic only; M2 dt36 unknown; no temporal robustness weight imposed",
+  "smoothing": "P10HA-style compact Wendland C2 on log radial + sphere Cartesian angular coordinates",
+  "beta": {
+    "0.0": {
+      "selected_theta0p5": 59,
+      "selected_in_supported_polar": 56,
+      "polar_score_fraction": 0.6225648514530866,
+      "old_P10HA_mechanical_dorfler_jaccard": 0.4567901234567901,
+      "smooth_kappa_max": 1.0,
+      "smooth_kappa_mean": 0.05532133693121689,
+      "smooth_kappa_MAE_vs_old": 0.019678796679225733,
+      "smooth_top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          5
+        ],
+        [
+          2,
+          0,
+          4
+        ]
+      ]
+    },
+    "0.1": {
+      "selected_theta0p5": 74,
+      "selected_in_supported_polar": 69,
+      "polar_score_fraction": 0.5711929020928744,
+      "old_P10HA_mechanical_dorfler_jaccard": 0.4777777777777778,
+      "smooth_kappa_max": 1.0,
+      "smooth_kappa_mean": 0.061126443451742334,
+      "smooth_kappa_MAE_vs_old": 0.020131085074114645,
+      "smooth_top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          5
+        ],
+        [
+          2,
+          0,
+          4
+        ]
+      ]
+    },
+    "0.25": {
+      "selected_theta0p5": 105,
+      "selected_in_supported_polar": 85,
+      "polar_score_fraction": 0.49413497805255585,
+      "old_P10HA_mechanical_dorfler_jaccard": 0.41379310344827586,
+      "smooth_kappa_max": 1.0,
+      "smooth_kappa_mean": 0.07254557615409421,
+      "smooth_kappa_MAE_vs_old": 0.026773810404713626,
+      "smooth_top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          5
+        ],
+        [
+          2,
+          0,
+          4
+        ]
+      ]
+    },
+    "0.5": {
+      "selected_theta0p5": 159,
+      "selected_in_supported_polar": 81,
+      "polar_score_fraction": 0.365705104652025,
+      "old_P10HA_mechanical_dorfler_jaccard": 0.2823529411764706,
+      "smooth_kappa_max": 1.0,
+      "smooth_kappa_mean": 0.10534740138082396,
+      "smooth_kappa_MAE_vs_old": 0.055256717732573506,
+      "smooth_top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          2,
+          0,
+          4
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          5
+        ]
+      ]
+    }
+  },
+  "warning": "No M3 volume ratios: 25-50% target requires future actual mesh and independent CAD region audit."
+}
