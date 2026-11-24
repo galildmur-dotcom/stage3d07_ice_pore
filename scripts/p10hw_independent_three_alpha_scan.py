@@ -121,7 +121,7 @@ def neighbour_quality(nodes,tets,vol):
                 'fraction_q_gt_1p25':float(np.mean(a>1.25))}
     return {'all':summarize(qa),'near_polar_either_centroid':summarize(polar)}
 
-def main(path):
+def main(path,baseline_path=None):
     raw=path.read_bytes();result={'zip_sha256':hashlib.sha256(raw).hexdigest(),'meshes':{}}
     with zipfile.ZipFile(io.BytesIO(raw)) as z:
         assert z.testzip() is None
@@ -150,6 +150,7 @@ def main(path):
                 'mean_Veff':float(q9['volume'].sum()/len(tets)),
                 'neighbour_quality':neighbour_quality(nodes,tets,q9['volume']),
                 'groups_729':b,
+                'groups_343':a,
                 'max_relative_Veff343_729':float(max(abs(a[k]['Veff']/b[k]['Veff']-1) for k in a)),
                 'max_absolute_group_ratio_difference_343_729':float(max(abs(a[k]['Veff']-b[k]['Veff'])/b[k]['Veff'] for k in a))
             }
@@ -157,6 +158,42 @@ def main(path):
     reference=result['meshes']['0.20']['groups_729']
     for label,item in result['meshes'].items():
         item['near_ratios_vs_alpha20']={key:float(item['groups_729'][key]['Veff']/value['Veff']) for key,value in reference.items() if key.startswith('near_')}
+    if baseline_path is not None:
+        raw=baseline_path.read_bytes()
+        expected='47460969be26c2bd0a15e0b1425806fa350aa09aa2b4ac9f80605b433fc65ca7'
+        assert hashlib.sha256(raw).hexdigest()==expected, 'Wrong pinned original M1'
+        nodes,tets,faces=read_msh(raw)
+        full=evaluate(nodes,tets,3,None)
+        q7=evaluate(nodes,tets,7,full['volume'])
+        q9=evaluate(nodes,tets,9,full['volume'])
+        g7=groups(q7);g9=groups(q9)
+        result['M1']={
+            'sha256':expected,'nodes':len(nodes)-1,'tet10':len(tets),
+            'min_detJ_27_343_729':[full['minj'],q7['minj'],q9['minj']],
+            'CAD_closure_rel729':float(q9['volume'].sum()/CAD_VOL-1),
+            'mean_Veff':float(q9['volume'].sum()/len(tets)),
+            'groups_729':g9,
+            'groups_343':g7,
+            'neighbour_quality':neighbour_quality(nodes,tets,q9['volume'])
+        }
+        for label,item in result['meshes'].items():
+            a=item['groups_729']
+            ratio={k:a[k]['Veff']/g9[k]['Veff'] for k in a}
+            ratio343={k:item['groups_343'][k]['Veff']/g7[k]['Veff'] for k in a}
+            item['D025_vs_M1_QP729']={
+                'group_ratios':ratio,
+                'near_polar_north':ratio['near_p0_N'],
+                'near_polar_south':ratio['near_p0_S'],
+                'near_polar_both':(a['near_p0_N']['Veff']*a['near_p0_N']['Neff']+a['near_p0_S']['Veff']*a['near_p0_S']['Neff'])/
+                                  (a['near_p0_N']['Neff']+a['near_p0_S']['Neff'])/
+                                  ((g9['near_p0_N']['Veff']*g9['near_p0_N']['Neff']+g9['near_p0_S']['Veff']*g9['near_p0_S']['Neff'])/
+                                   (g9['near_p0_N']['Neff']+g9['near_p0_S']['Neff'])),
+                'count_signed18_between_0p75_0p85':sum(.75<=ratio[k]<=.85 for k in ratio if k.startswith('r')),
+                'max_abs_343_729_ratio_difference':max(abs(ratio[k]-ratio343[k]) for k in ratio),
+                'near_polar_north_343':ratio343['near_p0_N'],
+                'near_polar_south_343':ratio343['near_p0_S'],
+            }
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
-if __name__=='__main__':main(Path(sys.argv[1]))
+if __name__=='__main__':
+    main(Path(sys.argv[1]),Path(sys.argv[2]) if len(sys.argv)>2 else None)
