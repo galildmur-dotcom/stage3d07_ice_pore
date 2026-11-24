@@ -30,7 +30,7 @@ Diagnostic adjacent *curved-volume* ratios of M1: all 18663 internal pairs p95=2
 The following are deliberately conservative *working proposals*, calibrated against actual M1 minima (rather than adopted as universal FEM theorems):
 
 1. Every curved Tet10: `minSICN>=0.20` and `minSJ>=0.40`; positive independently sampled curved detJ on 27/343/729 and Gmsh `minDetJac>0` (check for finite values, no nonpositive elements). These floors are about 70% of accepted M1 observed worst normalized quality; it remains to justify acceptability for solver/shape adjoint.
-2. Auxiliary corner-shape `gamma>=0.15`, which may diagnose slivers but does not replace the curved tests. CAD / sphere / B6 / physical surfaces1–9 / shared faces and pore-wall curved geometry must match original.
+2. Auxiliary corner-shape `gamma>=0.15`, which may diagnose slivers but does not replace the curved tests. CAD / sphere / B6 / physical ICE_VOLUME 1 and surfaces2–9 / shared faces and pore-wall curved geometry must match original.
 3. Total 729QP integrated ICE volume closure `|Vmesh/Vcad−1|<=1e−6` (M1 actual `1.22e−8`). For aggregated supported highκ north/south physical regions, propose `N_eff>=30` each and 343→729 regional Veff change ≤1%; for narrower signed 18 zones report coverage/N_eff rather than falsely enforce all 18.
 4. Publish both distinct statuses: `GEOMETRY_QUALITY_GO` based on 3D curved quality, `ADAPTATION_TARGET_STATUS` based on D-029 measured highκ `Veff(M2)/Veff(M1)∈[.50,.75]`, north/south separately. Target miss is not automatically bad geometry. **No q threshold.**
 5. All run resources/one-shot markers pre-registered and new source SHA pinned. No FEM from mesh-only GO. Solver conditioning and physical convergence follow in separate experiment.
