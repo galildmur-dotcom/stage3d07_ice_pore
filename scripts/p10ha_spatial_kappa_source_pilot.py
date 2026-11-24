@@ -140,6 +140,10 @@ def main(args):
     mk36=np.clip(ms36/mden,0,1)
     mech_sel25=dorfler(mech_robust25,0.5)
     full_sel25=dorfler(robust[25],0.5)
+    mech_delta=difference[25][:,:3].sum(axis=1)
+    therm_delta=difference[25][:,3:6].sum(axis=1)
+    thermal_exceeds_mech=np.abs(therm_delta)>np.abs(mech_delta)
+    thermal_to_mech_ratio=float(np.abs(therm_delta).sum()/np.abs(mech_delta).sum())
     cap=np.isin(np.arange(1200)//12%10,[0,9])
     wall=np.arange(1200)//120<=2
     selected={str(th):dorfler(robust[25],th) for th in THETAS}
@@ -147,6 +151,11 @@ def main(args):
         'protocol':'P10HA_R1_SOURCE_ONLY_SIGNED_COMPONENT_SPATIAL_KAPPA_PILOT',
         'source_zip_sha256':p10gz.OUTER_SHA,
         'status':'READ_ONLY_KAPPA_PILOT_ONLY_NOT_GMSH_FEM_OR_DWR',
+        'P10HB_primary_adaptation_policy':'MECHANICAL_ONLY for current R EDV_VAR xi=0 B6 900s M0/M1 source pilot; thermal retained for QA and future re-assessment, NOT a universal PDE decoupling',
+        'primary_kappa_column':'kappa25_mechanical_only',
+        'thermal_total_intermesh_L1_over_mechanical_total':thermal_to_mech_ratio,
+        'bins_thermal_signed_total_exceeds_mechanical_signed_total':int(thermal_exceeds_mech.sum()),
+        'mechanical_signal_L1_share_in_those_bins':float(np.abs(mech_delta[thermal_exceeds_mech]).sum()/np.abs(mech_delta).sum()),
         'time_steps_compared_s':[36,25],
         'spatial_bins':1200,
         'components':list(COMPONENTS),
@@ -198,6 +207,7 @@ def main(args):
              'kappa25_smooth':float(k25[i]),'kappa36_smooth':float(k36[i]),
              'kappa25_mechanical_only':float(mk25[i]),
              'kappa36_mechanical_only':float(mk36[i]),
+             'kappa25_primary_for_M2_source_only':float(mk25[i]),
              'mechanical_robust_score25':float(mech_robust25[i]),
              'M0_mechanical_QP_dt25':int(support25['M0'][i]),
              'M1_mechanical_QP_dt25':int(support25['M1'][i]),

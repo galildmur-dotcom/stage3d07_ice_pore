@@ -2,6 +2,11 @@
   "protocol": "P10HA_R1_SOURCE_ONLY_SIGNED_COMPONENT_SPATIAL_KAPPA_PILOT",
   "source_zip_sha256": "0b62cc5799a242cceb86c5e283113c4b634e6169ea91476b4faf9dec6296d760",
   "status": "READ_ONLY_KAPPA_PILOT_ONLY_NOT_GMSH_FEM_OR_DWR",
+  "P10HB_primary_adaptation_policy": "MECHANICAL_ONLY for current R EDV_VAR xi=0 B6 900s M0/M1 source pilot; thermal retained for QA and future re-assessment, NOT a universal PDE decoupling",
+  "primary_kappa_column": "kappa25_mechanical_only",
+  "thermal_total_intermesh_L1_over_mechanical_total": 0.0035723745902990094,
+  "bins_thermal_signed_total_exceeds_mechanical_signed_total": 5,
+  "mechanical_signal_L1_share_in_those_bins": 1.2448928858394597e-05,
   "time_steps_compared_s": [
     36,
     25
