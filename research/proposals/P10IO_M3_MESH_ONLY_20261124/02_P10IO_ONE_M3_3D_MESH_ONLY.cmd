@@ -1,6 +1,6 @@
 @echo off
 if /I "%~1"=="--visible" goto RUN
-start "P10IO M3 ONE SHOT MESH ONLY" cmd.exe /K call "%~f0" --visible
+start "P10IO R2 M3 ONE SHOT MESH ONLY" cmd.exe /K call "%~f0" --visible
 exit /b %ERRORLEVEL%
 :RUN
 cd /d "%~dp0"
@@ -11,5 +11,5 @@ if not errorlevel 1 (
   python -u P10IO_guard.py --run
 )
 set "RC=%ERRORLEVEL%"
-echo P10IO_MESH_ONLY_EXIT=%RC%
+echo P10IO_R2_MESH_ONLY_EXIT=%RC%
 exit /b %RC%

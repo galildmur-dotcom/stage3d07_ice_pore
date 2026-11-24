@@ -6,16 +6,17 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import time
 import zipfile
 
 HERE=Path(__file__).resolve().parent
-MARK=HERE/'P10IO_ONE_3D_ATTEMPT_CONSUMED.marker'
+MARK=HERE/'P10IO_R2_ONE_3D_ATTEMPT_CONSUMED.marker'
 LOG=HERE/'P10IO_GMSH_LOG.txt'
 RESULT=HERE/'P10IO_GUARD_RESULT.json'
-EVIDENCE=HERE/'P10IO_M3_UNVERIFIED_EVIDENCE.zip'
+EVIDENCE=HERE/'P10IO_R2_M3_UNVERIFIED_EVIDENCE.zip'
 MAX_WALL=900
 MAX_RAM=8*1024**3
 MAX_LOG=32*1024**2
@@ -23,6 +24,7 @@ MAX_MESH=250*1024**2
 PIN={
   'P10GT_HXT10.geo':'f1227074616375c28706e1e55cddde370b9a9fca069aab88513b4313c8239f51',
   'M0_ROTATED.geo':'21cef72e9e0d7fde3a383b6db3ebde4bc6b62cf180b7b65947e5fe1fa57f0c9a',
+  'sphere_pore_B6_refined_rotated.geo':'e3f4d1c472e4d047962bf05f63406f2bbb20b89f20e74ac2e6f2ba8cfd305329',
   'M2.msh':'d1ec65ffcc6e8fac7da925ecd66bbb9508450cf2ea837521442f57f45674c78b',
   'P10HA_SPATIAL_KAPPA_1200_BINS.csv':'98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3',
   'P10HA_KAPPA_QA.json':'361d8812af277505abc59b480042d5b049fb23ae6d664ad781868b985eeafae3',
@@ -45,6 +47,23 @@ def check_preflight(check_api=True):
     for name,digest in PIN.items():
         p=HERE/name
         need(p.is_file() and sha(p)==digest,'source SHA wrong: '+name)
+    # Closure of the full native Gmsh Include graph: a missing transitive GEO
+    # stopped the former R1 after marker consumption and before meshing.
+    visited=set()
+    def check_includes(name):
+        need(name not in visited,'recursive/duplicate GEO include: '+name)
+        visited.add(name)
+        source=HERE/name
+        need(source.is_file(),'missing transitive GEO include: '+name)
+        for child in re.findall(r'(?m)^\s*Include\s+"([^"\n]+)"\s*;',
+                                source.read_text(encoding='utf-8')):
+            need(child in PIN,'uncontrolled GEO include: '+child)
+            check_includes(child)
+    check_includes('P10GT_HXT10.geo')
+    need(visited=={'P10GT_HXT10.geo','M0_ROTATED.geo',
+                   'sphere_pore_B6_refined_rotated.geo'},'unexpected GEO include graph')
+    need(not (HERE/'P10IO_ONE_3D_ATTEMPT_CONSUMED.marker').exists(),
+         'R1 marker present: use a NEW clean R2 folder; do not overwrite R1')
     need(not MARK.exists(),'one-shot M3 mesh marker already consumed; NO repeat')
     need(not (HERE/'P10IO_M3_CANDIDATE_UNVERIFIED.msh').exists(),
          'candidate output already exists; never overwrite')
@@ -52,7 +71,7 @@ def check_preflight(check_api=True):
         import gmsh
         need(getattr(gmsh,'__version__',None)=='4.15.2',
              'Python gmsh 4.15.2 required; no marker consumed')
-    print('P10IO_PREFLIGHT_PASS_NO_GMSH_NO_FEM sources=6',flush=True)
+    print('P10IO_R2_PREFLIGHT_PASS_NO_GMSH_NO_FEM sources=7 geo_includes=3',flush=True)
 
 
 def private_bytes(pid):
@@ -129,7 +148,7 @@ def run():
     mesh=HERE/'P10IO_M3_CANDIDATE_UNVERIFIED.msh'
     if code==0 and (not mesh.is_file() or mesh.stat().st_size>MAX_MESH):
         status='STOP_MISSING_MESH';code=128
-    result={'protocol':'P10IO_FIRST_M3_MESH_ONLY_GUARD',
+    result={'protocol':'P10IO_R2_FIRST_M3_MESH_ONLY_GUARD',
             'status':status,'exit_code':code,'wall_s':round(time.monotonic()-start,3),
             'peak_private_bytes_polled':peak,'one_shot_consumed':True,
             'new_mesh_3D_attempts':1,'FEM_attempts':0,'accepted_M3':False,
