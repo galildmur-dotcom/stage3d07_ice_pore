@@ -38,10 +38,10 @@ Fixed physical regions, not matching individual elements, actual curved 343 and 
 
 | Physical region | M1 N_eff | P10IE N_eff | P10ID/M1 Veff | P10IE/M1 Veff 729QP | Reduction | D-029 target |
 |---|---:|---:|---:|---:|---:|---|
-| N: d0–0.5mm, |μ|≥.8 | 58.32 | **96.70** | .94846 | **.602401** | **39.76%** | PASS |
-| S: d0–0.5mm, |μ|≥.8 | 76.51 | **108.64** | .88682 | **.703376** | **29.66%** | PASS |
-| N: d0–0.1mm, |μ|≥.8 | 12.42 | 22.72 | .89957 | **.544803** | 45.52% | in band, LOW SUPPORT diagnostic |
-| S: d0–0.1mm, |μ|≥.8 | 15.80 | 25.03 | .84869 | **.629934** | 37.01% | in band, LOW SUPPORT diagnostic |
+| N: d0–0.5mm, abs(μ)≥.8 | 58.32 | **96.70** | .94846 | **.602401** | **39.76%** | PASS |
+| S: d0–0.5mm, abs(μ)≥.8 | 76.51 | **108.64** | .88682 | **.703376** | **29.66%** | PASS |
+| N: d0–0.1mm, abs(μ)≥.8 | 12.42 | 22.72 | .89957 | **.544803** | 45.52% | in band, LOW SUPPORT diagnostic |
+| S: d0–0.1mm, abs(μ)≥.8 | 15.80 | 25.03 | .84869 | **.629934** | 37.01% | in band, LOW SUPPORT diagnostic |
 
 The two **adequately supported** 0–0.5mm patches are in [0.50,0.75] and stable at 343→729: north q343 `.601931` vs q729 `.602401`, south `.703706` vs `.703376`. Narrow 0–0.1mm patches are reported but **not used as hard gates** because N_eff<30. Separate explicit `κ≥.8` mask is still under-supported in the coarser M1; its direct element-volume ratio must not be treated as robust. All ten source highκ centers nevertheless lie inside the supported anchor patches.
 
