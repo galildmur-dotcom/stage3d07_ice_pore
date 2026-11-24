@@ -1,0 +1,83 @@
+{
+  "protocol": "P10IU_C2_CONTINUOUS_3D_M4_SOURCE_ONLY",
+  "status": "PASS_SOURCE_ONLY_NO_GMSH_NO_FEM",
+  "P10IT_csv_sha256": "e31c0b72946391fa4b36572292657197ecb8f31b315403128d0d2c70fbfc3c06",
+  "P10HA_coordinate_reference_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "beta_primary": 0.1,
+  "beta_diagnostics": [
+    0.0,
+    0.25
+  ],
+  "source_1200_bins": 1200,
+  "continuation": "positive normalized compact Wendland C2 in log radial / Cartesian angular dimensions, S5 peak restoration",
+  "max_raw_at_centers": 0.5594154013460116,
+  "center_kappa_stats_by_beta": {
+    "0": {
+      "max": 1.0,
+      "mean": 0.027599208536081374,
+      "north_max": 1.0,
+      "south_max": 0.5556812156882406
+    },
+    "0.1": {
+      "max": 1.0,
+      "mean": 0.02876450946773693,
+      "north_max": 1.0,
+      "south_max": 0.5565181580387505
+    },
+    "0.25": {
+      "max": 1.0,
+      "mean": 0.032175058842704614,
+      "north_max": 1.0,
+      "south_max": 0.55816406448761
+    }
+  },
+  "nominal_target_cube_proxy": 0.65,
+  "generic_log_size_delta": 0.1435943053641514,
+  "north_south": {
+    "north": {
+      "supported_bins": 60,
+      "M3_QP": 137520,
+      "qp_weighted_kappa": 0.22615873473232162,
+      "qp_weighted_taper": 0.9952021676579245,
+      "unpatched_cube_proxy": 0.9146496384478964,
+      "calibrated_patch_log_size": 0.11445576719134759,
+      "calibrated_cube_proxy": 0.6500000000000001,
+      "patch_log_size_scenario_targets": {
+        "0.5": 0.2023717545874752,
+        "0.65": 0.11445576719134759,
+        "0.75": 0.06650418278454547
+      },
+      "patch_nominal_size_factor": 0.8918513866373975,
+      "NOTE": "All cube proxies are source-center geometry-only assumptions, not actual Tet10 Veff"
+    },
+    "south": {
+      "supported_bins": 60,
+      "M3_QP": 178272,
+      "qp_weighted_kappa": 0.10455240026000474,
+      "qp_weighted_taper": 0.9945398121360401,
+      "unpatched_cube_proxy": 0.9578520389918461,
+      "calibrated_patch_log_size": 0.12998093714900827,
+      "calibrated_cube_proxy": 0.65,
+      "patch_log_size_scenario_targets": {
+        "0.5": 0.21793763213270684,
+        "0.65": 0.12998093714900827,
+        "0.75": 0.08200714760167947
+      },
+      "patch_nominal_size_factor": 0.878112170082465,
+      "NOTE": "All cube proxies are source-center geometry-only assumptions, not actual Tet10 Veff"
+    }
+  },
+  "samples_count": 330,
+  "sample_kappa_range": [
+    0.00010347884541755455,
+    0.9715600150403886
+  ],
+  "sample_size_ratio_range": [
+    0.7757179800149044,
+    0.9999851411374664
+  ],
+  "azimuth_seam_max_abs_difference": 7.771561172376096e-16,
+  "polar_exact_coordinate_max_abs_difference": 0.0,
+  "c2_status": "analytical construction; numerical C2 derivative test not performed",
+  "caveat": "No M4 Tet10 mesh. No actual D029 regional volume/quality acceptance. No FEM or temporal/spatial convergence claim."
+}
