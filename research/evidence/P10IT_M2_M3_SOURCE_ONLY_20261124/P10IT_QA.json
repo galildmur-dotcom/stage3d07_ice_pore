@@ -1,0 +1,251 @@
+{
+  "protocol": "P10IT_INDEPENDENT_M2_M3_SOURCE_ONLY",
+  "status": "PASS_SOURCE_ONLY_NO_GMSH_NO_FEM",
+  "inputs_sha256": {
+    "M2_4D_CSV": "4919d0e0478e88fdc410fad5411032125c192281d53c03dadfdc53aaebf80090",
+    "M3_4D_CSV": "6ec0dfb8b5e0bffa7336ba2695044811ed872219f5e175d156d6922f81b0e8cf"
+  },
+  "spatial_bins": 1200,
+  "time_steps": 36,
+  "volume_4d_rows_each": 43200,
+  "global_signed_delta": -0.08663615416562248,
+  "component_signed_delta": {
+    "mech_explicit_per_m": 2.008898910663097,
+    "mech_equilibrium_per_m": -0.6446737499535022,
+    "mech_history_per_m": -1.4479609985960085,
+    "thermal_mass_per_m": 0.0005610668060346647,
+    "thermal_diffusion_per_m": -0.0034613830852432267
+  },
+  "sum_abs_component_4d_delta": 9.460500130382098,
+  "sum_abs_total_4d_delta": 4.958849816455888,
+  "cancellation_factor_total_4d": 57.2376493879916,
+  "regions": {
+    "north": {
+      "bins": 60,
+      "signed_delta": 0.723146911588244,
+      "signed_component_delta": {
+        "mech_explicit_per_m": 1.235786502849294,
+        "mech_equilibrium_per_m": -0.09327364094318107,
+        "mech_history_per_m": -0.4176985437048431,
+        "thermal_mass_per_m": 4.158320829212723e-05,
+        "thermal_diffusion_per_m": -0.0017089898213150378
+      },
+      "l1_4d_total_delta": 1.6233904921003506,
+      "l1_4d_component_delta": 3.148993053801071,
+      "M2_QP": 100116,
+      "M3_QP": 137520
+    },
+    "south": {
+      "bins": 60,
+      "signed_delta": 0.5251209254860015,
+      "signed_component_delta": {
+        "mech_explicit_per_m": 0.852444672418215,
+        "mech_equilibrium_per_m": -0.03250014262265659,
+        "mech_history_per_m": -0.2962537626697652,
+        "thermal_mass_per_m": 2.9617809446179586e-05,
+        "thermal_diffusion_per_m": 0.0014005405507627855
+      },
+      "l1_4d_total_delta": 1.2123873604999718,
+      "l1_4d_component_delta": 2.274804247005023,
+      "M2_QP": 106164,
+      "M3_QP": 178272
+    },
+    "polar": {
+      "bins": 120,
+      "signed_delta": 1.2482678370742455,
+      "signed_component_delta": {
+        "mech_explicit_per_m": 2.088231175267513,
+        "mech_equilibrium_per_m": -0.12577378356583804,
+        "mech_history_per_m": -0.713952306374609,
+        "thermal_mass_per_m": 7.120101773830693e-05,
+        "thermal_diffusion_per_m": -0.00030844927055225055
+      },
+      "l1_4d_total_delta": 2.835777852600322,
+      "l1_4d_component_delta": 5.423797300806095,
+      "M2_QP": 206280,
+      "M3_QP": 315792
+    }
+  },
+  "beta_hypotheses": {
+    "0": {
+      "dorfler_theta_0p5_bins": 80,
+      "dorfler_supported_polar_bins": 71,
+      "supported_polar_score_fraction": 0.5349351149064273,
+      "max_kappa": 1.0,
+      "top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          1,
+          9,
+          0
+        ]
+      ]
+    },
+    "0.1": {
+      "dorfler_theta_0p5_bins": 99,
+      "dorfler_supported_polar_bins": 79,
+      "supported_polar_score_fraction": 0.49448116313851526,
+      "max_kappa": 1.0,
+      "top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          1,
+          9,
+          0
+        ]
+      ]
+    },
+    "0.25": {
+      "dorfler_theta_0p5_bins": 134,
+      "dorfler_supported_polar_bins": 87,
+      "supported_polar_score_fraction": 0.4338002354866472,
+      "max_kappa": 1.0,
+      "top_10_bins": [
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          1,
+          9,
+          3
+        ],
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          0,
+          9,
+          5
+        ],
+        [
+          0,
+          9,
+          0
+        ],
+        [
+          1,
+          9,
+          4
+        ],
+        [
+          1,
+          9,
+          0
+        ]
+      ]
+    }
+  },
+  "comparison_to_M3_source_P10IM": {
+    "source_sha256": "be0a64d372f6520704bbc438247739bdeeda681930a879dff613c9b129e7b919",
+    "dorfler_jaccard_beta_0p1": 0.5585585585585585,
+    "kappa_MAE_centers_beta_0p1": 0.021163827256678425,
+    "old_polar_score_fraction": 0.5711929020928744
+  }
+}
