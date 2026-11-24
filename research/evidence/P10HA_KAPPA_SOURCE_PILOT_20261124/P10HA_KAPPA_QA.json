@@ -1,0 +1,100 @@
+{
+  "protocol": "P10HA_R1_SOURCE_ONLY_SIGNED_COMPONENT_SPATIAL_KAPPA_PILOT",
+  "source_zip_sha256": "0b62cc5799a242cceb86c5e283113c4b634e6169ea91476b4faf9dec6296d760",
+  "status": "READ_ONLY_KAPPA_PILOT_ONLY_NOT_GMSH_FEM_OR_DWR",
+  "time_steps_compared_s": [
+    36,
+    25
+  ],
+  "spatial_bins": 1200,
+  "components": [
+    "mech_explicit_per_m",
+    "mech_equilibrium_per_m",
+    "mech_history_per_m",
+    "thermal_mass_per_m",
+    "thermal_diffusion_per_m",
+    "thermal_robin_per_m"
+  ],
+  "component_L1_normalization_m_inv": {
+    "mech_explicit_per_m": 6.22864653456137,
+    "mech_equilibrium_per_m": 4.154265415054809,
+    "mech_history_per_m": 2.711582779307786,
+    "thermal_mass_per_m": 0.0026210107071043013,
+    "thermal_diffusion_per_m": 0.017762729735342184,
+    "thermal_robin_per_m": 0.0
+  },
+  "active_components": [
+    "mech_explicit_per_m",
+    "mech_equilibrium_per_m",
+    "mech_history_per_m",
+    "thermal_mass_per_m",
+    "thermal_diffusion_per_m"
+  ],
+  "excluded_exact_or_nearly_zero_components": [
+    "thermal_robin_per_m"
+  ],
+  "score": "mean of active absolute intermesh component differences / each active component L1; components normalized to avoid mechanical sign cancellations",
+  "time_robustness": "active component flags |deltaG25| > 5*|deltaG36-deltaG25|; robust score=score*(0.5+0.5*stable_fraction)",
+  "time_bin_caveat": "retains full native signed 4D source; spatial score uses only exact sums of contributions over 900s; no assertion of 25s time-slice convergence",
+  "smoothing": "normalized radial u=log(1+d_mm/0.05); direction cosines; C2 Wendland with radial band=.75, angular band=.60",
+  "outer_shell": "[15mm,infinity) remains open; plotting representative placed at d=15mm boundary only, not physical centroid",
+  "differentiability_caveat": "normalized RBF of cell-centre values is C2 in transformed coordinates; the exported bin lookup and physical placement are not themselves a continuous CAD-to-Gmsh field",
+  "kappa_min_max_dt25": [
+    0.0,
+    0.9987508342812697
+  ],
+  "kappa_min_max_dt36": [
+    0.0,
+    1.0
+  ],
+  "mechanical_only_kappa_min_max_dt25": [
+    0.0,
+    0.9959608114980332
+  ],
+  "mechanical_only_mean_abs_kappa_dt36_dt25": 0.001095084393712823,
+  "mechanical_only_max_abs_kappa_dt36_dt25": 0.01598966530125967,
+  "equal_normalized_all_active_vs_mechanical_only_mean_abs_kappa": 0.0385553925396281,
+  "mean_abs_kappa_dt36_dt25": 0.0009695286343805247,
+  "maximum_abs_kappa_dt36_dt25": 0.014838707627992942,
+  "neighbor_count_min_median_max": [
+    10,
+    18.0,
+    30
+  ],
+  "time_component_stable_flags_percent": 75.14999999999999,
+  "bins_without_mechanical_QP_support_in_any_mesh_dt": 2,
+  "missing_support_bin_indices": [
+    12,
+    171
+  ],
+  "dorfler_theta_0p5_full_vs_mechanical_only_jaccard": 0.44696969696969696,
+  "ranking_warning": "large weighting sensitivity invalidates any automatic mesh launch based on either candidate; no scientifically frozen mechanical-vs-thermal weights",
+  "polar_raw_score_mass_percent": 53.23791535992517,
+  "near_wall_raw_score_mass_percent": 42.191348478011285,
+  "polar_smooth_kappa_mass_percent": 53.18460718760219,
+  "off_polar_bins": 960,
+  "dorfler": {
+    "0.35": {
+      "selected_25": 65,
+      "selected_36": 64,
+      "jaccard": 0.9545454545454546,
+      "polar_selected": 61,
+      "nonpolar_selected": 4
+    },
+    "0.5": {
+      "selected_25": 132,
+      "selected_36": 131,
+      "jaccard": 0.9774436090225563,
+      "polar_selected": 99,
+      "nonpolar_selected": 33
+    },
+    "0.65": {
+      "selected_25": 229,
+      "selected_36": 228,
+      "jaccard": 0.9869565217391304,
+      "polar_selected": 145,
+      "nonpolar_selected": 84
+    }
+  },
+  "next_gate": "construct a true spatially continuous Gmsh evaluable source with CAD transform and verify 2D/3D mesh-only D-025 0.75..0.85 volume locally; no M2 GO now"
+}
