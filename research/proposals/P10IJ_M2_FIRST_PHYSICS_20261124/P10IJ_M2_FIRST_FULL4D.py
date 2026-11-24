@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 import shutil
 import sys
+import threading
+import time
 
 from P10FN_common import (HERE, RUNS, capped_process, need, now,
                           require_windows, sha256, validate_source, write_new,
@@ -21,6 +23,37 @@ DT = 25
 STEPS = 36
 REGIME = {'mode':'R','law':'EDV_VAR','xi':0,'B6_mm':5,
           't_final_s':900,'dt_s':DT,'steps':STEPS,'threads':4}
+
+
+class ProgressHeartbeat:
+    """Future-packet console heartbeat; no progress percentage is invented."""
+    def __init__(self,stage,log=None,period_s=30):
+        self.stage,self.log,self.period_s=stage,log,period_s
+        self.started=0.0
+        self.done=threading.Event()
+        self.worker=None
+
+    def __enter__(self):
+        self.started=time.monotonic()
+        print('P10IK_STAGE_START',self.stage,'elapsed_s=0',flush=True)
+        def loop():
+            while not self.done.wait(self.period_s):
+                duration=round(time.monotonic()-self.started)
+                extra=''
+                if self.log is not None and self.log.is_file():
+                    extra=' log_bytes='+str(self.log.stat().st_size)
+                print('P10IK_HEARTBEAT',self.stage,
+                      'elapsed_s='+str(duration)+extra,flush=True)
+        self.worker=threading.Thread(target=loop,name='p10ik-progress',daemon=True)
+        self.worker.start()
+        return self
+
+    def __exit__(self,exc_type,exc,tb):
+        self.done.set()
+        self.worker.join(timeout=1)
+        print('P10IK_STAGE_END',self.stage,
+              'elapsed_s='+str(round(time.monotonic()-self.started)),
+              'status='+('ERROR' if exc_type else 'DONE'),flush=True)
 
 
 def mesh_preflight():
@@ -44,7 +77,8 @@ def main():
           'mesh_sha256='+M2_SHA,'tet10='+str(M2_TET10), flush=True)
     if '--run' not in sys.argv:
         return 0
-    toolchain, build = ensure_binary()
+    with ProgressHeartbeat('COMPILE_AND_EXE_SELFTEST'):
+        toolchain, build = ensure_binary()
     exe = HERE / 'build' / 'stage3d10fn_any_mesh_full4d.exe'
     marker = RUNS / 'P10IJ_M2_ONE_SHOT_MARKERS' / (
         f'M2_R_DT{DT}_STEPS{STEPS}_{M2_SHA[:16]}_{build["exe_sha256"][:12]}.json')
@@ -69,9 +103,16 @@ def main():
     env['P10FN_ONE_SHOT_MARKER'] = str(local_marker)
     log = folder / 'P10IJ_NATIVE_LOG.txt'
     try:
-        manifest.update(capped_process(command,cwd=HERE,log=log,wall_s=2400,
-                                       memory_gib=8,output_dir=folder,
-                                       output_gib=2,env=env))
+        print('P10IK_NATIVE_FEM_START M2 R dt=25s steps=36 one_shot_consumed=1',
+              flush=True)
+        with ProgressHeartbeat('NATIVE_FEM',log):
+            manifest.update(capped_process(command,cwd=HERE,log=log,wall_s=2400,
+                                           memory_gib=8,output_dir=folder,
+                                           output_gib=2,env=env))
+        print('P10IK_NATIVE_FEM_END exit='+str(manifest['native_exit_code']),
+              'wall_s='+str(round(manifest['wall_s'])),
+              'peak_private_MiB='+str(round(manifest['peak_private_bytes_polled']/2**20)),
+              'stop_reason='+str(manifest['stop_reason']),flush=True)
         need(manifest['native_exit_code']==0 and not manifest['stop_reason'],
              'native STOP; never auto-retry')
         for name in CSV:
