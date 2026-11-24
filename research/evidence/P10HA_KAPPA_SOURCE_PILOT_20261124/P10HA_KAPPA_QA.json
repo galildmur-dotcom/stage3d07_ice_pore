@@ -56,6 +56,7 @@
     0.0,
     0.9959608114980332
   ],
+  "mechanical_only_25_36_shared_smoothing_denominator": 0.012553396310432353,
   "mechanical_only_mean_abs_kappa_dt36_dt25": 0.001095084393712823,
   "mechanical_only_max_abs_kappa_dt36_dt25": 0.01598966530125967,
   "equal_normalized_all_active_vs_mechanical_only_mean_abs_kappa": 0.0385553925396281,
