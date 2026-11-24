@@ -1,0 +1,2464 @@
+{
+  "protocol": "P10IN_M3_CONTINUOUS_C2_KAPPA_SOURCE_ONLY_V1",
+  "status": "PREFLIGHT_SOURCE_ONLY_PASS_NO_GMSH_NO_FEM",
+  "M2_mesh_SHA256": "d1ec65ffcc6e8fac7da925ecd66bbb9508450cf2ea837521442f57f45674c78b",
+  "kappa_beta_thermal": 0.1,
+  "target_supported_polar_Veff_M3_over_M2": 0.65,
+  "prior_P10IE_calibration_empirical_north_south": {
+    "north": {
+      "empirical_log_Veff_sensitivity": 3.2648971519190675,
+      "source_peak_bin": [
+        1,
+        9,
+        2
+      ],
+      "source_peak_kappa": 1.0,
+      "size_log_patch_delta": 0.1032039542729587,
+      "nominal_patch_size_factor_at_full_weight": 0.9019429995922917,
+      "empirical_QP_weighted_region_ratio_baseline": 0.9086939434568719,
+      "empirical_QP_weighted_region_ratio_after_patch": 0.6500000000000001,
+      "region_M2_mechanical_QP": 100116,
+      "region_QP_weighted_kappa": 0.22258944439887263,
+      "region_QP_weighted_patch_weight": 0.9948130589044611,
+      "calibration_proxy_only": true,
+      "M2_QP_weighted_bin_center_h3_proxy": 0.6727008977987955,
+      "M2_QP_weighted_bin_center_kappa": 0.22258944439887263,
+      "regional_proxy_is_not_Veff_prediction": true
+    },
+    "south": {
+      "empirical_log_Veff_sensitivity": 1.98706444301832,
+      "source_peak_bin": [
+        0,
+        0,
+        11
+      ],
+      "source_peak_kappa": 0.8116613704835559,
+      "size_log_patch_delta": 0.20008119936294466,
+      "nominal_patch_size_factor_at_full_weight": 0.8186642753614194,
+      "empirical_QP_weighted_region_ratio_baseline": 0.9653648504396204,
+      "empirical_QP_weighted_region_ratio_after_patch": 0.6500000000000002,
+      "region_M2_mechanical_QP": 106164,
+      "region_QP_weighted_kappa": 0.1276939834204247,
+      "region_QP_weighted_patch_weight": 0.9950273797388576,
+      "calibration_proxy_only": true,
+      "M2_QP_weighted_bin_center_h3_proxy": 0.5223269401446283,
+      "M2_QP_weighted_bin_center_kappa": 0.1276939834204247,
+      "regional_proxy_is_not_Veff_prediction": true
+    }
+  },
+  "generic_cubic_log_size_delta": 0.1435943053641514,
+  "field_formula": "q=sum(a_i*W_i)/(1e-12+sum W_i); kappa=smoothstep5(q/max_source_center_q), in [0,1], C2",
+  "peak_renormalization_raw_center_max": 0.5976436567744664,
+  "relative_size_formula": "exp(-kappa*delta_generic-wpolar*delta_side); north/south delta fit region-QP empirical slope proxy",
+  "polar_blend": "C2 quintic ramp at abs(mu)=.6..8 and radial d=.3..1mm",
+  "range_kappa_centers": [
+    0.0,
+    1.0
+  ],
+  "azimuth_seam_poles_preflight": true,
+  "no_Gmsh_no_FEM": true,
+  "not_actual_volume_or_mesh_quality_evidence": true,
+  "calibration_assumption": "P10ID->P10IE local log sensitivity transferred to M2->M3; must verify 343/729 QP on next mesh",
+  "samples": [
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0007678308626143812,
+      "size_ratio_proxy": 0.9496020914116421,
+      "nominal_volume_ratio_proxy": 0.856298113678067,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0011751737420384624,
+      "size_ratio_proxy": 0.9495465487986513,
+      "nominal_volume_ratio_proxy": 0.8561478667903879,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.006507821522726188,
+      "size_ratio_proxy": 0.9488197233766567,
+      "nominal_volume_ratio_proxy": 0.8541833695988968,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.07027974889034337,
+      "size_ratio_proxy": 0.8928865712983326,
+      "nominal_volume_ratio_proxy": 0.7118506306525952,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.010634470387993788,
+      "size_ratio_proxy": 0.9005667391627642,
+      "nominal_volume_ratio_proxy": 0.7303780435694021,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.05768869656594865,
+      "size_ratio_proxy": 0.8945023735138642,
+      "nominal_volume_ratio_proxy": 0.7157222060008422,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.8418418658595914,
+      "size_ratio_proxy": 0.7992450756877855,
+      "nominal_volume_ratio_proxy": 0.5105519126760298,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.27685821768444674,
+      "size_ratio_proxy": 0.8667894178184651,
+      "nominal_volume_ratio_proxy": 0.6512396014032626,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.4950580614848673,
+      "size_ratio_proxy": 0.8400520097211592,
+      "nominal_volume_ratio_proxy": 0.5928141009945185,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.4873550285270021,
+      "size_ratio_proxy": 0.8409817151340273,
+      "nominal_volume_ratio_proxy": 0.5947845242286544,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.4873550285270021,
+      "size_ratio_proxy": 0.8409817151340273,
+      "nominal_volume_ratio_proxy": 0.5947845242286544,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.0,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.4873550285270021,
+      "size_ratio_proxy": 0.8409817151340273,
+      "nominal_volume_ratio_proxy": 0.5947845242286544,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0006705589873258955,
+      "size_ratio_proxy": 0.9496153552494069,
+      "nominal_volume_ratio_proxy": 0.8563339959428752,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.002237033587838632,
+      "size_ratio_proxy": 0.9494017758014967,
+      "nominal_volume_ratio_proxy": 0.8557563277042106,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.006563682890662161,
+      "size_ratio_proxy": 0.9488121125690125,
+      "nominal_volume_ratio_proxy": 0.8541628146725652,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.044472498672234184,
+      "size_ratio_proxy": 0.8962015457693229,
+      "nominal_volume_ratio_proxy": 0.7198086577016549,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.033103685054385004,
+      "size_ratio_proxy": 0.8976657868687654,
+      "nominal_volume_ratio_proxy": 0.7233425604605642,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0594692637495198,
+      "size_ratio_proxy": 0.8942736970012801,
+      "nominal_volume_ratio_proxy": 0.7151734304187981,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.6985880246362287,
+      "size_ratio_proxy": 0.8158561580906508,
+      "nominal_volume_ratio_proxy": 0.5430512126521805,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.44568420645586915,
+      "size_ratio_proxy": 0.8460289768973601,
+      "nominal_volume_ratio_proxy": 0.6055579558182959,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.583882165467249,
+      "size_ratio_proxy": 0.8294054930780832,
+      "nominal_volume_ratio_proxy": 0.5705592123961687,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.6767177120127245,
+      "size_ratio_proxy": 0.8184223428604164,
+      "nominal_volume_ratio_proxy": 0.5481916690362832,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.6767177120127245,
+      "size_ratio_proxy": 0.8184223428604164,
+      "nominal_volume_ratio_proxy": 0.5481916690362832,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.02,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.6767177120127245,
+      "size_ratio_proxy": 0.8184223428604164,
+      "nominal_volume_ratio_proxy": 0.5481916690362832,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0010238431203199046,
+      "size_ratio_proxy": 0.9495671828739801,
+      "nominal_volume_ratio_proxy": 0.8562036814426153,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0038005921762997107,
+      "size_ratio_proxy": 0.9491886418368394,
+      "nominal_volume_ratio_proxy": 0.8551801234000203,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.01170546770583959,
+      "size_ratio_proxy": 0.9481118337058411,
+      "nominal_volume_ratio_proxy": 0.8522729437669972,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.02152057386661036,
+      "size_ratio_proxy": 0.8991600887376956,
+      "nominal_volume_ratio_proxy": 0.7269609197575911,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.05479784798015766,
+      "size_ratio_proxy": 0.894873766931708,
+      "nominal_volume_ratio_proxy": 0.7166140702523071,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.05597828815326086,
+      "size_ratio_proxy": 0.8947220946681279,
+      "nominal_volume_ratio_proxy": 0.7162497549893863,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.47673327538109334,
+      "size_ratio_proxy": 0.8422653786990848,
+      "nominal_volume_ratio_proxy": 0.5975122977464504,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.5483699163825249,
+      "size_ratio_proxy": 0.8336457296197753,
+      "nominal_volume_ratio_proxy": 0.5793547733095445,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.5024359385107176,
+      "size_ratio_proxy": 0.8391625121340905,
+      "nominal_volume_ratio_proxy": 0.590932972590573,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.692280706868665,
+      "size_ratio_proxy": 0.8165954095808415,
+      "nominal_volume_ratio_proxy": 0.5445287351834315,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.692280706868665,
+      "size_ratio_proxy": 0.8165954095808415,
+      "nominal_volume_ratio_proxy": 0.5445287351834315,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.05,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.692280706868665,
+      "size_ratio_proxy": 0.8165954095808415,
+      "nominal_volume_ratio_proxy": 0.5445287351834315,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0026635894545460675,
+      "size_ratio_proxy": 0.9493436257805044,
+      "nominal_volume_ratio_proxy": 0.8555990943752124,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0034261743896630207,
+      "size_ratio_proxy": 0.94923967563554,
+      "nominal_volume_ratio_proxy": 0.855318068909133,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.01822142961677494,
+      "size_ratio_proxy": 0.9472251429879602,
+      "nominal_volume_ratio_proxy": 0.8498839977935673,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.022559894528874642,
+      "size_ratio_proxy": 0.8990259076236817,
+      "nominal_volume_ratio_proxy": 0.7266355165123588,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.027304886842199862,
+      "size_ratio_proxy": 0.898413561473527,
+      "nominal_volume_ratio_proxy": 0.7251517457133778,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.04360170323642935,
+      "size_ratio_proxy": 0.8963136149514349,
+      "nominal_volume_ratio_proxy": 0.7200787257098588,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.3653416851415269,
+      "size_ratio_proxy": 0.8558459022590968,
+      "nominal_volume_ratio_proxy": 0.6268833380895257,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.34971076134620627,
+      "size_ratio_proxy": 0.8577690157706663,
+      "nominal_volume_ratio_proxy": 0.6311187224975269,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.21514877286165673,
+      "size_ratio_proxy": 0.8745042777684465,
+      "nominal_volume_ratio_proxy": 0.668783907946475,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.3625484310284995,
+      "size_ratio_proxy": 0.8561892469523473,
+      "nominal_volume_ratio_proxy": 0.6276381121428055,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.3625484310284995,
+      "size_ratio_proxy": 0.8561892469523473,
+      "nominal_volume_ratio_proxy": 0.6276381121428055,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.1,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.3625484310284995,
+      "size_ratio_proxy": 0.8561892469523473,
+      "nominal_volume_ratio_proxy": 0.6276381121428055,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.007859008181481742,
+      "size_ratio_proxy": 0.9486356486608423,
+      "nominal_volume_ratio_proxy": 0.8536863213550959,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.005294690970691267,
+      "size_ratio_proxy": 0.948985020877945,
+      "nominal_volume_ratio_proxy": 0.8546298790018841,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0044779772451092785,
+      "size_ratio_proxy": 0.9490963200401243,
+      "nominal_volume_ratio_proxy": 0.8549306131874469,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.01348221738163837,
+      "size_ratio_proxy": 0.9001985544695978,
+      "nominal_volume_ratio_proxy": 0.7294825938134195,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.012292964702333355,
+      "size_ratio_proxy": 0.9003522944245814,
+      "nominal_volume_ratio_proxy": 0.7298564105961329,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.008203565938054137,
+      "size_ratio_proxy": 0.9008811494948071,
+      "nominal_volume_ratio_proxy": 0.7311432903024943,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.048884167547228456,
+      "size_ratio_proxy": 0.8956339903687218,
+      "nominal_volume_ratio_proxy": 0.7184419808792145,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.05712893458130954,
+      "size_ratio_proxy": 0.8945742752818231,
+      "nominal_volume_ratio_proxy": 0.7158948131292313,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.03152615062495759,
+      "size_ratio_proxy": 0.8978691536087031,
+      "nominal_volume_ratio_proxy": 0.723834292961154,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.056589126355500154,
+      "size_ratio_proxy": 0.8946436194515315,
+      "nominal_volume_ratio_proxy": 0.7160613067822771,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.056589126355500154,
+      "size_ratio_proxy": 0.8946436194515315,
+      "nominal_volume_ratio_proxy": 0.7160613067822771,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.25,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.056589126355500154,
+      "size_ratio_proxy": 0.8946436194515315,
+      "nominal_volume_ratio_proxy": 0.7160613067822771,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.007301164194225307,
+      "size_ratio_proxy": 0.9487116404743199,
+      "nominal_volume_ratio_proxy": 0.8538914950759735,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.007940135169997121,
+      "size_ratio_proxy": 0.9486245977141651,
+      "nominal_volume_ratio_proxy": 0.8536564871438367,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0031377129002719407,
+      "size_ratio_proxy": 0.949278995311986,
+      "nominal_volume_ratio_proxy": 0.8554243609985058,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.00961493476819724,
+      "size_ratio_proxy": 0.900698591342618,
+      "nominal_volume_ratio_proxy": 0.7306988949841279,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.01128145965377973,
+      "size_ratio_proxy": 0.9004830768200072,
+      "nominal_volume_ratio_proxy": 0.7301745068660277,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.004034634192649838,
+      "size_ratio_proxy": 0.9014206098076561,
+      "nominal_volume_ratio_proxy": 0.732457533656592,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.01378545300477376,
+      "size_ratio_proxy": 0.9001593580595285,
+      "nominal_volume_ratio_proxy": 0.7293873086551772,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.020133961057868383,
+      "size_ratio_proxy": 0.899339138060623,
+      "nominal_volume_ratio_proxy": 0.727395284392648,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.007445132620172036,
+      "size_ratio_proxy": 0.9009792668355184,
+      "nominal_volume_ratio_proxy": 0.7313822085509358,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.014324244071656474,
+      "size_ratio_proxy": 0.9000897178283083,
+      "nominal_volume_ratio_proxy": 0.7292180360565907,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.014324244071656474,
+      "size_ratio_proxy": 0.9000897178283083,
+      "nominal_volume_ratio_proxy": 0.7292180360565907,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.3,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.014324244071656474,
+      "size_ratio_proxy": 0.9000897178283083,
+      "nominal_volume_ratio_proxy": 0.7292180360565907,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0057934184454170685,
+      "size_ratio_proxy": 0.9560290400813656,
+      "nominal_volume_ratio_proxy": 0.8738024407460931,
+      "polar_weight": 0.4276491937883004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0056229928484199535,
+      "size_ratio_proxy": 0.9560524364491446,
+      "nominal_volume_ratio_proxy": 0.8738665945616994,
+      "polar_weight": 0.4276491937883004
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0021961735414571908,
+      "size_ratio_proxy": 0.956522998598832,
+      "nominal_volume_ratio_proxy": 0.8751575623622896,
+      "polar_weight": 0.42764919378829935
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.007622696839477494,
+      "size_ratio_proxy": 0.9145119430934883,
+      "nominal_volume_ratio_proxy": 0.7648356884108305,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.007418941920433983,
+      "size_ratio_proxy": 0.9145387003174761,
+      "nominal_volume_ratio_proxy": 0.7649028241505884,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0028834791215978225,
+      "size_ratio_proxy": 0.9151345028470251,
+      "nominal_volume_ratio_proxy": 0.7663987521005736,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.008273807818037947,
+      "size_ratio_proxy": 0.914426444038495,
+      "nominal_volume_ratio_proxy": 0.7646211916545869,
+      "polar_weight": 0.8552983875766003
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.010514543497316127,
+      "size_ratio_proxy": 0.9141322683648514,
+      "nominal_volume_ratio_proxy": 0.7638834813621558,
+      "polar_weight": 0.8552983875766003
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.005017545174591625,
+      "size_ratio_proxy": 0.914854112238395,
+      "nominal_volume_ratio_proxy": 0.7656945107757568,
+      "polar_weight": 0.8552983875766003
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.009306803890430138,
+      "size_ratio_proxy": 0.914290815071316,
+      "nominal_volume_ratio_proxy": 0.7642810131668251,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.009306803890430138,
+      "size_ratio_proxy": 0.914290815071316,
+      "nominal_volume_ratio_proxy": 0.7642810131668251,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "north",
+      "d_mm": 0.5,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.009306803890430138,
+      "size_ratio_proxy": 0.914290815071316,
+      "nominal_volume_ratio_proxy": 0.7642810131668251,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0026821450915533187,
+      "size_ratio_proxy": 0.9808177647049264,
+      "nominal_volume_ratio_proxy": 0.9435501103076964,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0011238676523817116,
+      "size_ratio_proxy": 0.9810372568147153,
+      "nominal_volume_ratio_proxy": 0.9441837086015412,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0009644956919241263,
+      "size_ratio_proxy": 0.9810597080169731,
+      "nominal_volume_ratio_proxy": 0.9442485334929137,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.004033199888070476,
+      "size_ratio_proxy": 0.9621873795819074,
+      "nominal_volume_ratio_proxy": 0.8907974572666321,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0013675976178617957,
+      "size_ratio_proxy": 0.96255574202272,
+      "nominal_volume_ratio_proxy": 0.8918209438718419,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0017168814269577421,
+      "size_ratio_proxy": 0.9625074660904042,
+      "nominal_volume_ratio_proxy": 0.8916867656843973,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.006474115207791408,
+      "size_ratio_proxy": 0.9618501905198936,
+      "nominal_volume_ratio_proxy": 0.8898612719132678,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.004571139261169564,
+      "size_ratio_proxy": 0.9621130582588338,
+      "nominal_volume_ratio_proxy": 0.8905910521526519,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.006372687473143604,
+      "size_ratio_proxy": 0.961864199436205,
+      "nominal_volume_ratio_proxy": 0.8899001537696286,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.0048815745337184215,
+      "size_ratio_proxy": 0.9620701713536481,
+      "nominal_volume_ratio_proxy": 0.8904719611856806,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0048815745337184215,
+      "size_ratio_proxy": 0.9620701713536481,
+      "nominal_volume_ratio_proxy": 0.8904719611856806,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "north",
+      "d_mm": 0.7,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.0048815745337184215,
+      "size_ratio_proxy": 0.9620701713536481,
+      "nominal_volume_ratio_proxy": 0.8904719611856806,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.0024484243786325214,
+      "size_ratio_proxy": 0.9996484819990483,
+      "nominal_volume_ratio_proxy": 0.9989458166484246,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0009920707420474947,
+      "size_ratio_proxy": 0.9998575544372563,
+      "nominal_volume_ratio_proxy": 0.9995727241810937,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0010992358691959522,
+      "size_ratio_proxy": 0.9998421684456419,
+      "nominal_volume_ratio_proxy": 0.9995265800653926,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.003781495976356728,
+      "size_ratio_proxy": 0.9994571461105566,
+      "nominal_volume_ratio_proxy": 0.9983723222427318,
+      "polar_weight": 1.4432899320127055e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0012230218361688422,
+      "size_ratio_proxy": 0.9998243964490988,
+      "nominal_volume_ratio_proxy": 0.9994732818517027,
+      "polar_weight": 1.4432899320127055e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0017902793881016386,
+      "size_ratio_proxy": 0.9997429591155278,
+      "nominal_volume_ratio_proxy": 0.9992290755396496,
+      "polar_weight": 1.4432899320127055e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.006816496881994004,
+      "size_ratio_proxy": 0.9990216687435969,
+      "nominal_volume_ratio_proxy": 0.9970678766905402,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.003918055682824353,
+      "size_ratio_proxy": 0.999437547751449,
+      "nominal_volume_ratio_proxy": 0.9983135921340095,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.005176671918454145,
+      "size_ratio_proxy": 0.9992569356009581,
+      "nominal_volume_ratio_proxy": 0.9977724628266985,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.004107171430051547,
+      "size_ratio_proxy": 0.9994104074495263,
+      "nominal_volume_ratio_proxy": 0.9982322650017517,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.004107171430051547,
+      "size_ratio_proxy": 0.9994104074495263,
+      "nominal_volume_ratio_proxy": 0.9982322650017517,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 1.0,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.004107171430051547,
+      "size_ratio_proxy": 0.9994104074495263,
+      "nominal_volume_ratio_proxy": 0.9982322650017517,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.7,
+      "phi": 0.0,
+      "kappa": 0.001860725316034589,
+      "size_ratio_proxy": 0.9997328461327218,
+      "nominal_volume_ratio_proxy": 0.9991987524926649,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0006906413180873862,
+      "size_ratio_proxy": 0.9999008327570696,
+      "nominal_volume_ratio_proxy": 0.9997025277726599,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0015326906770707607,
+      "size_ratio_proxy": 0.9997799385639586,
+      "nominal_volume_ratio_proxy": 0.9993399609623259,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.8,
+      "phi": 0.0,
+      "kappa": 0.0035014024552386105,
+      "size_ratio_proxy": 0.9994973449200543,
+      "nominal_volume_ratio_proxy": 0.998492792619549,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0011317902075297943,
+      "size_ratio_proxy": 0.9998374945767687,
+      "nominal_volume_ratio_proxy": 0.9995125629500525,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0023962913675771116,
+      "size_ratio_proxy": 0.9996559653991027,
+      "nominal_volume_ratio_proxy": 0.9989682512360082,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.95,
+      "phi": 0.0,
+      "kappa": 0.006915880507251927,
+      "size_ratio_proxy": 0.9990074118843825,
+      "nominal_volume_ratio_proxy": 0.9970251903687205,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0034960111606570196,
+      "size_ratio_proxy": 0.9994981186904193,
+      "nominal_volume_ratio_proxy": 0.9984951115993882,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.0029211945907899055,
+      "size_ratio_proxy": 0.9995806210558458,
+      "nominal_volume_ratio_proxy": 0.9987423907298739,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 1.0,
+      "phi": 0.0,
+      "kappa": 0.0021646364206964696,
+      "size_ratio_proxy": 0.999689218839277,
+      "nominal_volume_ratio_proxy": 0.9990679462426038,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0021646364206964696,
+      "size_ratio_proxy": 0.999689218839277,
+      "nominal_volume_ratio_proxy": 0.9990679462426038,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "north",
+      "d_mm": 2.0,
+      "mu": 1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.0021646364206964696,
+      "size_ratio_proxy": 0.999689218839277,
+      "nominal_volume_ratio_proxy": 0.9990679462426038,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0019571961492452746,
+      "size_ratio_proxy": 0.904546431206219,
+      "nominal_volume_ratio_proxy": 0.7401037309051369,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.00040470645176477626,
+      "size_ratio_proxy": 0.9047481030262315,
+      "nominal_volume_ratio_proxy": 0.7405988674996064,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.00072438437934252,
+      "size_ratio_proxy": 0.9047065724859019,
+      "nominal_volume_ratio_proxy": 0.7404968853262353,
+      "polar_weight": 0.49999999999999567
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.02704288090043742,
+      "size_ratio_proxy": 0.8154913996683268,
+      "nominal_volume_ratio_proxy": 0.5423231653557785,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.003310283548310257,
+      "size_ratio_proxy": 0.8182752257035859,
+      "nominal_volume_ratio_proxy": 0.547896098280414,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.09459119661617511,
+      "size_ratio_proxy": 0.8076197347618626,
+      "nominal_volume_ratio_proxy": 0.5267696780061217,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.37722484626610847,
+      "size_ratio_proxy": 0.7754990362378289,
+      "nominal_volume_ratio_proxy": 0.46638415505672903,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.08606282574977854,
+      "size_ratio_proxy": 0.8086093723196502,
+      "nominal_volume_ratio_proxy": 0.5287085240916979,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.8825723258516567,
+      "size_ratio_proxy": 0.7212181948259129,
+      "nominal_volume_ratio_proxy": 0.37514574383810834,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.43706776125980057,
+      "size_ratio_proxy": 0.7688636441964605,
+      "nominal_volume_ratio_proxy": 0.4545147453782861,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.43706776125980057,
+      "size_ratio_proxy": 0.7688636441964605,
+      "nominal_volume_ratio_proxy": 0.4545147453782861,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.0,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.43706776125980057,
+      "size_ratio_proxy": 0.7688636441964605,
+      "nominal_volume_ratio_proxy": 0.4545147453782861,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0009514572272307624,
+      "size_ratio_proxy": 0.9046770737715198,
+      "nominal_volume_ratio_proxy": 0.7404244541273446,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.00038911370043298273,
+      "size_ratio_proxy": 0.9047501287869123,
+      "nominal_volume_ratio_proxy": 0.7406038421862184,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.000521045538270831,
+      "size_ratio_proxy": 0.9047329887651423,
+      "nominal_volume_ratio_proxy": 0.7405617519169992,
+      "polar_weight": 0.49999999999999667
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.025042248249608184,
+      "size_ratio_proxy": 0.8157257072480864,
+      "nominal_volume_ratio_proxy": 0.5427907617344941,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.004647243406033983,
+      "size_ratio_proxy": 0.8181181484496657,
+      "nominal_volume_ratio_proxy": 0.5475806341468753,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.03284343086001312,
+      "size_ratio_proxy": 0.8148124385273497,
+      "nominal_volume_ratio_proxy": 0.5409697119492916,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.4058484751729694,
+      "size_ratio_proxy": 0.7723181293130488,
+      "nominal_volume_ratio_proxy": 0.4606686823674186,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.11199911246360475,
+      "size_ratio_proxy": 0.8056034668742131,
+      "nominal_volume_ratio_proxy": 0.5228341895592796,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.49157658677071836,
+      "size_ratio_proxy": 0.7628691184424967,
+      "nominal_volume_ratio_proxy": 0.44396640065193665,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.3376634774817162,
+      "size_ratio_proxy": 0.7799170182173852,
+      "nominal_volume_ratio_proxy": 0.47440055776298456,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.3376634774817162,
+      "size_ratio_proxy": 0.7799170182173852,
+      "nominal_volume_ratio_proxy": 0.47440055776298456,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.02,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.3376634774817162,
+      "size_ratio_proxy": 0.7799170182173852,
+      "nominal_volume_ratio_proxy": 0.47440055776298456,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0009846397486061944,
+      "size_ratio_proxy": 0.9046727631573731,
+      "nominal_volume_ratio_proxy": 0.7404138702327882,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.00039731742033750076,
+      "size_ratio_proxy": 0.9047490629851377,
+      "nominal_volume_ratio_proxy": 0.7406012248802872,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0003531731376890369,
+      "size_ratio_proxy": 0.9047547980878387,
+      "nominal_volume_ratio_proxy": 0.7406153087335332,
+      "polar_weight": 0.4999999999999978
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.017716293186856493,
+      "size_ratio_proxy": 0.8165842740032356,
+      "nominal_volume_ratio_proxy": 0.5445064589402719,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0064412233804622965,
+      "size_ratio_proxy": 0.8179074240148687,
+      "nominal_volume_ratio_proxy": 0.5471576185903297,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.002966880203236529,
+      "size_ratio_proxy": 0.8183155764756344,
+      "nominal_volume_ratio_proxy": 0.5479771558026832,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.3687032387916564,
+      "size_ratio_proxy": 0.7764485597985447,
+      "nominal_volume_ratio_proxy": 0.4680993803333168,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.14005396378017046,
+      "size_ratio_proxy": 0.8023646079829083,
+      "nominal_volume_ratio_proxy": 0.5165534798387751,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.07392497227938942,
+      "size_ratio_proxy": 0.810019948042068,
+      "nominal_volume_ratio_proxy": 0.5314802646981667,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.21141496772002294,
+      "size_ratio_proxy": 0.7941847320398856,
+      "nominal_volume_ratio_proxy": 0.5009156504791532,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.21141496772002294,
+      "size_ratio_proxy": 0.7941847320398856,
+      "nominal_volume_ratio_proxy": 0.5009156504791532,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.05,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.21141496772002294,
+      "size_ratio_proxy": 0.7941847320398856,
+      "nominal_volume_ratio_proxy": 0.5009156504791532,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.003615983966472775,
+      "size_ratio_proxy": 0.9043310007025311,
+      "nominal_volume_ratio_proxy": 0.7395750583773173,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0006258898432268126,
+      "size_ratio_proxy": 0.9047193680716852,
+      "nominal_volume_ratio_proxy": 0.7405283051005029,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.00061460532503914,
+      "size_ratio_proxy": 0.9047208340733972,
+      "nominal_volume_ratio_proxy": 0.7405319049488996,
+      "polar_weight": 0.4999999999999999
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.014122795814108881,
+      "size_ratio_proxy": 0.8170057449227441,
+      "nominal_volume_ratio_proxy": 0.545350017099106,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0067496207160794505,
+      "size_ratio_proxy": 0.8178712045217239,
+      "nominal_volume_ratio_proxy": 0.5470849322686728,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0049070354320395505,
+      "size_ratio_proxy": 0.8180876294032231,
+      "nominal_volume_ratio_proxy": 0.5475193556551304,
+      "polar_weight": 1.0000000000000013
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.22949434322758763,
+      "size_ratio_proxy": 0.7921256267095418,
+      "nominal_volume_ratio_proxy": 0.4970295288371834,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.11937144750391493,
+      "size_ratio_proxy": 0.8047510858946815,
+      "nominal_volume_ratio_proxy": 0.5211763669244105,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.07875325293933635,
+      "size_ratio_proxy": 0.8094585448265021,
+      "nominal_volume_ratio_proxy": 0.5303759660353666,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.17031051785825335,
+      "size_ratio_proxy": 0.7988861612729798,
+      "nominal_volume_ratio_proxy": 0.5098644057903556,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.17031051785825335,
+      "size_ratio_proxy": 0.7988861612729798,
+      "nominal_volume_ratio_proxy": 0.5098644057903556,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.1,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.17031051785825335,
+      "size_ratio_proxy": 0.7988861612729798,
+      "nominal_volume_ratio_proxy": 0.5098644057903556,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.005130578677213374,
+      "size_ratio_proxy": 0.904134341693745,
+      "nominal_volume_ratio_proxy": 0.7390926714925481,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.001907156580590273,
+      "size_ratio_proxy": 0.9045529307548736,
+      "nominal_volume_ratio_proxy": 0.7401196848946955,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0018048208626914677,
+      "size_ratio_proxy": 0.9045662231007575,
+      "nominal_volume_ratio_proxy": 0.7401523134045846,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.01079534675216277,
+      "size_ratio_proxy": 0.8173962057777598,
+      "nominal_volume_ratio_proxy": 0.5461322868129433,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.006179355453248289,
+      "size_ratio_proxy": 0.817938180155872,
+      "nominal_volume_ratio_proxy": 0.5472193459540519,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.007772315933845337,
+      "size_ratio_proxy": 0.8177511063290873,
+      "nominal_volume_ratio_proxy": 0.546843961819152,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.04402025444064389,
+      "size_ratio_proxy": 0.8135057718857435,
+      "nominal_volume_ratio_proxy": 0.5383713196509068,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.03797944689787734,
+      "size_ratio_proxy": 0.814211733728287,
+      "nominal_volume_ratio_proxy": 0.5397741352514978,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.06487057123286363,
+      "size_ratio_proxy": 0.8110737888576328,
+      "nominal_volume_ratio_proxy": 0.5335573416912825,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.046779102664635835,
+      "size_ratio_proxy": 0.8131835614194864,
+      "nominal_volume_ratio_proxy": 0.537731864411419,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.046779102664635835,
+      "size_ratio_proxy": 0.8131835614194864,
+      "nominal_volume_ratio_proxy": 0.537731864411419,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.25,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.046779102664635835,
+      "size_ratio_proxy": 0.8131835614194864,
+      "nominal_volume_ratio_proxy": 0.537731864411419,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0018033403338454904,
+      "size_ratio_proxy": 0.9045664154074966,
+      "nominal_volume_ratio_proxy": 0.7401527854639136,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0012912553868942285,
+      "size_ratio_proxy": 0.9046329328669438,
+      "nominal_volume_ratio_proxy": 0.7403160792890185,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0009831684700673507,
+      "size_ratio_proxy": 0.9046729542850916,
+      "nominal_volume_ratio_proxy": 0.7404143395084736,
+      "polar_weight": 0.500000000000004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.003822612965457358,
+      "size_ratio_proxy": 0.818215029384191,
+      "nominal_volume_ratio_proxy": 0.5477751894421036,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.004294427431255195,
+      "size_ratio_proxy": 0.8181595972997074,
+      "nominal_volume_ratio_proxy": 0.547663865661339,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.003010283470338059,
+      "size_ratio_proxy": 0.8183104763708011,
+      "nominal_volume_ratio_proxy": 0.5479669101580819,
+      "polar_weight": 1.000000000000001
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.023680796642071733,
+      "size_ratio_proxy": 0.8158851945193315,
+      "nominal_volume_ratio_proxy": 0.5431091965094493,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.02403451904521881,
+      "size_ratio_proxy": 0.815843754704435,
+      "nominal_volume_ratio_proxy": 0.5430264451556407,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.024354783984893755,
+      "size_ratio_proxy": 0.815806236363805,
+      "nominal_volume_ratio_proxy": 0.5429515318620592,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.01848538759102891,
+      "size_ratio_proxy": 0.8164940973943564,
+      "nominal_volume_ratio_proxy": 0.5443260869001864,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.01848538759102891,
+      "size_ratio_proxy": 0.8164940973943564,
+      "nominal_volume_ratio_proxy": 0.5443260869001864,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.3,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.01848538759102891,
+      "size_ratio_proxy": 0.8164940973943564,
+      "nominal_volume_ratio_proxy": 0.5443260869001864,
+      "polar_weight": 1.0
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0010374308523333194,
+      "size_ratio_proxy": 0.9178571295589223,
+      "nominal_volume_ratio_proxy": 0.7732594871628693,
+      "polar_weight": 0.4276491937883004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0011874592809267021,
+      "size_ratio_proxy": 0.9178373561665112,
+      "nominal_volume_ratio_proxy": 0.7732095132615061,
+      "polar_weight": 0.4276491937883004
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0006117944000164653,
+      "size_ratio_proxy": 0.9179132297563138,
+      "nominal_volume_ratio_proxy": 0.7734012826338993,
+      "polar_weight": 0.42764919378829935
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.00213034082070865,
+      "size_ratio_proxy": 0.8424549988501889,
+      "nominal_volume_ratio_proxy": 0.5979159444511787,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0032672662539997618,
+      "size_ratio_proxy": 0.8423174742280302,
+      "nominal_volume_ratio_proxy": 0.5976231760230524,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0016868830279177323,
+      "size_ratio_proxy": 0.8425086464192264,
+      "nominal_volume_ratio_proxy": 0.598030177661179,
+      "polar_weight": 0.8552983875766058
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.012703436852409667,
+      "size_ratio_proxy": 0.8411769234780005,
+      "nominal_volume_ratio_proxy": 0.5951988038236059,
+      "polar_weight": 0.8552983875766061
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.014442340216556347,
+      "size_ratio_proxy": 0.8409669106636587,
+      "nominal_volume_ratio_proxy": 0.5947531133857166,
+      "polar_weight": 0.8552983875766061
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.010905701694821478,
+      "size_ratio_proxy": 0.8413940967303911,
+      "nominal_volume_ratio_proxy": 0.5956599243026749,
+      "polar_weight": 0.8552983875766061
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.011040021334345809,
+      "size_ratio_proxy": 0.841377868468523,
+      "nominal_volume_ratio_proxy": 0.5956254588643042,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.011040021334345809,
+      "size_ratio_proxy": 0.841377868468523,
+      "nominal_volume_ratio_proxy": 0.5956254588643042,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "south",
+      "d_mm": 0.5,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.011040021334345809,
+      "size_ratio_proxy": 0.841377868468523,
+      "nominal_volume_ratio_proxy": 0.5956254588643042,
+      "polar_weight": 0.8552983875766026
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0005099636344934036,
+      "size_ratio_proxy": 0.9637952465487566,
+      "nominal_volume_ratio_proxy": 0.8952706355458738,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.001164233637887583,
+      "size_ratio_proxy": 0.9637047027719872,
+      "nominal_volume_ratio_proxy": 0.8950183405595494,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0002582852547999728,
+      "size_ratio_proxy": 0.9638300783356031,
+      "nominal_volume_ratio_proxy": 0.8953677049277735,
+      "polar_weight": 0.18394121496995278
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.0007867894595669052,
+      "size_ratio_proxy": 0.92893237486175,
+      "nominal_volume_ratio_proxy": 0.8015900119442644,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0017846742577208928,
+      "size_ratio_proxy": 0.9287992771442065,
+      "nominal_volume_ratio_proxy": 0.8012455051166483,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0004897841610263001,
+      "size_ratio_proxy": 0.9289719930648692,
+      "nominal_volume_ratio_proxy": 0.8016925777861619,
+      "polar_weight": 0.3678824299399064
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.002764150690174953,
+      "size_ratio_proxy": 0.9286686532774343,
+      "nominal_volume_ratio_proxy": 0.8009074975297948,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.00400542103524853,
+      "size_ratio_proxy": 0.9285031427282355,
+      "nominal_volume_ratio_proxy": 0.8004793523060425,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.0019867395762252172,
+      "size_ratio_proxy": 0.9287723280256514,
+      "nominal_volume_ratio_proxy": 0.8011757627057865,
+      "polar_weight": 0.36788242993990994
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.0022711958154941407,
+      "size_ratio_proxy": 0.9287343918909272,
+      "nominal_volume_ratio_proxy": 0.8010775935334247,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0022711958154941407,
+      "size_ratio_proxy": 0.9287343918909272,
+      "nominal_volume_ratio_proxy": 0.8010775935334247,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "south",
+      "d_mm": 0.7,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.0022711958154941407,
+      "size_ratio_proxy": 0.9287343918909272,
+      "nominal_volume_ratio_proxy": 0.8010775935334247,
+      "polar_weight": 0.3678824299399056
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0004375342333236659,
+      "size_ratio_proxy": 0.9999371745492941,
+      "nominal_volume_ratio_proxy": 0.9998115354887461,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0008625960722540928,
+      "size_ratio_proxy": 0.999876143787009,
+      "nominal_volume_ratio_proxy": 0.9996284773802113,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.00026513767413103114,
+      "size_ratio_proxy": 0.9999619284645965,
+      "nominal_volume_ratio_proxy": 0.9998857897420598,
+      "polar_weight": 5.5511151231257346e-17
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.0006164534558744511,
+      "size_ratio_proxy": 0.9999114847119237,
+      "nominal_volume_ratio_proxy": 0.9997344776399463,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.001340452088604561,
+      "size_ratio_proxy": 0.9998075372367973,
+      "nominal_volume_ratio_proxy": 0.9994227228290082,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.00044615445477027784,
+      "size_ratio_proxy": 0.9999359368131158,
+      "nominal_volume_ratio_proxy": 0.9998078227513602,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.0019713212831080273,
+      "size_ratio_proxy": 0.9997169695503796,
+      "nominal_volume_ratio_proxy": 0.9991511489471725,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0034131269855601663,
+      "size_ratio_proxy": 0.9995100144835196,
+      "nominal_volume_ratio_proxy": 0.9985307635903393,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.0016072272628136898,
+      "size_ratio_proxy": 0.9997692379472936,
+      "nominal_volume_ratio_proxy": 0.9993078735829672,
+      "polar_weight": -1.3322676295501878e-15
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.0019660065709851317,
+      "size_ratio_proxy": 0.9997177324970677,
+      "nominal_volume_ratio_proxy": 0.9991534364935433,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0019660065709851317,
+      "size_ratio_proxy": 0.9997177324970677,
+      "nominal_volume_ratio_proxy": 0.9991534364935433,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 1.0,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.0019660065709851317,
+      "size_ratio_proxy": 0.9997177324970677,
+      "nominal_volume_ratio_proxy": 0.9991534364935433,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.7,
+      "phi": 0.0,
+      "kappa": 0.0002770379797050297,
+      "size_ratio_proxy": 0.9999602197150013,
+      "nominal_volume_ratio_proxy": 0.9998806638923541,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.7,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0002725599353756282,
+      "size_ratio_proxy": 0.9999608627112933,
+      "nominal_volume_ratio_proxy": 0.9998825927290019,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.7,
+      "phi": 3.141582653589793,
+      "kappa": 0.0002954864505579042,
+      "size_ratio_proxy": 0.9999575707285346,
+      "nominal_volume_ratio_proxy": 0.9998727175862567,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.8,
+      "phi": 0.0,
+      "kappa": 0.00033741276214546993,
+      "size_ratio_proxy": 0.9999515506225077,
+      "nominal_volume_ratio_proxy": 0.999854658909436,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.8,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0005480081939916541,
+      "size_ratio_proxy": 0.9999213122400941,
+      "nominal_volume_ratio_proxy": 0.9997639552950857,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.8,
+      "phi": 3.141582653589793,
+      "kappa": 0.0004227527832529419,
+      "size_ratio_proxy": 0.9999392969502527,
+      "nominal_volume_ratio_proxy": 0.9998179019051153,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.95,
+      "phi": 0.0,
+      "kappa": 0.0007105847840450822,
+      "size_ratio_proxy": 0.999897969277021,
+      "nominal_volume_ratio_proxy": 0.9996939390608062,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.95,
+      "phi": 1.5707963267948966,
+      "kappa": 0.0024829540151535346,
+      "size_ratio_proxy": 0.9996435254950828,
+      "nominal_volume_ratio_proxy": 0.9989309576621678,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -0.95,
+      "phi": 3.141582653589793,
+      "kappa": 0.0009622516826855871,
+      "size_ratio_proxy": 0.9998618356836076,
+      "nominal_volume_ratio_proxy": 0.9995855643163204,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -1.0,
+      "phi": 0.0,
+      "kappa": 0.001155122267406236,
+      "size_ratio_proxy": 0.9998341447758998,
+      "nominal_volume_ratio_proxy": 0.9995025168470032,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -1.0,
+      "phi": 1.5707963267948966,
+      "kappa": 0.001155122267406236,
+      "size_ratio_proxy": 0.9998341447758998,
+      "nominal_volume_ratio_proxy": 0.9995025168470032,
+      "polar_weight": 0.0
+    },
+    {
+      "side": "south",
+      "d_mm": 2.0,
+      "mu": -1.0,
+      "phi": 3.141582653589793,
+      "kappa": 0.001155122267406236,
+      "size_ratio_proxy": 0.9998341447758998,
+      "nominal_volume_ratio_proxy": 0.9995025168470032,
+      "polar_weight": 0.0
+    }
+  ]
+}
