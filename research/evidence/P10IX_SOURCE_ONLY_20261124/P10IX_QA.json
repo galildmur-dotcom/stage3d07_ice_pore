@@ -1,0 +1,105 @@
+{
+  "protocol": "P10IX_FIRST_M4_STOP_SOURCE_ONLY_DIAGNOSIS",
+  "status": "SOURCE_ONLY_NO_NEW_MESH_NO_FEM",
+  "old_M3_sha256": "3d6ce765dced7d146ef5228be3b0a8210b4466ed08a0c9f5a20d1917dc2a8c3a",
+  "failed_M4_sha256": "00244c5f45c981fe2b05d7c60bcffe70a7e9eaac5b30eb2b9da66d137f84d50c",
+  "input_P10HA_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "input_P10IT_sha256": "e31c0b72946391fa4b36572292657197ecb8f31b315403128d0d2c70fbfc3c06",
+  "field_at_bad_tet": {
+    "worst_element_tag": 10378,
+    "minSICN": 0.19716297426710463,
+    "minSJ": 0.38128067291240825,
+    "bad_SICN_count": 1,
+    "bad_SJ_count": 1,
+    "center_m": [
+      0.0003583753645802245,
+      0.0007827002573973943,
+      0.029433301643245646
+    ],
+    "center_dwall_mm": 0.030630691574843206,
+    "center_mu": -0.5498558905599986,
+    "pore_surface_faces": [
+      [
+        929,
+        924,
+        919
+      ]
+    ],
+    "corner_radii_from_sphere_mm": [
+      -1.3010426069826053e-15,
+      -6.505213034913027e-16,
+      0.29062883034135123,
+      1.5178830414797062e-15
+    ],
+    "corner_pore_wall_tolerance_1um_count": 3,
+    "adjacent_shared_face_tets": [
+      {
+        "array_index": 6783,
+        "shared_corner_nodes": 3,
+        "distance_to_wall_mm": 0.1526234930796992,
+        "mu": -0.43810642191950167
+      },
+      {
+        "array_index": 10195,
+        "shared_corner_nodes": 3,
+        "distance_to_wall_mm": 0.18705840026152915,
+        "mu": -0.621643794269955
+      },
+      {
+        "array_index": 10196,
+        "shared_corner_nodes": 3,
+        "distance_to_wall_mm": 0.040196987754141,
+        "mu": -0.6153414519602237
+      }
+    ],
+    "nearest_seed_mm": 0.9113569652389555,
+    "nearest_seed_index": 8,
+    "M4_nominal_field_ratio_at_bad_centroid": 0.9999901748735299,
+    "M4_source_kappa_at_bad_centroid": 6.842315029128952e-05,
+    "M4_source_kappa_at_nearest_wall": 5.895192900452703e-05
+  },
+  "north_calibration": {
+    "actual_N_ratio": 0.7901141639278331,
+    "P10IU_cube_proxy": 0.65,
+    "observed_response_slope_diagnostic": 0.5364463315243115,
+    "old_north_patch_log_delta": 0.11445576719134759,
+    "candidate_deltas": [
+      {
+        "north_log_patch_delta": 0.14,
+        "empirical_nominal_N_Veff_ratio": 0.7584412589224996,
+        "north_size_factor_vs_old_patch": 0.9747792607876082,
+        "target_band_proxy_only": false
+      },
+      {
+        "north_log_patch_delta": 0.16,
+        "empirical_nominal_N_Veff_ratio": 0.7345315866154145,
+        "north_size_factor_vs_old_patch": 0.9554773381909533,
+        "target_band_proxy_only": true
+      },
+      {
+        "north_log_patch_delta": 0.18,
+        "empirical_nominal_N_Veff_ratio": 0.7113756607891636,
+        "north_size_factor_vs_old_patch": 0.9365576192694424,
+        "target_band_proxy_only": true
+      },
+      {
+        "north_log_patch_delta": 0.2,
+        "empirical_nominal_N_Veff_ratio": 0.6889497197731529,
+        "north_size_factor_vs_old_patch": 0.9180125358832406,
+        "target_band_proxy_only": true
+      },
+      {
+        "north_log_patch_delta": 0.22,
+        "empirical_nominal_N_Veff_ratio": 0.6672307509775519,
+        "north_size_factor_vs_old_patch": 0.8998346697517225,
+        "target_band_proxy_only": true
+      }
+    ]
+  },
+  "warnings": [
+    "No independent M4 replica has been generated.",
+    "No tested candidate for correcting minSJ/minSICN exists.",
+    "North interpolation is a single-experiment phenomenological proxy.",
+    "D029 target status must remain distinct from D031 geometry GO."
+  ]
+}

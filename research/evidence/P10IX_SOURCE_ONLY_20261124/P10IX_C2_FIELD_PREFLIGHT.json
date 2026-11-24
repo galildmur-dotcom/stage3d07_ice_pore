@@ -1,0 +1,23 @@
+{
+  "protocol": "P10IX_C2_M4_SOURCE_ONLY_TWO_FACTOR_PROPOSAL",
+  "status": "SOURCE_ONLY_CANDIDATE_NOT_NATIVE_GEOMETRY_GO",
+  "input_source_sha256": {
+    "P10HA": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+    "P10IT": "e31c0b72946391fa4b36572292657197ecb8f31b315403128d0d2c70fbfc3c06",
+    "P10IX": "0a1d740419cdf8095cba204e5dea05116b0498b385558947eeb3037f88aace94"
+  },
+  "north_old_delta": 0.11445576719134759,
+  "north_proposed_delta": 0.18,
+  "north_empirical_Veff_proxy": 0.7113756607891636,
+  "south_delta_unchanged": 0.12998093714900827,
+  "near_bad_wall_extra_log_size_max": 0.1,
+  "near_bad_wall_patch_angular_chord_width": 0.45,
+  "near_bad_wall_patch_radial_width_mm": 0.5,
+  "near_bad_wall_patch_at_bad_tet_centroid": 0.633496341168342,
+  "extra_size_factor_at_bad_tet_centroid": 0.9386152444003751,
+  "field_sample_min_ratio": 0.7265046157263996,
+  "seam_max_abs": 0.0,
+  "pole_max_abs": 0.0,
+  "no_new_gmsh_no_FEM": true,
+  "explicit_warning": "Neither north Veff nor local minSJ/minSICN improvement has been checked in a new mesh; one physical M4 observation cannot validate the empirical transfer. No repeat of P10IV R1."
+}
