@@ -10,7 +10,7 @@ Accepted physical M6 Tet10 SHA `d581a498f79564e0931dcd147abfe25ca21c608bbb0ed39c
 Here `κ_M7` comes from P10JZ source-only absolute signed-4D comparison M4→M5→M6 and smooth P10KA C² map. Target is up to **20% element-volume reduction**, not 20% edge reduction. Actual D029 Veff ratio is unknown and requires independent measurement. Earlier user accepted gradual 15–25% volume reduction; smoothness mandatory, uniformity not.
 
 ## Windows package and click sequence
-Artifact: `P10KB_M7_FIRST_GUARDED_MESH_ONLY_WINDOWS_20261124.zip` SHA256 `ef196a7ba59162fefdaeb59a8966a884f49b999e5997fb7cafbb2617ac50747b`, ZIP CRC PASS, 27 top-level files, includes immutable full M6 mesh and full transitive CAD. Extract to a dedicated short Windows folder and keep all files together. Requires Python NumPy plus **Gmsh Python 4.15.2**.
+Artifact: `P10KB_M7_FIRST_GUARDED_MESH_ONLY_WINDOWS_20261124.zip` SHA256 `d7d2b566e7f7846fb34e20fc0d40bc21730229b3bcd7195579a41899c97a9063`, ZIP CRC PASS, 27 top-level files, includes immutable full M6 mesh and full transitive CAD. Extract to a dedicated short Windows folder and keep all files together. Requires Python NumPy plus **Gmsh Python 4.15.2**.
 
 1. Double-click `01_P10KB_PREFLIGHT_AND_HEARTBEAT_NO_MESH.cmd`. This verifies exact 23 SHA-pinned inputs, 3 GEO includes and Gmsh API and runs a **65-second real silent-child watchdog test**, outputting independent heartbeats every **15s**. No marker consumed, no mesh/FEM.
 2. If and only if PASS, double-click `02_P10KB_ONE_M7_MESH_ONLY.cmd`. Separate cross-folder Windows LOCALAPPDATA one-shot marker is consumed before actual native Gmsh. It creates **one M7 candidate**, no FEM; estimated 20–180s but resource hard stop 900s/8GiB, independent 15s heartbeat even if Gmsh output is silent.
