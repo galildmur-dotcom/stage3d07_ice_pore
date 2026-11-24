@@ -16,7 +16,6 @@ from pathlib import Path
 import zipfile
 
 import numpy as np
-from scipy.spatial import cKDTree
 
 
 PIN_OUTER='0b62cc5799a242cceb86c5e283113c4b634e6169ea91476b4faf9dec6296d760'
@@ -67,17 +66,25 @@ def load_centers(csv_path,qa_path):
 
 
 def rbf_at_points(source,values,queries,scale_den):
-    """Continuous C2 compact Wendland normalized RBF on physical r>R domain."""
+    """Continuous C2 Wendland RBF, NumPy only (no SciPy on Windows).
+
+    Radial prefilter is mathematically exact: distance<1 implies
+    abs(transformed radial difference)<1. Every surviving point still
+    receives the *original four-dimensional* compact-support kernel.
+    """
     sourcescaled=source / np.array([R_SCALE,A_SCALE,A_SCALE,A_SCALE])
-    tree=cKDTree(sourcescaled)
     scaled=queries / np.array([R_SCALE,A_SCALE,A_SCALE,A_SCALE])
     result=np.zeros(len(queries))
-    for i,inds in enumerate(tree.query_ball_point(scaled,1.0)):
-        if not inds:continue
-        v=sourcescaled[inds]-scaled[i]
-        q=np.linalg.norm(v,axis=1)
+    for i in range(len(scaled)):
+        inds=np.flatnonzero(np.abs(sourcescaled[:,0]-scaled[i,0])<1.0)
+        if not len(inds):continue
+        delta=sourcescaled[inds]-scaled[i]
+        d2=np.einsum('ij,ij->i',delta,delta)
+        good=d2<1.0
+        if not np.any(good):continue
+        q=np.sqrt(np.maximum(d2[good],0))
         w=np.maximum(1-q,0)**4*(4*q+1)
-        result[i]=np.dot(w,values[inds])/(w.sum()+EPS)/scale_den
+        result[i]=np.dot(w,values[inds[good]])/(w.sum()+EPS)/scale_den
     return np.clip(result,0,1)
 
 
