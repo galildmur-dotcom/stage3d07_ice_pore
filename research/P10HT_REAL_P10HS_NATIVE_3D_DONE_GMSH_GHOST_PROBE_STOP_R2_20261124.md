@@ -1,0 +1,15 @@
+# P10HT — actual P10HS 3D generation complete; nine nonphysical Gmsh cavity-probe STOPs; R2 recovery
+
+Date 2026-11-24. User supplied `P10HS_WORKER_ERROR.txt`, `P10HS_GMSH_LOG.txt`, `P10HS_GUARD_RESULT.json`. `WORKER_STOP` exit2, total 3.008 s, **0 FEM, 0 accepted M2**. Real Gmsh 4.15.2 loaded exact original P10GT CAD and completed native 3D Delaunay meshing in 0.959088 s: **10,924 linear tetrahedra before Tet10 conversion**, 14,071 high-order nodes reported, 11,338 total entities (all dimensions), volume worst distortion 0.371919 (0 elements in ]0,0.2]), native `HighOrder` optimization succeeded with zero bad-element patches.
+
+R1 stopped **after** native 3D completion at its physical-domain guard: `callback requested 9 pore interior points`. The original R1 callback had already returned unmodified base `lc` for each such probe. These are **Gmsh mesh-size lookups in the excluded air cavity**, not proof of any physical mesh node inside the cavity. R1's post-mesh check and `.msh` write did not run; no scientific candidate file was produced. The R1 STOP remains a correct conservative observation.
+
+## User's updated scientific acceptance
+
+The user explicitly accepts **small changes of element sizes** and moderate redistribution of elements between polar and nonpolar zones, since the targeted per-step adaptation is only about 20%. Do **not** invent a minimum required surface-element-count gain or insist on visually large densification. Preserve mandatory smoothness, reproducibility, original CAD and signed 4D mechanical-only indicator; the independent D-025 actual local 3D curved-volume criterion remains mandatory prior to accepting M2.
+
+## R2: separate physical κ from Gmsh nonphysical probe policy
+
+Inside the original material (`r >= R_pore`), the direct C2 mechanical κ, size law `h=lc*(1-0.17κ)^(1/3)`, source coefficients and source fingerprints are **unchanged**. For *size queries only* inside the air cavity (`r < R_pore`), R2 radially projects a query onto the corresponding pore-wall direction and uses κ at that actual wall point. This defines a numerical ghost extension for Gmsh's internal search, **not** a physical material or FEM field inside the cavity. At exact pore center (undefined direction), return unchanged `lc` and record it separately. Report includes number/depth/first-30 nonphysical probes. After meshing, **all actual 3D mesh nodes must satisfy `r>=R_pore-1e-12`**. Only Tet10 allowed. If violated, STOP with evidence and no accepted M2.
+
+Prepared [P10HT R2 ZIP](../research/proposals/P10HT_PORE_GHOST_CALLBACK_3D_R2_20261124/P10HT_R2_GUARDED_3D_PORE_PROBE_WINDOWS_20261124.zip) SHA256 `64f92dc0f047ec66ae324b2a2c9bf01534626ea1e2f03e2566839dbb18fb6bf9`, 215,112 bytes, verified CRC and Python source syntax. One guarded 3D attempt only, external timeout600 s, max4M callback queries, 15 s progress, **no FEM**. If PASS send `P10HT_M2_UNVERIFIED_CANDIDATE_EVIDENCE.zip` for independent QP343/729 and D-025 evaluation against pinned original M1; if STOP send guard/log/worker error. On user's i7-7700K native mesh completion was already ~1 s, but allocate up to 10 min for safety.
