@@ -1,0 +1,16 @@
+{
+  "protocol": "P10ML_M12_R1_GUARDED_MESH_ONLY_PREPARED",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "M11_R2_accepted_sha256": "b3ad647bf3ac295c87f388782447efd33f880e11e331f497402c6596aca6c726",
+  "M12_field_sha256": "e779145ae4ffd37677b3d05c2b214d4b2f09520504c20bd4e8271f96e4b3c03f",
+  "pinned_files": 45,
+  "archive_sha256": "64c587f7fbb5bce5d2b60391bf061bf922f1ed3a6b2188a19aba5629271d581b",
+  "archive_bytes": 8833659,
+  "entrypoints": [
+    "01_P10ML_M12_R1_PREFLIGHT_AND_HEARTBEAT_TEST.cmd",
+    "02_P10ML_ONE_M12_R1_MESH_ONLY.cmd"
+  ],
+  "mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "marker_consumed": false
+}

@@ -1,0 +1,96 @@
+{
+  "protocol": "P10MK_M12_M11_MINUS_M10_REAL_SIGNED4D_1200_BINS",
+  "status": "PASS_SOURCE_ONLY_NO_GMSH_NO_MESH_NO_FEM",
+  "m7_evidence_sha256": "dc8eafe091135eed788923c790170ff600166cd329abe24f49ae33664b60b6a1",
+  "m8_evidence_sha256": "715f43790ee8fe70cc4dfd403b430d95988b8330a417a79ea9dc63417dca775d",
+  "prior_m8_source_sha256": "a101bbd5eac302f7dc09d8bc32c991f3adbf00fc598db090d379c8a1a007686c",
+  "coordinate_source_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "aligned_4d_rows": 43236,
+  "volume_rows": 43200,
+  "bins": 1200,
+  "global_signed_delta_per_m": 0.003883977665093496,
+  "global_cellwise_l1_per_m": 0.7222589721609709,
+  "late_l1_fraction": 0.5728660346793655,
+  "priority_formula": "(0.4*all_L1/max_all + 0.6*last6_L1/max_last6)*polar_factor",
+  "polar_factor": "1.2 for mu_bin 0 and 9; 1.0 elsewhere",
+  "interpolator": "pinned positive compact Wendland C2, quintic smoothstep; no angular singularity",
+  "polar_core": "kappa_base + (1-kappa_base)*C2_polar_plateau, |mu|>=0.8, d<=0.5mm",
+  "incremental_nominal_volume_ratio": "1-0.20*kappa, in [0.80,1.00]",
+  "center_kappa_min_max": [
+    0.0,
+    1.0
+  ],
+  "center_nominal_volume_ratio_min_max": [
+    0.8000000000000002,
+    1.0
+  ],
+  "top10_source_bins": [
+    [
+      0,
+      0,
+      9
+    ],
+    [
+      0,
+      9,
+      7
+    ],
+    [
+      1,
+      9,
+      3
+    ],
+    [
+      0,
+      0,
+      6
+    ],
+    [
+      1,
+      0,
+      6
+    ],
+    [
+      1,
+      9,
+      9
+    ],
+    [
+      0,
+      0,
+      7
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      2,
+      9,
+      8
+    ],
+    [
+      0,
+      9,
+      11
+    ]
+  ],
+  "mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "limitations": [
+    "M11\u2192M12 nominal incremental volume target up to 20%, actual curved Veff requires D029",
+    "Signed 4D consecutive changes partially anticorrelated; no asymptotic claim",
+    "No M12 mesh; D029/D031 gates and FEM pending"
+  ],
+  "source_csv_sha256": "e779145ae4ffd37677b3d05c2b214d4b2f09520504c20bd4e8271f96e4b3c03f",
+  "M10_full4d_evidence_sha256": "dc8eafe091135eed788923c790170ff600166cd329abe24f49ae33664b60b6a1",
+  "M11_full4d_evidence_sha256": "715f43790ee8fe70cc4dfd403b430d95988b8330a417a79ea9dc63417dca775d",
+  "M11_mesh_sha256": "b3ad647bf3ac295c87f388782447efd33f880e11e331f497402c6596aca6c726",
+  "new_source_csv": "P10MK_M12_M11_MINUS_M10_REAL_SIGNED4D_1200_BINS.csv",
+  "comparison": "M11 minus M10, 36x25 signed real full4D; C2 interpolator",
+  "L1_previous_per_m": 0.8079903924025355,
+  "L1_new_per_m": 0.7222589721609709,
+  "L2_new_per_m": 0.011676416504911821,
+  "late_last6_L1_fraction": 0.5728660346793657
+}
