@@ -1,0 +1,18 @@
+{
+  "protocol": "P10MF_M11_R2_DISTINCT_LOCAL_C2_REPAIR",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "archive_sha256": "6a2f3b5576cad2c491a19f4df41ddad373b4e36c6f2cffebf8ca0ae94e8c4a57",
+  "archive_bytes": 7779218,
+  "old_M11_sha256": "244249fcc62d0b26877164dae1cc6a6528edd1d1e5973edad4dc79aad7872dab",
+  "bad_element_tag": 17197,
+  "repair_center_m": [
+    6.6736773608749115e-06,
+    0.0008410310311933411,
+    0.03073658511697876
+  ],
+  "radius_m": 0.0003,
+  "log_size": -0.045,
+  "pinned_files": 42,
+  "FEM_attempts": 0,
+  "mesh_attempts": 0
+}
