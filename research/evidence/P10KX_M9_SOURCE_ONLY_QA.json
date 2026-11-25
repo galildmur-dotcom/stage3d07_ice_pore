@@ -1,0 +1,87 @@
+{
+  "protocol": "P10KX_M9_REAL_M8_MINUS_M7_SIGNED4D_SOURCE_ONLY",
+  "status": "PASS_SOURCE_ONLY_NO_GMSH_NO_MESH_NO_FEM",
+  "m7_evidence_sha256": "0bc50329078cba02f2a5ad55bfcee1d42ef4cf0475d44430598982c233ba5ec7",
+  "m8_evidence_sha256": "247e6d8f189aaceac1fafdfec4fac9bfbe8df066a1d4f1b82ad65c38028e28cf",
+  "prior_m8_source_sha256": "235fc2e0e31d7e55dbf6d1d3ed4a127ca11903cf12a038ee1561006cc0134766",
+  "coordinate_source_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "aligned_4d_rows": 43236,
+  "volume_rows": 43200,
+  "bins": 1200,
+  "global_signed_delta_per_m": -0.011194910364686145,
+  "global_cellwise_l1_per_m": 0.9539289037416502,
+  "late_l1_fraction": 0.600970025787673,
+  "priority_formula": "(0.4*all_L1/max_all + 0.6*last6_L1/max_last6)*polar_factor",
+  "polar_factor": "1.2 for mu_bin 0 and 9; 1.0 elsewhere",
+  "interpolator": "pinned positive compact Wendland C2, quintic smoothstep; no angular singularity",
+  "polar_core": "kappa_base + (1-kappa_base)*C2_polar_plateau, |mu|>=0.8, d<=0.5mm",
+  "incremental_nominal_volume_ratio": "1-0.20*kappa, in [0.80,1.00]",
+  "center_kappa_min_max": [
+    0.0,
+    1.0
+  ],
+  "center_nominal_volume_ratio_min_max": [
+    0.8000000000000002,
+    1.0
+  ],
+  "top10_source_bins": [
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      8
+    ],
+    [
+      1,
+      9,
+      0
+    ],
+    [
+      0,
+      9,
+      9
+    ],
+    [
+      2,
+      0,
+      10
+    ],
+    [
+      1,
+      9,
+      1
+    ],
+    [
+      1,
+      0,
+      10
+    ],
+    [
+      0,
+      9,
+      3
+    ],
+    [
+      0,
+      9,
+      7
+    ],
+    [
+      1,
+      9,
+      3
+    ]
+  ],
+  "mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "limitations": [
+    "Nominal size law is not actual curved Tet10 Veff reduction",
+    "No M9 mesh; D029/D031 gate pending",
+    "Do not infer converged spatial gradient from M6/M7/M8"
+  ],
+  "source_csv_sha256": "ddf7adeaeffffdab480c8bee5b234998236c53a1320aed511d6da20f0c09957f"
+}
