@@ -10,7 +10,7 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[2]
 SRC=ROOT/'p10ls_source_only/P10LS_WORK'
 OLD=ROOT/'p10lm_package/P10LM_WORK'
-OUT=ROOT/'p10ls_package/P10LS_WORK'
+OUT=ROOT/'p10ls_package_r2/P10LS_WORK'
 PKG=OUT.parent
 REV='P10LS_M9_EDV_P1_P2_FACE_JUMP_PHYSICAL_DIAGNOSTIC_V1'
 
@@ -27,7 +27,8 @@ def main():
         (OUT/name).unlink()
     runner=(OLD/'P10LM_M9_TWO_TERM.py').read_text()
     runner=runner.replace('P10LM','P10LS')
-    runner=runner.replace('P10LM_M9_TWO_TERM_EXPLICIT_INSTRUMENTED_P10LG_V1',REV)
+    runner=runner.replace('P10LS_M9_TWO_TERM_EXPLICIT_INSTRUMENTED_P10LG_V1',REV)
+    assert f"SOURCE_REVISION = '{REV}'" in runner
     runner=runner.replace('20e38ffc44f4499d5114f9d0e714246f93f28d5ca1d14adb1c94bb1552dc940f',sha(OUT/'P10FN_SOURCE_SHA256.json'))
     runner=runner.replace('0a470e43668a751dc0514f94e8e33ad2b8615c9d56c633579dd7112fafcec2b3',sha(OUT/'stage3d10dd_4d_partition.hpp'))
     runner=runner.replace('from P10LS_split_audit import audit_split, NAME as SPLIT_CSV',
@@ -65,7 +66,7 @@ def main():
     readme=readme.replace('P10LS_M9_TWO_TERM.py','P10LS_M9_FACE_JUMPS.py')
     readme+='\nP10LS: дополнительно P1/P2 восстановленные скачки напряжений, тяги и геометрической производной на внутренних гранях, 36×2×1200 строк. Нет данных в bin0 — нет граней, а не нулевой скачок. Отдельный маркер P10LS.\n'
     (PKG/'README_P10LS_RU.md').write_text(readme)
-    archive=ROOT/'p10ls_package/P10LS_M9_FACE_JUMP_WINDOWS_PREPARED.zip'
+    archive=ROOT/'p10ls_package_r2/P10LS_M9_FACE_JUMP_WINDOWS_PREPARED_R2.zip'
     with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for file in sorted(PKG.rglob('*')):
             if file.is_file() and file!=archive:z.write(file,arcname=str(file.relative_to(PKG)))

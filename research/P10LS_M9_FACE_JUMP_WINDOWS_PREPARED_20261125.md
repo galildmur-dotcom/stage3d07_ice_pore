@@ -54,3 +54,21 @@
 
 Локальный пакет: `p10ls_package/P10LS_M9_FACE_JUMP_WINDOWS_PREPARED.zip`.
 Контрольные метаданные: `research/P10LS_WINDOWS_PREPARATION_QA.json`.
+
+## Исправление R2 после первого Windows `01` (2026-11-25)
+
+Первая сборка пакета ошибочно оставила в `P10LS_M9_FACE_JUMPS.py`
+строку `SOURCE_REVISION=P10LS_M9_TWO_TERM_EXPLICIT_INSTRUMENTED_P10LG_V1`,
+хотя закреплённый манифест содержал
+`P10LS_M9_EDV_P1_P2_FACE_JUMP_PHYSICAL_DIAGNOSTIC_V1`.
+Поэтому `01` остановился на строгой проверке ревизии **до** FEM и
+расходования маркера. Это ошибка упаковки, а не ошибка расчётной модели.
+
+Исправлен генератор; новый независимый выход —
+`p10ls_package_r2/P10LS_M9_FACE_JUMP_WINDOWS_PREPARED_R2.zip`.
+Проверено исполнением `preflight()` без Windows-проверки платформы:
+**P10LS_M9_PREFLIGHT_PASS_NO_FEM**, `source_count=101`,
+`tet10=13166`, `dt_s=25`, `steps=36`, SHA M9 неизменён.
+Это проверяет всю реальную логику предварительного аудита, но не
+Windows native watchdog, который должен пройти у пользователя через `01`.
+**Пакет R1 не использовать.**
