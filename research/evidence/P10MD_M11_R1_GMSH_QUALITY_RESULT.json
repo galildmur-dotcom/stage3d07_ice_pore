@@ -1,0 +1,52 @@
+{
+  "protocol": "P10MD_M11_R1_INDEPENDENT_GMSH_READONLY_D031",
+  "status": "READONLY_QUALITY_MEASURED_NO_MESH_NO_FEM",
+  "gmsh_version": "4.15.2",
+  "mesh_sha256": "244249fcc62d0b26877164dae1cc6a6528edd1d1e5973edad4dc79aad7872dab",
+  "Tet10": 15191,
+  "physical_surface_tags": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "qualities": {
+    "minSICN": {
+      "min": 0.18624389473646621,
+      "p01": 0.3924278959075195,
+      "median": 0.7941954439013718,
+      "nonpositive": 0
+    },
+    "minSJ": {
+      "min": 0.39175116321594144,
+      "p01": 0.7955673298039622,
+      "median": 0.9999999999998683,
+      "nonpositive": 0
+    },
+    "gamma": {
+      "min": 0.2519530799911632,
+      "p01": 0.3664045812358916,
+      "median": 0.7567176371261104,
+      "nonpositive": 0
+    },
+    "minDetJac": {
+      "min": 2.632306695139622e-13,
+      "p01": 5.856502962239621e-13,
+      "median": 1.3935316487505832e-10,
+      "nonpositive": 0
+    }
+  },
+  "quality_thresholds": {
+    "minSICN": 0.2,
+    "minSJ": 0.4,
+    "gamma": 0.15,
+    "minDetJac": 0.0
+  },
+  "quality_gate_pass": false,
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
