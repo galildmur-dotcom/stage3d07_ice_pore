@@ -1,0 +1,61 @@
+{
+  "protocol": "P10KP_M8_R2_ACTUAL_P10KM_FIELD_SOURCE_ONLY",
+  "status": "PASS_SOURCE_ONLY_REAL_FIELD_NO_MESH_NO_FEM",
+  "source_sha256": "235fc2e0e31d7e55dbf6d1d3ed4a127ca11903cf12a038ee1561006cc0134766",
+  "coordinate_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "source_bins": 1200,
+  "mathematical_unit": {
+    "protocol": "P10KP_M8_R2_C2_POLAR_PLATEAU_SOURCE_ONLY",
+    "status": "PASS_MATHEMATICAL_UNIT_ONLY_NO_REAL_FIELD_NO_MESH_NO_FEM",
+    "sample_count": 858,
+    "core_d_mm": 0.5,
+    "outer_d_mm": 1.0,
+    "core_abs_mu": 0.8,
+    "outer_abs_mu": 0.6,
+    "blend": "kappa_base+(1-kappa_base)*radial_C2*angular_C2",
+    "max_core_error": 0.0,
+    "max_range_error": 0.0,
+    "max_pole_symmetry_error": 0.0,
+    "endpoint_second_derivative_proxy": 0.0009999445715891397,
+    "mesh_attempts": 0,
+    "FEM_attempts": 0,
+    "limitations": [
+      "Real P10KM 1200-bin interpolation not evaluated",
+      "M8 R2 regional Veff is unmeasured",
+      "D029 and D031 require a new distinct guarded native mesh"
+    ]
+  },
+  "regions": {
+    "north": {
+      "source_center_count": 60,
+      "source_QP_weight_sum": 57132,
+      "baseline_weighted_kappa": 0.195412857812879,
+      "new_weighted_kappa": 1.0,
+      "baseline_weighted_nominal_volume_ratio": 0.9609174284374242,
+      "new_weighted_nominal_volume_ratio": 0.8000000000000002,
+      "minimum_plateau": 1.0,
+      "maximum_plateau": 1.0
+    },
+    "south": {
+      "source_center_count": 60,
+      "source_QP_weight_sum": 74808,
+      "baseline_weighted_kappa": 0.22215863459797186,
+      "new_weighted_kappa": 1.0,
+      "baseline_weighted_nominal_volume_ratio": 0.9555682730804054,
+      "new_weighted_nominal_volume_ratio": 0.8,
+      "minimum_plateau": 1.0,
+      "maximum_plateau": 1.0
+    }
+  },
+  "mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "physical_sample_count": 605,
+  "max_core_error": 0.0,
+  "max_phi_seam_error": 1.214306433183765e-17,
+  "max_pole_coordinate_error": 0.0,
+  "limitations": [
+    "Center QP weights are legacy source support, not new M8 quadrature",
+    "0.8 is a nominal field volume ratio, not actual Tet10 Veff",
+    "Independent native Gmsh D029 and D031 must decide mesh acceptance"
+  ]
+}
