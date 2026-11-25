@@ -1,0 +1,45 @@
+{
+  "protocol": "P10LB_M9_R1_FINAL_D029_D031_GEOMETRY_ACCEPTANCE",
+  "status": "GEOMETRY_GO_ONLY_NO_FEM",
+  "M8_reference_mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_sha256": "a40aca54636a752afe4d7babe9d03e741b2e988b9ad3dbb6f356728bff035a58",
+  "mesh_nodes": 19236,
+  "Tet10": 13166,
+  "pore_Tri6": 734,
+  "source_d029_json_sha256": "8f58d8dd87dc8e501ad34001dc22e809baafec94805c27850f3797d163e5d718",
+  "source_d031_json_sha256": "32deaa36728a6ae02e75fe68cac75ec08fbe9a581b2eed91d1970dace62bf3c9",
+  "D029_adaptation_target_GO": true,
+  "D031_geometry_quality_GO": true,
+  "D029_poles_729": {
+    "near_p0_N": {
+      "Veff_ratio": 0.8044642495458547,
+      "M8_Neff": 934.8321956909231,
+      "M9_Neff": 1160.6440590952247,
+      "M8_Veff_m3": 1.0649003668850588e-12,
+      "M9_Veff_m3": 8.566742744872941e-13
+    },
+    "near_p0_S": {
+      "Veff_ratio": 0.8103755820806449,
+      "M8_Neff": 955.1743871768267,
+      "M9_Neff": 1179.1605328177843,
+      "M8_Veff_m3": 1.0414261685603294e-12,
+      "M9_Veff_m3": 8.439463375410927e-13
+    }
+  },
+  "D031_quality_minima": {
+    "minSICN": 0.2624622994914332,
+    "minSJ": 0.4478454150021308,
+    "gamma": 0.24142018906622442,
+    "minDetJac": 5.978746807200617e-13
+  },
+  "curved_min_detJ_27_343_729": [
+    6.117721134028103e-13,
+    6.016020563767853e-13,
+    6.002327086295882e-13
+  ],
+  "CAD_closure_rel_729": 6.881352154763931e-09,
+  "mesh_generation_attempts_in_this_audit": 0,
+  "FEM_attempts": 0,
+  "spatial_convergence_proven": false,
+  "next_step": "separately pinned M9 full4D Windows one-shot, no existing marker reuse"
+}
