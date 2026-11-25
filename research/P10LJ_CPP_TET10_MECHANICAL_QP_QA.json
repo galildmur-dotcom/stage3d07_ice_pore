@@ -1,0 +1,29 @@
+{
+  "protocol": "P10LJ_CPP_TET10_MECHANICAL_STEP_SYNTHETIC_QP",
+  "date": "2026-11-25",
+  "status": "PASS_ACTUAL_CPP_MECHANICAL_STEP_SYNTHETIC_ONLY",
+  "source": "research/tools/p10lj_cpp_tet10_mechanical_fixture.cpp",
+  "compiler": "g++ -std=c++20 -fopenmp -O0",
+  "single_quadratic_tet10": true,
+  "mechanical_quadrature_points": 27,
+  "occupied_4d_bins": 9,
+  "observed_volume_m3": 1.3333333333333285e-9,
+  "geometry_normalization_component": 0.24616897823341907,
+  "stress_chain_component": -5.2706365989942645,
+  "original_explicit_objective": -5.024467620760846,
+  "checks": {
+    "real_cpp_mechanical_step_executed": "PASS",
+    "per_cell_and_global_split_closure": "PASS",
+    "both_terms_nonzero": "PASS",
+    "velocity_sign_reversal_negates_both_terms": "PASS",
+    "zero_shape_velocity_yields_zero_per_cell": "PASS"
+  },
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0,
+  "limitations": [
+    "One synthetic affine-geometry Tet10 with modified quadratic midside displacement/shape velocity; not a physical domain mesh",
+    "No globally equilibrated forward state or physical transient adjoint",
+    "Adjoint lambda and history futures were zero; equilibrium/history gradients were not validated",
+    "No pole-focused or M8/M9 physical attribution"
+  ]
+}
