@@ -1,0 +1,92 @@
+{
+  "protocol": "P10KS_M8_R3_INDEPENDENT_CURVED_QP_D029_D031",
+  "status": "D029_GO_ONLY_IF_TARGETS_AND_SUPPORT",
+  "M7": {
+    "sha256": "875c9177de24612d0078f7a792b4b7641a2e604973cb1353500710c87693bb3d",
+    "nodes": 17558,
+    "Tet10": 12001,
+    "pore_Tri6": 592,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      9.146101671822292e-13,
+      9.003267899719313e-13,
+      8.985771854866625e-13
+    ],
+    "CAD_closure_rel729": 7.024865578131312e-09
+  },
+  "M8_R3": {
+    "sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+    "nodes": 18331,
+    "Tet10": 12546,
+    "pore_Tri6": 648,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      6.282764771199006e-13,
+      6.231844911607066e-13,
+      6.225988889958802e-13
+    ],
+    "CAD_closure_rel729": 6.815797704007309e-09
+  },
+  "comparison": {
+    "near_p0_N": {
+      "343": {
+        "ratio": 0.7896916770909839,
+        "M7_Neff": 737.5011510187985,
+        "M8_Neff": 934.5277647057601,
+        "M7_Veff_m3": 1.3474772656187135e-12,
+        "M8_Veff_m3": 1.064091581728415e-12
+      },
+      "729": {
+        "ratio": 0.7896489414283336,
+        "M7_Neff": 737.7964270719443,
+        "M8_Neff": 934.8321956909231,
+        "M7_Veff_m3": 1.3485744246789522e-12,
+        "M8_Veff_m3": 1.0649003668850588e-12
+      },
+      "relative_ratio_drift_343_to_729": 5.411982516290159e-05,
+      "D029_target_15_to_25pct": true
+    },
+    "near_p0_S": {
+      "343": {
+        "ratio": 0.7913591166802677,
+        "M7_Neff": 754.8833520150739,
+        "M8_Neff": 954.590465739415,
+        "M7_Veff_m3": 1.3158304619075635e-12,
+        "M8_Veff_m3": 1.041294432036158e-12
+      },
+      "729": {
+        "ratio": 0.7905681533151143,
+        "M7_Neff": 755.5101883728698,
+        "M8_Neff": 955.1743871768267,
+        "M7_Veff_m3": 1.317313585417379e-12,
+        "M8_Veff_m3": 1.0414261685603294e-12
+      },
+      "relative_ratio_drift_343_to_729": 0.00100049990862483,
+      "D029_target_15_to_25pct": true
+    }
+  },
+  "basic_curved_CAD_tags_PASS": true,
+  "D029_target_PASS": true,
+  "full_D031_Gmsh_minSICN_minSJ_gamma": "NOT_MEASURED_IN_THIS_ENVIRONMENT",
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "spatial_convergence_proven": false
+}
