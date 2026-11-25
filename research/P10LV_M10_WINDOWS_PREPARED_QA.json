@@ -1,0 +1,12 @@
+{
+  "protocol": "P10LV_M10_R1_WINDOWS_SOURCE_ONLY",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "archive_sha256": "e34c875aca26429b9bdd83552116c4b08304d8dcc736b7c02b6b3097304b1433",
+  "archive_bytes": 5763788,
+  "accepted_M9_sha256": "a40aca54636a752afe4d7babe9d03e741b2e988b9ad3dbb6f356728bff035a58",
+  "M10_field_sha256": "02e8a749aef3576f7b33f4e15aef5811c3f5d209dac1fc77e5c5d3cd4fde061a",
+  "pinned_files": 37,
+  "one_shot": "distinct local and profile markers",
+  "mesh_attempts": 0,
+  "FEM_attempts": 0
+}
