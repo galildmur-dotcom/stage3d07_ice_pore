@@ -1,0 +1,98 @@
+{
+  "protocol": "P10MC_M11_R1_INDEPENDENT_CURVED_D029_PARTIAL_D031",
+  "status": "D029_PASS_D031_PENDING",
+  "M10": {
+    "mesh_sha256": "022166c7fb9555a511cf2cd2479ceb949c6b809d05d124832d8d7644c0bebc9c",
+    "nodes": 20420,
+    "Tet10": 13996,
+    "pore_Tri6": 814,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      4.374249812118491e-13,
+      4.356716651327177e-13,
+      4.354535587655838e-13
+    ],
+    "CAD_closure_rel_729": 6.9376526745656975e-09
+  },
+  "M11": {
+    "mesh_sha256": "244249fcc62d0b26877164dae1cc6a6528edd1d1e5973edad4dc79aad7872dab",
+    "nodes": 22120,
+    "Tet10": 15191,
+    "pore_Tri6": 924,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      2.6875200445594515e-13,
+      2.6460224729417573e-13,
+      2.6409758717660063e-13
+    ],
+    "CAD_closure_rel_729": 6.8825651844406366e-09
+  },
+  "D029_poles": {
+    "near_p0_N": {
+      "343": {
+        "Veff_ratio": 0.7939461060495648,
+        "M10_Neff": 1466.6255886261933,
+        "M11_Neff": 1848.0118078280375,
+        "M10_Veff_m3": 6.78045081518288e-13,
+        "M11_Veff_m3": 5.383312521975046e-13
+      },
+      "729": {
+        "Veff_ratio": 0.7938990290038783,
+        "M10_Neff": 1466.6958013201065,
+        "M11_Neff": 1848.1153280061362,
+        "M10_Veff_m3": 6.779398285527337e-13,
+        "M11_Veff_m3": 5.38215771611071e-13
+      },
+      "ratio_relative_drift_343_to_729": 5.929853037556221e-05,
+      "pass_nominal_15_to_25_percent": true,
+      "pass_support": true,
+      "pass_integration_stability": true
+    },
+    "near_p0_S": {
+      "343": {
+        "Veff_ratio": 0.831577159641062,
+        "M10_Neff": 1525.5536671067762,
+        "M11_Neff": 1834.7676819818976,
+        "M10_Veff_m3": 6.519972701451224e-13,
+        "M11_Veff_m3": 5.421860380010071e-13
+      },
+      "729": {
+        "Veff_ratio": 0.8314907116510218,
+        "M10_Neff": 1525.8042569649544,
+        "M11_Neff": 1834.889313308758,
+        "M10_Veff_m3": 6.521961181643445e-13,
+        "M11_Veff_m3": 5.422950144285047e-13
+      },
+      "ratio_relative_drift_343_to_729": 0.00010396747531737915,
+      "pass_nominal_15_to_25_percent": true,
+      "pass_support": true,
+      "pass_integration_stability": true
+    }
+  },
+  "CAD_PASS": true,
+  "curved_detJ_positive_PASS": true,
+  "physical_tags_PASS": true,
+  "D029_PASS": true,
+  "D031_canonical_Gmsh_minSICN_minSJ_gamma": "NOT_MEASURED",
+  "full_GEOMETRY_GO": false,
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
