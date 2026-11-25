@@ -1,0 +1,96 @@
+{
+  "protocol": "P10MW_M13_A_R1_INDEPENDENT_CURVED_D029",
+  "status": "D029_PASS_D031_PENDING",
+  "M12_R1": {
+    "mesh_sha256": "e3c5c5dc9bbcae3d0b2649e7afd4af49b47f6cb6db63329492975fb920abbd13",
+    "nodes": 23732,
+    "Tet10": 16333,
+    "pore_Tri6": 1032,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      2.348999313783755e-13,
+      2.329441905778322e-13,
+      2.3272344438727416e-13
+    ],
+    "CAD_closure_rel_729": 6.777452155048991e-09
+  },
+  "M13_R1": {
+    "mesh_sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+    "nodes": 26130,
+    "Tet10": 18048,
+    "pore_Tri6": 1162,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_curved_detJ_27_343_729": [
+      1.5247766821074465e-13,
+      1.5239685904769693e-13,
+      1.5239110265426534e-13
+    ],
+    "CAD_closure_rel_729": 6.6345504645681785e-09
+  },
+  "D029_poles": {
+    "near_p0_N": {
+      "343": {
+        "Veff_ratio": 0.7909793931428797,
+        "M12_Neff": 2224.4246063482715,
+        "M13_Neff": 2813.7943450853904,
+        "M12_Veff_m3": 4.4719750261998546e-13,
+        "M13_Veff_m3": 3.5372400923736745e-13
+      },
+      "729": {
+        "Veff_ratio": 0.7907326063653695,
+        "M12_Neff": 2224.416185676942,
+        "M13_Neff": 2812.8653634869625,
+        "M12_Veff_m3": 4.471624320549739e-13,
+        "M13_Veff_m3": 3.5358591536750694e-13
+      },
+      "drift_343_729": 0.00031209890109962224,
+      "nominal_15_25_percent_accepted": true,
+      "pass": true
+    },
+    "near_p0_S": {
+      "343": {
+        "Veff_ratio": 0.8089731162540625,
+        "M12_Neff": 2348.5702188635682,
+        "M13_Neff": 2903.3077107028143,
+        "M12_Veff_m3": 4.2361693605665315e-13,
+        "M13_Veff_m3": 3.4269471285974866e-13
+      },
+      "729": {
+        "Veff_ratio": 0.8089153212759569,
+        "M12_Neff": 2348.647676140974,
+        "M13_Neff": 2903.4388531633435,
+        "M12_Veff_m3": 4.2364279425631996e-13,
+        "M13_Veff_m3": 3.4269114702209515e-13
+      },
+      "drift_343_729": 7.144750085141816e-05,
+      "nominal_15_25_percent_accepted": true,
+      "pass": true
+    }
+  },
+  "CAD_PASS": true,
+  "curved_detJ_positive_PASS": true,
+  "physical_tags_PASS": true,
+  "D029_PASS": true,
+  "D031_canonical_Gmsh_quality": "NOT_MEASURED",
+  "full_GEOMETRY_GO": false,
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
