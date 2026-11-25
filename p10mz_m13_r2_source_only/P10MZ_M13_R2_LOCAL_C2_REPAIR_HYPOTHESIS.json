@@ -1,0 +1,58 @@
+{
+  "protocol": "P10MZ_M13_R2_SOURCE_ONLY_LOCAL_C2_HYPOTHESIS",
+  "status": "SOURCE_QA_ONLY_REPAIR_UNTESTED_NO_GMSH_NO_MESH_NO_FEM",
+  "M13_R1_mesh_sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+  "M13_R1_Tet10": 18048,
+  "source_locator_sha256": "97699680a02b096b38a0ca4996eaadbf11974fe719551410add9153cadba1c03",
+  "failed_Tet10": 2,
+  "sites": [
+    {
+      "element_tag": 13346,
+      "centroid_m": [
+        -0.000782956876054811,
+        -5.0549484002440225e-05,
+        0.029348706359246208
+      ],
+      "wall_distance_mm": 0.019686288316533938,
+      "mu": -0.6387196221193224,
+      "minSICN": 0.17776562112858055,
+      "minSJ": 0.32216307620215057,
+      "M13_A_raw_kappa": 0.0008675366301086323,
+      "M13_A_after_polar_C2_blend_kappa": 0.053942715255484615,
+      "M13_A_local_nominal_Vratio": 0.9892114569489031,
+      "distance_to_M11_R2_repair_mm": 1.828835605550589,
+      "inside_old_M11_repair_support": false,
+      "old_M11_repair_weight": 0.0
+    },
+    {
+      "element_tag": 9035,
+      "centroid_m": [
+        -8.156786627226068e-05,
+        0.0007834856105386019,
+        0.030652969340740733
+      ],
+      "wall_distance_mm": 0.023167620029408392,
+      "mu": 0.6381841332331901,
+      "minSICN": 0.25474222802372404,
+      "minSJ": 0.36687544388532517,
+      "M13_A_raw_kappa": 0.0023738495721280085,
+      "M13_A_after_polar_C2_blend_kappa": 0.053436467666585316,
+      "M13_A_local_nominal_Vratio": 0.9893127064666829,
+      "distance_to_M11_R2_repair_mm": 0.13449774532302514,
+      "inside_old_M11_repair_support": true,
+      "old_M11_repair_weight": 0.6670338962248994
+    }
+  ],
+  "between_defects_mm": 1.6996067212348918,
+  "proposed_two_compact_supports_overlapping": false,
+  "provisional_log_size_correction": -0.045,
+  "provisional_core_m": 2e-05,
+  "provisional_outer_support_radius_m": 0.00025,
+  "provisional_patch_min_local_size_factor": 0.9559974818331,
+  "provisional_patch_min_local_volume_factor": 0.8737159116880344,
+  "c2_mechanism": "S5 radial ramp with zero derivatives through second order at both boundaries",
+  "caution": "DO NOT claim that reducing h fixes minSJ/minSICN: one failed Tet10 is already in M11 R2 repair; future M13 R2 must be separately guarded and D029/D031 audited",
+  "M13_R1_marker_consumed": true,
+  "new_mesh_attempts": 0,
+  "FEM_attempts": 0
+}
