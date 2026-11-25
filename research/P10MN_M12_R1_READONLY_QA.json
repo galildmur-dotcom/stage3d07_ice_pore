@@ -1,0 +1,10 @@
+{
+  "protocol": "P10MN_M12_R1_READONLY_PREPARED",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "M12_R1_sha256": "e3c5c5dc9bbcae3d0b2649e7afd4af49b47f6cb6db63329492975fb920abbd13",
+  "archive_sha256": "10eb5b2671b0b2d94b7ae4a363f31699f6864293eb0be7ad76bd4ffed92a3fd3",
+  "archive_bytes": 1107675,
+  "files": 4,
+  "FEM_attempts": 0,
+  "mesh_attempts": 0
+}
