@@ -1,0 +1,43 @@
+{
+  "protocol": "P10LI_CPP_SOURCE_ONLY_WRITER_INTEGRATION",
+  "date": "2026-11-25",
+  "status": "PASS_CPP_WRITER_NO_FEM",
+  "compiler": "g++ -std=c++20 -fopenmp -O0",
+  "source": "research/tools/p10li_cpp_writer_fixture.cpp",
+  "instrumented_header_sha256": "0a470e43668a751dc0514f94e8e33ad2b8615c9d56c633579dd7112fafcec2b3",
+  "scenarios": [
+    {
+      "steps": 6,
+      "dt_s": 150,
+      "split_rows": 7200,
+      "original_p10dd_rows": 7206,
+      "nonzero_split_rows": 12,
+      "geometry_sum": 0.35,
+      "stress_sum": -0.175,
+      "reference_explicit": 0.175,
+      "corrupt_cell_negative_test": "PASS_REJECTED"
+    },
+    {
+      "steps": 36,
+      "dt_s": 25,
+      "split_rows": 43200,
+      "original_p10dd_rows": 43236,
+      "nonzero_split_rows": 72,
+      "geometry_sum": 1.85,
+      "stress_sum": -0.925,
+      "reference_explicit": 0.925,
+      "corrupt_cell_negative_test": "PASS_REJECTED"
+    }
+  ],
+  "tested": [
+    "actual P10LG write_csv() called in compiled C++",
+    "actual P10DD original write_csv() output row count retained",
+    "signed explicit split columns checked independently by CSV parser",
+    "cell time and 4D bin columns checked",
+    "all-step reference exact closure check executes",
+    "writer rejects deliberately corrupted cell split"
+  ],
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0,
+  "limitations": "Snapshots were synthesized; mechanical_step/Tet10 geometry and stress JVP were not executed. No M8/M9 physical attribution."
+}
