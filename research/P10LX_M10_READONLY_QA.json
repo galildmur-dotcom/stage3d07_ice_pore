@@ -1,0 +1,8 @@
+{
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "P10LX_archive_sha256": "69ea89a88e0447494519e4835b20950f3efb805522d766b7f0258ae4836d05b8",
+  "M10_sha256": "022166c7fb9555a511cf2cd2479ceb949c6b809d05d124832d8d7644c0bebc9c",
+  "files": 4,
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
