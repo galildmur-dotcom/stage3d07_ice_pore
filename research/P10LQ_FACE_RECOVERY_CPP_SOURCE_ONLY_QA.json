@@ -1,0 +1,27 @@
+{
+  "protocol": "P10LQ_CPP_P1_P2_QP_FACE_RECOVERY",
+  "date": "2026-11-25",
+  "status": "PASS_TWO_CPP_SOURCE_ONLY_FIXTURES",
+  "standalone_cpp": {
+    "status": "PASS",
+    "P1_max_linear_error": 5.32907e-15,
+    "P2_max_quadratic_error": 6.21725e-15,
+    "P1_vs_P2_sensitivity_on_quadratic": 0.067631,
+    "degenerate_Gram_rejected": true,
+    "traction_projection_and_Frobenius_shear_weights": "PASS"
+  },
+  "production_27qp_cpp": {
+    "status": "PASS",
+    "P1_constant_error": 3.33067e-16,
+    "P2_constant_error": 2.22045e-16,
+    "P2_max_quadratic_error": 2.66454e-15
+  },
+  "source": "research/diagnostics/p10lq_tet10_face_recovery.hpp",
+  "tests": [
+    "research/tools/p10lq_face_recovery_cpp_selftest.cpp",
+    "research/tools/p10lq_production_quadrature_recovery_cpp_selftest.cpp"
+  ],
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "limits": "Recovery is an approximation of one-sided EDV stress trace; tests validate polynomial reproduction and algebra, not accuracy for actual physical EDV stress/history. No physical face jumps measured."
+}
