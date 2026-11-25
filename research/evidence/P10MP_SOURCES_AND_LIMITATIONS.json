@@ -1,0 +1,14 @@
+{
+  "protocol": "P10MP_M1_M11_SOURCE_VERIFIED_CONVERGENCE_FIGURES",
+  "regime": "R EDV_VAR xi0 B6 5mm steps36 dt25",
+  "M1_original_dt150_excluded": true,
+  "M1_dt25_source": "P10IL M1 M2 dt25 real signed4D",
+  "M2_M5_sources": "P10IJ P10IS P10JK P10JR",
+  "M6_M8_sources": "P10JX P10KK P10KW",
+  "M9_M11_sources": "P10LD P10LZ P10MJ physical ZIP manifests",
+  "missing_full4d_L1_M1_M2": true,
+  "full4d_L2_available_only_from_M6_M7": true,
+  "note": "L1/L2 are norms of signed-bin \u0394 over matched canonical 4D partition, not continuum FE error norms",
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0
+}
