@@ -1,0 +1,56 @@
+{
+  "protocol": "P10NF_BAD_TET_PORE_TRI6_FACE_READONLY",
+  "status": "MEASURED_NO_GMSH_NO_FEM_NO_MARKER",
+  "meshes": {
+    "R1": {
+      "mesh_sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+      "pore_Tri6": 1162,
+      "pore_face_min_angle_deg": 28.899285446790802,
+      "pore_face_min_angle_p01_deg": 32.248829022565054,
+      "pore_face_min_angle_median_deg": 52.883301184588916,
+      "bad_tet_pore_faces": [
+        {
+          "min_corner_angle_deg": 36.415287374815286,
+          "max_corner_angle_deg": 79.80663181272485,
+          "min_corner_edge_mm": 0.20202480825236507,
+          "max_corner_edge_mm": 0.3349474503712667,
+          "failed_tet_tag": 13346,
+          "pore_tri6_tag": 925,
+          "min_angle_percentile_among_pore_tri6": 4.475043029259897,
+          "failed_minSJ": 0.32216307620215057
+        },
+        {
+          "min_corner_angle_deg": 32.77110932074535,
+          "max_corner_angle_deg": 77.34665399046962,
+          "min_corner_edge_mm": 0.22523393850865395,
+          "max_corner_edge_mm": 0.40600426802599454,
+          "failed_tet_tag": 9035,
+          "pore_tri6_tag": 412,
+          "min_angle_percentile_among_pore_tri6": 1.376936316695353,
+          "failed_minSJ": 0.36687544388532517
+        }
+      ]
+    },
+    "R2": {
+      "mesh_sha256": "57403ba43fa299417d519046cebdf50fa4968b670c071a8b7882748b50f51e9c",
+      "pore_Tri6": 1168,
+      "pore_face_min_angle_deg": 26.327748990285365,
+      "pore_face_min_angle_p01_deg": 31.205110628568505,
+      "pore_face_min_angle_median_deg": 53.083239167109454,
+      "bad_tet_pore_faces": [
+        {
+          "min_corner_angle_deg": 56.05389431811923,
+          "max_corner_angle_deg": 63.14866110565715,
+          "min_corner_edge_mm": 0.3804819612823134,
+          "max_corner_edge_mm": 0.40920203658277476,
+          "failed_tet_tag": 9478,
+          "pore_tri6_tag": 766,
+          "min_angle_percentile_among_pore_tri6": 65.58219178082192,
+          "failed_minSJ": 0.28115937433961596
+        }
+      ]
+    }
+  },
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
