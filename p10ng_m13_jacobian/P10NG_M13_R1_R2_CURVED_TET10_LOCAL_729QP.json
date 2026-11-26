@@ -1,0 +1,207 @@
+{
+  "protocol": "P10NG_READONLY_LOCAL_CURVED_TET10_729QP",
+  "status": "PASS_READONLY_NO_GMSH_NO_MESH_NO_FEM_NO_MARKER",
+  "quadrature_points_per_tet": 729,
+  "meshes": {
+    "R1": {
+      "sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+      "bad": [
+        {
+          "tag": 13346,
+          "centroid_m": [
+            -0.000782956876054811,
+            -5.0549484002440225e-05,
+            0.029348706359246208
+          ],
+          "wall_distance_mm": 0.019686288316533938,
+          "mu": -0.6387196221193224,
+          "canonical_minSICN": 0.17776562112858055,
+          "canonical_minSJ": 0.32216307620215057,
+          "geometry_729": {
+            "corner_abs_detJ_m3": 7.07898781609645e-12,
+            "corner_face_height_mm": 0.17653461048797175,
+            "height_over_mean_face_edge": 0.8126327240646519,
+            "min_detJ_729": 2.536905649131621e-12,
+            "max_detJ_729": 8.059773048422564e-12,
+            "detJ_min_over_corner_abs": 0.3583712410640284,
+            "detJ_max_over_corner_abs": 1.1385487950828181,
+            "detJ_max_over_min": 3.1770093819537246,
+            "min_sigma3_over_sigma1_729": 0.05962164428303609,
+            "p01_sigma3_over_sigma1_729": 0.08010751179948017,
+            "median_sigma3_over_sigma1_729": 0.1804316134413519,
+            "max_midside_deviation_mm": 0.014123460380329541,
+            "midside_deviation_mm": [
+              3.4694734216322425e-15,
+              0.0051148336553354734,
+              3.469448606314445e-15,
+              6.776263578034403e-18,
+              0.014123460380329541,
+              0.011719422550424309
+            ],
+            "relative_curved_volume_to_straight": 0.8880123806247835
+          },
+          "local_neighborhood": {
+            "min_sigma3_over_sigma1_729": {
+              "nearby_24_median": 0.2201748560564355,
+              "nearby_24_min": 0.15851253809013902,
+              "nearby_24_max": 0.337147257104491,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "detJ_min_over_corner_abs": {
+              "nearby_24_median": 0.9458627902792975,
+              "nearby_24_min": 0.7944339608209273,
+              "nearby_24_max": 0.9765792748744722,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "height_over_mean_face_edge": {
+              "nearby_24_median": 0.5648787037961595,
+              "nearby_24_min": 0.30245866019525475,
+              "nearby_24_max": 0.9902781471154597,
+              "fraction_nearby_24_at_or_below_bad_value": 0.9166666666666666
+            },
+            "relative_curved_volume_to_straight": {
+              "nearby_24_median": 0.9776754061000807,
+              "nearby_24_min": 0.9311397129226267,
+              "nearby_24_max": 0.989455664899703,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            }
+          },
+          "nearby_boundary_Tet10_24_max_centroid_dist_mm": 0.3305565527393342
+        },
+        {
+          "tag": 9035,
+          "centroid_m": [
+            -8.156786627226068e-05,
+            0.0007834856105386019,
+            0.030652969340740733
+          ],
+          "wall_distance_mm": 0.023167620029408392,
+          "mu": 0.6381841332331901,
+          "canonical_minSICN": 0.25474222802372404,
+          "canonical_minSJ": 0.36687544388532517,
+          "geometry_729": {
+            "corner_abs_detJ_m3": 1.3472689731280017e-11,
+            "corner_face_height_mm": 0.13065937217502616,
+            "height_over_mean_face_edge": 0.3324442713556947,
+            "min_detJ_729": 5.0846406856026e-12,
+            "max_detJ_729": 1.4529777406401345e-11,
+            "detJ_min_over_corner_abs": 0.37740353166431284,
+            "detJ_max_over_corner_abs": 1.0784615170545382,
+            "detJ_max_over_min": 2.8575819423274282,
+            "min_sigma3_over_sigma1_729": 0.09415209734569034,
+            "p01_sigma3_over_sigma1_729": 0.0942390329856805,
+            "median_sigma3_over_sigma1_729": 0.1745675285722616,
+            "max_midside_deviation_mm": 0.02082170490448282,
+            "midside_deviation_mm": [
+              3.4701086333468183e-15,
+              0.02082170490448282,
+              1.6940658945086007e-18,
+              3.469552829456483e-15,
+              0.006361525384623173,
+              0.019268637658716663
+            ],
+            "relative_curved_volume_to_straight": 0.8711216667620967
+          },
+          "local_neighborhood": {
+            "min_sigma3_over_sigma1_729": {
+              "nearby_24_median": 0.21998433507264417,
+              "nearby_24_min": 0.1272630931198948,
+              "nearby_24_max": 0.41212213468389985,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "detJ_min_over_corner_abs": {
+              "nearby_24_median": 0.9386796412993575,
+              "nearby_24_min": 0.5381713010530497,
+              "nearby_24_max": 0.9845392972994008,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "height_over_mean_face_edge": {
+              "nearby_24_median": 0.5472690793847169,
+              "nearby_24_min": 0.3409707372065584,
+              "nearby_24_max": 0.8563114570832652,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "relative_curved_volume_to_straight": {
+              "nearby_24_median": 0.9753188985414821,
+              "nearby_24_min": 0.8604388409499822,
+              "nearby_24_max": 0.991679912575525,
+              "fraction_nearby_24_at_or_below_bad_value": 0.041666666666666664
+            }
+          },
+          "nearby_boundary_Tet10_24_max_centroid_dist_mm": 0.36735335117797596
+        }
+      ],
+      "pore_boundary_tet_count_corner_face_proxy": 1162
+    },
+    "R2": {
+      "sha256": "57403ba43fa299417d519046cebdf50fa4968b670c071a8b7882748b50f51e9c",
+      "bad": [
+        {
+          "tag": 9478,
+          "centroid_m": [
+            0.0007838000880202778,
+            0.00016660994748502443,
+            0.030642866750075777
+          ],
+          "wall_distance_mm": 0.02731646094791579,
+          "mu": 0.6257728504443492,
+          "canonical_minSICN": 0.16294478890105799,
+          "canonical_minSJ": 0.28115937433961596,
+          "geometry_729": {
+            "corner_abs_detJ_m3": 2.6585737709568645e-11,
+            "corner_face_height_mm": 0.2010044382987991,
+            "height_over_mean_face_edge": 0.4294454094965407,
+            "min_detJ_729": 8.415228198463872e-12,
+            "max_detJ_729": 2.7647998746221652e-11,
+            "detJ_min_over_corner_abs": 0.3165316791429524,
+            "detJ_max_over_corner_abs": 1.0399560489258375,
+            "detJ_max_over_min": 3.285472252703564,
+            "min_sigma3_over_sigma1_729": 0.04482714897970668,
+            "p01_sigma3_over_sigma1_729": 0.06342058898828598,
+            "median_sigma3_over_sigma1_729": 0.1492805573453835,
+            "max_midside_deviation_mm": 0.021154545745788417,
+            "midside_deviation_mm": [
+              0.021154545745788417,
+              3.469552829456483e-15,
+              3.469446951953614e-15,
+              0.02024072719453831,
+              0.0,
+              0.01826257620243186
+            ],
+            "relative_curved_volume_to_straight": 0.8260850327509579
+          },
+          "local_neighborhood": {
+            "min_sigma3_over_sigma1_729": {
+              "nearby_24_median": 0.20598448642058476,
+              "nearby_24_min": 0.08883045692190396,
+              "nearby_24_max": 0.3685667037148316,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "detJ_min_over_corner_abs": {
+              "nearby_24_median": 0.9337946700188016,
+              "nearby_24_min": 0.5321395816406735,
+              "nearby_24_max": 0.9817047150302087,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            },
+            "height_over_mean_face_edge": {
+              "nearby_24_median": 0.5462520241587865,
+              "nearby_24_min": 0.26065736187091854,
+              "nearby_24_max": 0.9667355886888181,
+              "fraction_nearby_24_at_or_below_bad_value": 0.25
+            },
+            "relative_curved_volume_to_straight": {
+              "nearby_24_median": 0.9692028227147971,
+              "nearby_24_min": 0.9292737419177199,
+              "nearby_24_max": 0.9901883547310697,
+              "fraction_nearby_24_at_or_below_bad_value": 0.0
+            }
+          },
+          "nearby_boundary_Tet10_24_max_centroid_dist_mm": 0.3947090363830931
+        }
+      ],
+      "pore_boundary_tet_count_corner_face_proxy": 1168
+    }
+  },
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}
