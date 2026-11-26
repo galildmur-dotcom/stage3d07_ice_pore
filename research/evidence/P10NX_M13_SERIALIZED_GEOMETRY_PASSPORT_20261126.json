@@ -1,0 +1,49 @@
+{
+  "protocol": "P10NX_INDEPENDENT_SERIALIZED_M13_GEOMETRY_ACCEPTANCE",
+  "date": "2026-11-26",
+  "source_mesh_sha256": "57403ba43fa299417d519046cebdf50fa4968b670c071a8b7882748b50f51e9c",
+  "accepted_mesh_name": "P10NW_M13_OPTIMIZED_CANDIDATE.msh",
+  "accepted_mesh_sha256": "cf4ff4872b82fe3fd854d0ddcb31144eb69f42e8ddce8b1954f064243cf9f4ca",
+  "accepted_mesh_size_bytes": 3166692,
+  "provenance": {
+    "optimizer": "Gmsh 4.15.2 HighOrderElastic",
+    "one_shot_consumed": true,
+    "evidence_zip_sha256": "13640e1605e6e768efc8ac0d47c16092dafae70c6fa2e424f7d9e9bd7c66d855",
+    "result_json_sha256": "1fd555c6145cad3eb8e0fc7c8a2d1555d13ebe55bdadcc9b432b6673aea9e7c7",
+    "gmsh_log_sha256": "0b5ccb807ac6eae090e021c8436a7e671ddbee46958d9f643d97b8cc776c23d1"
+  },
+  "mesh": {
+    "nodes": 26099,
+    "tet10": 18004,
+    "tri6_surface": 2512,
+    "physical_tri6_counts": {"2":184,"3":182,"4":156,"5":156,"6":156,"7":156,"8":1168,"9":354},
+    "volume_physical_group": 1,
+    "pore_tri6": 1168,
+    "pore_unique_nodes": 2338,
+    "pore_euler_characteristic": 2,
+    "pore_nonmanifold_edges": 0,
+    "pore_edge_midpoint_mismatches": 0,
+    "pore_radius_deviation_max_m": 5.204170427930421e-18
+  },
+  "canonical_D031_after_reimport": {
+    "minSICN": {"minimum":0.31771662817536805,"threshold":0.20,"pass":true},
+    "minSJ": {"minimum":0.6418251241754643,"threshold":0.40,"pass":true},
+    "gamma": {"minimum":0.24465223465436664,"threshold":0.15,"pass":true},
+    "minDetJac": {"minimum":1.7448925464535246e-13,"threshold_strict":0.0,"pass":true}
+  },
+  "independent_analytic_tet10_jacobian": {
+    "qp_27": {"minDetJ":1.7454418527263432e-13,"nonpositive_qps":0},
+    "qp_343": {"minDetJ":1.7449421327037438e-13,"nonpositive_qps":0},
+    "qp_729": {"minDetJ":1.7449190754790203e-13,"nonpositive_qps":0}
+  },
+  "reimport_topology_verified": true,
+  "reimport_matched_tet10": 18004,
+  "geometry_disposition": "SERIALIZED_M13_GEOMETRY_ACCEPTED_NO_FEM",
+  "FEM_attempts": 0,
+  "limitations": [
+    "Geometry acceptance is not spatial convergence or an error estimate for shape derivatives.",
+    "No physical FEM one-shot has been prepared or authorized by this passport.",
+    "Do not repeat the consumed P10NW one-shot; retain its markers and evidence.",
+    "Subsequent runs must pin this exact new mesh SHA256 and independently validate the FEM source and time grid."
+  ]
+}
