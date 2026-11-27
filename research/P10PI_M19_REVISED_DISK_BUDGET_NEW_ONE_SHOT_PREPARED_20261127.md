@@ -1,0 +1,11 @@
+# P10PI distinct M19 full4D recovery with source-derived disk budget prepared (2026-11-27)
+
+Status PREPARED_UNEXECUTED. Previous P10PH physical attempt remains consumed and MUST NOT be repeated. User requested next distinct step.
+Root failure: P10PH stopped by watchdog OUTPUT_LIMIT=3GiB after step 35/36, before adjoint, native preflight QP history_gib 2.93820977211. Physical M19 still not accepted.
+New P10PI keeps identical 101 pinned physical solver source files, M19 HighOrderElastic accepted mesh SHA256 8357cbbdd62cfb603a49e2ef361e86f8723b464634f4284033dff0aef3457aeb, dt=25s, steps=36, R/EDV_VAR/xi0/B6=5mm/4 threads, same-mesh analytic adjoint, full signed4D, no FD geometry.
+Deterministic source-only size budget reconstructed from immutable C++ cache serializer: 33810 Tet10 * 27 QP * 2 tensors * 6 doubles * 8 bytes * 36 frames = 2.9382097721099854 GiB QP history, precisely matching previous P10PH native diagnostic. Include frame nodal temperatures, displacements, header/checksum and final state => projected complete forward cache 3.0749782100319862 GiB.
+New watchdog output_gib=5 (reserves ~1.925 GiB for additional outputs); minimum 8GiB free on project LOCAL_RUNS disk, checked before preflight/selftest and again after compilation, before fresh irreversible marker. Retains 5400s wall, 12GiB job RAM, 15s independent heartbeat, permanent LOCALAPPDATA + project one-shot markers, and mandatory prior P10PH marker existence as recovery provenance.
+Distinct name P10PI, one-click Windows CMD 01_P10PI_ONE_M19_REVISED_DISK_BUDGET_FEM.cmd; no PowerShell/CAD/mesh generation/Gmsh. Native 65s watchdog selftest before physical marker; compiler selftest; then fresh forward and analytic adjoint. On any stop never repeat P10PI.
+Local surrogate (non-Windows) full source+accepted M19 mesh preflight PASS, exact SHA/27QP geometry PASS, reconstructed 3.075GiB cache and 5GiB output cap PASS. Python compile PASS, archive CRC PASS. Windows native solver not executed by agent.
+Deliverable P10PI_M19_FULL4D_REVISED_DISK_BUDGET_ONE_SHOT_20261127.zip SHA256 c1c159e893278ce68d2f16eb12f9dde3ddb42f1d083c95c89a67e41c1d8782f5, Library libfile_b84446d3c69481918a4c7e840a545a21.
+User runs exactly once and returns single P10PI_M19_FIRST_FULL4D_EVIDENCE.zip from G:/ildar/Stage3D07/LOCAL_RUNS/P10PI_M19_R_DT25_*/. Do not claim M19 physical PASS before evidence review.
