@@ -1,0 +1,212 @@
+{
+  "stage": "P10QT",
+  "scope": "exact ray reduced P4->P2 radial + azimuth P1; 8 true M8 cuts",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_case": 5,
+  "original_element_id": 5865,
+  "axis": 2,
+  "frozen_remaining_eight_indices": [
+    13,
+    14,
+    20,
+    21,
+    31,
+    37,
+    38,
+    30
+  ],
+  "worklist": [
+    37,
+    30,
+    13,
+    14,
+    20,
+    21,
+    31,
+    38
+  ],
+  "new_q256_indices": [
+    30,
+    37
+  ],
+  "part": 0,
+  "parts": 4,
+  "selected_indices": [
+    37,
+    20
+  ],
+  "frozen_parameters": {
+    "inner_s_budget": 128,
+    "outer_t_orders": [
+      128,
+      256
+    ],
+    "actual_radial_ray_degree_max": 2,
+    "actual_azimuth_ray_degree_max": 1,
+    "include_joint_resultant": true
+  },
+  "physical_4D_FEM_approved": false,
+  "normal_high_degree_P4_case_NOT_certified": true,
+  "double_real_roots_not_interval_certified": true,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true,
+  "cells": [
+    {
+      "index": 37,
+      "group": "multi",
+      "active_constraints": [
+        0,
+        4
+      ],
+      "prior_uniform_q128": {
+        "cut_gradient_m3": 2.042539664501253e-17,
+        "cut_volume_m3": 1.0331848138903707e-17,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 8070,
+        "elapsed_s": 3.349080492000212
+      },
+      "q256_reference": {
+        "cut_gradient_m3": 2.0425090251802422e-17,
+        "cut_volume_m3": 1.033169286453768e-17,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 32307,
+        "elapsed_s": 15.08501784499822
+      },
+      "q256_origin": "NEW_P10QT_Q256_HELDOUT_ORDER",
+      "segmented": {
+        "128": {
+          "cut_gradient_m3": 2.0425121306259002e-17,
+          "cut_volume_m3": 1.0331708603816072e-17,
+          "transverse_Gauss_points": 16384,
+          "outer_Gauss_points": 128,
+          "inner_nodes_per_t_slice": 128,
+          "total_s_segments": 717,
+          "unresolved_topology_probe_intervals": 0,
+          "critical_event_root_candidate_counts": {
+            "radial_double_ray_root": 82,
+            "radial_ray_origin": 128,
+            "radial_ray_endpoint": 128,
+            "radial_degree_change": 85,
+            "azimuth_ray_origin": 43,
+            "azimuth_ray_endpoint": 40,
+            "azimuth_degree_change": 0,
+            "radial_azimuth_resultant": 115
+          },
+          "identically_zero_event_slice_counts": {},
+          "max_radial_P4_interpolation_relative_error": 7.363047401263892e-12,
+          "max_azimuth_P2_interpolation_relative_error": 1.9688532682468452e-15,
+          "max_radial_higher_ray_coeff_relative": 1.2442851295413629e-12,
+          "azimuth_degree_numerical_denoising_slice_count": 127,
+          "max_discarded_relative_azimuth_degree_coefficient": 2.9661272447461364e-11,
+          "elapsed_s": 7.587370376000763
+        },
+        "256": {
+          "cut_gradient_m3": 2.0425121306259138e-17,
+          "cut_volume_m3": 1.0331708603816149e-17,
+          "transverse_Gauss_points": 32768,
+          "outer_Gauss_points": 256,
+          "inner_nodes_per_t_slice": 128,
+          "total_s_segments": 1438,
+          "unresolved_topology_probe_intervals": 0,
+          "critical_event_root_candidate_counts": {
+            "radial_double_ray_root": 150,
+            "radial_ray_origin": 256,
+            "radial_ray_endpoint": 256,
+            "radial_degree_change": 216,
+            "azimuth_ray_origin": 87,
+            "azimuth_ray_endpoint": 79,
+            "azimuth_degree_change": 0,
+            "radial_azimuth_resultant": 203
+          },
+          "identically_zero_event_slice_counts": {},
+          "max_radial_P4_interpolation_relative_error": 7.41228596988375e-12,
+          "max_azimuth_P2_interpolation_relative_error": 2.4304433590037747e-15,
+          "max_radial_higher_ray_coeff_relative": 1.0574751488741336e-12,
+          "azimuth_degree_numerical_denoising_slice_count": 254,
+          "max_discarded_relative_azimuth_degree_coefficient": 5.981036224821288e-11,
+          "elapsed_s": 9.45931873399968
+        }
+      },
+      "full_gradient_relative_error": 3.2218813000289725e-16,
+      "full_volume_relative_error": 4.733047642938372e-16
+    },
+    {
+      "index": 20,
+      "group": "multi",
+      "active_constraints": [
+        0,
+        4
+      ],
+      "prior_uniform_q128": {
+        "cut_gradient_m3": 7.997256094690228e-17,
+        "cut_volume_m3": 4.049402342771355e-17,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 10414,
+        "elapsed_s": 3.435920414998691
+      },
+      "q256_reference": {
+        "cut_gradient_m3": 7.997259201233967e-17,
+        "cut_volume_m3": 4.04940351670021e-17,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 41633,
+        "elapsed_s": 12.967173704000743
+      },
+      "q256_origin": "PRIOR_Q256",
+      "segmented": {
+        "128": {
+          "cut_gradient_m3": 7.997377622854582e-17,
+          "cut_volume_m3": 4.0494638370641594e-17,
+          "transverse_Gauss_points": 16384,
+          "outer_Gauss_points": 128,
+          "inner_nodes_per_t_slice": 128,
+          "total_s_segments": 664,
+          "unresolved_topology_probe_intervals": 0,
+          "critical_event_root_candidate_counts": {
+            "radial_double_ray_root": 64,
+            "radial_ray_origin": 128,
+            "radial_ray_endpoint": 86,
+            "radial_degree_change": 106,
+            "azimuth_ray_origin": 40,
+            "azimuth_ray_endpoint": 35,
+            "azimuth_degree_change": 0,
+            "radial_azimuth_resultant": 107
+          },
+          "identically_zero_event_slice_counts": {},
+          "max_radial_P4_interpolation_relative_error": 7.097373780216693e-12,
+          "max_azimuth_P2_interpolation_relative_error": 2.2713612809568102e-15,
+          "max_radial_higher_ray_coeff_relative": 1.8916717634461306e-12,
+          "azimuth_degree_numerical_denoising_slice_count": 127,
+          "max_discarded_relative_azimuth_degree_coefficient": 9.838500278209825e-11,
+          "elapsed_s": 4.297271824998461
+        },
+        "256": {
+          "cut_gradient_m3": 7.997201677639146e-17,
+          "cut_volume_m3": 4.0493743341827027e-17,
+          "transverse_Gauss_points": 32768,
+          "outer_Gauss_points": 256,
+          "inner_nodes_per_t_slice": 128,
+          "total_s_segments": 1334,
+          "unresolved_topology_probe_intervals": 0,
+          "critical_event_root_candidate_counts": {
+            "radial_double_ray_root": 134,
+            "radial_ray_origin": 256,
+            "radial_ray_endpoint": 172,
+            "radial_degree_change": 209,
+            "azimuth_ray_origin": 79,
+            "azimuth_ray_endpoint": 71,
+            "azimuth_degree_change": 0,
+            "radial_azimuth_resultant": 221
+          },
+          "identically_zero_event_slice_counts": {},
+          "max_radial_P4_interpolation_relative_error": 7.998549070836495e-12,
+          "max_azimuth_P2_interpolation_relative_error": 2.376082603083898e-15,
+          "max_radial_higher_ray_coeff_relative": 1.6193632738595233e-12,
+          "azimuth_degree_numerical_denoising_slice_count": 254,
+          "max_discarded_relative_azimuth_degree_coefficient": 7.517250582297472e-11,
+          "elapsed_s": 8.574969604997023
+        }
+      },
+      "full_gradient_relative_error": 1.6041658643684252e-16,
+      "full_volume_relative_error": 4.733047642938013e-16
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "stage": "P10QT",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_case": 5,
+  "all_remaining_eight_cut_indices": [
+    13,
+    14,
+    20,
+    21,
+    31,
+    37,
+    38,
+    30
+  ],
+  "total_outer_t_slices_tested": 3072,
+  "guarded_small_degree_coefficient_removals": 2674,
+  "max_relative_removed_coefficient": 9.838500278209825e-11,
+  "max_high_order_radial_w_coefficient_relative": 2.987350404136384e-12,
+  "max_s_smooth_intervals": 10,
+  "unresolved_topology_probe_intervals": 0,
+  "double_precision_root_enclosure_not_certified": true,
+  "no_high_order_cut_quadrature_in_this_preflight": true,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true,
+  "cells": [
+    {
+      "index": 13,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 128,
+          "max_dropped_azimuth_coefficient_relative": 3.35528660309266e-12,
+          "max_radial_P4_fit_relative": 2.399244183368334e-11,
+          "max_azimuth_P2_fit_relative": 2.8184356497093873e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.4029956095057997e-12,
+          "max_s_intervals": 6,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 255,
+          "max_dropped_azimuth_coefficient_relative": 1.6029967127629214e-11,
+          "max_radial_P4_fit_relative": 2.6712609029044626e-11,
+          "max_azimuth_P2_fit_relative": 2.960334887560128e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.2016951706642697e-12,
+          "max_s_intervals": 6,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 128,
+          "max_dropped_azimuth_coefficient_relative": 1.3449011948183453e-11,
+          "max_radial_P4_fit_relative": 3.033670479309909e-11,
+          "max_azimuth_P2_fit_relative": 3.697706743771343e-15,
+          "max_high_order_radial_w_coefficient_relative": 7.426738451359829e-13,
+          "max_s_intervals": 6,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 256,
+          "max_dropped_azimuth_coefficient_relative": 2.922174184898935e-11,
+          "max_radial_P4_fit_relative": 3.322698208480746e-11,
+          "max_azimuth_P2_fit_relative": 3.495690898272118e-15,
+          "max_high_order_radial_w_coefficient_relative": 6.663301769955208e-13,
+          "max_s_intervals": 7,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 127,
+          "max_dropped_azimuth_coefficient_relative": 9.838500278209825e-11,
+          "max_radial_P4_fit_relative": 7.097373780216693e-12,
+          "max_azimuth_P2_fit_relative": 2.2713612809568102e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.8916717634461306e-12,
+          "max_s_intervals": 8,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 254,
+          "max_dropped_azimuth_coefficient_relative": 7.517250582297472e-11,
+          "max_radial_P4_fit_relative": 7.998549070836495e-12,
+          "max_azimuth_P2_fit_relative": 2.376082603083898e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.6193632738595233e-12,
+          "max_s_intervals": 8,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 127,
+          "max_dropped_azimuth_coefficient_relative": 4.919102154359919e-11,
+          "max_radial_P4_fit_relative": 1.730898232240604e-11,
+          "max_azimuth_P2_fit_relative": 2.0559025598254465e-15,
+          "max_high_order_radial_w_coefficient_relative": 2.987350404136384e-12,
+          "max_s_intervals": 10,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 254,
+          "max_dropped_azimuth_coefficient_relative": 3.0146939173415434e-11,
+          "max_radial_P4_fit_relative": 1.934654953729626e-11,
+          "max_azimuth_P2_fit_relative": 2.177921321331885e-15,
+          "max_high_order_radial_w_coefficient_relative": 2.586747117958328e-12,
+          "max_s_intervals": 10,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 128,
+          "max_dropped_azimuth_coefficient_relative": 6.479440079545892e-11,
+          "max_radial_P4_fit_relative": 2.2999311391828006e-11,
+          "max_azimuth_P2_fit_relative": 2.959110634792656e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.9455320110280875e-12,
+          "max_s_intervals": 8,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 254,
+          "max_dropped_azimuth_coefficient_relative": 6.980803459369048e-11,
+          "max_radial_P4_fit_relative": 2.2215384067623372e-11,
+          "max_azimuth_P2_fit_relative": 4.38154253733832e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.9338338842807434e-12,
+          "max_s_intervals": 8,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 127,
+          "max_dropped_azimuth_coefficient_relative": 2.9661272447461364e-11,
+          "max_radial_P4_fit_relative": 7.363047401263892e-12,
+          "max_azimuth_P2_fit_relative": 1.9688532682468452e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.2442851295413629e-12,
+          "max_s_intervals": 9,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 254,
+          "max_dropped_azimuth_coefficient_relative": 5.981036224821288e-11,
+          "max_radial_P4_fit_relative": 7.41228596988375e-12,
+          "max_azimuth_P2_fit_relative": 2.4304433590037747e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.0574751488741336e-12,
+          "max_s_intervals": 9,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "active": [
+        0,
+        4
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 127,
+          "max_dropped_azimuth_coefficient_relative": 7.994210198025432e-11,
+          "max_radial_P4_fit_relative": 2.56362643703091e-11,
+          "max_azimuth_P2_fit_relative": 2.592131884629443e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.7043506482974964e-12,
+          "max_s_intervals": 10,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 255,
+          "max_dropped_azimuth_coefficient_relative": 5.1013778261154086e-11,
+          "max_radial_P4_fit_relative": 2.622008898707407e-11,
+          "max_azimuth_P2_fit_relative": 2.2551251975664364e-15,
+          "max_high_order_radial_w_coefficient_relative": 1.7591936327428073e-12,
+          "max_s_intervals": 10,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "active": [
+        0
+      ],
+      "orders": [
+        {
+          "order": 128,
+          "outer_slices_tested": 128,
+          "guarded_azimuth_degree_denoising_slices": 0,
+          "max_dropped_azimuth_coefficient_relative": 0.0,
+          "max_radial_P4_fit_relative": 2.2885488665914195e-11,
+          "max_azimuth_P2_fit_relative": 2.4213602845321892e-15,
+          "max_high_order_radial_w_coefficient_relative": 2.4701183451238844e-12,
+          "max_s_intervals": 4,
+          "unresolved_topology_probes": 0
+        },
+        {
+          "order": 256,
+          "outer_slices_tested": 256,
+          "guarded_azimuth_degree_denoising_slices": 0,
+          "max_dropped_azimuth_coefficient_relative": 0.0,
+          "max_radial_P4_fit_relative": 2.7375501902318795e-11,
+          "max_azimuth_P2_fit_relative": 3.014742417898516e-15,
+          "max_high_order_radial_w_coefficient_relative": 2.038568181486199e-12,
+          "max_s_intervals": 4,
+          "unresolved_topology_probes": 0
+        }
+      ]
+    }
+  ]
+}
