@@ -1,0 +1,132 @@
+{
+  "stage": "P10QV_B_PILOT_INDEPENDENT_AUDIT",
+  "scope": "two real M8 multi cuts; all 3 axes; q64,q128,q256",
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "root_interval_certificate_obtained": false,
+  "all_178_cut_validated": false,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "negative_one_percent_corrupted_q128_rejected_both_cases": true,
+  "cases": [
+    {
+      "case": 6,
+      "original_element": 5751,
+      "pilot_child": 19,
+      "active_constraints": [
+        0,
+        4
+      ],
+      "axes": {
+        "0": {
+          "q64_to_q128_gradient_relative_to_full_child": 5.962484018438475e-06,
+          "q128_to_q256_gradient_relative_to_full_child": 6.37179270814949e-07,
+          "q128_to_q256_volume_relative_to_full_child": 6.289070193577059e-07,
+          "q128_gradient_m3": 6.185724063780835e-19,
+          "q256_gradient_m3": 6.178813137068393e-19,
+          "q256_volume_m3": 3.6542914443796833e-19
+        },
+        "1": {
+          "q64_to_q128_gradient_relative_to_full_child": 8.262041813059864e-06,
+          "q128_to_q256_gradient_relative_to_full_child": 1.1011373517746125e-06,
+          "q128_to_q256_volume_relative_to_full_child": 1.0871423589638225e-06,
+          "q128_gradient_m3": 6.1917216306363085e-19,
+          "q256_gradient_m3": 6.179778556077851e-19,
+          "q256_volume_m3": 3.6548629200913243e-19
+        },
+        "2": {
+          "q64_to_q128_gradient_relative_to_full_child": 2.978323505289056e-07,
+          "q128_to_q256_gradient_relative_to_full_child": 7.73125759609237e-09,
+          "q128_to_q256_volume_relative_to_full_child": 7.64073626832198e-09,
+          "q128_gradient_m3": 6.178534109259133e-19,
+          "q256_gradient_m3": 6.178617963453845e-19,
+          "q256_volume_m3": 3.6541754096327356e-19
+        }
+      },
+      "pairwise": {
+        "0_1": {
+          "q128_gradient_relative_to_full_child": 5.529685720375212e-07,
+          "q256_gradient_relative_to_full_child": 8.901049107785782e-08,
+          "q256_volume_relative_to_full_child": 8.780213420126086e-08
+        },
+        "0_2": {
+          "q128_gradient_relative_to_full_child": 6.629053048823283e-07,
+          "q256_gradient_relative_to_full_child": 1.7994776471286903e-08,
+          "q256_volume_relative_to_full_child": 1.782770153828122e-08
+        },
+        "1_2": {
+          "q128_gradient_relative_to_full_child": 1.2158738769198496e-06,
+          "q256_gradient_relative_to_full_child": 1.0700526754914472e-07,
+          "q256_volume_relative_to_full_child": 1.0562983573954207e-07
+        }
+      },
+      "q256_max_pairwise_gradient_relative_to_full_child": 1.0700526754914472e-07,
+      "q128_max_pairwise_gradient_relative_to_full_child": 1.2158738769198496e-06,
+      "q128_to_q256_max_gradient_relative_to_full_child": 1.1011373517746125e-06,
+      "all_checks_pass_but_not_global_L1_or_interval_certificate": true,
+      "evidence_sha256": {
+        "P10QV_B_M8_CASE6_MULTI_Q64_128_QA.json": "68c6ef5e598023de28a8a54f80919ca38121a7dc46dddca1b08a499c2147406c",
+        "P10QV_B_M8_CASE6_MULTI_Q128_256_QA.json": "5153a421c27952e61da0abf05698b0e8efe2648e87166f003a8103fab0fdcc96"
+      }
+    },
+    {
+      "case": 7,
+      "original_element": 5847,
+      "pilot_child": 10,
+      "active_constraints": [
+        1,
+        4
+      ],
+      "axes": {
+        "0": {
+          "q64_to_q128_gradient_relative_to_full_child": 1.249994379148354e-06,
+          "q128_to_q256_gradient_relative_to_full_child": 1.0208487335681555e-06,
+          "q128_to_q256_volume_relative_to_full_child": 1.0110391408999882e-06,
+          "q128_gradient_m3": 5.848174539998391e-17,
+          "q256_gradient_m3": 5.847723764039249e-17,
+          "q256_volume_m3": 2.0431291331953048e-17
+        },
+        "1": {
+          "q64_to_q128_gradient_relative_to_full_child": 9.63749583050847e-09,
+          "q128_to_q256_gradient_relative_to_full_child": 7.687856463294723e-10,
+          "q128_to_q256_volume_relative_to_full_child": 7.606434882524382e-10,
+          "q128_gradient_m3": 5.847776632195386e-17,
+          "q256_gradient_m3": 5.847776971667901e-17,
+          "q256_volume_m3": 2.04314769361281e-17
+        },
+        "2": {
+          "q64_to_q128_gradient_relative_to_full_child": 2.055565674158146e-08,
+          "q128_to_q256_gradient_relative_to_full_child": 3.848840855821742e-09,
+          "q128_to_q256_volume_relative_to_full_child": 3.814449752673388e-09,
+          "q128_gradient_m3": 5.847774843296859e-17,
+          "q256_gradient_m3": 5.8477765428287e-17,
+          "q256_volume_m3": 2.0431475438990872e-17
+        }
+      },
+      "pairwise": {
+        "0_1": {
+          "q128_gradient_relative_to_full_child": 9.011209860148448e-07,
+          "q256_gradient_relative_to_full_child": 1.2049653319964e-07,
+          "q256_volume_relative_to_full_child": 1.193122850947318e-07
+        },
+        "0_2": {
+          "q128_gradient_relative_to_full_child": 9.051722109288792e-07,
+          "q256_gradient_relative_to_full_child": 1.1952536349509796e-07,
+          "q256_volume_relative_to_full_child": 1.1834987752079395e-07
+        },
+        "1_2": {
+          "q128_gradient_relative_to_full_child": 4.051224914034318e-09,
+          "q256_gradient_relative_to_full_child": 9.711697045420487e-10,
+          "q256_volume_relative_to_full_child": 9.624075739378573e-10
+        }
+      },
+      "q256_max_pairwise_gradient_relative_to_full_child": 1.2049653319964e-07,
+      "q128_max_pairwise_gradient_relative_to_full_child": 9.051722109288792e-07,
+      "q128_to_q256_max_gradient_relative_to_full_child": 1.0208487335681555e-06,
+      "all_checks_pass_but_not_global_L1_or_interval_certificate": true,
+      "evidence_sha256": {
+        "P10QV_B_M8_CASE7_MULTI_Q64_128_QA.json": "c0f7edcb9d8c481409404ea1cf3e95de56a3c8d951218790270058ff1bcbf003",
+        "P10QV_B_M8_CASE7_MULTI_Q128_256_QA.json": "b6e47fc8b8ed6998505ceb6cf44d373c67ab9e3b0670f4a1e7178ae47cde12c3"
+      }
+    }
+  ]
+}
