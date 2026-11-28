@@ -1,0 +1,203 @@
+{
+  "stage": "P10QA",
+  "status": "PASS_4_BIN_DEPTH16_PHYSICAL_BRACKET_PILOT",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "pilot_bins": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "ideal_spherical_sector_m3": 2.1365622571213865e-12,
+      "depths": {
+        "8": {
+          "lower_m3": 2.8416545333024855e-14,
+          "upper_m3": 4.709492970532965e-12,
+          "width_over_ideal": 2.1909384618198793,
+          "width_over_cut_midpoint": 1.9760092123010236,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 3294
+        },
+        "10": {
+          "lower_m3": 3.100080344661415e-13,
+          "upper_m3": 3.848875106085525e-12,
+          "width_over_ideal": 1.6563369776958137,
+          "width_over_cut_midpoint": 1.7018353014602667,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 10041
+        },
+        "12": {
+          "lower_m3": 7.925634308122615e-13,
+          "upper_m3": 3.1187448826992345e-12,
+          "width_over_ideal": 1.0887496697714123,
+          "width_over_cut_midpoint": 1.1894646320011386,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 26132
+        },
+        "14": {
+          "lower_m3": 1.2337126863180043e-12,
+          "upper_m3": 2.677328295624649e-12,
+          "width_over_ideal": 0.6756721478603874,
+          "width_over_cut_midpoint": 0.7382257644304133,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 65870
+        },
+        "16": {
+          "lower_m3": 1.5597690640930428e-12,
+          "upper_m3": 2.4638787448688653e-12,
+          "width_over_ideal": 0.4231609342355131,
+          "width_over_cut_midpoint": 0.44939802075225893,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 167341
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "ideal_spherical_sector_m3": 2.1365622571213865e-12,
+      "depths": {
+        "8": {
+          "lower_m3": 5.120700280997748e-15,
+          "upper_m3": 4.0788736416333755e-12,
+          "width_over_ideal": 1.906685811646317,
+          "width_over_cut_midpoint": 1.994984615695038,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 2731
+        },
+        "10": {
+          "lower_m3": 1.0604127573521123e-13,
+          "upper_m3": 3.3463048381361503e-12,
+          "width_over_ideal": 1.5165781158965999,
+          "width_over_cut_midpoint": 1.8771371441476945,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 8846
+        },
+        "12": {
+          "lower_m3": 6.007242768990265e-13,
+          "upper_m3": 2.8996941840015754e-12,
+          "width_over_ideal": 1.0760135350326632,
+          "width_over_cut_midpoint": 1.3135400425874,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 24379
+        },
+        "14": {
+          "lower_m3": 1.1580379341556264e-12,
+          "upper_m3": 2.5960958378829917e-12,
+          "width_over_ideal": 0.6730709104937931,
+          "width_over_cut_midpoint": 0.7661196915454893,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 61708
+        },
+        "16": {
+          "lower_m3": 1.5228094659632404e-12,
+          "upper_m3": 2.438039349005603e-12,
+          "width_over_ideal": 0.42836565140650834,
+          "width_over_cut_midpoint": 0.46213825661990676,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 157485
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "ideal_spherical_sector_m3": 4.963280060358873e-11,
+      "depths": {
+        "8": {
+          "lower_m3": 3.4075164665177374e-11,
+          "upper_m3": 7.346665194373078e-11,
+          "width_over_ideal": 0.793658363008135,
+          "width_over_cut_midpoint": 0.7325799120877122,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 5617
+        },
+        "10": {
+          "lower_m3": 3.8951939946663705e-11,
+          "upper_m3": 6.37842234391152e-11,
+          "width_over_ideal": 0.500320013992037,
+          "width_over_cut_midpoint": 0.48341854852424565,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 14232
+        },
+        "12": {
+          "lower_m3": 4.2422714049171697e-11,
+          "upper_m3": 5.7980365923175744e-11,
+          "width_over_ideal": 0.31345504756544285,
+          "width_over_cut_midpoint": 0.309903877018292,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 35891
+        },
+        "14": {
+          "lower_m3": 4.4960008447093063e-11,
+          "upper_m3": 5.476296451334416e-11,
+          "width_over_ideal": 0.19750962966096022,
+          "width_over_cut_midpoint": 0.1966037669201898,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 90523
+        },
+        "16": {
+          "lower_m3": 4.661767350412371e-11,
+          "upper_m3": 5.280433421776121e-11,
+          "width_over_ideal": 0.12464863232380588,
+          "width_over_cut_midpoint": 0.12445254034586721,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 228877
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "ideal_spherical_sector_m3": 4.963280060358873e-11,
+      "depths": {
+        "8": {
+          "lower_m3": 3.1945270724067534e-11,
+          "upper_m3": 7.472245992769415e-11,
+          "width_over_ideal": 0.8618733717100298,
+          "width_over_cut_midpoint": 0.8020642970887114,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 5324
+        },
+        "10": {
+          "lower_m3": 3.782852338868458e-11,
+          "upper_m3": 6.385204781703536e-11,
+          "width_over_ideal": 0.5243210963692655,
+          "width_over_cut_midpoint": 0.5118681793338875,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 13101
+        },
+        "12": {
+          "lower_m3": 4.204361131248016e-11,
+          "upper_m3": 5.826021045147279e-11,
+          "width_over_ideal": 0.32673149493442216,
+          "width_over_cut_midpoint": 0.32334957639312073,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 32774
+        },
+        "14": {
+          "lower_m3": 4.475554043003898e-11,
+          "upper_m3": 5.494553882222967e-11,
+          "width_over_ideal": 0.20530774544795474,
+          "width_over_cut_midpoint": 0.20441099471766896,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 82544
+        },
+        "16": {
+          "lower_m3": 4.6510965035934307e-11,
+          "upper_m3": 5.29090348137286e-11,
+          "width_over_ideal": 0.128908095049782,
+          "width_over_cut_midpoint": 0.12870790157853712,
+          "ideal_inside_bracket": true,
+          "unresolved_leaves": 207600
+        }
+      }
+    }
+  ],
+  "note": "Physical bracket widths; ideal sphere is external benchmark, not an exact identity of M8 discretization.",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false
+}
