@@ -1,0 +1,27 @@
+{
+  "stage": "P10QE",
+  "status": "PASS_EXACT_RATIONAL_ALL648_TRI6_WALL_RADIUS_ENCLOSURE",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "HighOrderElastic_mesh_policy_preserved": true,
+  "method": "exact rational decimal Gmsh coordinates; degree-4 triangular Bernstein coefficients; integer /16 De Casteljau subdivision",
+  "pore_wall_tri6_count": 648,
+  "target_radius_lower_m": "249807/250000000",
+  "target_radius_upper_m": "100000000001/100000000000000",
+  "outer_extra_m": "1/100000000000000",
+  "inner_deficit_m": "193/250000000",
+  "max_depth": 13,
+  "max_nodes_per_face": 200000,
+  "faces_certified": 648,
+  "subtriangles_visited_total": 3276,
+  "certified_subtriangle_leaves": 2619,
+  "maximum_depth_distribution_per_face": {
+    "1": 647,
+    "5": 1
+  },
+  "first_failed_faces": [],
+  "scope": "Exact surface radius enclosure only: no topological proof of entire M8 ice-domain inclusion.",
+  "physical_4D_FEM_approved": false
+}

@@ -1,0 +1,152 @@
+{
+  "stage": "P10QE",
+  "status": "PASS_ADAPTIVE_TET10_MANUFACTURED_FIELD_PILOT_NOT_CERTIFIED",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "cases": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "reference_q24_manufactured_FE_moment_m3": -4.813715311417348e-13,
+      "adaptive_q4_moment_m3": -4.813713761628535e-13,
+      "adaptive_L1_indicator_abs_m3": 4.751438043127248e-19,
+      "adaptive_L1_indicator_relative_q24": 9.87062536053516e-07,
+      "adaptive_vs_independent_q24_relative": 3.2195273577815304e-07,
+      "target_relative_to_q24": 1e-06,
+      "met_indicator_target": true,
+      "max_depth_reached": 10,
+      "maxdepth_cap": 12,
+      "node_cap": 60000,
+      "spherical_point_evaluations": 22104,
+      "binary_splits": 153,
+      "terminal_leaves": 154,
+      "elapsed_s": 9.454302873000415,
+      "progress": [
+        {
+          "splits": 100,
+          "leaves": 101,
+          "nodes": 14472,
+          "estimated_L1_error_relative_to_q24": 1.6268119587612338e-06,
+          "actual_delta_relative_to_q24": 2.827319933746526e-07
+        }
+      ],
+      "important_limit": "q4-q2 local indicator is not a guaranteed upper bound on error. q24 reference also not exact."
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "reference_q24_manufactured_FE_moment_m3": 4.814140738655289e-13,
+      "adaptive_q4_moment_m3": 4.814139044887707e-13,
+      "adaptive_L1_indicator_abs_m3": 4.703621956897267e-19,
+      "adaptive_L1_indicator_relative_q24": 9.77042885167314e-07,
+      "adaptive_vs_independent_q24_relative": 3.518317542719263e-07,
+      "target_relative_to_q24": 1e-06,
+      "met_indicator_target": true,
+      "max_depth_reached": 9,
+      "maxdepth_cap": 12,
+      "node_cap": 60000,
+      "spherical_point_evaluations": 14328,
+      "binary_splits": 99,
+      "terminal_leaves": 100,
+      "elapsed_s": 6.136431711000114,
+      "progress": [],
+      "important_limit": "q4-q2 local indicator is not a guaranteed upper bound on error. q24 reference also not exact."
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "reference_q24_manufactured_FE_moment_m3": -2.8912995389629356e-11,
+      "adaptive_q4_moment_m3": -2.8913024170366362e-11,
+      "adaptive_L1_indicator_abs_m3": 3.619894687196325e-17,
+      "adaptive_L1_indicator_relative_q24": 1.251995733549878e-06,
+      "adaptive_vs_independent_q24_relative": 9.954256422850034e-07,
+      "target_relative_to_q24": 1e-06,
+      "met_indicator_target": false,
+      "max_depth_reached": 12,
+      "maxdepth_cap": 12,
+      "node_cap": 60000,
+      "spherical_point_evaluations": 59976,
+      "binary_splits": 416,
+      "terminal_leaves": 417,
+      "elapsed_s": 15.497863885999323,
+      "progress": [
+        {
+          "splits": 100,
+          "leaves": 101,
+          "nodes": 14472,
+          "estimated_L1_error_relative_to_q24": 3.043930769413014e-06,
+          "actual_delta_relative_to_q24": 9.421723852677621e-07
+        },
+        {
+          "splits": 200,
+          "leaves": 201,
+          "nodes": 28872,
+          "estimated_L1_error_relative_to_q24": 1.8680146855614913e-06,
+          "actual_delta_relative_to_q24": 1.0561345310843481e-06
+        },
+        {
+          "splits": 300,
+          "leaves": 301,
+          "nodes": 43272,
+          "estimated_L1_error_relative_to_q24": 1.492521352566361e-06,
+          "actual_delta_relative_to_q24": 9.776783299112916e-07
+        },
+        {
+          "splits": 400,
+          "leaves": 401,
+          "nodes": 57672,
+          "estimated_L1_error_relative_to_q24": 1.2654201588499574e-06,
+          "actual_delta_relative_to_q24": 1.0023833792346477e-06
+        }
+      ],
+      "important_limit": "q4-q2 local indicator is not a guaranteed upper bound on error. q24 reference also not exact."
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "reference_q24_manufactured_FE_moment_m3": 2.8912819697000258e-11,
+      "adaptive_q4_moment_m3": 2.891281407605037e-11,
+      "adaptive_L1_indicator_abs_m3": 2.889797362893579e-17,
+      "adaptive_L1_indicator_relative_q24": 9.99486522994988e-07,
+      "adaptive_vs_independent_q24_relative": 1.9441029778346206e-07,
+      "target_relative_to_q24": 1e-06,
+      "met_indicator_target": true,
+      "max_depth_reached": 11,
+      "maxdepth_cap": 12,
+      "node_cap": 60000,
+      "spherical_point_evaluations": 38088,
+      "binary_splits": 264,
+      "terminal_leaves": 265,
+      "elapsed_s": 9.755793754000479,
+      "progress": [
+        {
+          "splits": 100,
+          "leaves": 101,
+          "nodes": 14472,
+          "estimated_L1_error_relative_to_q24": 1.7446445615949495e-06,
+          "actual_delta_relative_to_q24": 3.106538629461011e-08
+        },
+        {
+          "splits": 200,
+          "leaves": 201,
+          "nodes": 28872,
+          "estimated_L1_error_relative_to_q24": 1.2594582078776368e-06,
+          "actual_delta_relative_to_q24": 1.555558594685962e-07
+        }
+      ],
+      "important_limit": "q4-q2 local indicator is not a guaranteed upper bound on error. q24 reference also not exact."
+    }
+  ],
+  "total_adaptive_points": 134496,
+  "max_indicator_relative": 1.251995733549878e-06,
+  "max_vs_q24_relative": 9.954256422850034e-07,
+  "conditional_method": "physical-width binary splitting, priority by q2/q4 local difference, summed absolute indicators",
+  "scientific_warning": "This is an empirical estimator, NOT an error certificate. No physics permitted.",
+  "physical_4D_FEM_approved": false
+}

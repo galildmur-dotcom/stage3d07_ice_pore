@@ -1,0 +1,78 @@
+{
+  "stage": "P10QE",
+  "status": "PASS_INDEPENDENT_EXACT_WALL_AND_ADAPTIVE_FE_READ_ONLY_QA",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "fem_started": false,
+  "mesh_changed": false,
+  "pore_wall_full_surface_certified": true,
+  "wall_radius_lower_m": 0.000999228,
+  "wall_radius_upper_m": 0.00100000000001,
+  "domain_topology_and_outer_boundary": {
+    "tet10_corner_face_manifold": true,
+    "unique_topological_faces": 25911,
+    "exposed_tet10_faces": 1638,
+    "internal_tet10_faces": 24273,
+    "all_exposed_faces_tagged_exactly_once": true,
+    "physical_Tri6_face_adjacency": {
+      "9": {
+        "face_count": 358,
+        "one_adjacent_Tet10": 0,
+        "two_adjacent_Tet10": 358
+      },
+      "8": {
+        "face_count": 648,
+        "one_adjacent_Tet10": 648,
+        "two_adjacent_Tet10": 0
+      },
+      "4": {
+        "face_count": 156,
+        "one_adjacent_Tet10": 156,
+        "two_adjacent_Tet10": 0
+      },
+      "6": {
+        "face_count": 156,
+        "one_adjacent_Tet10": 156,
+        "two_adjacent_Tet10": 0
+      },
+      "2": {
+        "face_count": 184,
+        "one_adjacent_Tet10": 184,
+        "two_adjacent_Tet10": 0
+      },
+      "7": {
+        "face_count": 156,
+        "one_adjacent_Tet10": 156,
+        "two_adjacent_Tet10": 0
+      },
+      "3": {
+        "face_count": 182,
+        "one_adjacent_Tet10": 182,
+        "two_adjacent_Tet10": 0
+      },
+      "5": {
+        "face_count": 156,
+        "one_adjacent_Tet10": 156,
+        "two_adjacent_Tet10": 0
+      }
+    },
+    "min_non_pore_exposed_surface_radius_certified_by_bezier_AABB_m": 0.020000000000000004
+  },
+  "independent_wall_sample_and_local_optimization": {
+    "independent_direct_exact_rational_samples": 1944,
+    "min_sampled_radius_m": 0.0009992329942200087,
+    "max_sampled_radius_m": 0.0009999996050662557,
+    "face_560_local_minimum_radius_m": 0.0009992289464383285,
+    "face_560_local_minimum_barycentric_uv": [
+      0.31513346088897387,
+      0.3645642845577915
+    ],
+    "face_560_local_inward_deviation_um": 0.7710535616714791,
+    "optimization_warning": "Floating constrained minimization is diagnostic, not proof of global minimum."
+  },
+  "conditional_missing_sphere_volume_upper_per_nearwall_sector_m3": 1.0471975512070696e-21,
+  "conditional_missing_sphere_volume_upper_relative_to_ideal_nearwall_sector": 4.901320088926285e-10,
+  "conditional_volume_warning": "Volume bound assumes sphere-sector membership is controlled only by the pore wall; other exposed faces are proven outside 1.5mm, but this does not certify arbitrary mesh global nonselfintersection.",
+  "adaptive_field_four_case_node_count": 134496,
+  "adaptive_indicator_is_not_error_bound": true,
+  "physical_4D_FEM_approved": false
+}
