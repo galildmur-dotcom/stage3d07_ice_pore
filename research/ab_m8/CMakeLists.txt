@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(stage3d07_m8_ab_policy LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(m8_ab_policy_test m8_ab_policy_test.cpp)
+enable_testing()
+add_test(NAME m8_ab_routing_contract COMMAND m8_ab_policy_test)
