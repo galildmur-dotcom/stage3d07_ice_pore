@@ -1,0 +1,271 @@
+{
+  "protocol": "P10MS_M12_ACTUAL_REFINEMENT_PRIORITY_VS_4D_OUTCOME",
+  "status": "READONLY_ALIGNED_4D_SOURCE_TARGET_AUDIT_PASS",
+  "full_bins": 43236,
+  "volume_bins": 43200,
+  "spatial_bins": 1200,
+  "source_score_definition": "0.4 all-time absolute L1 + 0.6 last6 L1, polar factor 1.2, C2 interpolation",
+  "global_old_L1": 0.7222589721609709,
+  "global_new_L1": 0.7153418305088646,
+  "global_L1_ratio": 0.9904229065768329,
+  "source_score_vs_signed_L1_reduction_pearson": 0.3370219078313988,
+  "source_score_vs_signed_L1_reduction_spearman": 0.32516751381469183,
+  "consecutive_full4d_cosine": -0.44859707400293075,
+  "groups": {
+    "polar": {
+      "bins": 240,
+      "old_L1": 0.29821459488973806,
+      "new_L1": 0.2985608063369917,
+      "ratio_new_to_old": 1.0011609473620218
+    },
+    "nonpolar": {
+      "bins": 960,
+      "old_L1": 0.4240443772712328,
+      "new_L1": 0.4167810241718729,
+      "ratio_new_to_old": 0.9828712429908864
+    },
+    "nearwall_0_2": {
+      "bins": 360,
+      "old_L1": 0.33827717603355567,
+      "new_L1": 0.35080516547710267,
+      "ratio_new_to_old": 1.0370346873248826
+    },
+    "polar_nearwall_0_2": {
+      "bins": 72,
+      "old_L1": 0.2195059236291244,
+      "new_L1": 0.23013485829211328,
+      "ratio_new_to_old": 1.0484220857790947
+    },
+    "south": {
+      "bins": 120,
+      "old_L1": 0.14039872479879528,
+      "new_L1": 0.15072976775567284,
+      "ratio_new_to_old": 1.0735835953758335
+    },
+    "north": {
+      "bins": 120,
+      "old_L1": 0.15781587009094275,
+      "new_L1": 0.14783103858131885,
+      "ratio_new_to_old": 0.9367311316417667
+    }
+  },
+  "top_target_bins": {
+    "0.05": {
+      "count": 60,
+      "old_L1": 0.21496419472415254,
+      "new_L1": 0.19026702634240583,
+      "ratio_new_to_old": 0.8851103160996707,
+      "new_error_L1_share": 0.265980567929402
+    },
+    "0.1": {
+      "count": 120,
+      "old_L1": 0.3087973354663932,
+      "new_L1": 0.2635155067733309,
+      "ratio_new_to_old": 0.8533606884118002,
+      "new_error_L1_share": 0.3683770409258422
+    },
+    "0.2": {
+      "count": 240,
+      "old_L1": 0.43569428776295255,
+      "new_L1": 0.35992149119957867,
+      "ratio_new_to_old": 0.8260872389389703,
+      "new_error_L1_share": 0.5031461545364199
+    },
+    "0.3": {
+      "count": 360,
+      "old_L1": 0.5261660465320003,
+      "new_L1": 0.4418321647654466,
+      "ratio_new_to_old": 0.8397200231326126,
+      "new_error_L1_share": 0.6176517937601181
+    }
+  },
+  "top_persistent_bins": {
+    "highest_new_L1": [
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 9,
+        "old_L1": 0.009683202924803801,
+        "new_L1": 0.008591900028244023,
+        "L1_reduction": 0.0010913028965597784,
+        "beta_0.1_score": 1.2
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 2,
+        "old_L1": 0.002695904418649102,
+        "new_L1": 0.008137164771247925,
+        "L1_reduction": -0.005441260352598823,
+        "beta_0.1_score": 0.3438279591158768
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 10,
+        "old_L1": 0.004335067688954518,
+        "new_L1": 0.0075101783564338045,
+        "L1_reduction": -0.0031751106674792863,
+        "beta_0.1_score": 0.5310464072194531
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 0,
+        "phi_bin": 1,
+        "old_L1": 0.005402035061595597,
+        "new_L1": 0.00747844971622511,
+        "L1_reduction": -0.0020764146546295133,
+        "beta_0.1_score": 0.674923052546225
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 8,
+        "old_L1": 0.004658411930352409,
+        "new_L1": 0.007302459115006695,
+        "L1_reduction": -0.002644047184654286,
+        "beta_0.1_score": 0.5996957741027572
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 6,
+        "old_L1": 0.0031452401745719377,
+        "new_L1": 0.00663049821837868,
+        "L1_reduction": -0.0034852580438067423,
+        "beta_0.1_score": 0.3683265488861639
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 9,
+        "phi_bin": 5,
+        "old_L1": 0.0032956243790775797,
+        "new_L1": 0.0064207436328550735,
+        "L1_reduction": -0.003125119253777494,
+        "beta_0.1_score": 0.3347952436469937
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 9,
+        "phi_bin": 4,
+        "old_L1": 0.004793870633629203,
+        "new_L1": 0.0062911172078642325,
+        "L1_reduction": -0.0014972465742350291,
+        "beta_0.1_score": 0.6128372425469168
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 7,
+        "old_L1": 0.0058383971273325555,
+        "new_L1": 0.005333660823696877,
+        "L1_reduction": 0.0005047363036356787,
+        "beta_0.1_score": 0.7395855057804174
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 10,
+        "old_L1": 0.0042942331153750304,
+        "new_L1": 0.005175278829588962,
+        "L1_reduction": -0.0008810457142139315,
+        "beta_0.1_score": 0.5302820873943255
+      }
+    ],
+    "largest_L1_increase": [
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 2,
+        "old_L1": 0.002695904418649102,
+        "new_L1": 0.008137164771247925,
+        "L1_reduction": -0.005441260352598823,
+        "beta_0.1_score": 0.3438279591158768
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 6,
+        "old_L1": 0.0031452401745719377,
+        "new_L1": 0.00663049821837868,
+        "L1_reduction": -0.0034852580438067423,
+        "beta_0.1_score": 0.3683265488861639
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 4,
+        "old_L1": 0.0011443138077834986,
+        "new_L1": 0.004502207645760421,
+        "L1_reduction": -0.0033578938379769225,
+        "beta_0.1_score": 0.1329399725182456
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 10,
+        "old_L1": 0.004335067688954518,
+        "new_L1": 0.0075101783564338045,
+        "L1_reduction": -0.0031751106674792863,
+        "beta_0.1_score": 0.5310464072194531
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 9,
+        "phi_bin": 5,
+        "old_L1": 0.0032956243790775797,
+        "new_L1": 0.0064207436328550735,
+        "L1_reduction": -0.003125119253777494,
+        "beta_0.1_score": 0.3347952436469937
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 2,
+        "old_L1": 0.0005984747240527549,
+        "new_L1": 0.0035758942503874174,
+        "L1_reduction": -0.0029774195263346627,
+        "beta_0.1_score": 0.0663462533817635
+      },
+      {
+        "radial_bin": 0,
+        "mu_bin": 0,
+        "phi_bin": 8,
+        "old_L1": 0.004658411930352409,
+        "new_L1": 0.007302459115006695,
+        "L1_reduction": -0.002644047184654286,
+        "beta_0.1_score": 0.5996957741027572
+      },
+      {
+        "radial_bin": 2,
+        "mu_bin": 9,
+        "phi_bin": 0,
+        "old_L1": 0.0014834928663363294,
+        "new_L1": 0.004080202296469815,
+        "L1_reduction": -0.0025967094301334852,
+        "beta_0.1_score": 0.1632410531255068
+      },
+      {
+        "radial_bin": 1,
+        "mu_bin": 9,
+        "phi_bin": 1,
+        "old_L1": 0.0010945571676881714,
+        "new_L1": 0.0036466852732447044,
+        "L1_reduction": -0.002552128105556533,
+        "beta_0.1_score": 0.1043411876674583
+      },
+      {
+        "radial_bin": 4,
+        "mu_bin": 8,
+        "phi_bin": 10,
+        "old_L1": 0.00031978318474952376,
+        "new_L1": 0.002713817001309278,
+        "L1_reduction": -0.002394033816559754,
+        "beta_0.1_score": 0.0240415288671455
+      }
+    ]
+  },
+  "new_mesh_generation_attempts": 0,
+  "new_FEM_attempts": 0,
+  "caveat": "Priority score is only an intended C2 mesh-size field, not a measured local effective volume reduction or causal test"
+}

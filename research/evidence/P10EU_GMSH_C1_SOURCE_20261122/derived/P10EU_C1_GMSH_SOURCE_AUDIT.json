@@ -1,0 +1,40 @@
+{
+  "protocol": "P10EU_UNEXECUTED_SINGLE_FLATTENED_C1_MATHEVAL",
+  "parent_sha256": {
+    "parent_GEO": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+    "P10ET_script": "e3507949430a11de003ff044f3145c3d89b811c215fe4d4dc132b9857dbe9600",
+    "P10ET_JSON": "69ed863fd22ffe9a4bcd780e1cc187f3e2d54a1d9b91572dfe1df1a4286909bc"
+  },
+  "generated_GEO_sha256": "4c4a4aeb4f97bfec350e1e057a57e275d436c09d63a02438a8acfe4ad386253a",
+  "expression_characters": 4198,
+  "nested_MathEval_count": 0,
+  "source_only_parity": {
+    "sample_count": 7620,
+    "max_relative_h_parity_error": 2.724655305735159e-16,
+    "kappa1_hcube_over_original_Field2": [
+      0.7999999999999998,
+      0.8447717971431541
+    ],
+    "kappa1_hcube_over_bounded_M1": [
+      0.7703388306528964,
+      0.8078614045998426
+    ],
+    "kappa0_max_relative_h_deviation": 0.011709293753204841,
+    "native_Gmsh": 0,
+    "FEM": 0
+  },
+  "Gmsh_options": {
+    "Mesh.Algorithm": 5,
+    "Mesh.Algorithm3D": 10,
+    "Mesh.MeshSizeFromPoints": 0,
+    "Mesh.MeshSizeFromCurvature": 0,
+    "Mesh.MeshSizeExtendFromBoundary": 0,
+    "Mesh.MeshSizeFactor": 1,
+    "Mesh.MeshSizeMin": 0,
+    "Mesh.MeshSizeMax": 1e+22
+  },
+  "future_real_D025": "both 3D north/south Veff(M2)/Veff(M1) in [.75,.85] at 729QP, 343QP convergence",
+  "surface_Tri6_area": "diagnostic only, not a hard acceptance gate",
+  "neighbor_gradation": "diagnostic until investigator approves a numerical threshold",
+  "status": "NO_NEW_NATIVE_GMSH_NO_FEM_NO_NEW_M2"
+}

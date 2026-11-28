@@ -1,0 +1,88 @@
+=== P10QI ACTUAL M8 CHILD 0 ===
+P10QI_REAL_M8_PREFLIGHT case=0 element=6029 depth=6 quartic=1 exact_full_gradient_m3=9.5488838894491479e-15 exact_full_volume_m3=7.3380869721524486e-15
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=0 q=2 cut_gradient_m3=2.3528638822235617e-15 full_gradient_m3=9.5488842674201502e-15 exact_full_gradient_m3=9.5488838894491479e-15 full_gradient_rel=3.9582741472993843e-08 cut_volume_m3=1.8430276200428063e-15 full_volume_rel=2.0993389315355653e-08 points=184 active=16 min_weight=9.4815338852820304e-06
+P10QI_REAL_GRADIENT case=0 q=3 cut_gradient_m3=2.3528633240051844e-15 full_gradient_m3=9.548883889449151e-15 exact_full_gradient_m3=9.5488838894491479e-15 full_gradient_rel=3.3045156454050015e-16 cut_volume_m3=1.8430275387700869e-15 full_volume_rel=1.4405302322085848e-14 points=621 active=54 min_weight=2.4660409491669503e-07
+P10QI_REAL_GRADIENT case=0 q=4 cut_gradient_m3=2.3528633240030166e-15 full_gradient_m3=9.5488838894491494e-15 exact_full_gradient_m3=9.5488838894491479e-15 full_gradient_rel=1.6522578227025007e-16 cut_volume_m3=1.8430275387707823e-15 full_volume_rel=7.0951489049079552e-15 points=1472 active=128 min_weight=1.4154582742429228e-08
+P10QI_REAL_GRADIENT case=0 q=6 cut_gradient_m3=2.3528633240030162e-15 full_gradient_m3=9.5488838894491463e-15 exact_full_gradient_m3=9.5488838894491479e-15 full_gradient_rel=1.6522578227025007e-16 cut_volume_m3=1.843027538770785e-15 full_volume_rel=1.763037000613492e-14 points=4968 active=432 min_weight=1.9448888847704007e-10
+P10QI_REAL_GRADIENT case=0 q=8 cut_gradient_m3=2.3528633240030182e-15 full_gradient_m3=9.5488838894491557e-15 exact_full_gradient_m3=9.5488838894491479e-15 full_gradient_rel=8.2612891135125037e-16 cut_volume_m3=1.8430275387707594e-15 full_volume_rel=2.0640433177914052e-14 points=11776 active=1024 min_weight=8.1573679558510152e-12
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 1 ===
+P10QI_REAL_M8_PREFLIGHT case=1 element=5718 depth=8 quartic=1 exact_full_gradient_m3=4.4737935643423967e-15 exact_full_volume_m3=4.0578083706024506e-15
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=1 q=2 cut_gradient_m3=8.410520055153696e-17 full_gradient_m3=4.4737935643424101e-15 exact_full_gradient_m3=4.4737935643423967e-15 full_gradient_rel=2.997598167167204e-15 cut_volume_m3=7.8324401464580106e-17 full_volume_rel=6.9402819808883549e-14 points=244 active=16 min_weight=4.980315146717075e-16
+P10QI_REAL_GRADIENT case=1 q=3 cut_gradient_m3=8.4105326516952678e-17 full_gradient_m3=4.4737935643423983e-15 exact_full_gradient_m3=4.4737935643423967e-15 full_gradient_rel=3.5265860790202398e-16 cut_volume_m3=7.8324737586536186e-17 full_volume_rel=2.3717490242811743e-14 points=819 active=54 min_weight=4.554272812286865e-17
+P10QI_REAL_GRADIENT case=1 q=4 cut_gradient_m3=8.4105326518090339e-17 full_gradient_m3=4.4737935643424085e-15 exact_full_gradient_m3=4.4737935643423967e-15 full_gradient_rel=2.64493955926518e-15 cut_volume_m3=7.8324737597009806e-17 full_volume_rel=8.009513098392162e-14 points=1936 active=128 min_weight=6.8874600931165365e-18
+P10QI_REAL_GRADIENT case=1 q=6 cut_gradient_m3=8.4105326518090351e-17 full_gradient_m3=4.4737935643424093e-15 exact_full_gradient_m3=4.4737935643423967e-15 full_gradient_rel=2.8212688632161918e-15 cut_volume_m3=7.8324737597003421e-17 full_volume_rel=4.1019593780600638e-14 points=6552 active=432 min_weight=4.0016072707462877e-19
+P10QI_REAL_GRADIENT case=1 q=8 cut_gradient_m3=8.4105326518090191e-17 full_gradient_m3=4.4737935643423967e-15 exact_full_gradient_m3=4.4737935643423967e-15 full_gradient_rel=0 cut_volume_m3=7.8324737597001042e-17 full_volume_rel=3.0910499578746455e-14 points=15552 active=1024 min_weight=4.8538522971688876e-20
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 2 ===
+P10QI_REAL_M8_PREFLIGHT case=2 element=5985 depth=3 quartic=1 exact_full_gradient_m3=5.5031955695889103e-13 exact_full_volume_m3=1.9202932356454059e-13
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=2 q=2 cut_gradient_m3=6.9452324033102757e-14 full_gradient_m3=5.5031955695889082e-13 exact_full_gradient_m3=5.5031955695889103e-13 full_gradient_rel=3.6696568236201098e-16 cut_volume_m3=2.5079409524839451e-14 full_volume_rel=1.6826462791237581e-14 points=72 active=8 min_weight=3.3568800823429367e-05
+P10QI_REAL_GRADIENT case=2 q=3 cut_gradient_m3=6.9446372618039166e-14 full_gradient_m3=5.5031955695889042e-13 exact_full_gradient_m3=5.5031955695889103e-13 full_gradient_rel=1.100897047086033e-15 cut_volume_m3=2.5078288770913775e-14 full_volume_rel=2.2610559375725502e-14 points=243 active=27 min_weight=8.7308697565808671e-07
+P10QI_REAL_GRADIENT case=2 q=4 cut_gradient_m3=6.9446371976350095e-14 full_gradient_m3=5.5031955695889093e-13 exact_full_gradient_m3=5.5031955695889103e-13 full_gradient_rel=1.8348284118100549e-16 cut_volume_m3=2.5078288378800245e-14 full_volume_rel=1.1831106650088925e-15 points=576 active=64 min_weight=5.0113449423718929e-08
+P10QI_REAL_GRADIENT case=2 q=6 cut_gradient_m3=6.944637197619486e-14 full_gradient_m3=5.5031955695889002e-13 exact_full_gradient_m3=5.5031955695889103e-13 full_gradient_rel=1.8348284118100549e-15 cut_volume_m3=2.5078288378624082e-14 full_volume_rel=4.7324426600355701e-15 points=1944 active=216 min_weight=6.8857621969693904e-10
+P10QI_REAL_GRADIENT case=2 q=8 cut_gradient_m3=6.9446371976194974e-14 full_gradient_m3=5.5031955695889062e-13 exact_full_gradient_m3=5.5031955695889103e-13 full_gradient_rel=7.3393136472402197e-16 cut_volume_m3=2.50782883786243e-14 full_volume_rel=1.2356933612315099e-14 points=4608 active=512 min_weight=2.8880670940642771e-11
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 3 ===
+P10QI_REAL_M8_PREFLIGHT case=3 element=5718 depth=3 quartic=0 exact_full_gradient_m3=1.9833313811571618e-13 exact_full_volume_m3=1.2984986785928165e-13
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=3 q=2 cut_gradient_m3=1.8913739388502567e-14 full_gradient_m3=1.9833313811571625e-13 exact_full_gradient_m3=1.9833313811571618e-13 full_gradient_rel=3.8183557029704525e-16 cut_volume_m3=1.1784338981403096e-14 full_volume_rel=1.2636367752317417e-14 points=248 active=24 min_weight=9.7193224059397662e-06
+P10QI_REAL_GRADIENT case=3 q=3 cut_gradient_m3=1.8913741648937523e-14 full_gradient_m3=1.983331381157163e-13 exact_full_gradient_m3=1.9833313811571618e-13 full_gradient_rel=6.3639261716174216e-16 cut_volume_m3=1.178434407929916e-14 full_volume_rel=2.0995811034619709e-14 points=837 active=81 min_weight=2.5346993921501476e-07
+P10QI_REAL_GRADIENT case=3 q=4 cut_gradient_m3=1.8913741649573524e-14 full_gradient_m3=1.983331381157162e-13 exact_full_gradient_m3=1.9833313811571618e-13 full_gradient_rel=1.2727852343234843e-16 cut_volume_m3=1.1784344079702868e-14 full_volume_rel=1.8274131826428265e-14 points=1984 active=192 min_weight=1.4565906865316507e-08
+P10QI_REAL_GRADIENT case=3 q=6 cut_gradient_m3=1.8913741649573625e-14 full_gradient_m3=1.9833313811571615e-13 exact_full_gradient_m3=1.9833313811571618e-13 full_gradient_rel=1.2727852343234843e-16 cut_volume_m3=1.1784344079702948e-14 full_volume_rel=1.2636367752317417e-14 points=6696 active=648 min_weight=2.0033639321812914e-10
+P10QI_REAL_GRADIENT case=3 q=8 cut_gradient_m3=1.8913741649573591e-14 full_gradient_m3=1.9833313811571648e-13 exact_full_gradient_m3=1.9833313811571618e-13 full_gradient_rel=1.527342281188181e-15 cut_volume_m3=1.1784344079703127e-14 full_volume_rel=1.7690914853244385e-14 points=15872 active=1536 min_weight=8.4058352437867796e-12
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 4 ===
+P10QI_REAL_M8_PREFLIGHT case=4 element=5951 depth=9 quartic=0 exact_full_gradient_m3=1.0473878803191026e-15 exact_full_volume_m3=9.5754206019497368e-16
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=4 q=2 cut_gradient_m3=1.0473874359610697e-15 full_gradient_m3=1.0473874363559049e-15 exact_full_gradient_m3=1.0473878803191026e-15 full_gradient_rel=4.2387658479522111e-07 cut_volume_m3=9.5754205982672907e-16 full_volume_rel=1.4046462284152365e-13 points=1304 active=391 min_weight=1.172758933863675e-42
+P10QI_REAL_GRADIENT case=4 q=3 cut_gradient_m3=1.0473878799073596e-15 full_gradient_m3=1.0473878803191065e-15 exact_full_gradient_m3=1.0473878803191026e-15 full_gradient_rel=3.7658489278139888e-15 cut_volume_m3=9.5754205981095244e-16 full_volume_rel=5.0460165097028291e-14 points=4389 active=1322 min_weight=9.0475869386308142e-44
+P10QI_REAL_GRADIENT case=4 q=4 cut_gradient_m3=1.0473878799070095e-15 full_gradient_m3=1.0473878803191049e-15 exact_full_gradient_m3=1.0473878803191026e-15 full_gradient_rel=2.2595093566883935e-15 cut_volume_m3=9.5754205981065445e-16 full_volume_rel=8.8562738741723121e-15 points=10400 active=3103 min_weight=2.6911277202054349e-44
+P10QI_REAL_GRADIENT case=4 q=6 cut_gradient_m3=1.0473878799070073e-15 full_gradient_m3=1.047387880319102e-15 exact_full_gradient_m3=1.0473878803191026e-15 full_gradient_rel=5.6487733917209837e-16 cut_volume_m3=9.5754205981059824e-16 full_volume_rel=6.8584632560450694e-14 points=35058 active=10796 min_weight=1.1568871632826685e-45
+P10QI_REAL_GRADIENT case=4 q=8 cut_gradient_m3=1.0473878799070065e-15 full_gradient_m3=1.0473878803191014e-15 exact_full_gradient_m3=1.0473878803191026e-15 full_gradient_rel=1.1297546783441967e-15 cut_volume_m3=9.5754205981069034e-16 full_volume_rel=3.0070139200678084e-14 points=82840 active=24685 min_weight=8.2372593881332509e-47
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 5 ===
+P10QI_REAL_M8_PREFLIGHT case=5 element=5843 depth=7 quartic=0 exact_full_gradient_m3=1.3682540702987325e-15 exact_full_volume_m3=1.0546989862556007e-15
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=5 q=2 cut_gradient_m3=1.3680043993582139e-15 full_gradient_m3=1.3682540310077737e-15 exact_full_gradient_m3=1.3682540702987325e-15 full_gradient_rel=2.8716127836113308e-08 cut_volume_m3=1.0545051981783535e-15 full_volume_rel=1.2529932885481156e-08 points=368 active=92 min_weight=8.4978644850723865e-40
+P10QI_REAL_GRADIENT case=5 q=3 cut_gradient_m3=1.368004311215407e-15 full_gradient_m3=1.3682540702987341e-15 exact_full_gradient_m3=1.3682540702987325e-15 full_gradient_rel=1.1530912603808718e-15 cut_volume_m3=1.0545051128600367e-15 full_volume_rel=5.7592062278987858e-14 points=1242 active=277 min_weight=8.375295517061568e-41
+P10QI_REAL_GRADIENT case=5 q=4 cut_gradient_m3=1.3680043112026314e-15 full_gradient_m3=1.3682540702987339e-15 exact_full_gradient_m3=1.3682540702987325e-15 full_gradient_rel=1.008954852833263e-15 cut_volume_m3=1.0545051128598905e-15 full_volume_rel=6.2266742658775826e-14 points=2936 active=665 min_weight=1.315650865664701e-41
+P10QI_REAL_GRADIENT case=5 q=6 cut_gradient_m3=1.3680043112026825e-15 full_gradient_m3=1.3682540702987374e-15 exact_full_gradient_m3=1.3682540702987325e-15 full_gradient_rel=3.6034101886902249e-15 cut_volume_m3=1.0545051128598619e-15 full_volume_rel=1.86987215191519e-15 points=9894 active=2248 min_weight=7.8899776249995202e-43
+P10QI_REAL_GRADIENT case=5 q=8 cut_gradient_m3=1.3680043112026821e-15 full_gradient_m3=1.3682540702987361e-15 exact_full_gradient_m3=1.3682540702987325e-15 full_gradient_rel=2.5944553358569617e-15 cut_volume_m3=1.0545051128598708e-15 full_volume_rel=5.7966036709370891e-15 points=23448 active=5350 min_weight=9.7031468002097894e-44
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 6 ===
+P10QI_REAL_M8_PREFLIGHT case=6 element=5861 depth=5 quartic=3 exact_full_gradient_m3=1.7216663496462896e-13 exact_full_volume_m3=1.3660347145039016e-13
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=6 q=2 cut_gradient_m3=6.5143209977110473e-19 full_gradient_m3=1.7216663496462893e-13 exact_full_gradient_m3=1.7216663496462896e-13 full_gradient_rel=1.46622770272873e-16 cut_volume_m3=4.453161439440921e-19 full_volume_rel=4.8600912611149264e-14 points=104 active=8 min_weight=3.8474222737287109e-09
+P10QI_REAL_GRADIENT case=6 q=3 cut_gradient_m3=6.5143210080556022e-19 full_gradient_m3=1.7216663496462909e-13 exact_full_gradient_m3=1.7216663496462896e-13 full_gradient_rel=7.33113851364365e-16 cut_volume_m3=4.4531614948974353e-19 full_volume_rel=4.3057082275276727e-14 points=351 active=27 min_weight=1.0007561443951723e-10
+P10QI_REAL_GRADIENT case=6 q=4 cut_gradient_m3=6.5143210080556176e-19 full_gradient_m3=1.7216663496462896e-13 exact_full_gradient_m3=1.7216663496462896e-13 full_gradient_rel=0 cut_volume_m3=4.4531614948975701e-19 full_volume_rel=3.2339010292589815e-14 points=832 active=64 min_weight=5.7443533991054124e-12
+P10QI_REAL_GRADIENT case=6 q=6 cut_gradient_m3=6.514321008055659e-19 full_gradient_m3=1.7216663496462888e-13 exact_full_gradient_m3=1.7216663496462896e-13 full_gradient_rel=4.39868310818619e-16 cut_volume_m3=4.4531614948975277e-19 full_volume_rel=1.6446696663088533e-14 points=2808 active=216 min_weight=7.8931823197258145e-14
+P10QI_REAL_GRADIENT case=6 q=8 cut_gradient_m3=6.5143210080556196e-19 full_gradient_m3=1.7216663496462929e-13 exact_full_gradient_m3=1.7216663496462896e-13 full_gradient_rel=1.9060960135473492e-15 cut_volume_m3=4.4531614948973409e-19 full_volume_rel=2.6240796923130022e-14 points=6656 active=512 min_weight=3.3106446093216108e-15
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+
+=== P10QI ACTUAL M8 CHILD 7 ===
+P10QI_REAL_M8_PREFLIGHT case=7 element=5751 depth=3 quartic=0 exact_full_gradient_m3=1.5790415297963754e-13 exact_full_volume_m3=8.331106271561941e-14
+P10QI_ALGOIM_BUILD_BEGIN real_quartic=1 simplex=1
+P10QI_ALGOIM_BUILD_DONE
+P10QI_REAL_GRADIENT case=7 q=2 cut_gradient_m3=1.3244427865535375e-13 full_gradient_m3=1.5790415297963754e-13 exact_full_gradient_m3=1.5790415297963754e-13 full_gradient_rel=0 cut_volume_m3=6.91576362168175e-14 full_volume_rel=2.2119260210214482e-14 points=304 active=56 min_weight=1.6220073248929399e-40
+P10QI_REAL_GRADIENT case=7 q=3 cut_gradient_m3=1.3244550048386169e-13 full_gradient_m3=1.5790415297963759e-13 exact_full_gradient_m3=1.5790415297963754e-13 full_gradient_rel=3.1973255282687404e-16 cut_volume_m3=6.9157139115249306e-14 full_volume_rel=4.8480570323757768e-15 points=1029 active=189 min_weight=4.2738542539942687e-42
+P10QI_REAL_GRADIENT case=7 q=4 cut_gradient_m3=1.3244550070585876e-13 full_gradient_m3=1.5790415297963764e-13 exact_full_gradient_m3=1.5790415297963754e-13 full_gradient_rel=6.3946510565374807e-16 cut_volume_m3=6.915713897222664e-14 full_volume_rel=4.9995588146375197e-15 points=2456 active=446 min_weight=2.1440387049626414e-42
+P10QI_REAL_GRADIENT case=7 q=6 cut_gradient_m3=1.324455007058423e-13 full_gradient_m3=1.5790415297963756e-13 exact_full_gradient_m3=1.5790415297963754e-13 full_gradient_rel=1.5986627641343702e-16 cut_volume_m3=6.9157138972133252e-14 full_volume_rel=3.9390463388053181e-15 points=8274 active=1510 min_weight=9.5921875362451228e-44
+P10QI_REAL_GRADIENT case=7 q=8 cut_gradient_m3=1.324455007058421e-13 full_gradient_m3=1.5790415297963693e-13 exact_full_gradient_m3=1.5790415297963754e-13 full_gradient_rel=3.8367906339224882e-15 cut_volume_m3=6.9157138972133605e-14 full_volume_rel=3.3330392097583462e-15 points=19592 active=3589 min_weight=7.0678436175807679e-45
+P10QI_REAL_TET10_GRADIENT_ALGOIM_PASS
+

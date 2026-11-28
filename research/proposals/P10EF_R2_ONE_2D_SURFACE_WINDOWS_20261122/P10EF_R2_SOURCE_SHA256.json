@@ -1,0 +1,29 @@
+{
+  "revision": "P10EF_R2_ONE_NATIVE_2D_DELAUNAY5_PORE_SURFACE_ONLY",
+  "one_native_2d_max": 1,
+  "native_3d_allowed": false,
+  "physical_FEM": false,
+  "accepted_original_m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "historical_m2_sha256": "ba1f1a0553a568c1b399acadd52bce1c1dc32e8d1c6b3ab1ce6759c547e5dee5",
+  "gmsh_sha256": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "original_p10ef_r1_source_zip_sha256": "7f4910c4fdcf669a386d687fc0eccd110b963614aceaee2bcf712a945771823a",
+  "parent_p10ea_r1_zip_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+  "manual_phrase": "RUN ONE P10EF 2D SURFACE",
+  "native_max_wall_s": 120,
+  "private_max_bytes_polled": 2147483648,
+  "mesh_max_bytes": 26214400,
+  "gmsh_log_max_bytes": 4194304,
+  "mesh_algorithm_2d_candidate": 5,
+  "mesh_algorithm_2d_control": 6,
+  "files": {
+    "01_P10EF_R2_SAFE_PREFLIGHT_ONLY.cmd": "42afa890d07e8872e011bdee03d45a1f322b065da73ed3bcaeb8b54217e1237d",
+    "02_P10EF_R2_ONE_2D_SURFACE_ONLY.cmd": "91e3cbf9d4683a20560b952a7dd0dd912cece9beab1527630d95eb998ae9be3c",
+    "A_P10EA_EXACT_F6_ALG6_CONTROL.geo": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+    "B_P10EF_EXACT_F6_ALG5_SURFACE_ONLY.geo": "2765018d8ddd2e83f28bd60af7c87b65172ac5da8389ede187d8bb9eea9d74c5",
+    "P10DO_windows_guards.py": "4755b76f01938688d1adaab5492b709b7d7ecbe5b02904db63df1fb3894aedac",
+    "P10EF_R2_one_2d_surface.py": "23b5d9170135f435ae3b7d8041e576001a76740b77ac730a76bbf0f59a6afc8a",
+    "P10EF_R2_surface_qa.py": "fa5915dd13d18f7e2a03e84ff09d3be47a91a4d8e1afaec56a6cae001d806a2d",
+    "README_P10EF_R2_RU.md": "8e8cb92c27ce54694ee90fefb959f63e61050e96b9206d918aa66db2f99fb471",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}

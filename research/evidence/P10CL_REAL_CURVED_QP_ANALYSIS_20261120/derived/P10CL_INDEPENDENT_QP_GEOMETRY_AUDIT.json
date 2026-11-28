@@ -1,0 +1,268 @@
+{
+  "correlation": {
+    "H4W4B2": {
+      "spearman_abs_delta_bulk_vs_max_abs_J_ratio_minus_1": -0.009487737193429836,
+      "spearman_abs_delta_wall_vs_max_abs_J_ratio_minus_1": 0.06602715067876697,
+      "within_polar_band_rank_bulk": -0.0189577986062068,
+      "within_polar_band_rank_wall": 0.1223852911486448
+    },
+    "H4W4B20": {
+      "spearman_abs_delta_bulk_vs_max_abs_J_ratio_minus_1": -0.026738168454211356,
+      "spearman_abs_delta_wall_vs_max_abs_J_ratio_minus_1": 0.052727818195454884,
+      "within_polar_band_rank_bulk": -0.028524851899148433,
+      "within_polar_band_rank_wall": 0.12009185281889573
+    },
+    "H4W5B2": {
+      "spearman_abs_delta_bulk_vs_max_abs_J_ratio_minus_1": -0.033756843921098026,
+      "spearman_abs_delta_wall_vs_max_abs_J_ratio_minus_1": 0.04545713642841071,
+      "within_polar_band_rank_bulk": -0.020478363748086398,
+      "within_polar_band_rank_wall": 0.12775773771191687
+    }
+  },
+  "member_sha256": {
+    "P10CK_3MESH_SUMMARY.csv": "aa1be0895edeaacfaa262687f29db5b9695aefd16674deb32971dcef5f32b8b9",
+    "P10CK_630CELL_QP_GEOMETRY.csv": "89d328fd442c37a7b786f2c5c52c3eaea0ce1251c60b16cfb3787df6312961f2",
+    "P10CK_RESULT.txt": "1f3a10f8f49d573fa48f4f1039580e6b2bcd89c6ec1f5092466ceaa1fc766399"
+  },
+  "mesh": {
+    "H4W4B2": {
+      "candidate_min_detJ_m3": 2.2987838159712614e-14,
+      "candidate_tet10": 58503,
+      "groups": {
+        "0_100_mid": {
+          "max_abs_relative_J_deformation": 0.03968290356173276,
+          "max_sampled_J_over_corner": 1.0203795923838477,
+          "min_sampled_J_over_corner": 0.9603170964382672,
+          "n_cells": 168,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 168,
+          "qp_count": 1022470,
+          "qp_volume_m3": 1.1081806641221984e-09,
+          "unresolved_axis_qp": 0
+        },
+        "0_100_polar": {
+          "max_abs_relative_J_deformation": 0.040200864074500964,
+          "max_sampled_J_over_corner": 1.0173973634379812,
+          "min_sampled_J_over_corner": 0.959799135925499,
+          "n_cells": 42,
+          "nearaxis_rho_over_r_lt_0p1": 6568,
+          "phi_sector_coverage_12_cells": 42,
+          "qp_count": 265408,
+          "qp_volume_m3": 2.774539125228172e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_mid": {
+          "max_abs_relative_J_deformation": 0.03968290356173276,
+          "max_sampled_J_over_corner": 1.0203795923838477,
+          "min_sampled_J_over_corner": 0.9603170964382672,
+          "n_cells": 8,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 8,
+          "qp_count": 466308,
+          "qp_volume_m3": 2.0692048352661564e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_polar": {
+          "max_abs_relative_J_deformation": 0.040200864074500964,
+          "max_sampled_J_over_corner": 1.0173973634379812,
+          "min_sampled_J_over_corner": 0.959799135925499,
+          "n_cells": 2,
+          "nearaxis_rho_over_r_lt_0p1": 3125,
+          "phi_sector_coverage_12_cells": 2,
+          "qp_count": 121999,
+          "qp_volume_m3": 5.1646458411310824e-11,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_mid": {
+          "max_abs_relative_J_deformation": 0.019899180336789835,
+          "max_sampled_J_over_corner": 1.0112891164377256,
+          "min_sampled_J_over_corner": 0.9801008196632102,
+          "n_cells": 160,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 160,
+          "qp_count": 556162,
+          "qp_volume_m3": 9.012601805955828e-10,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_polar": {
+          "max_abs_relative_J_deformation": 0.021026532232255812,
+          "max_sampled_J_over_corner": 1.009803559163101,
+          "min_sampled_J_over_corner": 0.9789734677677442,
+          "n_cells": 40,
+          "nearaxis_rho_over_r_lt_0p1": 3443,
+          "phi_sector_coverage_12_cells": 40,
+          "qp_count": 143409,
+          "qp_volume_m3": 2.258074541115064e-10,
+          "unresolved_axis_qp": 0
+        }
+      },
+      "max_abs_p10ba_volume_diff_m3": 1.6963664905872638e-26,
+      "max_abs_rel_p10ba_volume": 3.1898764139097453e-15,
+      "sampled_candidate_qp": 1579581,
+      "source_nodes": 367823,
+      "source_tet10": 261091
+    },
+    "H4W4B20": {
+      "candidate_min_detJ_m3": 1.9548497506076585e-14,
+      "candidate_tet10": 58800,
+      "groups": {
+        "0_100_mid": {
+          "max_abs_relative_J_deformation": 0.043141036013756295,
+          "max_sampled_J_over_corner": 1.020448899500654,
+          "min_sampled_J_over_corner": 0.9568589639862437,
+          "n_cells": 168,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 168,
+          "qp_count": 1026085,
+          "qp_volume_m3": 1.1081012407281167e-09,
+          "unresolved_axis_qp": 0
+        },
+        "0_100_polar": {
+          "max_abs_relative_J_deformation": 0.03572466175106248,
+          "max_sampled_J_over_corner": 1.016684796652608,
+          "min_sampled_J_over_corner": 0.9642753382489375,
+          "n_cells": 42,
+          "nearaxis_rho_over_r_lt_0p1": 6936,
+          "phi_sector_coverage_12_cells": 42,
+          "qp_count": 266228,
+          "qp_volume_m3": 2.774588212474565e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_mid": {
+          "max_abs_relative_J_deformation": 0.043141036013756295,
+          "max_sampled_J_over_corner": 1.020448899500654,
+          "min_sampled_J_over_corner": 0.9568589639862437,
+          "n_cells": 8,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 8,
+          "qp_count": 465834,
+          "qp_volume_m3": 2.0608719354439882e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_polar": {
+          "max_abs_relative_J_deformation": 0.03572466175106248,
+          "max_sampled_J_over_corner": 1.016684796652608,
+          "min_sampled_J_over_corner": 0.9642753382489375,
+          "n_cells": 2,
+          "nearaxis_rho_over_r_lt_0p1": 3329,
+          "phi_sector_coverage_12_cells": 2,
+          "qp_count": 123212,
+          "qp_volume_m3": 5.162707308433374e-11,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_mid": {
+          "max_abs_relative_J_deformation": 0.019866610142229457,
+          "max_sampled_J_over_corner": 1.011331737162008,
+          "min_sampled_J_over_corner": 0.9801333898577705,
+          "n_cells": 160,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 160,
+          "qp_count": 560251,
+          "qp_volume_m3": 9.020140471837178e-10,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_polar": {
+          "max_abs_relative_J_deformation": 0.018504996858173417,
+          "max_sampled_J_over_corner": 1.0091883587020354,
+          "min_sampled_J_over_corner": 0.9814950031418266,
+          "n_cells": 40,
+          "nearaxis_rho_over_r_lt_0p1": 3607,
+          "phi_sector_coverage_12_cells": 40,
+          "qp_count": 143016,
+          "qp_volume_m3": 2.2583174816312277e-10,
+          "unresolved_axis_qp": 0
+        }
+      },
+      "max_abs_p10ba_volume_diff_m3": 1.7771458472818954e-26,
+      "max_abs_rel_p10ba_volume": 3.480174217637695e-15,
+      "sampled_candidate_qp": 1587600,
+      "source_nodes": 449522,
+      "source_tet10": 323052
+    },
+    "H4W5B2": {
+      "candidate_min_detJ_m3": 1.5002196659652786e-14,
+      "candidate_tet10": 72755,
+      "groups": {
+        "0_100_mid": {
+          "max_abs_relative_J_deformation": 0.03861829400070094,
+          "max_sampled_J_over_corner": 1.0205816748741336,
+          "min_sampled_J_over_corner": 0.9613817059992991,
+          "n_cells": 168,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 168,
+          "qp_count": 1314380,
+          "qp_volume_m3": 1.1087643179427545e-09,
+          "unresolved_axis_qp": 0
+        },
+        "0_100_polar": {
+          "max_abs_relative_J_deformation": 0.03735961735346727,
+          "max_sampled_J_over_corner": 1.0153652416544583,
+          "min_sampled_J_over_corner": 0.9626403826465327,
+          "n_cells": 42,
+          "nearaxis_rho_over_r_lt_0p1": 9411,
+          "phi_sector_coverage_12_cells": 42,
+          "qp_count": 347187,
+          "qp_volume_m3": 2.773517131397015e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_mid": {
+          "max_abs_relative_J_deformation": 0.03861829400070094,
+          "max_sampled_J_over_corner": 1.0205816748741336,
+          "min_sampled_J_over_corner": 0.9613817059992991,
+          "n_cells": 8,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 8,
+          "qp_count": 636166,
+          "qp_volume_m3": 2.0563331889926954e-10,
+          "unresolved_axis_qp": 0
+        },
+        "0_20_polar": {
+          "max_abs_relative_J_deformation": 0.03735961735346727,
+          "max_sampled_J_over_corner": 1.0153652416544583,
+          "min_sampled_J_over_corner": 0.9626403826465327,
+          "n_cells": 2,
+          "nearaxis_rho_over_r_lt_0p1": 4727,
+          "phi_sector_coverage_12_cells": 2,
+          "qp_count": 171651,
+          "qp_volume_m3": 5.1253725345959324e-11,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_mid": {
+          "max_abs_relative_J_deformation": 0.018229200815227498,
+          "max_sampled_J_over_corner": 1.011391109436249,
+          "min_sampled_J_over_corner": 0.9817707991847725,
+          "n_cells": 160,
+          "nearaxis_rho_over_r_lt_0p1": 0,
+          "phi_sector_coverage_12_cells": 160,
+          "qp_count": 678214,
+          "qp_volume_m3": 9.031309990434848e-10,
+          "unresolved_axis_qp": 0
+        },
+        "20_100_polar": {
+          "max_abs_relative_J_deformation": 0.021052589413110057,
+          "max_sampled_J_over_corner": 1.0084507693227525,
+          "min_sampled_J_over_corner": 0.9789474105868899,
+          "n_cells": 40,
+          "nearaxis_rho_over_r_lt_0p1": 4684,
+          "phi_sector_coverage_12_cells": 40,
+          "qp_count": 175536,
+          "qp_volume_m3": 2.2609798779374215e-10,
+          "unresolved_axis_qp": 0
+        }
+      },
+      "max_abs_p10ba_volume_diff_m3": 2.0194839173657902e-26,
+      "max_abs_rel_p10ba_volume": 3.0056277131793054e-15,
+      "sampled_candidate_qp": 1964385,
+      "source_nodes": 393998,
+      "source_tet10": 275549
+    }
+  },
+  "no_new_fem": true,
+  "no_new_mesh": true,
+  "p10ba_reference_0_to_20um": false,
+  "physical_phi_resolved_D_R_jpeak": false,
+  "protocol": "P10CL_INDEPENDENT_READ_ONLY_P10CK_R1",
+  "sampled_positive_is_global_J_proof": false,
+  "windows_wall_seconds": 60.125,
+  "zip_sha256": "b3091dc01f7b99d07336627c0ab4a662b258b68f20dd968a6819bd2c18805921"
+}

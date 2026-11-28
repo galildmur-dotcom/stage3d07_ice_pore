@@ -1,0 +1,1335 @@
+{
+  "protocol": "P10MY_READONLY_M13_BAD_TET10_LOCATOR_V1",
+  "status": "MEASURED_NO_MESH_NO_FEM",
+  "gmsh_version": "4.15.2",
+  "mesh_sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+  "Tet10": 18048,
+  "failed_element_count_unique": 2,
+  "counts_by_metric": {
+    "minSICN": {
+      "count_below_threshold": 1,
+      "minimum": 0.17776562112858055,
+      "threshold": 0.2,
+      "worst_element_tag": 13346
+    },
+    "minSJ": {
+      "count_below_threshold": 2,
+      "minimum": 0.32216307620215057,
+      "threshold": 0.4,
+      "worst_element_tag": 13346
+    },
+    "gamma": {
+      "count_below_threshold": 0,
+      "minimum": 0.23919585130994098,
+      "threshold": 0.15,
+      "worst_element_tag": 3891
+    },
+    "minDetJac": {
+      "count_below_threshold": 0,
+      "minimum": 1.5238275959171504e-13,
+      "threshold": 0.0,
+      "worst_element_tag": 10989
+    }
+  },
+  "reported_rows": 72,
+  "elements": [
+    {
+      "element_tag": 13346,
+      "centroid_m": [
+        -0.000782956876054811,
+        -5.0549484002440225e-05,
+        0.029348706359246208
+      ],
+      "wall_distance_mm": 0.019686288316533938,
+      "mu_cos_theta": -0.6387196221193224,
+      "polar_region": "other",
+      "below_threshold": true,
+      "quality": {
+        "minSICN": 0.17776562112858055,
+        "minSJ": 0.32216307620215057,
+        "gamma": 0.2666376971213764,
+        "minDetJac": 2.2805884912311694e-12
+      }
+    },
+    {
+      "element_tag": 9035,
+      "centroid_m": [
+        -8.156786627226068e-05,
+        0.0007834856105386019,
+        0.030652969340740733
+      ],
+      "wall_distance_mm": 0.023167620029408392,
+      "mu_cos_theta": 0.6381841332331901,
+      "polar_region": "other",
+      "below_threshold": true,
+      "quality": {
+        "minSICN": 0.25474222802372404,
+        "minSJ": 0.36687544388532517,
+        "gamma": 0.4575195668555358,
+        "minDetJac": 4.942799025492607e-12
+      }
+    },
+    {
+      "element_tag": 13799,
+      "centroid_m": [
+        0.0008098949283635894,
+        -0.00027138494137764386,
+        0.0306886357206032
+      ],
+      "wall_distance_mm": 0.09717762330732128,
+      "mu_cos_theta": 0.6276428774835795,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.27044651953258886,
+        "minSJ": 0.47448564831240275,
+        "gamma": 0.28116798660538256,
+        "minDetJac": 7.852236207291278e-12
+      }
+    },
+    {
+      "element_tag": 12120,
+      "centroid_m": [
+        0.0007953760129942261,
+        -0.0003578614770606253,
+        0.030557365806860616
+      ],
+      "wall_distance_mm": 0.035057718906530456,
+      "mu_cos_theta": 0.538487657914804,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.27683538836338734,
+        "minSJ": 0.5113421313704969,
+        "gamma": 0.3277123514054193,
+        "minDetJac": 1.3477013153437105e-11
+      }
+    },
+    {
+      "element_tag": 3483,
+      "centroid_m": [
+        -0.0019848812416831388,
+        0.00023074040549430133,
+        0.03675720491293669
+      ],
+      "wall_distance_mm": 6.046475212028286,
+      "mu_cos_theta": 0.9589482272501564,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3082299143557529,
+        "minSJ": 0.8173348855088995,
+        "gamma": 0.34529684622481505,
+        "minDetJac": 4.498023121942379e-09
+      }
+    },
+    {
+      "element_tag": 8231,
+      "centroid_m": [
+        0.00021640480260461532,
+        -0.0007441199991937472,
+        0.029252830437086173
+      ],
+      "wall_distance_mm": 0.07647943200754276,
+      "mu_cos_theta": -0.6940862414067844,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3198997407625729,
+        "minSJ": 0.783129067692984,
+        "gamma": 0.2980684100880413,
+        "minDetJac": 4.81300885959242e-12
+      }
+    },
+    {
+      "element_tag": 15793,
+      "centroid_m": [
+        -0.00020252577207908125,
+        0.0008804780694210578,
+        0.03070383419450642
+      ],
+      "wall_distance_mm": 0.14526891708636047,
+      "mu_cos_theta": 0.6145580169040319,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.32130779702141443,
+        "minSJ": 0.6687180262619583,
+        "gamma": 0.43193019540293953,
+        "minDetJac": 1.861161512552468e-11
+      }
+    },
+    {
+      "element_tag": 3832,
+      "centroid_m": [
+        -0.0021229506162987423,
+        0.00442297467324657,
+        0.03506599663790495
+      ],
+      "wall_distance_mm": 6.05222987534355,
+      "mu_cos_theta": 0.7183538721017887,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.32378811675002556,
+        "minSJ": 0.7772818740038554,
+        "gamma": 0.3302603240971545,
+        "minDetJac": 5.6091611880124035e-09
+      }
+    },
+    {
+      "element_tag": 6057,
+      "centroid_m": [
+        -0.004754135527168247,
+        0.003709746244290449,
+        0.033412794286157316
+      ],
+      "wall_distance_mm": 5.929010509974597,
+      "mu_cos_theta": 0.49253703414714967,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3268894790257628,
+        "minSJ": 0.7586601951706734,
+        "gamma": 0.37339350291851087,
+        "minDetJac": 5.606084048953418e-09
+      }
+    },
+    {
+      "element_tag": 9903,
+      "centroid_m": [
+        -0.0035337710864692764,
+        -0.0034305805646067562,
+        0.031365599941314486
+      ],
+      "wall_distance_mm": 4.110898580635502,
+      "mu_cos_theta": 0.2671937076757028,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3288414051996992,
+        "minSJ": 0.9614337973612618,
+        "gamma": 0.37798137882547905,
+        "minDetJac": 1.5984010972765255e-09
+      }
+    },
+    {
+      "element_tag": 5817,
+      "centroid_m": [
+        0.0004506226689888033,
+        -0.006277378712274668,
+        0.026902546801950512
+      ],
+      "wall_distance_mm": 6.0144679485498225,
+      "mu_cos_theta": -0.44158063316688995,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3305115503166388,
+        "minSJ": 0.7948826013407021,
+        "gamma": 0.3369523698292717,
+        "minDetJac": 7.442522973220012e-09
+      }
+    },
+    {
+      "element_tag": 14110,
+      "centroid_m": [
+        0.000159711200509863,
+        -0.0007160831439611558,
+        0.02928871948189467
+      ],
+      "wall_distance_mm": 0.02186237432923329,
+      "mu_cos_theta": -0.696062929777822,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.333125744001316,
+        "minSJ": 0.7664676154625991,
+        "gamma": 0.2454574643165254,
+        "minDetJac": 2.56357370174501e-12
+      }
+    },
+    {
+      "element_tag": 4559,
+      "centroid_m": [
+        -0.005701775865206978,
+        -0.000686272253388321,
+        0.024063785003693078
+      ],
+      "wall_distance_mm": 7.259531833294588,
+      "mu_cos_theta": -0.7187108320568171,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3341032290753903,
+        "minSJ": 0.8802796359765839,
+        "gamma": 0.382470242627838,
+        "minDetJac": 1.9670654655887982e-08
+      }
+    },
+    {
+      "element_tag": 8949,
+      "centroid_m": [
+        -0.0035907881982390117,
+        0.0031614393807851853,
+        0.03144690643994949
+      ],
+      "wall_distance_mm": 3.998199384674374,
+      "mu_cos_theta": 0.28948553840929964,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3368972206713813,
+        "minSJ": 0.9999999999999742,
+        "gamma": 0.35364773902491775,
+        "minDetJac": 1.7644579105104551e-09
+      }
+    },
+    {
+      "element_tag": 10323,
+      "centroid_m": [
+        -0.0002368770027568835,
+        -0.0011828030082992912,
+        0.027113649345191462
+      ],
+      "wall_distance_mm": 2.1282828793749786,
+      "mu_cos_theta": -0.9226629323832826,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.33904530778016034,
+        "minSJ": 0.9999999999998337,
+        "gamma": 0.3052743848247899,
+        "minDetJac": 2.447678623481468e-10
+      }
+    },
+    {
+      "element_tag": 11274,
+      "centroid_m": [
+        -0.0004718389441523595,
+        0.0001702338409082775,
+        0.029082164214162744
+      ],
+      "wall_distance_mm": 0.04596084036291234,
+      "mu_cos_theta": -0.8775049221907751,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3412876547971752,
+        "minSJ": 0.9349969331880446,
+        "gamma": 0.34504813315586996,
+        "minDetJac": 4.465201208250093e-13
+      }
+    },
+    {
+      "element_tag": 4720,
+      "centroid_m": [
+        -0.0068902134951662475,
+        0.0017485175097750815,
+        0.030460565305613
+      ],
+      "wall_distance_mm": 6.123515697441504,
+      "mu_cos_theta": 0.06465421361792145,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3442955646348951,
+        "minSJ": 0.9620033791582581,
+        "gamma": 0.34689981659802094,
+        "minDetJac": 4.964861021411341e-09
+      }
+    },
+    {
+      "element_tag": 6766,
+      "centroid_m": [
+        -0.0014088404831769097,
+        -0.0009355529573640901,
+        0.02507396245062803
+      ],
+      "wall_distance_mm": 4.2082565970671455,
+      "mu_cos_theta": -0.9458131444879082,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3445522491053805,
+        "minSJ": 0.9633657840060463,
+        "gamma": 0.3731213541233497,
+        "minDetJac": 1.0460947155480784e-09
+      }
+    },
+    {
+      "element_tag": 9340,
+      "centroid_m": [
+        0.0034971574850275935,
+        0.003458182828392176,
+        0.028593557323118707
+      ],
+      "wall_distance_mm": 4.115390498586012,
+      "mu_cos_theta": -0.2749433649826065,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3450771285329839,
+        "minSJ": 0.9222757360509855,
+        "gamma": 0.40151611301672807,
+        "minDetJac": 1.979336993775569e-09
+      }
+    },
+    {
+      "element_tag": 12019,
+      "centroid_m": [
+        0.0011036288474431505,
+        0.0002954716485820099,
+        0.031138483209381427
+      ],
+      "wall_distance_mm": 0.612899298179494,
+      "mu_cos_theta": 0.705861308679626,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.34861827992293326,
+        "minSJ": 0.9999999999997994,
+        "gamma": 0.3523067007963078,
+        "minDetJac": 9.896245174662639e-12
+      }
+    },
+    {
+      "element_tag": 3851,
+      "centroid_m": [
+        0.0012115755266593282,
+        -0.0012910247919811829,
+        0.036107480919284424
+      ],
+      "wall_distance_mm": 5.358929426384067,
+      "mu_cos_theta": 0.9604574150396531,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3572413699349363,
+        "minSJ": 0.6322009730640406,
+        "gamma": 0.3186896888877078,
+        "minDetJac": 1.696191870846485e-09
+      }
+    },
+    {
+      "element_tag": 12836,
+      "centroid_m": [
+        -0.0005505937219343459,
+        -0.0005247430739518344,
+        0.0306830528286055
+      ],
+      "wall_distance_mm": 0.022286607052988225,
+      "mu_cos_theta": 0.6681617697942661,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3653564821423511,
+        "minSJ": 0.526608048124565,
+        "gamma": 0.6235744909426217,
+        "minDetJac": 8.097805857217744e-12
+      }
+    },
+    {
+      "element_tag": 4855,
+      "centroid_m": [
+        -0.0029923137401076313,
+        0.005381801846347853,
+        0.031740675635351094
+      ],
+      "wall_distance_mm": 5.3990377636090745,
+      "mu_cos_theta": 0.2720214662976687,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3731541225822528,
+        "minSJ": 0.7424442650718445,
+        "gamma": 0.2747770554698686,
+        "minDetJac": 3.4267791298322495e-09
+      }
+    },
+    {
+      "element_tag": 12272,
+      "centroid_m": [
+        0.0002458028802562283,
+        0.0007655912992595187,
+        0.030644926098088127
+      ],
+      "wall_distance_mm": 0.03076610607805389,
+      "mu_cos_theta": 0.6256764694582342,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.37629463940436125,
+        "minSJ": 0.5159882035040562,
+        "gamma": 0.5588028420566836,
+        "minDetJac": 1.0605903174315129e-11
+      }
+    },
+    {
+      "element_tag": 3804,
+      "centroid_m": [
+        -0.0012718721229824292,
+        0.006239408526477095,
+        0.029045082494917253
+      ],
+      "wall_distance_mm": 5.4389242035458345,
+      "mu_cos_theta": -0.14830388973314595,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.39026018709796767,
+        "minSJ": 0.7597817469145972,
+        "gamma": 0.29030893017429193,
+        "minDetJac": 3.6953442433926793e-09
+      }
+    },
+    {
+      "element_tag": 3458,
+      "centroid_m": [
+        -0.0008847006993416113,
+        0.006206790108200311,
+        0.028483168401873697
+      ],
+      "wall_distance_mm": 5.450404395985043,
+      "mu_cos_theta": -0.2351529462354997,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3923179572077557,
+        "minSJ": 0.7422424822092704,
+        "gamma": 0.29795514589634103,
+        "minDetJac": 3.061213689544665e-09
+      }
+    },
+    {
+      "element_tag": 19706,
+      "centroid_m": [
+        -0.0007743028494330798,
+        0.00019402001197537516,
+        0.02924043031963387
+      ],
+      "wall_distance_mm": 0.10187783670360462,
+      "mu_cos_theta": -0.6893411003151406,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3946859533835405,
+        "minSJ": 0.8570162056427622,
+        "gamma": 0.27558127071661925,
+        "minDetJac": 6.522086054907792e-12
+      }
+    },
+    {
+      "element_tag": 2539,
+      "centroid_m": [
+        0.026627183040228996,
+        0.0022028410133512416,
+        0.014724901211165537
+      ],
+      "wall_distance_mm": 29.77642000292778,
+      "mu_cos_theta": -0.4963247443133845,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3992703059827429,
+        "minSJ": 0.9999999999999867,
+        "gamma": 0.2882449261712641,
+        "minDetJac": 2.4235308871440477e-07
+      }
+    },
+    {
+      "element_tag": 3677,
+      "centroid_m": [
+        0.002959032631014566,
+        -0.005807826323694103,
+        0.02807409716141242
+      ],
+      "wall_distance_mm": 5.796750875328803,
+      "mu_cos_theta": -0.2833563968893313,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.39940673442966956,
+        "minSJ": 0.9094000444300196,
+        "gamma": 0.29430630375549605,
+        "minDetJac": 5.647000777859802e-09
+      }
+    },
+    {
+      "element_tag": 14036,
+      "centroid_m": [
+        0.0006860199232975282,
+        9.734193377432457e-06,
+        0.029183676440290202
+      ],
+      "wall_distance_mm": 0.06634996310738882,
+      "mu_cos_theta": -0.7655306306111694,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.3997752067155279,
+        "minSJ": 0.9407215269743692,
+        "gamma": 0.2931434591729642,
+        "minDetJac": 1.013746224377719e-12
+      }
+    },
+    {
+      "element_tag": 16735,
+      "centroid_m": [
+        5.916451316797907e-05,
+        0.0009400225718734845,
+        0.030673699323921094
+      ],
+      "wall_distance_mm": 0.15802143948278627,
+      "mu_cos_theta": 0.5817675743740918,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.410948924879616,
+        "minSJ": 0.6488653797730106,
+        "gamma": 0.5139207681192145,
+        "minDetJac": 2.175267712283105e-11
+      }
+    },
+    {
+      "element_tag": 20493,
+      "centroid_m": [
+        0.00025011181896585094,
+        -0.0009186340628726846,
+        0.031057711247558545
+      ],
+      "wall_distance_mm": 0.42309435620700764,
+      "mu_cos_theta": 0.743247447328565,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4127128637926771,
+        "minSJ": 0.9999999999994842,
+        "gamma": 0.26645010351522125,
+        "minDetJac": 4.738825646081314e-12
+      }
+    },
+    {
+      "element_tag": 5432,
+      "centroid_m": [
+        -0.0025940708481570224,
+        0.0032457806822929025,
+        0.02508706756764491
+      ],
+      "wall_distance_mm": 5.434376495643564,
+      "mu_cos_theta": -0.7635444453213797,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4144138381185004,
+        "minSJ": 0.8584650726553216,
+        "gamma": 0.28190404903014105,
+        "minDetJac": 2.883381385981393e-09
+      }
+    },
+    {
+      "element_tag": 12698,
+      "centroid_m": [
+        -0.00024483962675972046,
+        -5.43807723488211e-05,
+        0.031004752232477267
+      ],
+      "wall_distance_mm": 0.03558232888609451,
+      "mu_cos_theta": 0.9702292173699134,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.418984314374196,
+        "minSJ": 0.9669304300232467,
+        "gamma": 0.35433479690861314,
+        "minDetJac": 1.591120657273115e-13
+      }
+    },
+    {
+      "element_tag": 20530,
+      "centroid_m": [
+        0.0008707843265842203,
+        -0.00035511465923035695,
+        0.03103880548453998
+      ],
+      "wall_distance_mm": 0.4012453744206871,
+      "mu_cos_theta": 0.7413444522301825,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4219110002224388,
+        "minSJ": 0.999999999999584,
+        "gamma": 0.28971101582489817,
+        "minDetJac": 7.633679377590121e-12
+      }
+    },
+    {
+      "element_tag": 12122,
+      "centroid_m": [
+        0.000700723368835471,
+        -0.00046223055344818637,
+        0.03061873472248377
+      ],
+      "wall_distance_mm": 0.04283411000034722,
+      "mu_cos_theta": 0.5933203723874778,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.42214749130526397,
+        "minSJ": 0.568298801447355,
+        "gamma": 0.5043350143977718,
+        "minDetJac": 1.4535334428259279e-11
+      }
+    },
+    {
+      "element_tag": 3204,
+      "centroid_m": [
+        -0.00013818982928856397,
+        0.00013920896940147298,
+        0.023559627509547917
+      ],
+      "wall_distance_mm": 5.443358858689509,
+      "mu_cos_theta": -0.9995365199575373,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4312405652020147,
+        "minSJ": 0.8998136303869069,
+        "gamma": 0.2715285902927827,
+        "minDetJac": 3.8022423112573485e-09
+      }
+    },
+    {
+      "element_tag": 20245,
+      "centroid_m": [
+        0.0008098307704535791,
+        -0.0004387657232211856,
+        0.031332495002923386
+      ],
+      "wall_distance_mm": 0.6198407852202772,
+      "mu_cos_theta": 0.8226086261571595,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.43510756825504293,
+        "minSJ": 0.9999999999993168,
+        "gamma": 0.2456624451501497,
+        "minDetJac": 8.63260867115021e-12
+      }
+    },
+    {
+      "element_tag": 12648,
+      "centroid_m": [
+        -0.0009989223499252391,
+        -0.000342616640436511,
+        0.029890225259749537
+      ],
+      "wall_distance_mm": 0.06173561543409652,
+      "mu_cos_theta": -0.10339178478587589,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.44646341303206877,
+        "minSJ": 0.5224918306293157,
+        "gamma": 0.6036769636439526,
+        "minDetJac": 3.599693038917726e-11
+      }
+    },
+    {
+      "element_tag": 16018,
+      "centroid_m": [
+        -0.0008100916002455764,
+        0.00025835567078641214,
+        0.02914169302045373
+      ],
+      "wall_distance_mm": 0.20817503887217317,
+      "mu_cos_theta": -0.7104160837054674,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.44722508761546353,
+        "minSJ": 0.9999999999998938,
+        "gamma": 0.2887703705531469,
+        "minDetJac": 7.52567821352409e-12
+      }
+    },
+    {
+      "element_tag": 4561,
+      "centroid_m": [
+        0.0015042069284456983,
+        -0.000921107511080164,
+        0.03610228682517274
+      ],
+      "wall_distance_mm": 5.352084856740277,
+      "mu_cos_theta": 0.9606746387680146,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4542366368450177,
+        "minSJ": 0.643033671582895,
+        "gamma": 0.3963697767780482,
+        "minDetJac": 2.6666926941635874e-09
+      }
+    },
+    {
+      "element_tag": 18382,
+      "centroid_m": [
+        0.0008059651753210936,
+        -0.00017559773064853868,
+        0.03062469420387389
+      ],
+      "wall_distance_mm": 0.03472570046022996,
+      "mu_cos_theta": 0.6037292816792293,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.45761092433775685,
+        "minSJ": 0.5501704858919068,
+        "gamma": 0.6042502125296284,
+        "minDetJac": 1.1309703897105984e-11
+      }
+    },
+    {
+      "element_tag": 9250,
+      "centroid_m": [
+        0.0008747992749376381,
+        0.0003732039806674392,
+        0.02646330179674508
+      ],
+      "wall_distance_mm": 2.662347493551643,
+      "mu_cos_theta": -0.9656915979387652,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.47117232959832334,
+        "minSJ": 0.9999999999998637,
+        "gamma": 0.2753443942361598,
+        "minDetJac": 5.276896684033176e-10
+      }
+    },
+    {
+      "element_tag": 3891,
+      "centroid_m": [
+        -0.00932934156930517,
+        0.003941099554350704,
+        0.03089122678328247
+      ],
+      "wall_distance_mm": 9.166767676764765,
+      "mu_cos_theta": 0.08766077986804902,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4726148664423809,
+        "minSJ": 0.9999999999999838,
+        "gamma": 0.23919585130994098,
+        "minDetJac": 3.3039241910701505e-08
+      }
+    },
+    {
+      "element_tag": 19986,
+      "centroid_m": [
+        0.0009282632328622689,
+        1.6854779179213018e-05,
+        0.03107167148747871
+      ],
+      "wall_distance_mm": 0.4178986177226923,
+      "mu_cos_theta": 0.7558167234833314,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.47282572495458136,
+        "minSJ": 0.999999999999522,
+        "gamma": 0.27244767239705237,
+        "minDetJac": 5.1596575808698676e-12
+      }
+    },
+    {
+      "element_tag": 6828,
+      "centroid_m": [
+        -0.00013525857358425095,
+        0.0007846144525257384,
+        0.029339931245628885
+      ],
+      "wall_distance_mm": 0.03421732790421985,
+      "mu_cos_theta": -0.6382302216002358,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.48066724063405825,
+        "minSJ": 0.6477082435885416,
+        "gamma": 0.4398867248630896,
+        "minDetJac": 5.245769350377393e-12
+      }
+    },
+    {
+      "element_tag": 15197,
+      "centroid_m": [
+        0.0002049558182661864,
+        0.00033311944618930793,
+        0.028435107050051464
+      ],
+      "wall_distance_mm": 0.6130298812078036,
+      "mu_cos_theta": -0.9701574460460554,
+      "polar_region": "south",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.48286629432778333,
+        "minSJ": 0.9999999999992439,
+        "gamma": 0.2874020686748066,
+        "minDetJac": 6.277028797878069e-12
+      }
+    },
+    {
+      "element_tag": 10865,
+      "centroid_m": [
+        -0.00016859838451846183,
+        0.0010114049800915527,
+        0.02973518623638496
+      ],
+      "wall_distance_mm": 0.05900508894725819,
+      "mu_cos_theta": -0.2500590095164566,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.48307058639493605,
+        "minSJ": 0.6109434934629001,
+        "gamma": 0.6580370156586527,
+        "minDetJac": 3.8500547876304835e-11
+      }
+    },
+    {
+      "element_tag": 10185,
+      "centroid_m": [
+        -0.0005798979227261943,
+        0.0006630471753516357,
+        0.030583133341429345
+      ],
+      "wall_distance_mm": 0.05638896785724345,
+      "mu_cos_theta": 0.5520062772069281,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.4832179684337157,
+        "minSJ": 0.5735305085299347,
+        "gamma": 0.6301165582756192,
+        "minDetJac": 3.015068521582443e-11
+      }
+    },
+    {
+      "element_tag": 16730,
+      "centroid_m": [
+        -2.2475026378061232e-05,
+        0.0008366752212702305,
+        0.030705110243496238
+      ],
+      "wall_distance_mm": 0.09439983926424664,
+      "mu_cos_theta": 0.6442894253075522,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.49837147861799597,
+        "minSJ": 0.6352821351223172,
+        "gamma": 0.5207168767734601,
+        "minDetJac": 1.3199421754263038e-11
+      }
+    },
+    {
+      "element_tag": 8618,
+      "centroid_m": [
+        -0.0010483955122717087,
+        6.272321359571051e-06,
+        0.029715446230475423
+      ],
+      "wall_distance_mm": 0.08634402466131393,
+      "mu_cos_theta": -0.2619370687966828,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.5299337376562188,
+        "minSJ": 0.625535847621059,
+        "gamma": 0.5812744926392404,
+        "minDetJac": 4.789286878434308e-11
+      }
+    },
+    {
+      "element_tag": 7225,
+      "centroid_m": [
+        0.00018582197435271897,
+        -7.82375357787452e-05,
+        0.030996281229643607
+      ],
+      "wall_distance_mm": 0.016477843682415148,
+      "mu_cos_theta": 0.9801307877349883,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.544335297547025,
+        "minSJ": 0.9464732340470322,
+        "gamma": 0.3886621318639437,
+        "minDetJac": 2.2343205502181008e-13
+      }
+    },
+    {
+      "element_tag": 15579,
+      "centroid_m": [
+        -0.00031201343379097697,
+        0.0009913120093337515,
+        0.030211572106644668
+      ],
+      "wall_distance_mm": 0.060572788178830855,
+      "mu_cos_theta": 0.19948853016299928,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.5472233211039741,
+        "minSJ": 0.6547946694027337,
+        "gamma": 0.7128378021959649,
+        "minDetJac": 3.6286445160586506e-11
+      }
+    },
+    {
+      "element_tag": 7857,
+      "centroid_m": [
+        -0.0004100131675575887,
+        5.3294767027455055e-05,
+        0.030929319121033742
+      ],
+      "wall_distance_mm": 0.017145593551900214,
+      "mu_cos_theta": 0.9136539812245911,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.5786183776608081,
+        "minSJ": 0.9487863370798072,
+        "gamma": 0.4448817701287679,
+        "minDetJac": 2.0319682846771649e-13
+      }
+    },
+    {
+      "element_tag": 6281,
+      "centroid_m": [
+        -0.00044211021330067433,
+        1.8451015266892653e-05,
+        0.030914701003911905
+      ],
+      "wall_distance_mm": 0.01611013538227999,
+      "mu_cos_theta": 0.9001986812854474,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.5806854089350154,
+        "minSJ": 0.9444200530838525,
+        "gamma": 0.4302949367757132,
+        "minDetJac": 2.0484120432275498e-13
+      }
+    },
+    {
+      "element_tag": 10181,
+      "centroid_m": [
+        -0.00011017161059508885,
+        -0.0010412732420178716,
+        0.03020689661596549
+      ],
+      "wall_distance_mm": 0.06733029471738353,
+      "mu_cos_theta": 0.19384497656395647,
+      "polar_region": "other",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.591181119807598,
+        "minSJ": 0.6515052623856441,
+        "gamma": 0.7259229212480193,
+        "minDetJac": 4.422220931327779e-11
+      }
+    },
+    {
+      "element_tag": 13833,
+      "centroid_m": [
+        0.0001940319535062451,
+        -0.00010555924626461273,
+        0.030992520966689932
+      ],
+      "wall_distance_mm": 0.016803335346871277,
+      "mu_cos_theta": 0.976118913252134,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6157833416764454,
+        "minSJ": 0.9532037481588804,
+        "gamma": 0.4576950364203444,
+        "minDetJac": 1.9222680405578398e-13
+      }
+    },
+    {
+      "element_tag": 10223,
+      "centroid_m": [
+        -0.00047508134049863474,
+        -0.0002249176198801273,
+        0.030869358971848483
+      ],
+      "wall_distance_mm": 0.01591103830796852,
+      "mu_cos_theta": 0.8557432088703639,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6203754716761016,
+        "minSJ": 0.9363578402635114,
+        "gamma": 0.4612641661802712,
+        "minDetJac": 2.3103166804334e-13
+      }
+    },
+    {
+      "element_tag": 8104,
+      "centroid_m": [
+        -0.00049856718725415,
+        8.279648955018206e-05,
+        0.030881892441951112
+      ],
+      "wall_distance_mm": 0.016444183444839187,
+      "mu_cos_theta": 0.8676250563629421,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6276647191429419,
+        "minSJ": 0.971386573787269,
+        "gamma": 0.5204773700108807,
+        "minDetJac": 1.675207016439396e-13
+      }
+    },
+    {
+      "element_tag": 10989,
+      "centroid_m": [
+        -0.0004737370467830731,
+        8.445811526331435e-05,
+        0.030895411527059834
+      ],
+      "wall_distance_mm": 0.016524355596168362,
+      "mu_cos_theta": 0.8808559501111973,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6406681070190703,
+        "minSJ": 0.9771238810233162,
+        "gamma": 0.5290478228853448,
+        "minDetJac": 1.5238275959171504e-13
+      }
+    },
+    {
+      "element_tag": 13844,
+      "centroid_m": [
+        0.00022039371388802166,
+        -0.00014730654343827343,
+        0.030981469852791453
+      ],
+      "wall_distance_mm": 0.01663940450858281,
+      "mu_cos_theta": 0.9654060706665913,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6448586197455735,
+        "minSJ": 0.9353917529574598,
+        "gamma": 0.47581007369072037,
+        "minDetJac": 2.3148056830869487e-13
+      }
+    },
+    {
+      "element_tag": 10579,
+      "centroid_m": [
+        -0.00030992862401265384,
+        -0.0002212497060881345,
+        0.030943195629511963
+      ],
+      "wall_distance_mm": 0.017165266786540102,
+      "mu_cos_theta": 0.9272786441988301,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.6863580758002583,
+        "minSJ": 0.9583268280564324,
+        "gamma": 0.5514783194679959,
+        "minDetJac": 2.2445497345175545e-13
+      }
+    },
+    {
+      "element_tag": 8398,
+      "centroid_m": [
+        -0.0002934470027636213,
+        -7.426543455901958e-05,
+        0.03097166656025674
+      ],
+      "wall_distance_mm": 0.017724128888746242,
+      "mu_cos_theta": 0.9547445448873294,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7273174844036088,
+        "minSJ": 0.9694358257556851,
+        "gamma": 0.7221765408414456,
+        "minDetJac": 1.9829573617432724e-13
+      }
+    },
+    {
+      "element_tag": 12125,
+      "centroid_m": [
+        0.00021904786163860312,
+        -0.00011775708649623605,
+        0.030986161885184417
+      ],
+      "wall_distance_mm": 0.017036853264920746,
+      "mu_cos_theta": 0.9696422327456602,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7377954239363967,
+        "minSJ": 0.9653065794634956,
+        "gamma": 0.7315965831877265,
+        "minDetJac": 2.0411393606685885e-13
+      }
+    },
+    {
+      "element_tag": 10164,
+      "centroid_m": [
+        -0.00022898736163688252,
+        2.5749656401543407e-05,
+        0.03099082917190734
+      ],
+      "wall_distance_mm": 0.017271204987541824,
+      "mu_cos_theta": 0.974006899093812,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7424099651922719,
+        "minSJ": 0.9611689729039675,
+        "gamma": 0.6402002858985258,
+        "minDetJac": 2.2552033130400572e-13
+      }
+    },
+    {
+      "element_tag": 8404,
+      "centroid_m": [
+        -0.00044580761831453867,
+        0.00011781686041085268,
+        0.030906966107766665
+      ],
+      "wall_distance_mm": 0.01745406077216429,
+      "mu_cos_theta": 0.8914074283396665,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7466454931460247,
+        "minSJ": 0.963142765247507,
+        "gamma": 0.6442647111199433,
+        "minDetJac": 1.976800248438402e-13
+      }
+    },
+    {
+      "element_tag": 7530,
+      "centroid_m": [
+        -0.0004203902516213547,
+        7.592029907178867e-05,
+        0.030923415583071344
+      ],
+      "wall_distance_mm": 0.01744198582936799,
+      "mu_cos_theta": 0.9075854898189823,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7755194748700596,
+        "minSJ": 0.9680438180022704,
+        "gamma": 0.7318719567446627,
+        "minDetJac": 2.272593833919312e-13
+      }
+    },
+    {
+      "element_tag": 6350,
+      "centroid_m": [
+        -0.00046235940666669746,
+        6.528178701958047e-05,
+        0.03090298611099056
+      ],
+      "wall_distance_mm": 0.01657358282197642,
+      "mu_cos_theta": 0.888264387594945,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.7902696786819391,
+        "minSJ": 0.9671700581772066,
+        "gamma": 0.7359003411890954,
+        "minDetJac": 1.8525810077670227e-13
+      }
+    },
+    {
+      "element_tag": 12688,
+      "centroid_m": [
+        -0.00025492363374609786,
+        -6.192934499390306e-05,
+        0.03098336887349621
+      ],
+      "wall_distance_mm": 0.017760111310566144,
+      "mu_cos_theta": 0.9662088959547949,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.8161460210742837,
+        "minSJ": 0.972900149411861,
+        "gamma": 0.8108279864385051,
+        "minDetJac": 2.1855126151095988e-13
+      }
+    },
+    {
+      "element_tag": 12683,
+      "centroid_m": [
+        -0.00021023560853982207,
+        -2.2575101564700165e-05,
+        0.030995121534434268
+      ],
+      "wall_distance_mm": 0.017337463481798814,
+      "mu_cos_theta": 0.9781626747809951,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.8167453166220178,
+        "minSJ": 0.9603890126152894,
+        "gamma": 0.7458698410457973,
+        "minDetJac": 2.36910843587319e-13
+      }
+    },
+    {
+      "element_tag": 10583,
+      "centroid_m": [
+        -0.0003367551595578096,
+        -0.00021282009230784622,
+        0.030936185990083034
+      ],
+      "wall_distance_mm": 0.01741861453704468,
+      "mu_cos_theta": 0.9201581106406507,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.8329928897408175,
+        "minSJ": 0.9696781170358161,
+        "gamma": 0.7968925105742709,
+        "minDetJac": 2.1442434849869758e-13
+      }
+    },
+    {
+      "element_tag": 12682,
+      "centroid_m": [
+        -0.00023357834337019092,
+        -8.387234879136448e-07,
+        0.03099028568313205
+      ],
+      "wall_distance_mm": 0.01746021060529228,
+      "mu_cos_theta": 0.9732918032666117,
+      "polar_region": "north",
+      "below_threshold": false,
+      "quality": {
+        "minSICN": 0.8779066064516123,
+        "minSJ": 0.9716930294688203,
+        "gamma": 0.8460679311835997,
+        "minDetJac": 2.248582744050492e-13
+      }
+    }
+  ],
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}

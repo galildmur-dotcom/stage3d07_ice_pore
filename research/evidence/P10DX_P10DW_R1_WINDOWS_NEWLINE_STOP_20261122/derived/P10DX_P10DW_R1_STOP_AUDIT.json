@@ -1,0 +1,23 @@
+{
+  "original_zip_sha256": "d173de50c73167e3badbfe42c3fabb87b2ad345ac47f44623585a7da16655acc",
+  "zip_members": 6,
+  "status": "P10DW_STOP_NO_FEM",
+  "reason": "P10DW_STOP: generated inline candidate altered",
+  "native_gmsh_parse_attempts": 0,
+  "native_gmsh_1d_attempts": 0,
+  "native_gmsh_2d_3d_attempts": 0,
+  "physical_FEM_attempts": 0,
+  "original_published_geo_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "windows_generated_geo_sha256": "af8411f8deccd14b1905809b5a2e6ca04b9671789101acbc8b8233d89d10654a",
+  "windows_crlf_to_lf_geo_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "windows_crlf_count": 15,
+  "windows_geo_matches_published_after_only_crlf_normalization": true,
+  "cad_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "baseline_matches_pinned_source_after_crlf_normalization": true,
+  "original_m1_hash_passed_by_control_flow": "INFERRED_NOT_IN_STOP_MANIFEST",
+  "gmsh_executable_hash_version_passed_by_control_flow": "INFERRED_NOT_IN_STOP_MANIFEST",
+  "independent_native_gmsh_execution": false,
+  "root_cause": "Path.write_text newline=None on Windows writes CRLF, then byte SHA expects LF",
+  "required_fix": "write_bytes(UTF8) for generated GEO, keep original P10DV SHA; new R2 ZIP only",
+  "independent_negative_tamper_tests": 4
+}

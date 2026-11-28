@@ -1,0 +1,15 @@
+# P10KJ — M7 R2 full signed4D FEM, SOURCE-ONLY PREPARED (2026-11-25)
+
+**Status: PREPARED, FEM attempts=0; no M7 FEM result yet.**
+
+The independently accepted M7 R2 geometry from P10KI is immutable: M7.msh SHA256 `875c9177de24612d0078f7a792b4b7641a2e604973cb1353500710c87693bb3d`, 17558 nodes, 12001 Tet10, 592 pore Tri6. P10KI acceptance passport SHA256 `87c08dbdae1e84b5d55cd5b72058743d34974f7c06252ded5309151590e257f7`. Independently checked on the prepared package: all 101 native source files match pinned source manifest `dc3f1b8d3fef2c7c0982b319225c3046c10567a7d4630649df34ae1f222214fc`; curved 27QP mesh preflight PASS. Python syntax compile PASS. Native Windows execution remains untested in this stage.
+
+User deliverable: `P10KJ_M7_R2_FULL4D_WINDOWS_ONE_SHOT_PREPARED_20261125.zip`, SHA256 `bdab5b59355e247249c5261c301bddebf70cc24d04f12776841a3b10896b251a` (1,996,556 bytes, ZIP CRC PASS). Stored as a user downloadable Library artifact.
+
+1. Unzip into a new Windows folder, preserving subfolders. Run `01_P10KJ_M7_PREFLIGHT_AND_WINDOWS_WATCHDOG_TEST.cmd`. The 65 s real Windows silent-child test must PASS and produce independent stdout and persisted progress lines at 15 s intervals. No compilation, no FEM, no one-shot FEM marker in this stage.
+2. After PASS run **once** `02_P10KJ_ONE_M7_FIRST_FULL4D_FEM.cmd`. Runs R/EDV_VAR/xi=0/B6=5 mm, 900 s physical time as **36 × 25 s**, four requested OpenMP threads, fresh same-M7 forward and analytic adjoint, central geometry FD=0, signed 4D. Native FEM wall cap 2400 s, private RAM cap 8 GiB, output cap 2 GiB.
+3. Distinct M7 FEM one-shot marker is consumed *before* native FEM. **Never repeat** the same marked attempt or already consumed M6 FEM/old mesh. The expected artifact is `P10KJ_M7_FIRST_FULL4D_EVIDENCE.zip` in a new LOCAL_RUNS/P10KJ_M7_R_DT25... directory. Return it for independent P10KK M7−M6 signed4D per-bin/time and cancellation assessment.
+
+Progress: independently printed and persisted 15 s heartbeat, even if native solver is silent. The monitoring loop additionally samples Windows `GetProcessTimes` CPU kernel+user seconds, equivalent average occupied logical CPUs (`CPU_s/wall_s`) and host logical CPU fraction, plus coarse forward/adjoint steps observed in native stdout. These are approximate external measurements, not a per-thread bottleneck proof. CPU telemetry is best-effort and cannot cancel the physical experiment. Source of solver and physical parameters unchanged. Full `P10KJ_CPU_TELEMETRY` is included in P10KJ manifest.
+
+**Scientific gate remains open:** small global Δ(M6−M5) previously occurred with strong signed 4D cancellation. Do not claim spatial convergence unless new M7 FEM full 4D audit passes and polar/nonpolar compensation is assessed. User self-runs Windows binaries; standing permission avoids repeated confirmations.

@@ -1,0 +1,58 @@
+{
+  "protocol": "P10NV_M13_OPTIMIZED_IN_MEMORY_GEOMETRY_PASSPORT",
+  "date": "2026-11-26",
+  "research_branch": "research/p10bb-w5b2-20261118",
+  "source_mesh": {
+    "name": "P10NA_M13_R2_CANDIDATE_UNVERIFIED.msh",
+    "sha256": "57403ba43fa299417d519046cebdf50fa4968b670c071a8b7882748b50f51e9c",
+    "tet10": 18004,
+    "nodes": 26099
+  },
+  "optimizer": {
+    "name": "Gmsh HighOrderElastic",
+    "gmsh_version": "4.15.2",
+    "fix_boundary_nodes": 1,
+    "iter_max": 50,
+    "pass_max": 5,
+    "num_layers": 2,
+    "mesh_saved": false,
+    "optimized_mesh_sha256": null
+  },
+  "primary_evidence_sha256": {
+    "P10NU_M13_CANONICAL_QUALITY_RESULT.json": "12f122c26d2b6e607b32a7f62ef0a74a60396cbcbc760a47f29fea0c36914d1c",
+    "P10NU_GMSH_QUALITY_LOG.txt": "8203fc9560c851d8f3bd38d4a0e5ea8efd1745e1456adc1131b397c327bba897",
+    "P10NT_VOLUME_GRAPH_CORRESPONDENCE_RESULT.json": "924f46d2ecdb7a41a16a60ae8e504dafbab70c40b32a7cac690c56c765c42bfd",
+    "P10NS_VOLUME_TOPOLOGY_QUALITY_RESULT_R2.json": "1d4c8907faafe961d9c0c8a5d92d5b874b7a057546e03b1413b8c789693502c0",
+    "P10NR_COORDINATE_TOPOLOGY_RESULT.json": "5d8e18ca373e2bfbc5831cf6031c3b5451376b7155eb90747ade4373e8113a9c"
+  },
+  "geometry_evidence": {
+    "boundary_point_cloud_hausdorff_mm": 0.0,
+    "boundary_tri6_preserved": true,
+    "boundary_tri6_count": 2512,
+    "unique_corner_bijection": 3509,
+    "tet10_vertex_topology_preserved": true,
+    "matched_tet10": 18004,
+    "tet10_edge_association_mismatches": 0,
+    "corner_max_displacement_mm": 0.07837344249249029,
+    "mid_edge_max_displacement_mm": 0.0965342014199665,
+    "sampled_detJ_729_before_min": 1.6521875341449308e-13,
+    "sampled_detJ_729_after_min": 1.7449190754792124e-13,
+    "sampled_detJ_729_after_nonpositive": 0
+  },
+  "canonical_D031": {
+    "minSICN": {"threshold": 0.20, "before": 0.16294478890105799, "after": 0.3177166281753681, "pass": true},
+    "minSJ": {"threshold": 0.40, "before": 0.28115937433961596, "after": 0.6418251241754456, "pass": true},
+    "gamma": {"threshold": 0.15, "before": 0.24272495924632292, "after": 0.24465223465436697, "pass": true},
+    "minDetJac": {"threshold_strict": 0.0, "before": 1.6517904678607355e-13, "after": 1.744892546453705e-13, "pass": true},
+    "after_below_gate_element_count": 0,
+    "all_pass": true
+  },
+  "disposition": "GEOMETRY_GO_IN_MEMORY_ONLY_NO_PRODUCTION_MSH",
+  "limitations": [
+    "Optimized mesh has not been serialized and reimported; no accepted optimized .msh SHA exists.",
+    "This is no FEM authorization and no proof of spatial convergence or rheological accuracy.",
+    "Next stage must materialize optimized mesh in a separate bounded one-shot and rerun SHA-pinned geometry acceptance on the written file."
+  ],
+  "FEM_attempts": 0,
+  "M13_R3_mesh_generation_attempts": 0
+}

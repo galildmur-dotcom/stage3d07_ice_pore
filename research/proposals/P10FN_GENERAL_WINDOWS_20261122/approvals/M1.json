@@ -1,0 +1,7 @@
+{
+  "mesh": "M1",
+  "mesh_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "status": "RESEARCHER_APPROVED_FOR_PHYSICS",
+  "basis": "P10DJ D-019 accepted original P10DG M1; native P10DL P10DM physical evidence",
+  "regime": {"steps": 6, "dt": 150, "cutoff_mm": 5, "threads": 4, "law": "EDV_VAR", "xi": 0, "B6_mm": 5}
+}

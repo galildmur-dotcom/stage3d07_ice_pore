@@ -1,0 +1,504 @@
+{
+  "protocol": "P10EE_PORE_TRI6_SURFACE_VS_VOLUME_SOURCE_ONLY",
+  "source": {
+    "source_archive_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+    "background_field_final": "Field[6] MathEval(F2 * (1-0.20*kappa)^(1/3))",
+    "scope": "one Background Field=6 for entire meshing request, no separate 3D-only field",
+    "F2_distance_source": "CAD Physical pore surface, Distance + Threshold, nearSize within 1.5mm",
+    "F2_near_size_mm": 0.42855883184652976,
+    "F6_polar_surface_target_size_mm": 0.39783877768899784,
+    "target_volume_ratio_polar": 0.8,
+    "target_surface_edge_ratio_polar": 0.9283177667225558,
+    "target_surface_element_area_ratio_polar": 0.8617738760127536,
+    "mesh_size_from_points": false,
+    "mesh_size_from_curvature": false,
+    "extend_sizes_from_boundary": false,
+    "algorithm_3d": 10
+  },
+  "m1_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "m2_sha256": "ba1f1a0553a568c1b399acadd52bce1c1dc32e8d1c6b3ab1ce6759c547e5dee5",
+  "no_gmsh_no_fem_no_marker": true,
+  "mesh_field_source_scope": "Global Background Field=6 used by regular Gmsh 1D, 2D and 3D generation; source has no explicit surface-only stage",
+  "surface_spatial_qp_quadrature_sensitivity": {
+    "3": {
+      "M1": {
+        "tri6": 178,
+        "surface_quadrature_order": 3,
+        "curved_full_pore_area_m2": 1.2562187646542587e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.0003328700024018971,
+        "max_quadratic_surface_interior_radial_deviation_m": 5.592170373241133e-07,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.289056164539501e-06,
+            "fractional_surface_tri6": 18.942260687294056,
+            "effective_curved_Tri6_area_m2": 6.805186486553657e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2583024138456193e-06,
+            "fractional_surface_tri6": 19.18695561011262,
+            "effective_curved_Tri6_area_m2": 6.558113957288889e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5473585783851203e-06,
+            "fractional_surface_tri6": 38.12921629740667,
+            "effective_curved_Tri6_area_m2": 6.680857425748813e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0014829068157465e-05,
+            "fractional_surface_tri6": 139.87078370259331,
+            "effective_curved_Tri6_area_m2": 7.160057878457274e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403210756
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403225616
+          }
+        }
+      },
+      "M2": {
+        "tri6": 170,
+        "surface_quadrature_order": 3,
+        "curved_full_pore_area_m2": 1.2561692935696551e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.0003722378406757487,
+        "max_quadratic_surface_interior_radial_deviation_m": 1.0812937546991665e-06,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.263430350860501e-06,
+            "fractional_surface_tri6": 17.265475643617812,
+            "effective_curved_Tri6_area_m2": 7.317668953577473e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2448208044508142e-06,
+            "fractional_surface_tri6": 18.32670083806866,
+            "effective_curved_Tri6_area_m2": 6.792388959965139e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5082511553113152e-06,
+            "fractional_surface_tri6": 35.59217648168648,
+            "effective_curved_Tri6_area_m2": 7.047198017243777e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0053441780385237e-05,
+            "fractional_surface_tri6": 134.40782351831353,
+            "effective_curved_Tri6_area_m2": 7.479804015288902e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 18,
+            "median_surface_corner_edge_length_mm": 0.3855078072036565
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.37743702596183565
+          }
+        }
+      },
+      "comparison": {
+        "north": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0753076301489208,
+          "m2_over_m1_qp_region_area": 0.9801204832000827,
+          "m1_qp_vs_analytic_area": 0.02579830254770621,
+          "m2_qp_vs_analytic_area": 0.005405927958882284
+        },
+        "south": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.035722923420059,
+          "m2_over_m1_qp_region_area": 0.9892858749641887,
+          "m1_qp_vs_analytic_area": 0.0013252453399708042,
+          "m2_qp_vs_analytic_area": -0.009403078540116128
+        },
+        "both_poles": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0548343675293899,
+          "m2_over_m1_qp_region_area": 0.9846478531112032,
+          "m1_qp_vs_analytic_area": 0.013561773943838507,
+          "m2_qp_vs_analytic_area": -0.0019985752906168663
+        },
+        "nonpolar": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0446569206924514,
+          "m2_over_m1_qp_region_area": 1.003855553795775,
+          "m1_qp_vs_analytic_area": -0.003806530988962109,
+          "m2_qp_vs_analytic_area": 3.434652180955844e-05
+        }
+      }
+    },
+    "5": {
+      "M1": {
+        "tri6": 178,
+        "surface_quadrature_order": 5,
+        "curved_full_pore_area_m2": 1.2562190127570344e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.00033267256848612536,
+        "max_quadratic_surface_interior_radial_deviation_m": 6.532626664536734e-07,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2698407790701169e-06,
+            "fractional_surface_tri6": 18.708641274224682,
+            "effective_curved_Tri6_area_m2": 6.787455916532032e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.254883041762782e-06,
+            "fractional_surface_tri6": 19.142323865819122,
+            "effective_curved_Tri6_area_m2": 6.555541796069618e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5247238208328987e-06,
+            "fractional_surface_tri6": 37.8509651400438,
+            "effective_curved_Tri6_area_m2": 6.670170262480069e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0037466306737444e-05,
+            "fractional_surface_tri6": 140.1490348599562,
+            "effective_curved_Tri6_area_m2": 7.161994598655191e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403210756
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403225616
+          }
+        }
+      },
+      "M2": {
+        "tri6": 170,
+        "surface_quadrature_order": 5,
+        "curved_full_pore_area_m2": 1.2561695832035228e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.0003720073573670879,
+        "max_quadratic_surface_interior_radial_deviation_m": 1.088755435769929e-06,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2736478519540069e-06,
+            "fractional_surface_tri6": 17.477837971917015,
+            "effective_curved_Tri6_area_m2": 7.287216267827146e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.234736147607589e-06,
+            "fractional_surface_tri6": 18.147519422713742,
+            "effective_curved_Tri6_area_m2": 6.803883874410804e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.508383999561596e-06,
+            "fractional_surface_tri6": 35.625357394630754,
+            "effective_curved_Tri6_area_m2": 7.041007257206197e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0053311832473633e-05,
+            "fractional_surface_tri6": 134.37464260536925,
+            "effective_curved_Tri6_area_m2": 7.481554285504704e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 18,
+            "median_surface_corner_edge_length_mm": 0.3855078072036565
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.37743702596183565
+          }
+        }
+      },
+      "comparison": {
+        "north": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0736299958984428,
+          "m2_over_m1_qp_region_area": 1.0029980710547648,
+          "m1_qp_vs_analytic_area": 0.010507184643362866,
+          "m2_qp_vs_analytic_area": 0.013536756984273923
+        },
+        "south": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0378827694287724,
+          "m2_over_m1_qp_region_area": 0.9839452016764113,
+          "m1_qp_vs_analytic_area": -0.0013958045062991697,
+          "m2_qp_vs_analytic_area": -0.01742819347004021
+        },
+        "both_poles": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0555963311479617,
+          "m2_over_m1_qp_region_area": 0.9935280757695263,
+          "m1_qp_vs_analytic_area": 0.004555690068531737,
+          "m2_qp_vs_analytic_area": -0.0019457182428830322
+        },
+        "nonpolar": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0446188114843755,
+          "m2_over_m1_qp_region_area": 1.001578638000065,
+          "m1_qp_vs_analytic_area": -0.0015547632277407297,
+          "m2_qp_vs_analytic_area": 2.142036401187042e-05
+        }
+      }
+    },
+    "9": {
+      "M1": {
+        "tri6": 178,
+        "surface_quadrature_order": 9,
+        "curved_full_pore_area_m2": 1.256219012770346e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.0003326725578931544,
+        "max_quadratic_surface_interior_radial_deviation_m": 6.600979385563369e-07,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2570629657234437e-06,
+            "fractional_surface_tri6": 18.561705659966275,
+            "effective_curved_Tri6_area_m2": 6.772346188177448e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2581820952024293e-06,
+            "fractional_surface_tri6": 19.188860171069013,
+            "effective_curved_Tri6_area_m2": 6.556836018323728e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5152450609258727e-06,
+            "fractional_surface_tri6": 37.75056583103529,
+            "effective_curved_Tri6_area_m2": 6.662800955576812e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0046945066777587e-05,
+            "fractional_surface_tri6": 140.2494341689647,
+            "effective_curved_Tri6_area_m2": 7.163626096825166e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403210756
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403225616
+          }
+        }
+      },
+      "M2": {
+        "tri6": 170,
+        "surface_quadrature_order": 9,
+        "curved_full_pore_area_m2": 1.2561695832212468e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.0003720073432628146,
+        "max_quadratic_surface_interior_radial_deviation_m": 1.177832734915521e-06,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2583354595880175e-06,
+            "fractional_surface_tri6": 17.279998689841577,
+            "effective_curved_Tri6_area_m2": 7.282034461772022e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2569250851778223e-06,
+            "fractional_surface_tri6": 18.438001978307206,
+            "effective_curved_Tri6_area_m2": 6.817035200758887e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.51526054476584e-06,
+            "fractional_surface_tri6": 35.71800066814879,
+            "effective_curved_Tri6_area_m2": 7.041997025910807e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.004643528744663e-05,
+            "fractional_surface_tri6": 134.28199933185124,
+            "effective_curved_Tri6_area_m2": 7.481594954971488e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 18,
+            "median_surface_corner_edge_length_mm": 0.3855078072036565
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.37743702596183565
+          }
+        }
+      },
+      "comparison": {
+        "north": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0752602214110587,
+          "m2_over_m1_qp_region_area": 1.00101227535873,
+          "m1_qp_vs_analytic_area": 0.0003389238632196534,
+          "m2_qp_vs_analytic_area": 0.0013515423062249177
+        },
+        "south": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.039683649508392,
+          "m2_over_m1_qp_region_area": 0.9990009315587942,
+          "m1_qp_vs_analytic_area": 0.0012294988059216028,
+          "m2_qp_vs_analytic_area": 0.00022920201126042095
+        },
+        "both_poles": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.056912411591195,
+          "m2_over_m1_qp_region_area": 1.0000061559965698,
+          "m1_qp_vs_analytic_area": 0.0007842113345706281,
+          "m2_qp_vs_analytic_area": 0.0007903721587427803
+        },
+        "nonpolar": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0443865793452345,
+          "m2_over_m1_qp_region_area": 0.9999492602649294,
+          "m1_qp_vs_analytic_area": -0.0006118935310091,
+          "m2_qp_vs_analytic_area": -0.0006626022187641301
+        }
+      }
+    },
+    "15": {
+      "M1": {
+        "tri6": 178,
+        "surface_quadrature_order": 15,
+        "curved_full_pore_area_m2": 1.2562190127703457e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.00033267255789337646,
+        "max_quadratic_surface_interior_radial_deviation_m": 6.685568008869738e-07,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2537428426070665e-06,
+            "fractional_surface_tri6": 18.526302098767786,
+            "effective_curved_Tri6_area_m2": 6.76736693552274e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2554408516803122e-06,
+            "fractional_surface_tri6": 19.13767634420807,
+            "effective_curved_Tri6_area_m2": 6.560048509025316e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5091836942873788e-06,
+            "fractional_surface_tri6": 37.66397844297586,
+            "effective_curved_Tri6_area_m2": 6.66202509139161e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0053006433416078e-05,
+            "fractional_surface_tri6": 140.33602155702414,
+            "effective_curved_Tri6_area_m2": 7.163525317219527e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403210756
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.39018064403225616
+          }
+        }
+      },
+      "M2": {
+        "tri6": 170,
+        "surface_quadrature_order": 15,
+        "curved_full_pore_area_m2": 1.2561695832212464e-05,
+        "analytical_full_pore_area_m2": 1.2566370614359172e-05,
+        "curved_full_vs_analytic_rel_error": -0.00037200734326314766,
+        "max_quadratic_surface_interior_radial_deviation_m": 1.168877408639626e-06,
+        "zones": {
+          "north": {
+            "curved_qp_area_m2": 1.2593044745972369e-06,
+            "fractional_surface_tri6": 17.278713581558215,
+            "effective_curved_Tri6_area_m2": 7.28818420800324e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "south": {
+            "curved_qp_area_m2": 1.2576413506202525e-06,
+            "fractional_surface_tri6": 18.462143455578165,
+            "effective_curved_Tri6_area_m2": 6.81200074978438e-08,
+            "area_analytic_m2": 1.2566370614359169e-06
+          },
+          "both_poles": {
+            "curved_qp_area_m2": 2.5169458252174894e-06,
+            "fractional_surface_tri6": 35.74085703713638,
+            "effective_curved_Tri6_area_m2": 7.042208928012744e-08,
+            "area_analytic_m2": 2.5132741228718337e-06
+          },
+          "nonpolar": {
+            "curved_qp_area_m2": 1.0044750006994975e-05,
+            "fractional_surface_tri6": 134.25914296286362,
+            "effective_curved_Tri6_area_m2": 7.48161338239242e-08,
+            "area_analytic_m2": 1.0053096491487338e-05
+          }
+        },
+        "poles": {
+          "north": {
+            "nearest_surface_node_distance_mm": 6.123031769111886e-17,
+            "tri6_by_corner_centroid": 18,
+            "median_surface_corner_edge_length_mm": 0.3855078072036565
+          },
+          "south": {
+            "nearest_surface_node_distance_mm": 3.4699872196053947e-15,
+            "tri6_by_corner_centroid": 20,
+            "median_surface_corner_edge_length_mm": 0.37743702596183565
+          }
+        }
+      },
+      "comparison": {
+        "north": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0769601053766815,
+          "m2_over_m1_qp_region_area": 1.0044360229236526,
+          "m1_qp_vs_analytic_area": -0.0023031461650058205,
+          "m2_qp_vs_analytic_area": 0.002122659949462369
+        },
+        "south": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0384070697666987,
+          "m2_over_m1_qp_region_area": 1.0017527699030941,
+          "m1_qp_vs_analytic_area": -0.000951913477896138,
+          "m2_qp_vs_analytic_area": 0.0007991879399036339
+        },
+        "both_poles": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0570673078239214,
+          "m2_over_m1_qp_region_area": 1.003093488510938,
+          "m1_qp_vs_analytic_area": -0.0016275298214509792,
+          "m2_qp_vs_analytic_area": 0.0014609239446830014
+        },
+        "nonpolar": {
+          "m2_over_m1_surface_effective_curved_tri6_area": 1.0444038446277673,
+          "m2_over_m1_qp_region_area": 0.9991787107194462,
+          "m1_qp_vs_analytic_area": -8.95824200397577e-06,
+          "m2_qp_vs_analytic_area": -0.0008302401652496849
+        }
+      }
+    }
+  }
+}

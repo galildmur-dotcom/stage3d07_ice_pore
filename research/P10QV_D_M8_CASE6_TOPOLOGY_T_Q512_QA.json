@@ -1,0 +1,231 @@
+{
+  "stage": "P10QV_D_EQUAL_COST_T_TOPOLOGY_PILOT",
+  "case": 6,
+  "pilot_index": 19,
+  "active_constraints": [
+    0,
+    4
+  ],
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "archived_real_child_sha256": "11b9a8ab4bbbc3e121308921ce96c95489e0832ce82a3a0204fc9fecea5e3e0e",
+  "frozen_uniform_q512_sha256": "9b682145eec146bd1be3875810ca7a21927180056636703f6a2f60c97475e705",
+  "t_probe_count": 41,
+  "s_probes": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "outer_t_budget": 512,
+  "inner_s_budget": 128,
+  "t_breaks_chosen_without_q1024_or_integral_values": true,
+  "root_interval_certificate_obtained": false,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "full_child_gradient_m3": 1.0846126088820453e-15,
+  "full_child_volume_m3": 6.508676774656234e-16,
+  "axes": {
+    "0": {
+      "segmented_q512": {
+        "cut_gradient_m3": 6.178692336260169e-19,
+        "cut_volume_m3": 3.6542194834984216e-19,
+        "outer_t_nodes": 512,
+        "inner_s_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "outer_t_panel_breaks": [
+          0.0,
+          0.26487499999999997,
+          0.413375,
+          0.512375,
+          0.636125,
+          0.660875,
+          0.759875,
+          0.784625,
+          0.834125,
+          0.908375,
+          1.0
+        ],
+        "outer_t_panel_nodes": [
+          135,
+          76,
+          51,
+          63,
+          13,
+          51,
+          13,
+          25,
+          38,
+          47
+        ],
+        "topology_transition_t_brackets": [
+          [
+            0.2525,
+            0.27725
+          ],
+          [
+            0.401,
+            0.42574999999999996
+          ],
+          [
+            0.5,
+            0.5247499999999999
+          ],
+          [
+            0.62375,
+            0.6485
+          ],
+          [
+            0.6485,
+            0.67325
+          ],
+          [
+            0.7474999999999999,
+            0.77225
+          ],
+          [
+            0.77225,
+            0.797
+          ],
+          [
+            0.8217500000000001,
+            0.8464999999999999
+          ],
+          [
+            0.896,
+            0.9207500000000001
+          ]
+        ],
+        "distinct_probe_signatures": 10,
+        "s_critical_intervals_total": 2941,
+        "numerical_azimuth_degree_trims": 512,
+        "maximum_higher_ray_coefficient_relative": 2.914515886195322e-12,
+        "maximum_physical_reconstruction_relative": 8.071887249055035e-12
+      },
+      "frozen_uniform_q512_gradient_m3": 6.178630054936565e-19,
+      "frozen_uniform_q512_volume_m3": 3.654182564763492e-19
+    },
+    "1": {
+      "segmented_q512": {
+        "cut_gradient_m3": 6.178700300084648e-19,
+        "cut_volume_m3": 3.6542242092194568e-19,
+        "outer_t_nodes": 512,
+        "inner_s_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "outer_t_panel_breaks": [
+          0.0,
+          0.834125,
+          0.8588749999999999,
+          0.883625,
+          0.933125,
+          0.9578749999999999,
+          0.982625,
+          1.0
+        ],
+        "outer_t_panel_nodes": [
+          427,
+          13,
+          13,
+          25,
+          12,
+          13,
+          9
+        ],
+        "topology_transition_t_brackets": [
+          [
+            0.8217500000000001,
+            0.8464999999999999
+          ],
+          [
+            0.8464999999999999,
+            0.87125
+          ],
+          [
+            0.87125,
+            0.896
+          ],
+          [
+            0.9207500000000001,
+            0.9454999999999999
+          ],
+          [
+            0.9454999999999999,
+            0.97025
+          ],
+          [
+            0.97025,
+            0.995
+          ]
+        ],
+        "distinct_probe_signatures": 7,
+        "s_critical_intervals_total": 2303,
+        "numerical_azimuth_degree_trims": 512,
+        "maximum_higher_ray_coefficient_relative": 1.866431258086732e-13,
+        "maximum_physical_reconstruction_relative": 2.187891027688609e-11
+      },
+      "frozen_uniform_q512_gradient_m3": 6.178557610079484e-19,
+      "frozen_uniform_q512_volume_m3": 3.654139710797951e-19
+    },
+    "2": {
+      "segmented_q512": {
+        "cut_gradient_m3": 6.1787832600589265e-19,
+        "cut_volume_m3": 3.654273382913094e-19,
+        "outer_t_nodes": 512,
+        "inner_s_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "outer_t_panel_breaks": [
+          0.0,
+          0.017375,
+          0.042125,
+          0.066875,
+          0.165875,
+          0.8588749999999999,
+          0.9578749999999999,
+          1.0
+        ],
+        "outer_t_panel_nodes": [
+          9,
+          13,
+          12,
+          51,
+          355,
+          51,
+          21
+        ],
+        "topology_transition_t_brackets": [
+          [
+            0.005,
+            0.029750000000000002
+          ],
+          [
+            0.029750000000000002,
+            0.0545
+          ],
+          [
+            0.0545,
+            0.07925
+          ],
+          [
+            0.1535,
+            0.17825
+          ],
+          [
+            0.8464999999999999,
+            0.87125
+          ],
+          [
+            0.9454999999999999,
+            0.97025
+          ]
+        ],
+        "distinct_probe_signatures": 7,
+        "s_critical_intervals_total": 2593,
+        "numerical_azimuth_degree_trims": 512,
+        "maximum_higher_ray_coefficient_relative": 2.339734814253701e-12,
+        "maximum_physical_reconstruction_relative": 3.723048781895325e-12
+      },
+      "frozen_uniform_q512_gradient_m3": 6.178669675144596e-19,
+      "frozen_uniform_q512_volume_m3": 3.654206080039394e-19
+    }
+  }
+}

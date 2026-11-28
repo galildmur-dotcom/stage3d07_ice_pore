@@ -1,0 +1,123 @@
+{
+  "protocol": "P10FV_M0_TO_M1_UNIFORM_ALL_VOLUME_15_TO_20_PERCENT",
+  "status": "REVISED_CONTRACT_AND_REAL_M1_STOP",
+  "new_contract": {
+    "characteristic_local_volume_reduction_percent": [
+      15,
+      20
+    ],
+    "ratio_bounds_inclusive": [
+      0.8,
+      0.85
+    ],
+    "nominal_center_target_volume_ratio": 0.825,
+    "nominal_center_target_h_ratio": 0.9378887276834518,
+    "kappa": "1_CONSTANT_ENTIRE_PHYSICAL_VOLUME",
+    "actual_refinement_test": "fixed_3D_QP_Veff_not_local_unpaired_medians",
+    "uniform_required_in": "all_3D_zones_and_separately_N_S_polar_caps",
+    "surface_and_volume_size_field": "ONE_C1_H_X",
+    "geometry_not_scaled": true,
+    "azimuthal_element_regular_lattice_required": false,
+    "no_candidate_is_approved_by_source_only_math": true
+  },
+  "checked_previous_M0_SHA": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "checked_failed_M1_SHA": "f281d253571db095b90790326f503dfa3f6fe3a1dc5cb5c904fca2787dfe4275",
+  "previous_real_M1": {
+    "global_mean_volume_ratio": 0.7953821634418344,
+    "global_pass": false,
+    "north_polar_729qp_ratio": 0.8447789349471028,
+    "north_polar_pass": true,
+    "south_polar_729qp_ratio": 1.0959055811319807,
+    "south_polar_pass": false,
+    "all_zones_pass": false,
+    "separate_poles_pass": false,
+    "all_zones_qp_stable_to_0p02": true,
+    "zones9": [
+      {
+        "radial": "0_100um",
+        "polar": "polar_abs_mu_ge_0p8",
+        "ratio_729qp": 0.9648455781090901,
+        "ratio_343qp": 0.9634449943175297,
+        "abs_quadrature_delta": 0.0014005837915603836,
+        "physical_region_volume_ratio": 0.9980565185019742,
+        "pass_0p80_to_0p85": false
+      },
+      {
+        "radial": "0_100um",
+        "polar": "taper_abs_mu_0p6_0p8",
+        "ratio_729qp": 0.8330912021149021,
+        "ratio_343qp": 0.8308444970499288,
+        "abs_quadrature_delta": 0.0022467050649732645,
+        "physical_region_volume_ratio": 1.0093078383236291,
+        "pass_0p80_to_0p85": true
+      },
+      {
+        "radial": "0_100um",
+        "polar": "off_abs_mu_le_0p6",
+        "ratio_729qp": 0.76062149512128,
+        "ratio_343qp": 0.7609436179318654,
+        "abs_quadrature_delta": 0.00032212281058541237,
+        "physical_region_volume_ratio": 1.0010767243203693,
+        "pass_0p80_to_0p85": false
+      },
+      {
+        "radial": "100_500um",
+        "polar": "polar_abs_mu_ge_0p8",
+        "ratio_729qp": 0.8610373727071763,
+        "ratio_343qp": 0.8623437165329256,
+        "abs_quadrature_delta": 0.0013063438257493454,
+        "physical_region_volume_ratio": 1.0005137725733657,
+        "pass_0p80_to_0p85": false
+      },
+      {
+        "radial": "100_500um",
+        "polar": "taper_abs_mu_0p6_0p8",
+        "ratio_729qp": 0.8263413351492583,
+        "ratio_343qp": 0.8235145286673696,
+        "abs_quadrature_delta": 0.0028268064818887106,
+        "physical_region_volume_ratio": 0.9976203845362037,
+        "pass_0p80_to_0p85": true
+      },
+      {
+        "radial": "100_500um",
+        "polar": "off_abs_mu_le_0p6",
+        "ratio_729qp": 0.8152478321027504,
+        "ratio_343qp": 0.8152398074118498,
+        "abs_quadrature_delta": 8.024690900665377e-06,
+        "physical_region_volume_ratio": 0.9996437210659769,
+        "pass_0p80_to_0p85": true
+      },
+      {
+        "radial": "500um_plus",
+        "polar": "polar_abs_mu_ge_0p8",
+        "ratio_729qp": 0.7668523156008573,
+        "ratio_343qp": 0.7670349640389467,
+        "abs_quadrature_delta": 0.00018264843808935005,
+        "physical_region_volume_ratio": 1.0001645067253584,
+        "pass_0p80_to_0p85": false
+      },
+      {
+        "radial": "500um_plus",
+        "polar": "taper_abs_mu_0p6_0p8",
+        "ratio_729qp": 0.7948686784722443,
+        "ratio_343qp": 0.7942208049583669,
+        "abs_quadrature_delta": 0.0006478735138774061,
+        "physical_region_volume_ratio": 0.9998688931478849,
+        "pass_0p80_to_0p85": false
+      },
+      {
+        "radial": "500um_plus",
+        "polar": "off_abs_mu_le_0p6",
+        "ratio_729qp": 0.80073539468867,
+        "ratio_343qp": 0.8009201859097738,
+        "abs_quadrature_delta": 0.00018479122110370838,
+        "physical_region_volume_ratio": 1.0000158845889389,
+        "pass_0p80_to_0p85": true
+      }
+    ]
+  },
+  "overall_previous_M1_go": false,
+  "previous_P10FU_south_only_package": "RETRACTED_DO_NOT_RUN",
+  "new_M1_GMSH_attempts": 0,
+  "FEM_attempts": 0
+}

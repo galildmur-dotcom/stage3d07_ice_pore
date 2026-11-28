@@ -1,0 +1,3 @@
+P10GG 02: ONE protected original plus rotated Gmsh -2 pair. No 3D/FEM.
+P10GG_STOP: RuntimeError('P10GG_STOP: generated GEO changed since preflight')
+CHECK_EXIT_CODE=2

@@ -1,0 +1,110 @@
+{
+  "stage": "P10QN",
+  "date_utc": "2026-11-28",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "status": "NEGATIVE_ADAPTIVE_THIRD_AXIS_AND_POSITIVE_UNIFORM_Q128_PILOT_QA",
+  "initial_margin_075_outcome": {
+    "margin": 0.75,
+    "q128_cells": 12,
+    "q64_cells": 15,
+    "total_actual_sample_points": 341760,
+    "cost_saving_factor_vs_q256": 5.17752808988764,
+    "per_axis": [
+      {
+        "axis": 1,
+        "gradient_L1_m3": 1.0985646926483483e-19,
+        "volume_L1_m3": 5.607559896140805e-20
+      },
+      {
+        "axis": 2,
+        "gradient_L1_m3": 1.0004639814444655e-19,
+        "volume_L1_m3": 5.1024196240761916e-20
+      }
+    ],
+    "cross_axis_gradient_L1_m3": 1.269286473332566e-19,
+    "cross_axis_volume_L1_m3": 6.470236185462343e-20,
+    "passes_gradient_full_child_volume_cross_axis_1e_minus_6": false
+  },
+  "tightened_margin_06_outcome": {
+    "margin": 0.6,
+    "q128_cells": 17,
+    "q64_cells": 10,
+    "total_actual_sample_points": 423680,
+    "cost_saving_factor_vs_q256": 4.176435045317221,
+    "per_axis": [
+      {
+        "axis": 1,
+        "gradient_L1_m3": 8.005513216532545e-20,
+        "volume_L1_m3": 4.082995330855733e-20
+      },
+      {
+        "axis": 2,
+        "gradient_L1_m3": 9.318656411542171e-20,
+        "volume_L1_m3": 4.7524691487226815e-20
+      }
+    ],
+    "cross_axis_gradient_L1_m3": 8.898219360889576e-20,
+    "cross_axis_volume_L1_m3": 4.529072801976881e-20,
+    "passes_gradient_full_child_volume_cross_axis_1e_minus_6": true
+  },
+  "third_axis_status": "THIRD_AXIS_STRICT_EMPIRICAL_L1_FAIL",
+  "third_axis_heldout": [
+    {
+      "reference_axis": 1,
+      "axis0_adaptive_vs_axis_q256_gradient_L1_m3": 9.503408793522212e-20,
+      "axis0_adaptive_vs_axis_q256_gradient_L1_relative": 7.96287981571799e-07,
+      "axis0_adaptive_vs_axis_adaptive_gradient_L1_m3": 1.3828330134966243e-19,
+      "axis0_adaptive_vs_axis_adaptive_gradient_L1_relative": 1.1586719387664755e-06,
+      "axis0_adaptive_vs_axis_q256_volume_L1_relative_to_full_child": 7.71985045459595e-07,
+      "axis0_adaptive_vs_axis_adaptive_volume_L1_relative_to_full_child": 1.126082321448851e-06,
+      "signed_axis0_gradient_minus_reference_m3": -7.607604864614466e-20
+    },
+    {
+      "reference_axis": 2,
+      "axis0_adaptive_vs_axis_q256_gradient_L1_m3": 9.334121904582228e-20,
+      "axis0_adaptive_vs_axis_q256_gradient_L1_relative": 7.821035062998895e-07,
+      "axis0_adaptive_vs_axis_adaptive_gradient_L1_m3": 1.353964119104163e-19,
+      "axis0_adaptive_vs_axis_adaptive_gradient_L1_relative": 1.134482810253165e-06,
+      "axis0_adaptive_vs_axis_q256_volume_L1_relative_to_full_child": 7.580057246662051e-07,
+      "axis0_adaptive_vs_axis_adaptive_volume_L1_relative_to_full_child": 1.1025789007937164e-06,
+      "signed_axis0_gradient_minus_reference_m3": -7.209277726250538e-20
+    }
+  ],
+  "uniform_q128_3axis_status": "UNIFORM_Q128_THREE_AXIS_GLOBAL_EMPIRICAL_PASS",
+  "uniform_q128_recalculated_cross_axis_L1": [
+    {
+      "axes": [
+        0,
+        1
+      ],
+      "gradient_L1_m3": 7.041243650946629e-20,
+      "volume_L1_m3": 3.5762586729604107e-20
+    },
+    {
+      "axes": [
+        0,
+        2
+      ],
+      "gradient_L1_m3": 7.420100350566427e-20,
+      "volume_L1_m3": 3.767036806315812e-20
+    },
+    {
+      "axes": [
+        1,
+        2
+      ],
+      "gradient_L1_m3": 4.326417683724397e-20,
+      "volume_L1_m3": 2.1981895171780412e-20
+    }
+  ],
+  "recommended_interim_P10QN_pilot_quadrature": "uniform q128 across all 27 M8 cut cells; no physics authority",
+  "uniform_q128_transverse_points_per_axis": 442368,
+  "uniform_q256_transverse_points_per_axis": 1769472,
+  "third_axis_heldout_data_was_not_used_for_order_selection": true,
+  "cut_volume_relative_to_cut_volume_remains_stricter_than_full_element_budget": true,
+  "contraction_model_is_empirical_not_rigorous_error_certification": true,
+  "all_48_spherical_bins_verified": false,
+  "physical_4D_FEM_approved": false,
+  "mesh_Gmsh_CAD_FEM_executed": false,
+  "source_sha256": "ce35e6ea02767d5ffd544e3ddfdc468e0356423c00f4f7a3dca544d3b91b43fa"
+}

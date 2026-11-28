@@ -1,0 +1,140 @@
+{
+  "actual_mesh_created": false,
+  "alpha_parameter": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "baseline": {
+    "alpha": 0.5,
+    "ell_mm": 0.2,
+    "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+    "local_isotropic_tet_count_volume_proxy": 1.3908129139683871,
+    "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+    "max_sampled_grad_log_relative_h_per_mm": 0.9006248062583574,
+    "minimum_h_trial_over_h0_at_centers": 0.7068221649546108,
+    "smooth_weight_max_at_source_centers": 0.8295660480998522
+  },
+  "baseline_display_only": {
+    "alpha": 0.5,
+    "ell_mm": 0.2
+  },
+  "distance_unit": "mm",
+  "ell_parameter_mm": [
+    0.1,
+    0.2,
+    0.35
+  ],
+  "full_B6_cost_estimate_available": false,
+  "gmsh_calls": 0,
+  "h0_mesh_size_values_available": false,
+  "input_rows": 200,
+  "input_votes": {
+    "0": 151,
+    "1": 9,
+    "2": 9,
+    "3": 31
+  },
+  "kernel": "positive_volume_weighted_gaussian_reflected_rho_i_positive_negative",
+  "kernel_is_exact_3d_axisymmetric_heat_kernel": false,
+  "parameters_physically_calibrated": false,
+  "physical_fem_runs": 0,
+  "protocol": "P10CN_CARTESIAN_MERIDIONAL_REFLECTION_SMOOTHING_OFFLINE_NO_MESH_NO_FEM",
+  "sensitivity": [
+    {
+      "alpha": 0.25,
+      "ell_mm": 0.1,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.182891470412178,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 1.5764551050123163,
+      "minimum_h_trial_over_h0_at_centers": 0.8050766064823774,
+      "smooth_weight_max_at_source_centers": 0.968471283095911
+    },
+    {
+      "alpha": 0.5,
+      "ell_mm": 0.1,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.4450179084524786,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 2.914147783713081,
+      "minimum_h_trial_over_h0_at_centers": 0.6737474643561778,
+      "smooth_weight_max_at_source_centers": 0.968471283095911
+    },
+    {
+      "alpha": 1.0,
+      "ell_mm": 0.1,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 2.2663385041004016,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 5.120347276818081,
+      "minimum_h_trial_over_h0_at_centers": 0.5080084269389245,
+      "smooth_weight_max_at_source_centers": 0.968471283095911
+    },
+    {
+      "alpha": 0.25,
+      "ell_mm": 0.2,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.1671149641029277,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 0.4958246182049477,
+      "minimum_h_trial_over_h0_at_centers": 0.8282317624735173,
+      "smooth_weight_max_at_source_centers": 0.8295660480998522
+    },
+    {
+      "alpha": 0.5,
+      "ell_mm": 0.2,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.3908129139683871,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 0.9006248062583574,
+      "minimum_h_trial_over_h0_at_centers": 0.7068221649546108,
+      "smooth_weight_max_at_source_centers": 0.8295660480998522
+    },
+    {
+      "alpha": 1.0,
+      "ell_mm": 0.2,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 2.044201493566728,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 1.5218630820295507,
+      "minimum_h_trial_over_h0_at_centers": 0.5465776985961115,
+      "smooth_weight_max_at_source_centers": 0.8295660480998522
+    },
+    {
+      "alpha": 0.25,
+      "ell_mm": 0.35,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.1371226484661492,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 0.21703006597453006,
+      "minimum_h_trial_over_h0_at_centers": 0.8764974467709254,
+      "smooth_weight_max_at_source_centers": 0.5636185418865329
+    },
+    {
+      "alpha": 0.5,
+      "ell_mm": 0.35,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.301512659970434,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 0.3975633817980949,
+      "minimum_h_trial_over_h0_at_centers": 0.7801472673575791,
+      "smooth_weight_max_at_source_centers": 0.5636185418865329
+    },
+    {
+      "alpha": 1.0,
+      "ell_mm": 0.35,
+      "full_mesh_count_ram_or_wall_time": "NOT_PREDICTABLE_FROM_THIS_SHELL_ONLY",
+      "local_isotropic_tet_count_volume_proxy": 1.723710046566223,
+      "max_axis_radial_derivative_of_smooth_weight_per_mm": 0.0,
+      "max_sampled_grad_log_relative_h_per_mm": 0.6870542631214984,
+      "minimum_h_trial_over_h0_at_centers": 0.6395421729864387,
+      "smooth_weight_max_at_source_centers": 0.5636185418865329
+    }
+  ],
+  "source_audit_sha256": "3eea935277c91b7877f8660c68d3322cf7660fb871ffbaf5e74843afe5a12737",
+  "source_csv_sha256": "428a1d3b1d7b84e10a6c44762f0222c831a5f917283c872e06eaa11eff0781eb",
+  "spatial_support_only": "20_TO_100_UM_DIAGNOSTIC_SHELL",
+  "synthetic_unit": "P10CN_AXIS_REFLECTION_CONSTANT_ROTATION_SHA_STOP_UNIT_OK",
+  "thermal_and_phi_time_resolved_physical_components": false
+}

@@ -1,0 +1,137 @@
+{
+  "stage": "P10QD",
+  "status": "PASS_48_BIN_SPHERICAL_POINT_LOCATION_AND_MANUFACTURED_MOMENTS_NOT_PHYSICS",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "read_only": true,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "independent_point_location": {
+    "independent_solver": "scipy.optimize.root(HYBR), full-mesh Bezier broad phase",
+    "random_true_curved_Tet10_point_tests": 64,
+    "pore_interior_negative_controls": 36,
+    "spherical_quadrature_points_cross_checked": 32,
+    "max_fast_slow_reprojection_difference_m": 1.734808177203682e-17
+  },
+  "bin_count": 48,
+  "sampled_curved_pore_wall": {
+    "method": "physical-group-8 real Tri6 quadratic face interpolation, barycentric grid step 1/20",
+    "curved_Tri6_faces": 648,
+    "total_sample_points": 149688,
+    "minimum_pore_wall_radius_m": 0.0009992321021759058,
+    "maximum_pore_wall_radius_m": 0.0010000000000000052,
+    "max_inward_deviation_from_ideal_sphere_um": 0.7678978240941923,
+    "sample_count_outside_ideal_sphere_by_more_than_1pm": 0,
+    "limitation": "This mesh face sample DOES NOT prove wall radial containment at unsampled points."
+  },
+  "tested_q": [
+    2,
+    4,
+    8,
+    12,
+    16
+  ],
+  "sphere_quadrature_total_points": 307584,
+  "max_ideal_volume_relative_error": 1.8904049349693772e-15,
+  "max_FE_linear_moment_relative_error": 4.522950552482011e-15,
+  "max_prior_certified_bracket_width_relative_to_ideal": 1.167059184407821,
+  "FE_interpolated_cubic_moment_q_changes": [
+    {
+      "q_pair": [
+        2,
+        4
+      ],
+      "signed_delta_m3": -1.0446470684336823e-14,
+      "sum_absolute_bin_deltas_m3": 2.9160748458409057e-14,
+      "signed_delta_relative_to_L1_moment": 1.4808236553546406e-05,
+      "L1_delta_relative_to_L1_moment": 4.133637802650842e-05,
+      "max_per_bin_delta_relative_to_abs_qhigh": 0.00014299512774957932,
+      "positive_bin_changes": 22,
+      "negative_bin_changes": 26,
+      "mixed_sign_cancellation_factor": 2.7914450094740566
+    },
+    {
+      "q_pair": [
+        4,
+        8
+      ],
+      "signed_delta_m3": 2.31542901445455e-15,
+      "sum_absolute_bin_deltas_m3": 6.2644018134915404e-15,
+      "signed_delta_relative_to_L1_moment": 3.282196342812555e-06,
+      "L1_delta_relative_to_L1_moment": 8.879994417360216e-06,
+      "max_per_bin_delta_relative_to_abs_qhigh": 3.6854548056438085e-05,
+      "positive_bin_changes": 27,
+      "negative_bin_changes": 21,
+      "mixed_sign_cancellation_factor": 2.705503720643
+    },
+    {
+      "q_pair": [
+        8,
+        12
+      ],
+      "signed_delta_m3": 3.693440469359813e-17,
+      "sum_absolute_bin_deltas_m3": 2.103299916067974e-15,
+      "signed_delta_relative_to_L1_moment": 5.235580201812892e-08,
+      "L1_delta_relative_to_L1_moment": 2.9815007146843014e-06,
+      "max_per_bin_delta_relative_to_abs_qhigh": 2.425727505720758e-05,
+      "positive_bin_changes": 31,
+      "negative_bin_changes": 17,
+      "mixed_sign_cancellation_factor": 56.94690177130541
+    },
+    {
+      "q_pair": [
+        12,
+        16
+      ],
+      "signed_delta_m3": 4.453931083145689e-16,
+      "sum_absolute_bin_deltas_m3": 9.197652444741244e-16,
+      "signed_delta_relative_to_L1_moment": 6.313601391164615e-07,
+      "L1_delta_relative_to_L1_moment": 1.3037990527135296e-06,
+      "max_per_bin_delta_relative_to_abs_qhigh": 7.418270611937895e-06,
+      "positive_bin_changes": 24,
+      "negative_bin_changes": 24,
+      "mixed_sign_cancellation_factor": 2.0650639340932946
+    }
+  ],
+  "high_q_four_bin_pilot": {
+    "bins": 4,
+    "q_levels": [
+      12,
+      16,
+      20,
+      24
+    ],
+    "spherical_quadrature_nodes": 110592,
+    "q16_cross_replay_pass": true,
+    "q_changes": [
+      {
+        "q_pair": [
+          12,
+          16
+        ],
+        "L1_relative_to_four_bin_moment": 1.7961196790617457e-06,
+        "signed_relative_to_four_bin_moment": 1.767762845448787e-06,
+        "max_bin_relative_change": 3.608360607753698e-06
+      },
+      {
+        "q_pair": [
+          16,
+          20
+        ],
+        "L1_relative_to_four_bin_moment": 3.815392471609707e-07,
+        "signed_relative_to_four_bin_moment": 3.6588089410465834e-07,
+        "max_bin_relative_change": 1.4594395742607592e-06
+      },
+      {
+        "q_pair": [
+          20,
+          24
+        ],
+        "L1_relative_to_four_bin_moment": 5.307862567690669e-07,
+        "signed_relative_to_four_bin_moment": 1.4029634528421593e-07,
+        "max_bin_relative_change": 6.810441125647632e-07
+      }
+    ]
+  },
+  "important_limit": "FE interpolated cubic q16 is only a q-reference, not a certified exact integral; all spheres tested numerically, inclusion not proven between points.",
+  "physical_4D_FEM_approved": false
+}

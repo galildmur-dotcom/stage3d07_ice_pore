@@ -1,0 +1,9 @@
+Info    : Running 'C:\gmsh-4.15.2-Windows64\gmsh.exe G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\P10DN_M2_FIELD20.geo -3 -nt 2 -format msh2 -o G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\P10DO_RUNS\P10DO_M2_20261121_153023_053810\P10DO_M2_CANDIDATE.msh' [Gmsh 4.15.2, 1 node, max. 2 threads]
+Info    : Started on Sat Nov 21 20:30:38 2026
+Info    : Reading 'G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\P10DN_M2_FIELD20.geo'...
+Info    : Reading 'G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\sphere_pore_B6_refined.geo'...
+Info    : Done reading 'G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\sphere_pore_B6_refined.geo'
+Info    : Done reading 'G:\Downloads\P10DO_R1_M2_ONE_SHOT_GMSH_ONLY_WINDOWS_20261121\P10DN_M2_FIELD20.geo'
+Info    : Meshing 1D...
+Info    : [ 10%] Meshing curve 14 (Circle)
+Info    : [ 10%] Meshing curve 17 (Circle)

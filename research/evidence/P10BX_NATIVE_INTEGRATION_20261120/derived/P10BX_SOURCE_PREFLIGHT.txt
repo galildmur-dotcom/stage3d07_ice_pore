@@ -1,0 +1,11 @@
+P10BX_SOURCE_PREFLIGHT_20261120
+Exact source line: Git history 90fd2559c0224ac0a7d2dbe2fe081a6a319080e4.
+Downloaded 35 recursively included original src/tests files; compared all git hash-object values to corresponding GitHub blob SHA: 35/35 MATCH.
+Exact original P10P blob b1bab7385e86928306617a4ec930d31e9b478a3f; P10W blob 0cf185831f82c885ca6b60ce35aa32057f6623dc.
+Linux C++20 full P10W baseline -O0 compile: exit 0; inherited -Wmisleading-indentation/-Wunused-function warnings.
+Opt-in P10BX P10W full-translation-unit -O0 and -O2 compile: exit 0; inherited -Wmisleading-indentation/-Wunused-function warnings.
+Initial -O2 diagnostic compile STOP exit 1: P10BW header include directory omitted from command; corrected explicit -I P10BW proposal path, same isolated sources, final exit 0. No production code defect inferred.
+P10BX native wrapper unit -O2 -Wall -Wextra -Wpedantic compile exit 0, warning-free after scoped fixture-only suppression for renamed unused main.
+Baseline and opt-in --selftest: exit 0, identical stdout. P10W_DEPENDENCY_SELFTEST_OK analytic_coupling_verified=0 in both.
+No --preflight CLI invocation: P10P preflight runs H::solve_forward on a physical mesh before exiting; excluded by no-FEM restriction.
+No mechanical/thermal physical forward, no adjoint physical solve, no Windows, no source tree modification outside isolated scratch.

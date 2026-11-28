@@ -1,0 +1,48 @@
+{
+  "stage": "P10QS",
+  "scope": "physical XYZ independent mask reevaluation, NOT all crossings certified",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_child_sha256": "b7020a3700d1e7a2847a8a4bbe283323bc67678719a0ea368a3f4081b815f64c",
+  "source_resultant_sha256": "cab1d9178cb3b30e5101a7ba9698ccf8fff9a9c5fa98c2aa6980baa5e2430305",
+  "seven_real_two_active_cells": [
+    13,
+    14,
+    20,
+    21,
+    31,
+    37,
+    38
+  ],
+  "fixed_t_samples": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "algebraic_real_candidate_count": 23,
+  "physical_verified_crossing_count": 2,
+  "max_independent_radial_residual": 2.857714065385153e-13,
+  "max_independent_azimuth_residual": 9.144288908264492e-18,
+  "physical_verified_candidates": [
+    {
+      "index": 20,
+      "t": 0.1,
+      "s": 0.32468576493703794,
+      "w": 0.4993650966605221,
+      "independent_physical_radial_residual": 2.857714065385153e-13,
+      "independent_physical_azimuth_residual": 3.1167590645004294e-18
+    },
+    {
+      "index": 38,
+      "t": 0.7,
+      "s": 0.06885385705007152,
+      "w": 0.30625932728919664,
+      "independent_physical_radial_residual": 1.021405182655144e-14,
+      "independent_physical_azimuth_residual": -9.144288908264492e-18
+    }
+  ],
+  "cannot_claim_all_resultant_roots_or_continuous_t_sweep": true,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true
+}

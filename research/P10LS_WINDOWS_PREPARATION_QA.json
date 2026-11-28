@@ -1,0 +1,17 @@
+{
+  "protocol": "P10LS_WINDOWS_PREPARED",
+  "status": "SOURCE_QA_PASS_NO_FEM",
+  "revision": "P10LS_M9_EDV_P1_P2_FACE_JUMP_PHYSICAL_DIAGNOSTIC_V1",
+  "archive_sha256": "d85d343765a6d1082dc9195421889508881cf8d6eba32f8ecdc1b0a51db9b80f",
+  "bytes": 2878690,
+  "source_manifest_sha256": "883abd502aa411a4e763d37b35ae45232362a4d3622b7f529d026de33b06f99e",
+  "source_count": 101,
+  "entrypoints": [
+    "01_P10LS_PREFLIGHT_NO_FEM.cmd",
+    "02_P10LS_ONE_M9_EXTENDED_EXPLICIT_FEM.cmd"
+  ],
+  "face_rows_expected": 86400,
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "marker_consumed": false
+}

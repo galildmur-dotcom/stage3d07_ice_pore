@@ -1,0 +1,17 @@
+{
+  "protocol": "P10LY_M10_FULL4D_WINDOWS_PREPARED",
+  "status": "SOURCE_QA_PASS_NO_FEM",
+  "mesh_sha256": "022166c7fb9555a511cf2cd2479ceb949c6b809d05d124832d8d7644c0bebc9c",
+  "source_revision": "P10LM_M9_TWO_TERM_EXPLICIT_INSTRUMENTED_P10LG_V1",
+  "source_count": 101,
+  "source_manifest_sha256": "20e38ffc44f4499d5114f9d0e714246f93f28d5ca1d14adb1c94bb1552dc940f",
+  "geometry_passport_sha256": "aa89df4bdb8545fdfb4c1c2ce989de63aa58cd8f87acdc2b661c93d1e303f38c",
+  "archive_sha256": "6c257efaca27967b06e3bc3128b632d1c8168b55ae037b275ff418eb0932a75b",
+  "archive_bytes": 2931407,
+  "entrypoints": [
+    "01_P10LY_PREFLIGHT_NO_FEM.cmd",
+    "02_P10LY_ONE_M10_EXTENDED_EXPLICIT_FEM.cmd"
+  ],
+  "FEM_attempts": 0,
+  "marker_consumed": false
+}

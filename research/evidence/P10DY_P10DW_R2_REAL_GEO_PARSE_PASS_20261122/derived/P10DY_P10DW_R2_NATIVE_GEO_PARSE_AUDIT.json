@@ -1,0 +1,46 @@
+{
+  "original_evidence_zip_sha256": "bce04f56d4a1610f6b86c8acc1d8436d8f0d12aa66dfc63ff7701cad63472d36",
+  "original_evidence_zip_members_crc": 7,
+  "source_release_p10dw_r2_sha256": "1418d8ccf8374b275b7112137e23e6a5a94e65e549a50b44cbd66b4f6105d04f",
+  "status": "P10DW_READ_ONLY_PREFLIGHT_PASS",
+  "native_parse_attempts": 2,
+  "native_parse_passed": [
+    "A_ORIGINAL_M1_FIELD2",
+    "B_EXACT_INLINE_F6"
+  ],
+  "native_1d_attempts": 0,
+  "native_2d_3d_attempts": 0,
+  "physical_FEM_attempts": 0,
+  "source_pin_count": 12,
+  "math_points": 17075,
+  "preflight_elapsed_s": 4.247979,
+  "accepted_original_m1_sha256_reported_windows": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "original_m1_bytes_independently_available": false,
+  "gmsh_executable_sha256_reported_windows": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "gmsh_executable_bytes_independently_available": false,
+  "r2_exact_generated_inline_geo_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "baseline_geo_sha256": "c6ec88a3fe91db0f3c369391a91aefbd1bc83f1d3033b38a985c3033c605ddd8",
+  "original_cad_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "parse_logs": {
+    "A_ORIGINAL_M1_FIELD2": {
+      "native_mode": "-parse_and_exit",
+      "reported_wall_s": 0.020869,
+      "log_sha256": "1cfe892aeaca4b8216ca1b61cf235df122ed69db9c938a411166c47007d3b0cd",
+      "native_parse_result": "PASS_BY_LOG_AND_WRAPPER_EXIT_ZERO"
+    },
+    "B_EXACT_INLINE_F6": {
+      "native_mode": "-parse_and_exit",
+      "reported_wall_s": 0.0226398,
+      "log_sha256": "33c9d02fe260b094d7c426f638b78ddeb11e8ac3fda520857df6bdebc6a21289",
+      "native_parse_result": "PASS_BY_LOG_AND_WRAPPER_EXIT_ZERO"
+    }
+  },
+  "log_run_ids": [
+    "P10DW_20261122_040025_186707"
+  ],
+  "one_shot_marker_consumed_by_published_preflight_source": false,
+  "markers_directly_inspected_on_windows": false,
+  "full_inline_math_eval_native_runtime_tested": false,
+  "mesh3d_tet10_curved27qp_fem_tested": false,
+  "independent_negative_tamper_tests_passed": 7
+}

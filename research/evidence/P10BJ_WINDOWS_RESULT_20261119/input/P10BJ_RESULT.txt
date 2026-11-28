@@ -1,0 +1,32 @@
+P10BJ SAFE LOCAL COMMIT RECOVERY (NO PUSH)
+time_local=2026-11-19T15:07:25.6681494+05:00
+project=G:\ildar\Stage3D07
+BACKUP_OK CMakeLists.txt SHA256=453f41a086b1284a7c4da4bba2e343b106edae602adc2ee180fa9fd91abbbddf
+BACKUP_OK src/stage3d10p_partial_audit.cpp SHA256=73cdbf9ee75de9f32ae8490baeedd760b00797670a4c6c869277405e45963f7a
+BACKUP_OK src/stage3d10w_analytic_adjoint.cpp SHA256=70873515734edaa42ce96366e636fa6c385a114cd08564817b283fadeccdcd46
+BACKUP_OK src/stage3d10v_analytic_shape.hpp SHA256=ad9b5f8d24dcbbbd7678a01a32ef5947e198173c779c7e4efe1da48beca4f7e3
+BACKUP_OK src/stage3d10az_probe_export.hpp SHA256=9bf6b9729da9e2ff698ef8f890fcc88b8d3fb2ef787708992605a72d0ec8e57d
+BACKUP_OK src/stage3d10ba_polar_export.hpp SHA256=92b81c258b11fad8ccd4915d215f567cbdf61b642c61e9dbe47732b294ead373
+BACKUP_OK tests/stage3d10v_analytic_shape.cpp SHA256=f5c70aba380da9a45c234b33c8ac2f90879d1d59784033a759b7193ab111ca12
+HEAD_BEFORE=c0498f6dc98628b62eff996a76844297c7a35094
+BRANCH_BEFORE=research/p10bi-local-seven-sources-20261119
+PREVIEW: commit these seven target paths only:
+   M CMakeLists.txt
+   M src/stage3d10p_partial_audit.cpp
+   M src/stage3d10v_analytic_shape.hpp
+   M src/stage3d10w_analytic_adjoint.cpp
+   M tests/stage3d10v_analytic_shape.cpp
+  ?? src/stage3d10az_probe_export.hpp
+  ?? src/stage3d10ba_polar_export.hpp
+BACKUP_DIRECTORY=G:\Downloads\P10BJ_LOCAL_COMMIT_RECOVERY_ONECLICK_20261119\P10BJ_CHECK_20261119_150725_8464\SOURCE_BACKUP
+Precheck and backup succeeded. No Git changes have been made by P10BJ.
+CONFIRMATION=COMMIT 7
+STAGED_EXACTLY_SEVEN=YES
+GIT_COMMIT: [research/p10bi-local-seven-sources-20261119 90fd255] P10BI: record validated P10AZ-P10BE source worktree (7 files)
+GIT_COMMIT:  7 files changed, 941 insertions(+), 1 deletion(-)
+GIT_COMMIT:  create mode 100644 src/stage3d10az_probe_export.hpp
+GIT_COMMIT:  create mode 100644 src/stage3d10ba_polar_export.hpp
+HEAD_AFTER=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4
+BRANCH_AFTER=research/p10bi-local-seven-sources-20261119
+COMMIT_CONTENTS=SEVEN_VERIFIED_SOURCE_FILES_ONLY
+RESULT=LOCAL_COMMIT_OK_NO_PUSH

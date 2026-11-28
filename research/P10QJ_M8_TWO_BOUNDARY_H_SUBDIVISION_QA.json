@@ -1,0 +1,888 @@
+{
+  "stage": "P10QJ",
+  "status": "PASS_CONSERVATIVE_TRUE_M8_H_BUDGET_DIAGNOSTIC_NOT_CUT_INTEGRATION",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "Gmsh_run": false,
+  "physical_FEM_run": false,
+  "max_h_level": 8,
+  "case_count": 8,
+  "cases": [
+    {
+      "element_id": 5951,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "initial_child_reference_depth": 8,
+      "original_child_volume_m3": 1.92874083865159e-15,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.9999999999999489,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 5.112538251720975e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.25038154196573564,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.7496184580342293,
+          "still_multi_boundary_subtet_count": 3,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.496976164177147e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.6254120409622813,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.3745879590377117,
+          "still_multi_boundary_subtet_count": 3,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 6,
+          "physical_volume_partition_closure_relative": 6.953052022340527e-15
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.7503319049691143,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.24966809503087325,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 6,
+          "physical_volume_partition_closure_relative": 1.247459333419918e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.8127565534759676,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.031172742319570904,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.15607070420444877,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 1.267909486426802e-14
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.8752062444806848,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0623535954510038,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.062440160068298,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 3,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 1.3497100984543376e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.8986253271543307,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.07015304165536267,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.03122163119029271,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 1.3906104044681053e-14
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.9103332893350654,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.07405339081998867,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.015613319844933872,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 5,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 1.1861088743992664e-14
+        }
+      ]
+    },
+    {
+      "element_id": 6029,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "initial_child_reference_depth": 8,
+      "original_child_volume_m3": 1.8740168465240373e-15,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000386,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 3.872708157076975e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000289,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 2.8834837908670956e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.12480126464189135,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.8751987353581833,
+          "still_multi_boundary_subtet_count": 7,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 7.471801063925686e-14
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.12528888766023044,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.12480126464189135,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.7499098476979689,
+          "still_multi_boundary_subtet_count": 12,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 14,
+          "physical_volume_partition_closure_relative": 9.071397911414002e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.2817662031695325,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.24950204591692704,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.4687317509136678,
+          "still_multi_boundary_subtet_count": 15,
+          "cumulative_one_boundary_subtets": 5,
+          "total_active_subtets_checked_at_level": 24,
+          "physical_volume_partition_closure_relative": 1.2733632799084618e-13
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.34436380736645944,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.34310560055198736,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.31253059208167033,
+          "still_multi_boundary_subtet_count": 20,
+          "cumulative_one_boundary_subtets": 11,
+          "total_active_subtets_checked_at_level": 30,
+          "physical_volume_partition_closure_relative": 1.1723361105934103e-13
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.38346913813389416,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.42896859212021604,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.18756226974599666,
+          "still_multi_boundary_subtet_count": 24,
+          "cumulative_one_boundary_subtets": 22,
+          "total_active_subtets_checked_at_level": 40,
+          "physical_volume_partition_closure_relative": 1.0670994758902317e-13
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.41083127209295417,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.47582870286072737,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.11334002504642103,
+          "still_multi_boundary_subtet_count": 29,
+          "cumulative_one_boundary_subtets": 34,
+          "total_active_subtets_checked_at_level": 48,
+          "physical_volume_partition_closure_relative": 1.0271095547030238e-13
+        }
+      ]
+    },
+    {
+      "element_id": 5843,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "initial_child_reference_depth": 7,
+      "original_child_volume_m3": 1.0802561206252439e-15,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.49989974828351275,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 4.052907398888478e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.49989974828351347,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 3.979882040349947e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.4998997482835209,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.249628454964636e-14
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0626457615981635,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.4372539866853612,
+          "still_multi_boundary_subtet_count": 7,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 2.866245322637347e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.1564429855728621,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.34345676271064757,
+          "still_multi_boundary_subtet_count": 11,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 14,
+          "physical_volume_partition_closure_relative": 4.381521512311868e-14
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.23459743244697104,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.26530231583653735,
+          "still_multi_boundary_subtet_count": 17,
+          "cumulative_one_boundary_subtets": 9,
+          "total_active_subtets_checked_at_level": 22,
+          "physical_volume_partition_closure_relative": 4.491059550119665e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.3048781507027933,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.19502159758071733,
+          "still_multi_boundary_subtet_count": 25,
+          "cumulative_one_boundary_subtets": 18,
+          "total_active_subtets_checked_at_level": 34,
+          "physical_volume_partition_closure_relative": 4.2719834745040715e-14
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.5001002517164467,
+          "cumulative_fully_inside_volume_fraction": 0.003896038297691463,
+          "cumulative_one_boundary_volume_fraction": 0.3673077770623693,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.1286959329234476,
+          "still_multi_boundary_subtet_count": 33,
+          "cumulative_one_boundary_subtets": 34,
+          "total_active_subtets_checked_at_level": 50,
+          "physical_volume_partition_closure_relative": 4.491059550119665e-14
+        }
+      ]
+    },
+    {
+      "element_id": 5937,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "initial_child_reference_depth": 5,
+      "original_child_volume_m3": 5.544786627283448e-15,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000893,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 8.920375495421021e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.24861119623385272,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.7513888037661963,
+          "still_multi_boundary_subtet_count": 3,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 4.908340583604868e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.24861119623385272,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.7513888037661609,
+          "still_multi_boundary_subtet_count": 6,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 6,
+          "physical_volume_partition_closure_relative": 1.3515720447607607e-14
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.6230193829969153,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.37698061700313523,
+          "still_multi_boundary_subtet_count": 6,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 12,
+          "physical_volume_partition_closure_relative": 5.050611325158632e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.8108250124103269,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.18917498758974013,
+          "still_multi_boundary_subtet_count": 6,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 12,
+          "physical_volume_partition_closure_relative": 6.700951927182298e-14
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.9052026277258922,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.09479737227417369,
+          "still_multi_boundary_subtet_count": 6,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 12,
+          "physical_volume_partition_closure_relative": 6.587135333939287e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.9367317011713522,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.06326829882871288,
+          "still_multi_boundary_subtet_count": 8,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 12,
+          "physical_volume_partition_closure_relative": 6.501772889007027e-14
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.9407148796777316,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.003912615414435419,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.05537250490789759,
+          "still_multi_boundary_subtet_count": 14,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 16,
+          "physical_volume_partition_closure_relative": 6.473318740696274e-14
+        }
+      ]
+    },
+    {
+      "element_id": 6008,
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "initial_child_reference_depth": 4,
+      "original_child_volume_m3": 6.22294002408442e-14,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.5000000000000154,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.5000000000000018,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 1.72402566463498e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.7500000000000228,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.24999999999999903,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 2,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 2.1702440719522686e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.8750000000000239,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.12499999999999807,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 3,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 2.1905267268303274e-14
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.9375000000000193,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.062499999999992964,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 1.2372419475615738e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.9375000000000193,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.06249999999999367,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 1.2980899121957495e-14
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.9375000000000193,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.06249999999999534,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 1.4603511512202184e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.007812499999999452,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.9531250000000191,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.039062499999997995,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 6,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 1.6428950451227455e-14
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.0117187499999988,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.9687500000000175,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.019531249999999382,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 10,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 1.5617644256105112e-14
+        }
+      ]
+    },
+    {
+      "element_id": 5865,
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "initial_child_reference_depth": 5,
+      "original_child_volume_m3": 4.000099545490653e-14,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.4999999999999668,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.5000000000000205,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 1.262146038116959e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.25000000000000866,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 2.950266364098391e-14
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.2500000000000036,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 3.455124779345175e-14
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.12500000000000316,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.12500000000000236,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 2,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.265802873627631e-14
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.18750000000000275,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.06250000000000099,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 4,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.4393479538687134e-14
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.21875000000000377,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.031249999999999688,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 6,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.470901604821637e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.21875000000000377,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.031250000000000264,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 6,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.407794302915789e-14
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.7499999999999618,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.2226562500000038,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.027343749999999833,
+          "still_multi_boundary_subtet_count": 7,
+          "cumulative_one_boundary_subtets": 7,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 3.455124779345175e-14
+        }
+      ]
+    },
+    {
+      "element_id": 5751,
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "initial_child_reference_depth": 2,
+      "original_child_volume_m3": 1.6662212543124314e-13,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000135,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 1.3635160403556519e-14
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000036,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 3.4845409920199993e-15
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.37499999999999467,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.6250000000000083,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 3,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 3.0300356452347818e-15
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.12500000000000464,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.5624999999999963,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.31250000000000294,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 6,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 3.787544556543477e-15
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.18750000000000627,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.6562499999999963,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.15625000000000225,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 9,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 4.848057032375651e-15
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.21875000000000752,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.7031249999999968,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.07812500000000097,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 12,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 5.3025623791608684e-15
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.23437500000000816,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.7265624999999969,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.039062500000000375,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 15,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 5.4540641614226075e-15
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.24218750000000824,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.738281249999997,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.01953124999999997,
+          "still_multi_boundary_subtet_count": 5,
+          "cumulative_one_boundary_subtets": 18,
+          "total_active_subtets_checked_at_level": 10,
+          "physical_volume_partition_closure_relative": 5.1510605968991294e-15
+        }
+      ]
+    },
+    {
+      "element_id": 5847,
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "initial_child_reference_depth": 2,
+      "original_child_volume_m3": 3.982378576999005e-13,
+      "level_records": [
+        {
+          "h_level": 0,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0,
+          "still_multi_boundary_subtet_count": 1,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 1,
+          "physical_volume_partition_closure_relative": 0.0
+        },
+        {
+          "h_level": 1,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000007,
+          "still_multi_boundary_subtet_count": 2,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 2,
+          "physical_volume_partition_closure_relative": 7.606574356201501e-16
+        },
+        {
+          "h_level": 2,
+          "cumulative_outside_volume_fraction": 0.0,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 1.0000000000000013,
+          "still_multi_boundary_subtet_count": 4,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 4,
+          "physical_volume_partition_closure_relative": 1.26776239270025e-15
+        },
+        {
+          "h_level": 3,
+          "cumulative_outside_volume_fraction": 0.12500000000000594,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.0,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.8749999999999979,
+          "still_multi_boundary_subtet_count": 7,
+          "cumulative_one_boundary_subtets": 0,
+          "total_active_subtets_checked_at_level": 8,
+          "physical_volume_partition_closure_relative": 3.80328717810075e-15
+        },
+        {
+          "h_level": 4,
+          "cumulative_outside_volume_fraction": 0.2499999999999993,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.06250000000000183,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.6875000000000022,
+          "still_multi_boundary_subtet_count": 11,
+          "cumulative_one_boundary_subtets": 1,
+          "total_active_subtets_checked_at_level": 14,
+          "physical_volume_partition_closure_relative": 3.29618222102065e-15
+        },
+        {
+          "h_level": 5,
+          "cumulative_outside_volume_fraction": 0.4062499999999973,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.2187500000000033,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.37500000000000877,
+          "still_multi_boundary_subtet_count": 12,
+          "cumulative_one_boundary_subtets": 6,
+          "total_active_subtets_checked_at_level": 22,
+          "physical_volume_partition_closure_relative": 9.381441705981851e-15
+        },
+        {
+          "h_level": 6,
+          "cumulative_outside_volume_fraction": 0.46874999999999656,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.31250000000000583,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.2187500000000077,
+          "still_multi_boundary_subtet_count": 14,
+          "cumulative_one_boundary_subtets": 12,
+          "total_active_subtets_checked_at_level": 24,
+          "physical_volume_partition_closure_relative": 1.0142099141602e-14
+        },
+        {
+          "h_level": 7,
+          "cumulative_outside_volume_fraction": 0.49218749999999645,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.37500000000000777,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.13281250000000425,
+          "still_multi_boundary_subtet_count": 17,
+          "cumulative_one_boundary_subtets": 20,
+          "total_active_subtets_checked_at_level": 28,
+          "physical_volume_partition_closure_relative": 8.494008031091676e-15
+        },
+        {
+          "h_level": 8,
+          "cumulative_outside_volume_fraction": 0.49609374999999656,
+          "cumulative_fully_inside_volume_fraction": 0.0,
+          "cumulative_one_boundary_volume_fraction": 0.41796875000000944,
+          "unresolved_at_least_two_boundary_volume_fraction": 0.08593750000000322,
+          "still_multi_boundary_subtet_count": 22,
+          "cumulative_one_boundary_subtets": 31,
+          "total_active_subtets_checked_at_level": 34,
+          "physical_volume_partition_closure_relative": 9.254665466711825e-15
+        }
+      ]
+    }
+  ],
+  "volume_weights": "true positive curved M8 Tet10 detJ integrated by exact degree-three Duffy q4",
+  "remaining_multi_bound_fraction_bounded_not_integrated": true,
+  "full_48_bin_quadrature_converged": false,
+  "physical_4D_FEM_approved": false
+}

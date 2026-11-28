@@ -1,0 +1,18 @@
+{
+  "protocol": "P10LG_TET10_EXPLICIT_TWO_TERM_DIAGNOSTIC_SOURCE_ONLY",
+  "status": "SOURCE_ONLY_PREPARED_NO_FEM_NO_GMSH",
+  "base_P10DD_sha256": "bbcb824a9fa25d7c66be54091c19c56b2a7ced40d2801071250f0b57ed4df55d",
+  "instrumented_P10DD_sha256": "0a470e43668a751dc0514f94e8e33ad2b8615c9d56c633579dd7112fafcec2b3",
+  "syntax_check": "PASS: g++ -std=c++20 -fopenmp -O0 -fsyntax-only with all original include paths and STAGE3D06_ROOT_DIR",
+  "new_sidecar": "P10LG_EXPLICIT_GEOMETRY_STRESS_4D.csv",
+  "sidecar_rows_per_36x25_run": 43200,
+  "untouched_original_output": "P10DD_SIGNED_R_THETA_PHI_T.csv",
+  "strict_closures": [
+    "cell geometry+stress equals original explicit",
+    "all-step geometry+stress equals global explicit",
+    "existing P10DD/P10V exact reference still checked"
+  ],
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0,
+  "caveat": "No real numbers for the two new terms until a separately approved, independently marked physical run or validated saved-state replay."
+}

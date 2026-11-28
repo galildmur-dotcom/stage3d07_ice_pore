@@ -1,0 +1,57 @@
+{
+  "protocol": "P10LF_PINNED_SOURCE_EXPLICIT_PEAKMOMENT_QUOTIENT_AUDIT",
+  "status": "PASS_SOURCE_CONTRACT_AND_COMPLEX_STEP_QUOTIENT_ONLY",
+  "source_sha256": {
+    "stage3d10dd_4d_partition.hpp": "bbcb824a9fa25d7c66be54091c19c56b2a7ced40d2801071250f0b57ed4df55d",
+    "src/stage3d10v_analytic_shape.hpp": "c4f5aaa46bc07423d7aa7518578ffb5020afdbf5951655b083c12cfa229d918a",
+    "src/stage3d10f_functional_adjoint.hpp": "c012f55606861273ec90c34e21034fc5ef69dee0fa5fa2b83f6f3c459a79cad4",
+    "src/stage3d10k_h0_coupled_pilot.cpp": "06c1aced0cf5427e2acb7960ed1246683f8612019729730ab59bde983d0cbd80",
+    "src/stage3d10p_partial_audit.cpp": "a9eca7632a8499521b7311f911216296e7b0fdaf8c5b938fe6a853a4cf539938"
+  },
+  "static_contracts": {
+    "P10DD_local_objective_quotient": true,
+    "P10DD_geometry_volume_and_law": true,
+    "P10DD_stress_jvp": true,
+    "P10V_full_quotient_parity": true,
+    "same_reference_P10DD_to_P10V_per_step": true,
+    "centroid_elementwise_B6_mask": true,
+    "radial_normal_C2_velocity": true,
+    "PeakMoment_no_direct_strain_or_direct_history": true
+  },
+  "synthetic_complex_step_quotient_max_abs_error": 1.3877787807814457e-17,
+  "explicit_PeakMoment_formula": "w/V sum_QP[dvol*(src.value-Jbar) + vol*lambda_sigma_dot_law.d_sigma]",
+  "first_term": "normalized geometric volume/Jacobian (includes global Jbar)",
+  "second_term": "constitutive spectral stress sensitivity via Tet10 dgrad,dstrain and material JVP",
+  "PeakMoment_direct_history_and_strain_source": "ZERO; adjoint history contribution remains separate",
+  "B6_mask": "element centroid radius<6mm; entire selected element, fixed per mesh; differs across meshes",
+  "observations": {
+    "m7": {
+      "objective": 0.0475212762120802,
+      "B6_volume_m3": 9.004699101693108e-07
+    },
+    "m8": {
+      "objective": 0.0475050574880294,
+      "B6_volume_m3": 9.004774522419999e-07
+    },
+    "m9": {
+      "objective": 0.0474903613992759,
+      "B6_volume_m3": 9.00468993488458e-07
+    }
+  },
+  "B6_relative_volume_changes": {
+    "M7_to_M8": 8.375707621022244e-06,
+    "M8_to_M9": -9.3936317014931e-06
+  },
+  "objective_relative_changes": {
+    "M7_to_M8": -0.00034129394964943494,
+    "M8_to_M9": -0.0003093584037279218
+  },
+  "cannot_identify": "separate two explicit terms in existing P10DD CSV; need new diagnostic columns or a saved-state replay",
+  "limitations": [
+    "No forward/adjoint state replay, physical local error estimate, or mesh convergence proof",
+    "Complex-step test is synthetic algebra, not a test of nonlinear EDV constitutive JVP",
+    "B6 volume change cannot by itself quantify objective mask-induced derivative error"
+  ],
+  "FEM_attempts": 0,
+  "mesh_attempts": 0
+}

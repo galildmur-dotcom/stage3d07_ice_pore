@@ -1,0 +1,121 @@
+{
+  "stage": "P10QH",
+  "status": "PASS_CONSERVATIVE_FLOAT_SUBDIVIDED_REAL_TRI6_FACES_NOT_FORMAL_CERTIFICATE",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_modified": false,
+  "Gmsh_run": false,
+  "physical_FEM_run": false,
+  "unique_real_curved_faces": 25911,
+  "near_pore_candidate_faces": 10017,
+  "levels": [
+    2
+  ],
+  "max_spherical_depth": 15,
+  "floating_protective_margin_m": 5e-12,
+  "limitations": "Face-subpatch Bezier enclosures use floating coordinates and protective slack; not interval-directed rounding or proof of global M8 embedding. Pure volumes conditional on embedded conforming Tet10 mesh.",
+  "independent_restriction_and_hull_checks": [
+    {
+      "random_real_face_subpatch_interior_points": 9600,
+      "maximum_parent_vs_subpatch_coordinate_gap_m": 2.0816681711721685e-17,
+      "maximum_bezier_enclosure_violation_m": 2.211772431870429e-17,
+      "level": 2,
+      "number_of_subpatches": 160272,
+      "build_and_validation_seconds": 0.5760549219994573
+    }
+  ],
+  "comparison": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "level_2_pure_volume_fraction": 0.44852463988101887,
+      "level_2_boxes": 45493
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "level_2_pure_volume_fraction": 0.4435338788275039,
+      "level_2_boxes": 46149
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "level_2_pure_volume_fraction": 0.3568352408461536,
+      "level_2_boxes": 53047
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "level_2_pure_volume_fraction": 0.3854537632439168,
+      "level_2_boxes": 51609
+    }
+  ],
+  "cases": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "bezier_subdivision_levels": 2,
+      "spherical_depth_limit": 15,
+      "spherical_boxes_visited": 45493,
+      "pure_boxes": 4606,
+      "unresolved_terminal_boxes": 18141,
+      "pure_volume_fraction": 0.44852463988101887,
+      "unresolved_volume_fraction": 0.5514753601189533,
+      "volume_partition_relative_error": 2.778895254404986e-14,
+      "min_faces_possible": 0,
+      "max_faces_possible": 229,
+      "independent_pure_box_locator_checks": 480
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "bezier_subdivision_levels": 2,
+      "spherical_depth_limit": 15,
+      "spherical_boxes_visited": 46149,
+      "pure_boxes": 4771,
+      "unresolved_terminal_boxes": 18304,
+      "pure_volume_fraction": 0.4435338788275039,
+      "unresolved_volume_fraction": 0.5564661211724709,
+      "volume_partition_relative_error": 2.514238563509273e-14,
+      "min_faces_possible": 0,
+      "max_faces_possible": 269,
+      "independent_pure_box_locator_checks": 480
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "bezier_subdivision_levels": 2,
+      "spherical_depth_limit": 15,
+      "spherical_boxes_visited": 53047,
+      "pure_boxes": 5460,
+      "unresolved_terminal_boxes": 21064,
+      "pure_volume_fraction": 0.3568352408461536,
+      "unresolved_volume_fraction": 0.6431647591538437,
+      "volume_partition_relative_error": 2.7342668073654625e-15,
+      "min_faces_possible": 0,
+      "max_faces_possible": 543,
+      "independent_pure_box_locator_checks": 480
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "bezier_subdivision_levels": 2,
+      "spherical_depth_limit": 15,
+      "spherical_boxes_visited": 51609,
+      "pure_boxes": 5529,
+      "unresolved_terminal_boxes": 20276,
+      "pure_volume_fraction": 0.3854537632439168,
+      "unresolved_volume_fraction": 0.6145462367560875,
+      "volume_partition_relative_error": 4.29670498300287e-15,
+      "min_faces_possible": 0,
+      "max_faces_possible": 512,
+      "independent_pure_box_locator_checks": 480
+    }
+  ],
+  "elapsed_s": 22.52932373099975,
+  "absolute_integration_error_certified": false,
+  "physical_4D_FEM_approved": false
+}

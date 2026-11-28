@@ -1,0 +1,20 @@
+{
+  "schema": "P10FN_ADAPT_V1",
+  "revision": "P10FO_M3_AFTER_REAL_M0_M1_M2_P10FM",
+  "parent_mesh": "M2",
+  "new_mesh": "M3",
+  "parent_mesh_sha256": "ff6500e2da4f4697e1788669e2404d33cdeb9435c1230cf14f5cc7619f1f6a44",
+  "parent_geo_sha256": "2aec3e2626b3500388954e428d880c702a4bb820116af93924b8d590bf9b26f1",
+  "alpha": 0.20,
+  "smooth_kappa": {
+    "radial_full_mm": 0.05,
+    "radial_zero_mm": 0.35,
+    "polar_start_mu": 0.55,
+    "polar_full_mu": 0.80,
+    "north_weight": 1.0,
+    "south_weight": 0.8
+  },
+  "scientific_basis": "P10FM: 79.02% of signed absolute M1-M2 4D-bin deltas in polar extreme bands; 72.46% in first 0.1mm; φ differences are diagnostic and not directly forced into field. Local q>1.25 inherited M2 geometry remains an independent QA item.",
+  "physical_FEM_at_mesh_generation": false,
+  "requires_mesh_qa_and_researcher_go_before_physics": true
+}

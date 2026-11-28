@@ -1,0 +1,9 @@
+{
+  "status": "PREPARED_READONLY_NO_GMSH_NO_MESH_NO_FEM",
+  "mesh_sha256": "244249fcc62d0b26877164dae1cc6a6528edd1d1e5973edad4dc79aad7872dab",
+  "archive_sha256": "da6612cb1fa70dfc4d5cf8fedc0b0534150db944e5b5dda245dffeaa91ea69a6",
+  "archive_bytes": 1030131,
+  "files": 5,
+  "mesh_attempts": 0,
+  "FEM_attempts": 0
+}

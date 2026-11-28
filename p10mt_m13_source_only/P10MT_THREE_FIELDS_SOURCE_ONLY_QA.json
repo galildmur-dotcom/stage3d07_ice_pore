@@ -1,0 +1,235 @@
+{
+  "protocol": "P10MT_M13_THREE_C2_SOURCE_ONLY_HYPOTHESES",
+  "status": "PASS_SOURCE_ONLY_NO_GMSH_NO_MESH_NO_FEM",
+  "parent_source_sha256": "567c0574a2cb4dae32e10c0831695c87019b6227ce6ecc80509c83fe039ac01c",
+  "coordinate_sha256": "98bc99af9783e14f7800f08ecd04fc6bee8093d0490b359e3a024f4c6c4566a3",
+  "qp_source_sha256": "e779145ae4ffd37677b3d05c2b214d4b2f09520504c20bd4e8271f96e4b3c03f",
+  "bins": 1200,
+  "full4d_old_L1": 0.7222589721609269,
+  "full4d_new_L1": 0.7153418305088184,
+  "growth_positive_L1_sum": 0.20010181825936563,
+  "existing_polar_core": "retained P10KP C2 plateau d<=0.5mm, abs(mu)>=0.8",
+  "nominal_incremental_Veff_ratio": "1-0.20*kappa13, 0.80..1.0 (not measured Tet10)",
+  "variants": {
+    "A_existing_residual": {
+      "csv": "P10MT_M13_A_existing_residual_1200_BINS.csv",
+      "csv_sha256": "5c63f14eb16ae9b2e5eb35b9257fcb17e401e82d53e17e29a787fbfd0ac73383",
+      "score_max": 1.2,
+      "score_min": 0.0,
+      "center_kappa_min_max": [
+        0.0,
+        1.0
+      ],
+      "center_kappa_mean": 0.17501572107990482,
+      "center_nominal_Veff_ratio_min_max": [
+        0.8,
+        1.0
+      ],
+      "center_new_L1_weighted_kappa": 0.44310914344701596,
+      "center_growth_L1_weighted_kappa": 0.44053628561858577,
+      "groups": {
+        "north": {
+          "count": 120,
+          "mean_kappa": 0.553807315996507,
+          "mean_nominal_volume_ratio": 0.8892385368006986,
+          "new_L1_weighted_kappa": 0.8487003946463438,
+          "growth_L1_weighted_kappa": 0.8313572074965985
+        },
+        "south": {
+          "count": 120,
+          "mean_kappa": 0.5524047456477975,
+          "mean_nominal_volume_ratio": 0.8895190508704405,
+          "new_L1_weighted_kappa": 0.8952114328753931,
+          "growth_L1_weighted_kappa": 0.9066774999661936
+        },
+        "middle": {
+          "count": 960,
+          "mean_kappa": 0.08049314364434294,
+          "mean_nominal_volume_ratio": 0.9839013712711313,
+          "new_L1_weighted_kappa": 0.13574330488422254,
+          "growth_L1_weighted_kappa": 0.15789307161123428
+        },
+        "wall012": {
+          "count": 360,
+          "mean_kappa": 0.31468136649077844,
+          "mean_nominal_volume_ratio": 0.9370637267018442,
+          "new_L1_weighted_kappa": 0.7381792371957092,
+          "growth_L1_weighted_kappa": 0.7370617554853676
+        },
+        "polar_wall012": {
+          "count": 72,
+          "mean_kappa": 1.0,
+          "mean_nominal_volume_ratio": 0.7999999999999999,
+          "new_L1_weighted_kappa": 1.0,
+          "growth_L1_weighted_kappa": 1.0
+        },
+        "worsened": {
+          "count": 455,
+          "mean_kappa": 0.2304617631337849,
+          "mean_nominal_volume_ratio": 0.953907647373243,
+          "new_L1_weighted_kappa": 0.4666744260242791,
+          "growth_L1_weighted_kappa": 0.4405362856185857
+        },
+        "unselected_old_top20": {
+          "count": 960,
+          "mean_kappa": 0.1086477525906276,
+          "mean_nominal_volume_ratio": 0.9782704494818745,
+          "new_L1_weighted_kappa": 0.18098247283595073,
+          "growth_L1_weighted_kappa": 0.22936050448904027
+        }
+      },
+      "seam_error": 2.0816681711721685e-17,
+      "pole_error": 0.0,
+      "c2_status": "analytical positive Wendland C2 plus S5; exact seam/pole equality sampled"
+    },
+    "B_growth_aware": {
+      "csv": "P10MT_M13_B_growth_aware_1200_BINS.csv",
+      "csv_sha256": "5dd247b466fb27a3b75a0e1f417ccbf487e9d6828bf6817493627cf985c9c890",
+      "score_max": 1.160670048541834,
+      "score_min": 0.0,
+      "center_kappa_min_max": [
+        0.0,
+        1.0
+      ],
+      "center_kappa_mean": 0.17740364670635592,
+      "center_nominal_Veff_ratio_min_max": [
+        0.8,
+        1.0
+      ],
+      "center_new_L1_weighted_kappa": 0.4482671783270794,
+      "center_growth_L1_weighted_kappa": 0.4516489162821153,
+      "groups": {
+        "north": {
+          "count": 120,
+          "mean_kappa": 0.5574591650295313,
+          "mean_nominal_volume_ratio": 0.8885081669940936,
+          "new_L1_weighted_kappa": 0.8532121775343808,
+          "growth_L1_weighted_kappa": 0.8408850675380948
+        },
+        "south": {
+          "count": 120,
+          "mean_kappa": 0.5532258996931793,
+          "mean_nominal_volume_ratio": 0.8893548200613641,
+          "new_L1_weighted_kappa": 0.8960219885791242,
+          "growth_L1_weighted_kappa": 0.9085853939794386
+        },
+        "middle": {
+          "count": 960,
+          "mean_kappa": 0.08291892529260608,
+          "mean_nominal_volume_ratio": 0.9834162149414787,
+          "new_L1_weighted_kappa": 0.14270283883980084,
+          "growth_L1_weighted_kappa": 0.17236555418783395
+        },
+        "wall012": {
+          "count": 360,
+          "mean_kappa": 0.3154796105479101,
+          "mean_nominal_volume_ratio": 0.936904077890418,
+          "new_L1_weighted_kappa": 0.7389174330175466,
+          "growth_L1_weighted_kappa": 0.7384929653146449
+        },
+        "polar_wall012": {
+          "count": 72,
+          "mean_kappa": 1.0,
+          "mean_nominal_volume_ratio": 0.7999999999999999,
+          "new_L1_weighted_kappa": 1.0,
+          "growth_L1_weighted_kappa": 1.0
+        },
+        "worsened": {
+          "count": 455,
+          "mean_kappa": 0.23585549169746456,
+          "mean_nominal_volume_ratio": 0.952828901660507,
+          "new_L1_weighted_kappa": 0.47447960117205285,
+          "growth_L1_weighted_kappa": 0.45164891628211534
+        },
+        "unselected_old_top20": {
+          "count": 960,
+          "mean_kappa": 0.11115406634290308,
+          "mean_nominal_volume_ratio": 0.9777691867314194,
+          "new_L1_weighted_kappa": 0.189655025552048,
+          "growth_L1_weighted_kappa": 0.24441476437177753
+        }
+      },
+      "seam_error": 3.469446951953614e-17,
+      "pole_error": 0.0,
+      "c2_status": "analytical positive Wendland C2 plus S5; exact seam/pole equality sampled"
+    },
+    "C_balanced_coverage": {
+      "csv": "P10MT_M13_C_balanced_coverage_1200_BINS.csv",
+      "csv_sha256": "2e5e6978c45618993207f38b173fdcad0f37ba09eef88bf12aab1945f18dcad5",
+      "score_max": 1.0474610499257435,
+      "score_min": 0.15,
+      "center_kappa_min_max": [
+        0.07724963295100667,
+        1.0
+      ],
+      "center_kappa_mean": 0.28130721951894566,
+      "center_nominal_Veff_ratio_min_max": [
+        0.8,
+        0.9845500734097987
+      ],
+      "center_new_L1_weighted_kappa": 0.5391552516480655,
+      "center_growth_L1_weighted_kappa": 0.5527430701407784,
+      "groups": {
+        "north": {
+          "count": 120,
+          "mean_kappa": 0.6241068801256991,
+          "mean_nominal_volume_ratio": 0.87517862397486,
+          "new_L1_weighted_kappa": 0.886221142470852,
+          "growth_L1_weighted_kappa": 0.8803234852130698
+        },
+        "south": {
+          "count": 120,
+          "mean_kappa": 0.6135490603939341,
+          "mean_nominal_volume_ratio": 0.877290187921213,
+          "new_L1_weighted_kappa": 0.9161500075312538,
+          "growth_L1_weighted_kappa": 0.9283964861291296
+        },
+        "middle": {
+          "count": 960,
+          "mean_kappa": 0.1969270318337279,
+          "mean_nominal_volume_ratio": 0.9606145936332545,
+          "new_L1_weighted_kappa": 0.27971099477307576,
+          "growth_L1_weighted_kappa": 0.32039334191236896
+        },
+        "wall012": {
+          "count": 360,
+          "mean_kappa": 0.3986433979645432,
+          "mean_nominal_volume_ratio": 0.9202713204070915,
+          "new_L1_weighted_kappa": 0.7754972692229758,
+          "growth_L1_weighted_kappa": 0.7776322936668165
+        },
+        "polar_wall012": {
+          "count": 72,
+          "mean_kappa": 1.0,
+          "mean_nominal_volume_ratio": 0.7999999999999999,
+          "new_L1_weighted_kappa": 1.0,
+          "growth_L1_weighted_kappa": 1.0
+        },
+        "worsened": {
+          "count": 455,
+          "mean_kappa": 0.35238026360420815,
+          "mean_nominal_volume_ratio": 0.9295239472791583,
+          "new_L1_weighted_kappa": 0.5676948838796325,
+          "growth_L1_weighted_kappa": 0.5527430701407784
+        },
+        "unselected_old_top20": {
+          "count": 960,
+          "mean_kappa": 0.2180527238653435,
+          "mean_nominal_volume_ratio": 0.9563894552269313,
+          "new_L1_weighted_kappa": 0.3184912843136496,
+          "growth_L1_weighted_kappa": 0.38069176523500753
+        }
+      },
+      "seam_error": 1.6653345369377348e-16,
+      "pole_error": 0.0,
+      "c2_status": "analytical positive Wendland C2 plus S5; exact seam/pole equality sampled"
+    }
+  },
+  "mesh_attempts": 0,
+  "FEM_attempts": 0,
+  "limitations": [
+    "Score-to-error overlap is source-only retrospective and not predictive FEM validation",
+    "C2 field is spatially interpolated; curved 729QP D029 and Gmsh D031 remain unmeasured",
+    "No M13 geometry generated; not yet authorized FEM"
+  ]
+}

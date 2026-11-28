@@ -1,0 +1,22 @@
+{
+  "protocol": "P10LR_ACTUAL_M9_CURVED_TET10_FACE_PAIR_SYNTHETIC_STRESS",
+  "date": "2026-11-25",
+  "status": "PASS_REAL_GEOMETRY_SYNTHETIC_TENSORS_NO_FEM",
+  "mesh_sha256": "a40aca54636a752afe4d7babe9d03e741b2e988b9ad3dbb6f356728bff035a58",
+  "tet10": 13166,
+  "interior_face_pairs": 25470,
+  "observed_face_pairs_all_mask": 25470,
+  "max_two_sided_curved_face_centroid_gap_m": 1.44097e-17,
+  "max_false_jump_for_constant_tensor": 5.49757e-15,
+  "deliberate_element_stress_jump": 1000,
+  "detected_element_stress_jump": 1000,
+  "deliberate_element_geometry_jvp_jump": 500,
+  "detected_element_geometry_jvp_jump": 500,
+  "reconstruction_orders_checked": [1,2],
+  "norms_checked": ["Frobenius stress", "traction with actual curved face normal", "Frobenius geometric JVP"],
+  "source": "research/diagnostics/p10lr_tet10_face_jump.hpp",
+  "test": "research/tools/p10lr_real_m9_synthetic_face_pair_selftest.cpp",
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "limitation": "All tensor values are synthetic; real transient EDV QP stresses/JVP were not captured and physical jumps were not measured."
+}

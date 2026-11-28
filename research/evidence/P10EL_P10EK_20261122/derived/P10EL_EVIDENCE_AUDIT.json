@@ -1,0 +1,32 @@
+{
+  "protocol": "P10EL_ORIGINAL_P10EK_EVIDENCE_SOURCE_ONLY",
+  "status": "GEOMETRY_PASS_LOCAL_ADAPTATION_UNRESOLVED_NO_FEM",
+  "m2_sha256_claimed_by_windows_manifest": "f7183efdaff22b0ed7c281104ee00e18499c0d53f087100e08959a7d4a43250b",
+  "m2_raw_mesh_present_in_evidence": false,
+  "m2_raw_sha_independently_verified": false,
+  "native_3d_attempts": 1,
+  "native_exit_code": 0,
+  "native_wall_s": 0.6052883000229485,
+  "native_polled_private_bytes": 251006976,
+  "qa_exit_code": 0,
+  "qa_wall_s": 10.44877739995718,
+  "m1_tet10": 9736,
+  "m2_tet10": 9988,
+  "m1_pore_tri6": 178,
+  "m2_pore_tri6": 194,
+  "nonpositive_curved27qp_jacobians": {
+    "m1": 0,
+    "m2": 0
+  },
+  "polar_nearwall_0_100um_abs_mu_ge_0p8": {
+    "m1_tet10": 21,
+    "m2_tet10": 32,
+    "target_local_volume_ratio": 0.8,
+    "observed_unpaired_curved27qp_median_ratio": 0.7294330734513682,
+    "diagnostic_gap": -0.07056692654863184,
+    "proves_20pct_volume_cap_violation": false
+  },
+  "independent_raw_fixed_spatial_qp_test": "PENDING_ORIGINAL_M2_MSH",
+  "physical_fem_allowed": false,
+  "next_required_input": "Original P10EK run P10EA_M2_CANDIDATE.msh (private)"
+}

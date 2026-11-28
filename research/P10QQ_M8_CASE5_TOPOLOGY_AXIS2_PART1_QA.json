@@ -1,0 +1,3295 @@
+{
+  "stage": "P10QQ",
+  "scope": "one frozen root-topology-probe quadtree, not certified",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_case": 5,
+  "original_element_id": 5865,
+  "axis": 2,
+  "all_frozen_test_indices": [
+    26,
+    20,
+    31,
+    21,
+    23,
+    10,
+    8,
+    38
+  ],
+  "part": 1,
+  "parts": 2,
+  "frozen_parameters": {
+    "probe_fraction": [
+      0.05,
+      0.5,
+      0.95
+    ],
+    "max_depth": 4,
+    "node_budget": 16384,
+    "min_leaf_order": 8,
+    "risk_weight_at_unresolved_max_depth": 4.0,
+    "topology_signature": "per-active-constraint interior roots + accepted ray intervals"
+  },
+  "prior_q256_reused_and_new_q256_indices": [
+    38
+  ],
+  "input_sha256": {
+    "child": "b7020a3700d1e7a2847a8a4bbe283323bc67678719a0ea368a3f4081b815f64c",
+    "axis2": "1bfccc665236ba4677c630229a3624b93c74c695a1bc5b5239020754328f23c8",
+    "old_part0": "cf713bc6444b72909e1203e7ab018df58ba001265d4dade675a185a5de748a63",
+    "old_part1": "3c8b6a7d5dc2bb5b02dddd395bfb33d16d46ab5caccda3e7b8a3365928c0ce40",
+    "old_posthoc": "d5b0e23c4cfdbe1cee0ed3cf6c4c3ffb6244e3824fb524f2cf517f8bfb78c064"
+  },
+  "finite_probes_may_miss_isolated_tangencies": true,
+  "new_q256_is_not_exact_error_certificate": true,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true,
+  "cells": [
+    {
+      "index": 20,
+      "group": "multi",
+      "q256_reference_origin": "P10QP_PREVIOUS_Q256_REFERENCE",
+      "uniform_q128_from_P10QO": {
+        "cut_gradient_m3": 7.997256094690228e-17,
+        "cut_volume_m3": 4.049402342771355e-17,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 10414,
+        "elapsed_s": 3.435920414998691
+      },
+      "uniform_q256_reference": {
+        "cut_gradient_m3": 7.997259201233967e-17,
+        "cut_volume_m3": 4.04940351670021e-17,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 41633,
+        "elapsed_s": 12.967173704000743
+      },
+      "new_q256_elapsed_s": 0.0,
+      "topology_probe_count": 1053,
+      "topology_build_elapsed_s": 0.19596291899870266,
+      "leaf_count": 88,
+      "max_depth_reached": 4,
+      "unresolved_max_depth_topology_count": 41,
+      "number_of_risk_weighted_panels": 41,
+      "adaptive_full_gradient_relative_error": 3.0479151423000077e-15,
+      "adaptive_full_volume_relative_error": 1.8932190571752053e-15,
+      "adaptive_cut": {
+        "cut_gradient_m3": 7.997224945730013e-17,
+        "cut_volume_m3": 4.049386136479018e-17,
+        "transverse_Gauss_points": 16362,
+        "accepted_ray_segments": 11863,
+        "elapsed_s": 3.5162490789989533
+      },
+      "leaves": [
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.0,
+          "t1": 0.125,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.125,
+          "t1": 0.25,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.5,
+          "t0": 0.25,
+          "t1": 0.5,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.0,
+          "t1": 0.125,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.125,
+          "t1": 0.25,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.75,
+          "s1": 1.0,
+          "t0": 0.0,
+          "t1": 0.25,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.75,
+          "s1": 1.0,
+          "t0": 0.25,
+          "t1": 0.5,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.25,
+          "t0": 0.5,
+          "t1": 0.75,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.25,
+          "t0": 0.75,
+          "t1": 1.0,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.75,
+          "t1": 0.875,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.5,
+          "t1": 1.0,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 52
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "group": "multi",
+      "q256_reference_origin": "P10QP_PREVIOUS_Q256_REFERENCE",
+      "uniform_q128_from_P10QO": {
+        "cut_gradient_m3": 1.5185560347430195e-17,
+        "cut_volume_m3": 7.667478035995307e-18,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 1907,
+        "elapsed_s": 3.3658043650029867
+      },
+      "uniform_q256_reference": {
+        "cut_gradient_m3": 1.5184456336179196e-17,
+        "cut_volume_m3": 7.666921106997936e-18,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 7652,
+        "elapsed_s": 12.449392285998329
+      },
+      "new_q256_elapsed_s": 0.0,
+      "topology_probe_count": 1161,
+      "topology_build_elapsed_s": 0.1883009530029085,
+      "leaf_count": 97,
+      "max_depth_reached": 4,
+      "unresolved_max_depth_topology_count": 41,
+      "number_of_risk_weighted_panels": 41,
+      "adaptive_full_gradient_relative_error": 1.7630884783402614e-15,
+      "adaptive_full_volume_relative_error": 3.4709016048240148e-15,
+      "adaptive_cut": {
+        "cut_gradient_m3": 1.518294100700432e-17,
+        "cut_volume_m3": 7.666154573575323e-18,
+        "transverse_Gauss_points": 16374,
+        "accepted_ray_segments": 1455,
+        "elapsed_s": 3.455923483001243
+      },
+      "leaves": [
+        {
+          "s0": 0.0,
+          "s1": 0.25,
+          "t0": 0.0,
+          "t1": 0.25,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.0,
+          "t1": 0.125,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.125,
+          "t1": 0.25,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.25,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.25,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 12
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.0,
+          "t1": 0.5,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 52
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 6,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.75,
+          "t1": 0.875,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.625,
+          "t1": 0.75,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.75,
+          "s1": 1.0,
+          "t0": 0.5,
+          "t1": 0.75,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.75,
+          "t1": 0.875,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 0.5625,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5625,
+          "s1": 0.625,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.625,
+          "s1": 0.75,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.75,
+          "s1": 1.0,
+          "t0": 0.75,
+          "t1": 1.0,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 26
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "group": "one",
+      "q256_reference_origin": "P10QP_PREVIOUS_Q256_REFERENCE",
+      "uniform_q128_from_P10QO": {
+        "cut_gradient_m3": 1.3602174503670264e-16,
+        "cut_volume_m3": 6.818590147505038e-17,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 6805,
+        "elapsed_s": 4.052673604001029
+      },
+      "uniform_q256_reference": {
+        "cut_gradient_m3": 1.3602138042470473e-16,
+        "cut_volume_m3": 6.818571958785595e-17,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 27271,
+        "elapsed_s": 9.080467307001527
+      },
+      "new_q256_elapsed_s": 0.0,
+      "topology_probe_count": 837,
+      "topology_build_elapsed_s": 0.08209093199911877,
+      "leaf_count": 70,
+      "max_depth_reached": 4,
+      "unresolved_max_depth_topology_count": 28,
+      "number_of_risk_weighted_panels": 28,
+      "adaptive_full_gradient_relative_error": 2.372058344898024e-15,
+      "adaptive_full_volume_relative_error": 2.3665238214687546e-15,
+      "adaptive_cut": {
+        "cut_gradient_m3": 1.3602138320068145e-16,
+        "cut_volume_m3": 6.818572075202528e-17,
+        "transverse_Gauss_points": 15722,
+        "accepted_ray_segments": 7226,
+        "elapsed_s": 2.2735639439997612
+      },
+      "leaves": [
+        {
+          "s0": 0.0,
+          "s1": 0.25,
+          "t0": 0.0,
+          "t1": 0.25,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 27
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0,
+          "t1": 0.0625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.0625,
+          "t1": 0.125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.0,
+          "t1": 0.125,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.125,
+          "t1": 0.1875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.1875,
+          "t1": 0.25,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.125,
+          "t1": 0.25,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.25,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.25,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.25,
+          "t1": 0.3125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.3125,
+          "t1": 0.375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.25,
+          "t1": 0.375,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.375,
+          "t1": 0.4375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.4375,
+          "t1": 0.5,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.375,
+          "t1": 0.5,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.0,
+          "t1": 0.5,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 55
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.625,
+          "t1": 0.75,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.25,
+          "t0": 0.75,
+          "t1": 1.0,
+          "depth": 2,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 27
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.5,
+          "t1": 1.0,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 55
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "group": "multi",
+      "q256_reference_origin": "P10QQ_NEW_Q256_HELDOUT_ORDER",
+      "uniform_q128_from_P10QO": {
+        "cut_gradient_m3": 9.93799610155506e-18,
+        "cut_volume_m3": 5.02224749915517e-18,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 1761,
+        "elapsed_s": 3.3600721069997235
+      },
+      "uniform_q256_reference": {
+        "cut_gradient_m3": 9.934713488709131e-18,
+        "cut_volume_m3": 5.0205849374712166e-18,
+        "transverse_Gauss_points": 65536,
+        "accepted_ray_segments": 7049
+      },
+      "new_q256_elapsed_s": 14.204699231999257,
+      "topology_probe_count": 657,
+      "topology_build_elapsed_s": 0.10983128600128111,
+      "leaf_count": 55,
+      "max_depth_reached": 4,
+      "unresolved_max_depth_topology_count": 30,
+      "number_of_risk_weighted_panels": 30,
+      "adaptive_full_gradient_relative_error": 1.1266997015704978e-15,
+      "adaptive_full_volume_relative_error": 1.1043777833523033e-15,
+      "adaptive_cut": {
+        "cut_gradient_m3": 9.935725777095412e-18,
+        "cut_volume_m3": 5.021097138978114e-18,
+        "transverse_Gauss_points": 15973,
+        "accepted_ray_segments": 1367,
+        "elapsed_s": 3.522091097998782
+      },
+      "leaves": [
+        {
+          "s0": 0.0,
+          "s1": 0.5,
+          "t0": 0.0,
+          "t1": 0.5,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 55
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.0,
+          "t1": 0.5,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 55
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 4,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5,
+          "t1": 0.5625,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.5625,
+          "t1": 0.625,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 5,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.5,
+          "t0": 0.5,
+          "t1": 0.625,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.625,
+          "t1": 0.6875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.6875,
+          "t1": 0.75,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.0625,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0625,
+          "s1": 0.125,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.0,
+          "s1": 0.125,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 3,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.125,
+          "s1": 0.1875,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.1875,
+          "s1": 0.25,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.3125,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.3125,
+          "s1": 0.375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.75,
+          "t1": 0.8125,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.8125,
+          "t1": 0.875,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.25,
+          "s1": 0.375,
+          "t0": 0.875,
+          "t1": 1.0,
+          "depth": 3,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.875,
+          "t1": 0.9375,
+          "depth": 4,
+          "probe_signature_count": 2,
+          "still_changes_at_max_depth": true,
+          "gauss_order": 13
+        },
+        {
+          "s0": 0.375,
+          "s1": 0.4375,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.4375,
+          "s1": 0.5,
+          "t0": 0.9375,
+          "t1": 1.0,
+          "depth": 4,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 8
+        },
+        {
+          "s0": 0.5,
+          "s1": 1.0,
+          "t0": 0.5,
+          "t1": 1.0,
+          "depth": 1,
+          "probe_signature_count": 1,
+          "still_changes_at_max_depth": false,
+          "gauss_order": 55
+        }
+      ]
+    }
+  ]
+}

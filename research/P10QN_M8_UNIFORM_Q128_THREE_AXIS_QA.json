@@ -1,0 +1,85 @@
+{
+  "stage": "P10QN",
+  "date_utc": "2026-11-28",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "status": "UNIFORM_Q128_THREE_AXIS_GLOBAL_EMPIRICAL_PASS",
+  "scope": "27 curved M8 h8 cuts, three reference-coordinate axes, 128x128 all",
+  "cross_axis_q128_L1": [
+    {
+      "axes": [
+        0,
+        1
+      ],
+      "gradient_L1_m3": 7.041243650946629e-20,
+      "gradient_L1_relative_to_hybrid": 5.899838227084321e-07,
+      "volume_L1_m3": 3.5762586729604107e-20,
+      "volume_L1_relative_to_full_child": 5.746895613840637e-07
+    },
+    {
+      "axes": [
+        0,
+        2
+      ],
+      "gradient_L1_m3": 7.420100350566427e-20,
+      "gradient_L1_relative_to_hybrid": 6.217281188840571e-07,
+      "volume_L1_m3": 3.767036806315812e-20,
+      "volume_L1_relative_to_full_child": 6.053467961665041e-07
+    },
+    {
+      "axes": [
+        1,
+        2
+      ],
+      "gradient_L1_m3": 4.326417683724397e-20,
+      "gradient_L1_relative_to_hybrid": 3.625093194060851e-07,
+      "volume_L1_m3": 2.1981895171780412e-20,
+      "volume_L1_relative_to_full_child": 3.5323970802714916e-07
+    }
+  ],
+  "q128_three_axes_against_independent_q256_reference": [
+    {
+      "trial_axis_q128": 0,
+      "reference_axis_q256": 1,
+      "gradient_L1_relative_to_hybrid": 3.361628643140583e-07,
+      "volume_L1_relative_to_full_child": 3.260770832266442e-07
+    },
+    {
+      "trial_axis_q128": 1,
+      "reference_axis_q256": 1,
+      "gradient_L1_relative_to_hybrid": 3.296284409142284e-07,
+      "volume_L1_relative_to_full_child": 3.222726965355544e-07
+    },
+    {
+      "trial_axis_q128": 2,
+      "reference_axis_q256": 1,
+      "gradient_L1_relative_to_hybrid": 4.6121190790652613e-07,
+      "volume_L1_relative_to_full_child": 4.501043107608631e-07
+    },
+    {
+      "trial_axis_q128": 0,
+      "reference_axis_q256": 2,
+      "gradient_L1_relative_to_hybrid": 3.242866993022272e-07,
+      "volume_L1_relative_to_full_child": 3.143374396563736e-07
+    },
+    {
+      "trial_axis_q128": 1,
+      "reference_axis_q256": 2,
+      "gradient_L1_relative_to_hybrid": 3.6087769139308266e-07,
+      "volume_L1_relative_to_full_child": 3.52803066645276e-07
+    },
+    {
+      "trial_axis_q128": 2,
+      "reference_axis_q256": 2,
+      "gradient_L1_relative_to_hybrid": 4.4205351012628313e-07,
+      "volume_L1_relative_to_full_child": 4.313892072110081e-07
+    }
+  ],
+  "uniform_q128_point_count_per_axis": 442368,
+  "uniform_q256_point_count_per_axis": 1769472,
+  "all_relative_to_full_element_gradient_or_volume": true,
+  "stricter_cut_volume_relative_to_cut_volume_not_claimed": true,
+  "both_gradient_and_full_child_volume_global_1e_minus_6_pass": true,
+  "q_differences_are_not_rigorous_upper_error_bounds": true,
+  "physical_4D_FEM_approved": false,
+  "mesh_CAD_Gmsh_FEM_executed": false
+}

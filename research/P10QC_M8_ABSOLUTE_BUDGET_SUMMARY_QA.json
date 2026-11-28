@@ -1,0 +1,78 @@
+{
+  "stage": "P10QC",
+  "status": "PASS_INDEPENDENT_48_BIN_ABSOLUTE_BUDGET_FEASIBILITY_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "target_relative_to": "ideal spherical-sector volume, independent from exact discrete Tet10 region",
+  "budgets": {
+    "50.0": {
+      "target_percent_ideal": 50.0,
+      "feasible_bins": 48,
+      "blocked_by_multi_floor_bins": 0,
+      "selected_calls": 61581,
+      "skipped_calls": 169824,
+      "selected_quartic": 58463,
+      "selected_quadratic": 3118,
+      "node_scenario_q4": 133276896,
+      "node_scenario_q8": 1069956800
+    },
+    "20.0": {
+      "target_percent_ideal": 20.0,
+      "feasible_bins": 48,
+      "blocked_by_multi_floor_bins": 0,
+      "selected_calls": 135980,
+      "skipped_calls": 95425,
+      "selected_quartic": 121742,
+      "selected_quadratic": 14238,
+      "node_scenario_q4": 287942208,
+      "node_scenario_q8": 2311329152
+    },
+    "10.0": {
+      "target_percent_ideal": 10.0,
+      "feasible_bins": 24,
+      "blocked_by_multi_floor_bins": 24,
+      "selected_calls": 25053,
+      "skipped_calls": 56048,
+      "selected_quartic": 13109,
+      "selected_quadratic": 11944,
+      "node_scenario_q4": 44997408,
+      "node_scenario_q8": 360818240
+    },
+    "5.0": {
+      "target_percent_ideal": 5.0,
+      "feasible_bins": 24,
+      "blocked_by_multi_floor_bins": 24,
+      "selected_calls": 46937,
+      "skipped_calls": 34164,
+      "selected_quartic": 24612,
+      "selected_quadratic": 22325,
+      "node_scenario_q4": 84348096,
+      "node_scenario_q8": 676359936
+    },
+    "2.0": {
+      "target_percent_ideal": 2.0,
+      "feasible_bins": 0,
+      "blocked_by_multi_floor_bins": 48,
+      "selected_calls": 0,
+      "skipped_calls": 0,
+      "selected_quartic": 0,
+      "selected_quadratic": 0,
+      "node_scenario_q4": 0,
+      "node_scenario_q8": 0
+    },
+    "1.0": {
+      "target_percent_ideal": 1.0,
+      "feasible_bins": 0,
+      "blocked_by_multi_floor_bins": 48,
+      "selected_calls": 0,
+      "skipped_calls": 0,
+      "selected_quartic": 0,
+      "selected_quadratic": 0,
+      "node_scenario_q4": 0,
+      "node_scenario_q8": 0
+    }
+  },
+  "warning": "Conditional if selected local cut integrals exact, q-error and multi-boundary remainder not yet solved; no physical FEM approval",
+  "physical_4D_FEM_approved": false
+}

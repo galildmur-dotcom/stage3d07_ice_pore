@@ -1,0 +1,104 @@
+{
+  "protocol": "P10NE_M13_R1_R2_READONLY_BAD_TET10_TOPOLOGY",
+  "status": "MEASURED_NO_GMSH_NO_MESH_NO_FEM_NO_MARKERS",
+  "meshes": {
+    "R1": {
+      "mesh_sha256": "3c0b292007dce69cb70559a215ce7367b6c33fc1f7c46a6ca3396041481a1b1e",
+      "nodes": 26130,
+      "Tet10": 18048,
+      "pore_surface_node_count": 2326,
+      "embedded_pore_seed_node_count": 0,
+      "bad_Tet10_count": 2,
+      "bad_elements": [
+        {
+          "element_tag": 13346,
+          "centroid_m": [
+            -0.000782956876054811,
+            -5.0549484002440225e-05,
+            0.029348706359246208
+          ],
+          "wall_distance_mm": 0.019686288316533938,
+          "mu": -0.6387196221193224,
+          "minSICN": 0.17776562112858055,
+          "minSJ": 0.32216307620215057,
+          "corner_on_pore_count": 3,
+          "ten_node_on_pore_count": 6,
+          "corner_edge_length_min_mm": 0.20202480825236507,
+          "corner_edge_length_max_mm": 0.48255638329462597,
+          "corner_edge_ratio_max_over_min": 2.3885996352083,
+          "corner_node_tags": [
+            9766,
+            984,
+            1246,
+            972
+          ],
+          "any_embedded_seed_node": false
+        },
+        {
+          "element_tag": 9035,
+          "centroid_m": [
+            -8.156786627226068e-05,
+            0.0007834856105386019,
+            0.030652969340740733
+          ],
+          "wall_distance_mm": 0.023167620029408392,
+          "mu": 0.6381841332331901,
+          "minSICN": 0.25474222802372404,
+          "minSJ": 0.36687544388532517,
+          "corner_on_pore_count": 3,
+          "ten_node_on_pore_count": 6,
+          "corner_edge_length_min_mm": 0.1979535444658717,
+          "corner_edge_length_max_mm": 0.5155484697040169,
+          "corner_edge_ratio_max_over_min": 2.6043912024666995,
+          "corner_node_tags": [
+            9579,
+            999,
+            1000,
+            1052
+          ],
+          "any_embedded_seed_node": false
+        }
+      ]
+    },
+    "R2": {
+      "mesh_sha256": "57403ba43fa299417d519046cebdf50fa4968b670c071a8b7882748b50f51e9c",
+      "nodes": 26099,
+      "Tet10": 18004,
+      "pore_surface_node_count": 2338,
+      "embedded_pore_seed_node_count": 0,
+      "bad_Tet10_count": 1,
+      "bad_elements": [
+        {
+          "element_tag": 9478,
+          "centroid_m": [
+            0.0007838000880202778,
+            0.00016660994748502443,
+            0.030642866750075777
+          ],
+          "wall_distance_mm": 0.02731646094791579,
+          "mu": 0.6257728504443492,
+          "minSICN": 0.16294478890105799,
+          "minSJ": 0.28115937433961596,
+          "corner_on_pore_count": 3,
+          "ten_node_on_pore_count": 6,
+          "corner_edge_length_min_mm": 0.35398125540244113,
+          "corner_edge_length_max_mm": 0.6409842728825481,
+          "corner_edge_ratio_max_over_min": 1.8107859190278688,
+          "corner_node_tags": [
+            946,
+            1020,
+            8680,
+            1021
+          ],
+          "any_embedded_seed_node": false
+        }
+      ]
+    }
+  },
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "R2_bad_distance_to_R1_bad_mm": {
+    "13346": 2.043706613081704,
+    "9035": 1.0627790656210665
+  }
+}

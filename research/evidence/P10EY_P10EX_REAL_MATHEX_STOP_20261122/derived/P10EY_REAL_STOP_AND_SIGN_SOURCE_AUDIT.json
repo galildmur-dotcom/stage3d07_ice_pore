@@ -1,0 +1,64 @@
+{
+  "source_only_repair": {
+    "old_GEO_SHA256": "d68570270dfb5ca2232d8fc94486e5638223b3604c933312b4036d5bb8d19b72",
+    "old_MathEval_expression_sha256": "d031acf416ae908c1c07240cac035148e2a12abb3f49164135b6bc8504b90ca9",
+    "old_mathex_expression_characters": 4198,
+    "old_mathex_consecutive_binary_unary_sign": "+-",
+    "invalid_operator_start_zero_index": 1524,
+    "new_GEO_SHA256": "2aec3e2626b3500388954e428d880c702a4bb820116af93924b8d590bf9b26f1",
+    "new_MathEval_expression_sha256": "7be0572e9fa6e5c81b64d10bf9715ea594a288c008e94efe9f6c342b5aad5ac3",
+    "new_mathex_expression_characters": 4197,
+    "new_chunk_lengths": [
+      600,
+      600,
+      600,
+      600,
+      600,
+      600,
+      597
+    ],
+    "mathematical_meaning": "a + (-b) = a - b, no C1/size/alpha/kappa change",
+    "Python_2000_point_max_relative_change": 0.0,
+    "independent_P10ET_7620_point_parity": {
+      "sample_count": 7620,
+      "max_relative_h_parity_error": 2.724655305735159e-16,
+      "kappa1_hcube_over_original_Field2": [
+        0.7999999999999998,
+        0.8447717971431541
+      ],
+      "kappa1_hcube_over_bounded_M1": [
+        0.7703388306528964,
+        0.8078614045998426
+      ],
+      "kappa0_max_relative_h_deviation": 0.011709293753204841,
+      "native_Gmsh": 0,
+      "FEM": 0
+    },
+    "native_Gmsh_runs": 0,
+    "new_M2": 0,
+    "FEM": 0
+  },
+  "real_user_evidence_audit": {
+    "protocol": "P10EY_INDEPENDENT_REAL_P10EX_ONE_SHOT_STOP_AND_MATHEX_CARET",
+    "original_evidence_zip_sha256": "330f1a3925be4778c295d0afbc0fc950c2f3296b4d524684f9797b303a8d2cae",
+    "zip_crc_member_count": 14,
+    "real_native_mesh_3d_attempts": 1,
+    "native_exit_code": 1,
+    "polled_wall_seconds": 2.810974400024861,
+    "peak_polled_private_bytes": 253898752,
+    "native_Gmsh_full_log_sha256": "68a0cc18e09414844f91892dead242bbde15efbcd4bea62da7a070430757c382",
+    "first_primary_error": "mathex::parse() Invalid expression",
+    "field6_invalid_expression": true,
+    "native_caret_zero_index": 1526,
+    "native_source_sign_at_index_1524": "+-",
+    "secondary_surface_mesh": "No elements in surface 7 8",
+    "secondary_volume_mesh": "HXT 3D mesh failed; No elements in volume 1 2",
+    "output_msh_written_but_not_accepted": true,
+    "real_D025": "NOT_MEASURABLE",
+    "physical_FEM_attempts": 0,
+    "P10EX_one_shot_spent": true,
+    "P10EX_02_must_never_rerun": true,
+    "status": "P10EX_REAL_NATIVE_3D_MATHEX_PARSE_STOP_NO_ACCEPTED_M2_NO_FEM"
+  },
+  "status": "P10EY_SOURCE_ONLY_SIGN_NORMALIZED_NO_NEW_NATIVE_GMSH_NO_FEM"
+}

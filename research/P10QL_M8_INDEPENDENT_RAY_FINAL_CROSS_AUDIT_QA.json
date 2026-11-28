@@ -1,0 +1,88 @@
+{
+  "stage": "P10QL",
+  "date_utc": "2026-11-28",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "scientific_status": "INDEPENDENT_RAY_SLICED_CUT_MOMENTS_WITH_POSITIVE_LOCAL_PILOTS_BUT_NO_GLOBAL_CERTIFICATE",
+  "source_ray_sha256": "e90f27991bd3568a83e11d801279f9bf3be08dbe5bcd9e11d75f665c4b7cc123",
+  "three_physical_pilots": [
+    {
+      "original_child": 0,
+      "n": 256,
+      "axes": [
+        "0",
+        "1",
+        "2"
+      ],
+      "mean_ray_gradient_m3": 6.383839774942642e-14,
+      "axis_Linf_relative_spread": 4.72184666271083e-08,
+      "last_n_increase_max_relative": 3.896873906779507e-07,
+      "algoim_gl_q8_gradient_m3": 6.37839342157254e-14,
+      "algoim_vs_ray_relative": 0.0008531469401031876,
+      "empirical_local_n_convergence_pass_1e_minus_6": true
+    },
+    {
+      "original_child": 4,
+      "n": 256,
+      "axes": [
+        "1",
+        "2"
+      ],
+      "mean_ray_gradient_m3": 8.174478189177581e-16,
+      "axis_Linf_relative_spread": 2.4030806729653055e-07,
+      "last_n_increase_max_relative": 6.700509070779398e-07,
+      "algoim_gl_q8_gradient_m3": 8.220857350722064e-16,
+      "algoim_vs_ray_relative": 0.0056736540817841985,
+      "empirical_local_n_convergence_pass_1e_minus_6": true
+    },
+    {
+      "original_child": 9,
+      "n": 256,
+      "axes": [
+        "1",
+        "2"
+      ],
+      "mean_ray_gradient_m3": 3.4330556943247893e-16,
+      "axis_Linf_relative_spread": 2.7781819216725496e-07,
+      "last_n_increase_max_relative": 5.905924167165606e-06,
+      "algoim_gl_q8_gradient_m3": 3.436603717873977e-16,
+      "algoim_vs_ray_relative": 0.0010334884910411207,
+      "empirical_local_n_convergence_pass_1e_minus_6": false
+    }
+  ],
+  "complete_real_h8_one_axis_q_series": [
+    {
+      "n_pair": [
+        32,
+        64
+      ],
+      "cut_cell_count": 27,
+      "ray_total_gradient_m3": 1.193464913698913e-13,
+      "algoim_gl_q8_total_gradient_m3": 1.1934252968202076e-13,
+      "ray_q_change_L1_m3": 1.4404260619755423e-18,
+      "ray_q_change_L1_relative_to_hybrid": 1.206927866451659e-05,
+      "ray_q_change_signed_m3": 5.536349095103304e-19,
+      "ray_vs_algoim_L1_m3": 2.3113670227907952e-17,
+      "ray_vs_algoim_L1_relative_to_hybrid": 0.00019366861951786765,
+      "ray_vs_algoim_signed_m3": 3.961687870540276e-18
+    },
+    {
+      "n_pair": [
+        64,
+        128
+      ],
+      "cut_cell_count": 27,
+      "ray_total_gradient_m3": 1.1934636659665953e-13,
+      "algoim_gl_q8_total_gradient_m3": 1.1934252968202076e-13,
+      "ray_q_change_L1_m3": 2.4933812877611934e-19,
+      "ray_q_change_L1_relative_to_hybrid": 2.089197483646714e-06,
+      "ray_q_change_signed_m3": -1.2477323177119117e-19,
+      "ray_vs_algoim_L1_m3": 2.3282427143753746e-17,
+      "ray_vs_algoim_L1_relative_to_hybrid": 0.0001950828316578631,
+      "ray_vs_algoim_signed_m3": 3.836914638769085e-18
+    }
+  ],
+  "q_changes_and_axes_agreement_are_empirical_not_proven_error_bounds": true,
+  "real_multi_boundary_residual_not_certified": true,
+  "no_CAD_no_Gmsh_no_FEM": true,
+  "physical_4D_FEM_approved": false
+}

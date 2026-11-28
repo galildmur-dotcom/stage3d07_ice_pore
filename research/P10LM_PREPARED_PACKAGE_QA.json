@@ -1,0 +1,29 @@
+{
+  "protocol": "P10LM_NEW_M9_DIAGNOSTIC_PHYSICAL_ONE_SHOT_PREPARED",
+  "status": "SOURCE_ONLY_PREPARED_NOT_EXECUTED",
+  "package": "P10LM_M9_TWO_TERM_EXPLICIT_WINDOWS_ONE_SHOT_20261125.zip",
+  "package_sha256": "dc848985c723eb39a9d7c7793ab5f58cf02fc02595bb47850574a0b212bee895",
+  "source_manifest_sha256": "20e38ffc44f4499d5114f9d0e714246f93f28d5ca1d14adb1c94bb1552dc940f",
+  "source_count": 101,
+  "modified_pinned_source": [
+    "stage3d10dd_4d_partition.hpp"
+  ],
+  "new_header_sha256": "0a470e43668a751dc0514f94e8e33ad2b8615c9d56c633579dd7112fafcec2b3",
+  "mesh_sha256": "a40aca54636a752afe4d7babe9d03e741b2e988b9ad3dbb6f356728bff035a58",
+  "new_one_shot_namespace": "P10LM_M9_ONE_SHOT_MARKERS",
+  "old_one_shots_unchanged": [
+    "P10LC_M9_ONE_SHOT_MARKERS",
+    "P10KV_M8_ONE_SHOT_MARKERS"
+  ],
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0,
+  "native_windows_preflight": "PENDING",
+  "native_physical_run": "PENDING",
+  "output": "P10LG_EXPLICIT_GEOMETRY_STRESS_4D.csv",
+  "resource_limit": {
+    "wall_s": 2400,
+    "job_private_gib": 8,
+    "output_gib": 2,
+    "threads": 4
+  }
+}

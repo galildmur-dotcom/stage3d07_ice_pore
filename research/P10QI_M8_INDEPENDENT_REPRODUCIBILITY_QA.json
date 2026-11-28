@@ -1,0 +1,69 @@
+{
+  "stage": "P10QI",
+  "status": "PASS_INDEPENDENT_EIGHT_REAL_M8_GRADIENT_CUT_CONVERGENCE_AND_PROVENANCE",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "physical_FEM_run": false,
+  "audited_real_curved_Tet10_children": 8,
+  "independently_checked_parent_child_P2_field_restriction": true,
+  "independently_checked_full_element_cubic_moments": true,
+  "prior_real_M8_volume_algoim_parity": true,
+  "independently_recomputed_signed_and_L1": [
+    {
+      "q_pair": [
+        2,
+        3
+      ],
+      "L1_abs_relative": 3.180343856134929e-05,
+      "signed_abs_relative": 2.094935448056094e-05,
+      "positive_deltas": 5,
+      "negative_deltas": 3
+    },
+    {
+      "q_pair": [
+        3,
+        4
+      ],
+      "L1_abs_relative": 3.830292631017818e-09,
+      "signed_abs_relative": 1.8570978675573755e-09,
+      "positive_deltas": 4,
+      "negative_deltas": 4
+    },
+    {
+      "q_pair": [
+        4,
+        6
+      ],
+      "L1_abs_relative": 7.615424860500265e-13,
+      "signed_abs_relative": 7.601947032644091e-13,
+      "positive_deltas": 4,
+      "negative_deltas": 4
+    },
+    {
+      "q_pair": [
+        6,
+        8
+      ],
+      "L1_abs_relative": 1.5668528891879808e-15,
+      "signed_abs_relative": 5.425789728444498e-16,
+      "positive_deltas": 2,
+      "negative_deltas": 6
+    },
+    {
+      "q_pair": [
+        3,
+        8
+      ],
+      "L1_abs_relative": 3.830906291047641e-09,
+      "signed_abs_relative": 1.8578586048410255e-09,
+      "positive_deltas": 4,
+      "negative_deltas": 4
+    }
+  ],
+  "q8_points": 180344,
+  "prior_P10QH_empirical_gradient_L1_q32_discrepancy": 8.384046849282103e-06,
+  "comparison_limit": "P10QH integrated four whole spherical bins. P10QI integrates eight preselected small, one-active-quartic Tet10 children; rates are NOT a like-for-like global FEM error comparison.",
+  "unresolved_M8_multi_boundary_cuts": true,
+  "local_q_agreement_proves_absolute_error": false,
+  "physical_4D_FEM_approved": false
+}

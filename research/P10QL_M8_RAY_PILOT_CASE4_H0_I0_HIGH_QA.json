@@ -1,0 +1,142 @@
+{
+  "stage": "P10QL",
+  "status": "INDEPENDENT_RAY_SLICING_DIAGNOSTIC_NOT_PHYSICS_CERTIFICATION",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "child_report": "P10QK_M8_HYBRID_CHILDREN_CASE4_H8_QA.json",
+  "algoim_gl_report": "P10QK_M8_HYBRID_H_AND_Q_ALWAYS_GL_QA.json",
+  "source_sha256": "e90f27991bd3568a83e11d801279f9bf3be08dbe5bcd9e11d75f665c4b7cc123",
+  "method": "three-axis P4/P2 direct polynomial roots + exact cubic 1D primitive + two-dimensional tensor Gauss-Legendre",
+  "n_values": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "selected_axes": [
+    0,
+    1,
+    2
+  ],
+  "CAD_or_Gmsh_or_FEM_executed": false,
+  "physical_4D_FEM_approved": false,
+  "results": [
+    {
+      "index": 0,
+      "group": "one",
+      "h_depth": 1,
+      "active_boundaries": [
+        0
+      ],
+      "exact_full_gradient_m3": 6.416848809728235e-14,
+      "exact_full_volume_m3": 3.111470012042081e-14,
+      "algoim_gl_q8_cut_gradient_m3": 6.37839342157254e-14,
+      "algoim_gl_q8_cut_volume_m3": 3.091768940227553e-14,
+      "ray_axes": {
+        "0": {
+          "32": {
+            "cut_gradient_m3": 6.383808641371256e-14,
+            "cut_volume_m3": 3.09452519585975e-14,
+            "transverse_Gauss_points": 1024,
+            "accepted_ray_segments": 1024,
+            "elapsed_s": 0.21654239399867947
+          },
+          "64": {
+            "cut_gradient_m3": 6.383846236788564e-14,
+            "cut_volume_m3": 3.094544426169586e-14,
+            "transverse_Gauss_points": 4096,
+            "accepted_ray_segments": 4096,
+            "elapsed_s": 0.6314412809988426
+          },
+          "128": {
+            "cut_gradient_m3": 6.383838871958283e-14,
+            "cut_volume_m3": 3.0945406575051684e-14,
+            "transverse_Gauss_points": 16384,
+            "accepted_ray_segments": 16384,
+            "elapsed_s": 2.5409506059986597
+          },
+          "256": {
+            "cut_gradient_m3": 6.383839630093183e-14,
+            "cut_volume_m3": 3.094541045489995e-14,
+            "transverse_Gauss_points": 65536,
+            "accepted_ray_segments": 65536,
+            "elapsed_s": 10.177271227999881
+          }
+        },
+        "1": {
+          "32": {
+            "cut_gradient_m3": 6.383788262137957e-14,
+            "cut_volume_m3": 3.094514550601018e-14,
+            "transverse_Gauss_points": 1024,
+            "accepted_ray_segments": 768,
+            "elapsed_s": 0.15485393699782435
+          },
+          "64": {
+            "cut_gradient_m3": 6.383849649629966e-14,
+            "cut_volume_m3": 3.094546119648964e-14,
+            "transverse_Gauss_points": 4096,
+            "accepted_ray_segments": 3062,
+            "elapsed_s": 0.621671631000936
+          },
+          "128": {
+            "cut_gradient_m3": 6.383837275504572e-14,
+            "cut_volume_m3": 3.0945398464634806e-14,
+            "transverse_Gauss_points": 16384,
+            "accepted_ray_segments": 12227,
+            "elapsed_s": 2.5253466590002063
+          },
+          "256": {
+            "cut_gradient_m3": 6.383839763206436e-14,
+            "cut_volume_m3": 3.0945411129502224e-14,
+            "transverse_Gauss_points": 65536,
+            "accepted_ray_segments": 48883,
+            "elapsed_s": 9.982079751000128
+          }
+        },
+        "2": {
+          "32": {
+            "cut_gradient_m3": 6.383780746838805e-14,
+            "cut_volume_m3": 3.0945107150147696e-14,
+            "transverse_Gauss_points": 1024,
+            "accepted_ray_segments": 755,
+            "elapsed_s": 0.1575351210012741
+          },
+          "64": {
+            "cut_gradient_m3": 6.383850808969101e-14,
+            "cut_volume_m3": 3.094546716248786e-14,
+            "transverse_Gauss_points": 4096,
+            "accepted_ray_segments": 3008,
+            "elapsed_s": 0.6400037370003702
+          },
+          "128": {
+            "cut_gradient_m3": 6.383837777126098e-14,
+            "cut_volume_m3": 3.094540102946032e-14,
+            "transverse_Gauss_points": 16384,
+            "accepted_ray_segments": 12006,
+            "elapsed_s": 3.0561820149996493
+          },
+          "256": {
+            "cut_gradient_m3": 6.383839931528308e-14,
+            "cut_volume_m3": 3.094541199017274e-14,
+            "transverse_Gauss_points": 65536,
+            "accepted_ray_segments": 47993,
+            "elapsed_s": 10.884187141000439
+          }
+        }
+      },
+      "axis_full_analytic_relative": {
+        "0": {
+          "gradient": 0.0,
+          "volume": 6.084796463417829e-16
+        },
+        "1": {
+          "gradient": 1.966973955253707e-16,
+          "volume": 4.056530975611886e-16
+        },
+        "2": {
+          "gradient": 1.966973955253707e-16,
+          "volume": 0.0
+        }
+      }
+    }
+  ]
+}

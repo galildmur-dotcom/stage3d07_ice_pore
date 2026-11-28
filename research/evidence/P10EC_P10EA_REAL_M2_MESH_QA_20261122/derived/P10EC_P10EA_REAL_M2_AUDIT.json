@@ -1,0 +1,182 @@
+{
+  "protocol": "P10EC_INDEPENDENT_ORIGINAL_WINDOWS_P10EA_R1_NATIVE_M2_AUDIT",
+  "status": "P10EC_NATIVE_GMSH3D_GEOMETRY_QA_PASS_ADAPTIVE_TARGET_NOT_ESTABLISHED_NO_FEM",
+  "original_zip_sha256": "85c1c252bdc8170fa2e8e1b26ae51e29f41626b6bd041068a64f33a62095a3a9",
+  "source_release_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+  "evidence_crc_members": 14,
+  "original_m1_sha256_manifest_only": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "m2_mesh_sha256_manifest_only": "ba1f1a0553a568c1b399acadd52bce1c1dc32e8d1c6b3ab1ce6759c547e5dee5",
+  "gmsh_executable_sha256_manifest_only": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "exact_f6_geo_sha256_independently_rehashed": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "original_m2_mesh_binary_present_in_zip": false,
+  "native_gmsh_log_sha256": "98387f1e967248442d4d51840f3b487939cb7a8a90a9e9a050618c0f5b238168",
+  "native_parse_walls_seconds": {
+    "A_ORIGINAL_M1_FIELD2": 0.015604,
+    "B_EXACT_INLINE_F6": 0.0162182
+  },
+  "native_gmsh_one_3d_attempt": 1,
+  "native_exit_code": 0,
+  "native_polled_wall_seconds": 0.6051750000333413,
+  "native_polled_peak_private_bytes": 251105280,
+  "native_log": {
+    "native_total_wall_s": 0.428209,
+    "native_3d_stage_wall_s": 0.146644,
+    "nodes_reported": 14157,
+    "all_elements_reported": 11395
+  },
+  "m2_mesh_bytes_manifest_only": 1652317,
+  "qa_exit_code": 0,
+  "qa_polled_wall_seconds": 10.410473800031468,
+  "qa_polled_peak_private_bytes": 21905408,
+  "m1_tet10": 9736,
+  "m2_tet10": 9750,
+  "m1_nodes": 14145,
+  "m2_nodes": 14157,
+  "m1_pore_tri6": 178,
+  "m2_pore_tri6": 170,
+  "m2_all_curved_qp_reported": 263250,
+  "m2_nonpositive_curved_qp_reported": 0,
+  "m2_geometry_issues_reported": [],
+  "m2_geometry_verified_independently_from_raw_mesh": false,
+  "per_mesh_9zone_integrated_curved_volume_m3": {
+    "M1": 0.0001799958133316665,
+    "M2": 0.0001799958135856009
+  },
+  "exact_CAD_volume_m3": 0.00017999581120979523,
+  "per_mesh_9zone_mean_centroid_kappa": {
+    "M1": 0.011878045408035928,
+    "M2": 0.011779516006214246
+  },
+  "global_mean_curved_volume_ratio_by_tet10_count": 0.9985641025641026,
+  "nine_zones": [
+    {
+      "radial_zone": "0_100um",
+      "polar_zone": "polar_abs_mu_ge_0p8",
+      "m1_tet10": 21,
+      "m2_tet10": 22,
+      "target_mean_volume_ratio": 0.8,
+      "observed_unpaired_curved27qp_median_ratio": 1.009535027219417,
+      "observed_minus_target": 0.20953502721941697,
+      "observed_unpaired_corner_median_ratio": 1.0322399874388901,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "0_100um",
+      "polar_zone": "taper_abs_mu_0p6_0p8",
+      "m1_tet10": 27,
+      "m2_tet10": 22,
+      "target_mean_volume_ratio": 0.9149715646558141,
+      "observed_unpaired_curved27qp_median_ratio": 0.9346727875956222,
+      "observed_minus_target": 0.01970122293980814,
+      "observed_unpaired_corner_median_ratio": 0.9006756024129187,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "0_100um",
+      "polar_zone": "off_abs_mu_le_0p6",
+      "m1_tet10": 67,
+      "m2_tet10": 65,
+      "target_mean_volume_ratio": 1.0,
+      "observed_unpaired_curved27qp_median_ratio": 1.0128056533947531,
+      "observed_minus_target": 0.012805653394753147,
+      "observed_unpaired_corner_median_ratio": 1.034236230069972,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "100_500um",
+      "polar_zone": "polar_abs_mu_ge_0p8",
+      "m1_tet10": 112,
+      "m2_tet10": 103,
+      "target_mean_volume_ratio": 0.8956553012340847,
+      "observed_unpaired_curved27qp_median_ratio": 1.009238709392482,
+      "observed_minus_target": 0.11358340815839729,
+      "observed_unpaired_corner_median_ratio": 1.0141919791359961,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "100_500um",
+      "polar_zone": "taper_abs_mu_0p6_0p8",
+      "m1_tet10": 99,
+      "m2_tet10": 99,
+      "target_mean_volume_ratio": 0.95003478785402,
+      "observed_unpaired_curved27qp_median_ratio": 1.0194471149588227,
+      "observed_minus_target": 0.06941232710480272,
+      "observed_unpaired_corner_median_ratio": 1.0104674346991331,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "100_500um",
+      "polar_zone": "off_abs_mu_le_0p6",
+      "m1_tet10": 289,
+      "m2_tet10": 309,
+      "target_mean_volume_ratio": 1.0,
+      "observed_unpaired_curved27qp_median_ratio": 1.0391033387152864,
+      "observed_minus_target": 0.03910333871528637,
+      "observed_unpaired_corner_median_ratio": 1.0430131329581451,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "500um_plus",
+      "polar_zone": "polar_abs_mu_ge_0p8",
+      "m1_tet10": 1576,
+      "m2_tet10": 1594,
+      "target_mean_volume_ratio": 1.0,
+      "observed_unpaired_curved27qp_median_ratio": 0.8320354370495389,
+      "observed_minus_target": -0.16796456295046114,
+      "observed_unpaired_corner_median_ratio": 0.8320354370495434,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "500um_plus",
+      "polar_zone": "taper_abs_mu_0p6_0p8",
+      "m1_tet10": 1863,
+      "m2_tet10": 1924,
+      "target_mean_volume_ratio": 1.0,
+      "observed_unpaired_curved27qp_median_ratio": 0.9830849506413496,
+      "observed_minus_target": -0.016915049358650402,
+      "observed_unpaired_corner_median_ratio": 0.983878522422931,
+      "is_unpaired_diagnostic": true
+    },
+    {
+      "radial_zone": "500um_plus",
+      "polar_zone": "off_abs_mu_le_0p6",
+      "m1_tet10": 5682,
+      "m2_tet10": 5612,
+      "target_mean_volume_ratio": 1.0,
+      "observed_unpaired_curved27qp_median_ratio": 0.8950731217074358,
+      "observed_minus_target": -0.1049268782925642,
+      "observed_unpaired_corner_median_ratio": 0.8916759415350759,
+      "is_unpaired_diagnostic": true
+    }
+  ],
+  "hotspot_0_100um_abs_mu_ge_0p8": {
+    "radial_zone": "0_100um",
+    "polar_zone": "polar_abs_mu_ge_0p8",
+    "m1_tet10": 21,
+    "m2_tet10": 22,
+    "target_mean_volume_ratio": 0.8,
+    "observed_unpaired_curved27qp_median_ratio": 1.009535027219417,
+    "observed_minus_target": 0.20953502721941697,
+    "observed_unpaired_corner_median_ratio": 1.0322399874388901,
+    "is_unpaired_diagnostic": true
+  },
+  "zones_with_observed_ratio_gt_1": 5,
+  "kappa_target_C1_0_to_1_source_only": true,
+  "realized_per_element_20_percent_reduction_proved": false,
+  "physical_FEM_attempts": 0,
+  "p10ea_one_shot_consumed_by_native_launch_source_control_flow": true,
+  "p10ea_marker_files_physically_inspected": false,
+  "negative_mutations_stopped": [
+    "tamper exact F6",
+    "remove 3D completion",
+    "wrong native -3 CLI",
+    "m2 SHA mismatch",
+    "wrong one-shot count",
+    "fake FEM",
+    "curved negative QP",
+    "QA wrong M2 SHA",
+    "CSV volume mutation",
+    "full log/tail inconsistent"
+  ],
+  "negative_count": 10
+}

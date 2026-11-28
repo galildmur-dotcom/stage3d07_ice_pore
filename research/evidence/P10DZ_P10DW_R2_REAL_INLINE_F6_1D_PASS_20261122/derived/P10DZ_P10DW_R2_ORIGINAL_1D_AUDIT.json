@@ -1,0 +1,67 @@
+{
+  "original_evidence_zip_sha256": "f151b03fe9e52bcee05480ec7ac177ad0efbaf566fa79577080390eff8d4b7d6",
+  "original_zip_members_crc": 9,
+  "source_r2_zip_sha256": "1418d8ccf8374b275b7112137e23e6a5a94e65e549a50b44cbd66b4f6105d04f",
+  "status": "P10DW_ONE_1D_PASS_NO_FEM",
+  "original_accepted_m1_windows_reported_sha256": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "original_m1_raw_msh_locally_available": false,
+  "native_gmsh_exe_windows_reported_sha256": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "native_gmsh_exe_locally_available": false,
+  "source_pins": 12,
+  "math_points": 17075,
+  "inline_f6_geo_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "original_field2_baseline_geo_sha256": "c6ec88a3fe91db0f3c369391a91aefbd1bc83f1d3033b38a985c3033c605ddd8",
+  "cad_geo_sha256": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+  "native_parse_runs": 2,
+  "native_parse_wall_s": {
+    "A_ORIGINAL_M1_FIELD2": 0.0161521,
+    "B_EXACT_INLINE_F6": 0.0161719
+  },
+  "native_1d_runs": 1,
+  "native_1d_result": {
+    "status": "PASS_1D_ONLY",
+    "exit_code": 0,
+    "wall_s": 0.42520610004430637,
+    "peak_private_polled": 4820992,
+    "msh_bytes": 280,
+    "msh_sha256": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+    "reported_nodes_elements_from_log": [
+      244,
+      135
+    ],
+    "log_bytes": 4218,
+    "argv": [
+      "C:\\gmsh-4.15.2-Windows64\\gmsh.exe",
+      "G:\\Downloads\\P10DW_R2_EXACT_INLINE_F6_ONE_1D_WINDOWS_20261122\\P10DW_RUNS\\P10DW_20261122_040616_157954\\GEO\\B_EXACT_INLINE_F6.geo",
+      "-1",
+      "-nt",
+      "2",
+      "-format",
+      "msh2",
+      "-o",
+      "G:\\Downloads\\P10DW_R2_EXACT_INLINE_F6_ONE_1D_WINDOWS_20261122\\P10DW_RUNS\\P10DW_20261122_040616_157954\\B_EXACT_INLINE_F6.msh"
+    ]
+  },
+  "native_gmsh_total_wall_from_log_s": 0.103852,
+  "native_gmsh_curve_1d_wall_from_log_s": 0.032676,
+  "wrapper_total_wall_s": 4.852883,
+  "full_1d_log_sha256": "6f30c6fb188dc96a15ec4ccf5c8b229caa9895766138bf51af0eb8d08de84a34",
+  "full_log_tail_equivalent_after_only_windows_eol_normalization": true,
+  "native_log_run_ids": [
+    "P10DW_20261122_040616_157954"
+  ],
+  "native_2d_3d_runs": 0,
+  "physical_FEM_runs": 0,
+  "reported_nodes_elements_log_only": [
+    244,
+    135
+  ],
+  "msh_file_bytes_windows_manifest_only": 280,
+  "msh_file_sha256_windows_manifest_only": "04325caf637624c98cc5e18415556c937635e3102d1bb2ad79dbd72e2fd42511",
+  "msh_file_not_present_in_original_zip": true,
+  "native_1d_topology_independently_verified": false,
+  "one_shot_consumed_by_r2_code_before_native_launch": true,
+  "one_shot_marker_directly_inspected_on_windows": false,
+  "full_3d_m2_mesh_and_curved27qp_verified": false,
+  "independent_negative_mutations_passed": 8
+}

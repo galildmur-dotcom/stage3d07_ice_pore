@@ -1,0 +1,20 @@
+# Stage3D07 P10GK R1 — реальная Windows Gmsh4.15.2 проверка SOURCE / NATIVE PARSE ONLY PASS
+
+**23.11.2026. Итог:** отдельно подготовленный P10GK smooth C¹ south-pole sizing прошёл реальный Windows Gmsh4.15.2 `-parse_and_exit` и независимую проверку ZIP; **новых P10GK `gmsh -1/-2/-3` = 0, FEM = 0, новая P10GK M1 не получена**. P10GJ one-shot ранее израсходован и не подлежит повтору. Новая объёмная попытка P10GK требует отдельного разрешения исследователя.
+
+## Подлинные доказательства
+
+- Получен от исследователя исходный `P10GK_SOURCE_PREFLIGHT_EVIDENCE.zip`; SHA256 **`6af4dac68f1335aa714b02702ef7c305624ea46622b067fd5aacee6bde89305f`**. ZIP CRC **7/7 PASS**. Побайтовая архивная копия `research/evidence/P10GK_SOURCE_PREFLIGHT_EVIDENCE_20261123.zip`.
+- В `P10GK_SOURCE_REPORT.json` статус **`P10GK_SOURCE_AND_NATIVE_PARSE_ONLY_PASS_NO_MESH_NO_FEM`**, версия Gmsh **4.15.2**, SHA256 `gmsh.exe` **`317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1`** совпал с уже измеренным P10GJ окружением; закреплённая M0 SHA **`926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6`**.
+- Единственный native вызов в журнале: `gmsh.exe ... P10GK_M1_SOUTH_C1_SOURCE_ONLY.geo -parse_and_exit -nopopup -nt 2`. Строки **`Done reading`** для основного GEO, исходного `M0_ROTATED.geo` и `sphere_pore_B6_refined_rotated.geo`, штатное завершение, **exit 0**, внутреннее время Gmsh **0.0168679 с**; ошибок `Error:` и этапов `Meshing 1D/2D/3D` нет.
+- SHA256 native parse log `27a752bbba6f0ac9713d2feb0b372e7d46c0e4199d43c71bbbd6cf31ee604d71` совпал с отчётом; кандидат GEO `1590d5f5fda58f4401cb038d898e49466e461a40a53fe692867d943b908508ba`, rotated M0 GEO `21cef72e9e0d7fde3a383b6db3ebde4bc6b62cf180b7b65947e5fe1fa57f0c9a`, rotated CAD GEO `e3f4d1c472e4d047962bf05f63406f2bbb20b89f20e74ac2e6f2ba8cfd305329` — точные SHA из **предварительно опубликованного** P10GK source pin.
+- Source MathEval offline QA в отчёте: **12 221** точки, отличие от независимой аналитической формулы не более **`3.3306690738754696e−16`**, local h multiplier `[0.94,1.0]`, 4 стыка C¹ PASS, native meshing attempts=0, FEM=0. Повтор `P10GK_source_qa.py --selftest` на машине аналитика PASS.
+- Независимый воспроизводимый валидатор `scripts/p10gk_verify_native_parse_evidence.py` проверяет конкретный original ZIP SHA, CRC, все 7 ожидаемых файлов, pinned GEO/source/policy SHA, 12221 точек, нативный лог/версию/вызов и отсутствие meshing/FEM. Читаемый JSON результата: `research/P10GK_R1_INDEPENDENT_NATIVE_PARSE_ONLY_VERDICT_20261123.json`. Результат **`P10GK_INDEPENDENT_NATIVE_PARSE_ONLY_PASS_NO_MESH_NO_FEM`**.
+
+## Научный смысл и следующая граница разрешения
+
+P10GK сохранил байтовый original M0 C¹ `Field[3]`, P10GH OCC sphere pole rotation, физические теги и глобальный h scale `0.9378887276834518`. Новый `Field[6]` комбинирует `F3`, физическую Z-южную угловую C¹-маску и радиальную C¹-маску 0–0.5/1мм с `α=0.06`, без изменения D-027 hard-gates; всё это **парсится нативным Windows Gmsh4.15.2**. Важно: native parse-only не доказывает ни соответствие фактической 3D HXT10 сетки целевому h, ни реальное сгущение при южном полюсе, ни 343/729QP detJ.
+
+Измеренная предыдущая M1 P10GJ: global QV729 `0.823069` PASS, south physical 0–500μm QV729 `1.0022597 > 0.98` D-027 STOP; 18 signed зон — только диагностика. Для будущей P10GK **не менять постфактум** лимит южного полюса `QV≤0.98` или глобальный `[.80,.85]`, обязательны CAD/topology/surface, positive sampled detJ27/343/729, Tet10 sliver/size grading/occupied macro-gates, independent macro-parity. Ни физический, ни сопряжённый FEM не разрешён.
+
+**Рекомендованный следующий этап:** запросить у исследователя *новое* отдельное разрешение на **один** native Windows Gmsh4.15.2 HXT10 mesh-only `-3` для строго закреплённого P10GK GEO; предпочтительно сохранить испытанные P10GJ ограничения: hard watchdog 900 с, memory cap 8 GiB, 2 threads, MSH2 ASCII, постоянный one-shot marker до запуска, неизменяемость M0/исторических M1, evidence ZIP и независимый 343/729QP D-027 вердикт **до** возможного FEM. Не выполнять native `-3` и не выдавать GO без явного разрешения исследователя.

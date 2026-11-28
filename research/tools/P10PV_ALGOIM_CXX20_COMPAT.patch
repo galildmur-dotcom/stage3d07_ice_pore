@@ -1,0 +1,11 @@
+diff --git a/algoim/xarray.hpp b/algoim/xarray.hpp
+--- a/algoim/xarray.hpp
++++ b/algoim/xarray.hpp
+@@ -69,5 +69,7 @@ namespace algoim
+         T* ptr;
+         int len;
+ 
++        xarraySlice(T* data, int length) : ptr(data), len(length) {}
++
+         xarraySlice(xarraySlice&) = delete;
+         xarraySlice(xarraySlice&&) = delete;

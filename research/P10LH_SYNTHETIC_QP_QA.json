@@ -1,0 +1,24 @@
+{
+  "protocol": "P10LH_QP_EXPLICIT_TWO_TERM_SOURCE_ONLY",
+  "status": "PASS_SYNTHETIC_ONLY",
+  "n_qps": 4,
+  "n_bins": 3,
+  "geometry_exact": "-2150/6069",
+  "stress_exact": "3425/12852",
+  "combined_exact": "-19175/218484",
+  "complex_step_reference": -0.08776386371542086,
+  "absolute_error": 5.551115123125783e-17,
+  "all_bins_nonzero_both_terms": true,
+  "checks": [
+    "exact fraction per-bin decomposition",
+    "independent complex-step full normalized quotient",
+    "permutation and spatial regrouping invariance",
+    "invariance under uniform source offset",
+    "volume-derivative-off removes only geometry",
+    "source-derivative-off removes only stress",
+    "missing normalization produces demonstrably wrong answer"
+  ],
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0,
+  "limitation": "Does not execute Tet10 C++ mechanical_step or validate physical M8/M9 source states."
+}

@@ -1,0 +1,115 @@
+{
+  "stage": "P10QV_E_EVENT_STRIP_ROOT_BRACKET_PREFLIGHT",
+  "case": 7,
+  "pilot_index": 10,
+  "active_constraints": [
+    1,
+    4
+  ],
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "archived_real_child_sha256": "1400a4b06d4d9c03b13828f51875741d4db1c5a63b7e6ef48c173644f4815df5",
+  "frozen_uniform_q512_sha256": "07b1a71ac5e1c5dbd9874a8e68be9dd53f8a70f85e6b1a2f4c9fd84f02ed8cc4",
+  "event_t_samples": 257,
+  "transition_bisections": 12,
+  "no_cut_integration_executed": true,
+  "all_axes_tested": true,
+  "axes_with_geometry_stop": [
+    2
+  ],
+  "global_q512_event_strip_pilot_approved": false,
+  "numerical_roots_not_interval_certified": true,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "physical_4D_FEM_approved": false,
+  "axes": {
+    "0": {
+      "status": "GEOMETRY_ONLY_READY_NOT_CERTIFIED",
+      "outer_t_panel_breaks": [
+        0.0,
+        0.15540975726532102,
+        0.18983263542679962,
+        0.24660625531979574,
+        1.0
+      ],
+      "outer_t_panel_nodes": [
+        79,
+        18,
+        29,
+        386
+      ],
+      "diagnostics": {
+        "event_strips_evaluated": 257,
+        "initial_t_grid_count": 257,
+        "bisected_transition_count": 3,
+        "geometry_t_brackets": [
+          {
+            "last_left_t": 0.15540928228356032,
+            "first_right_t": 0.15541023224708173,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.15540975726532102
+          },
+          {
+            "last_left_t": 0.18983216044503892,
+            "first_right_t": 0.18983311040856032,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.18983263542679962
+          },
+          {
+            "last_left_t": 0.24660578033803504,
+            "first_right_t": 0.24660673030155644,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.24660625531979574
+          }
+        ],
+        "distinct_event_strip_words": 4,
+        "max_initial_s_event_intervals": 7,
+        "initial_s_numerical_degree_trims": 257,
+        "third_topologies_in_bracket": 0,
+        "unobserved_t_changes_between_probes_not_excluded": true,
+        "not_continuous_interval_certification": true
+      }
+    },
+    "1": {
+      "status": "GEOMETRY_ONLY_READY_NOT_CERTIFIED",
+      "outer_t_panel_breaks": [
+        0.0,
+        0.5979037154973249,
+        0.6278636650352626,
+        1.0
+      ],
+      "outer_t_panel_nodes": [
+        306,
+        15,
+        191
+      ],
+      "diagnostics": {
+        "event_strips_evaluated": 257,
+        "initial_t_grid_count": 257,
+        "bisected_transition_count": 2,
+        "geometry_t_brackets": [
+          {
+            "last_left_t": 0.5979032405155642,
+            "first_right_t": 0.5979041904790856,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.5979037154973249
+          },
+          {
+            "last_left_t": 0.6278631900535019,
+            "first_right_t": 0.6278641400170233,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.6278636650352626
+          }
+        ],
+        "distinct_event_strip_words": 3,
+        "max_initial_s_event_intervals": 12,
+        "initial_s_numerical_degree_trims": 257,
+        "third_topologies_in_bracket": 0,
+        "unobserved_t_changes_between_probes_not_excluded": true,
+        "not_continuous_interval_certification": true
+      }
+    },
+    "2": {
+      "status": "NUMERICAL_TOPOLOGY_STOP",
+      "stop_reason": "P10QV_E_THIRD_TOPOLOGY_WITHIN_TRANSITION_BRACKET_STOP axis=2 bin=186 bisect=8 interval=[0.72253465466926059,0.72254985408560302] probe_t=0.7225422543774318 low=((0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1), (1, 0, 1), (0, 0, 0)) high=((0, 0, 0), (0, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 0)) third=((0, 0, 0), (1, 0, 0), (1, 1, 1), (1, 0, 1), (0, 0, 0))"
+    }
+  }
+}

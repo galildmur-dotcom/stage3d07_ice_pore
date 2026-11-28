@@ -1,0 +1,459 @@
+{
+  "protocol": "P10GE_INDEPENDENT_P10GD_NATIVE_2D_POLE_CORNER_QUALITY",
+  "evidence_zip_sha256": "2f7ed42571214ddd50275c98128fdcd192ac931a0628a02b5d3b588ca4194f09",
+  "not_3d_and_not_FEM": true,
+  "raw_surface_meshes_remain_private": true,
+  "qcorner_definition": "4*sqrt(3)*corner_triangle_area/sum(corner_edge_length_squared)",
+  "results": [
+    {
+      "theta": 0,
+      "source_geo_sha256": "91c238d281a226a4d7a939c65ccf3bdc8033d26d3a33e828dba360dc5d6340a7",
+      "raw_msh2_sha256": "53dd5519e0aa5ecd1ea065bcce79a9fc897161eaf6456f985e97076b4e460004",
+      "pore_tri6": 186,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.23013049499147634,
+      "median_qcorner": 0.9497252377731149,
+      "worst_triangle": {
+        "qcorner": 0.23013049499147634,
+        "mu": -0.9997671958979797,
+        "centroid_m": [
+          -2.134326592649408e-05,
+          1.264902534566422e-19,
+          0.029011049113610358
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 56,
+          "min_qcorner": 0.8261136010523321,
+          "median_qcorner": 0.9541868525249066
+        },
+        "N_taper": {
+          "tri6": 18,
+          "min_qcorner": 0.8126427786530928,
+          "median_qcorner": 0.8840709420369389
+        },
+        "N_polar": {
+          "tri6": 17,
+          "min_qcorner": 0.2354451433950945,
+          "median_qcorner": 0.8439052711029512
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23013049499147634,
+          "median_qcorner": 0.8211593159754913
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.7921113415119012,
+          "median_qcorner": 0.9429163367486892
+        },
+        "N_off": {
+          "tri6": 51,
+          "min_qcorner": 0.8151701871223471,
+          "median_qcorner": 0.9731900931242412
+        }
+      }
+    },
+    {
+      "theta": 0.125,
+      "source_geo_sha256": "b4acd7c0381957081f6445aab5ab2d6463d918a0016aa5a6c7b521847b4b30fa",
+      "raw_msh2_sha256": "2fb429c874c904ef49fa4bbafa2df0e5e7ad295b1a6c2640a11baf204e41185c",
+      "pore_tri6": 192,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.23016748929631398,
+      "median_qcorner": 0.9497808268955641,
+      "worst_triangle": {
+        "qcorner": 0.23016748929631398,
+        "mu": -0.9997669594285409,
+        "centroid_m": [
+          -2.1353912608097498e-05,
+          7.228014483236696e-20,
+          0.0290110580984009
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 56,
+          "min_qcorner": 0.8262436952452702,
+          "median_qcorner": 0.9549182808777734
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8107278013125209,
+          "median_qcorner": 0.9091584406384251
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23016748929631398,
+          "median_qcorner": 0.8209938399798318
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.79305295237631,
+          "median_qcorner": 0.9422698275282245
+        },
+        "N_off": {
+          "tri6": 49,
+          "min_qcorner": 0.7868528156498589,
+          "median_qcorner": 0.9734103093234098
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23522116300121662,
+          "median_qcorner": 0.9058637355736532
+        }
+      }
+    },
+    {
+      "theta": 0.25,
+      "source_geo_sha256": "d1f1206d6415827e81dedadf5841499665a22952f24f2dede8400b8c892efd90",
+      "raw_msh2_sha256": "8881bbb40185a3c88f5a2cd402af698a4ea26b516dbc3c1c4cfe19c6929a6bcb",
+      "pore_tri6": 184,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.23020515952547912,
+      "median_qcorner": 0.9484268555642309,
+      "worst_triangle": {
+        "qcorner": 0.23020515952547912,
+        "mu": -0.9997667187591924,
+        "centroid_m": [
+          -2.136474273642535e-05,
+          1.3552527156068805e-19,
+          0.029011067233772822
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 49,
+          "min_qcorner": 0.8526252343650608,
+          "median_qcorner": 0.9554475551369875
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.7962747449436778,
+          "median_qcorner": 0.9349960186978487
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23020515952547912,
+          "median_qcorner": 0.8213899198336879
+        },
+        "S_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.842283833718657,
+          "median_qcorner": 0.9146768507283882
+        },
+        "N_off": {
+          "tri6": 49,
+          "min_qcorner": 0.8012874336180056,
+          "median_qcorner": 0.9754574552325568
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23499270368448863,
+          "median_qcorner": 0.9060554088327946
+        }
+      }
+    },
+    {
+      "theta": 0.375,
+      "source_geo_sha256": "d290080b206c8d3189f5405eb40c882e15dbe76e73c064b3d44c319e23b3f900",
+      "raw_msh2_sha256": "8c257e5548f4db497b86cc644f59d2fd21ba9cea1e0c1b21ff06b42807da30ed",
+      "pore_tri6": 184,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.230243515744312,
+      "median_qcorner": 0.9493946753804285,
+      "worst_triangle": {
+        "qcorner": 0.230243515744312,
+        "mu": -0.999766473850316,
+        "centroid_m": [
+          -2.1375757814277196e-05,
+          -4.998869072740456e-36,
+          0.029011076520283088
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 50,
+          "min_qcorner": 0.8545769185420871,
+          "median_qcorner": 0.9573520172261725
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.7993918898686839,
+          "median_qcorner": 0.9353044823285234
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.230243515744312,
+          "median_qcorner": 0.8213092415634085
+        },
+        "S_taper": {
+          "tri6": 20,
+          "min_qcorner": 0.8425458214886467,
+          "median_qcorner": 0.9280684203373758
+        },
+        "N_off": {
+          "tri6": 49,
+          "min_qcorner": 0.8028142896291309,
+          "median_qcorner": 0.975010114229903
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23476007516221487,
+          "median_qcorner": 0.9062432036352397
+        }
+      }
+    },
+    {
+      "theta": 0.5,
+      "source_geo_sha256": "fee00a9bae897f5eb5d42721b91a8085f4b0d73acf31367727ee63634ade2edc",
+      "raw_msh2_sha256": "5ad4bebe20463f0a9b7d2105c89c88a164bc63efab4011d336703d4b35d05b44",
+      "pore_tri6": 188,
+      "max_pore_node_radius_error_m": 4.7704895589362195e-18,
+      "min_qcorner": 0.23028256820151466,
+      "median_qcorner": 0.9538274132626745,
+      "worst_triangle": {
+        "qcorner": 0.23028256820151466,
+        "mu": -0.9997662246617883,
+        "centroid_m": [
+          -2.1386959359368468e-05,
+          6.324512672832108e-20,
+          0.0290110859584784
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 52,
+          "min_qcorner": 0.8545638918124252,
+          "median_qcorner": 0.9579616830221526
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8025130382736916,
+          "median_qcorner": 0.9354865164237062
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23028256820151466,
+          "median_qcorner": 0.8214584310053106
+        },
+        "S_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8428048423972309,
+          "median_qcorner": 0.9347653820356465
+        },
+        "N_off": {
+          "tri6": 50,
+          "min_qcorner": 0.80069240961655,
+          "median_qcorner": 0.9748361133393624
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23452358623733036,
+          "median_qcorner": 0.9064269507449442
+        }
+      }
+    },
+    {
+      "theta": 0.625,
+      "source_geo_sha256": "aca21433c72a2ecc483416f79eb654e32230d267688fee3f599deb87e841ccfc",
+      "raw_msh2_sha256": "bd2744bf0c05e895582b936b51faf45d3f2157014ccc9564477288f7fbb7a475",
+      "pore_tri6": 188,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.2303223274730375,
+      "median_qcorner": 0.9523975709846233,
+      "worst_triangle": {
+        "qcorner": 0.2303223274730375,
+        "mu": -0.9997659711518503,
+        "centroid_m": [
+          -2.1398348954851953e-05,
+          6.324512672832108e-20,
+          0.029011095548942798
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 51,
+          "min_qcorner": 0.854551191460291,
+          "median_qcorner": 0.9600612995001938
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8056374802763111,
+          "median_qcorner": 0.9355095772362638
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.2303223274730375,
+          "median_qcorner": 0.8213682670109077
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.8396074357953202,
+          "median_qcorner": 0.9216329269112506
+        },
+        "N_off": {
+          "tri6": 50,
+          "min_qcorner": 0.79856817689821,
+          "median_qcorner": 0.9745406272533079
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23428357463088095,
+          "median_qcorner": 0.90633496879112
+        }
+      }
+    },
+    {
+      "theta": 0.75,
+      "source_geo_sha256": "df44b010af801c42e80c7dfd8fc61c584fa63ee8de4a0ce033d707d5a46ca85c",
+      "raw_msh2_sha256": "7ee0533e75b4a1578f7a8f7fd2c9fa6dabd9d3d2b89799bc5628960653df3540",
+      "pore_tri6": 188,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.2303628043900855,
+      "median_qcorner": 0.9514193066726566,
+      "worst_triangle": {
+        "qcorner": 0.2303628043900855,
+        "mu": -0.9997657132776868,
+        "centroid_m": [
+          -2.140992822302694e-05,
+          3.614007241618348e-20,
+          0.02901110529227219
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 51,
+          "min_qcorner": 0.8586063433042702,
+          "median_qcorner": 0.9548156755653124
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8080502689487316,
+          "median_qcorner": 0.9369853916874251
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.2303628043900855,
+          "median_qcorner": 0.8215940101476642
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.8448287711300525,
+          "median_qcorner": 0.9194533321830669
+        },
+        "N_off": {
+          "tri6": 50,
+          "min_qcorner": 0.8054763927037402,
+          "median_qcorner": 0.9742840210504397
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.2340403508159377,
+          "median_qcorner": 0.9062281790384168
+        }
+      }
+    },
+    {
+      "theta": 0.875,
+      "source_geo_sha256": "efacedbc2a416d00ad60caa959a0a647014e37373d7ffadb734e43b9055310d8",
+      "raw_msh2_sha256": "4f5012caa75e7cf17a7cad2473a7d49b98216f03c89ec7aff5d283e2f63940ac",
+      "pore_tri6": 188,
+      "max_pore_node_radius_error_m": 5.204170427930421e-18,
+      "min_qcorner": 0.23040400990082505,
+      "median_qcorner": 0.9528294350977404,
+      "worst_triangle": {
+        "qcorner": 0.23040400990082505,
+        "mu": -0.999765450996514,
+        "centroid_m": [
+          -2.142169877650417e-05,
+          -4.998869072740456e-36,
+          0.02901111518902767
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 51,
+          "min_qcorner": 0.8585404892626437,
+          "median_qcorner": 0.9551474975594056
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8059028982170535,
+          "median_qcorner": 0.9366050820079803
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.23040400990082505,
+          "median_qcorner": 0.8218159723570426
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.8450814869144339,
+          "median_qcorner": 0.9193116743379404
+        },
+        "N_off": {
+          "tri6": 50,
+          "min_qcorner": 0.7984421441384142,
+          "median_qcorner": 0.9764778084529381
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.233794235901608,
+          "median_qcorner": 0.9229805482038465
+        }
+      }
+    },
+    {
+      "theta": 1,
+      "source_geo_sha256": "9bca606bab1ba9f27f1041e6e865e919dc28903542eb9959838eff4406102b64",
+      "raw_msh2_sha256": "253eab47b3bc128e6f65ccffab30a4a26de9a3f67b2adbc4b4e493808c2e4b55",
+      "pore_tri6": 188,
+      "max_pore_node_radius_error_m": 4.9873299934333204e-18,
+      "min_qcorner": 0.2304459553226091,
+      "median_qcorner": 0.9523129787079381,
+      "worst_triangle": {
+        "qcorner": 0.2304459553226091,
+        "mu": -0.999765184263604,
+        "centroid_m": [
+          -2.143366230631906e-05,
+          -4.998869072740456e-36,
+          0.029011125239818646
+        ]
+      },
+      "signed_surface_quality": {
+        "S_off": {
+          "tri6": 51,
+          "min_qcorner": 0.8552817963522663,
+          "median_qcorner": 0.9579587515671253
+        },
+        "N_taper": {
+          "tri6": 21,
+          "min_qcorner": 0.8093593718610003,
+          "median_qcorner": 0.9357192622992935
+        },
+        "S_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.2304459553226091,
+          "median_qcorner": 0.8223219374850699
+        },
+        "S_taper": {
+          "tri6": 22,
+          "min_qcorner": 0.8416855723731509,
+          "median_qcorner": 0.9254325715267133
+        },
+        "N_off": {
+          "tri6": 50,
+          "min_qcorner": 0.7963692152376701,
+          "median_qcorner": 0.9760802835535665
+        },
+        "N_polar": {
+          "tri6": 22,
+          "min_qcorner": 0.233545549236972,
+          "median_qcorner": 0.9224679571980579
+        }
+      }
+    }
+  ]
+}

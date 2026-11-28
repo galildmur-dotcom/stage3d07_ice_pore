@@ -1,0 +1,19 @@
+{
+  "revision": "P10GK_R1_C1_SOUTH_FOCUS_SOURCE_ONLY",
+  "parent_stage": "P10GJ real M1 343/729QP D027 STOP",
+  "native_mesh_3d_authorized": false,
+  "FEM_authorized": false,
+  "files": {
+    "01_P10GK_NATIVE_PARSE_ONLY.cmd": "cd2e878e4dcb0ca5894141315a46c770a65f9b50c2d27bb7f7cab1157e23ce6d",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "M0_ROTATED.geo": "21cef72e9e0d7fde3a383b6db3ebde4bc6b62cf180b7b65947e5fe1fa57f0c9a",
+    "P10GJ_D027_GATE_POLICY.json": "267d56821194f037de88d21f6730d1d6672f82c42527d288d270724255947e9a",
+    "P10GJ_M1_ROTATED_CANDIDATE.geo": "18bead9a98fd1a872274cc2d328e2c7013d7fcb76c0c23c57b6e002300931d3b",
+    "P10GK_M1_SOUTH_C1_SOURCE_ONLY.geo": "1590d5f5fda58f4401cb038d898e49466e461a40a53fe692867d943b908508ba",
+    "P10GK_SOURCE_POLICY.json": "c55cb63eaf696e04f91f06f2d04c2e2fc0e8b98055bc469f0c6dc2e3e86bcc00",
+    "P10GK_source_qa.py": "9b7dedf84b38a8a9d8276e77d250b867f3f5054be501a6658d91673c16fe0237",
+    "README_P10GK_RU.md": "a0c974aeadd15161636643f82f052ab7e61894a5549d73189c1293dc595d6101",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+    "sphere_pore_B6_refined_rotated.geo": "e3f4d1c472e4d047962bf05f63406f2bbb20b89f20e74ac2e6f2ba8cfd305329"
+  }
+}

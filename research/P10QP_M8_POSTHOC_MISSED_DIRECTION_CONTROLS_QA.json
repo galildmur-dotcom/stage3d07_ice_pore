@@ -1,0 +1,159 @@
+{
+  "stage": "P10QP",
+  "scope": "EXPLORATORY_POSTHOC_NOT_FROZEN_PILOT",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "control_indices": [
+    23,
+    31,
+    21,
+    25
+  ],
+  "ranked_by": "previously SEEN axis2 q64->q128 nonselected deviations",
+  "results_do_NOT_constitute_heldout_target_selection": true,
+  "schedule_sha256": "64ccd5400c045ecee1999a8d14f3a8859b78fb8caf48cf2bf882a3972a1d465c",
+  "axis2_q128_sha256": "1bfccc665236ba4677c630229a3624b93c74c695a1bc5b5239020754328f23c8",
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true,
+  "cells": [
+    {
+      "index": 23,
+      "group": "one",
+      "previous_axis2_q64_gradient_m3": 5.1356877414148874e-18,
+      "uniform_q128_from_previous_run": {
+        "cut_gradient_m3": 5.096136943317999e-18,
+        "cut_volume_m3": 2.5228810741194627e-18,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 1343,
+        "elapsed_s": 2.205277777997253
+      },
+      "new_methods": {
+        "uniform_q256": {
+          "cut_gradient_m3": 5.096062149335428e-18,
+          "cut_volume_m3": 2.522846239470314e-18,
+          "transverse_Gauss_points": 65536,
+          "accepted_ray_segments": 5400,
+          "elapsed_s": 8.375497360000736
+        },
+        "panel2_q64": {
+          "cut_gradient_m3": 5.0912434301391514e-18,
+          "cut_volume_m3": 2.5204579789759812e-18,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 733,
+          "elapsed_s": 2.3910836830000335
+        },
+        "panel4_q32": {
+          "cut_gradient_m3": 5.096139214475763e-18,
+          "cut_volume_m3": 2.5228847062375935e-18,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 540,
+          "elapsed_s": 2.325831145997654
+        }
+      }
+    },
+    {
+      "index": 31,
+      "group": "multi",
+      "previous_axis2_q64_gradient_m3": 1.4474767539834646e-18,
+      "uniform_q128_from_previous_run": {
+        "cut_gradient_m3": 1.430105063248256e-18,
+        "cut_volume_m3": 7.195416136938153e-19,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 854,
+        "elapsed_s": 3.385663024997484
+      },
+      "new_methods": {
+        "uniform_q256": {
+          "cut_gradient_m3": 1.4306890508765481e-18,
+          "cut_volume_m3": 7.198358681425833e-19,
+          "transverse_Gauss_points": 65536,
+          "accepted_ray_segments": 3430,
+          "elapsed_s": 12.65914218800026
+        },
+        "panel2_q64": {
+          "cut_gradient_m3": 1.420571556956066e-18,
+          "cut_volume_m3": 7.147460754947632e-19,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 449,
+          "elapsed_s": 3.1173305160009477
+        },
+        "panel4_q32": {
+          "cut_gradient_m3": 1.4418181482577216e-18,
+          "cut_volume_m3": 7.254343872066153e-19,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 256,
+          "elapsed_s": 3.0936468289983168
+        }
+      }
+    },
+    {
+      "index": 21,
+      "group": "multi",
+      "previous_axis2_q64_gradient_m3": 1.5174394425921254e-17,
+      "uniform_q128_from_previous_run": {
+        "cut_gradient_m3": 1.5185560347430195e-17,
+        "cut_volume_m3": 7.667478035995307e-18,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 1907,
+        "elapsed_s": 3.3658043650029867
+      },
+      "new_methods": {
+        "uniform_q256": {
+          "cut_gradient_m3": 1.5184456336179196e-17,
+          "cut_volume_m3": 7.666921106997936e-18,
+          "transverse_Gauss_points": 65536,
+          "accepted_ray_segments": 7652,
+          "elapsed_s": 12.449392285998329
+        },
+        "panel2_q64": {
+          "cut_gradient_m3": 1.518963397612684e-17,
+          "cut_volume_m3": 7.669535855347688e-18,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 1276,
+          "elapsed_s": 3.2213721799998893
+        },
+        "panel4_q32": {
+          "cut_gradient_m3": 1.518094362407754e-17,
+          "cut_volume_m3": 7.665147744493662e-18,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 961,
+          "elapsed_s": 3.272427832998801
+        }
+      }
+    },
+    {
+      "index": 25,
+      "group": "one",
+      "previous_axis2_q64_gradient_m3": 4.1998134696847695e-17,
+      "uniform_q128_from_previous_run": {
+        "cut_gradient_m3": 4.200922177912028e-17,
+        "cut_volume_m3": 2.0953075631754613e-17,
+        "transverse_Gauss_points": 16384,
+        "accepted_ray_segments": 2925,
+        "elapsed_s": 2.226818898001511
+      },
+      "new_methods": {
+        "uniform_q256": {
+          "cut_gradient_m3": 4.2011093833695934e-17,
+          "cut_volume_m3": 2.0954018573468735e-17,
+          "transverse_Gauss_points": 65536,
+          "accepted_ray_segments": 11727,
+          "elapsed_s": 9.067902566999692
+        },
+        "panel2_q64": {
+          "cut_gradient_m3": 4.2010642464355824e-17,
+          "cut_volume_m3": 2.0953798885671994e-17,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 2251,
+          "elapsed_s": 2.0925470069996663
+        },
+        "panel4_q32": {
+          "cut_gradient_m3": 4.200627652141984e-17,
+          "cut_volume_m3": 2.095160820843655e-17,
+          "transverse_Gauss_points": 16384,
+          "accepted_ray_segments": 1904,
+          "elapsed_s": 2.1219826310007193
+        }
+      }
+    }
+  ]
+}

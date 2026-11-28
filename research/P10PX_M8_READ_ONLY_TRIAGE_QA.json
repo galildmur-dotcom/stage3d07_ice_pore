@@ -1,0 +1,747 @@
+{
+  "stage": "P10PX",
+  "status": "PASS_READ_ONLY_M8_GEOMETRY_TRIAGE",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh": "M8.msh",
+  "mesh_generated": false,
+  "fem_started": false,
+  "gmsh_optimization_started": false,
+  "high_order_elastic_preserved": true,
+  "node_count": 18331,
+  "element_counts_by_gmsh_type": {
+    "9": 1996,
+    "11": 12546
+  },
+  "physical_tri6_face_counts": {
+    "9": 358,
+    "8": 648,
+    "4": 156,
+    "6": 156,
+    "2": 184,
+    "7": 156,
+    "3": 182,
+    "5": 156
+  },
+  "tet10_count": 12546,
+  "tet10_jacobian_quadrature_samples": 338742,
+  "minimum_det_j": 6.282764771199698e-13,
+  "maximum_det_j": 1.2180844071647302e-06,
+  "nonpositive_detj_count": 0,
+  "volume_sum_m3": 0.0001799958124366103,
+  "bezier_convex_hull_bounds": true,
+  "conservative_prefilter_certification": "No element removed unless an interval inequality holds on all Bezier controls",
+  "binning_source": "P10DD: radial[0,.02,.05,.1,.25,.5,1,2,5,15] mm; mu10; phi12",
+  "bin_triage": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12448,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 98,
+      "possible": 98,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 98,
+      "uncertain_multi_constraints": 98
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12433,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 113,
+      "possible": 113,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 113,
+      "uncertain_multi_constraints": 113
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12442,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 104,
+      "possible": 104,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 104,
+      "uncertain_multi_constraints": 104
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12435,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 111,
+      "possible": 111,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 111,
+      "uncertain_multi_constraints": 111
+    },
+    {
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12445,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 101,
+      "possible": 101,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 101,
+      "uncertain_multi_constraints": 101
+    },
+    {
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12431,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 115,
+      "possible": 115,
+      "possible_at_most_one_quartic_cut": 0,
+      "possible_two_or_three_quartic_cuts": 115,
+      "uncertain_multi_constraints": 115
+    },
+    {
+      "radial_bin": 1,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12439,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 107,
+      "possible": 107,
+      "possible_at_most_one_quartic_cut": 1,
+      "possible_two_or_three_quartic_cuts": 106,
+      "uncertain_multi_constraints": 107
+    },
+    {
+      "radial_bin": 1,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12434,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 112,
+      "possible": 112,
+      "possible_at_most_one_quartic_cut": 1,
+      "possible_two_or_three_quartic_cuts": 111,
+      "uncertain_multi_constraints": 112
+    },
+    {
+      "radial_bin": 3,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12362,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 184,
+      "possible": 184,
+      "possible_at_most_one_quartic_cut": 85,
+      "possible_two_or_three_quartic_cuts": 99,
+      "uncertain_multi_constraints": 182
+    },
+    {
+      "radial_bin": 3,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12332,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 214,
+      "possible": 214,
+      "possible_at_most_one_quartic_cut": 98,
+      "possible_two_or_three_quartic_cuts": 116,
+      "uncertain_multi_constraints": 211
+    },
+    {
+      "radial_bin": 3,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12367,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 179,
+      "possible": 179,
+      "possible_at_most_one_quartic_cut": 93,
+      "possible_two_or_three_quartic_cuts": 86,
+      "uncertain_multi_constraints": 174
+    },
+    {
+      "radial_bin": 3,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12352,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 194,
+      "possible": 194,
+      "possible_at_most_one_quartic_cut": 101,
+      "possible_two_or_three_quartic_cuts": 93,
+      "uncertain_multi_constraints": 191
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12335,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 211,
+      "possible": 211,
+      "possible_at_most_one_quartic_cut": 112,
+      "possible_two_or_three_quartic_cuts": 99,
+      "uncertain_multi_constraints": 211
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12271,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 275,
+      "possible": 275,
+      "possible_at_most_one_quartic_cut": 166,
+      "possible_two_or_three_quartic_cuts": 109,
+      "uncertain_multi_constraints": 266
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12344,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 202,
+      "possible": 202,
+      "possible_at_most_one_quartic_cut": 96,
+      "possible_two_or_three_quartic_cuts": 106,
+      "uncertain_multi_constraints": 200
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12327,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 219,
+      "possible": 219,
+      "possible_at_most_one_quartic_cut": 107,
+      "possible_two_or_three_quartic_cuts": 112,
+      "uncertain_multi_constraints": 216
+    },
+    {
+      "radial_bin": 5,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12359,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 187,
+      "possible": 187,
+      "possible_at_most_one_quartic_cut": 97,
+      "possible_two_or_three_quartic_cuts": 90,
+      "uncertain_multi_constraints": 185
+    },
+    {
+      "radial_bin": 5,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12322,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 224,
+      "possible": 224,
+      "possible_at_most_one_quartic_cut": 107,
+      "possible_two_or_three_quartic_cuts": 117,
+      "uncertain_multi_constraints": 221
+    },
+    {
+      "radial_bin": 5,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12361,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 185,
+      "possible": 185,
+      "possible_at_most_one_quartic_cut": 92,
+      "possible_two_or_three_quartic_cuts": 93,
+      "uncertain_multi_constraints": 183
+    },
+    {
+      "radial_bin": 5,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12339,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 207,
+      "possible": 207,
+      "possible_at_most_one_quartic_cut": 105,
+      "possible_two_or_three_quartic_cuts": 102,
+      "uncertain_multi_constraints": 204
+    },
+    {
+      "radial_bin": 6,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "excluded_proven": 12364,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 182,
+      "possible": 182,
+      "possible_at_most_one_quartic_cut": 82,
+      "possible_two_or_three_quartic_cuts": 100,
+      "uncertain_multi_constraints": 178
+    },
+    {
+      "radial_bin": 6,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "excluded_proven": 12351,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 195,
+      "possible": 195,
+      "possible_at_most_one_quartic_cut": 82,
+      "possible_two_or_three_quartic_cuts": 113,
+      "uncertain_multi_constraints": 192
+    },
+    {
+      "radial_bin": 6,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "excluded_proven": 12355,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 191,
+      "possible": 191,
+      "possible_at_most_one_quartic_cut": 90,
+      "possible_two_or_three_quartic_cuts": 101,
+      "uncertain_multi_constraints": 188
+    },
+    {
+      "radial_bin": 6,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "excluded_proven": 12348,
+      "fully_inside_proven": 0,
+      "cut_or_ambiguous_conservative": 198,
+      "possible": 198,
+      "possible_at_most_one_quartic_cut": 96,
+      "possible_two_or_three_quartic_cuts": 102,
+      "uncertain_multi_constraints": 190
+    }
+  ],
+  "sample_count": 6,
+  "samples": [
+    {
+      "element_id": 10222,
+      "region": "south",
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "interior_gauss_hits": 10,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "relative_element_volume": 1.737751447168127e-12,
+      "physical_nodes_10": [
+        [
+          0.0007264536577541907,
+          -0.0001377240190007265,
+          0.02867459078723616
+        ],
+        [
+          0.0007747587678470469,
+          2.487190279172491e-05,
+          0.02878089206247019
+        ],
+        [
+          0.001136040730418073,
+          5.738366172488205e-05,
+          0.02879519173505556
+        ],
+        [
+          0.0008919574653994322,
+          0.0002040983264671131,
+          0.02871443152488496
+        ],
+        [
+          0.0007506062128006187,
+          -5.642605810450078e-05,
+          0.02872774142485318
+        ],
+        [
+          0.0009312471940861318,
+          -4.017017863792221e-05,
+          0.02873489126114586
+        ],
+        [
+          0.0008092055615768114,
+          3.318715373319332e-05,
+          0.02869451115606056
+        ],
+        [
+          0.0009553997491325598,
+          4.112778225830348e-05,
+          0.02878804189876288
+        ],
+        [
+          0.0008333581166232395,
+          0.000114485114629419,
+          0.02874766179367758
+        ],
+        [
+          0.001013999097908753,
+          0.0001307409940959976,
+          0.02875481162997026
+        ]
+      ]
+    },
+    {
+      "element_id": 6813,
+      "region": "south",
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "interior_gauss_hits": 7,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "relative_element_volume": 1.9559110434538143e-12,
+      "physical_nodes_10": [
+        [
+          0.0004333545303069323,
+          1.627557490646163e-05,
+          0.02837905421492218
+        ],
+        [
+          0.0001410605842574628,
+          0.0001374114481735189,
+          0.0285391614929207
+        ],
+        [
+          7.877608917273967e-05,
+          -0.0001469211590893178,
+          0.02857008325475766
+        ],
+        [
+          0.0003103085658286637,
+          3.600032725851835e-05,
+          0.02857558583122922
+        ],
+        [
+          0.0002872075572821975,
+          7.684351153999025e-05,
+          0.02845910785392144
+        ],
+        [
+          0.000256065309739836,
+          -6.532279209142806e-05,
+          0.02847456873483992
+        ],
+        [
+          0.0003718315480677979,
+          2.613795108248999e-05,
+          0.0284773200230757
+        ],
+        [
+          0.0001099183367151012,
+          -4.754855457899439e-06,
+          0.02855462237383918
+        ],
+        [
+          0.0002256845750430632,
+          8.67058877160186e-05,
+          0.02855737366207496
+        ],
+        [
+          0.0001945423275007017,
+          -5.54604159153997e-05,
+          0.02857283454299344
+        ]
+      ]
+    },
+    {
+      "element_id": 11179,
+      "region": "south",
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "interior_gauss_hits": 21,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "relative_element_volume": 2.0222534240306814e-12,
+      "physical_nodes_10": [
+        [
+          0.0007054165774524741,
+          0.0003774263530573811,
+          0.02906391714582851
+        ],
+        [
+          0.0006823986489961598,
+          0.0001886738902301112,
+          0.02878386306454454
+        ],
+        [
+          0.00053698170193401,
+          0.0002312568960494433,
+          0.02897933240155836
+        ],
+        [
+          0.0006332001539197712,
+          0.0004425089572827251,
+          0.02880406740841338
+        ],
+        [
+          0.0006939076132243169,
+          0.0002830501216437462,
+          0.02892389010518653
+        ],
+        [
+          0.000621199139693242,
+          0.0003043416245534122,
+          0.02902162477369344
+        ],
+        [
+          0.0006693083656861226,
+          0.0004099676551700531,
+          0.02893399227712094
+        ],
+        [
+          0.0006096901754650849,
+          0.0002099653931397772,
+          0.02888159773305145
+        ],
+        [
+          0.0006577994014579655,
+          0.0003155914237564181,
+          0.02879396523647896
+        ],
+        [
+          0.0005850909279268906,
+          0.0003368829266660842,
+          0.02889169990498587
+        ]
+      ]
+    },
+    {
+      "element_id": 10725,
+      "region": "north",
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "interior_gauss_hits": 15,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "relative_element_volume": 1.7381243581321531e-12,
+      "physical_nodes_10": [
+        [
+          0.00028199102272933,
+          -1.80628094039699e-05,
+          0.03154258691792641
+        ],
+        [
+          0.0001308814296334802,
+          0.0001700958287122573,
+          0.0313932498031467
+        ],
+        [
+          0.0002838949693813577,
+          4.796567139286144e-05,
+          0.0312700048385319
+        ],
+        [
+          0.0001037276425076625,
+          -5.042236732111467e-05,
+          0.03137796103222857
+        ],
+        [
+          0.0002064362261814051,
+          7.601650965414372e-05,
+          0.03146791836053656
+        ],
+        [
+          0.0002829429960553438,
+          1.495143099444577e-05,
+          0.03140629587822916
+        ],
+        [
+          0.0001928593326184962,
+          -3.424258836254229e-05,
+          0.03146027397507749
+        ],
+        [
+          0.0002073881995074189,
+          0.0001090307500525594,
+          0.0313316273208393
+        ],
+        [
+          0.0001173045360705713,
+          5.983673069557133e-05,
+          0.03138560541768763
+        ],
+        [
+          0.0001938113059445101,
+          -1.228347964126614e-06,
+          0.03132398293538023
+        ]
+      ]
+    },
+    {
+      "element_id": 12787,
+      "region": "north",
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "interior_gauss_hits": 12,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "relative_element_volume": 2.1976605679109205e-12,
+      "physical_nodes_10": [
+        [
+          0.0008900963645305508,
+          0.0001312074646311569,
+          0.03097412273945108
+        ],
+        [
+          0.0007035688426696817,
+          -6.37125952860998e-05,
+          0.03102232884549465
+        ],
+        [
+          0.0008507763820946948,
+          7.110240042213718e-06,
+          0.03116616984063755
+        ],
+        [
+          0.000613904509963627,
+          0.0001979058663560608,
+          0.03111856489425626
+        ],
+        [
+          0.0007968326036001162,
+          3.374743467252854e-05,
+          0.03099822579247287
+        ],
+        [
+          0.0008704363733126228,
+          6.91588523366853e-05,
+          0.03107014629004431
+        ],
+        [
+          0.0007520004372470889,
+          0.0001645566654936088,
+          0.03104634381685367
+        ],
+        [
+          0.0007771726123821882,
+          -2.830117762194304e-05,
+          0.0310942493430661
+        ],
+        [
+          0.0006587366763166543,
+          6.70966355349805e-05,
+          0.03107044686987546
+        ],
+        [
+          0.0007323404460291608,
+          0.0001025080531991372,
+          0.0311423673674469
+        ]
+      ]
+    },
+    {
+      "element_id": 10114,
+      "region": "north",
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "interior_gauss_hits": 11,
+      "sampled_crossing_constraints": 3,
+      "conservative_constraint_status": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "relative_element_volume": 1.5953866875603951e-12,
+      "physical_nodes_10": [
+        [
+          0.0002838949693813577,
+          4.796567139286144e-05,
+          0.0312700048385319
+        ],
+        [
+          0.0001037276425076625,
+          -5.042236732111467e-05,
+          0.03137796103222857
+        ],
+        [
+          0.0001308814296334802,
+          0.0001700958287122573,
+          0.0313932498031467
+        ],
+        [
+          8.748840679659791e-05,
+          1.077229773577901e-05,
+          0.03114013892841419
+        ],
+        [
+          0.0001938113059445101,
+          -1.228347964126614e-06,
+          0.03132398293538023
+        ],
+        [
+          0.0002073881995074189,
+          0.0001090307500525594,
+          0.0313316273208393
+        ],
+        [
+          0.0001856916880889778,
+          2.936898456432022e-05,
+          0.03120507188347305
+        ],
+        [
+          0.0001173045360705713,
+          5.983673069557133e-05,
+          0.03138560541768763
+        ],
+        [
+          9.560802465213019e-05,
+          -1.982503479266783e-05,
+          0.03125904998032138
+        ],
+        [
+          0.000109184918215039,
+          9.043406322401817e-05,
+          0.03126669436578045
+        ]
+      ]
+    }
+  ]
+}

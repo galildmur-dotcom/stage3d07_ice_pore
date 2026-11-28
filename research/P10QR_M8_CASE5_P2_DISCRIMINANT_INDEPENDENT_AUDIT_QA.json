@@ -1,0 +1,372 @@
+{
+  "stage": "P10QR",
+  "scope": "single active P2 boundary, exact polynomial projection in inner s; empirical q256",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_sha256": {
+    "part0": "04cef1992c1eeedf7f4dec7039215c88fffdd4df560999224d3d9132f0876a9f",
+    "part1": "7815cd5bb804a46ca47bd14844e21547768f933342c39860ea41a8aab268e542",
+    "baseline": "1bfccc665236ba4677c630229a3624b93c74c695a1bc5b5239020754328f23c8"
+  },
+  "frozen_indices": [
+    26,
+    10,
+    23,
+    8,
+    18,
+    33
+  ],
+  "frozen_parameters": {
+    "inner_s_budget": 128,
+    "outer_Gauss_orders": [
+      128,
+      256
+    ],
+    "critical_events": [
+      "multiple_ray_root",
+      "ray_origin",
+      "ray_endpoint",
+      "degree_change"
+    ],
+    "real_event_root_residual_tolerance": 5e-06,
+    "minimum_per_s_smooth_interval": 8
+  },
+  "metrics": {
+    "all_6": {
+      "cell_count": 6,
+      "methods": {
+        "uniform_q128": {
+          "L1_gradient_m3": 9.654198917528969e-21,
+          "L1_gradient_relative_hybrid": 9.077753477101099e-07,
+          "L1_volume_m3": 4.739899198238209e-21,
+          "L1_volume_relative_full_child": 1.1849453105689679e-07,
+          "signed_gradient_m3": -8.144887539307925e-21,
+          "gradient_cancellation_ratio": 1.1853078229671041,
+          "transverse_nodes_total": 98304
+        },
+        "critical_s_t128": {
+          "L1_gradient_m3": 2.2072741408660592e-21,
+          "L1_gradient_relative_hybrid": 2.0754793513505504e-07,
+          "L1_volume_m3": 1.0938596626254326e-21,
+          "L1_volume_relative_full_child": 2.7345811027591805e-08,
+          "signed_gradient_m3": -2.0672262470256454e-21,
+          "gradient_cancellation_ratio": 1.067746766490565,
+          "transverse_nodes_total": 98304
+        },
+        "critical_s_t256": {
+          "L1_gradient_m3": 1.7845720145975447e-21,
+          "L1_gradient_relative_hybrid": 1.678016472318203e-07,
+          "L1_volume_m3": 8.828412498024072e-22,
+          "L1_volume_relative_full_child": 2.2070481990820502e-08,
+          "signed_gradient_m3": -1.7459290353699243e-21,
+          "gradient_cancellation_ratio": 1.022133190092364,
+          "transverse_nodes_total": 196608
+        }
+      },
+      "critical_t128_better_per_cell_count": 4,
+      "critical_t256_better_per_cell_count": 4,
+      "unresolved_topology_t128": 0,
+      "unresolved_topology_t256": 0
+    },
+    "previous_q256_4": {
+      "cell_count": 4,
+      "methods": {
+        "uniform_q128": {
+          "L1_gradient_m3": 9.095456679839067e-21,
+          "L1_gradient_relative_hybrid": 8.552373346204543e-07,
+          "L1_volume_m3": 4.459061935238675e-21,
+          "L1_volume_relative_full_child": 1.1147377420307988e-07,
+          "signed_gradient_m3": -7.586145301618022e-21,
+          "gradient_cancellation_ratio": 1.1989562970668555,
+          "transverse_nodes_total": 65536
+        },
+        "critical_s_t128": {
+          "L1_gradient_m3": 2.0082934802056938e-21,
+          "L1_gradient_relative_hybrid": 1.8883796862601778e-07,
+          "L1_volume_m3": 9.934609383392597e-22,
+          "L1_volume_relative_full_child": 2.4835905382884705e-08,
+          "signed_gradient_m3": -1.86824558636528e-21,
+          "gradient_cancellation_ratio": 1.0749622506069347,
+          "transverse_nodes_total": 65536
+        },
+        "critical_s_t256": {
+          "L1_gradient_m3": 1.7042410373864885e-21,
+          "L1_gradient_relative_hybrid": 1.6024820013666512e-07,
+          "L1_volume_m3": 8.425313608876465e-22,
+          "L1_volume_relative_full_child": 2.1062759846500306e-08,
+          "signed_gradient_m3": -1.6655980581588681e-21,
+          "gradient_cancellation_ratio": 1.0232006629920882,
+          "transverse_nodes_total": 131072
+        }
+      },
+      "critical_t128_better_per_cell_count": 3,
+      "critical_t256_better_per_cell_count": 2,
+      "unresolved_topology_t128": 0,
+      "unresolved_topology_t256": 0
+    },
+    "new_q256_2": {
+      "cell_count": 2,
+      "methods": {
+        "uniform_q128": {
+          "L1_gradient_m3": 5.587422376899024e-22,
+          "L1_gradient_relative_hybrid": 5.253801308965561e-08,
+          "L1_volume_m3": 2.808372629995341e-22,
+          "L1_volume_relative_full_child": 7.020756853816911e-09,
+          "signed_gradient_m3": -5.587422376899024e-22,
+          "gradient_cancellation_ratio": 1.0,
+          "transverse_nodes_total": 32768
+        },
+        "critical_s_t128": {
+          "L1_gradient_m3": 1.9898066066036543e-22,
+          "L1_gradient_relative_hybrid": 1.8709966509037244e-08,
+          "L1_volume_m3": 1.0039872428617293e-22,
+          "L1_volume_relative_full_child": 2.5099056447070995e-09,
+          "signed_gradient_m3": -1.9898066066036543e-22,
+          "gradient_cancellation_ratio": 1.0,
+          "transverse_nodes_total": 32768
+        },
+        "critical_s_t256": {
+          "L1_gradient_m3": 8.033097721105621e-23,
+          "L1_gradient_relative_hybrid": 7.553447095155178e-09,
+          "L1_volume_m3": 4.030988891476073e-23,
+          "L1_volume_relative_full_child": 1.0077221443201937e-09,
+          "signed_gradient_m3": -8.033097721105621e-23,
+          "gradient_cancellation_ratio": 1.0,
+          "transverse_nodes_total": 65536
+        }
+      },
+      "critical_t128_better_per_cell_count": 1,
+      "critical_t256_better_per_cell_count": 2,
+      "unresolved_topology_t128": 0,
+      "unresolved_topology_t256": 0
+    }
+  },
+  "cells": [
+    {
+      "index": 26,
+      "q256_reference_origin": "PREVIOUS_Q256",
+      "full_polynomial_gradient_relative_error": 1.5495882582869567e-15,
+      "full_polynomial_volume_relative_error": 2.2087555667048022e-15,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 67,
+        "ray_origin": 75,
+        "ray_endpoint": 78,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": -8.340800990728545e-21,
+          "gradient_abs_m3": 8.340800990728545e-21,
+          "volume_signed_m3": -4.081657919011266e-21,
+          "volume_abs_m3": 4.081657919011266e-21,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": -1.1258413894589131e-21,
+          "gradient_abs_m3": 1.1258413894589131e-21,
+          "volume_signed_m3": -5.525932293589324e-22,
+          "volume_abs_m3": 5.525932293589324e-22,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": -7.879685354605302e-22,
+          "gradient_abs_m3": 7.879685354605302e-22,
+          "volume_signed_m3": -3.8525766715204124e-22,
+          "volume_abs_m3": 3.8525766715204124e-22,
+          "transverse_points": 32768
+        }
+      }
+    },
+    {
+      "index": 10,
+      "q256_reference_origin": "PREVIOUS_Q256",
+      "full_polynomial_gradient_relative_error": 1.5813722299320158e-16,
+      "full_polynomial_volume_relative_error": 0.0,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 81,
+        "ray_origin": 128,
+        "ray_endpoint": 72,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": 3.646119979091911e-22,
+          "gradient_abs_m3": 3.646119979091911e-22,
+          "volume_signed_m3": 1.8188719443797289e-22,
+          "volume_abs_m3": 1.8188719443797289e-22,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": -8.811716925775058e-24,
+          "gradient_abs_m3": 8.811716925775058e-24,
+          "volume_signed_m3": -4.530951735806305e-24,
+          "volume_abs_m3": 4.530951735806305e-24,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": 1.93214896138102e-23,
+          "gradient_abs_m3": 1.93214896138102e-23,
+          "volume_signed_m3": 9.655133133922245e-24,
+          "volume_abs_m3": 9.655133133922245e-24,
+          "transverse_points": 32768
+        }
+      }
+    },
+    {
+      "index": 23,
+      "q256_reference_origin": "PREVIOUS_Q256",
+      "full_polynomial_gradient_relative_error": 3.2868732583466184e-15,
+      "full_polynomial_volume_relative_error": 3.3131333500590494e-15,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 86,
+        "ray_origin": 46,
+        "ray_endpoint": 47,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": 7.479398257086288e-23,
+          "gradient_abs_m3": 7.479398257086288e-23,
+          "volume_signed_m3": 3.48346491489007e-23,
+          "volume_abs_m3": 3.48346491489007e-23,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": 7.002394692020694e-23,
+          "gradient_abs_m3": 7.002394692020694e-23,
+          "volume_signed_m3": 3.4820014441743095e-23,
+          "volume_abs_m3": 3.4820014441743095e-23,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": -7.919918801022491e-23,
+          "gradient_abs_m3": 7.919918801022491e-23,
+          "volume_signed_m3": -3.902456836860782e-23,
+          "volume_abs_m3": 3.902456836860782e-23,
+          "transverse_points": 32768
+        }
+      }
+    },
+    {
+      "index": 8,
+      "q256_reference_origin": "PREVIOUS_Q256",
+      "full_polynomial_gradient_relative_error": 1.103419457499357e-15,
+      "full_polynomial_volume_relative_error": 1.4199142928810538e-15,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 74,
+        "ray_origin": 83,
+        "ray_endpoint": 93,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": 3.1524970863046824e-22,
+          "gradient_abs_m3": 3.1524970863046824e-22,
+          "volume_signed_m3": 1.6068217264053486e-22,
+          "volume_abs_m3": 1.6068217264053486e-22,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": -8.036164269007987e-22,
+          "gradient_abs_m3": 8.036164269007987e-22,
+          "volume_signed_m3": -4.015167428027779e-22,
+          "volume_abs_m3": 4.015167428027779e-22,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": -8.177518243019232e-22,
+          "gradient_abs_m3": 8.177518243019232e-22,
+          "volume_signed_m3": -4.085939922330752e-22,
+          "volume_abs_m3": 4.085939922330752e-22,
+          "transverse_points": 32768
+        }
+      }
+    },
+    {
+      "index": 18,
+      "q256_reference_origin": "NEW_P10QR_Q256_HELDOUT_ORDER",
+      "full_polynomial_gradient_relative_error": 2.5376200499846618e-15,
+      "full_polynomial_volume_relative_error": 1.7354508024118332e-15,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 77,
+        "ray_origin": 51,
+        "ray_endpoint": 0,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": -4.594113897103173e-22,
+          "gradient_abs_m3": 4.594113897103173e-22,
+          "volume_signed_m3": -2.3047061638491894e-22,
+          "volume_abs_m3": 2.3047061638491894e-22,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": -8.822327931867561e-23,
+          "gradient_abs_m3": 8.822327931867561e-23,
+          "volume_signed_m3": -4.423924024267328e-23,
+          "volume_abs_m3": 4.423924024267328e-23,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": -7.785673628107495e-23,
+          "gradient_abs_m3": 7.785673628107495e-23,
+          "volume_signed_m3": -3.905219478479861e-23,
+          "volume_abs_m3": 3.905219478479861e-23,
+          "transverse_points": 32768
+        }
+      }
+    },
+    {
+      "index": 33,
+      "q256_reference_origin": "NEW_P10QR_Q256_HELDOUT_ORDER",
+      "full_polynomial_gradient_relative_error": 2.3702349621174574e-15,
+      "full_polynomial_volume_relative_error": 1.893219057175839e-15,
+      "critical_event_roots_by_kind_t128": {
+        "multiple_ray_root": 33,
+        "ray_origin": 33,
+        "ray_endpoint": 0,
+        "degree_change": 0
+      },
+      "unresolved_topology_probe_intervals_t128": 0,
+      "unresolved_topology_probe_intervals_t256": 0,
+      "methods": {
+        "uniform_q128": {
+          "gradient_signed_m3": -9.933084797958505e-23,
+          "gradient_abs_m3": 9.933084797958505e-23,
+          "volume_signed_m3": -5.036664661461514e-23,
+          "volume_abs_m3": 5.036664661461514e-23,
+          "transverse_points": 16384
+        },
+        "critical_s_t128": {
+          "gradient_signed_m3": -1.1075738134168982e-22,
+          "gradient_abs_m3": 1.1075738134168982e-22,
+          "volume_signed_m3": -5.615948404349965e-23,
+          "volume_abs_m3": 5.615948404349965e-23,
+          "transverse_points": 16384
+        },
+        "critical_s_t256": {
+          "gradient_signed_m3": -2.4742409299812626e-24,
+          "gradient_abs_m3": 2.4742409299812626e-24,
+          "volume_signed_m3": -1.2576941299621183e-24,
+          "volume_abs_m3": 1.2576941299621183e-24,
+          "transverse_points": 32768
+        }
+      }
+    }
+  ],
+  "numerical_polynomial_roots_are_not_interval_certified": true,
+  "one_boundary_quadratic_only": true,
+  "cannot_claim_general_two_boundary_or_full_30_cell_convergence": true,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true
+}

@@ -1,0 +1,29 @@
+# P10DL R1 — подготовлена одна ограниченная физическая попытка M1 forward+adjoint signed `(r,θ,φ,t)`
+
+**21.11.2026; состояние `P10DL_SOURCE_ONLY_PREPARED_FOR_WINDOWS`, физический FEM M1=0, Gmsh=0.** Исследователь после успеха P10DK Windows synthetic/selftest разрешил **«подготовить P10DL для одного физического расчёта M1 с указанными ограничениями»**, но **сам физический запуск пока не выполнялся**. Никакого повторного Gmsh, сброса marker или использования `forward_history.bin` H0.
+
+## 1. Входные факты
+
+- По присланному тексту Qt Creator в 17:32:34 нативная Windows программа `p10dk_4d_synthetic_unit.exe` завершилась успешно, показала 7206 синтетических строк, mechanical+1.8/thermal−0.15/total+1.65 и negative PASS, `physical_FEM=0`.
+- В 17:32:53–17:32:55 `stage3d10dk_m1_full4d.exe --selftest` завершился успешно; 18 synthetic adjoint cases PASS, `jpeak_shape_FD_rel=5.592737782360e-08`, `adjoint_equilibrium_rel=5.410927883335e-13`, `P10DK_M1_SOURCE_SELFTEST_OK physical_FEM=0`. **Отдельный native ExitCode и exe SHA не получены; строка Qt «успешно завершилась» не является физическим M1 расчётом.** Точная пользовательская копия в `research/evidence/P10DL_P10DK_WINDOWS_UNIT_20261121/input/P10DK_R1_WINDOWS_QT_USER_PASTE.txt`.
+- По D-019 M0=H0 SHA e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8 (7388 Tet10), M1=P10DG единственная Windows сетка SHA **`ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f`** по Windows manifest (9736 Tet10,178 pore Tri6). Исходный P10DG QA exit2 на unpaired global median0.35693 сохранён; исследователь принял геометрию отдельно по mean-volume ratio0.758833 и пяти радиальным проверкам. Самого M1.msh в Git evidence нет.
+
+## 2. Внешний ограничитель и независимая программа
+
+Новая самостоятельная сборочная цель `stage3d10dl_m1_full4d` под CMake/C++20/OpenMP включает **действующий production P10DD/P10W analytic Tet10** `stage3d10w_analytic_adjoint.cpp` непосредственно, под `STAGE3D10DD_FULL4D`+`STAGE3D10DK_M1_FULL4D`, и **не изменяет ни одну физическую формулу**. Отдельный C++ main принимает *только* конкретный CLI: launch opt-in, оригинальный M1 stem, новое `P10DL_M1_...` output, `R`, `steps6`, `dt150`, `cutoff-mm5`, `threads4`. Он отклоняет `--reuse-forward`, `--preflight`, другую модель, H0 и отсутствие launcher-created marker **до чтения MSH/физического FEM**. `--help` и `--selftest` всегда не-физические.
+
+Одноразовый Windows Python3 stdlib сценарий `01_RUN_ONE_P10DL_M1.cmd`/`P10DL_one_click_m1.py` перед вопросом о запуске проверяет ZIP source SHA inventory, новый isolated CMakeCache и MinGW g++.exe/DLL, safe EXE `--help`+`--selftest`, synthetic unit, independent M1 Python audit selftest, **точный M1 SHA256**, свободные RAM≥12GiB и disk≥4GiB. Историческую папку `G:\ildar\Stage3D07`, исходный M1 и P10DG marker он не изменяет. **В solver никогда не передаются `--reuse-forward`/`--preflight`.** Путь `forward_history.bin` создаётся новым физическим прогоном в его отдельном выходном каталоге; прямая и сопряжённая на одной M1. У исходного `--preflight` обнаружена промежуточная физическая тепловая работа, поэтому он запрещён даже для «простой» диагностики.
+
+После отдельного пользовательского ввода **`RUN ONE P10DL M1`** ещё **до** native Popen атомарно создаются два marker: один в `P10DL_OUTPUT` изолированной папки, второй в `%LOCALAPPDATA%\Stage3D07` привязан к exact M1 SHA и не позволяет повторить опыт простой повторной распаковкой исходного ZIP. Любой STOP сохраняет marker; удалять ради рестарта нельзя. Windows Job Object задаёт memory PROCESS_MEMORY=8GiB и KILL_ON_JOB_CLOSE, Python проверяет wall/output/private каждые0.5с, при STOP завершает дерево. Никаких новых Gmsh/VTU в сценарии нет.
+
+**Лимиты, разрешённые на подготовку:** wall **1800с**, process PrivateUsage **8GiB**, новые файлы **1GiB**, до запуска disk≥4GiB. Модельные 6×150с=900с физического времени — не wall лимит. Прогноз 3–15мин/1–4GiB остаётся **не измеренным**, лимиты не гарантия фактической сходимости.
+
+После native exit0 анализатор `P10DK_audit_evidence.py` независимо проверяет M1 hard-gates 9736 Tet10, 262872 mechanical QP+623104 thermal QP за каждый шаг, 7206 строк, 6 знаковых компонент, механический/тепловой step/global closure к P10W и forward cache SHA. Только статус `COMPLETED_M1_4D_VERIFIED` считается физическим PASS. На Windows пользователь передаёт **один небольшой** `P10DL_EVIDENCE.zip` (manifest, лог, пять CSV без тяжёлого `forward_history.bin`); при STOP архив или два коротких лога, **без повторной попытки**.
+
+## 3. Уже выполненные проверки (FEM=0)
+
+Автономный source ZIP `research/packages/P10DL_R1_M1_FRESH_FORWARD_ONE_SHOT_WINDOWS_20261121.zip`: **96 файлов**, **372650B**, SHA256 **`7b234d7f6896f697de3d681de4029192faa8c3d658b6f53899bc06c99f3a637b`**, CRC96/96, source SHA95/95. Из чистой Linux распаковки GCC14 C++20/OpenMP native compile/link нового EXE PASS, `--selftest` PASS, некорректная H0 команда exit2, формально правильная команда без marker exit2, независимый Python synthetic 7206 rows PASS, SHA-tamper исходника STOP, wrong-M1-SHA/missing-H0-negative PASS. CMake/Qt Creator Windows для P10DL **не запускались**, kernel Job Object и реальный solver M1 на Windows **не испытаны**. Оснащение рассчитано на текущий Windows 11, i7-7700K, 64ГиБ RAM, MinGW Release.
+
+## 4. Научное ограничение
+
+Проверки всего P10DL являются проверками **воспроизводимости поставки, пригодности CLI и синтетики**, не позволяют утверждать новый физический градиент, наличие M1 forward history, точное время/память, сходимость M0/M1 или переход к M2. Следующий результат — только логи безопасной сборки P10DL и/или **один** P10DL_EVIDENCE.zip после отдельного действия исследователя. Затем отдельный научный разбор signed локальной производной, приполюсных ячеек и пространственной пары H0/M1, без M2 раньше времени.

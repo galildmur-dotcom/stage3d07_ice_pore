@@ -1,0 +1,7 @@
+{
+  "mesh": "M0",
+  "mesh_sha256": "e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8",
+  "status": "RESEARCHER_APPROVED_FOR_PHYSICS",
+  "basis": "P10DD original M0=H0 historical acceptance, original mesh byte SHA from Windows manifest",
+  "regime": {"steps": 6, "dt": 150, "cutoff_mm": 5, "threads": 4, "law": "EDV_VAR", "xi": 0, "B6_mm": 5}
+}

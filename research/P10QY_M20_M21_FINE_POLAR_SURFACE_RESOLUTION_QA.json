@@ -1,0 +1,341 @@
+{
+  "protocol": "P10QY_REAL_M20_M21_POLE_SURFACE_RESOLUTION_READ_ONLY",
+  "status": "PASS_ACCEPTED_MESH_SHA_CRC_FINE_CAP_AUDIT",
+  "note": "Corner edge median is a resolution indicator, not a FE truncation/error estimate.",
+  "meshes": {
+    "M20": {
+      "mesh": "M20",
+      "mesh_sha256": "b568adac49d19f561f8ee6d4c420ff10df51ae32cb8d2e2c1ba46af28d78f8a5",
+      "pore_radius_mm": 1.0000000000000115,
+      "fitted_center_mm": [
+        7.806255641895632e-15,
+        6.938893903907228e-15,
+        29.999999999999872
+      ],
+      "max_sphere_fit_radial_residual_um": 1.444157293750692e-10,
+      "pore_tri6": 5598,
+      "pore_corner_vertices": 2801,
+      "polar_resolution": {
+        "north": {
+          "vertices_below_8deg": 83,
+          "whole_edges_below_8deg": 215,
+          "crossing_edges_at_8deg": 68,
+          "median_whole_edge_below_8_um": 29.465631450422343,
+          "meridian_arc_0_to_8_um": 139.62634015954796,
+          "estimated_meridian_steps_to_8": 4.738616933917656,
+          "bands": {
+            "0_1": {
+              "corner_vertices": 1,
+              "tri6_centroids": 3,
+              "unique_corner_edges_by_midpoint": 3,
+              "median_corner_edge_um": 29.458811906569046
+            },
+            "1_2": {
+              "corner_vertices": 4,
+              "tri6_centroids": 6,
+              "unique_corner_edges_by_midpoint": 12,
+              "median_corner_edge_um": 29.464952144352193
+            },
+            "0_2": {
+              "corner_vertices": 5,
+              "tri6_centroids": 9,
+              "unique_corner_edges_by_midpoint": 15,
+              "median_corner_edge_um": 29.458811906569046
+            },
+            "2_5": {
+              "corner_vertices": 29,
+              "tri6_centroids": 54,
+              "unique_corner_edges_by_midpoint": 80,
+              "median_corner_edge_um": 29.482137986533516
+            },
+            "5_8": {
+              "corner_vertices": 49,
+              "tri6_centroids": 98,
+              "unique_corner_edges_by_midpoint": 151,
+              "median_corner_edge_um": 29.45932253093506
+            },
+            "0_8": {
+              "corner_vertices": 83,
+              "tri6_centroids": 161,
+              "unique_corner_edges_by_midpoint": 246,
+              "median_corner_edge_um": 29.471198175369867
+            },
+            "8_10": {
+              "corner_vertices": 46,
+              "tri6_centroids": 92,
+              "unique_corner_edges_by_midpoint": 137,
+              "median_corner_edge_um": 29.696743901156715
+            },
+            "0_10": {
+              "corner_vertices": 129,
+              "tri6_centroids": 253,
+              "unique_corner_edges_by_midpoint": 383,
+              "median_corner_edge_um": 29.488452689534725
+            },
+            "10_20": {
+              "corner_vertices": 364,
+              "tri6_centroids": 732,
+              "unique_corner_edges_by_midpoint": 1092,
+              "median_corner_edge_um": 30.203758181044048
+            },
+            "20_30": {
+              "corner_vertices": 544,
+              "tri6_centroids": 1078,
+              "unique_corner_edges_by_midpoint": 1620,
+              "median_corner_edge_um": 31.30294837069718
+            },
+            "30_40": {
+              "corner_vertices": 352,
+              "tri6_centroids": 712,
+              "unique_corner_edges_by_midpoint": 1065,
+              "median_corner_edge_um": 42.13771877982778
+            }
+          }
+        },
+        "south": {
+          "vertices_below_8deg": 64,
+          "whole_edges_below_8deg": 163,
+          "crossing_edges_at_8deg": 58,
+          "median_whole_edge_below_8_um": 34.42629795490589,
+          "meridian_arc_0_to_8_um": 139.62634015954796,
+          "estimated_meridian_steps_to_8": 4.055804674160459,
+          "bands": {
+            "0_1": {
+              "corner_vertices": 1,
+              "tri6_centroids": 2,
+              "unique_corner_edges_by_midpoint": 3,
+              "median_corner_edge_um": 34.36919438523408
+            },
+            "1_2": {
+              "corner_vertices": 3,
+              "tri6_centroids": 5,
+              "unique_corner_edges_by_midpoint": 8,
+              "median_corner_edge_um": 35.256661968002234
+            },
+            "0_2": {
+              "corner_vertices": 4,
+              "tri6_centroids": 7,
+              "unique_corner_edges_by_midpoint": 11,
+              "median_corner_edge_um": 34.917149005981365
+            },
+            "2_5": {
+              "corner_vertices": 20,
+              "tri6_centroids": 38,
+              "unique_corner_edges_by_midpoint": 60,
+              "median_corner_edge_um": 35.03537355586711
+            },
+            "5_8": {
+              "corner_vertices": 40,
+              "tri6_centroids": 77,
+              "unique_corner_edges_by_midpoint": 110,
+              "median_corner_edge_um": 33.764592133756125
+            },
+            "0_8": {
+              "corner_vertices": 64,
+              "tri6_centroids": 122,
+              "unique_corner_edges_by_midpoint": 181,
+              "median_corner_edge_um": 34.25265288200402
+            },
+            "8_10": {
+              "corner_vertices": 32,
+              "tri6_centroids": 69,
+              "unique_corner_edges_by_midpoint": 96,
+              "median_corner_edge_um": 34.46320111547795
+            },
+            "0_10": {
+              "corner_vertices": 96,
+              "tri6_centroids": 191,
+              "unique_corner_edges_by_midpoint": 277,
+              "median_corner_edge_um": 34.31312832574387
+            },
+            "10_20": {
+              "corner_vertices": 280,
+              "tri6_centroids": 568,
+              "unique_corner_edges_by_midpoint": 862,
+              "median_corner_edge_um": 34.48564204229829
+            },
+            "20_30": {
+              "corner_vertices": 420,
+              "tri6_centroids": 836,
+              "unique_corner_edges_by_midpoint": 1259,
+              "median_corner_edge_um": 35.62776345060955
+            },
+            "30_40": {
+              "corner_vertices": 324,
+              "tri6_centroids": 646,
+              "unique_corner_edges_by_midpoint": 953,
+              "median_corner_edge_um": 46.517229002988884
+            }
+          }
+        }
+      }
+    },
+    "M21": {
+      "mesh": "M21",
+      "mesh_sha256": "0908d7f66e3db2e3880089f245872a854c22f67dc6bee3ec87924131e7039dee",
+      "pore_radius_mm": 1.0000000000000002,
+      "fitted_center_mm": [
+        -1.0408340855860843e-14,
+        -1.214306433183765e-14,
+        29.999999999999996
+      ],
+      "max_sphere_fit_radial_residual_um": 1.7780915628762273e-11,
+      "pore_tri6": 6048,
+      "pore_corner_vertices": 3026,
+      "polar_resolution": {
+        "north": {
+          "vertices_below_8deg": 123,
+          "whole_edges_below_8deg": 329,
+          "crossing_edges_at_8deg": 79,
+          "median_whole_edge_below_8_um": 24.779762570349128,
+          "meridian_arc_0_to_8_um": 139.6263401595464,
+          "estimated_meridian_steps_to_8": 5.634692413341359,
+          "bands": {
+            "0_1": {
+              "corner_vertices": 3,
+              "tri6_centroids": 4,
+              "unique_corner_edges_by_midpoint": 7,
+              "median_corner_edge_um": 22.15928606226315
+            },
+            "1_2": {
+              "corner_vertices": 7,
+              "tri6_centroids": 11,
+              "unique_corner_edges_by_midpoint": 18,
+              "median_corner_edge_um": 22.635024580562312
+            },
+            "0_2": {
+              "corner_vertices": 10,
+              "tri6_centroids": 15,
+              "unique_corner_edges_by_midpoint": 25,
+              "median_corner_edge_um": 22.603665203248436
+            },
+            "2_5": {
+              "corner_vertices": 37,
+              "tri6_centroids": 86,
+              "unique_corner_edges_by_midpoint": 126,
+              "median_corner_edge_um": 24.82487637543979
+            },
+            "5_8": {
+              "corner_vertices": 76,
+              "tri6_centroids": 147,
+              "unique_corner_edges_by_midpoint": 217,
+              "median_corner_edge_um": 24.779762570349128
+            },
+            "0_8": {
+              "corner_vertices": 123,
+              "tri6_centroids": 248,
+              "unique_corner_edges_by_midpoint": 368,
+              "median_corner_edge_um": 24.771221491925715
+            },
+            "8_10": {
+              "corner_vertices": 66,
+              "tri6_centroids": 126,
+              "unique_corner_edges_by_midpoint": 195,
+              "median_corner_edge_um": 25.021994516315818
+            },
+            "0_10": {
+              "corner_vertices": 189,
+              "tri6_centroids": 374,
+              "unique_corner_edges_by_midpoint": 563,
+              "median_corner_edge_um": 24.830515576502798
+            },
+            "10_20": {
+              "corner_vertices": 435,
+              "tri6_centroids": 876,
+              "unique_corner_edges_by_midpoint": 1307,
+              "median_corner_edge_um": 27.346667925932913
+            },
+            "20_30": {
+              "corner_vertices": 551,
+              "tri6_centroids": 1099,
+              "unique_corner_edges_by_midpoint": 1654,
+              "median_corner_edge_um": 31.088893617482587
+            },
+            "30_40": {
+              "corner_vertices": 353,
+              "tri6_centroids": 683,
+              "unique_corner_edges_by_midpoint": 1031,
+              "median_corner_edge_um": 42.40905236577326
+            }
+          }
+        },
+        "south": {
+          "vertices_below_8deg": 88,
+          "whole_edges_below_8deg": 230,
+          "crossing_edges_at_8deg": 67,
+          "median_whole_edge_below_8_um": 29.405877387589836,
+          "meridian_arc_0_to_8_um": 139.6263401595464,
+          "estimated_meridian_steps_to_8": 4.748246016235956,
+          "bands": {
+            "0_1": {
+              "corner_vertices": 1,
+              "tri6_centroids": 3,
+              "unique_corner_edges_by_midpoint": 4,
+              "median_corner_edge_um": 29.855564114982815
+            },
+            "1_2": {
+              "corner_vertices": 4,
+              "tri6_centroids": 6,
+              "unique_corner_edges_by_midpoint": 11,
+              "median_corner_edge_um": 29.534702796466977
+            },
+            "0_2": {
+              "corner_vertices": 5,
+              "tri6_centroids": 9,
+              "unique_corner_edges_by_midpoint": 15,
+              "median_corner_edge_um": 29.720060393338745
+            },
+            "2_5": {
+              "corner_vertices": 26,
+              "tri6_centroids": 52,
+              "unique_corner_edges_by_midpoint": 81,
+              "median_corner_edge_um": 29.51016500823266
+            },
+            "5_8": {
+              "corner_vertices": 57,
+              "tri6_centroids": 105,
+              "unique_corner_edges_by_midpoint": 156,
+              "median_corner_edge_um": 29.1718504950401
+            },
+            "0_8": {
+              "corner_vertices": 88,
+              "tri6_centroids": 166,
+              "unique_corner_edges_by_midpoint": 252,
+              "median_corner_edge_um": 29.414960629590883
+            },
+            "8_10": {
+              "corner_vertices": 40,
+              "tri6_centroids": 96,
+              "unique_corner_edges_by_midpoint": 135,
+              "median_corner_edge_um": 29.89859054525538
+            },
+            "0_10": {
+              "corner_vertices": 128,
+              "tri6_centroids": 262,
+              "unique_corner_edges_by_midpoint": 387,
+              "median_corner_edge_um": 29.48433569189139
+            },
+            "10_20": {
+              "corner_vertices": 329,
+              "tri6_centroids": 651,
+              "unique_corner_edges_by_midpoint": 984,
+              "median_corner_edge_um": 31.50687636707514
+            },
+            "20_30": {
+              "corner_vertices": 431,
+              "tri6_centroids": 850,
+              "unique_corner_edges_by_midpoint": 1271,
+              "median_corner_edge_um": 35.321384592686
+            },
+            "30_40": {
+              "corner_vertices": 322,
+              "tri6_centroids": 652,
+              "unique_corner_edges_by_midpoint": 979,
+              "median_corner_edge_um": 45.65501068366412
+            }
+          }
+        }
+      }
+    }
+  }
+}

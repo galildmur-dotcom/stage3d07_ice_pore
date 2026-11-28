@@ -1,0 +1,1138 @@
+{
+  "stage": "P10QI",
+  "status": "PASS_REAL_M8_TET10_CUBIC_GRADIENT_AND_QUARTIC_SECTOR_POLYNOMIALS",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "Gmsh_generated": false,
+  "physical_FEM_started": false,
+  "real_child_count": 8,
+  "input_format": "Original accepted M8 curvature and P2 parent FE field restricted exactly to real child Tet10",
+  "gradient_numerator_degree_upper_bound": 3,
+  "squared_radius_and_polar_degree_upper_bound": 4,
+  "full_child_moments_exact_by_degree3_monomial_simplex_formula": true,
+  "worker_input_sha256": "9cd2db56c1ecdf978869948c15ee5603651c4d3a0285d7559c9ace6adb1bbb39",
+  "cases": [
+    {
+      "original_element_id": 6029,
+      "mesh_tet_index": 4032,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "depth": 6,
+      "active_quartic": 1,
+      "exact_full_gradient_m3": 9.548883889449148e-15,
+      "independent_q4_exact_full_volume_m3": 7.338086972152449e-15,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 5.427363027920561e-28,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 7.105427357601002e-15,
+      "maximum_true_FE_child_parent_trace_error": 2.220446049250313e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 1.734723475976807e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.6469779601696886e-20,
+      "child_polynomial_monomial_coefficients": [
+        6.044517281292559e-14,
+        -3.7411602101852965e-15,
+        -4.802313768980717e-15,
+        -4.027839847577243e-15,
+        7.67753688463885e-18,
+        -3.6465393964905125e-17,
+        -6.930020748234982e-17,
+        1.1349353901631023e-17,
+        -3.779209672912034e-17,
+        2.7196667951989453e-18,
+        2.788070171608891e-20,
+        6.811639441380468e-20,
+        -4.375700667475901e-20,
+        -1.25166108343942e-19,
+        1.2258729445813793e-20,
+        8.261060193771985e-21,
+        -6.887792342488748e-20,
+        -1.1346549688711312e-20,
+        8.296672792033231e-21,
+        1.4319574344427802e-21
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5718,
+      "mesh_tet_index": 3721,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "depth": 8,
+      "active_quartic": 1,
+      "exact_full_gradient_m3": 4.473793564342397e-15,
+      "independent_q4_exact_full_volume_m3": 4.0578083706024506e-15,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 5.33269971929404e-28,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 6.439293542825908e-15,
+      "maximum_true_FE_child_parent_trace_error": 1.3877787807814457e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 2.0816681711721685e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.0328790734103208e-20,
+      "child_polynomial_monomial_coefficients": [
+        2.7139412342234458e-14,
+        6.216239830607654e-16,
+        -5.563359343275314e-16,
+        -1.2518918734557405e-15,
+        -7.240190292096877e-28,
+        7.681661279694223e-27,
+        6.2050409076516446e-27,
+        3.1095344065980352e-27,
+        4.898521459980132e-27,
+        -1.221469404098133e-27,
+        8.518144958554922e-28,
+        -3.1945538654507152e-27,
+        -1.0479072983172728e-26,
+        -3.507136611795784e-27,
+        -3.6208715549644485e-27,
+        -1.6016721256041032e-26,
+        -7.710326487630171e-27,
+        -1.7889812512580604e-27,
+        -4.25236393117809e-28,
+        1.1362724263342637e-27
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5985,
+      "mesh_tet_index": 3988,
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "depth": 3,
+      "active_quartic": 1,
+      "exact_full_gradient_m3": 5.50319556958891e-13,
+      "independent_q4_exact_full_volume_m3": 1.920293235645406e-13,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 2.261821987449685e-26,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 1.554312234475219e-14,
+      "maximum_true_FE_child_parent_trace_error": 5.551115123125783e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 2.0816681711721685e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.837560373301906e-20,
+      "child_polynomial_monomial_coefficients": [
+        3.108647259764613e-12,
+        5.02566652964829e-13,
+        1.7574693639353201e-13,
+        9.47667385966716e-14,
+        4.192885833011613e-26,
+        -1.4541478732062944e-25,
+        -9.628548124190767e-26,
+        -1.7449535573069675e-25,
+        -1.0540416411775887e-25,
+        -1.817298798145105e-25,
+        -3.10236451763409e-26,
+        1.2540995126841564e-25,
+        9.270625707738228e-26,
+        3.63068088961437e-26,
+        1.0905213153775263e-25,
+        2.399385799236408e-25,
+        -2.0789057621988698e-41,
+        2.5083184780712364e-25,
+        1.1994444832279253e-25,
+        1.1266352984060046e-25
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5718,
+      "mesh_tet_index": 3721,
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "depth": 3,
+      "active_quartic": 0,
+      "exact_full_gradient_m3": 1.9833313811571618e-13,
+      "independent_q4_exact_full_volume_m3": 1.2984986785928165e-13,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 6.462348535570529e-27,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 7.771561172376096e-15,
+      "maximum_true_FE_child_parent_trace_error": 2.7755575615628914e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 2.0816681711721685e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.837560373301906e-20,
+      "child_polynomial_monomial_coefficients": [
+        1.1978555948637094e-12,
+        3.978393491588111e-14,
+        8.903116020877921e-14,
+        -1.6024215980225067e-13,
+        -1.3621578408094472e-26,
+        6.3514363055776664e-27,
+        -8.156669865437555e-27,
+        -1.0815330180906265e-25,
+        -1.6172610379571774e-25,
+        -1.17271069923533e-25,
+        1.0895275119650659e-26,
+        1.090521315377524e-26,
+        -6.269503760008323e-26,
+        1.795295525735316e-27,
+        6.815758221109542e-26,
+        1.635980733748782e-25,
+        1.1723104140308412e-25,
+        1.0360946299498962e-25,
+        1.7166575120150251e-25,
+        7.274144954561731e-26
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5951,
+      "mesh_tet_index": 3954,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "depth": 9,
+      "active_quartic": 0,
+      "exact_full_gradient_m3": 1.0473878803191026e-15,
+      "independent_q4_exact_full_volume_m3": 9.575420601949737e-16,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 1.8538231272693777e-28,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 7.993605777301127e-15,
+      "maximum_true_FE_child_parent_trace_error": 1.3877787807814457e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 1.734723475976807e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.1811098391798234e-20,
+      "child_polynomial_monomial_coefficients": [
+        6.4610760955273854e-15,
+        -3.7916454790885714e-16,
+        -8.336415681256203e-17,
+        -2.444198584259343e-16,
+        3.1409546113116253e-19,
+        7.408446567379946e-20,
+        -1.9881377249711753e-28,
+        -2.030730297206291e-19,
+        -1.019641102116014e-19,
+        -3.153473827110612e-19,
+        -2.4129715249266888e-28,
+        6.389771217155741e-28,
+        6.3899349846488485e-28,
+        9.586742436577545e-29,
+        -1.2353563256266093e-27,
+        -1.4696153097838479e-27,
+        -2.12992233233288e-28,
+        3.5145376427683946e-28,
+        -6.283483504715175e-28,
+        -2.8037868744824913e-28
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5843,
+      "mesh_tet_index": 3846,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "depth": 7,
+      "active_quartic": 0,
+      "exact_full_gradient_m3": 1.3682540702987325e-15,
+      "independent_q4_exact_full_volume_m3": 1.0546989862556007e-15,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 2.2561421889320938e-28,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 9.992007221626409e-15,
+      "maximum_true_FE_child_parent_trace_error": 2.220446049250313e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 1.734723475976807e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.5622746654442585e-20,
+      "child_polynomial_monomial_coefficients": [
+        8.346304731823114e-15,
+        -2.2024814064848145e-16,
+        -1.909155254454709e-16,
+        -1.3663288344742026e-16,
+        1.4235730030454783e-19,
+        5.266606067858033e-20,
+        -9.752895808067752e-21,
+        8.610686822051625e-19,
+        6.155778577483349e-19,
+        7.912187679518146e-19,
+        5.584567471264602e-23,
+        -2.263147382546105e-22,
+        7.832075104377878e-23,
+        3.097663709461971e-22,
+        -2.335053215766331e-23,
+        -4.068992323088216e-22,
+        3.8720703718936315e-22,
+        -4.943335892611418e-22,
+        -3.8464022244105824e-22,
+        -4.886114264026445e-22
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5861,
+      "mesh_tet_index": 3864,
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "depth": 5,
+      "active_quartic": 3,
+      "exact_full_gradient_m3": 1.7216663496462896e-13,
+      "independent_q4_exact_full_volume_m3": 1.3660347145039016e-13,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 1.0501316370302109e-26,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 7.105427357601002e-15,
+      "maximum_true_FE_child_parent_trace_error": 1.6653345369377348e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 1.734723475976807e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 2.0540548970916783e-20,
+      "child_polynomial_monomial_coefficients": [
+        1.0132281612371806e-12,
+        -6.609709824554834e-14,
+        -4.316275581877209e-14,
+        1.8834644826671186e-13,
+        -1.8191866323367093e-26,
+        -4.1786806022396925e-26,
+        -1.7277369557673672e-26,
+        -1.4637369108310563e-26,
+        -6.104705199991016e-26,
+        -5.4055576001064245e-27,
+        7.286653169591816e-27,
+        7.36101887879831e-26,
+        8.133999805668538e-27,
+        1.0007227455156828e-26,
+        6.27049756342078e-26,
+        2.7258409742876225e-26,
+        7.378058274351082e-26,
+        -3.5231261876140917e-26,
+        6.019508222227148e-26,
+        -9.558167395958167e-28
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "original_element_id": 5751,
+      "mesh_tet_index": 3754,
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "depth": 3,
+      "active_quartic": 0,
+      "exact_full_gradient_m3": 1.5790415297963754e-13,
+      "independent_q4_exact_full_volume_m3": 8.331106271561941e-14,
+      "maximum_cubic_polynomial_reproduction_error_m3_per_ref_point": 6.462348535570529e-27,
+      "maximum_cofactor_vs_solved_physical_gradient_error": 9.992007221626409e-15,
+      "maximum_true_FE_child_parent_trace_error": 3.3306690738754696e-16,
+      "maximum_true_quadratic_child_parent_map_error_m": 2.0816681711721685e-17,
+      "maximum_radial_cone_quartic_bernstein_error_m2": 3.197549375884984e-20,
+      "child_polynomial_monomial_coefficients": [
+        9.209994694640525e-13,
+        -6.757178929422513e-14,
+        -4.832727764222379e-15,
+        1.7810631071352134e-13,
+        -3.1975666150163186e-27,
+        -3.49857663880095e-26,
+        5.906869736668138e-26,
+        3.863950936478587e-26,
+        7.271349318784835e-27,
+        3.82127370267851e-26,
+        -4.072575487500535e-27,
+        2.589721883466115e-26,
+        2.4535824584159913e-26,
+        -4.634594868727689e-26,
+        -5.725236905732015e-26,
+        4.9071649168319854e-26,
+        -1.6357819730662907e-26,
+        -5.0453490281375755e-26,
+        -3.8169453254481424e-26,
+        -3.094259492426826e-26
+      ],
+      "monomial_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "absolute_cut_integration_error_certified": false,
+  "physical_4D_FEM_approved": false
+}

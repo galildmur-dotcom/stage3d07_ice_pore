@@ -1,0 +1,10 @@
+{
+  "protocol": "P10MD_M11_READONLY_D031_PREPARED",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "M11_sha256": "244249fcc62d0b26877164dae1cc6a6528edd1d1e5973edad4dc79aad7872dab",
+  "archive_sha256": "cf7826dff0d5003409c96a43543f1facf3fddab533dafe96816f5263d573dc00",
+  "archive_bytes": 1028677,
+  "source_file_count": 4,
+  "mesh_attempts": 0,
+  "FEM_attempts": 0
+}

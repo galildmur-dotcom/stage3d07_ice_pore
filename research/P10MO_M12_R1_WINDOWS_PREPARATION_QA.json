@@ -1,0 +1,17 @@
+{
+  "protocol": "P10MO_M12_R1_FIRST_FULL4D_WINDOWS_PREPARED",
+  "status": "SOURCE_QA_PASS_NO_FEM",
+  "mesh_sha256": "e3c5c5dc9bbcae3d0b2649e7afd4af49b47f6cb6db63329492975fb920abbd13",
+  "source_revision": "P10LM_M9_TWO_TERM_EXPLICIT_INSTRUMENTED_P10LG_V1",
+  "source_count": 101,
+  "source_manifest_sha256": "20e38ffc44f4499d5114f9d0e714246f93f28d5ca1d14adb1c94bb1552dc940f",
+  "geometry_passport_sha256": "bb38feda2acca123f5d0a76cc6228fa9d3c0035814a026bf0b291c182e01e8fa",
+  "archive_sha256": "b6844fdb1a43a9f1c1a92d573a0a45d607f404d07d300d540a456d511ee6e7d5",
+  "archive_bytes": 3093531,
+  "entrypoints": [
+    "01_P10MO_PREFLIGHT_NO_FEM.cmd",
+    "02_P10MO_ONE_M12_EXTENDED_EXPLICIT_FEM.cmd"
+  ],
+  "FEM_attempts": 0,
+  "marker_consumed": false
+}

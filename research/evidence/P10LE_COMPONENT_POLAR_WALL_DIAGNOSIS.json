@@ -1,0 +1,811 @@
+{
+  "protocol": "P10LE_M7_M8_M9_COMPONENT_POLAR_WALL_LATE_TIME_READONLY",
+  "status": "PASS_DESCRIPTIVE_DIAGNOSIS_NO_FEM_NO_MESH",
+  "inputs_sha256": {
+    "M7": "0bc50329078cba02f2a5ad55bfcee1d42ef4cf0475d44430598982c233ba5ec7",
+    "M8": "247e6d8f189aaceac1fafdfec4fac9bfbe8df066a1d4f1b82ad65c38028e28cf",
+    "M9": "44aa4ef873543787fb3a9f47b53edd14bd138412842ed29d51504e5b5181bdb7",
+    "P10KX_source": "ddf7adeaeffffdab480c8bee5b234998236c53a1320aed511d6da20f0c09957f"
+  },
+  "full4d_physical_cells_each_pair": 43200,
+  "zones": {
+    "all": {
+      "M7_to_M8": {
+        "cells": 43200,
+        "signed_delta_per_m": -0.011194910364686145,
+        "absolute_cellwise_l1_per_m": 0.9539289037416503,
+        "cell_cancellation_factor": 85.2109461055425,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.09039079694260493,
+          "mech_equilibrium_per_m": -0.0020657906995767035,
+          "mech_history_per_m": -0.09903393060956127,
+          "thermal_mass_per_m": 2.9381966249577287e-05,
+          "thermal_diffusion_per_m": -0.0005153679643927643,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.19203526818238525
+      },
+      "M8_to_M9": {
+        "cells": 43200,
+        "signed_delta_per_m": 0.011951238398991464,
+        "absolute_cellwise_l1_per_m": 0.9642111751779772,
+        "cell_cancellation_factor": 80.67876675101256,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.16443312782120448,
+          "mech_equilibrium_per_m": -0.07155628914996703,
+          "mech_history_per_m": -0.08230714819900921,
+          "thermal_mass_per_m": 2.529745460193729e-05,
+          "thermal_diffusion_per_m": 0.0013562504721660689,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.3196781130969487
+      }
+    },
+    "first_20um": {
+      "M7_to_M8": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.001272069251216328,
+        "absolute_cellwise_l1_per_m": 0.21551044627285554,
+        "cell_cancellation_factor": 169.41722792748007,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.03339962992537262,
+          "mech_equilibrium_per_m": -0.012220368229940663,
+          "mech_history_per_m": -0.01989538804326424,
+          "thermal_mass_per_m": -1.0084532763783614e-05,
+          "thermal_diffusion_per_m": -1.7198681828218738e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.06552719059952412
+      },
+      "M8_to_M9": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.15029062314050828,
+        "absolute_cellwise_l1_per_m": 0.2157608200706618,
+        "cell_cancellation_factor": 1.4356239635053263,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.196024672712707,
+          "mech_equilibrium_per_m": -0.02284285457988134,
+          "mech_history_per_m": -0.022897048078873126,
+          "thermal_mass_per_m": 1.3863619135416498e-06,
+          "thermal_diffusion_per_m": 4.466724642937434e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.24177042845801794
+      }
+    },
+    "wall_0_50um": {
+      "M7_to_M8": {
+        "cells": 8640,
+        "signed_delta_per_m": 0.04755605912229503,
+        "absolute_cellwise_l1_per_m": 0.3900447355639345,
+        "cell_cancellation_factor": 8.20178843164646,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.03176588525488584,
+          "mech_equilibrium_per_m": 0.04366223758825858,
+          "mech_history_per_m": -0.027878262789754252,
+          "thermal_mass_per_m": 1.6019953139180046e-05,
+          "thermal_diffusion_per_m": -9.820884227892436e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.10333222647026574
+      },
+      "M8_to_M9": {
+        "cells": 8640,
+        "signed_delta_per_m": 0.17100938437626417,
+        "absolute_cellwise_l1_per_m": 0.39161473955982506,
+        "cell_cancellation_factor": 2.2900190009349015,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.21391013800378633,
+          "mech_equilibrium_per_m": -0.00794526474969961,
+          "mech_history_per_m": -0.034966111837045906,
+          "thermal_mass_per_m": -3.7192266546524295e-06,
+          "thermal_diffusion_per_m": 1.434218588055193e-05,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.25683957600306706
+      }
+    },
+    "wall_0_100um": {
+      "M7_to_M8": {
+        "cells": 12960,
+        "signed_delta_per_m": 0.07129910789536316,
+        "absolute_cellwise_l1_per_m": 0.5285141131458839,
+        "cell_cancellation_factor": 7.412632903086507,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.11275746192593887,
+          "mech_equilibrium_per_m": 0.005489520075493439,
+          "mech_history_per_m": -0.04692348430091645,
+          "thermal_mass_per_m": -6.063756851497311e-06,
+          "thermal_diffusion_per_m": -1.8326048294332584e-05,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.1651948561074946
+      },
+      "M8_to_M9": {
+        "cells": 12960,
+        "signed_delta_per_m": 0.11462760191861299,
+        "absolute_cellwise_l1_per_m": 0.5460846698895078,
+        "cell_cancellation_factor": 4.763989307542476,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.18935160792157105,
+          "mech_equilibrium_per_m": -0.02621295996899858,
+          "mech_history_per_m": -0.04855539034021736,
+          "thermal_mass_per_m": 2.926673218481302e-07,
+          "thermal_diffusion_per_m": 4.405163893608938e-05,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.2641643025370449
+      }
+    },
+    "outside_20um": {
+      "M7_to_M8": {
+        "cells": 38880,
+        "signed_delta_per_m": -0.012466979615902471,
+        "absolute_cellwise_l1_per_m": 0.7384184574687948,
+        "cell_cancellation_factor": 59.22994022761474,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.056991167017232336,
+          "mech_equilibrium_per_m": 0.010154577530363957,
+          "mech_history_per_m": -0.07913854256629702,
+          "thermal_mass_per_m": 3.94664990133609e-05,
+          "thermal_diffusion_per_m": -0.0005136480962099428,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.1468374017091166
+      },
+      "M8_to_M9": {
+        "cells": 38880,
+        "signed_delta_per_m": -0.13833938474151686,
+        "absolute_cellwise_l1_per_m": 0.7484503551073154,
+        "cell_cancellation_factor": 5.41024782281469,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": -0.031591544891502496,
+          "mech_equilibrium_per_m": -0.04871343457008567,
+          "mech_history_per_m": -0.059410100120136075,
+          "thermal_mass_per_m": 2.391109268839562e-05,
+          "thermal_diffusion_per_m": 0.0013517837475231311,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.14109077442193577
+      }
+    },
+    "north_extreme": {
+      "M7_to_M8": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.015542503780077384,
+        "absolute_cellwise_l1_per_m": 0.25674421523837093,
+        "cell_cancellation_factor": 16.518845282023964,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.03631382206023971,
+          "mech_equilibrium_per_m": -0.0011179023234769072,
+          "mech_history_per_m": -0.01935558938234048,
+          "thermal_mass_per_m": -1.9499605730855036e-05,
+          "thermal_diffusion_per_m": -0.0002783269686144501,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.05708514034040241
+      },
+      "M8_to_M9": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.02157375429586424,
+        "absolute_cellwise_l1_per_m": 0.251598767248615,
+        "cell_cancellation_factor": 11.662261644318779,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.05279788353974108,
+          "mech_equilibrium_per_m": -0.022102382538120545,
+          "mech_history_per_m": -0.009262848652101585,
+          "thermal_mass_per_m": 6.098877313523911e-06,
+          "thermal_diffusion_per_m": 0.0001350030690305147,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.08430421667630725
+      }
+    },
+    "south_extreme": {
+      "M7_to_M8": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.005196090874034844,
+        "absolute_cellwise_l1_per_m": 0.2272337976940188,
+        "cell_cancellation_factor": 43.73168275972977,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.021860690140941042,
+          "mech_equilibrium_per_m": -0.012848953728552263,
+          "mech_history_per_m": -0.0038903718531931816,
+          "thermal_mass_per_m": 1.9843803605040482e-05,
+          "thermal_diffusion_per_m": 5.48825112386961e-05,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.03867474203753023
+      },
+      "M8_to_M9": {
+        "cells": 4320,
+        "signed_delta_per_m": 0.05582798052631956,
+        "absolute_cellwise_l1_per_m": 0.2537224506822046,
+        "cell_cancellation_factor": 4.5447184062584824,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.13173749827567732,
+          "mech_equilibrium_per_m": -0.037835611789635466,
+          "mech_history_per_m": -0.03839804129092886,
+          "thermal_mass_per_m": -3.1860507577303587e-06,
+          "thermal_diffusion_per_m": 0.0003273213819588764,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.20830165878895826
+      }
+    },
+    "nonpolar": {
+      "M7_to_M8": {
+        "cells": 34560,
+        "signed_delta_per_m": -0.031933505018798373,
+        "absolute_cellwise_l1_per_m": 0.46995089080926045,
+        "cell_cancellation_factor": 14.716545851531592,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.03221628474142419,
+          "mech_equilibrium_per_m": 0.011901065352452465,
+          "mech_history_per_m": -0.0757879693740276,
+          "thermal_mass_per_m": 2.903776837539185e-05,
+          "thermal_diffusion_per_m": -0.0002919235070170105,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.12022628074329665
+      },
+      "M8_to_M9": {
+        "cells": 34560,
+        "signed_delta_per_m": -0.06545049642319234,
+        "absolute_cellwise_l1_per_m": 0.45888995724715753,
+        "cell_cancellation_factor": 7.011252508767072,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": -0.02010225399421391,
+          "mech_equilibrium_per_m": -0.011618294822211012,
+          "mech_history_per_m": -0.03464625825597875,
+          "thermal_mass_per_m": 2.2384628046143728e-05,
+          "thermal_diffusion_per_m": 0.0008939260211766778,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.0672831177216265
+      }
+    },
+    "wall20_north": {
+      "M7_to_M8": {
+        "cells": 432,
+        "signed_delta_per_m": -0.011443168502000313,
+        "absolute_cellwise_l1_per_m": 0.09090063876685393,
+        "cell_cancellation_factor": 7.943659900749004,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": -0.0030059135745917048,
+          "mech_equilibrium_per_m": -0.00404142489045041,
+          "mech_history_per_m": -0.0043937736564483906,
+          "thermal_mass_per_m": 2.3345607324139674e-07,
+          "thermal_diffusion_per_m": -2.289836584353559e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.0114436354141481
+      },
+      "M8_to_M9": {
+        "cells": 432,
+        "signed_delta_per_m": 0.07113425651407755,
+        "absolute_cellwise_l1_per_m": 0.08413601612734205,
+        "cell_cancellation_factor": 1.1827777536508226,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.11038104784930895,
+          "mech_equilibrium_per_m": -0.025716631809037827,
+          "mech_history_per_m": -0.013526059356510066,
+          "thermal_mass_per_m": -8.726364056207932e-08,
+          "thermal_diffusion_per_m": -4.012906041550195e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.14962783918453895
+      }
+    },
+    "wall20_south": {
+      "M7_to_M8": {
+        "cells": 432,
+        "signed_delta_per_m": 0.011228373803929614,
+        "absolute_cellwise_l1_per_m": 0.08144870727390933,
+        "cell_cancellation_factor": 7.253829334164542,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.02741476195104915,
+          "mech_equilibrium_per_m": -0.009128796787431807,
+          "mech_history_per_m": -0.007056297501291098,
+          "thermal_mass_per_m": -1.3956511844272855e-06,
+          "thermal_diffusion_per_m": 1.0179279135838857e-07,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.04360135368374784
+      },
+      "M8_to_M9": {
+        "cells": 432,
+        "signed_delta_per_m": 0.07480330599978392,
+        "absolute_cellwise_l1_per_m": 0.09269342619736878,
+        "cell_cancellation_factor": 1.2391621594590556,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.08290689639134469,
+          "mech_equilibrium_per_m": 0.004135057217074395,
+          "mech_history_per_m": -0.01224661203483862,
+          "thermal_mass_per_m": 9.282830153217158e-07,
+          "thermal_diffusion_per_m": 7.036143186466732e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.09929653006945949
+      }
+    },
+    "wall20_nonpolar": {
+      "M7_to_M8": {
+        "cells": 3456,
+        "signed_delta_per_m": 0.0014868639492870224,
+        "absolute_cellwise_l1_per_m": 0.04316110023209224,
+        "cell_cancellation_factor": 29.02827811030643,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.008990781548915168,
+          "mech_equilibrium_per_m": 0.0009498534479415522,
+          "mech_history_per_m": -0.008445316885524752,
+          "thermal_mass_per_m": -8.922337652597724e-06,
+          "thermal_diffusion_per_m": 4.6817561017329665e-07,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.018395342395644245
+      },
+      "M8_to_M9": {
+        "cells": 3456,
+        "signed_delta_per_m": 0.004353060626646829,
+        "absolute_cellwise_l1_per_m": 0.038931377745950985,
+        "cell_cancellation_factor": 8.943449468090662,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.0027367284720533473,
+          "mech_equilibrium_per_m": -0.0012612799879179119,
+          "mech_history_per_m": 0.002875623312475564,
+          "thermal_mass_per_m": 5.453425387820137e-07,
+          "thermal_diffusion_per_m": 1.4434874980208976e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.006875620602483626
+      }
+    },
+    "late_31_36": {
+      "M7_to_M8": {
+        "cells": 7200,
+        "signed_delta_per_m": 0.0332701712539675,
+        "absolute_cellwise_l1_per_m": 0.5732826778812261,
+        "cell_cancellation_factor": 17.231130958271265,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.06714229319546694,
+          "mech_equilibrium_per_m": -0.009115134684920225,
+          "mech_history_per_m": -0.02397559660640262,
+          "thermal_mass_per_m": 7.01176316310641e-05,
+          "thermal_diffusion_per_m": -0.0008515082818020153,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.10115465040022287
+      },
+      "M8_to_M9": {
+        "cells": 7200,
+        "signed_delta_per_m": 0.05200567970309428,
+        "absolute_cellwise_l1_per_m": 0.5860978979134968,
+        "cell_cancellation_factor": 11.26988246783023,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.12589131691526692,
+          "mech_equilibrium_per_m": -0.056379238141742116,
+          "mech_history_per_m": -0.01957675278617314,
+          "thermal_mass_per_m": 6.78673365429509e-05,
+          "thermal_diffusion_per_m": 0.0020024863792040613,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.20391766155892918
+      }
+    },
+    "late_wall20": {
+      "M7_to_M8": {
+        "cells": 720,
+        "signed_delta_per_m": 0.011110565036914818,
+        "absolute_cellwise_l1_per_m": 0.15148636036378768,
+        "cell_cancellation_factor": 13.634442520292597,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.023781808705546144,
+          "mech_equilibrium_per_m": -0.008080540770921471,
+          "mech_history_per_m": -0.0045768150218788665,
+          "thermal_mass_per_m": -1.2263085124590068e-05,
+          "thermal_diffusion_per_m": -1.6247907033459428e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.03645305237417442
+      },
+      "M8_to_M9": {
+        "cells": 720,
+        "signed_delta_per_m": 0.12902408452081743,
+        "absolute_cellwise_l1_per_m": 0.1566706471621361,
+        "cell_cancellation_factor": 1.2142744336764353,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.14523365357855464,
+          "mech_equilibrium_per_m": -0.010563732315621844,
+          "mech_history_per_m": -0.005653479071481797,
+          "thermal_mass_per_m": 2.405698640422148e-06,
+          "thermal_diffusion_per_m": 5.2366307253527735e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.16145850729502406
+      }
+    },
+    "late_wall20_north": {
+      "M7_to_M8": {
+        "cells": 72,
+        "signed_delta_per_m": -0.006209028918119997,
+        "absolute_cellwise_l1_per_m": 0.0677555679388412,
+        "cell_cancellation_factor": 10.912425893380538,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": -0.002903378058721805,
+          "mech_equilibrium_per_m": -0.0025270367988495016,
+          "mech_history_per_m": -0.0007759659477356001,
+          "thermal_mass_per_m": 3.9893466319492204e-07,
+          "thermal_diffusion_per_m": -3.047047476316451e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.006209826787446418
+      },
+      "M8_to_M9": {
+        "cells": 72,
+        "signed_delta_per_m": 0.062488108441345,
+        "absolute_cellwise_l1_per_m": 0.06384888002499,
+        "cell_cancellation_factor": 1.0217764886405916,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.07996440988447881,
+          "mech_equilibrium_per_m": -0.0139841076947183,
+          "mech_history_per_m": -0.0034878105021812007,
+          "thermal_mass_per_m": -1.0437882896049425e-07,
+          "thermal_diffusion_per_m": -4.278867405267027e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.09744071132761253
+      }
+    },
+    "late_wall20_south": {
+      "M7_to_M8": {
+        "cells": 72,
+        "signed_delta_per_m": 0.0126592557465725,
+        "absolute_cellwise_l1_per_m": 0.0573023185956331,
+        "cell_cancellation_factor": 4.526515597976425,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.02012828045733931,
+          "mech_equilibrium_per_m": -0.0059197357039948014,
+          "mech_history_per_m": -0.0015475180867857998,
+          "thermal_mass_per_m": -1.8094476678516537e-06,
+          "thermal_diffusion_per_m": 3.852768307214844e-08,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.027597382223470836
+      },
+      "M8_to_M9": {
+        "cells": 72,
+        "signed_delta_per_m": 0.06399142730406479,
+        "absolute_cellwise_l1_per_m": 0.0690949456485538,
+        "cell_cancellation_factor": 1.079753156938333,
+        "components_signed_delta_per_m": {
+          "mech_explicit_per_m": 0.06327825966504469,
+          "mech_equilibrium_per_m": 0.0037940019104617025,
+          "mech_history_per_m": -0.0030899152001556,
+          "thermal_mass_per_m": 1.4403829071854233e-06,
+          "thermal_diffusion_per_m": 7.640545805565247e-06,
+          "thermal_robin_per_m": 0.0
+        },
+        "sum_abs_components_aggregated_per_m": 0.07017125770437474
+      }
+    }
+  },
+  "top15_observed_cells_M9_minus_M8": [
+    {
+      "step": 35,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "time_end_s": 875.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.003854955507376301,
+      "M8_mechanical_qp": 294,
+      "M9_mechanical_qp": 331,
+      "components": {
+        "mech_explicit_per_m": 0.004509311922673799,
+        "mech_equilibrium_per_m": -0.0006118880393922001,
+        "mech_history_per_m": -4.263147490899999e-05,
+        "thermal_mass_per_m": -1.4128543115337608e-08,
+        "thermal_diffusion_per_m": 1.7722754679994612e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 35,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "time_end_s": 875.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0037121720105918014,
+      "M8_mechanical_qp": 382,
+      "M9_mechanical_qp": 528,
+      "components": {
+        "mech_explicit_per_m": 0.0043630388614773995,
+        "mech_equilibrium_per_m": -0.0005987669579336002,
+        "mech_history_per_m": -5.188129910870001e-05,
+        "thermal_mass_per_m": 6.944469269161388e-08,
+        "thermal_diffusion_per_m": -2.880385361178216e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 35,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "time_end_s": 875.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.0033482996476866004,
+      "M8_mechanical_qp": 148,
+      "M9_mechanical_qp": 140,
+      "components": {
+        "mech_explicit_per_m": 0.0049514035107334,
+        "mech_equilibrium_per_m": -0.0015389220906702004,
+        "mech_history_per_m": -6.448547205770001e-05,
+        "thermal_mass_per_m": 3.8534824933952336e-08,
+        "thermal_diffusion_per_m": 2.651648560728044e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 35,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "time_end_s": 875.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.003294410275714199,
+      "M8_mechanical_qp": 115,
+      "M9_mechanical_qp": 121,
+      "components": {
+        "mech_explicit_per_m": 0.0042975342818797006,
+        "mech_equilibrium_per_m": -0.0009456725170577003,
+        "mech_history_per_m": -5.7491561848600016e-05,
+        "thermal_mass_per_m": -1.6645629843652975e-07,
+        "thermal_diffusion_per_m": 2.065290393841604e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 34,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "time_end_s": 850.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0031048396639691,
+      "M8_mechanical_qp": 294,
+      "M9_mechanical_qp": 331,
+      "components": {
+        "mech_explicit_per_m": 0.0037362607819252987,
+        "mech_equilibrium_per_m": -0.0005229145014723005,
+        "mech_history_per_m": -0.00010863549243000003,
+        "thermal_mass_per_m": -1.610947716733804e-08,
+        "thermal_diffusion_per_m": 1.4498542324897347e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 34,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "time_end_s": 850.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0030061907065657995,
+      "M8_mechanical_qp": 382,
+      "M9_mechanical_qp": 528,
+      "components": {
+        "mech_explicit_per_m": 0.0036808375917603015,
+        "mech_equilibrium_per_m": -0.0005412553641906993,
+        "mech_history_per_m": -0.00013321791918770006,
+        "thermal_mass_per_m": 6.391670800634309e-08,
+        "thermal_diffusion_per_m": -2.3751852408697003e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 34,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "time_end_s": 850.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.0026358875341721006,
+      "M8_mechanical_qp": 148,
+      "M9_mechanical_qp": 140,
+      "components": {
+        "mech_explicit_per_m": 0.004143531246758399,
+        "mech_equilibrium_per_m": -0.0013421734250729997,
+        "mech_history_per_m": -0.0001657264791948,
+        "thermal_mass_per_m": 3.438202114956563e-08,
+        "thermal_diffusion_per_m": 2.2180966035901326e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 34,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "time_end_s": 850.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.0025985703031931005,
+      "M8_mechanical_qp": 115,
+      "M9_mechanical_qp": 121,
+      "components": {
+        "mech_explicit_per_m": 0.0035946865985021,
+        "mech_equilibrium_per_m": -0.0008491686212206999,
+        "mech_history_per_m": -0.00014696015190140006,
+        "thermal_mass_per_m": -1.600288208896335e-07,
+        "thermal_diffusion_per_m": 1.7250663405971664e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 33,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "time_end_s": 825.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0024651990531084998,
+      "M8_mechanical_qp": 294,
+      "M9_mechanical_qp": 331,
+      "components": {
+        "mech_explicit_per_m": 0.0030623452866894996,
+        "mech_equilibrium_per_m": -0.0004432324508339999,
+        "mech_history_per_m": -0.00015401492175950006,
+        "thermal_mass_per_m": -1.5351230957644125e-08,
+        "thermal_diffusion_per_m": 1.1649024338169987e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 33,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "time_end_s": 825.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0023990617714844,
+      "M8_mechanical_qp": 382,
+      "M9_mechanical_qp": 528,
+      "components": {
+        "mech_explicit_per_m": 0.0030742951401573,
+        "mech_equilibrium_per_m": -0.00048570652032140036,
+        "mech_history_per_m": -0.0001893889440593001,
+        "thermal_mass_per_m": 5.4464283735326664e-08,
+        "thermal_diffusion_per_m": -1.9236857584004523e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 36,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "time_end_s": 900.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0023299661477418,
+      "M8_mechanical_qp": 294,
+      "M9_mechanical_qp": 331,
+      "components": {
+        "mech_explicit_per_m": 0.0026941082317713,
+        "mech_equilibrium_per_m": -0.00036424031367709997,
+        "mech_history_per_m": 0.0,
+        "thermal_mass_per_m": -6.125982184283769e-09,
+        "thermal_diffusion_per_m": 1.0435562970010311e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 35,
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 11,
+      "time_end_s": 875.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.002315847341644299,
+      "M8_mechanical_qp": 443,
+      "M9_mechanical_qp": 448,
+      "components": {
+        "mech_explicit_per_m": 0.0029471378984847005,
+        "mech_equilibrium_per_m": -0.0005947065036996995,
+        "mech_history_per_m": -3.667371275940001e-05,
+        "thermal_mass_per_m": -2.0061429937373542e-08,
+        "thermal_diffusion_per_m": 1.09721048637977e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 36,
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "time_end_s": 900.0,
+      "r_lower_mm": 0.0,
+      "r_upper_mm": 0.02,
+      "signed_delta_per_m": 0.0022185212567191,
+      "M8_mechanical_qp": 382,
+      "M9_mechanical_qp": 528,
+      "components": {
+        "mech_explicit_per_m": 0.0025621107765155006,
+        "mech_equilibrium_per_m": -0.0003434591894673996,
+        "mech_history_per_m": 0.0,
+        "thermal_mass_per_m": 3.698096595735381e-08,
+        "thermal_diffusion_per_m": -1.6731129511965923e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 33,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "time_end_s": 825.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.0020359849189535003,
+      "M8_mechanical_qp": 148,
+      "M9_mechanical_qp": 140,
+      "components": {
+        "mech_explicit_per_m": 0.0034310301915912,
+        "mech_equilibrium_per_m": -0.0011584641188472997,
+        "mech_history_per_m": -0.00023679268085990003,
+        "thermal_mass_per_m": 2.854534401454967e-08,
+        "thermal_diffusion_per_m": 1.8298172538601904e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    },
+    {
+      "step": 36,
+      "radial_bin": 1,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "time_end_s": 900.0,
+      "r_lower_mm": 0.02,
+      "r_upper_mm": 0.05,
+      "signed_delta_per_m": 0.0020346879660103003,
+      "M8_mechanical_qp": 148,
+      "M9_mechanical_qp": 140,
+      "components": {
+        "mech_explicit_per_m": 0.002929790761222,
+        "mech_equilibrium_per_m": -0.0008952790626468002,
+        "mech_history_per_m": 0.0,
+        "thermal_mass_per_m": 2.116682106602572e-08,
+        "thermal_diffusion_per_m": 1.5510061405885895e-07,
+        "thermal_robin_per_m": 0.0
+      }
+    }
+  ],
+  "P10KX_priority_predictivity": {
+    "P10KX_source_score_vs_observed_M9_M8_bin_l1_pearson": 0.6532470409082316,
+    "P10KX_source_score_vs_observed_M9_M8_bin_l1_spearman": 0.7423443477510908,
+    "observed_M9_M8_l1_in_top10percent_source_bins": 0.43319134546593524,
+    "top10percent_source_vs_observed_bin_overlap_count": 75,
+    "top10percent_count": 120,
+    "observed_l1_in_first_20um_fraction": 0.22376925887717075,
+    "observed_l1_in_late_31_36_fraction": 0.6078522143298256
+  },
+  "limitations": [
+    "Descriptive difference of binned FE gradients is not a local PDE error estimator",
+    "Cannot identify a numerical root cause from signed 4D coefficients alone",
+    "No change of physics, mesh, marker or solver; no new FEM"
+  ],
+  "mesh_generation_attempts": 0,
+  "FEM_attempts": 0
+}

@@ -1,0 +1,75 @@
+{
+  "stage": "P10QP",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "scope": "composite Duffy transverse panel exact smooth full polynomial unit, not cut roots",
+  "cases": [
+    {
+      "index": 26,
+      "group": "one",
+      "active_boundary_indices": [
+        4
+      ],
+      "methods": [
+        {
+          "panels": 2,
+          "n_per_panel": 64,
+          "full_gradient_relative_error": 1.7045470841156524e-15,
+          "full_volume_relative_error": 6.310730190585149e-15
+        },
+        {
+          "panels": 4,
+          "n_per_panel": 32,
+          "full_gradient_relative_error": 2.1694235616017393e-15,
+          "full_volume_relative_error": 1.893219057175545e-15
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "group": "multi",
+      "active_boundary_indices": [
+        0,
+        4
+      ],
+      "methods": [
+        {
+          "panels": 2,
+          "n_per_panel": 64,
+          "full_gradient_relative_error": 4.972914179542118e-15,
+          "full_volume_relative_error": 1.1517082597815831e-14
+        },
+        {
+          "panels": 4,
+          "n_per_panel": 32,
+          "full_gradient_relative_error": 1.2833326914947401e-15,
+          "full_volume_relative_error": 3.1553650952920084e-16
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "group": "multi",
+      "active_boundary_indices": [
+        0,
+        4
+      ],
+      "methods": [
+        {
+          "panels": 2,
+          "n_per_panel": 64,
+          "full_gradient_relative_error": 8.115608716559604e-15,
+          "full_volume_relative_error": 3.944206369113684e-15
+        },
+        {
+          "panels": 4,
+          "n_per_panel": 32,
+          "full_gradient_relative_error": 6.52431288978321e-15,
+          "full_volume_relative_error": 4.733047642936421e-16
+        }
+      ]
+    }
+  ],
+  "all_6_full_moments_pass_1e_minus_10": true,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_CAD_no_FEM_no_mesh_change": true
+}

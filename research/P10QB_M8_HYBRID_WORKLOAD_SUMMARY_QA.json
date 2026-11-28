@@ -1,0 +1,61 @@
+{
+  "stage": "P10QB",
+  "status": "PASS_INDEPENDENT_48_BIN_HYBRID_WORKLOAD_NOT_FULL_QUADRATURE",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "full_local_algoim_calls_executed": 8,
+  "groups": {
+    "r0_mu0": {
+      "bin_count": 12,
+      "one_quartic_calls": 67523,
+      "one_quadratic_calls": 7753,
+      "remaining_multi_leaves": 35246,
+      "remaining_multi_physical_m3": 4.184573689596883e-12,
+      "candidate_physical_m3": 1.6158609375709875e-09,
+      "multi_mass_fraction_candidates": 0.0025896867683968304
+    },
+    "r0_mu9": {
+      "bin_count": 12,
+      "one_quartic_calls": 64072,
+      "one_quadratic_calls": 10956,
+      "remaining_multi_leaves": 37605,
+      "remaining_multi_physical_m3": 3.717521805520446e-12,
+      "candidate_physical_m3": 1.9800747998107626e-09,
+      "multi_mass_fraction_candidates": 0.0018774653391254374
+    },
+    "r4_mu0": {
+      "bin_count": 12,
+      "one_quartic_calls": 21600,
+      "one_quadratic_calls": 20239,
+      "remaining_multi_leaves": 37489,
+      "remaining_multi_physical_m3": 1.826455000147135e-11,
+      "candidate_physical_m3": 9.658515011855162e-09,
+      "multi_mass_fraction_candidates": 0.0018910308654128375
+    },
+    "r4_mu9": {
+      "bin_count": 12,
+      "one_quartic_calls": 20335,
+      "one_quadratic_calls": 18927,
+      "remaining_multi_leaves": 35478,
+      "remaining_multi_physical_m3": 1.9511320953418635e-11,
+      "candidate_physical_m3": 9.827308805318216e-09,
+      "multi_mass_fraction_candidates": 0.0019854185250452036
+    }
+  },
+  "all48_totals": {
+    "one_quartic_calls": 173530,
+    "one_quadratic_calls": 57875,
+    "multi_remaining_leaves": 145818,
+    "multi_remaining_physical_m3": 4.5677966450007314e-11,
+    "candidate_total_physical_m3": 2.3081759554555128e-08,
+    "multi_mass_fraction_candidates": 0.001978963793555023,
+    "pilot_q8_points_min": 4608,
+    "pilot_q8_points_max": 77248,
+    "pilot_q8_points_median": 17728,
+    "naive_q8_node_scenario_min": 799626240,
+    "naive_q8_node_scenario_max": 13404845440
+  },
+  "interpretation": "All candidate calls are potential workload; only eight actual pilot Algoim integrations executed. Multi-active residual is still unintegrated.",
+  "not_ready_for_4D_FEM": true
+}

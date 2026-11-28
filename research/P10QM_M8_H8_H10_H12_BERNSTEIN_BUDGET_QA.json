@@ -1,0 +1,77 @@
+{
+  "stage": "P10QM",
+  "date_utc": "2026-11-28",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "scope": "one genuine M8 source case4, original element6008, h8 h10 h12",
+  "status": "POSITIVE_MONOTONE_GEOMETRIC_REFINEMENT_WITH_NONRIGOROUS_FLOAT_BERNSTEIN_BOUNDS",
+  "levels": [
+    {
+      "h_max": 8,
+      "count": {
+        "inside": 35,
+        "outside": 2,
+        "one": 22,
+        "multi": 5
+      },
+      "physical_volume_fractions": {
+        "inside": 0.8828125000000109,
+        "outside": 0.011718749999997271,
+        "one": 0.08593750000000136,
+        "multi": 0.019531249999997516
+      },
+      "physical_curved_volume_closure": 7.098929207320505e-15,
+      "multi_boundary_gradient_bernstein_bounds_m3": [
+        0.0,
+        2.4024615352107766e-15
+      ],
+      "total_open_cut_count": 27
+    },
+    {
+      "h_max": 10,
+      "count": {
+        "inside": 35,
+        "outside": 3,
+        "one": 29,
+        "multi": 8
+      },
+      "physical_volume_fractions": {
+        "inside": 0.8828125000000109,
+        "outside": 0.012695312499997407,
+        "one": 0.09667968750000056,
+        "multi": 0.007812499999999659
+      },
+      "physical_curved_volume_closure": 8.518715048784606e-15,
+      "multi_boundary_gradient_bernstein_bounds_m3": [
+        0.0,
+        9.570533513177754e-16
+      ],
+      "total_open_cut_count": 37
+    },
+    {
+      "h_max": 12,
+      "count": {
+        "inside": 35,
+        "outside": 5,
+        "one": 37,
+        "multi": 17
+      },
+      "physical_volume_fractions": {
+        "inside": 0.8828125000000109,
+        "outside": 0.013183593749997053,
+        "one": 0.09985351562499974,
+        "multi": 0.004150390624999206
+      },
+      "physical_curved_volume_closure": 6.693276109759333e-15,
+      "multi_boundary_gradient_bernstein_bounds_m3": [
+        0.0,
+        5.070178684797134e-16
+      ],
+      "total_open_cut_count": 54
+    }
+  ],
+  "h8_to_h12_multi_volume_fraction_reduction_factor": 4.705882352941478,
+  "h8_to_h12_multi_gradient_bound_reduction_factor": 4.7384159110891435,
+  "Bernstein_bounds_are_not_directed_rounded": true,
+  "physical_FEM_approved": false,
+  "mesh_or_Gmsh_or_CAD_or_FEM_executed": false
+}

@@ -1,0 +1,21 @@
+{
+  "revision": "P10FU_R1_FRESH_M0_M1B_SOUTH_C1_CORRECTION_MESH_ONLY",
+  "M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "M0_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "failed_M1_msh_sha256": "f281d253571db095b90790326f503dfa3f6fe3a1dc5cb5c904fca2787dfe4275",
+  "failed_M1_geo_sha256": "968ef2ed3f64160d51d1983ead31216758d164fa665fa7e6a9044f8fc04d64e8",
+  "candidate_name": "M1B_CANDIDATE",
+  "native_3d_attempt_cap": 1,
+  "FEM_attempt_cap": 0,
+  "files": {
+    "P10FU_one_click_m1b.py": "d9786310e9873ac6cdcfb20036a61d22e722d078623b8a3cd33dce2dfdb88ffa",
+    "01_P10FU_SAFE_PREFLIGHT_ONLY.cmd": "f52e65d11f8361948fe4f28162d8de27e321676917185067ef03abf2262f10b4",
+    "02_P10FU_ONE_M1B_3D_ONLY.cmd": "4fefb5fc29ac3e4690438e8ded3c7885b1575da925301f6a0f4c5188a0fdbd1d",
+    "README_P10FU_RU.md": "a904d4b6df61b89540d76f7602190194e403bb3e4a2eea66cfe7d2e45d014d6a",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10FN_mesh_qa.py": "d8912f166821c06826e8bc9e8474a09bc4b6b3a591c179360b61cc38f4fb0a2f",
+    "P10CK_curved_qp_audit.py": "6386d37ade7c6cadcfdfdb511e01a06310ea9c974ee4fd7878a704bcdac9dc90",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0"
+  }
+}

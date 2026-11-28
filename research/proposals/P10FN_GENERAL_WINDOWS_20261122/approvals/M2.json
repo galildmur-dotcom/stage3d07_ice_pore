@@ -1,0 +1,7 @@
+{
+  "mesh": "M2",
+  "mesh_sha256": "ff6500e2da4f4697e1788669e2404d33cdeb9435c1230cf14f5cc7619f1f6a44",
+  "status": "RESEARCHER_APPROVED_FOR_PHYSICS",
+  "basis": "P10FG D025 curved QP geometry PASS, P10FL R physical exit0, signed full4D closure PASS",
+  "regime": {"steps": 6, "dt": 150, "cutoff_mm": 5, "threads": 4, "law": "EDV_VAR", "xi": 0, "B6_mm": 5}
+}

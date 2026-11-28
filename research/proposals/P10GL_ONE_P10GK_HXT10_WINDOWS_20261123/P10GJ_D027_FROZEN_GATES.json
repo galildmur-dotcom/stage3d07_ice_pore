@@ -1,0 +1,206 @@
+{
+  "revision": "P10GJ_R1_M0_PREREG_ONE_ROTATED_HXT10_3D_NO_FEM",
+  "status": "P10GJ_D027_GATES_FROZEN_BEFORE_M1_3D",
+  "time_utc": "2026-11-23T07:53:24.969923+00:00",
+  "M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "installed": {
+    "gmsh_version": "4.15.2",
+    "gmsh_exe_sha256": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+    "M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+    "source_pin_sha256": "184d9498dbe0c6f849a816d7108fc916a8884601a00fdb6f4bffc2b45ba824b1",
+    "policy_sha256": "267d56821194f037de88d21f6730d1d6672f82c42527d288d270724255947e9a",
+    "baseline_sha256": "8172b32ce7a615d64e14973f59ea29a95d94f48bc5e5974286d4651c364020a0"
+  },
+  "fixed_policy": {
+    "revision": "P10GJ_R1_D027_PREREG_BEFORE_NATIVE_3D",
+    "policy_frozen_on": "2026-11-23",
+    "purpose": "One new rotated-CAD HXT10 candidate from canonical M0, no FEM",
+    "physical_kappa_M0_to_M1": 1.0,
+    "hscale": 0.9378887276834518,
+    "nominal_volume_ratio": 0.825,
+    "mandatory_global_Veff_ratio": [
+      0.8,
+      0.85
+    ],
+    "preregister_from_M0_before_3D": true,
+    "required_sampled_detJ_positive_QP": [
+      27,
+      343,
+      729
+    ],
+    "required_343_to_729_signed18_max_ratio_delta": 0.02,
+    "required_cad_volume_rel_error_max": 0.005,
+    "required_pore_and_B6_node_radius_error_m_max": 1e-08,
+    "required_pore_and_B6_7qp_area_ratio": [
+      0.99,
+      1.01
+    ],
+    "required_pore_Tri6_q_corner_min": 0.5,
+    "required_pore_Tri6_q_corner_p05": 0.7,
+    "required_physical_north_Tri6_q_corner_min": 0.75,
+    "required_physical_south_Tri6_q_corner_min": 0.75,
+    "required_closed_pore_and_B6_Euler": 2,
+    "tet10_corner_mean_ratio_q_min_policy": {
+      "floor": 0.015,
+      "M0_min_factor": 0.55
+    },
+    "tet10_corner_mean_ratio_p01_M0_factor": 0.8,
+    "tet10_near_polar_mean_ratio_p05_M0_factor": 0.75,
+    "tet10_27qp_max_element_detJ_ratio_policy": {
+      "floor": 20.0,
+      "M0_max_factor": 1.25
+    },
+    "adjacent_all_p95_policy": {
+      "floor": 1.4,
+      "M0_factor": 1.1
+    },
+    "adjacent_all_p99_policy": {
+      "floor": 1.65,
+      "M0_factor": 1.15
+    },
+    "adjacent_all_max_policy": {
+      "floor": 2.5,
+      "M0_factor": 1.25
+    },
+    "adjacent_near_polar_p95_policy": {
+      "floor": 1.45,
+      "M0_factor": 1.12
+    },
+    "adjacent_near_polar_p99_policy": {
+      "floor": 1.85,
+      "M0_factor": 1.15
+    },
+    "macro_QP_effective_Veff_assessment": {
+      "boundaries_d_m": [
+        0.0001,
+        0.0005
+      ],
+      "abs_mu_boundaries": [
+        0.6,
+        0.8
+      ],
+      "signed_north_south": true,
+      "minimum_baseline_effective_Tet10_for_hard_macro": 50,
+      "populated_macro_ratio_max": 1.05,
+      "populated_near_polar_d_le_0p5mm_ratio_max": 0.98,
+      "populated_macro_ratio_min": 0.65,
+      "all_18_signed_zone_ratios": "diagnostic_only_not_18_of_18_hard",
+      "no_zero_physical_QP_coverage": true
+    },
+    "postnative_gate_status": "27QP_and_surface_and_global; final_343_729_and_macro_audit_after_evidence",
+    "disallow_autonomous_FEM": true,
+    "disallow_existing_M0_or_historical_M1_overwrite": true
+  },
+  "numerical_thresholds_from_M0": {
+    "mean_ratio_min_floor": 0.0721238841748767,
+    "mean_ratio_p01_floor": 0.3762905919067218,
+    "near_polar_mean_ratio_p05_floor": 0.43600118702192686,
+    "max_27qp_detj_ratio": 20.0,
+    "adj_all_p95_max": 1.5076956711210157,
+    "adj_all_p99_max": 1.780709623412621,
+    "adj_all_max_max": 2.7773819790551544,
+    "adj_near_p95_max": 1.5133482506960105,
+    "adj_near_p99_max": 1.85
+  },
+  "M0_27QP": {
+    "mesh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+    "nodes": 11699,
+    "tet10": 7992,
+    "pore_tri6": 160,
+    "top_tri6": 164,
+    "physical_surface_tags": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "curved_qp": 215784,
+    "nonpositive_samples": 0,
+    "minimum_curved_detj": 2.719622404079985e-11,
+    "minimum_corner_detj": 3.017785286227253e-11,
+    "max_element_qp_detj_ratio": 1.9200429521949205,
+    "qp_integrated_volume_m3": 0.000179995814041128,
+    "adjacent_face_size_jump_all": {
+      "count": 15463,
+      "median": 1.1033339660894885,
+      "p95": 1.3706324282918323,
+      "p99": 1.5484431507935836,
+      "maximum": 2.2219055832441237,
+      "q_gt_1p25": 2255
+    },
+    "adjacent_face_size_jump_near_polar": {
+      "count": 337,
+      "median": 1.1211493546934257,
+      "p95": 1.351203795264295,
+      "p99": 1.4990690659517814,
+      "maximum": 1.5914203752332812,
+      "q_gt_1p25": 52
+    },
+    "geometry_gate": "PASS_27QP_DIAGNOSTIC"
+  },
+  "M0_extra": {
+    "nodes": 11699,
+    "tet10": 7992,
+    "tri6_total": 1354,
+    "types": {
+      "9": 1354,
+      "11": 7992
+    },
+    "physical_tags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mean_ratio_min": 0.13113433486341217,
+    "mean_ratio_p01": 0.47036323988340223,
+    "mean_ratio_median": 0.7999791239685634,
+    "near_polar_tet10": 226,
+    "near_polar_mean_ratio_min": 0.43696582125665345,
+    "near_polar_mean_ratio_p05": 0.5813349160292358,
+    "pore": {
+      "tri6": 160,
+      "q_min": 0.7589771941757903,
+      "q_p05": 0.8649169747416282,
+      "q_median": 0.9590611454190208,
+      "north_count": 18,
+      "south_count": 20,
+      "north_qmin": 0.7589771941757903,
+      "south_qmin": 0.8162017569636297,
+      "curved7_min_jac": 7.01045117388329e-08,
+      "curved7_area_ratio": 0.9995572666895906,
+      "max_radius_error_m": 4.9873299934333204e-18,
+      "closed_euler": 2,
+      "every_edge_twice": true,
+      "mid_edge_conforming": true
+    },
+    "B6": {
+      "tri6": 312,
+      "q_min": 0.22218723517898667,
+      "q_p05": 0.7814038276083395,
+      "q_median": 0.9557686312569567,
+      "north_count": 33,
+      "south_count": 34,
+      "north_qmin": 0.341543208194102,
+      "south_qmin": 0.22218723517898667,
+      "curved7_min_jac": 3.0764148644233226e-07,
+      "curved7_area_ratio": 0.9998759525314547,
+      "max_radius_error_m": 8.673617379884035e-18,
+      "closed_euler": 2,
+      "every_edge_twice": true,
+      "mid_edge_conforming": true
+    }
+  },
+  "M0_preexisting_343_729QP_baseline_SHA256": "8172b32ce7a615d64e14973f59ea29a95d94f48bc5e5974286d4651c364020a0",
+  "native_new_3d_attempts": 0,
+  "FEM_attempts": 0
+}

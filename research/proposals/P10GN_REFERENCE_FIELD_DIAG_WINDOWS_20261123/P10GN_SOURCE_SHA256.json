@@ -1,0 +1,17 @@
+{
+  "FEM_allowed": false,
+  "case_F_only_if_D_E_PASS": true,
+  "files": {
+    "01_P10GN_PREFLIGHT_NO_MESH.cmd": "fa3a6e33399a6f430aad17f9ff6d8268d45bed75892e2fac5b9836e7f6c5d43b",
+    "02_P10GN_ONE_REFERENCE_1D_DIAGNOSTIC.cmd": "2c5d8cb2fca905aebbb8bed99e667f1b9dd13554863d424e0f020a905febb61f",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10GK_R1_C1_SOUTH_POLE_SOURCE_ONLY_20261123.zip": "4cc0390df4cc2277078ee0d8bca281bd77e3606ec4128e943cc10c243caf9d05",
+    "P10GN_1d_probe.py": "95d3d02c1dd3029052e23dd7f8698d816f393308e7d2880bd5b77886efbb9a3f",
+    "README_P10GN_RU.md": "71002e9dc6b11e4b58e8682ce9b320acd773bc039bacf3215fed3a2555630619"
+  },
+  "native_1d_cases_max": 3,
+  "native_2d_allowed": false,
+  "native_3d_allowed": false,
+  "revision": "P10GN_R1_NATIVE_1D_F3_REFERENCE_ISOLATION_NO_3D_NO_FEM",
+  "wall_s_per_case": 30
+}

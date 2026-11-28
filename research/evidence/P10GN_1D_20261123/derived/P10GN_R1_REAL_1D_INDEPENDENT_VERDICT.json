@@ -1,0 +1,40 @@
+{
+  "revision": "P10GN_R1_INDEPENDENT_REAL_WINDOWS_1D_D_E_VERDICT",
+  "original_evidence_sha256": "fe5f13d04fafbef13e001f9a3371e2ae6addd93c936dc405b95a3b2cd7b7b481",
+  "original_zip_crc_pass": true,
+  "zip_member_count": 12,
+  "source_geos_byte_pinned": true,
+  "log_and_driver_hashes_independent_pass": true,
+  "cases": [
+    {
+      "case": "D_F3_REFERENCE",
+      "result": "TIMEOUT_30S",
+      "native_wall_s": 30.11397389997728,
+      "stop_reason": "WALL_LIMIT",
+      "native_exit_code": 1,
+      "peak_private_bytes": 245993472,
+      "last_native_phase": "Meshing 1D curves 14/17",
+      "original_log_sha256": "26c25e13b4116f9b302e5d256fac218e58a85b14f044c689a0f5c1eeb6eeefa9",
+      "original_driver_sha256": "78a1d3078ace38248a5af153e555240988927e374bf7f6ce98f3b6f1ae92b4c4"
+    },
+    {
+      "case": "E_F3_TIMES_094",
+      "result": "TIMEOUT_30S",
+      "native_wall_s": 30.149209399940446,
+      "stop_reason": "WALL_LIMIT",
+      "native_exit_code": 1,
+      "peak_private_bytes": 245989376,
+      "last_native_phase": "Meshing 1D curves 14/17",
+      "original_log_sha256": "23b97c222a640750aab3753dc7633de4fe620db86249ee840e07bfe5bd4bd616",
+      "original_driver_sha256": "87e3c00edd1728b386155f1efa1c4285a74764cee1feefdb39b38a137e1ee4dc"
+    }
+  ],
+  "F_conditional_floor_test": "NOT_RUN_EXPECTED_D_E_FAILED",
+  "conclusion": "DIRECT_F3_BACKGROUND_PREVIOUSLY_FAST_BUT_F3_REFERENCE_ONLY_1D_TIMEOUT",
+  "scope": "reproducible operational behavior on this pinned Gmsh4.15.2 model; Gmsh internal mechanism UNKNOWN",
+  "no_native_2d_3d_or_FEM_evidenced": true,
+  "previous_P10GL_and_P10GM_and_current_P10GN_one_shots": "CONSUMED_NO_RETRY",
+  "M1_GO": false,
+  "FEM_GO": false,
+  "next_source_only_candidate": "construct a single self-contained MathEval sizing expression with complete original M0 F3 formula inlined and south C1 factor; no F3/F4/F5 references; independent field QA before any new -1"
+}

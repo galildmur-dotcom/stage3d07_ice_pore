@@ -1,0 +1,35 @@
+{
+  "result": "P10CY_INDEPENDENT_R2_SURFACE_AND_VERSION_PARITY_OK_NO_3D_NO_FEM",
+  "original_r2_zip_sha256": "27766d2ab11b38aeb964e91909035fe8a8665ea1d7fa403ae03f3afbd7535e86",
+  "zip_member_count_crc_ok": 9,
+  "gmsh_version_native_exit": 0,
+  "gmsh_version": "4.15.2",
+  "gmsh_surface_exit": 0,
+  "surface_mesh_sha256_windows_not_locally_rehashed": "fad1bbf0012d11e144e2af457c2c5eb11e7c5fecce9d8833eb164f4617894915",
+  "windows_r2": {
+    "tri6": 74578,
+    "qmin": 0.48062285753365336,
+    "bad_below_0p1": 0,
+    "hmax_p50_um": 20.012807470767772,
+    "polar_mid_ratio": 1.001704501679993,
+    "polar_area_fraction": 0.20000384345882394
+  },
+  "linux_413": {
+    "tri6": 74592,
+    "qmin": 0.07474784370275224,
+    "bad_below_0p1": 1,
+    "hmax_p50_um": 20.01500931882796,
+    "polar_mid_ratio": 1.0020310882597714
+  },
+  "difference": {
+    "tri6": -14,
+    "qmin_improvement": 0.40587501383090113,
+    "hmax_p50_um": -0.002201848060188638,
+    "count_distribution_TV_120_cells": 0.005099521636737699
+  },
+  "unproven": [
+    "independent reading of original Windows .msh bytes",
+    "3D Tet10 geometric validity",
+    "physical FEM fields or cause of past polar shape derivatives"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "revision": "P10GJ_R1_M0_PREREG_ONE_ROTATED_HXT10_3D_NO_FEM",
+  "date": "2026-11-23",
+  "model": "Stage3D07",
+  "parent_M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "D027_policy_sha256": "267d56821194f037de88d21f6730d1d6672f82c42527d288d270724255947e9a",
+  "M0_baseline_343_729QP_sha256": "8172b32ce7a615d64e14973f59ea29a95d94f48bc5e5974286d4651c364020a0",
+  "nominal_volume_ratio": 0.825,
+  "global_Veff_required": [
+    0.8,
+    0.85
+  ],
+  "candidate": "P10GJ_M1_ROTATED_CANDIDATE",
+  "native_3d_max_attempts": 1,
+  "FEM_max_attempts": 0,
+  "source_only_build": true,
+  "files": {
+    "01_P10GJ_PREFLIGHT_FREEZE_GATES.cmd": "87b6c5268928e5fe4d862f983e697d791c9d08a7bf31dbf818e143d169440d70",
+    "02_P10GJ_ONE_HXT10_3D_ONLY.cmd": "62ba5ccfcdd0e6796a29bca9beaed15bc37d4ed147669db659f4083d5c8b88db",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "M0_ROTATED.geo": "21cef72e9e0d7fde3a383b6db3ebde4bc6b62cf180b7b65947e5fe1fa57f0c9a",
+    "P10CK_curved_qp_audit.py": "6386d37ade7c6cadcfdfdb511e01a06310ea9c974ee4fd7878a704bcdac9dc90",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10FN_mesh_qa.py": "d8912f166821c06826e8bc9e8474a09bc4b6b3a591c179360b61cc38f4fb0a2f",
+    "P10GJ_D027_GATE_POLICY.json": "267d56821194f037de88d21f6730d1d6672f82c42527d288d270724255947e9a",
+    "P10GJ_M0_QP_BASELINE.json": "8172b32ce7a615d64e14973f59ea29a95d94f48bc5e5974286d4651c364020a0",
+    "P10GJ_M1_ROTATED_CANDIDATE.geo": "18bead9a98fd1a872274cc2d328e2c7013d7fcb76c0c23c57b6e002300931d3b",
+    "P10GJ_mesh_extra.py": "cf04bb49ac5adee1eebf12cf344df254280474194fd7d800f0e08962afc2723b",
+    "P10GJ_one_click_m1.py": "2a98861146c80121e8bf995976a7dd4d210df1a798c8481376c03e9ebffe24fd",
+    "README_P10GJ_RU.md": "725150ccdb89b1e854d11b912c6b7c9067e5bdb6a939afac9b4d322750ae4b1d",
+    "p10gi_independent_surface_audit.py": "abcfbcfd376ca222cbfbf6b75826f5bd764a3767a697aee51127eabe685f1aaa",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+    "sphere_pore_B6_refined_rotated.geo": "e3f4d1c472e4d047962bf05f63406f2bbb20b89f20e74ac2e6f2ba8cfd305329"
+  }
+}

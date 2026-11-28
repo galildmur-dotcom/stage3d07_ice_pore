@@ -1,0 +1,505 @@
+{
+  "protocol": "P10EH_READ_ONLY_INDEPENDENT_P10EF_R2_SURFACE",
+  "candidate_sha256": "96f5c9a5d88811ef6b68cc46acabe094dbdd8f4b7441025ee39864bcbab4d1c7",
+  "node_count": 3306,
+  "pore_tri6": 194,
+  "element_types": {
+    "9": 1650
+  },
+  "gmsh_invocations": 0,
+  "fem_invocations": 0,
+  "quadrature": {
+    "3": {
+      "order": 3,
+      "total_pore_area_m2": 1.2562328898828661e-05,
+      "area_relative_to_sphere": -0.00032162950262604184,
+      "minimum_surface_jacobian": 1.2596701221380454e-08,
+      "kappa_range": [
+        0.0,
+        1.0
+      ],
+      "bins": {
+        "north_mu_ge_08": {
+          "area_m2": 1.282912920048947e-06,
+          "area_fraction": 0.10212381242211932,
+          "effective_tri6_count": 23.037336363129253,
+          "effective_tri6_area_m2": 5.5688422473277804e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127536
+        },
+        "south_mu_le_minus08": {
+          "area_m2": 1.2933894193104973e-06,
+          "area_fraction": 0.10295777397064455,
+          "effective_tri6_count": 25.023815724669397,
+          "effective_tri6_area_m2": 5.168633886779411e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127536
+        },
+        "nonpolar_abs_mu_lt_08": {
+          "area_m2": 9.986026559469217e-06,
+          "area_fraction": 0.7949184136072361,
+          "effective_tri6_count": 145.93884791220134,
+          "effective_tri6_area_m2": 6.842610245544036e-08,
+          "area_weighted_kappa": 0.11244144667247123,
+          "area_weighted_nominal_target_ratio": 0.98462399180603
+        },
+        "kappa_zero": {
+          "area_m2": 7.592999280718674e-06,
+          "area_fraction": 0.6044260854710357,
+          "effective_tri6_count": 108.53176163515568,
+          "effective_tri6_area_m2": 6.996108020658116e-08,
+          "area_weighted_kappa": 0.0,
+          "area_weighted_nominal_target_ratio": 1.0
+        },
+        "kappa_0_to_025": {
+          "area_m2": 8.053025369956346e-07,
+          "area_fraction": 0.06410455764063962,
+          "effective_tri6_count": 12.874573346710068,
+          "effective_tri6_area_m2": 6.254984264790564e-08,
+          "area_weighted_kappa": 0.0803017836552294,
+          "area_weighted_nominal_target_ratio": 0.9892427766161098
+        },
+        "kappa_025_to_05": {
+          "area_m2": 4.770316144379912e-07,
+          "area_fraction": 0.03797318302042471,
+          "effective_tri6_count": 7.162457629150915,
+          "effective_tri6_area_m2": 6.660166651408752e-08,
+          "area_weighted_kappa": 0.37650753531644726,
+          "area_weighted_nominal_target_ratio": 0.9491190691447764
+        },
+        "kappa_05_to_075": {
+          "area_m2": 4.854250078955321e-07,
+          "area_fraction": 0.03864132294297709,
+          "effective_tri6_count": 7.490985727724902,
+          "effective_tri6_area_m2": 6.480121916384444e-08,
+          "area_weighted_kappa": 0.644041800251652,
+          "area_weighted_nominal_target_ratio": 0.9121386290108324
+        },
+        "kappa_075_to_099": {
+          "area_m2": 6.039246948399424e-07,
+          "area_fraction": 0.048074262320599935,
+          "effective_tri6_count": 9.458645062790701,
+          "effective_tri6_area_m2": 6.384896471226281e-08,
+          "area_weighted_kappa": 0.9019308550568,
+          "area_weighted_nominal_target_ratio": 0.8757701976422944
+        },
+        "kappa_099_to_1": {
+          "area_m2": 2.597645763940887e-06,
+          "area_fraction": 0.206780588604323,
+          "effective_tri6_count": 48.48157659846774,
+          "effective_tri6_area_m2": 5.358005960604395e-08,
+          "area_weighted_kappa": 0.9999593125327201,
+          "area_weighted_nominal_target_ratio": 0.8617797184975917
+        }
+      }
+    },
+    "5": {
+      "order": 5,
+      "total_pore_area_m2": 1.2562331185859811e-05,
+      "area_relative_to_sphere": -0.00032144750646978526,
+      "minimum_surface_jacobian": 1.2584037582824477e-08,
+      "kappa_range": [
+        0.0,
+        1.0
+      ],
+      "bins": {
+        "north_mu_ge_08": {
+          "area_m2": 1.2558105441211332e-06,
+          "area_fraction": 0.09996636177962545,
+          "effective_tri6_count": 22.710763408608358,
+          "effective_tri6_area_m2": 5.5295831387382025e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127535
+        },
+        "south_mu_le_minus08": {
+          "area_m2": 1.2517734538675857e-06,
+          "area_fraction": 0.0996449970429521,
+          "effective_tri6_count": 24.419119812573314,
+          "effective_tri6_area_m2": 5.126202186956191e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127535
+        },
+        "nonpolar_abs_mu_lt_08": {
+          "area_m2": 1.0054747187871092e-05,
+          "area_fraction": 0.8003886411774224,
+          "effective_tri6_count": 146.87011677881833,
+          "effective_tri6_area_m2": 6.846012931965743e-08,
+          "area_weighted_kappa": 0.1183322538005674,
+          "area_weighted_nominal_target_ratio": 0.9838072967449111
+        },
+        "kappa_zero": {
+          "area_m2": 7.562158881257968e-06,
+          "area_fraction": 0.6019709852714241,
+          "effective_tri6_count": 108.23888914680424,
+          "effective_tri6_area_m2": 6.98654516954754e-08,
+          "area_weighted_kappa": 0.0,
+          "area_weighted_nominal_target_ratio": 1.0
+        },
+        "kappa_0_to_025": {
+          "area_m2": 8.995555421257483e-07,
+          "area_fraction": 0.07160737356918993,
+          "effective_tri6_count": 14.037538014797343,
+          "effective_tri6_area_m2": 6.40821446878721e-08,
+          "area_weighted_kappa": 0.09153037473183875,
+          "area_weighted_nominal_target_ratio": 0.9877337573857056
+        },
+        "kappa_025_to_05": {
+          "area_m2": 4.2336568586740767e-07,
+          "area_fraction": 0.03370120398863143,
+          "effective_tri6_count": 6.5489989610758235,
+          "effective_tri6_area_m2": 6.4645862426257e-08,
+          "area_weighted_kappa": 0.3868111250045457,
+          "area_weighted_nominal_target_ratio": 0.9477086553955681
+        },
+        "kappa_05_to_075": {
+          "area_m2": 4.0104097689892244e-07,
+          "area_fraction": 0.031924088846689146,
+          "effective_tri6_count": 6.224686482092061,
+          "effective_tri6_area_m2": 6.44274981643953e-08,
+          "area_weighted_kappa": 0.6146967168610451,
+          "area_weighted_nominal_target_ratio": 0.9162338699423995
+        },
+        "kappa_075_to_099": {
+          "area_m2": 6.101313861147721e-07,
+          "area_fraction": 0.04856832518486198,
+          "effective_tri6_count": 9.324697514943828,
+          "effective_tri6_area_m2": 6.543176174208022e-08,
+          "area_weighted_kappa": 0.8835654018022794,
+          "area_weighted_nominal_target_ratio": 0.8783916670030101
+        },
+        "kappa_099_to_1": {
+          "area_m2": 2.6660787135949936e-06,
+          "area_fraction": 0.2122280231392035,
+          "effective_tri6_count": 49.625189880286705,
+          "effective_tri6_area_m2": 5.372430251705851e-08,
+          "area_weighted_kappa": 0.9998489963100948,
+          "area_weighted_nominal_target_ratio": 0.8617955601417023
+        }
+      }
+    },
+    "9": {
+      "order": 9,
+      "total_pore_area_m2": 1.2562331185989436e-05,
+      "area_relative_to_sphere": -0.0003214474961544811,
+      "minimum_surface_jacobian": 1.2577822299269834e-08,
+      "kappa_range": [
+        0.0,
+        1.0
+      ],
+      "bins": {
+        "north_mu_ge_08": {
+          "area_m2": 1.261216331197867e-06,
+          "area_fraction": 0.10039667897026,
+          "effective_tri6_count": 22.771917469919345,
+          "effective_tri6_area_m2": 5.538472255855818e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127537
+        },
+        "south_mu_le_minus08": {
+          "area_m2": 1.2590021967725352e-06,
+          "area_fraction": 0.10022042709530536,
+          "effective_tri6_count": 24.508192079400622,
+          "effective_tri6_area_m2": 5.13706679257969e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127539
+        },
+        "nonpolar_abs_mu_lt_08": {
+          "area_m2": 1.0042112658019032e-05,
+          "area_fraction": 0.7993828939344345,
+          "effective_tri6_count": 146.71989045068,
+          "effective_tri6_area_m2": 6.844411229569924e-08,
+          "area_weighted_kappa": 0.11720049492390279,
+          "area_weighted_nominal_target_ratio": 0.9839638459156145
+        },
+        "kappa_zero": {
+          "area_m2": 7.545413630891748e-06,
+          "area_fraction": 0.6006380120997785,
+          "effective_tri6_count": 107.91255863936084,
+          "effective_tri6_area_m2": 6.992155246831092e-08,
+          "area_weighted_kappa": 0.0,
+          "area_weighted_nominal_target_ratio": 1.0
+        },
+        "kappa_0_to_025": {
+          "area_m2": 8.932277023959368e-07,
+          "area_fraction": 0.07110365816434923,
+          "effective_tri6_count": 14.06048905810714,
+          "effective_tri6_area_m2": 6.352749884477955e-08,
+          "area_weighted_kappa": 0.0868781341083472,
+          "area_weighted_nominal_target_ratio": 0.9883572820646261
+        },
+        "kappa_025_to_05": {
+          "area_m2": 4.524314880603546e-07,
+          "area_fraction": 0.03601493077693606,
+          "effective_tri6_count": 6.915636497882245,
+          "effective_tri6_area_m2": 6.542152529256004e-08,
+          "area_weighted_kappa": 0.37440410795152307,
+          "area_weighted_nominal_target_ratio": 0.9494089417990381
+        },
+        "kappa_05_to_075": {
+          "area_m2": 4.0733393286703346e-07,
+          "area_fraction": 0.032425027396294596,
+          "effective_tri6_count": 6.294604509777828,
+          "effective_tri6_area_m2": 6.471160058337177e-08,
+          "area_weighted_kappa": 0.627233219606692,
+          "area_weighted_nominal_target_ratio": 0.9144881390562091
+        },
+        "kappa_075_to_099": {
+          "area_m2": 6.212706269056478e-07,
+          "area_fraction": 0.049455042834608665,
+          "effective_tri6_count": 9.622284064090191,
+          "effective_tri6_area_m2": 6.456581647014495e-08,
+          "area_weighted_kappa": 0.8891692281987368,
+          "area_weighted_nominal_target_ratio": 0.8775901471575126
+        },
+        "kappa_099_to_1": {
+          "area_m2": 2.642653804868714e-06,
+          "area_fraction": 0.2103633287280328,
+          "effective_tri6_count": 49.19442723078177,
+          "effective_tri6_area_m2": 5.3718560284713745e-08,
+          "area_weighted_kappa": 0.9998497854292875,
+          "area_weighted_nominal_target_ratio": 0.8617954461569264
+        }
+      }
+    },
+    "15": {
+      "order": 15,
+      "total_pore_area_m2": 1.2562331185989436e-05,
+      "area_relative_to_sphere": -0.0003214474961544811,
+      "minimum_surface_jacobian": 1.2575798807747041e-08,
+      "kappa_range": [
+        0.0,
+        1.0
+      ],
+      "bins": {
+        "north_mu_ge_08": {
+          "area_m2": 1.2584495158761104e-06,
+          "area_fraction": 0.10017643200488446,
+          "effective_tri6_count": 22.74187996317042,
+          "effective_tri6_area_m2": 5.533621309733935e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127535
+        },
+        "south_mu_le_minus08": {
+          "area_m2": 1.2556722257650724e-06,
+          "area_fraction": 0.0999553512142319,
+          "effective_tri6_count": 24.458481350163886,
+          "effective_tri6_area_m2": 5.1338928520869045e-08,
+          "area_weighted_kappa": 1.0,
+          "area_weighted_nominal_target_ratio": 0.8617738760127536
+        },
+        "nonpolar_abs_mu_lt_08": {
+          "area_m2": 1.0048209444348252e-05,
+          "area_fraction": 0.7998682167808836,
+          "effective_tri6_count": 146.7996386866657,
+          "effective_tri6_area_m2": 6.844846168726276e-08,
+          "area_weighted_kappa": 0.11773890515085424,
+          "area_weighted_nominal_target_ratio": 0.98388929177833
+        },
+        "kappa_zero": {
+          "area_m2": 7.532162017234085e-06,
+          "area_fraction": 0.5995831431060011,
+          "effective_tri6_count": 107.7093910149641,
+          "effective_tri6_area_m2": 6.99304113249293e-08,
+          "area_weighted_kappa": 0.0,
+          "area_weighted_nominal_target_ratio": 1.0
+        },
+        "kappa_0_to_025": {
+          "area_m2": 9.057151438464665e-07,
+          "area_fraction": 0.07209769671226277,
+          "effective_tri6_count": 14.278574378049592,
+          "effective_tri6_area_m2": 6.343176285433787e-08,
+          "area_weighted_kappa": 0.08592883445993249,
+          "area_weighted_nominal_target_ratio": 0.9884838323843267
+        },
+        "kappa_025_to_05": {
+          "area_m2": 4.4666630075885527e-07,
+          "area_fraction": 0.03555600422770377,
+          "effective_tri6_count": 6.885570437861287,
+          "effective_tri6_area_m2": 6.486990508481289e-08,
+          "area_weighted_kappa": 0.37116398668578465,
+          "area_weighted_nominal_target_ratio": 0.949851853461922
+        },
+        "kappa_05_to_075": {
+          "area_m2": 4.224108181092747e-07,
+          "area_fraction": 0.03362519359307949,
+          "effective_tri6_count": 6.4634343417129365,
+          "effective_tri6_area_m2": 6.535392730505058e-08,
+          "area_weighted_kappa": 0.6278974741930307,
+          "area_weighted_nominal_target_ratio": 0.9143946565670124
+        },
+        "kappa_075_to_099": {
+          "area_m2": 6.138407884969924e-07,
+          "area_fraction": 0.04886360496383021,
+          "effective_tri6_count": 9.466464628720319,
+          "effective_tri6_area_m2": 6.484372071012235e-08,
+          "area_weighted_kappa": 0.8915093513346636,
+          "area_weighted_nominal_target_ratio": 0.8772577229524459
+        },
+        "kappa_099_to_1": {
+          "area_m2": 2.6415361175437618e-06,
+          "area_fraction": 0.2102743573971226,
+          "effective_tri6_count": 49.19656519869177,
+          "effective_tri6_area_m2": 5.369350699332979e-08,
+          "area_weighted_kappa": 0.9998341201147108,
+          "area_weighted_nominal_target_ratio": 0.8617976949581895
+        }
+      }
+    }
+  },
+  "comparison_to_recorded": {
+    "full_area_absolute_m2": 5.251604272976662e-20,
+    "north_effective_area_relative": 9.103828801926284e-15,
+    "south_effective_area_relative": 7.549516567451064e-15,
+    "nonpolar_effective_area_relative": -5.995204332975845e-15
+  },
+  "paired_fixed_zone_comparison": {
+    "original_m1": {
+      "north_mu_ge_08": {
+        "candidate_over_reference_effective_tri6_area": 0.8176919269276323,
+        "reference_effective_tri6_count": 18.526302098767786,
+        "candidate_effective_tri6_count": 22.74187996317042,
+        "reference_zone_area_m2": 1.2537428426070665e-06,
+        "candidate_zone_area_m2": 1.2584495158761104e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617738760127535
+      },
+      "south_mu_le_minus08": {
+        "candidate_over_reference_effective_tri6_area": 0.782599830629864,
+        "reference_effective_tri6_count": 19.13767634420807,
+        "candidate_effective_tri6_count": 24.458481350163886,
+        "reference_zone_area_m2": 1.2554408516803122e-06,
+        "candidate_zone_area_m2": 1.2556722257650724e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617738760127536
+      },
+      "nonpolar_abs_mu_lt_08": {
+        "candidate_over_reference_effective_tri6_area": 0.9555136424621523,
+        "reference_effective_tri6_count": 140.33602155702414,
+        "candidate_effective_tri6_count": 146.7996386866657,
+        "reference_zone_area_m2": 1.0053006433416078e-05,
+        "candidate_zone_area_m2": 1.0048209444348252e-05,
+        "candidate_area_weighted_nominal_target_ratio": 0.98388929177833
+      },
+      "kappa_zero": {
+        "candidate_over_reference_effective_tri6_area": 0.9760708903140862,
+        "reference_effective_tri6_count": 105.2280836099645,
+        "candidate_effective_tri6_count": 107.7093910149641,
+        "reference_zone_area_m2": 7.5390458242340966e-06,
+        "candidate_zone_area_m2": 7.532162017234085e-06,
+        "candidate_area_weighted_nominal_target_ratio": 1.0
+      },
+      "kappa_0_to_025": {
+        "candidate_over_reference_effective_tri6_area": 0.883300727886051,
+        "reference_effective_tri6_count": 12.51981074383319,
+        "candidate_effective_tri6_count": 14.278574378049592,
+        "reference_zone_area_m2": 8.99075072636493e-07,
+        "candidate_zone_area_m2": 9.057151438464665e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.9884838323843267
+      },
+      "kappa_025_to_05": {
+        "candidate_over_reference_effective_tri6_area": 0.9163693954004835,
+        "reference_effective_tri6_count": 6.225495503969251,
+        "candidate_effective_tri6_count": 6.885570437861287,
+        "reference_zone_area_m2": 4.4070361196635135e-07,
+        "candidate_zone_area_m2": 4.4666630075885527e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.949851853461922
+      },
+      "kappa_05_to_075": {
+        "candidate_over_reference_effective_tri6_area": 0.9192687038697263,
+        "reference_effective_tri6_count": 5.985803060592538,
+        "candidate_effective_tri6_count": 6.4634343417129365,
+        "reference_zone_area_m2": 4.255510238057143e-07,
+        "candidate_zone_area_m2": 4.224108181092747e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.9143946565670124
+      },
+      "kappa_075_to_099": {
+        "candidate_over_reference_effective_tri6_area": 0.9016334912703136,
+        "reference_effective_tri6_count": 8.533172563313723,
+        "candidate_effective_tri6_count": 9.466464628720319,
+        "reference_zone_area_m2": 6.136891140625403e-07,
+        "candidate_zone_area_m2": 6.138407884969924e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.8772577229524459
+      },
+      "kappa_099_to_1": {
+        "candidate_over_reference_effective_tri6_area": 0.8022703406265055,
+        "reference_effective_tri6_count": 39.507634518326796,
+        "candidate_effective_tri6_count": 49.19656519869177,
+        "reference_zone_area_m2": 2.644125480998261e-06,
+        "candidate_zone_area_m2": 2.6415361175437618e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617976949581895
+      }
+    },
+    "historical_m2": {
+      "north_mu_ge_08": {
+        "candidate_over_reference_effective_tri6_area": 0.7592592546792932,
+        "reference_effective_tri6_count": 17.278713581558215,
+        "candidate_effective_tri6_count": 22.74187996317042,
+        "reference_zone_area_m2": 1.2593044745972369e-06,
+        "candidate_zone_area_m2": 1.2584495158761104e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617738760127535
+      },
+      "south_mu_le_minus08": {
+        "candidate_over_reference_effective_tri6_area": 0.7536541818861965,
+        "reference_effective_tri6_count": 18.462143455578165,
+        "candidate_effective_tri6_count": 24.458481350163886,
+        "reference_zone_area_m2": 1.2576413506202525e-06,
+        "candidate_zone_area_m2": 1.2556722257650724e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617738760127536
+      },
+      "nonpolar_abs_mu_lt_08": {
+        "candidate_over_reference_effective_tri6_area": 0.9148890511818291,
+        "reference_effective_tri6_count": 134.25914296286362,
+        "candidate_effective_tri6_count": 146.7996386866657,
+        "reference_zone_area_m2": 1.0044750006994975e-05,
+        "candidate_zone_area_m2": 1.0048209444348252e-05,
+        "candidate_area_weighted_nominal_target_ratio": 0.98388929177833
+      },
+      "kappa_zero": {
+        "candidate_over_reference_effective_tri6_area": 0.9256444061932424,
+        "reference_effective_tri6_count": 99.70434184771861,
+        "candidate_effective_tri6_count": 107.7093910149641,
+        "reference_zone_area_m2": 7.532445061669542e-06,
+        "candidate_zone_area_m2": 7.532162017234085e-06,
+        "candidate_area_weighted_nominal_target_ratio": 1.0
+      },
+      "kappa_0_to_025": {
+        "candidate_over_reference_effective_tri6_area": 0.8412601341361776,
+        "reference_effective_tri6_count": 12.061755788169144,
+        "candidate_effective_tri6_count": 14.278574378049592,
+        "reference_zone_area_m2": 9.094671216623147e-07,
+        "candidate_zone_area_m2": 9.057151438464665e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.9884838323843267
+      },
+      "kappa_025_to_05": {
+        "candidate_over_reference_effective_tri6_area": 0.8921510625442411,
+        "reference_effective_tri6_count": 6.09801856406502,
+        "candidate_effective_tri6_count": 6.885570437861287,
+        "reference_zone_area_m2": 4.433978751627709e-07,
+        "candidate_zone_area_m2": 4.4666630075885527e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.949851853461922
+      },
+      "kappa_05_to_075": {
+        "candidate_over_reference_effective_tri6_area": 0.9084534322524269,
+        "reference_effective_tri6_count": 5.7554130330877395,
+        "candidate_effective_tri6_count": 6.4634343417129365,
+        "reference_zone_area_m2": 4.140430666240702e-07,
+        "candidate_zone_area_m2": 4.224108181092747e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.9143946565670124
+      },
+      "kappa_075_to_099": {
+        "candidate_over_reference_effective_tri6_area": 0.9241615871763224,
+        "reference_effective_tri6_count": 8.814451113882601,
+        "candidate_effective_tri6_count": 9.466464628720319,
+        "reference_zone_area_m2": 6.184652274803768e-07,
+        "candidate_zone_area_m2": 6.138407884969924e-07,
+        "candidate_area_weighted_nominal_target_ratio": 0.8772577229524459
+      },
+      "kappa_099_to_1": {
+        "candidate_over_reference_effective_tri6_area": 0.7629140739339397,
+        "reference_effective_tri6_count": 37.566019653076886,
+        "candidate_effective_tri6_count": 49.19656519869177,
+        "reference_zone_area_m2": 2.6438774796133903e-06,
+        "candidate_zone_area_m2": 2.6415361175437618e-06,
+        "candidate_area_weighted_nominal_target_ratio": 0.8617976949581895
+      }
+    }
+  }
+}

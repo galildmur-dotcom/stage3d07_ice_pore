@@ -1,0 +1,111 @@
+{
+  "protocol": "P10IL_M1_M2_EQUAL_DT25_SIGNED4D_INDEPENDENT",
+  "time_bins": 36,
+  "spatial_bins": 1200,
+  "full4d_bins": 43200,
+  "strict_same_spatial_time_bounds": true,
+  "regions": {
+    "all": {
+      "bins": 1200,
+      "M1_total": 2.628806049244033,
+      "M2_total": 2.55985102508348,
+      "signed_difference": -0.06895502416055285,
+      "spatial_L1_difference": 4.381307507411602,
+      "signed_parts_difference": {
+        "mech_explicit_per_m": -0.2214191492565738,
+        "mech_equilibrium_per_m": 0.18270417742734113,
+        "mech_history_per_m": -0.04288607447523097,
+        "thermal_mass_per_m": 4.860799914812602e-05,
+        "thermal_diffusion_per_m": 0.012597414144762658,
+        "thermal_robin_per_m": 0.0
+      },
+      "M1_mechanical_QP": 9353556,
+      "M2_mechanical_QP": 9564480,
+      "M1_dt36_to25_spatial_L1_proxy": 0.06635491968493508,
+      "M2_M1_spatial_L1_to_M1_time_proxy_ratio": 66.02837480950662,
+      "bins_M2_M1_above_5x_M1_time_proxy": 904
+    },
+    "polar_supported": {
+      "bins": 120,
+      "M1_total": -4.404782905186515,
+      "M2_total": -4.419746772426127,
+      "signed_difference": -0.014963867239611807,
+      "spatial_L1_difference": 3.2457778965790096,
+      "signed_parts_difference": {
+        "mech_explicit_per_m": -0.22918433979401626,
+        "mech_equilibrium_per_m": 0.07792584118140226,
+        "mech_history_per_m": 0.13571381436243612,
+        "thermal_mass_per_m": 2.0871750405632893e-05,
+        "thermal_diffusion_per_m": 0.000559945260160454,
+        "thermal_robin_per_m": 0.0
+      },
+      "M1_mechanical_QP": 131940,
+      "M2_mechanical_QP": 206280,
+      "M1_dt36_to25_spatial_L1_proxy": 0.04297994219910859,
+      "M2_M1_spatial_L1_to_M1_time_proxy_ratio": 75.51843326225617,
+      "bins_M2_M1_above_5x_M1_time_proxy": 114
+    },
+    "north_supported": {
+      "bins": 60,
+      "M1_total": -2.279098608959963,
+      "M2_total": -2.572704811738712,
+      "signed_difference": -0.29360620277874927,
+      "spatial_L1_difference": 1.8185370803593237,
+      "signed_parts_difference": {
+        "mech_explicit_per_m": -0.6806017504814114,
+        "mech_equilibrium_per_m": 0.1352910290289998,
+        "mech_history_per_m": 0.2516938162681737,
+        "thermal_mass_per_m": -5.640934214819751e-06,
+        "thermal_diffusion_per_m": 1.634333970333769e-05,
+        "thermal_robin_per_m": 0.0
+      },
+      "M1_mechanical_QP": 57132,
+      "M2_mechanical_QP": 100116,
+      "M1_dt36_to25_spatial_L1_proxy": 0.017525950919899065,
+      "M2_M1_spatial_L1_to_M1_time_proxy_ratio": 103.76253412273033,
+      "bins_M2_M1_above_5x_M1_time_proxy": 58
+    },
+    "south_supported": {
+      "bins": 60,
+      "M1_total": -2.125684296226552,
+      "M2_total": -1.8470419606874144,
+      "signed_difference": 0.2786423355391375,
+      "spatial_L1_difference": 1.4272408162196861,
+      "signed_parts_difference": {
+        "mech_explicit_per_m": 0.4514174106873951,
+        "mech_equilibrium_per_m": -0.05736518784759755,
+        "mech_history_per_m": -0.1159800019057376,
+        "thermal_mass_per_m": 2.6512684620452644e-05,
+        "thermal_diffusion_per_m": 0.0005436019204571163,
+        "thermal_robin_per_m": 0.0
+      },
+      "M1_mechanical_QP": 74808,
+      "M2_mechanical_QP": 106164,
+      "M1_dt36_to25_spatial_L1_proxy": 0.025453991279209526,
+      "M2_M1_spatial_L1_to_M1_time_proxy_ratio": 56.07139566302268,
+      "bins_M2_M1_above_5x_M1_time_proxy": 56
+    },
+    "high_kappa_source": {
+      "bins": 10,
+      "M1_total": -0.9543857187242007,
+      "M2_total": -0.752636501995942,
+      "signed_difference": 0.20174921672825882,
+      "spatial_L1_difference": 0.7012252391563155,
+      "signed_parts_difference": {
+        "mech_explicit_per_m": 0.32540639758363277,
+        "mech_equilibrium_per_m": -0.09668787592772636,
+        "mech_history_per_m": -0.02697748841314037,
+        "thermal_mass_per_m": 1.6304267857006142e-06,
+        "thermal_diffusion_per_m": 6.55305870716087e-06,
+        "thermal_robin_per_m": 0.0
+      },
+      "M1_mechanical_QP": 7056,
+      "M2_mechanical_QP": 11412,
+      "M1_dt36_to25_spatial_L1_proxy": 0.008558384991722777,
+      "M2_M1_spatial_L1_to_M1_time_proxy_ratio": 81.93429482717872,
+      "bins_M2_M1_above_5x_M1_time_proxy": 10
+    }
+  },
+  "full4d_L1_difference": 5.386286761111757,
+  "note": "No claim of local temporal convergence; M2 dt36 missing."
+}

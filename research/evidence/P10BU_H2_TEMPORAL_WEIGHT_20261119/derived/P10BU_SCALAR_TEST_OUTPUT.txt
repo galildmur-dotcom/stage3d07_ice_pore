@@ -1,0 +1,5 @@
+SCALAR_ADJOINT_OK steps=6 dt_s=150 explicit=+3.694019534949e-02 equilibrium=-4.377121238570e-02 history=+2.195122262615e-02 total=+1.512020558994e-02 tangent_error=1.735e-18 independent_fd_error=2.357e-12
+SCALAR_ADJOINT_OK steps=12 dt_s=75 explicit=+3.756962554770e-02 equilibrium=-4.401899361994e-02 history=+2.404279394496e-02 total=+1.759342587271e-02 tangent_error=3.469e-18 independent_fd_error=1.211e-10
+SCALAR_ADJOINT_OK steps=18 dt_s=50 explicit=+3.774977368733e-02 equilibrium=-4.420079273075e-02 history=+2.451558751403e-02 total=+1.806456847061e-02 tangent_error=1.041e-17 independent_fd_error=3.712e-11
+SCALAR_ADJOINT_OK steps=36 dt_s=25 explicit=+3.790030837312e-02 equilibrium=-4.448099330456e-02 history=+2.492447862827e-02 total=+1.834379369683e-02 tangent_error=0.000e+00 independent_fd_error=6.492e-11
+P10BU_SCALAR_REFERENCE_OK checks=4 FEM=0 proves_production_implementation=NO

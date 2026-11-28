@@ -1,0 +1,9 @@
+# P10IQ — M3 first physical-run source-only preflight prepared, 24.11.2026
+
+Following independent P10IP M3 geometric GO, this stage prepares **only** the safe compatibility test, **not** the first M3 FEM. There has been **no** compiler invocation, solver execution, mesh generation, marker consumption or physical solve in P10IQ.
+
+Pinned M3 from user R2 mesh: `3d6ce765dced7d146ef5228be3b0a8210b4466ed08a0c9f5a20d1917dc2a8c3a`, 10,063 Tet10, 262 pore Tri6, physical surface tags 2..9. Original 101-file P10FN SHA-pinned solver-source bundle from first real M2 P10IJ is reused without modification. M3 preflight executes read-only original curved 27QP audit; P10IP independently established full D031 729QP geometry GO. The future proposed physical comparison keeps exactly the approved M2 regime: R/EDV_VAR/ξ0, B6 5mm, final time 900s, dt25s, 36 steps, 4 CPU threads, forward and adjoint on same M3, no FD shape derivative.
+
+Source-only test on local runtime: `P10IQ_SOURCE_ONLY_PASS_NO_FEM` for pinned M3 with exact checksum; ZIP CRC `unzip -tq` PASS. Windows one-click archive `P10IQ_M3_SOURCE_ONLY_PREFLIGHT_WINDOWS_20261124.zip` SHA256 `4996a3635b2a4b56296ff5c155dd33d313314b016430c4c8b02a205395bf2714`. Proposal sources: [P10IQ sources](proposals/P10IQ_M3_SOURCE_ONLY_FEM_PREFLIGHT_20261124). Archive delivered to user in current chat, not committed as a large binary. It includes exact M3.msh, 101-file historical solver-source bundle, the new no-FEM-only script and .cmd; old M2 run commands are excluded. Preflight creates `P10IQ_M3_PREFLIGHT_RESULT.json`, which is the **only file to return**.
+
+Future Windows first M3 FEM pilot is a **different, not-yet-created** one-shot package. The first real FEM must be explicitly approved after source-only results; add reliable periodic console heartbeats ≤30 s, log tail and failure detection, hard memory/time caps, one-shot marker, and preservation of all previous one-shot guards. No speculative FEM convergence claim.

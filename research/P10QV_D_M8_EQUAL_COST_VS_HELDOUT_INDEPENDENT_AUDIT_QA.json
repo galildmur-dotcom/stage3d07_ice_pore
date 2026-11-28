@@ -1,0 +1,143 @@
+{
+  "stage": "P10QV_D_INDEPENDENT_EQUAL_COST_VS_HELDOUT_Q1024",
+  "source": "real M8 two multi cut, 3 axes, both normalizations",
+  "mesh_sha256_from_validated_archive_metadata": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "q1024_comparator_not_exact_solution": true,
+  "two_cut_pilot_not_full_178": true,
+  "root_interval_certificate_obtained": false,
+  "physical_4D_FEM_approved": false,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "negative_one_percent_frozen_q512_corruption_rejected": true,
+  "cases": [
+    {
+      "case": 6,
+      "pilot_index": 19,
+      "active_constraints": [
+        0,
+        4
+      ],
+      "cut_scale_min_abs_heldout_q1024_m3": 6.178662617991866e-19,
+      "same_cost_512_outer_by_128_inner": true,
+      "axes": {
+        "0": {
+          "t_panels": 10,
+          "topology_transition_brackets": 9,
+          "uniform_q512_gradient_m3": 6.178630054936565e-19,
+          "split_q512_gradient_m3": 6.178692336260169e-19,
+          "heldout_q1024_gradient_m3": 6.1786645550175185e-19,
+          "uniform_q512_error_to_q1024_absolute_m3": 3.4500080953681944e-24,
+          "panel_q512_error_to_q1024_absolute_m3": 2.7781242650425867e-24,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 3.1808666680763185e-09,
+          "panel_q512_error_to_q1024_relative_to_full_child": 2.5613977214464742e-09,
+          "uniform_q512_error_to_q1024_relative_to_cut": 5.5837457208328446e-06,
+          "panel_q512_error_to_q1024_relative_to_cut": 4.4963197326115015e-06,
+          "panel_better_than_uniform_equal_cost": true
+        },
+        "1": {
+          "t_panels": 7,
+          "topology_transition_brackets": 6,
+          "uniform_q512_gradient_m3": 6.178557610079484e-19,
+          "split_q512_gradient_m3": 6.178700300084648e-19,
+          "heldout_q1024_gradient_m3": 6.178689834058067e-19,
+          "uniform_q512_error_to_q1024_absolute_m3": 1.3222397858309876e-23,
+          "panel_q512_error_to_q1024_absolute_m3": 1.046602658141055e-24,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 1.2190894472394843e-08,
+          "panel_q512_error_to_q1024_relative_to_full_child": 9.649552748790477e-10,
+          "uniform_q512_error_to_q1024_relative_to_cut": 2.1400096875021316e-05,
+          "panel_q512_error_to_q1024_relative_to_cut": 1.6938983771235797e-06,
+          "panel_better_than_uniform_equal_cost": true
+        },
+        "2": {
+          "t_panels": 7,
+          "topology_transition_brackets": 6,
+          "uniform_q512_gradient_m3": 6.178669675144596e-19,
+          "split_q512_gradient_m3": 6.1787832600589265e-19,
+          "heldout_q1024_gradient_m3": 6.178662617991866e-19,
+          "uniform_q512_error_to_q1024_absolute_m3": 7.057152729965433e-25,
+          "panel_q512_error_to_q1024_absolute_m3": 1.206420670604264e-23,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 6.506611367204674e-10,
+          "panel_q512_error_to_q1024_relative_to_full_child": 1.1123055925449468e-08,
+          "uniform_q512_error_to_q1024_relative_to_cut": 1.1421812722733008e-06,
+          "panel_q512_error_to_q1024_relative_to_cut": 1.952559550818077e-05,
+          "panel_better_than_uniform_equal_cost": false
+        }
+      },
+      "count_axes_panel_better_than_uniform": 2,
+      "maximum_uniform_error_to_q1024_relative_to_cut": 2.1400096875021316e-05,
+      "maximum_panel_error_to_q1024_relative_to_cut": 1.952559550818077e-05,
+      "uniform_q512_max_cross_axis_relative_to_cut": 1.813743070970534e-05,
+      "panel_q512_max_cross_axis_relative_to_cut": 1.4715773360534194e-05,
+      "heldout_q1024_max_cross_axis_relative_to_cut": 4.404847437589276e-06,
+      "sources_sha256": {
+        "P10QV_C_M8_CASE6_MULTI_Q256_512_QA.json": "9b682145eec146bd1be3875810ca7a21927180056636703f6a2f60c97475e705",
+        "P10QV_D_M8_CASE6_TOPOLOGY_T_Q512_QA.json": "e5f15d8171bbaf850adcf8f409191b1df0473bdc58eccdef16dff8babad15db2",
+        "P10QV_D_M8_CASE6_HELDOUT_Q1024_QA.json": "14498edc08449e72e8e8248a0998ce9dc4f36a42fdb4c5faf94025bff0f48841"
+      }
+    },
+    {
+      "case": 7,
+      "pilot_index": 10,
+      "active_constraints": [
+        1,
+        4
+      ],
+      "cut_scale_min_abs_heldout_q1024_m3": 5.847776893886787e-17,
+      "same_cost_512_outer_by_128_inner": true,
+      "axes": {
+        "0": {
+          "t_panels": 8,
+          "topology_transition_brackets": 7,
+          "uniform_q512_gradient_m3": 5.847783114630373e-17,
+          "split_q512_gradient_m3": 5.847779264379409e-17,
+          "heldout_q1024_gradient_m3": 5.847776893886787e-17,
+          "uniform_q512_error_to_q1024_absolute_m3": 6.22074358597333e-23,
+          "panel_q512_error_to_q1024_absolute_m3": 2.3704926221558873e-23,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 1.4087792578109838e-08,
+          "panel_q512_error_to_q1024_relative_to_full_child": 5.368330635612701e-09,
+          "uniform_q512_error_to_q1024_relative_to_cut": 1.063779227363554e-06,
+          "panel_q512_error_to_q1024_relative_to_cut": 4.053664606517357e-07,
+          "panel_better_than_uniform_equal_cost": true
+        },
+        "1": {
+          "t_panels": 6,
+          "topology_transition_brackets": 5,
+          "uniform_q512_gradient_m3": 5.847776943480914e-17,
+          "split_q512_gradient_m3": 5.847776942426562e-17,
+          "heldout_q1024_gradient_m3": 5.847776937892764e-17,
+          "uniform_q512_error_to_q1024_absolute_m3": 5.588150136736905e-26,
+          "panel_q512_error_to_q1024_absolute_m3": 4.533798093863762e-26,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 1.2655191286005719e-11,
+          "panel_q512_error_to_q1024_relative_to_full_child": 1.0267455370030143e-11,
+          "uniform_q512_error_to_q1024_relative_to_cut": 9.556024858914688e-10,
+          "panel_q512_error_to_q1024_relative_to_cut": 7.753028503196409e-10,
+          "panel_better_than_uniform_equal_cost": true
+        },
+        "2": {
+          "t_panels": 5,
+          "topology_transition_brackets": 4,
+          "uniform_q512_gradient_m3": 5.8477769873756e-17,
+          "split_q512_gradient_m3": 5.8477769400655e-17,
+          "heldout_q1024_gradient_m3": 5.847776940908234e-17,
+          "uniform_q512_error_to_q1024_absolute_m3": 4.646736597954892e-25,
+          "panel_q512_error_to_q1024_absolute_m3": 8.427339420717849e-27,
+          "uniform_q512_error_to_q1024_relative_to_full_child": 1.0523221292178968e-10,
+          "panel_q512_error_to_q1024_relative_to_full_child": 1.908495473308042e-12,
+          "uniform_q512_error_to_q1024_relative_to_cut": 7.946159168302998e-09,
+          "panel_q512_error_to_q1024_relative_to_cut": 1.441118492315894e-10,
+          "panel_better_than_uniform_equal_cost": true
+        }
+      },
+      "count_axes_panel_better_than_uniform": 3,
+      "maximum_uniform_error_to_q1024_relative_to_cut": 1.063779227363554e-06,
+      "maximum_panel_error_to_q1024_relative_to_cut": 4.053664606517357e-07,
+      "uniform_q512_max_cross_axis_relative_to_cut": 1.0552983759201956e-06,
+      "panel_q512_max_cross_axis_relative_to_cut": 3.9746966260623616e-07,
+      "heldout_q1024_max_cross_axis_relative_to_cut": 8.040909894731104e-09,
+      "sources_sha256": {
+        "P10QV_C_M8_CASE7_MULTI_Q256_512_QA.json": "07b1a71ac5e1c5dbd9874a8e68be9dd53f8a70f85e6b1a2f4c9fd84f02ed8cc4",
+        "P10QV_D_M8_CASE7_TOPOLOGY_T_Q512_QA.json": "a0b57d31f759582b662a4bcc93ffc403c65a107ec71110136ef5c27d7d315396",
+        "P10QV_D_M8_CASE7_HELDOUT_Q1024_QA.json": "a2aca4c980523c15ead649dcf9cf7a2e95054633f10cba12a0966d0587c72c81"
+      }
+    }
+  ]
+}

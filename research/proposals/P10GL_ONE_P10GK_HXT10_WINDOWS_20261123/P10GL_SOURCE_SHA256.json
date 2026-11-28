@@ -1,0 +1,23 @@
+{
+  "revision": "P10GL_R1_USER_APPROVED_ONE_P10GK_C1_HXT10_3D_NO_FEM",
+  "date": "2026-11-23",
+  "parent_stage": "P10GK native Windows 4.15.2 parse-only PASS",
+  "user_approved_new_native_3d_max_attempts": 1,
+  "FEM_max_attempts": 0,
+  "files": {
+    "01_P10GL_PREFLIGHT_NO_MESH.cmd": "3e5a280de6f4d01ec96d97ee7ee90161788865e5f11d880bb769643f8966cdf0",
+    "02_P10GL_ONE_HXT10_3D_ONLY.cmd": "82df2ce2a2ae462e32aacec57cf57fa766b8688d5275d228e1bd100586fd6633",
+    "P10CK_curved_qp_audit.py": "6386d37ade7c6cadcfdfdb511e01a06310ea9c974ee4fd7878a704bcdac9dc90",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10FN_mesh_qa.py": "d8912f166821c06826e8bc9e8474a09bc4b6b3a591c179360b61cc38f4fb0a2f",
+    "P10GJ_D027_FROZEN_GATES.json": "2dcb1ae0444f4bcdedc427ce661c8a4c7bc1018d6a34c282f1434e3b1b378aea",
+    "P10GJ_M0_QP_BASELINE.json": "8172b32ce7a615d64e14973f59ea29a95d94f48bc5e5974286d4651c364020a0",
+    "P10GJ_mesh_extra.py": "cf04bb49ac5adee1eebf12cf344df254280474194fd7d800f0e08962afc2723b",
+    "P10GK_R1_C1_SOUTH_POLE_SOURCE_ONLY_20261123.zip": "4cc0390df4cc2277078ee0d8bca281bd77e3606ec4128e943cc10c243caf9d05",
+    "P10GK_SOURCE_PREFLIGHT_EVIDENCE.zip": "6af4dac68f1335aa714b02702ef7c305624ea46622b067fd5aacee6bde89305f",
+    "P10GL_ONE_P10GK_M1_HXT10.geo": "2ef26f72066ec099da49df8240fe3692d385dd2b38a922e56d15e3d86047c42f",
+    "P10GL_one_hxt10.py": "f567c1eb1a351c1e8e4b76e62c38d3e5bd8757d579b89f6e888ef88fc79bd3b9",
+    "README_P10GL_RU.md": "ace39c57fd59a55e281b68f64e0640aa610cd9fa465a9882f07fcc8c98ecf571",
+    "p10gi_independent_surface_audit.py": "abcfbcfd376ca222cbfbf6b75826f5bd764a3767a697aee51127eabe685f1aaa"
+  }
+}

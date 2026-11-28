@@ -1,0 +1,180 @@
+{
+  "stage": "P10QK",
+  "date_utc": "2026-11-28",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_cpp_sha256": "be73b36c6e03b02fcfd7fb54d5eb53c768e5a7884480f43c47dc7a061fb5e338",
+  "scientific_status": "GL_CORRECTS_FULL_MOMENTS_BUT_TRUE_CUT_CONVERGENCE_NOT_CERTIFIED",
+  "auto_h_sweep": [
+    {
+      "h_min_one": 0,
+      "classes": {
+        "inside": 0,
+        "one": 10,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "one": 0.9687499999999403,
+        "outside": 0.011718749999997271,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.1934999093492026e-13,
+      "q6_q8_L1_absolute_m3": 1.9704298237166184e-16,
+      "q6_q8_L1_relative_to_total_q8": 0.0016509677196297936,
+      "q6_q8_signed_absolute_m3": 5.193225892633005e-17,
+      "q6_q8_signed_relative_to_total_q8": 0.000435125788611479,
+      "q8_point_count": 1225080,
+      "full_polynomial_fail_cells": 11,
+      "max_full_moment_relative_error": 0.015489852522211635,
+      "local_cut_q6_q8_threshold_failed_cells": 15,
+      "all_worker_runs_completed": true
+    },
+    {
+      "h_min_one": 4,
+      "classes": {
+        "inside": 5,
+        "one": 13,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "inside": 0.49999999999999384,
+        "one": 0.46875000000000194,
+        "outside": 0.011718749999997271,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.193999772619407e-13,
+      "q6_q8_L1_absolute_m3": 1.324766479323226e-16,
+      "q6_q8_L1_relative_to_total_q8": 0.0011095198757173478,
+      "q6_q8_signed_absolute_m3": 7.347609467991867e-17,
+      "q6_q8_signed_relative_to_total_q8": 0.0006153777945763438,
+      "q8_point_count": 1239672,
+      "full_polynomial_fail_cells": 11,
+      "max_full_moment_relative_error": 0.015489852522211635,
+      "local_cut_q6_q8_threshold_failed_cells": 18,
+      "all_worker_runs_completed": true
+    },
+    {
+      "h_min_one": 6,
+      "classes": {
+        "inside": 17,
+        "one": 16,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "inside": 0.7812500000000107,
+        "one": 0.1874999999999967,
+        "outside": 0.011718749999997271,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.1929128559703117e-13,
+      "q6_q8_L1_absolute_m3": 1.5938990773582876e-16,
+      "q6_q8_L1_relative_to_total_q8": 0.0013361404140974028,
+      "q6_q8_signed_absolute_m3": 1.086238017460228e-16,
+      "q6_q8_signed_relative_to_total_q8": 0.0009105761682622536,
+      "q8_point_count": 1254264,
+      "full_polynomial_fail_cells": 11,
+      "max_full_moment_relative_error": 0.015489852522211635,
+      "local_cut_q6_q8_threshold_failed_cells": 21,
+      "all_worker_runs_completed": true
+    },
+    {
+      "h_min_one": 8,
+      "classes": {
+        "inside": 35,
+        "one": 22,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "inside": 0.8828125000000109,
+        "outside": 0.011718749999997271,
+        "one": 0.08593750000000136,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.1934238003055007e-13,
+      "q6_q8_L1_absolute_m3": 4.1325870919389087e-17,
+      "q6_q8_L1_relative_to_total_q8": 0.0003462799292993001,
+      "q6_q8_signed_absolute_m3": 3.1548761356142586e-18,
+      "q6_q8_signed_relative_to_total_q8": 2.6435505432409274e-05,
+      "q8_point_count": 1290648,
+      "full_polynomial_fail_cells": 12,
+      "max_full_moment_relative_error": 0.015489852522211635,
+      "local_cut_q6_q8_threshold_failed_cells": 27,
+      "all_worker_runs_completed": true
+    }
+  ],
+  "always_gl": [
+    {
+      "h_min_one": 0,
+      "classes": {
+        "inside": 0,
+        "one": 10,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "one": 0.9687499999999403,
+        "outside": 0.011718749999997271,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.1934918098295806e-13,
+      "q6_q8_L1_absolute_m3": 1.9131588752171233e-16,
+      "q6_q8_L1_relative_to_total_q8": 0.0016029928814428182,
+      "q6_q8_signed_absolute_m3": 5.1971431501018533e-17,
+      "q6_q8_signed_relative_to_total_q8": 0.0004354569597627952,
+      "q8_point_count": 1225248,
+      "full_polynomial_fail_cells": 0,
+      "max_full_moment_relative_error": 4.786706551223048e-13,
+      "local_cut_q6_q8_threshold_failed_cells": 15,
+      "all_worker_runs_completed": true
+    },
+    {
+      "h_min_one": 8,
+      "classes": {
+        "inside": 35,
+        "one": 22,
+        "multi": 5
+      },
+      "class_volume_fractions": {
+        "inside": 0.8828125000000109,
+        "outside": 0.011718749999997271,
+        "one": 0.08593750000000136,
+        "multi": 0.019531249999997516
+      },
+      "q8_total_gradient_m3": 1.1934252968202076e-13,
+      "q6_q8_L1_absolute_m3": 4.076807273559879e-17,
+      "q6_q8_L1_relative_to_total_q8": 0.0003416055688129142,
+      "q6_q8_signed_absolute_m3": 1.6630250254859077e-18,
+      "q6_q8_signed_relative_to_total_q8": 1.3934890017137339e-05,
+      "q8_point_count": 1290624,
+      "full_polynomial_fail_cells": 0,
+      "max_full_moment_relative_error": 4.786706551223048e-13,
+      "local_cut_q6_q8_threshold_failed_cells": 27,
+      "all_worker_runs_completed": true
+    }
+  ],
+  "quadrature_strategy_signed_and_L1_deltas": [
+    {
+      "h_min_one": 0,
+      "q8_strategy_L1_absolute_m3": 5.89815388717023e-18,
+      "q8_strategy_signed_absolute_m3": 8.099519622179612e-19,
+      "q8_strategy_L1_relative_to_total": 4.941930760306123e-05,
+      "q8_strategy_signed_relative_to_total": 6.7864057008787915e-06
+    },
+    {
+      "h_min_one": 8,
+      "q8_strategy_L1_absolute_m3": 8.459094281751024e-18,
+      "q8_strategy_signed_absolute_m3": 1.4965147070496152e-19,
+      "q8_strategy_L1_relative_to_total": 7.088080254616395e-05,
+      "q8_strategy_signed_relative_to_total": 1.2539659675699573e-06
+    }
+  ],
+  "always_gl_q8_signed_h0_h8_relative": 5.573286367421483e-05,
+  "always_gl_h8_L1_reduction_factor_vs_h0": 4.692787141606887,
+  "multi_two_boundary_uncertainty_bracket_m3": [
+    0.0,
+    2.4024615352107766e-15
+  ],
+  "floating_bernstein_bounds_not_directed_rounding": true,
+  "q6_q8_difference_is_not_proven_error_bound": true,
+  "all_48_physical_bins_processed": false,
+  "CAD_or_Gmsh_or_FEM_executed": false,
+  "physical_4D_FEM_approved": false
+}

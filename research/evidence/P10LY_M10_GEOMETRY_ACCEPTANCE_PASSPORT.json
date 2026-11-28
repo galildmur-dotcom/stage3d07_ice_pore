@@ -1,0 +1,20 @@
+{
+  "protocol": "P10LY_M10_R1_D029_D031_GEOMETRY_ACCEPTANCE",
+  "status": "FULL_GEOMETRY_GO",
+  "mesh_sha256": "022166c7fb9555a511cf2cd2479ceb949c6b809d05d124832d8d7644c0bebc9c",
+  "nodes": 20420,
+  "tet10": 13996,
+  "pore_tri6": 814,
+  "north_Veff_M10_over_M9_729": 0.7913624218008296,
+  "south_Veff_M10_over_M9_729": 0.7727933508954749,
+  "min_detJ_729": 4.354535587655838e-13,
+  "canonical_Gmsh_quality_min": {
+    "minSICN": 0.24357049564825115,
+    "minSJ": 0.4171610164001328,
+    "gamma": 0.18516747462913213,
+    "minDetJac": 4.350767400407983e-13
+  },
+  "D029_PASS": true,
+  "D031_PASS": true,
+  "FEM_attempts": 0
+}

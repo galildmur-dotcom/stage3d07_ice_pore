@@ -1,0 +1,86 @@
+{
+  "status": "P10DS_ORIGINAL_P10DR_GMSH_LOG_SOURCE_AUDIT_PASS",
+  "original_windows_evidence_sha256": "72e06f67338ab5f2b5f25080ac89e41c9026011b3aaedc0e2f155f0fb7eb1b7f",
+  "original_p10dr_source_zip_sha256": "4ed2a21c64480996b88d7c1f465fc884b3a175f659e424d2039c413ca420a011",
+  "evidence_crc": "24/24",
+  "pinned_sources": "7/7",
+  "geo_exact_with_native_crlf": "7/7",
+  "gmsh_parse_only_pass": "7/7",
+  "gmsh_exe_sha256_from_windows_manifest_not_independent_exe": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "m1_sha256_from_windows_manifest_not_raw_mesh": "ca6b6b6588dc72c5dd3ed2e92e24794560ee2407e350c8a44858e9c3c7d0360f",
+  "native_1d_runs": [
+    {
+      "name": "A_FIELD2_REFERENCE",
+      "status": "PASS",
+      "native_exit": 0,
+      "wall_s": 0.21247050003148615,
+      "peak_private_polled": 4837376,
+      "mesh_bytes": 280,
+      "log_bytes": 4214
+    },
+    {
+      "name": "B_F3_RAW_REFERENCE",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.066718400048558,
+      "peak_private_polled": 245944320,
+      "mesh_bytes": 0,
+      "log_bytes": 1150
+    },
+    {
+      "name": "C_F4_RAW_REFERENCE",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.077909000043292,
+      "peak_private_polled": 245891072,
+      "mesh_bytes": 0,
+      "log_bytes": 1150
+    },
+    {
+      "name": "D_F3_F4_RAW_PRODUCT",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.065360399952624,
+      "peak_private_polled": 245944320,
+      "mesh_bytes": 0,
+      "log_bytes": 1154
+    },
+    {
+      "name": "E_F3_RADIAL_SMOOTHSTEP",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.052401699998882,
+      "peak_private_polled": 245874688,
+      "mesh_bytes": 0,
+      "log_bytes": 1166
+    },
+    {
+      "name": "F_F4_ANGULAR_SMOOTHSTEP",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.058752299984917,
+      "peak_private_polled": 245907456,
+      "mesh_bytes": 0,
+      "log_bytes": 1170
+    },
+    {
+      "name": "G_F3_F4_INLINE_SMOOTHSTEP",
+      "status": "TIMEOUT_15S",
+      "native_exit": 1,
+      "wall_s": 15.085147200035863,
+      "peak_private_polled": 245932032,
+      "mesh_bytes": 0,
+      "log_bytes": 1178
+    }
+  ],
+  "sum_native_wall_s": 90.61875950009562,
+  "max_peak_private_bytes": 245944320,
+  "last_1d_entity_for_all_stops": "circle curves 14 and 17",
+  "mesh_2d_runs": 0,
+  "mesh_3d_runs": 0,
+  "physical_FEM_runs": 0,
+  "scientific_observation": "Both F3-only and F4-only MathEval references stop at native 1D, whereas F2 itself completes; a smoothstep product, F5, and exp/log are not necessary conditions for the stop.",
+  "root_cause": "UNKNOWN: cannot distinguish nested field evaluation from expression/min-max runtime behavior or meshing iteration using the existing logs.",
+  "software_limit": "The documented Gmsh4.15.2 mesh.field API exposes field definitions but does not document point-value evaluation; -v/-log/-cpu add diagnostics, not a direct field-sampling API.",
+  "next_action": "No blind rerun. Only if separately authorized: a new minimal bounded 1D contrast of constant nested MathEval versus direct inline spatial MathEval; no 2D/3D/FEM."
+}

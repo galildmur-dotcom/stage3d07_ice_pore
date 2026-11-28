@@ -1,0 +1,15 @@
+{
+  "revision": "P10EK_R1_ONE_NATIVE_3D_M2_ALG5_MESH_ONLY",
+  "one_native_3d_max": 1,
+  "physical_FEM": false,
+  "parent_bundle_sha256": "8b1650ae7808b117f5778ca726b2542c9cbc59365a09913128a322713b254009",
+  "parent_f6_sha256": "32f8f959002cbd41539e355a80437c2ca3be12fdd3ba12de31eadf2c021b9561",
+  "new_alg5_sha256": "2765018d8ddd2e83f28bd60af7c87b65172ac5da8389ede187d8bb9eea9d74c5",
+  "files": {
+    "01_P10EK_SAFE_PREFLIGHT_ONLY.cmd": "1f01a06187160874e4608102ef31a6703fb66dc08f559a85475e8c9d91eaee8c",
+    "02_P10EK_ONE_M2_3D_ONLY.cmd": "62655e2ca7a9a5a519a93759f642c2738785e3e43fa7203cd3fb57ca85299fbe",
+    "P10EK_B_EXACT_F6_ALG5.geo": "2765018d8ddd2e83f28bd60af7c87b65172ac5da8389ede187d8bb9eea9d74c5",
+    "P10EK_one_click_m2.py": "777a4698c884d5447fd50545462f6f7dce2ed01ea11526ff24719a553970abf7",
+    "README_P10EK_RU.md": "5950238e474d73e6bd8d05bf76c0dc0f9db29e445fb7177078c9f09ae45e8508"
+  }
+}

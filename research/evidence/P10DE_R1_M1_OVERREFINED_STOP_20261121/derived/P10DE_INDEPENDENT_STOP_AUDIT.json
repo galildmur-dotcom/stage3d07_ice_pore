@@ -1,0 +1,51 @@
+{
+  "evidence_sha256": "d131f914c4e770acafc0cc29046b8ddd3db84a5e37129e0d3aa1e1ca7e9ce923",
+  "status": "WINDOWS_GMSH_NATIVE_EXIT0_BUT_M1_OVERREFINED_QA_STOP_NO_FEM",
+  "m1_msh_sha256_windows_manifest_unverified": "9c206a6a564aaaa36ebce525070e3850e6fdc42b5b86955715365e8d596d65d2",
+  "windows_gmsh_exe_sha256_manifest_unverified": "317c43391e5b1fab3a1dd80dc5245dad6e2d087910f4b8ebc234bd6d4b8f41a1",
+  "m1_msh_bytes_windows_manifest": 17812252,
+  "gmsh_wall_s": 3.0085216999868862,
+  "gmsh_peak_private_gib": 0.263275146484375,
+  "h0": {
+    "mesh_sha256": "e28d6049afc4b20b474152d315952361b01dce7052f7642d03a20ce8274d41f8",
+    "tet10": 7388,
+    "pore_tri6": 136,
+    "wall_node_max_radial_deviation_m": 4.7704895589362195e-18,
+    "corner_negative": 0,
+    "curved_qp_count": 199476,
+    "curved_qp_negative": 0,
+    "curved_qp_det_min": 3.029816737526506e-11,
+    "curved_volume_sum_m3": 0.00017999581513869134,
+    "curved_volume_relative_CAD_error": 2.1827708529542633e-08,
+    "global_median_corner_volume_m3": 6.220841833685123e-10,
+    "global_median_corner_hmax_mm": 2.403655002062819,
+    "global_min_corner_quality": 0.3567966081507752
+  },
+  "m1": {
+    "mesh_sha256": "9c206a6a564aaaa36ebce525070e3850e6fdc42b5b86955715365e8d596d65d2",
+    "tet10": 101954,
+    "pore_tri6": 998,
+    "wall_node_max_radial_deviation_m": 4.9873299934333204e-18,
+    "corner_negative": 0,
+    "curved_qp_count": 2752758,
+    "curved_qp_negative": 0,
+    "curved_qp_det_min": 1.894398185366922e-12,
+    "curved_volume_sum_m3": 0.00017999581127625355,
+    "curved_volume_relative_CAD_error": 3.692215422290701e-10,
+    "global_median_corner_volume_m3": 2.9022130934303347e-12,
+    "global_median_corner_hmax_mm": 0.39922017067775695,
+    "global_min_corner_quality": 0.3856751519842465
+  },
+  "m1_tet10_over_h0": 13.799945858148348,
+  "m1_median_tet_volume_over_h0": 0.004665306032561693,
+  "m1_tet10_over_h3": 1.2449963976505354,
+  "h3_tet10_20pct_volume_proxy": 102363.75,
+  "m1_vs_h3_20pct_tetcount_proxy_rel": -0.004002881879571651,
+  "historical_h3_tet10": 81891,
+  "historical_h3_pore_tri6": 866,
+  "qa_mesh_target_issues": [
+    "global unpaired median Tet10 volume ratio outside 0.65-0.95"
+  ],
+  "limits": "No original H0/M1 .msh in evidence; QP Jacobians, M1 SHA, Gmsh EXE SHA are reported by Windows QA/manifest, not independently recomputed. Radial weighted bin medians are NOT element medians. H3 size-field attribution follows published GEO provenance, not an attested original H0 mesher command.",
+  "next": "STOP; do not rerun Gmsh or launch M1 FEM without fresh authorization"
+}

@@ -1,0 +1,17 @@
+{
+  "protocol": "P10LS_INSTRUMENTED_SOURCE_ONLY",
+  "status": "PREPARED_NO_FEM",
+  "revision": "P10LS_M9_EDV_P1_P2_FACE_JUMP_PHYSICAL_DIAGNOSTIC_V1",
+  "source_count": 101,
+  "modified_pinned_sources": {
+    "stage3d10dd_4d_partition.hpp": "c7f1c93e39b1e583515f92df225a7ec00bb4963b4469963fca7c0f81ff9496cf",
+    "src/stage3d10p_partial_audit.cpp": "8702272907ce0bb3e9dba2226a52be30094863129311aa9554ae8b7c0ee2ecda"
+  },
+  "added_header_shas": {
+    "p10lq_tet10_face_recovery.hpp": "2f36ac7bd89b28721195673b264f9cc6420a8e4141e9634057f0aae5c7daf920",
+    "p10lr_tet10_face_jump.hpp": "771e01c45ae463beee9d018f03793f567558aaa29d0e02fad86170c1ec622c41",
+    "p10ls_face_jump_csv.hpp": "0908ce47eba3d9b74482ae1bf1360e550e2b6cc14a90516388126192b8c619dc"
+  },
+  "FEM_attempts": 0,
+  "mesh_generation_attempts": 0
+}

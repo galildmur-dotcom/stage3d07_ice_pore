@@ -1,0 +1,253 @@
+{
+  "stage": "P10PX",
+  "status": "PASS_REAL_ACCEPTED_M8_ALGOIM_SELECTED_TET10_ONLY",
+  "source_only": true,
+  "fem_started": false,
+  "mesh_generated": false,
+  "mesh_changed": false,
+  "gmsh_optimized": false,
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "geometry_triage_sha256": "2aad1e157e239f594398bab9fb13b872e74f659cc3a6df52f43139df494a8d5a",
+  "sample_file_sha256": "6716b40d58803f0f4d99ae2305fb5bcffea69d5999729fbc952003b60f788bc2",
+  "cxx_source_sha256": "e76d6c5d460a2f85baee14c7c617bb9cb68b3935593a11f9de2436e7242222f7",
+  "triage_source_sha256": "e2eab23775ce89f9d6b6add83ef57b72aca77299d5b51715f138f402a97f4f7f",
+  "accepted_m8": true,
+  "tet10_count": 12546,
+  "node_count": 18331,
+  "detj_samples": 338742,
+  "min_detj": 6.282764771199698e-13,
+  "multi_quartic_resultant_guard": "PASS_SKIP_EXIT3_SAMP0",
+  "all_sample_cases_are_real_m8_elements": true,
+  "unsampled_elements_not_approved_for_algoim": true,
+  "no_physical_EDV_or_adjoint_approval": true,
+  "algoim_spot_checks": [
+    {
+      "sample_index": 1,
+      "element_id": 6813,
+      "pole": "south",
+      "requested_physical_constraints": 6,
+      "retained_active_constraints_including_tetra": 4,
+      "q6_q8_cut_volume_relative_change": 4.502288396083097e-05,
+      "q8": {
+        "element_id": 6813,
+        "pole": "south",
+        "mode": 7,
+        "q": 8,
+        "tet_rel": 2.687658037255397e-06,
+        "cut_volume_m3": 5.596113329135864e-13,
+        "cut_fraction": 0.2861128755249511,
+        "nodes": 1713088,
+        "active_nodes": 186888
+      },
+      "records": [
+        {
+          "element_id": 6813,
+          "pole": "south",
+          "mode": 7,
+          "q": 2,
+          "tet_rel": 8.15269745061592e-05,
+          "cut_volume_m3": 5.595745305336651e-13,
+          "cut_fraction": 0.2860940595465638,
+          "nodes": 26720,
+          "active_nodes": 2908
+        },
+        {
+          "element_id": 6813,
+          "pole": "south",
+          "mode": 7,
+          "q": 3,
+          "tet_rel": 0.0005056298069686008,
+          "cut_volume_m3": 5.59406078424079e-13,
+          "cut_fraction": 0.2860079349192961,
+          "nodes": 90297,
+          "active_nodes": 9852
+        },
+        {
+          "element_id": 6813,
+          "pole": "south",
+          "mode": 7,
+          "q": 4,
+          "tet_rel": 0.000168522178979908,
+          "cut_volume_m3": 5.597090986587768e-13,
+          "cut_fraction": 0.2861628602855145,
+          "nodes": 214096,
+          "active_nodes": 23352
+        },
+        {
+          "element_id": 6813,
+          "pole": "south",
+          "mode": 7,
+          "q": 6,
+          "tet_rel": 2.363561764015442e-05,
+          "cut_volume_m3": 5.596365282296913e-13,
+          "cut_fraction": 0.2861257571517455,
+          "nodes": 722988,
+          "active_nodes": 78882
+        },
+        {
+          "element_id": 6813,
+          "pole": "south",
+          "mode": 7,
+          "q": 8,
+          "tet_rel": 2.687658037255397e-06,
+          "cut_volume_m3": 5.596113329135864e-13,
+          "cut_fraction": 0.2861128755249511,
+          "nodes": 1713088,
+          "active_nodes": 186888
+        }
+      ]
+    },
+    {
+      "sample_index": 3,
+      "element_id": 10725,
+      "pole": "north",
+      "requested_physical_constraints": 6,
+      "retained_active_constraints_including_tetra": 4,
+      "q6_q8_cut_volume_relative_change": 8.059915426470461e-05,
+      "q8": {
+        "element_id": 10725,
+        "pole": "north",
+        "mode": 7,
+        "q": 8,
+        "tet_rel": 6.055055667018898e-06,
+        "cut_volume_m3": 1.292314858861154e-12,
+        "cut_fraction": 0.7435111606455723,
+        "nodes": 928064,
+        "active_nodes": 207104
+      },
+      "records": [
+        {
+          "element_id": 10725,
+          "pole": "north",
+          "mode": 7,
+          "q": 2,
+          "tet_rel": 0.0001836730573316797,
+          "cut_volume_m3": 1.292714425856218e-12,
+          "cut_fraction": 0.7437410446542706,
+          "nodes": 14456,
+          "active_nodes": 3224
+        },
+        {
+          "element_id": 10725,
+          "pole": "north",
+          "mode": 7,
+          "q": 3,
+          "tet_rel": 0.0011391391996793,
+          "cut_volume_m3": 1.28973101603642e-12,
+          "cut_fraction": 0.742024591049648,
+          "nodes": 48960,
+          "active_nodes": 10926
+        },
+        {
+          "element_id": 10725,
+          "pole": "north",
+          "mode": 7,
+          "q": 4,
+          "tet_rel": 0.0003796655526983466,
+          "cut_volume_m3": 1.293169451722265e-12,
+          "cut_fraction": 0.7440028359719737,
+          "nodes": 115760,
+          "active_nodes": 25824
+        },
+        {
+          "element_id": 10725,
+          "pole": "north",
+          "mode": 7,
+          "q": 6,
+          "tet_rel": 5.324895455553268e-05,
+          "cut_volume_m3": 1.292419018345822e-12,
+          "cut_fraction": 0.7435710870163066,
+          "nodes": 391752,
+          "active_nodes": 87408
+        },
+        {
+          "element_id": 10725,
+          "pole": "north",
+          "mode": 7,
+          "q": 8,
+          "tet_rel": 6.055055667018898e-06,
+          "cut_volume_m3": 1.292314858861154e-12,
+          "cut_fraction": 0.7435111606455723,
+          "nodes": 928064,
+          "active_nodes": 207104
+        }
+      ]
+    },
+    {
+      "sample_index": 5,
+      "element_id": 10114,
+      "pole": "north",
+      "requested_physical_constraints": 6,
+      "retained_active_constraints_including_tetra": 4,
+      "q6_q8_cut_volume_relative_change": 1.197068986642179e-06,
+      "q8": {
+        "element_id": 10114,
+        "pole": "north",
+        "mode": 7,
+        "q": 8,
+        "tet_rel": 5.990741910730702e-07,
+        "cut_volume_m3": 1.009051977368937e-12,
+        "cut_fraction": 0.6324811315255058,
+        "nodes": 4384640,
+        "active_nodes": 154088
+      },
+      "records": [
+        {
+          "element_id": 10114,
+          "pole": "north",
+          "mode": 7,
+          "q": 2,
+          "tet_rel": 1.81722211691458e-05,
+          "cut_volume_m3": 1.009056643056284e-12,
+          "cut_fraction": 0.6324840560123297,
+          "nodes": 68512,
+          "active_nodes": 2394
+        },
+        {
+          "element_id": 10114,
+          "pole": "north",
+          "mode": 7,
+          "q": 3,
+          "tet_rel": 0.0001127040066649429,
+          "cut_volume_m3": 1.009023041030072e-12,
+          "cut_fraction": 0.6324629940174701,
+          "nodes": 231120,
+          "active_nodes": 8100
+        },
+        {
+          "element_id": 10114,
+          "pole": "north",
+          "mode": 7,
+          "q": 4,
+          "tet_rel": 3.756330128246749e-05,
+          "cut_volume_m3": 1.009061459356249e-12,
+          "cut_fraction": 0.6324870749042397,
+          "nodes": 547888,
+          "active_nodes": 19204
+        },
+        {
+          "element_id": 10114,
+          "pole": "north",
+          "mode": 7,
+          "q": 6,
+          "tet_rel": 5.268338107596339e-06,
+          "cut_volume_m3": 1.009053185273765e-12,
+          "cut_fraction": 0.6324818886490529,
+          "nodes": 1849494,
+          "active_nodes": 64998
+        },
+        {
+          "element_id": 10114,
+          "pole": "north",
+          "mode": 7,
+          "q": 8,
+          "tet_rel": 5.990741910730702e-07,
+          "cut_volume_m3": 1.009051977368937e-12,
+          "cut_fraction": 0.6324811315255058,
+          "nodes": 4384640,
+          "active_nodes": 154088
+        }
+      ]
+    }
+  ]
+}

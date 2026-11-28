@@ -1,0 +1,492 @@
+{
+  "protocol": "P10PS_AZIMUTHAL_REBIN_AND_VOLUME_SOURCE_ONLY",
+  "status": "PASS_PINNED_REAL_M19_M20_M21_READ_ONLY",
+  "negative_qa": "PASS_CONSERVATION_INVALID_GROUP_AND_ALTERNATING_SIGN",
+  "source_sha256": {
+    "M19": "033d6097783ec34edd1d0a256c013fe569e2cb54d7f8d392980a53d0183b5b46",
+    "M20": "ab5c98b6f3a3c4576eeb31027b8d8f7ef33f02a73a9f83d8827a067173c0d508",
+    "M21": "78c40462b9d4aed113555a6d0bdf211cd724f1517852290a3ef0d5b7e7f0924d"
+  },
+  "physical_scoped_meshes": {
+    "M19": 33810,
+    "M20": 41250,
+    "M21": 43774
+  },
+  "pairs": {
+    "M19_M20": {
+      "physical_signed4d": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.04227578841771322
+          ],
+          "min_relative_L1": 0.04227578841771322,
+          "max_relative_L1": 0.04227578841771322,
+          "mean_relative_L1": 0.04227578841771322
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.029212446463694034,
+            0.03045143969559623
+          ],
+          "min_relative_L1": 0.029212446463694034,
+          "max_relative_L1": 0.03045143969559623,
+          "mean_relative_L1": 0.02983194307964513
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.02456214177568245,
+            0.024650215773756406,
+            0.025313552058248652
+          ],
+          "min_relative_L1": 0.02456214177568245,
+          "max_relative_L1": 0.025313552058248652,
+          "mean_relative_L1": 0.02484196986922917
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.021524529912944592,
+            0.021498549826333466,
+            0.022134709434288146,
+            0.022290179601775876
+          ],
+          "min_relative_L1": 0.021498549826333466,
+          "max_relative_L1": 0.022290179601775876,
+          "mean_relative_L1": 0.02186199219383552
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.018395669776236814,
+            0.01852666129995578,
+            0.019163832056698686,
+            0.018899853488529503,
+            0.0187493409372477,
+            0.01904945895178389
+          ],
+          "min_relative_L1": 0.018395669776236814,
+          "max_relative_L1": 0.019163832056698686,
+          "mean_relative_L1": 0.01879746941840873
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.014667954063552521,
+            0.014667954063552528,
+            0.014667954063552518,
+            0.014667954063552533,
+            0.014667954063552528,
+            0.014667954063552523,
+            0.014667954063552525,
+            0.014667954063552528,
+            0.014667954063552513,
+            0.014667954063552525,
+            0.014667954063552523,
+            0.01466795406355253
+          ],
+          "min_relative_L1": 0.014667954063552513,
+          "max_relative_L1": 0.014667954063552533,
+          "mean_relative_L1": 0.014667954063552523
+        }
+      },
+      "mechanical_volume_m3": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.029573626723020337
+          ],
+          "min_relative_L1": 0.029573626723020337,
+          "max_relative_L1": 0.029573626723020337,
+          "mean_relative_L1": 0.029573626723020337
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.018860098593776402,
+            0.016661622423619883
+          ],
+          "min_relative_L1": 0.016661622423619883,
+          "max_relative_L1": 0.018860098593776402,
+          "mean_relative_L1": 0.017760860508698142
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.012278011511353744,
+            0.01453308470874661,
+            0.01630056759040007
+          ],
+          "min_relative_L1": 0.012278011511353744,
+          "max_relative_L1": 0.01630056759040007,
+          "mean_relative_L1": 0.014370554603500141
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.013325999916741512,
+            0.012509690263280037,
+            0.013826675792057496,
+            0.011124862532396744
+          ],
+          "min_relative_L1": 0.011124862532396744,
+          "max_relative_L1": 0.013826675792057496,
+          "mean_relative_L1": 0.012696807126118948
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.00897699161826007,
+            0.00959770500524599,
+            0.01046715659637326,
+            0.008265016253793344,
+            0.010009403997974228,
+            0.009489502098576472
+          ],
+          "min_relative_L1": 0.008265016253793344,
+          "max_relative_L1": 0.01046715659637326,
+          "mean_relative_L1": 0.009467629261703895
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.0070768418099365,
+            0.007076841809936521,
+            0.007076841809936555,
+            0.0070768418099365115,
+            0.00707684180993642,
+            0.00707684180993649,
+            0.007076841809936533,
+            0.007076841809936505,
+            0.007076841809936568,
+            0.0070768418099365045,
+            0.007076841809936552,
+            0.007076841809936564
+          ],
+          "min_relative_L1": 0.00707684180993642,
+          "max_relative_L1": 0.007076841809936568,
+          "mean_relative_L1": 0.007076841809936518
+        }
+      },
+      "thermal_volume_m3": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.017054053168413373
+          ],
+          "min_relative_L1": 0.017054053168413373,
+          "max_relative_L1": 0.017054053168413373,
+          "mean_relative_L1": 0.017054053168413373
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.0110035241045891,
+            0.010314153875854196
+          ],
+          "min_relative_L1": 0.010314153875854196,
+          "max_relative_L1": 0.0110035241045891,
+          "mean_relative_L1": 0.010658838990221648
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.009422294111191554,
+            0.009393337992280228,
+            0.008647690448241182
+          ],
+          "min_relative_L1": 0.008647690448241182,
+          "max_relative_L1": 0.009422294111191554,
+          "mean_relative_L1": 0.009154440850570988
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.008286247882791501,
+            0.007752938765147416,
+            0.007464022159731822,
+            0.0073443587387643575
+          ],
+          "min_relative_L1": 0.0073443587387643575,
+          "max_relative_L1": 0.008286247882791501,
+          "mean_relative_L1": 0.0077118918866087745
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.006940520529970909,
+            0.004908882459168039,
+            0.004804342112845779,
+            0.005873826944666398,
+            0.006797185782008722,
+            0.00742183597791842
+          ],
+          "min_relative_L1": 0.004804342112845779,
+          "max_relative_L1": 0.00742183597791842,
+          "mean_relative_L1": 0.006124432301096379
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.0032791868025595157,
+            0.0032791868025594836,
+            0.003279186802559491,
+            0.0032791868025595417,
+            0.003279186802559468,
+            0.0032791868025595044,
+            0.0032791868025595157,
+            0.0032791868025595318,
+            0.0032791868025595435,
+            0.0032791868025595114,
+            0.0032791868025594754,
+            0.0032791868025595144
+          ],
+          "min_relative_L1": 0.003279186802559468,
+          "max_relative_L1": 0.0032791868025595435,
+          "mean_relative_L1": 0.0032791868025595083
+        }
+      },
+      "global_derivative_change_m_inv": -0.0028439300815165805
+    },
+    "M20_M21": {
+      "physical_signed4d": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.039498832103549694
+          ],
+          "min_relative_L1": 0.039498832103549694,
+          "max_relative_L1": 0.039498832103549694,
+          "mean_relative_L1": 0.039498832103549694
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.026531523790679364,
+            0.027362889720694734
+          ],
+          "min_relative_L1": 0.026531523790679364,
+          "max_relative_L1": 0.027362889720694734,
+          "mean_relative_L1": 0.02694720675568705
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.022019417419422583,
+            0.021695510824093725,
+            0.021641532356180937
+          ],
+          "min_relative_L1": 0.021641532356180937,
+          "max_relative_L1": 0.022019417419422583,
+          "mean_relative_L1": 0.021785486866565746
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.018425677242088746,
+            0.01907718284015883,
+            0.018472917243737917,
+            0.019293879830381076
+          ],
+          "min_relative_L1": 0.018425677242088746,
+          "max_relative_L1": 0.019293879830381076,
+          "mean_relative_L1": 0.018817414289091644
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.01558115760522119,
+            0.015820774139759693,
+            0.01532691470702324,
+            0.01593411451775479,
+            0.015764393394088583,
+            0.01575894600593064
+          ],
+          "min_relative_L1": 0.01532691470702324,
+          "max_relative_L1": 0.01593411451775479,
+          "mean_relative_L1": 0.015697716728296358
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.011473735391116112,
+            0.011473735391116116,
+            0.011473735391116124,
+            0.011473735391116121,
+            0.01147373539111612,
+            0.01147373539111611,
+            0.011473735391116124,
+            0.01147373539111611,
+            0.011473735391116123,
+            0.011473735391116124,
+            0.011473735391116128,
+            0.01147373539111613
+          ],
+          "min_relative_L1": 0.01147373539111611,
+          "max_relative_L1": 0.01147373539111613,
+          "mean_relative_L1": 0.01147373539111612
+        }
+      },
+      "mechanical_volume_m3": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.03177771078743233
+          ],
+          "min_relative_L1": 0.03177771078743233,
+          "max_relative_L1": 0.03177771078743233,
+          "mean_relative_L1": 0.03177771078743233
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.019091501747885955,
+            0.02142680341851327
+          ],
+          "min_relative_L1": 0.019091501747885955,
+          "max_relative_L1": 0.02142680341851327,
+          "mean_relative_L1": 0.020259152583199613
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.014377523310720737,
+            0.015208187688298734,
+            0.015554829393522302
+          ],
+          "min_relative_L1": 0.014377523310720737,
+          "max_relative_L1": 0.015554829393522302,
+          "mean_relative_L1": 0.015046846797513924
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.013086715463396964,
+            0.012161184096943932,
+            0.01188371090614541,
+            0.01415566779100962
+          ],
+          "min_relative_L1": 0.01188371090614541,
+          "max_relative_L1": 0.01415566779100962,
+          "mean_relative_L1": 0.012821819564373982
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.008681104105222716,
+            0.010736339036977632,
+            0.010001838158566855,
+            0.008775497773706948,
+            0.010585683271653016,
+            0.008973749364308338
+          ],
+          "min_relative_L1": 0.008681104105222716,
+          "max_relative_L1": 0.010736339036977632,
+          "mean_relative_L1": 0.00962570195173925
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.006914590702740546,
+            0.0069145907027406165,
+            0.0069145907027406426,
+            0.00691459070274061,
+            0.0069145907027405975,
+            0.00691459070274065,
+            0.00691459070274066,
+            0.006914590702740622,
+            0.00691459070274057,
+            0.0069145907027406105,
+            0.006914590702740645,
+            0.0069145907027406035
+          ],
+          "min_relative_L1": 0.006914590702740546,
+          "max_relative_L1": 0.00691459070274066,
+          "mean_relative_L1": 0.006914590702740614
+        }
+      },
+      "thermal_volume_m3": {
+        "12_phi_sectors": {
+          "group_width_original_phi_bins": 1,
+          "offset_relative_L1": [
+            0.01724514946971221
+          ],
+          "min_relative_L1": 0.01724514946971221,
+          "max_relative_L1": 0.01724514946971221,
+          "mean_relative_L1": 0.01724514946971221
+        },
+        "6_phi_sectors": {
+          "group_width_original_phi_bins": 2,
+          "offset_relative_L1": [
+            0.012312311729158604,
+            0.011464821365520041
+          ],
+          "min_relative_L1": 0.011464821365520041,
+          "max_relative_L1": 0.012312311729158604,
+          "mean_relative_L1": 0.011888566547339323
+        },
+        "4_phi_sectors": {
+          "group_width_original_phi_bins": 3,
+          "offset_relative_L1": [
+            0.010127238176386168,
+            0.00890203030197673,
+            0.00950524664302777
+          ],
+          "min_relative_L1": 0.00890203030197673,
+          "max_relative_L1": 0.010127238176386168,
+          "mean_relative_L1": 0.009511505040463556
+        },
+        "3_phi_sectors": {
+          "group_width_original_phi_bins": 4,
+          "offset_relative_L1": [
+            0.009275754216034592,
+            0.00889440396564148,
+            0.006199304812457584,
+            0.007331468118819984
+          ],
+          "min_relative_L1": 0.006199304812457584,
+          "max_relative_L1": 0.009275754216034592,
+          "mean_relative_L1": 0.00792523277823841
+        },
+        "2_phi_sectors": {
+          "group_width_original_phi_bins": 6,
+          "offset_relative_L1": [
+            0.006749320514225568,
+            0.0053015593978848995,
+            0.005068193268634742,
+            0.005979237620839988,
+            0.0058215248949980425,
+            0.006309703966540898
+          ],
+          "min_relative_L1": 0.005068193268634742,
+          "max_relative_L1": 0.006749320514225568,
+          "mean_relative_L1": 0.005871589943854023
+        },
+        "1_phi_sectors": {
+          "group_width_original_phi_bins": 12,
+          "offset_relative_L1": [
+            0.002574854690252764,
+            0.0025748546902527644,
+            0.0025748546902527245,
+            0.002574854690252744,
+            0.002574854690252745,
+            0.0025748546902527613,
+            0.0025748546902527526,
+            0.002574854690252773,
+            0.0025748546902527904,
+            0.0025748546902528056,
+            0.002574854690252772,
+            0.0025748546902528064
+          ],
+          "min_relative_L1": 0.0025748546902527245,
+          "max_relative_L1": 0.0025748546902528064,
+          "mean_relative_L1": 0.002574854690252767
+        }
+      },
+      "global_derivative_change_m_inv": -0.0003554639084742895
+    }
+  },
+  "interpretation_limit": "Azimuthal grouping is a diagnostic, not a physical correction; a fixed spatial angular partition needs a conservative cut-cell or boundary-aware integration scheme before local error certification."
+}

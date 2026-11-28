@@ -1,0 +1,10 @@
+{
+  "protocol": "P10MH_M11_R2_READONLY_PREPARED",
+  "status": "PREPARED_NO_GMSH_NO_MESH_NO_FEM",
+  "M11_R2_sha256": "b3ad647bf3ac295c87f388782447efd33f880e11e331f497402c6596aca6c726",
+  "archive_sha256": "479037ec94a7b59d40eda48217b126c1c73067c16d3bb65b4a8fd3b81cc73300",
+  "archive_bytes": 1019993,
+  "files": 4,
+  "FEM_attempts": 0,
+  "mesh_attempts": 0
+}

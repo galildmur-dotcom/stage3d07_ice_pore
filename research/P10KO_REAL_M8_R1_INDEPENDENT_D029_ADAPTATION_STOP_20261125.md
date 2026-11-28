@@ -1,0 +1,14 @@
+# P10KO — M8 R1 independent geometry/adaptation decision, 2026-11-25
+
+**STOP: M8 R1 NOT ACCEPTED; DO NOT RUN FEM OR REPEAT THE CONSUMED M8 R1 GMSH ATTEMPT.**
+
+- User evidence: `P10KN_R1_M8_UNVERIFIED_EVIDENCE.zip`, actual native Gmsh 4.15.2 exit 0, mesh 22.772 s, guarded wall 24.025 s, one-shot marker consumed, FEM attempts 0.
+- M8 candidate exact SHA256 `34a1f57590a5193c6c8dc9b9b6deef41840a587f4d89cfbc7725ee7fedb4eef9`, 17,541 nodes, 11,976 Tet10, 604 pore Tri6, 10 CAD embedded points reported by native worker.
+- Reference accepted M7 R2 SHA256 `875c9177de24612d0078f7a792b4b7641a2e604973cb1353500710c87693bb3d`, 17,558 nodes and 12,001 Tet10. M8 contains 25 fewer Tet10 and 17 fewer nodes despite nominal local refinement; this is not by itself a mesh failure, but signals weak net adaptation.
+- **Independent 729QP D029 near-pole p0 Veff**: M8/M7 **N 0.9697823473**, **S 0.9690504238**, corresponding to only **3.0218% and 3.0950%** effective reduction. Both outside the predeclared 15–25% interval, ratios must lie within `[0.75,0.85]`. At 343QP the ratios are N0.9707680/S0.9705601, confirming the conclusion is robust to quadrature order.
+- All independent 27/343/729QP curved detJ minima are positive: `[8.85034648e-13, 8.80913917e-13, 8.80494902e-13]`; CAD 729QP closure relative `+7.23317e-9` is within 1e-6; all physical surface tags 2–9 present. **Canonical Gmsh minSICN/minSJ/gamma are not independently evaluated** in this environment; do not claim full D031 quality PASS. The D029 failure is sufficient for STOP.
+- M8 native mesh generation reports 31,812 size-callback calls, and exact P10KM source field SHA256 `235fc2e0e31d7e55dbf6d1d3ed4a127ca11903cf12a038ee1561006cc0134766`. Source field normalized κ has center mean 0.0363 across 1200 bins. In near-wall radial bins0–4 at the outermost polar μ bin, mean κ over source centers N0.3633 and S0.3433 (median N0.3241/S0.2386). Since nominal h³ multiplier is `1−0.2κ`, the mean local target volume reduction is much smaller than 20%. Positive smooth fields do not guarantee a 15–25% *regional* reduction. This is the likely source of under-refinement, compounded by discrete remeshing; it is an inference, not a measured causal decomposition.
+
+**Next P10KP SOURCE-ONLY**: adjust the distinct prospective M8 R2 field using a smooth *polar plateau* for d≤0.5mm, |μ|≥0.8, transitioning with C2 quintic taper outside; analytically enforce κ=1 in target polar regions before Gmsh. Preserve original M7 cumulative callback and 10 CAD seeds. Source-only checks should include quantitative regional κ and h³ distributions, no new mesh or FEM. Then prepare a **new distinct** one-shot M8 R2, separately guarded; never rerun M8 R1. Actual independent D029 and D031 must be repeated on future evidence before FEM.
+
+Independent machine-readable QA archive: `P10KO_M8_R1_INDEPENDENT_GEOMETRY_ADAPTATION_STOP_20261125.zip`, Library `libfile_489a5fc0b138819195fb817fc54b383f`.

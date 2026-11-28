@@ -1,0 +1,21 @@
+P10BM CONTROLLED GITHUB NEW-BRANCH PUSH (NO FORCE)
+time_local=2026-11-19T16:01:59.1870335+05:00
+project=G:\ildar\Stage3D07
+HEAD=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4
+BRANCH=research/p10bi-local-seven-sources-20261119
+PARENT=c0498f6dc98628b62eff996a76844297c7a35094
+COMMITS=56
+STAGED=0
+UNSTAGED_PRESERVED=7
+UNTRACKED_PRESERVED=4
+REMOTE=origin https://github.com/galildmur-dotcom/stage3d07_ice_pore.git
+TARGET_REMOTE_REF=refs/heads/research/p10bi-local-seven-sources-20261119
+REMOTE_HEAD_BEFORE=ABSENT
+PREVIEW: this operation publishes the full reachable 56-commit history.
+P10BL_AUDIT: reachable blobs 818, uncompressed bytes 15217564, max blob bytes 1450900.
+Only ONE NEW branch will be created. No GitHub master, research branch or tag update.
+CONFIRMATION=PUSH 56
+GIT_PUSH_ATTEMPT=ONE_REFSPEC_NO_FORCE_NO_TAGS
+GIT_PUSH_EXIT=0
+REMOTE_HEAD_AFTER=90fd2559c0224ac0a7d2dbe2fe081a6a319080e4
+RESULT=P10BM_REMOTE_BRANCH_PUBLISHED_AND_VERIFIED

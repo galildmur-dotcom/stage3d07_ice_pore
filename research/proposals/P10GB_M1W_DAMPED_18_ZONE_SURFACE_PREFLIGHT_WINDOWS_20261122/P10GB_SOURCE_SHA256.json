@@ -1,0 +1,28 @@
+{
+  "revision": "P10GB_R1_DAMPED_C1_18_SIGNED_ZONES_1D_2D_GATE_M1W_NO_FEM",
+  "parent_M0_msh_sha256": "926a9c903765ce77fd560300d10614d3cece3d4cd4d7813027e45e92d33870d6",
+  "parent_M0_geo_sha256": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+  "original_failed_M1_msh_sha256": "f281d253571db095b90790326f503dfa3f6fe3a1dc5cb5c904fca2787dfe4275",
+  "original_failed_M1_geo_sha256": "968ef2ed3f64160d51d1983ead31216758d164fa665fa7e6a9044f8fc04d64e8",
+  "parent_M1V_msh_sha256": "c3f69d3d6f3d88333f2aec7a5aa13db535f9eed4e76ba6c29bed4b88fa31ea06",
+  "parent_M1V_geo_sha256": "de15b2f1d6454f06cb2f53731936558288dce933afd1642aada82b42022886aa",
+  "candidate_name": "M1W_CANDIDATE",
+  "native_2d_preflight_required": true,
+  "native_3d_max_attempts": 1,
+  "FEM_max_attempts": 0,
+  "files": {
+    "P10GB_one_click_m1w.py": "a2040c9f48820e1aea066f66556f7c2f8b2f7783831ec9e2a2b71a61bb1b3f03",
+    "P10GB_adapt_math.py": "341133b8a77b8fa5f76863d41c47e7ab7ace204a4fa7aee916a4e18e811f3ef4",
+    "P10FX_uniform_math.py": "d6c6976bd4476566957572daecceea6f9dc14195b06ded3c7c8ba6e96e28ecdf",
+    "01_P10GB_PREFLIGHT_1D_2D_ONLY.cmd": "f0e038161bb51f7ec75353a94857b8dc7ecb63d80e056dfae86284ff4eefd11b",
+    "02_P10GB_ONE_M1W_3D_ONLY.cmd": "0c09f0ac16440c35682f6c4580a31ffb44b705a1fcb9f2e54c2cf97fd491e77c",
+    "README_P10GB_RU.md": "817444510e83e74512bda18965dc04b615c4c790d5a983bbfa219507bd0ee95a",
+    "P10FN_common.py": "97f1a05c4949ab97e8d344e4504bcd2fe80ffe43681146774924f45074d458b3",
+    "P10FN_mesh_qa.py": "d8912f166821c06826e8bc9e8474a09bc4b6b3a591c179360b61cc38f4fb0a2f",
+    "P10CK_curved_qp_audit.py": "6386d37ade7c6cadcfdfdb511e01a06310ea9c974ee4fd7878a704bcdac9dc90",
+    "M0.geo": "ac6981b04d205cc00bf50ddbaf6722c884af7189ef4e3e743253c754f69e62aa",
+    "sphere_pore_B6_refined.geo": "8029a6ed22bcf312701cd6abc46bbe5575e52df16fd5218dd936b01d5cd6fcf0",
+    "P10FX_REAL_M0_M1_SIGNED_18_ZONE_729QP.json": "47077642f63d7fb3ebc7ac7940f09901417128c845874ad2d9d90ec82e0f0249",
+    "P10GA_M0_M1V_SIGNED18_343_729QP.json": "d641a289676dad1b6bf6d9bb2f6e5e2fa979335dafb1820492b901c35dee4304"
+  }
+}
