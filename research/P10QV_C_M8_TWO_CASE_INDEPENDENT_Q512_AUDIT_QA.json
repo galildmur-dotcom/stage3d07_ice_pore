@@ -1,0 +1,131 @@
+{
+  "stage": "P10QV_C_INDEPENDENT_Q512_AUDIT",
+  "scope": "same two real M8 h8 multi cut; three axes; q256->q512",
+  "mesh_sha256_from_prior_validated_metadata": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "negative_one_percent_q512_corruption_rejected": true,
+  "both_local_empirical_gates": true,
+  "both_cut_relative_diagnostic_gates": false,
+  "not_full_178_cut": true,
+  "not_root_interval_certificate": true,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "cases": [
+    {
+      "case": 6,
+      "index": 19,
+      "active_constraints": [
+        0,
+        4
+      ],
+      "q512_max_pairwise_rel": 1.0332266488030609e-08,
+      "q256_to_q512_max_order_change_rel": 1.1256977729828586e-07,
+      "conditional_local_1e6_empirical_gate": true,
+      "conservative_cut_scale_m3": 6.178557610079484e-19,
+      "q512_max_pairwise_relative_to_cut": 1.8137738965103284e-05,
+      "q256_to_q512_max_order_change_relative_to_cut": 0.00019761019892018775,
+      "diagnostic_cut_relative_1e6_gate": false,
+      "axes": {
+        "0": {
+          "q128_to_q256_gradient_relative_to_full_child": 6.37179270814949e-07,
+          "q256_to_q512_gradient_relative_to_full_child": 1.6879956062545593e-08,
+          "q256_to_q512_gradient_relative_to_cut": 2.9631856394677766e-05,
+          "q256_to_q512_volume_relative_to_full_child": 1.6728379663137533e-08,
+          "q512_gradient_m3": 6.178630054936565e-19
+        },
+        "1": {
+          "q128_to_q256_gradient_relative_to_full_child": 1.1011373517746125e-06,
+          "q256_to_q512_gradient_relative_to_full_child": 1.1256977729828586e-07,
+          "q256_to_q512_gradient_relative_to_cut": 0.00019761019892018775,
+          "q256_to_q512_volume_relative_to_full_child": 1.111146425628771e-07,
+          "q512_gradient_m3": 6.178557610079484e-19
+        },
+        "2": {
+          "q128_to_q256_gradient_relative_to_full_child": 7.73125759609237e-09,
+          "q256_to_q512_gradient_relative_to_full_child": 4.767756738889471e-09,
+          "q256_to_q512_gradient_relative_to_cut": 8.369540921081316e-06,
+          "q256_to_q512_volume_relative_to_full_child": 4.712233795023558e-09,
+          "q512_gradient_m3": 6.178669675144596e-19
+        }
+      },
+      "pairwise": {
+        "0_1": {
+          "q256_relative_to_full_child": 8.901049107785782e-08,
+          "q512_relative_to_full_child": 6.679330157882448e-09,
+          "q512_relative_to_cut": 1.172520540442482e-05
+        },
+        "0_2": {
+          "q256_relative_to_full_child": 1.7994776471286903e-08,
+          "q512_relative_to_full_child": 3.652936330148161e-09,
+          "q512_relative_to_cut": 6.412533560678464e-06
+        },
+        "1_2": {
+          "q256_relative_to_full_child": 1.0700526754914472e-07,
+          "q512_relative_to_full_child": 1.0332266488030609e-08,
+          "q512_relative_to_cut": 1.8137738965103284e-05
+        }
+      },
+      "input_sha256": {
+        "q256_baseline": "5153a421c27952e61da0abf05698b0e8efe2648e87166f003a8103fab0fdcc96",
+        "q512_new": "9b682145eec146bd1be3875810ca7a21927180056636703f6a2f60c97475e705"
+      }
+    },
+    {
+      "case": 7,
+      "index": 10,
+      "active_constraints": [
+        1,
+        4
+      ],
+      "q512_max_pairwise_rel": 1.3975479352821633e-08,
+      "q256_to_q512_max_order_change_rel": 1.34408178956503e-07,
+      "conditional_local_1e6_empirical_gate": true,
+      "conservative_cut_scale_m3": 5.847776943480914e-17,
+      "q512_max_pairwise_relative_to_cut": 1.055298366970367e-06,
+      "q256_to_q512_max_order_change_relative_to_cut": 1.014925700789082e-05,
+      "diagnostic_cut_relative_1e6_gate": false,
+      "axes": {
+        "0": {
+          "q128_to_q256_gradient_relative_to_full_child": 1.0208487335681555e-06,
+          "q256_to_q512_gradient_relative_to_full_child": 1.34408178956503e-07,
+          "q256_to_q512_gradient_relative_to_cut": 1.014925700789082e-05,
+          "q256_to_q512_volume_relative_to_full_child": 1.330911398837508e-07,
+          "q512_gradient_m3": 5.847783114630373e-17
+        },
+        "1": {
+          "q128_to_q256_gradient_relative_to_full_child": 7.687856463294723e-10,
+          "q256_to_q512_gradient_relative_to_full_child": 6.383359595865448e-11,
+          "q256_to_q512_gradient_relative_to_cut": 4.820120145604428e-09,
+          "q256_to_q512_volume_relative_to_full_child": 6.315733141489374e-11,
+          "q512_gradient_m3": 5.847776943480914e-17
+        },
+        "2": {
+          "q128_to_q256_gradient_relative_to_full_child": 3.848840855821742e-09,
+          "q256_to_q512_gradient_relative_to_full_child": 1.006742107640383e-09,
+          "q256_to_q512_gradient_relative_to_cut": 7.601981122305487e-08,
+          "q256_to_q512_volume_relative_to_full_child": 9.97797676158533e-10,
+          "q512_gradient_m3": 5.8477769873756e-17
+        }
+      },
+      "pairwise": {
+        "0_1": {
+          "q256_relative_to_full_child": 1.2049653319964e-07,
+          "q512_relative_to_full_child": 1.3975479352821633e-08,
+          "q512_relative_to_cut": 1.055298366970367e-06
+        },
+        "0_2": {
+          "q256_relative_to_full_child": 1.1952536349509796e-07,
+          "q512_relative_to_full_child": 1.3876073353764645e-08,
+          "q512_relative_to_cut": 1.0477921494143505e-06
+        },
+        "1_2": {
+          "q256_relative_to_full_child": 9.711697045420487e-10,
+          "q512_relative_to_full_child": 9.940599905698885e-11,
+          "q512_relative_to_cut": 7.506217556016665e-09
+        }
+      },
+      "input_sha256": {
+        "q256_baseline": "b6e47fc8b8ed6998505ceb6cf44d373c67ab9e3b0670f4a1e7178ae47cde12c3",
+        "q512_new": "07b1a71ac5e1c5dbd9874a8e68be9dd53f8a70f85e6b1a2f4c9fd84f02ed8cc4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "stage": "P10QV_C_Q512_PILOT",
+  "case": 6,
+  "original_element": 5751,
+  "pilot_index": 19,
+  "active_constraints": [
+    0,
+    4
+  ],
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "source_child_sha256": "11b9a8ab4bbbc3e121308921ce96c95489e0832ce82a3a0204fc9fecea5e3e0e",
+  "previous_q256_sha256": "5153a421c27952e61da0abf05698b0e8efe2648e87166f003a8103fab0fdcc96",
+  "fixed_inner_budget": 128,
+  "t_orders": [
+    256,
+    512
+  ],
+  "all_178_cut_tested": false,
+  "root_interval_certificate_obtained": false,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "full_original_child_gradient_m3": 1.0846126088820453e-15,
+  "full_original_child_volume_m3": 6.508676774656234e-16,
+  "axes": {
+    "0": {
+      "reference_q256": {
+        "cut_gradient_m3": 6.178813137068393e-19,
+        "cut_volume_m3": 3.6542914443796833e-19,
+        "transverse_points": 32768
+      },
+      "new_q512": {
+        "cut_gradient_m3": 6.178630054936565e-19,
+        "cut_volume_m3": 3.654182564763492e-19,
+        "outer_t_order": 512,
+        "inner_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "critical_s_intervals_total": 2928,
+        "azimuth_degree_trims": 512,
+        "maximum_radial_reconstruction_rel": 7.971817480542655e-12,
+        "maximum_azimuth_reconstruction_rel": 4.816464105965503e-15,
+        "maximum_higher_ray_coefficient_rel": 3.3582867045376607e-12,
+        "maximum_trimmed_degree_coefficient_rel": 8.073975932214763e-11,
+        "critical_root_counts": {
+          "radial_double_root": 311,
+          "radial_origin": 139,
+          "radial_endpoint": 217,
+          "radial_degree_change": 379,
+          "azimuth_origin": 381,
+          "azimuth_endpoint": 313,
+          "azimuth_degree_change": 0,
+          "radial_azimuth_resultant": 801
+        }
+      },
+      "absolute_q256_to_q512_gradient_m3": 1.8308213182811872e-23,
+      "relative_q256_to_q512_gradient_to_full_child": 1.6879956062545593e-08,
+      "relative_q256_to_q512_volume_to_full_child": 1.6728379663137533e-08
+    },
+    "1": {
+      "reference_q256": {
+        "cut_gradient_m3": 6.179778556077851e-19,
+        "cut_volume_m3": 3.6548629200913243e-19,
+        "transverse_points": 32768
+      },
+      "new_q512": {
+        "cut_gradient_m3": 6.178557610079484e-19,
+        "cut_volume_m3": 3.654139710797951e-19,
+        "outer_t_order": 512,
+        "inner_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "critical_s_intervals_total": 2494,
+        "azimuth_degree_trims": 512,
+        "maximum_radial_reconstruction_rel": 1.9044533877582533e-11,
+        "maximum_azimuth_reconstruction_rel": 4.184167209954947e-15,
+        "maximum_higher_ray_coefficient_rel": 1.566037518233476e-13,
+        "maximum_trimmed_degree_coefficient_rel": 3.3556719620523525e-11,
+        "critical_root_counts": {
+          "radial_double_root": 361,
+          "radial_origin": 139,
+          "radial_endpoint": 155,
+          "radial_degree_change": 387,
+          "azimuth_origin": 131,
+          "azimuth_endpoint": 512,
+          "azimuth_degree_change": 0,
+          "radial_azimuth_resultant": 439
+        }
+      },
+      "absolute_q256_to_q512_gradient_m3": 1.2209459983676466e-22,
+      "relative_q256_to_q512_gradient_to_full_child": 1.1256977729828586e-07,
+      "relative_q256_to_q512_volume_to_full_child": 1.111146425628771e-07
+    },
+    "2": {
+      "reference_q256": {
+        "cut_gradient_m3": 6.178617963453845e-19,
+        "cut_volume_m3": 3.6541754096327356e-19,
+        "transverse_points": 32768
+      },
+      "new_q512": {
+        "cut_gradient_m3": 6.178669675144596e-19,
+        "cut_volume_m3": 3.654206080039394e-19,
+        "outer_t_order": 512,
+        "inner_nodes_per_t": 128,
+        "transverse_points": 65536,
+        "critical_s_intervals_total": 2597,
+        "azimuth_degree_trims": 511,
+        "maximum_radial_reconstruction_rel": 3.921968222512016e-12,
+        "maximum_azimuth_reconstruction_rel": 3.568667995654886e-15,
+        "maximum_higher_ray_coefficient_rel": 3.125270415572654e-12,
+        "maximum_trimmed_degree_coefficient_rel": 8.68223777573063e-12,
+        "critical_root_counts": {
+          "radial_double_root": 302,
+          "radial_origin": 0,
+          "radial_endpoint": 155,
+          "radial_degree_change": 349,
+          "azimuth_origin": 142,
+          "azimuth_endpoint": 512,
+          "azimuth_degree_change": 0,
+          "radial_azimuth_resultant": 679
+        }
+      },
+      "absolute_q256_to_q512_gradient_m3": 5.1711690750818616e-24,
+      "relative_q256_to_q512_gradient_to_full_child": 4.767756738889471e-09,
+      "relative_q256_to_q512_volume_to_full_child": 4.712233795023558e-09
+    }
+  },
+  "pairwise": {
+    "0_1": {
+      "q512_gradient_absolute_m3": 7.244485708125406e-24,
+      "q512_gradient_relative_to_full_child": 6.679330157882448e-09,
+      "q512_volume_relative_to_full_child": 6.58412869847871e-09
+    },
+    "0_2": {
+      "q512_gradient_absolute_m3": 3.962020803122001e-24,
+      "q512_gradient_relative_to_full_child": 3.652936330148161e-09,
+      "q512_volume_relative_to_full_child": 3.612911919879873e-09
+    },
+    "1_2": {
+      "q512_gradient_absolute_m3": 1.1206506511247407e-23,
+      "q512_gradient_relative_to_full_child": 1.0332266488030609e-08,
+      "q512_volume_relative_to_full_child": 1.0197040618358584e-08
+    }
+  },
+  "max_axis_pair_q512_relative_to_full_child": 1.0332266488030609e-08,
+  "max_order_q256_to_q512_relative_to_full_child": 1.1256977729828586e-07
+}
