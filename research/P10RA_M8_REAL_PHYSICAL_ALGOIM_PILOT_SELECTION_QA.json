@@ -1,0 +1,548 @@
+{
+  "protocol": "P10RA_ACCEPTED_M8_REAL_PHYSICAL_SELECTIVE_ALGOIM_PILOT_READ_ONLY",
+  "status": "PASS_M8_MESH_FACE_ADJACENCY_AND_PHYSICAL_CLOSURE_SELECTION_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "physical_global_D_R_jpeak_per_m": 2.3613330428527584,
+  "mesh_tet10_count": 12546,
+  "mesh_pore_tri6_count": 648,
+  "pore_adjacent_unique_tet10": 648,
+  "zone_counts": {
+    "core_0_8deg": 44,
+    "halo_8_23deg": 197,
+    "gauss_control_near_30deg": 4
+  },
+  "listed_pilot_tet10": 48,
+  "selected_tet10": [
+    {
+      "tet10_gmsh_element_id": 5770,
+      "tet10_msh_volume_ordinal_zero_based": 3773,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 10.198052529056778
+    },
+    {
+      "tet10_gmsh_element_id": 5843,
+      "tet10_msh_volume_ordinal_zero_based": 3846,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 10.475476759186446
+    },
+    {
+      "tet10_gmsh_element_id": 5932,
+      "tet10_msh_volume_ordinal_zero_based": 3935,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 4.60554833542249
+    },
+    {
+      "tet10_gmsh_element_id": 5942,
+      "tet10_msh_volume_ordinal_zero_based": 3945,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.081468651724046
+    },
+    {
+      "tet10_gmsh_element_id": 5964,
+      "tet10_msh_volume_ordinal_zero_based": 3967,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.910982911631269
+    },
+    {
+      "tet10_gmsh_element_id": 6039,
+      "tet10_msh_volume_ordinal_zero_based": 4042,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 2.313096322136858
+    },
+    {
+      "tet10_gmsh_element_id": 6092,
+      "tet10_msh_volume_ordinal_zero_based": 4095,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 5.7588427165654075
+    },
+    {
+      "tet10_gmsh_element_id": 6330,
+      "tet10_msh_volume_ordinal_zero_based": 4333,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 1.6100962627901927
+    },
+    {
+      "tet10_gmsh_element_id": 6734,
+      "tet10_msh_volume_ordinal_zero_based": 4737,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 7.56076330786472
+    },
+    {
+      "tet10_gmsh_element_id": 6753,
+      "tet10_msh_volume_ordinal_zero_based": 4756,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 9.585628667248983
+    },
+    {
+      "tet10_gmsh_element_id": 7043,
+      "tet10_msh_volume_ordinal_zero_based": 5046,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 4.259205163161711
+    },
+    {
+      "tet10_gmsh_element_id": 7066,
+      "tet10_msh_volume_ordinal_zero_based": 5069,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 7.487359929051361
+    },
+    {
+      "tet10_gmsh_element_id": 7144,
+      "tet10_msh_volume_ordinal_zero_based": 5147,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.264589522906657
+    },
+    {
+      "tet10_gmsh_element_id": 8132,
+      "tet10_msh_volume_ordinal_zero_based": 6135,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.43017765086553
+    },
+    {
+      "tet10_gmsh_element_id": 9323,
+      "tet10_msh_volume_ordinal_zero_based": 7326,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 9.58131726934115
+    },
+    {
+      "tet10_gmsh_element_id": 9326,
+      "tet10_msh_volume_ordinal_zero_based": 7329,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 4.899448760273394
+    },
+    {
+      "tet10_gmsh_element_id": 9327,
+      "tet10_msh_volume_ordinal_zero_based": 7330,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.198142365243367
+    },
+    {
+      "tet10_gmsh_element_id": 10112,
+      "tet10_msh_volume_ordinal_zero_based": 8115,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 5.2405831988967355
+    },
+    {
+      "tet10_gmsh_element_id": 10113,
+      "tet10_msh_volume_ordinal_zero_based": 8116,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.6953532333755765
+    },
+    {
+      "tet10_gmsh_element_id": 11923,
+      "tet10_msh_volume_ordinal_zero_based": 9926,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.756975572454872
+    },
+    {
+      "tet10_gmsh_element_id": 11925,
+      "tet10_msh_volume_ordinal_zero_based": 9928,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 10.063387001806234
+    },
+    {
+      "tet10_gmsh_element_id": 13734,
+      "tet10_msh_volume_ordinal_zero_based": 11737,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 11.125192534179691
+    },
+    {
+      "tet10_gmsh_element_id": 13737,
+      "tet10_msh_volume_ordinal_zero_based": 11740,
+      "pole": "north",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 9.61080986722175
+    },
+    {
+      "tet10_gmsh_element_id": 6262,
+      "tet10_msh_volume_ordinal_zero_based": 4265,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 10.222661788115655
+    },
+    {
+      "tet10_gmsh_element_id": 6720,
+      "tet10_msh_volume_ordinal_zero_based": 4723,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 3.523356810455987
+    },
+    {
+      "tet10_gmsh_element_id": 7122,
+      "tet10_msh_volume_ordinal_zero_based": 5125,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.700253000353077
+    },
+    {
+      "tet10_gmsh_element_id": 7125,
+      "tet10_msh_volume_ordinal_zero_based": 5128,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 2.1958073815263313
+    },
+    {
+      "tet10_gmsh_element_id": 7231,
+      "tet10_msh_volume_ordinal_zero_based": 5234,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 7.113103082212444
+    },
+    {
+      "tet10_gmsh_element_id": 8882,
+      "tet10_msh_volume_ordinal_zero_based": 6885,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 3.3966663376393518
+    },
+    {
+      "tet10_gmsh_element_id": 9613,
+      "tet10_msh_volume_ordinal_zero_based": 7616,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 10.466389916859882
+    },
+    {
+      "tet10_gmsh_element_id": 9640,
+      "tet10_msh_volume_ordinal_zero_based": 7643,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.315680908273407
+    },
+    {
+      "tet10_gmsh_element_id": 9641,
+      "tet10_msh_volume_ordinal_zero_based": 7644,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.858164891685615
+    },
+    {
+      "tet10_gmsh_element_id": 9659,
+      "tet10_msh_volume_ordinal_zero_based": 7662,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 3.6309137401901577
+    },
+    {
+      "tet10_gmsh_element_id": 9662,
+      "tet10_msh_volume_ordinal_zero_based": 7665,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 5.182922508251772
+    },
+    {
+      "tet10_gmsh_element_id": 10383,
+      "tet10_msh_volume_ordinal_zero_based": 8386,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 2.621034946338274
+    },
+    {
+      "tet10_gmsh_element_id": 11010,
+      "tet10_msh_volume_ordinal_zero_based": 9013,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 7.448806417374502
+    },
+    {
+      "tet10_gmsh_element_id": 11022,
+      "tet10_msh_volume_ordinal_zero_based": 9025,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.084367343923612
+    },
+    {
+      "tet10_gmsh_element_id": 11023,
+      "tet10_msh_volume_ordinal_zero_based": 9026,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.876559403633935
+    },
+    {
+      "tet10_gmsh_element_id": 11678,
+      "tet10_msh_volume_ordinal_zero_based": 9681,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.95793668718599
+    },
+    {
+      "tet10_gmsh_element_id": 12913,
+      "tet10_msh_volume_ordinal_zero_based": 10916,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 11.78463992798161
+    },
+    {
+      "tet10_gmsh_element_id": 13022,
+      "tet10_msh_volume_ordinal_zero_based": 11025,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.307213409400075
+    },
+    {
+      "tet10_gmsh_element_id": 13023,
+      "tet10_msh_volume_ordinal_zero_based": 11026,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 8.1606171505885
+    },
+    {
+      "tet10_gmsh_element_id": 13025,
+      "tet10_msh_volume_ordinal_zero_based": 11028,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 6.334271063219056
+    },
+    {
+      "tet10_gmsh_element_id": 13962,
+      "tet10_msh_volume_ordinal_zero_based": 11965,
+      "pole": "south",
+      "zone": "core_0_8deg",
+      "nearest_pore_face_center_angle_deg": 9.38316014815968
+    },
+    {
+      "tet10_gmsh_element_id": 8140,
+      "tet10_msh_volume_ordinal_zero_based": 6143,
+      "pole": "north",
+      "zone": "gauss_control_near_30deg",
+      "nearest_pore_face_center_angle_deg": 29.71508367526202
+    },
+    {
+      "tet10_gmsh_element_id": 8702,
+      "tet10_msh_volume_ordinal_zero_based": 6705,
+      "pole": "north",
+      "zone": "gauss_control_near_30deg",
+      "nearest_pore_face_center_angle_deg": 29.945582986850063
+    },
+    {
+      "tet10_gmsh_element_id": 6375,
+      "tet10_msh_volume_ordinal_zero_based": 4378,
+      "pole": "south",
+      "zone": "gauss_control_near_30deg",
+      "nearest_pore_face_center_angle_deg": 30.11466451296778
+    },
+    {
+      "tet10_gmsh_element_id": 11709,
+      "tet10_msh_volume_ordinal_zero_based": 9712,
+      "pole": "south",
+      "zone": "gauss_control_near_30deg",
+      "nearest_pore_face_center_angle_deg": 30.123139575964107
+    }
+  ],
+  "r0_polar_real_4d_bin_contributions": [
+    {
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "actual_mechanical_signed_per_m": -0.02874138117638603,
+      "actual_thermal_signed_per_m": -0.000004312528010533298,
+      "actual_total_signed_per_m": -0.028745693704396565,
+      "actual_total_abs_4d_L1_per_m": 0.04070151645077862
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 1,
+      "actual_mechanical_signed_per_m": -0.031522280468272934,
+      "actual_thermal_signed_per_m": -0.000003788830079788851,
+      "actual_total_signed_per_m": -0.03152606929835272,
+      "actual_total_abs_4d_L1_per_m": 0.0451610560255241
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 2,
+      "actual_mechanical_signed_per_m": -0.029789581557785633,
+      "actual_thermal_signed_per_m": -0.000004255677250303653,
+      "actual_total_signed_per_m": -0.02979383723503594,
+      "actual_total_abs_4d_L1_per_m": 0.042382848758622166
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 3,
+      "actual_mechanical_signed_per_m": -0.02808939823426381,
+      "actual_thermal_signed_per_m": -0.0000038121536971880872,
+      "actual_total_signed_per_m": -0.028093210387961,
+      "actual_total_abs_4d_L1_per_m": 0.042279954352435895
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 4,
+      "actual_mechanical_signed_per_m": -0.03166821218402158,
+      "actual_thermal_signed_per_m": -0.000004535139509677622,
+      "actual_total_signed_per_m": -0.03167274732353125,
+      "actual_total_abs_4d_L1_per_m": 0.04426344117981968
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "actual_mechanical_signed_per_m": -0.03628484174295894,
+      "actual_thermal_signed_per_m": -0.000004651852634609127,
+      "actual_total_signed_per_m": -0.03628949359559355,
+      "actual_total_abs_4d_L1_per_m": 0.04875785472585275
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "actual_mechanical_signed_per_m": -0.04100897195445653,
+      "actual_thermal_signed_per_m": -0.0000043551732068737075,
+      "actual_total_signed_per_m": -0.04101332712766341,
+      "actual_total_abs_4d_L1_per_m": 0.05409972189892305
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 7,
+      "actual_mechanical_signed_per_m": -0.03489477812278348,
+      "actual_thermal_signed_per_m": -0.000004699569785061435,
+      "actual_total_signed_per_m": -0.03489947769256854,
+      "actual_total_abs_4d_L1_per_m": 0.046661835160050416
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 8,
+      "actual_mechanical_signed_per_m": -0.027470306247132828,
+      "actual_thermal_signed_per_m": -0.000004285058266529364,
+      "actual_total_signed_per_m": -0.027474591305399358,
+      "actual_total_abs_4d_L1_per_m": 0.04111993481109309
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "actual_mechanical_signed_per_m": -0.03028839103206527,
+      "actual_thermal_signed_per_m": -0.000005211487904169003,
+      "actual_total_signed_per_m": -0.03029360251996944,
+      "actual_total_abs_4d_L1_per_m": 0.04105295762768513
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "actual_mechanical_signed_per_m": -0.03475008731263981,
+      "actual_thermal_signed_per_m": -0.000005305029123427918,
+      "actual_total_signed_per_m": -0.03475539234176324,
+      "actual_total_abs_4d_L1_per_m": 0.0435853589503475
+    },
+    {
+      "mu_bin": 0,
+      "phi_bin": 11,
+      "actual_mechanical_signed_per_m": -0.03432206284271386,
+      "actual_thermal_signed_per_m": -0.000004623732345471873,
+      "actual_total_signed_per_m": -0.03432668657505933,
+      "actual_total_abs_4d_L1_per_m": 0.0480777556215797
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "actual_mechanical_signed_per_m": -0.03389800529308665,
+      "actual_thermal_signed_per_m": -0.000001945202636998241,
+      "actual_total_signed_per_m": -0.03389995049572365,
+      "actual_total_abs_4d_L1_per_m": 0.05024232047927886
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 1,
+      "actual_mechanical_signed_per_m": -0.04055726566263872,
+      "actual_thermal_signed_per_m": -0.0000014557391957645903,
+      "actual_total_signed_per_m": -0.04055872140183448,
+      "actual_total_abs_4d_L1_per_m": 0.057920818530332104
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 2,
+      "actual_mechanical_signed_per_m": -0.040462108188165945,
+      "actual_thermal_signed_per_m": -0.0000012634027633515109,
+      "actual_total_signed_per_m": -0.040463371590929297,
+      "actual_total_abs_4d_L1_per_m": 0.05829070800497752
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "actual_mechanical_signed_per_m": -0.04446919983251581,
+      "actual_thermal_signed_per_m": -0.0000012951048990769815,
+      "actual_total_signed_per_m": -0.04447049493741489,
+      "actual_total_abs_4d_L1_per_m": 0.06328809471473894
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 4,
+      "actual_mechanical_signed_per_m": -0.04143335161648775,
+      "actual_thermal_signed_per_m": -0.0000011722234607987855,
+      "actual_total_signed_per_m": -0.04143452383994855,
+      "actual_total_abs_4d_L1_per_m": 0.058238511781225855
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "actual_mechanical_signed_per_m": -0.047950627599238675,
+      "actual_thermal_signed_per_m": -6.612290160011149e-7,
+      "actual_total_signed_per_m": -0.047951288828254675,
+      "actual_total_abs_4d_L1_per_m": 0.06302216975578094
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "actual_mechanical_signed_per_m": -0.035614860713352604,
+      "actual_thermal_signed_per_m": -0.0000012883502237312738,
+      "actual_total_signed_per_m": -0.03561614906357633,
+      "actual_total_abs_4d_L1_per_m": 0.05321517005840448
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 7,
+      "actual_mechanical_signed_per_m": -0.03284338665259581,
+      "actual_thermal_signed_per_m": -0.0000021489812610888086,
+      "actual_total_signed_per_m": -0.0328455356338569,
+      "actual_total_abs_4d_L1_per_m": 0.0514411253276448
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 8,
+      "actual_mechanical_signed_per_m": -0.03580444123990454,
+      "actual_thermal_signed_per_m": -0.0000015839976562732987,
+      "actual_total_signed_per_m": -0.035806025237560817,
+      "actual_total_abs_4d_L1_per_m": 0.051532621243553366
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 9,
+      "actual_mechanical_signed_per_m": -0.04214257010914396,
+      "actual_thermal_signed_per_m": -0.0000014246537045937941,
+      "actual_total_signed_per_m": -0.04214399476284856,
+      "actual_total_abs_4d_L1_per_m": 0.060087640319274535
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 10,
+      "actual_mechanical_signed_per_m": -0.03806069118394347,
+      "actual_thermal_signed_per_m": -0.0000014383992032377596,
+      "actual_total_signed_per_m": -0.03806212958314671,
+      "actual_total_abs_4d_L1_per_m": 0.05407117907168121
+    },
+    {
+      "mu_bin": 9,
+      "phi_bin": 11,
+      "actual_mechanical_signed_per_m": -0.03202125332477524,
+      "actual_thermal_signed_per_m": -0.0000017468050008627648,
+      "actual_total_signed_per_m": -0.0320230001297761,
+      "actual_total_abs_4d_L1_per_m": 0.046872770622274317
+    }
+  ],
+  "warning": "Bin totals are real physical results but CANNOT be assigned to individual selected Tet10. The archived ZIP lacks physical QP integrand/state/adjoint values. No Algoim evaluation, altered FEM quadrature, or A/B derivative is claimed."
+}
