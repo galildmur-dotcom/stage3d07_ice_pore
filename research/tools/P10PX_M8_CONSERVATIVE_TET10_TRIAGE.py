@@ -127,9 +127,10 @@ def candidate_masks(lo, hi, ir, im, ip):
     g_lo=mu0**2*(sqmin[:, 0]+sqmin[:, 1])-(1-mu0**2)*sqmax[:, 2]
     g_hi=mu0**2*(sqmax[:, 0]+sqmax[:, 1])-(1-mu0**2)*sqmin[:, 2]
     cond.append(halfspace_lte(g_lo,g_hi))
-    # Target 30-degree azimuth wedges adjacent to phi=0 (bins 5 and 6).
-    if ip not in [5, 6]:
-        raise ValueError("this source-only audit is limited to azimuth bins 5/6")
+    # Any one of the twelve 30-degree azimuth wedges. Each is a convex
+    # intersection of two oriented half-planes through the polar axis.
+    if not 0<=ip<12:
+        raise ValueError("azimuth bin must be in 0..11")
     lower=-math.pi+2*math.pi*ip/12
     upper=lower+math.pi/6
     gl,gh=signed_interval(lo,hi,-math.sin(lower),math.cos(lower))

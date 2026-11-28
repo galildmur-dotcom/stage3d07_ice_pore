@@ -1,0 +1,464 @@
+{
+  "stage": "P10PY",
+  "status": "PASS_ALL_48_POLE_BINS_HREF_GEOMETRY_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "physical_EDV_not_validated": true,
+  "max_depth": 12,
+  "all_azimuthal_bins": true,
+  "total_tested_bin_combinations": 48,
+  "independent_subcell_volume_partition_rel": 1.0393321315655367e-15,
+  "metric": "reference-volume fraction of original M8 candidate Tet10-bin pairs",
+  "groups": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "candidate_tet_bin_pairs": 1362,
+      "series": [
+        {
+          "depth": 0,
+          "uncertain_reference_fraction": 1.0,
+          "multi_quartic_reference_fraction": 0.9985315712187959,
+          "one_quartic_reference_fraction": 0.0014684287812041115,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.0
+        },
+        {
+          "depth": 1,
+          "uncertain_reference_fraction": 0.7859765051395007,
+          "multi_quartic_reference_fraction": 0.7826725403817915,
+          "one_quartic_reference_fraction": 0.003303964757709251,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.21402349486049926
+        },
+        {
+          "depth": 2,
+          "uncertain_reference_fraction": 0.5736049926578561,
+          "multi_quartic_reference_fraction": 0.5649779735682819,
+          "one_quartic_reference_fraction": 0.008627019089574155,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.4263950073421439
+        },
+        {
+          "depth": 3,
+          "uncertain_reference_fraction": 0.3859214390602056,
+          "multi_quartic_reference_fraction": 0.37867107195301025,
+          "one_quartic_reference_fraction": 0.007250367107195301,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.6140785609397944
+        },
+        {
+          "depth": 4,
+          "uncertain_reference_fraction": 0.26762114537444937,
+          "multi_quartic_reference_fraction": 0.2599577826725404,
+          "one_quartic_reference_fraction": 0.007663362701908957,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.7323788546255506
+        },
+        {
+          "depth": 5,
+          "uncertain_reference_fraction": 0.19575991189427314,
+          "multi_quartic_reference_fraction": 0.18320943465491923,
+          "one_quartic_reference_fraction": 0.012550477239353892,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.8042400881057269
+        },
+        {
+          "depth": 6,
+          "uncertain_reference_fraction": 0.1505254221732746,
+          "multi_quartic_reference_fraction": 0.129233204845815,
+          "one_quartic_reference_fraction": 0.021292217327459617,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.8494745778267254
+        },
+        {
+          "depth": 7,
+          "uncertain_reference_fraction": 0.12614147393538913,
+          "multi_quartic_reference_fraction": 0.09446127019089574,
+          "one_quartic_reference_fraction": 0.031680203744493395,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.8738585260646109
+        },
+        {
+          "depth": 8,
+          "uncertain_reference_fraction": 0.11019812316446402,
+          "multi_quartic_reference_fraction": 0.06437855635095448,
+          "one_quartic_reference_fraction": 0.045819566813509544,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.889801876835536
+        },
+        {
+          "depth": 9,
+          "uncertain_reference_fraction": 0.09803482929515418,
+          "multi_quartic_reference_fraction": 0.03988132112701909,
+          "one_quartic_reference_fraction": 0.05812769594346549,
+          "certified_inside_fraction": 3.585031204111601e-05,
+          "certified_outside_fraction": 0.9019293203928047
+        },
+        {
+          "depth": 10,
+          "uncertain_reference_fraction": 0.08682013468245228,
+          "multi_quartic_reference_fraction": 0.019987982975403818,
+          "one_quartic_reference_fraction": 0.06658119952276065,
+          "certified_inside_fraction": 0.0006151913546255507,
+          "certified_outside_fraction": 0.9125646739629222
+        },
+        {
+          "depth": 11,
+          "uncertain_reference_fraction": 0.07468587956589574,
+          "multi_quartic_reference_fraction": 0.0071987426578560935,
+          "one_quartic_reference_fraction": 0.06659159611325256,
+          "certified_inside_fraction": 0.0035101040519456683,
+          "certified_outside_fraction": 0.9218040163821586
+        },
+        {
+          "depth": 12,
+          "uncertain_reference_fraction": 0.0614047729671439,
+          "multi_quartic_reference_fraction": 0.0026554326128854625,
+          "one_quartic_reference_fraction": 0.05699339207048458,
+          "certified_inside_fraction": 0.00965735705763583,
+          "certified_outside_fraction": 0.9289378699752202
+        }
+      ],
+      "multi_quartic_reduction_factor": 376.03348184150127
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "candidate_tet_bin_pairs": 1417,
+      "series": [
+        {
+          "depth": 0,
+          "uncertain_reference_fraction": 1.0,
+          "multi_quartic_reference_fraction": 1.0,
+          "one_quartic_reference_fraction": 0.0,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.0
+        },
+        {
+          "depth": 1,
+          "uncertain_reference_fraction": 0.7914608327452364,
+          "multi_quartic_reference_fraction": 0.7872265349329569,
+          "one_quartic_reference_fraction": 0.004234297812279464,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.2085391672547636
+        },
+        {
+          "depth": 2,
+          "uncertain_reference_fraction": 0.5875088214537756,
+          "multi_quartic_reference_fraction": 0.5800988002822866,
+          "one_quartic_reference_fraction": 0.007410021171489062,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.4124911785462244
+        },
+        {
+          "depth": 3,
+          "uncertain_reference_fraction": 0.4028757939308398,
+          "multi_quartic_reference_fraction": 0.3960832745236415,
+          "one_quartic_reference_fraction": 0.006792519407198307,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.5971242060691602
+        },
+        {
+          "depth": 4,
+          "uncertain_reference_fraction": 0.2855504587155963,
+          "multi_quartic_reference_fraction": 0.27492060691601977,
+          "one_quartic_reference_fraction": 0.01062985179957657,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.7144495412844036
+        },
+        {
+          "depth": 5,
+          "uncertain_reference_fraction": 0.2154199011997177,
+          "multi_quartic_reference_fraction": 0.19546136203246295,
+          "one_quartic_reference_fraction": 0.019958539167254763,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.7845800988002822
+        },
+        {
+          "depth": 6,
+          "uncertain_reference_fraction": 0.17105901552575864,
+          "multi_quartic_reference_fraction": 0.13839758292166549,
+          "one_quartic_reference_fraction": 0.032661432604093155,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.8289409844742414
+        },
+        {
+          "depth": 7,
+          "uncertain_reference_fraction": 0.14376212949894143,
+          "multi_quartic_reference_fraction": 0.09873412138320395,
+          "one_quartic_reference_fraction": 0.045028008115737476,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.8562378705010586
+        },
+        {
+          "depth": 8,
+          "uncertain_reference_fraction": 0.1265134306633733,
+          "multi_quartic_reference_fraction": 0.06332425458715596,
+          "one_quartic_reference_fraction": 0.06316160903316867,
+          "certified_inside_fraction": 1.92969301340861e-05,
+          "certified_outside_fraction": 0.8734672724064926
+        },
+        {
+          "depth": 9,
+          "uncertain_reference_fraction": 0.11322473756175018,
+          "multi_quartic_reference_fraction": 0.034673826746647846,
+          "one_quartic_reference_fraction": 0.07829729401905434,
+          "certified_inside_fraction": 0.0001998610621030346,
+          "certified_outside_fraction": 0.8865754013761468
+        },
+        {
+          "depth": 10,
+          "uncertain_reference_fraction": 0.09987677531757233,
+          "multi_quartic_reference_fraction": 0.015673931501411432,
+          "one_quartic_reference_fraction": 0.0832338622529993,
+          "certified_inside_fraction": 0.00213851336450247,
+          "certified_outside_fraction": 0.8979847113179252
+        },
+        {
+          "depth": 11,
+          "uncertain_reference_fraction": 0.08458533653846154,
+          "multi_quartic_reference_fraction": 0.005585427509703599,
+          "one_quartic_reference_fraction": 0.07687724671400847,
+          "certified_inside_fraction": 0.007580592250352858,
+          "certified_outside_fraction": 0.9078340712111856
+        },
+        {
+          "depth": 12,
+          "uncertain_reference_fraction": 0.06842760343154553,
+          "multi_quartic_reference_fraction": 0.00245966941601976,
+          "one_quartic_reference_fraction": 0.06302411840596331,
+          "certified_inside_fraction": 0.015979925679251942,
+          "certified_outside_fraction": 0.9155924708892026
+        }
+      ],
+      "multi_quartic_reduction_factor": 406.55869991594284
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "candidate_tet_bin_pairs": 3132,
+      "series": [
+        {
+          "depth": 0,
+          "uncertain_reference_fraction": 1.0,
+          "multi_quartic_reference_fraction": 0.4447637292464879,
+          "one_quartic_reference_fraction": 0.5367177522349936,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.0
+        },
+        {
+          "depth": 1,
+          "uncertain_reference_fraction": 0.7683588761174968,
+          "multi_quartic_reference_fraction": 0.28671775223499363,
+          "one_quartic_reference_fraction": 0.4471583652618135,
+          "certified_inside_fraction": 0.0004789272030651341,
+          "certified_outside_fraction": 0.23116219667943805
+        },
+        {
+          "depth": 2,
+          "uncertain_reference_fraction": 0.5676085568326947,
+          "multi_quartic_reference_fraction": 0.17536717752234993,
+          "one_quartic_reference_fraction": 0.3400383141762452,
+          "certified_inside_fraction": 0.004789272030651341,
+          "certified_outside_fraction": 0.4276021711366539
+        },
+        {
+          "depth": 3,
+          "uncertain_reference_fraction": 0.41606800766283525,
+          "multi_quartic_reference_fraction": 0.10424648786717752,
+          "one_quartic_reference_fraction": 0.24780491698595147,
+          "certified_inside_fraction": 0.01532567049808429,
+          "certified_outside_fraction": 0.5686063218390804
+        },
+        {
+          "depth": 4,
+          "uncertain_reference_fraction": 0.32157966155810985,
+          "multi_quartic_reference_fraction": 0.062639687100894,
+          "one_quartic_reference_fraction": 0.19133141762452108,
+          "certified_inside_fraction": 0.0280970625798212,
+          "certified_outside_fraction": 0.650323275862069
+        },
+        {
+          "depth": 5,
+          "uncertain_reference_fraction": 0.2488625478927203,
+          "multi_quartic_reference_fraction": 0.03731641123882503,
+          "one_quartic_reference_fraction": 0.1470705619412516,
+          "certified_inside_fraction": 0.04234514687100894,
+          "certified_outside_fraction": 0.7087923052362708
+        },
+        {
+          "depth": 6,
+          "uncertain_reference_fraction": 0.19493833812260536,
+          "multi_quartic_reference_fraction": 0.02216036079182631,
+          "one_quartic_reference_fraction": 0.11445861270753512,
+          "certified_inside_fraction": 0.0556503432311622,
+          "certified_outside_fraction": 0.7494113186462324
+        },
+        {
+          "depth": 7,
+          "uncertain_reference_fraction": 0.15427691969987228,
+          "multi_quartic_reference_fraction": 0.013616997924648787,
+          "one_quartic_reference_fraction": 0.08959430874840357,
+          "certified_inside_fraction": 0.06785799808429119,
+          "certified_outside_fraction": 0.7778650822158365
+        },
+        {
+          "depth": 8,
+          "uncertain_reference_fraction": 0.12193561422413793,
+          "multi_quartic_reference_fraction": 0.00821285320881226,
+          "one_quartic_reference_fraction": 0.07029254469987228,
+          "certified_inside_fraction": 0.07884339080459771,
+          "certified_outside_fraction": 0.7992209949712644
+        },
+        {
+          "depth": 9,
+          "uncertain_reference_fraction": 0.09639220645753512,
+          "multi_quartic_reference_fraction": 0.005013769157088122,
+          "one_quartic_reference_fraction": 0.0550922184307152,
+          "certified_inside_fraction": 0.08837890625,
+          "certified_outside_fraction": 0.8152288872924649
+        },
+        {
+          "depth": 10,
+          "uncertain_reference_fraction": 0.07626697447717114,
+          "multi_quartic_reference_fraction": 0.003074363425925926,
+          "one_quartic_reference_fraction": 0.04327088571599617,
+          "certified_inside_fraction": 0.09635011324632822,
+          "certified_outside_fraction": 0.8273829122765006
+        },
+        {
+          "depth": 11,
+          "uncertain_reference_fraction": 0.06047001591435185,
+          "multi_quartic_reference_fraction": 0.0019135262013090678,
+          "one_quartic_reference_fraction": 0.03406665943287037,
+          "certified_inside_fraction": 0.10292632004310345,
+          "certified_outside_fraction": 0.8366036640425447
+        },
+        {
+          "depth": 12,
+          "uncertain_reference_fraction": 0.04799109370011175,
+          "multi_quartic_reference_fraction": 0.0011813381774824394,
+          "one_quartic_reference_fraction": 0.02684821936362548,
+          "certified_inside_fraction": 0.10834028650822158,
+          "certified_outside_fraction": 0.8436686197916666
+        }
+      ],
+      "multi_quartic_reduction_factor": 376.49145496535795
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "candidate_tet_bin_pairs": 2698,
+      "series": [
+        {
+          "depth": 0,
+          "uncertain_reference_fraction": 1.0,
+          "multi_quartic_reference_fraction": 0.5,
+          "one_quartic_reference_fraction": 0.4933283914010378,
+          "certified_inside_fraction": 0.0,
+          "certified_outside_fraction": 0.0
+        },
+        {
+          "depth": 1,
+          "uncertain_reference_fraction": 0.7750185322461083,
+          "multi_quartic_reference_fraction": 0.3259822090437361,
+          "one_quartic_reference_fraction": 0.42346182357301704,
+          "certified_inside_fraction": 0.00018532246108228317,
+          "certified_outside_fraction": 0.2247961452928095
+        },
+        {
+          "depth": 2,
+          "uncertain_reference_fraction": 0.5800593031875463,
+          "multi_quartic_reference_fraction": 0.2043180133432172,
+          "one_quartic_reference_fraction": 0.33126389918458116,
+          "certified_inside_fraction": 0.004447739065974796,
+          "certified_outside_fraction": 0.4154929577464789
+        },
+        {
+          "depth": 3,
+          "uncertain_reference_fraction": 0.4382876204595997,
+          "multi_quartic_reference_fraction": 0.12254447739065975,
+          "one_quartic_reference_fraction": 0.2527335063009637,
+          "certified_inside_fraction": 0.013111564121571535,
+          "certified_outside_fraction": 0.5486008154188288
+        },
+        {
+          "depth": 4,
+          "uncertain_reference_fraction": 0.3371247220163084,
+          "multi_quartic_reference_fraction": 0.07364251297257228,
+          "one_quartic_reference_fraction": 0.19630281690140844,
+          "certified_inside_fraction": 0.02562083024462565,
+          "certified_outside_fraction": 0.6372544477390659
+        },
+        {
+          "depth": 5,
+          "uncertain_reference_fraction": 0.2616637323943662,
+          "multi_quartic_reference_fraction": 0.04372451816160119,
+          "one_quartic_reference_fraction": 0.1533775018532246,
+          "certified_inside_fraction": 0.03914936990363232,
+          "certified_outside_fraction": 0.6991868977020015
+        },
+        {
+          "depth": 6,
+          "uncertain_reference_fraction": 0.20343773165307635,
+          "multi_quartic_reference_fraction": 0.02562083024462565,
+          "one_quartic_reference_fraction": 0.11915075982209043,
+          "certified_inside_fraction": 0.05267790956263899,
+          "certified_outside_fraction": 0.7438843587842846
+        },
+        {
+          "depth": 7,
+          "uncertain_reference_fraction": 0.1606977390659748,
+          "multi_quartic_reference_fraction": 0.015746617865085247,
+          "one_quartic_reference_fraction": 0.09362838213491476,
+          "certified_inside_fraction": 0.06481653076352854,
+          "certified_outside_fraction": 0.7744857301704967
+        },
+        {
+          "depth": 8,
+          "uncertain_reference_fraction": 0.12709646034099334,
+          "multi_quartic_reference_fraction": 0.009584646034099333,
+          "one_quartic_reference_fraction": 0.07375254818383987,
+          "certified_inside_fraction": 0.07593298276501112,
+          "certified_outside_fraction": 0.7969705568939955
+        },
+        {
+          "depth": 9,
+          "uncertain_reference_fraction": 0.10052947206263899,
+          "multi_quartic_reference_fraction": 0.005804357394366197,
+          "one_quartic_reference_fraction": 0.057931366984803556,
+          "certified_inside_fraction": 0.08555310067642698,
+          "certified_outside_fraction": 0.8139174272609341
+        },
+        {
+          "depth": 10,
+          "uncertain_reference_fraction": 0.07957753718031875,
+          "multi_quartic_reference_fraction": 0.0035710769551519643,
+          "one_quartic_reference_fraction": 0.04554118502131208,
+          "certified_inside_fraction": 0.09365697681152706,
+          "certified_outside_fraction": 0.8267654860081541
+        },
+        {
+          "depth": 11,
+          "uncertain_reference_fraction": 0.06303189718078206,
+          "multi_quartic_reference_fraction": 0.0022014281412157154,
+          "one_quartic_reference_fraction": 0.03579601064445886,
+          "certified_inside_fraction": 0.10046721529836916,
+          "certified_outside_fraction": 0.8365008875208487
+        },
+        {
+          "depth": 12,
+          "uncertain_reference_fraction": 0.04998168492865085,
+          "multi_quartic_reference_fraction": 0.001356889796840252,
+          "one_quartic_reference_fraction": 0.0281976992506023,
+          "certified_inside_fraction": 0.10605675066021127,
+          "certified_outside_fraction": 0.8439615644111379
+        }
+      ],
+      "multi_quartic_reduction_factor": 368.48976325441816
+    }
+  ]
+}
