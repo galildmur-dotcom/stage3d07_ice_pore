@@ -1,0 +1,88 @@
+=== CASE 0 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=0 element=5951 r=0 mu=0 phi=0 depth=8 quartic=1 quadratic=4 exact_full_gradient_m3=2.1811290005580897e-15 exact_full_volume_m3=1.9287408386512448e-15
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=0 q=2 cut_gradient_m3=2.0111190375715785e-17 cut_volume_m3=1.812822226995891e-17 full_gradient_relative=6.9636473064992081e-09 full_volume_relative=9.3661700771545028e-14 total_points=4574 active_points=312 min_weight=9.1649409265796275e-17
+P10QJ_DOUBLE_CUT sample=0 q=3 cut_gradient_m3=2.0111190375125569e-17 cut_volume_m3=1.8128222267993842e-17 full_gradient_relative=3.6167549237993925e-15 full_volume_relative=8.3641125798170123e-14 total_points=15438 active_points=1064 min_weight=1.164647007586752e-40
+P10QJ_DOUBLE_CUT sample=0 q=4 cut_gradient_m3=2.0111190375125529e-17 cut_volume_m3=1.8128222267993596e-17 full_gradient_relative=9.0418873094984813e-16 full_volume_relative=9.0389676290443025e-14 total_points=36612 active_points=2525 min_weight=2.1553826300154732e-41
+P10QJ_DOUBLE_CUT sample=0 q=6 cut_gradient_m3=2.0111190375125566e-17 cut_volume_m3=1.8128222267994342e-17 full_gradient_relative=4.5209436547492398e-15 full_volume_relative=1.2985847159373601e-13 total_points=123600 active_points=8527 min_weight=1.2284207557029006e-42
+P10QJ_DOUBLE_CUT sample=0 q=8 cut_gradient_m3=2.0111190375125384e-17 cut_volume_m3=1.8128222267993525e-17 full_gradient_relative=3.8156764446083588e-14 full_volume_relative=7.8733089076517111e-14 total_points=293000 active_points=20215 min_weight=3.4701185918560087e-43
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 1 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=1 element=6029 r=0 mu=0 phi=6 depth=8 quartic=0 quadratic=4 exact_full_gradient_m3=2.2738212695405521e-15 exact_full_volume_m3=1.8740168465238669e-15
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=1 q=2 cut_gradient_m3=9.3592188854055633e-16 cut_volume_m3=7.6850853769934486e-16 full_gradient_relative=2.2157743041862939e-09 full_volume_relative=9.9255952563698282e-10 total_points=1800 active_points=194 min_weight=1.1951490847766791e-37
+P10QJ_DOUBLE_CUT sample=1 q=3 cut_gradient_m3=9.3592188670319555e-16 cut_volume_m3=7.6850856153393658e-16 full_gradient_relative=4.6835792958500738e-15 full_volume_relative=1.6522151648400553e-13 total_points=6102 active_points=664 min_weight=9.4667022665059423e-40
+P10QJ_DOUBLE_CUT sample=1 q=4 cut_gradient_m3=9.359218867038645e-16 cut_volume_m3=7.685085615343178e-16 full_gradient_relative=4.8570451956963729e-15 full_volume_relative=1.334400528036427e-13 total_points=14464 active_points=1567 min_weight=3.1867863732356089e-40
+P10QJ_DOUBLE_CUT sample=1 q=6 cut_gradient_m3=9.3592188670386687e-16 cut_volume_m3=7.6850856153432312e-16 full_gradient_relative=9.3671585917001475e-15 full_volume_relative=2.2141787941550805e-13 total_points=48744 active_points=5271 min_weight=5.4933803676345402e-41
+P10QJ_DOUBLE_CUT sample=1 q=8 cut_gradient_m3=9.3592188670386154e-16 cut_volume_m3=7.6850856153437953e-16 full_gradient_relative=4.1284884163419169e-14 full_volume_relative=2.1341989517806574e-13 total_points=115824 active_points=12516 min_weight=1.1379206880261398e-42
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 2 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=2 element=5843 r=0 mu=9 phi=0 depth=7 quartic=0 quadratic=4 exact_full_gradient_m3=1.3893702539161699e-15 exact_full_volume_m3=1.0802561206253967e-15
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=2 q=2 cut_gradient_m3=5.4292522487640295e-16 cut_volume_m3=4.2258331015923463e-16 full_gradient_relative=2.9963331950885192e-11 full_volume_relative=2.3855559000571285e-11 total_points=2888 active_points=136 min_weight=1.415890786749842e-32
+P10QJ_DOUBLE_CUT sample=2 q=3 cut_gradient_m3=5.4292522544263853e-16 cut_volume_m3=4.2258331060980112e-16 full_gradient_relative=4.826156077171332e-15 full_volume_relative=2.1378173712151968e-13 total_points=9774 active_points=459 min_weight=4.6345243908734208e-34
+P10QJ_DOUBLE_CUT sample=2 q=4 cut_gradient_m3=5.4292522544263538e-16 cut_volume_m3=4.2258331060980792e-16 full_gradient_relative=1.2775119027806467e-15 full_volume_relative=1.9315207333438755e-13 total_points=23136 active_points=1088 min_weight=3.4821151594865707e-35
+P10QJ_DOUBLE_CUT sample=2 q=6 cut_gradient_m3=5.4292522544263764e-16 cut_volume_m3=4.2258331060980013e-16 full_gradient_relative=7.9489629506351363e-15 full_volume_relative=2.3477652770134438e-13 total_points=78048 active_points=3672 min_weight=8.6928351721202664e-37
+P10QJ_DOUBLE_CUT sample=2 q=8 cut_gradient_m3=5.4292522544263163e-16 cut_volume_m3=4.2258331060980102e-16 full_gradient_relative=2.5550238055612937e-14 full_volume_relative=2.1962376580460134e-13 total_points=184832 active_points=8704 min_weight=6.6926811565770411e-38
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 3 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=3 element=5937 r=0 mu=9 phi=6 depth=5 quartic=1 quadratic=5 exact_full_gradient_m3=7.4708604990201622e-15 exact_full_volume_m3=5.544786627283569e-15
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=3 q=2 cut_gradient_m3=1.057603267107899e-16 cut_volume_m3=8.0680860659197581e-17 full_gradient_relative=3.0110767402330038e-09 full_volume_relative=2.2626643415313338e-09 total_points=956 active_points=109 min_weight=2.7240902222120403e-40
+P10QJ_DOUBLE_CUT sample=3 q=3 cut_gradient_m3=1.0576032637795551e-16 cut_volume_m3=8.0680860992311588e-17 full_gradient_relative=1.6894672956604654e-15 full_volume_relative=2.020244530063409e-14 total_points=3243 active_points=367 min_weight=3.1857826478888673e-42
+P10QJ_DOUBLE_CUT sample=3 q=4 cut_gradient_m3=1.0576032637795283e-16 cut_volume_m3=8.0680860992310023e-17 full_gradient_relative=3.3789345913209308e-15 full_volume_relative=7.4834410057278379e-14 total_points=7692 active_points=900 min_weight=1.993797910791006e-43
+P10QJ_DOUBLE_CUT sample=3 q=6 cut_gradient_m3=1.0576032637795224e-16 cut_volume_m3=8.0680860992303256e-17 full_gradient_relative=2.1118341195755818e-16 full_volume_relative=1.9917903817526565e-14 total_points=25926 active_points=2970 min_weight=1.3636842178512691e-43
+P10QJ_DOUBLE_CUT sample=3 q=8 cut_gradient_m3=1.0576032637795288e-16 cut_volume_m3=8.0680860992301604e-17 full_gradient_relative=8.0249696543872105e-15 full_volume_relative=2.1625152716171699e-14 total_points=61448 active_points=7064 min_weight=2.8484103741805118e-44
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 4 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=4 element=6008 r=4 mu=0 phi=0 depth=4 quartic=0 quadratic=4 exact_full_gradient_m3=1.2661702853022472e-13 exact_full_volume_m3=6.2229400240847878e-14
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=4 q=2 cut_gradient_m3=1.193467238792857e-13 cut_volume_m3=5.8507184499691101e-14 full_gradient_relative=3.0016739225875699e-06 full_volume_relative=2.9435246475149588e-06 total_points=24288 active_points=4323 min_weight=3.1223175318147289e-41
+P10QJ_DOUBLE_CUT sample=4 q=3 cut_gradient_m3=1.1934416553408102e-13 cut_volume_m3=5.8505958443182199e-14 full_gradient_relative=1.8616363654129758e-05 full_volume_relative=1.8255722459630447e-05 total_points=81903 active_points=14585 min_weight=5.5855855367916132e-43
+P10QJ_DOUBLE_CUT sample=4 q=4 cut_gradient_m3=1.1934711206919159e-13 cut_volume_m3=5.8507372343594654e-14 full_gradient_relative=6.2046780542541195e-06 full_volume_relative=6.0844793149011754e-06 total_points=194424 active_points=34629 min_weight=2.0861161364033722e-43
+P10QJ_DOUBLE_CUT sample=4 q=6 cut_gradient_m3=1.1934647875290519e-13 cut_volume_m3=5.8507068443951447e-14 full_gradient_relative=8.7022016245525218e-07 full_volume_relative=8.5336199280955453e-07 total_points=655710 active_points=116852 min_weight=3.7634539856766818e-45
+P10QJ_DOUBLE_CUT sample=4 q=8 cut_gradient_m3=1.1934638718475838e-13 cut_volume_m3=5.8507024504505151e-14 full_gradient_relative=9.8954624260631523e-08 full_volume_relative=9.7037625250018809e-08 total_points=1554752 active_points=277089 min_weight=1.262718557182774e-45
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 5 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=5 element=5865 r=4 mu=0 phi=6 depth=5 quartic=0 quadratic=4 exact_full_gradient_m3=7.9007913977779902e-14 exact_full_volume_m3=4.0000995454909424e-14
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=5 q=2 cut_gradient_m3=1.064708702907157e-14 cut_volume_m3=5.3072090584725467e-15 full_gradient_relative=0.00045929174804625441 full_volume_relative=0.00046873038796940649 total_points=10680 active_points=1544 min_weight=7.9612615398718088e-12
+P10QJ_DOUBLE_CUT sample=5 q=3 cut_gradient_m3=1.0564648402718117e-14 cut_volume_m3=5.2659190566421579e-15 full_gradient_relative=0.0028485246663385679 full_volume_relative=0.0029070630552862535 total_points=36117 active_points=5229 min_weight=2.8211764230295881e-13
+P10QJ_DOUBLE_CUT sample=5 q=4 cut_gradient_m3=1.065892017342219e-14 cut_volume_m3=5.313133572540673e-15 full_gradient_relative=0.00094938940915951684 full_volume_relative=0.00096889976366302871 total_points=85568 active_points=12384 min_weight=1.1848851823047819e-14
+P10QJ_DOUBLE_CUT sample=5 q=6 cut_gradient_m3=1.0638144660889301e-14 cut_volume_m3=5.3027251238597388e-15 full_gradient_relative=0.00013315401708703612 full_volume_relative=0.00013589038844953052 total_points=289368 active_points=41940 min_weight=4.0473370196966321e-17
+P10QJ_DOUBLE_CUT sample=5 q=8 cut_gradient_m3=1.0635500102512091e-14 cut_volume_m3=5.3014023886218672e-15 full_gradient_relative=1.5141235989672033e-05 full_volume_relative=1.5452394666871751e-05 total_points=686336 active_points=99520 min_weight=1.9817550644353586e-19
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 6 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=6 element=5751 r=4 mu=9 phi=0 depth=2 quartic=0 quadratic=4 exact_full_gradient_m3=2.8889869389007374e-13 exact_full_volume_m3=1.6662212543124314e-13
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=6 q=2 cut_gradient_m3=1.3772927162454668e-13 cut_volume_m3=7.6692700529511743e-14 full_gradient_relative=0.00024098770321852786 full_volume_relative=0.00024546436296811491 total_points=17510 active_points=1104 min_weight=7.5118257971260287e-40
+P10QJ_DOUBLE_CUT sample=6 q=3 cut_gradient_m3=1.3749865373881302e-13 cut_volume_m3=7.6563569845919138e-14 full_gradient_relative=0.0014946042897944298 full_volume_relative=0.001522368506664738 total_points=59214 active_points=3700 min_weight=1.8662139205804458e-41
+P10QJ_DOUBLE_CUT sample=6 q=4 cut_gradient_m3=1.3776345382722263e-13 cut_volume_m3=7.6711883003056871e-14 full_gradient_relative=0.00049813908946678997 full_volume_relative=0.00050739267038580379 total_points=140236 active_points=8792 min_weight=2.072542740385431e-42
+P10QJ_DOUBLE_CUT sample=6 q=6 cut_gradient_m3=1.3770653470020042e-13 cut_volume_m3=7.6680007209353195e-14 full_gradient_relative=6.9865136668471295e-05 full_volume_relative=7.1162972384445716e-05 total_points=473466 active_points=29577 min_weight=2.2755256862946217e-44
+P10QJ_DOUBLE_CUT sample=6 q=8 cut_gradient_m3=1.3769829922573987e-13 cut_volume_m3=7.6675397997274318e-14 full_gradient_relative=7.9445182587841381e-06 full_volume_relative=8.0920980516757686e-06 total_points=1122496 active_points=70218 min_weight=8.386246867933199e-46
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+
+=== CASE 7 TRUE M8 TWO SURFACE ===
+P10QJ_PREFLIGHT sample=7 element=5847 r=4 mu=9 phi=6 depth=2 quartic=1 quadratic=4 exact_full_gradient_m3=1.105501540469648e-12 exact_full_volume_m3=3.9823785769991766e-13
+P10QJ_ALGOIM_BUILD_BEGIN 1_quartic_plus_1_quadratic_plus_1_simplex Bernstein_degrees=5x5x5,3x3x3,2x2x2
+P10QJ_ALGOIM_BUILD_DONE
+P10QJ_DOUBLE_CUT sample=7 q=2 cut_gradient_m3=3.2264373047434774e-13 cut_volume_m3=1.1887793718808926e-13 full_gradient_relative=0.00010162540020516972 full_volume_relative=0.00010064983315685536 total_points=13648 active_points=1882 min_weight=2.0543259764012938e-19
+P10QJ_DOUBLE_CUT sample=7 q=3 cut_gradient_m3=3.226105104300956e-13 cut_volume_m3=1.1886782459991586e-13 full_gradient_relative=0.0006302801224793306 full_volume_relative=0.00062422966174430986 total_points=46188 active_points=6357 min_weight=5.9610334736313109e-22
+P10QJ_DOUBLE_CUT sample=7 q=4 cut_gradient_m3=3.2264719685447815e-13 cut_volume_m3=1.188789309867466e-13 full_gradient_relative=0.00021006708495044992 full_volume_relative=0.00020805051702141918 total_points=109440 active_points=15080 min_weight=1.802080047363722e-23
+P10QJ_DOUBLE_CUT sample=7 q=6 cut_gradient_m3=3.2263914582727421e-13 cut_volume_m3=1.1887648632970572e-13 full_gradient_relative=2.9462384923054026e-05 full_volume_relative=2.9179556681179167e-05 total_points=369360 active_points=50862 min_weight=3.336239189439949e-27
+P10QJ_DOUBLE_CUT sample=7 q=8 cut_gradient_m3=3.2263795690100655e-13 cut_volume_m3=1.1887612422238987e-13 full_gradient_relative=3.350232564963135e-06 full_volume_relative=3.3180715077870847e-06 total_points=875776 active_points=120520 min_weight=5.5129621086659996e-31
+P10QJ_TRUE_REAL_M8_TWO_BOUNDARY_ALGOIM_PASS
+

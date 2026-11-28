@@ -1,0 +1,129 @@
+{
+  "stage": "P10QJ",
+  "status": "PASS_INDEPENDENT_NEGATIVE_TWO_SURFACE_Q8_AND_H_REMEDIATION_AUDIT",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_unchanged": true,
+  "physical_FEM_performed": false,
+  "q8_failed_full_analytical_moment_cases": 4,
+  "q8_passed_full_analytical_moment_cases": 4,
+  "failed_element_ids": [
+    6008,
+    5865,
+    5751,
+    5847
+  ],
+  "q8_true_gradients_cannot_be_certified": true,
+  "crosscheck_cases": [
+    {
+      "element_id": 5951,
+      "radial_bin": 0,
+      "q8_full_gradient_moment_relative_error": 3.815676444608359e-14,
+      "q8_nodes": 293000,
+      "q8_full_moment_pass": true,
+      "h8_multi_boundary_volume_fraction": 0.015613319844933872,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.9843866801550661
+    },
+    {
+      "element_id": 6029,
+      "radial_bin": 0,
+      "q8_full_gradient_moment_relative_error": 4.128488416341917e-14,
+      "q8_nodes": 115824,
+      "q8_full_moment_pass": true,
+      "h8_multi_boundary_volume_fraction": 0.11334002504642103,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.886659974953579
+    },
+    {
+      "element_id": 5843,
+      "radial_bin": 0,
+      "q8_full_gradient_moment_relative_error": 2.5550238055612937e-14,
+      "q8_nodes": 184832,
+      "q8_full_moment_pass": true,
+      "h8_multi_boundary_volume_fraction": 0.1286959329234476,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.8713040670765524
+    },
+    {
+      "element_id": 5937,
+      "radial_bin": 0,
+      "q8_full_gradient_moment_relative_error": 8.02496965438721e-15,
+      "q8_nodes": 61448,
+      "q8_full_moment_pass": true,
+      "h8_multi_boundary_volume_fraction": 0.05537250490789759,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.9446274950921024
+    },
+    {
+      "element_id": 6008,
+      "radial_bin": 4,
+      "q8_full_gradient_moment_relative_error": 9.895462426063152e-08,
+      "q8_nodes": 1554752,
+      "q8_full_moment_pass": false,
+      "h8_multi_boundary_volume_fraction": 0.019531249999999382,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.9804687500000007
+    },
+    {
+      "element_id": 5865,
+      "radial_bin": 4,
+      "q8_full_gradient_moment_relative_error": 1.5141235989672033e-05,
+      "q8_nodes": 686336,
+      "q8_full_moment_pass": false,
+      "h8_multi_boundary_volume_fraction": 0.027343749999999833,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.9726562500000002
+    },
+    {
+      "element_id": 5751,
+      "radial_bin": 4,
+      "q8_full_gradient_moment_relative_error": 7.944518258784138e-06,
+      "q8_nodes": 1122496,
+      "q8_full_moment_pass": false,
+      "h8_multi_boundary_volume_fraction": 0.01953124999999997,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.98046875
+    },
+    {
+      "element_id": 5847,
+      "radial_bin": 4,
+      "q8_full_gradient_moment_relative_error": 3.350232564963135e-06,
+      "q8_nodes": 875776,
+      "q8_full_moment_pass": false,
+      "h8_multi_boundary_volume_fraction": 0.08593750000000322,
+      "h8_resolved_or_one_boundary_volume_fraction": 0.9140624999999968
+    }
+  ],
+  "recomputed_q_changes_signed_and_L1": [
+    {
+      "q_pair": [
+        2,
+        3
+      ],
+      "L1_relative": 0.000589623938037381,
+      "signed_relative": 0.000589623936123203
+    },
+    {
+      "q_pair": [
+        3,
+        4
+      ],
+      "L1_relative": 0.0006734635227061737,
+      "signed_relative": 0.0006734635227061539
+    },
+    {
+      "q_pair": [
+        4,
+        6
+      ],
+      "L1_relative": 0.0001459264611010648,
+      "signed_relative": 0.00014592646110104902
+    },
+    {
+      "q_pair": [
+        6,
+        8
+      ],
+      "L1_relative": 2.054410807898504e-05,
+      "signed_relative": 2.0544108078982875e-05
+    }
+  ],
+  "h_mass_partition_is_conservative": true,
+  "h_reference_refinement_does_not_modify_M8": true,
+  "remaining_multi_boundary_mass_is_not_integrated": true,
+  "allow_full_48_bin_fem": false,
+  "physical_4D_FEM_approved": false
+}
