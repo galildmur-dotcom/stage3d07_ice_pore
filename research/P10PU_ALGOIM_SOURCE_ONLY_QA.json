@@ -1,0 +1,131 @@
+{
+  "protocol": "P10PU_REAL_UPSTREAM_ALGOIM_SINGLE_LEVELSET_SOURCE_ONLY",
+  "status": "PASS_SINGLE_LEVELSET_GEOMETRY_ONLY_NOT_MULTIPOLY_NOT_PHYSICAL",
+  "upstream_repository": "https://github.com/algoim/algoim",
+  "upstream_revision": "da1d81499608e1d499695d255f0233140b8c81e8",
+  "pilot_source_sha256": "d7a8a5ae9320131c777b104b20b81e09b8b87ee46d1872a01e99509948cbd4ef",
+  "compiler": "g++ -std=c++20 -O2",
+  "observed": {
+    "shell": {
+      "2": {
+        "integral": 0.005303170130468834,
+        "reference": 0.005307197189464356,
+        "relative_error": 0.0007587920425335936,
+        "nodes_outer": 398.0,
+        "nodes_inner": 248.0,
+        "elapsed_s": 0.000121,
+        "positive_weights": 1.0
+      },
+      "3": {
+        "integral": 0.005306979516503353,
+        "reference": 0.005307197189464356,
+        "relative_error": 4.101467370296397e-05,
+        "nodes_outer": 1332.0,
+        "nodes_inner": 837.0,
+        "elapsed_s": 0.000168099,
+        "positive_weights": 1.0
+      },
+      "4": {
+        "integral": 0.005307180603508311,
+        "reference": 0.005307197189464356,
+        "relative_error": 3.125181796174349e-06,
+        "nodes_outer": 3148.0,
+        "nodes_inner": 1984.0,
+        "elapsed_s": 0.000267655,
+        "positive_weights": 1.0
+      },
+      "5": {
+        "integral": 0.005307195708020985,
+        "reference": 0.005307197189464356,
+        "relative_error": 2.791385580500575e-07,
+        "nodes_outer": 6140.0,
+        "nodes_inner": 3875.0,
+        "elapsed_s": 0.000556411,
+        "positive_weights": 1.0
+      },
+      "6": {
+        "integral": 0.005307197044094875,
+        "reference": 0.005307197189464356,
+        "relative_error": 2.739100810086817e-08,
+        "nodes_outer": 10602.0,
+        "nodes_inner": 6696.0,
+        "elapsed_s": 0.000845419,
+        "positive_weights": 1.0
+      },
+      "8": {
+        "integral": 0.005307197188047806,
+        "reference": 0.005307197189464356,
+        "relative_error": 2.669111371637631e-10,
+        "nodes_outer": 25112.0,
+        "nodes_inner": 15872.0,
+        "elapsed_s": 0.001641323,
+        "positive_weights": 1.0
+      }
+    },
+    "curved_tet10_cap": {
+      "2": {
+        "integral": 0.1083739626666667,
+        "reference": 0.1083739626666667,
+        "relative_error": 1.280546310786783e-16,
+        "nodes": 8.0,
+        "elapsed_s": 1.421e-06,
+        "positive_weights": 1.0
+      },
+      "3": {
+        "integral": 0.1083739626666667,
+        "reference": 0.1083739626666667,
+        "relative_error": 2.561092621573566e-16,
+        "nodes": 27.0,
+        "elapsed_s": 1.193e-06,
+        "positive_weights": 1.0
+      },
+      "4": {
+        "integral": 0.1083739626666667,
+        "reference": 0.1083739626666667,
+        "relative_error": 0.0,
+        "nodes": 64.0,
+        "elapsed_s": 1.41e-06,
+        "positive_weights": 1.0
+      },
+      "5": {
+        "integral": 0.1083739626666667,
+        "reference": 0.1083739626666667,
+        "relative_error": 2.561092621573566e-16,
+        "nodes": 125.0,
+        "elapsed_s": 2.534e-06,
+        "positive_weights": 1.0
+      },
+      "6": {
+        "integral": 0.1083739626666667,
+        "reference": 0.1083739626666667,
+        "relative_error": 0.0,
+        "nodes": 216.0,
+        "elapsed_s": 3.442e-06,
+        "positive_weights": 1.0
+      },
+      "8": {
+        "integral": 0.1083739626666666,
+        "reference": 0.1083739626666667,
+        "relative_error": 6.402731553933916e-16,
+        "nodes": 512.0,
+        "elapsed_s": 7.057e-06,
+        "positive_weights": 1.0
+      }
+    },
+    "same_geometry_as_P10PT": {
+      "q": 4,
+      "integral": 0.1044586666666667,
+      "reference": 0.1044586666666667,
+      "relative_error": 3.985630369598505e-16,
+      "nodes": 64.0
+    }
+  },
+  "limitations": [
+    "This is the one-interface quadGen method in a bounding box",
+    "Concentric radial shell is the DIFFERENCE of two positive quadratures;",
+    "it is NOT one positive quadrature supported on the annular shell.",
+    "Simultaneous radial, polar and azimuth boundaries NOT tested.",
+    "Multi-polynomial algorithm needs LAPACKE and C++17 compatibility audit.",
+    "No FEM, no physical EDV variables, no demonstration of M21 convergence."
+  ]
+}
