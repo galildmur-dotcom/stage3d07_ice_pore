@@ -1,0 +1,376 @@
+{
+  "stage": "P10QG",
+  "status": "PASS_CONSERVATIVE_FLOATING_BERNSTEIN_FACE_CLEARANCE_GEOMETRY_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "unique_total_curved_faces": 25911,
+  "region_filtered_faces": 10017,
+  "M8_quadratic_face_conformity_checked": true,
+  "face_normal_separation_enabled": true,
+  "coordinate_margin_m": 5e-12,
+  "numeric_limit": "Trig functions bounded analytically then expanded by 5e-12 m; NOT formally directed-rounded or exact rational certificate.",
+  "conditional_topological_assumption": "Face-clearance proves a single Tet10 inside a globally embedded, non-self-intersecting conforming M8 mesh.",
+  "max_depth": 11,
+  "case_count": 4,
+  "cases": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "ideal_sector_volume_m3": 2.1365622571213853e-12,
+      "subboxes_visited": 4053,
+      "pure_face_clearance_boxes": 89,
+      "ambiguous_terminal_boxes": 1938.0,
+      "pure_volume_m3": 1.158929302939998e-13,
+      "ambiguous_volume_upper_m3": 2.0206693268273883e-12,
+      "certified_pure_volume_fraction_of_ideal": 0.054242711583861666,
+      "unresolved_volume_fraction_of_ideal": 0.9457572884161396,
+      "volume_partition_closure_relative": 1.3232834544785648e-15,
+      "min_face_box_candidate_count": 0,
+      "max_face_box_candidate_count": 250,
+      "subboxes_visited_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8,
+        "4": 16,
+        "5": 32,
+        "6": 64,
+        "7": 128,
+        "8": 256,
+        "9": 512,
+        "10": 1024,
+        "11": 2006
+      },
+      "pure_subboxes_by_depth": {
+        "10": 21,
+        "11": 68
+      },
+      "reprojection_falsification_points": 384,
+      "first_pure_cases": [
+        {
+          "depth": 11,
+          "tet10_index": 4266,
+          "box": [
+            0.00101,
+            0.00102,
+            -0.89375,
+            -0.8875,
+            -2.7816184953659633,
+            -2.7652560336285164
+          ],
+          "fraction_of_ideal": 0.0004931155598532974
+        },
+        {
+          "depth": 11,
+          "tet10_index": 4266,
+          "box": [
+            0.00101,
+            0.00102,
+            -0.9,
+            -0.89375,
+            -2.7652560336285164,
+            -2.7488935718910694
+          ],
+          "fraction_of_ideal": 0.0004931155598532886
+        },
+        {
+          "depth": 11,
+          "tet10_index": 5004,
+          "box": [
+            0.00101,
+            0.00102,
+            -0.88125,
+            -0.875,
+            -2.8307058805783036,
+            -2.8143434188408567
+          ],
+          "fraction_of_ideal": 0.0004931155598532886
+        },
+        {
+          "depth": 11,
+          "tet10_index": 5004,
+          "box": [
+            0.00101,
+            0.00102,
+            -0.88125,
+            -0.875,
+            -2.84706834231575,
+            -2.8307058805783036
+          ],
+          "fraction_of_ideal": 0.0004931155598532752
+        }
+      ]
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "ideal_sector_volume_m3": 2.1365622571213853e-12,
+      "subboxes_visited": 4075,
+      "pure_face_clearance_boxes": 71,
+      "ambiguous_terminal_boxes": 1967.0,
+      "pure_volume_m3": 8.533933958012739e-14,
+      "ambiguous_volume_upper_m3": 2.0512229175412578e-12,
+      "certified_pure_volume_fraction_of_ideal": 0.03994236034811644,
+      "unresolved_volume_fraction_of_ideal": 0.9600576396518835,
+      "volume_partition_closure_relative": 0.0,
+      "min_face_box_candidate_count": 0,
+      "max_face_box_candidate_count": 281,
+      "subboxes_visited_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8,
+        "4": 16,
+        "5": 32,
+        "6": 64,
+        "7": 128,
+        "8": 256,
+        "9": 512,
+        "10": 1024,
+        "11": 2028
+      },
+      "pure_subboxes_by_depth": {
+        "10": 10,
+        "11": 61
+      },
+      "reprojection_falsification_points": 384,
+      "first_pure_cases": [
+        {
+          "depth": 11,
+          "tet10_index": 5046,
+          "box": [
+            0.00101,
+            0.00102,
+            0.9984375,
+            0.998828125,
+            -2.879793265790644,
+            -2.6179938779914944
+          ],
+          "fraction_of_ideal": 0.0004931155598532598
+        },
+        {
+          "depth": 11,
+          "tet10_index": 5046,
+          "box": [
+            0.00101,
+            0.00102,
+            0.9976562499999999,
+            0.9984375,
+            -2.7488935718910694,
+            -2.6179938779914944
+          ],
+          "fraction_of_ideal": 0.0004931155598533308
+        },
+        {
+          "depth": 11,
+          "tet10_index": 4095,
+          "box": [
+            0.00101,
+            0.00102,
+            0.99375,
+            0.9945312500000001,
+            -3.141592653589793,
+            -3.0106929596902186
+          ],
+          "fraction_of_ideal": 0.0004931155598533291
+        },
+        {
+          "depth": 11,
+          "tet10_index": 9928,
+          "box": [
+            0.00101,
+            0.00102,
+            0.98125,
+            0.9828125,
+            -2.6834437249412817,
+            -2.6179938779914944
+          ],
+          "fraction_of_ideal": 0.000493115559853294
+        }
+      ]
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "ideal_sector_volume_m3": 4.963280060358871e-11,
+      "subboxes_visited": 4095,
+      "pure_face_clearance_boxes": 19,
+      "ambiguous_terminal_boxes": 2029.0,
+      "pure_volume_m3": 4.718330825671763e-13,
+      "ambiguous_volume_upper_m3": 4.9160967521021626e-11,
+      "certified_pure_volume_fraction_of_ideal": 0.009506477104438476,
+      "unresolved_volume_fraction_of_ideal": 0.9904935228955634,
+      "volume_partition_closure_relative": 1.8228445382436416e-15,
+      "min_face_box_candidate_count": 0,
+      "max_face_box_candidate_count": 573,
+      "subboxes_visited_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8,
+        "4": 16,
+        "5": 32,
+        "6": 64,
+        "7": 128,
+        "8": 256,
+        "9": 512,
+        "10": 1024,
+        "11": 2048
+      },
+      "pure_subboxes_by_depth": {
+        "11": 19
+      },
+      "reprojection_falsification_points": 228,
+      "first_pure_cases": [
+        {
+          "depth": 11,
+          "tet10_index": 11955,
+          "box": [
+            0.0013124999999999999,
+            0.00134375,
+            -0.8125,
+            -0.8,
+            -2.8143434188408567,
+            -2.7816184953659633
+          ],
+          "fraction_of_ideal": 0.00045432625236091625
+        },
+        {
+          "depth": 11,
+          "tet10_index": 7076,
+          "box": [
+            0.0014375,
+            0.00146875,
+            -0.8375000000000001,
+            -0.8250000000000001,
+            -2.9452431127404313,
+            -2.912518189265538
+          ],
+          "fraction_of_ideal": 0.0005438668387276782
+        },
+        {
+          "depth": 11,
+          "tet10_index": 7076,
+          "box": [
+            0.00140625,
+            0.0014375,
+            -0.8500000000000001,
+            -0.8375000000000001,
+            -2.9452431127404313,
+            -2.912518189265538
+          ],
+          "fraction_of_ideal": 0.0005207271366328926
+        },
+        {
+          "depth": 11,
+          "tet10_index": 7076,
+          "box": [
+            0.00140625,
+            0.0014375,
+            -0.8500000000000001,
+            -0.8375000000000001,
+            -2.9779680362153247,
+            -2.9452431127404313
+          ],
+          "fraction_of_ideal": 0.0005207271366328926
+        }
+      ]
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "ideal_sector_volume_m3": 4.963280060358871e-11,
+      "subboxes_visited": 4093,
+      "pure_face_clearance_boxes": 26,
+      "ambiguous_terminal_boxes": 2021.0,
+      "pure_volume_m3": 7.003905607448252e-13,
+      "ambiguous_volume_upper_m3": 4.893241004284373e-11,
+      "certified_pure_volume_fraction_of_ideal": 0.014111445500300525,
+      "unresolved_volume_fraction_of_ideal": 0.9858885544996964,
+      "volume_partition_closure_relative": 3.124876351274814e-15,
+      "min_face_box_candidate_count": 0,
+      "max_face_box_candidate_count": 541,
+      "subboxes_visited_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8,
+        "4": 16,
+        "5": 32,
+        "6": 64,
+        "7": 128,
+        "8": 256,
+        "9": 512,
+        "10": 1024,
+        "11": 2046
+      },
+      "pure_subboxes_by_depth": {
+        "10": 1,
+        "11": 25
+      },
+      "reprojection_falsification_points": 312,
+      "first_pure_cases": [
+        {
+          "depth": 11,
+          "tet10_index": 4759,
+          "box": [
+            0.0014375,
+            0.00146875,
+            0.9953125,
+            0.996875,
+            -3.141592653589793,
+            -2.879793265790644
+          ],
+          "fraction_of_ideal": 0.000543866838727648
+        },
+        {
+          "depth": 11,
+          "tet10_index": 6694,
+          "box": [
+            0.00140625,
+            0.0014375,
+            0.9984375,
+            0.99921875,
+            -3.141592653589793,
+            -2.6179938779914944
+          ],
+          "fraction_of_ideal": 0.0005207271366329428
+        },
+        {
+          "depth": 11,
+          "tet10_index": 4759,
+          "box": [
+            0.00140625,
+            0.0014375,
+            0.99375,
+            0.9953125,
+            -3.141592653589793,
+            -2.879793265790644
+          ],
+          "fraction_of_ideal": 0.0005207271366329054
+        },
+        {
+          "depth": 11,
+          "tet10_index": 7339,
+          "box": [
+            0.00146875,
+            0.0015,
+            0.984375,
+            0.9875,
+            -2.7488935718910694,
+            -2.6179938779914944
+          ],
+          "fraction_of_ideal": 0.0005675095778245291
+        }
+      ]
+    }
+  ],
+  "max_unresolved_mass_fraction": 0.9904935228955634,
+  "physical_4D_FEM_approved": false
+}

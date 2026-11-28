@@ -1,0 +1,268 @@
+{
+  "stage": "P10QG",
+  "status": "PASS_TRUE_TET10_GRADIENT_JUMP_AND_SPHERICAL_Q_SERIES_MANUFACTURED_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "gmsh_generated": false,
+  "fem_started": false,
+  "q_levels": [
+    4,
+    8,
+    12,
+    16,
+    24
+  ],
+  "four_bins": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "analytic_smooth_cubic_derivative_moment_m3": 2.363940585420277e-12,
+      "q_records": [
+        {
+          "q": 4,
+          "nodes": 64,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.351370787530185e-12,
+          "linear_FE_gradient_moment_m3": 2.136562257121373e-12,
+          "linear_relative_to_exact_ideal_sector_error": 6.616417272392819e-15,
+          "distinct_Tet10": 22
+        },
+        {
+          "q": 8,
+          "nodes": 512,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.350473760808328e-12,
+          "linear_FE_gradient_moment_m3": 2.136562257121388e-12,
+          "linear_relative_to_exact_ideal_sector_error": 5.67121480490813e-16,
+          "distinct_Tet10": 39
+        },
+        {
+          "q": 12,
+          "nodes": 1728,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.350706185741414e-12,
+          "linear_FE_gradient_moment_m3": 2.136562257121382e-12,
+          "linear_relative_to_exact_ideal_sector_error": 2.268485921963252e-15,
+          "distinct_Tet10": 46
+        },
+        {
+          "q": 16,
+          "nodes": 4096,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.350954742976549e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213845e-12,
+          "linear_relative_to_exact_ideal_sector_error": 1.134242960981626e-15,
+          "distinct_Tet10": 55
+        },
+        {
+          "q": 24,
+          "nodes": 13824,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.350888211541013e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213833e-12,
+          "linear_relative_to_exact_ideal_sector_error": 1.7013644414724391e-15,
+          "distinct_Tet10": 61
+        }
+      ]
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "analytic_smooth_cubic_derivative_moment_m3": 2.363940585420277e-12,
+      "q_records": [
+        {
+          "q": 4,
+          "nodes": 64,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.357765310448938e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213813e-12,
+          "linear_relative_to_exact_ideal_sector_error": 2.6465669089571276e-15,
+          "distinct_Tet10": 19
+        },
+        {
+          "q": 8,
+          "nodes": 512,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.356536247690891e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213857e-12,
+          "linear_relative_to_exact_ideal_sector_error": 5.67121480490813e-16,
+          "distinct_Tet10": 41
+        },
+        {
+          "q": 12,
+          "nodes": 1728,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.3567221199828565e-12,
+          "linear_FE_gradient_moment_m3": 2.136562257121388e-12,
+          "linear_relative_to_exact_ideal_sector_error": 5.67121480490813e-16,
+          "distinct_Tet10": 56
+        },
+        {
+          "q": 16,
+          "nodes": 4096,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.3568561058948282e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213825e-12,
+          "linear_relative_to_exact_ideal_sector_error": 2.0794454284663147e-15,
+          "distinct_Tet10": 54
+        },
+        {
+          "q": 24,
+          "nodes": 13824,
+          "normalized_cubic_FE_z_gradient_moment_m3": 2.3566365507621637e-12,
+          "linear_FE_gradient_moment_m3": 2.1365622571213833e-12,
+          "linear_relative_to_exact_ideal_sector_error": 1.7013644414724391e-15,
+          "distinct_Tet10": 61
+        }
+      ]
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "analytic_smooth_cubic_derivative_moment_m3": 1.0316023071095065e-10,
+      "q_records": [
+        {
+          "q": 4,
+          "nodes": 64,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0310568720214607e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358877e-11,
+          "linear_relative_to_exact_ideal_sector_error": 6.510159065155859e-16,
+          "distinct_Tet10": 38
+        },
+        {
+          "q": 8,
+          "nodes": 512,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0315036678055323e-10,
+          "linear_FE_gradient_moment_m3": 4.9632800603588576e-11,
+          "linear_relative_to_exact_ideal_sector_error": 3.2550795325779297e-15,
+          "distinct_Tet10": 75
+        },
+        {
+          "q": 12,
+          "nodes": 1728,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0314636716264157e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358869e-11,
+          "linear_relative_to_exact_ideal_sector_error": 9.114222691218202e-16,
+          "distinct_Tet10": 92
+        },
+        {
+          "q": 16,
+          "nodes": 4096,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0314392933086081e-10,
+          "linear_FE_gradient_moment_m3": 4.9632800603588706e-11,
+          "linear_relative_to_exact_ideal_sector_error": 6.510159065155859e-16,
+          "distinct_Tet10": 100
+        },
+        {
+          "q": 24,
+          "nodes": 13824,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0314253230317623e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358873e-11,
+          "linear_relative_to_exact_ideal_sector_error": 1.3020318130311718e-16,
+          "distinct_Tet10": 106
+        }
+      ]
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "analytic_smooth_cubic_derivative_moment_m3": 1.0316023071095065e-10,
+      "q_records": [
+        {
+          "q": 4,
+          "nodes": 64,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0314451130841291e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358864e-11,
+          "linear_relative_to_exact_ideal_sector_error": 1.9530477195467577e-15,
+          "distinct_Tet10": 36
+        },
+        {
+          "q": 8,
+          "nodes": 512,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0315409532866995e-10,
+          "linear_FE_gradient_moment_m3": 4.9632800603588815e-11,
+          "linear_relative_to_exact_ideal_sector_error": 1.5624381756374063e-15,
+          "distinct_Tet10": 72
+        },
+        {
+          "q": 12,
+          "nodes": 1728,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.031572309110399e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358877e-11,
+          "linear_relative_to_exact_ideal_sector_error": 6.510159065155859e-16,
+          "distinct_Tet10": 82
+        },
+        {
+          "q": 16,
+          "nodes": 4096,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0315550713452502e-10,
+          "linear_FE_gradient_moment_m3": 4.963280060358878e-11,
+          "linear_relative_to_exact_ideal_sector_error": 9.114222691218202e-16,
+          "distinct_Tet10": 90
+        },
+        {
+          "q": 24,
+          "nodes": 13824,
+          "normalized_cubic_FE_z_gradient_moment_m3": 1.0315646326241722e-10,
+          "linear_FE_gradient_moment_m3": 4.9632800603588686e-11,
+          "linear_relative_to_exact_ideal_sector_error": 1.0416254504249374e-15,
+          "distinct_Tet10": 91
+        }
+      ]
+    }
+  ],
+  "total_quadrature_points": 80896,
+  "independently_evaluated_shared_face_gradient_jumps": {
+    "shared_internal_faces_in_near_pore_region": 6103,
+    "faces_examined_independently": 96,
+    "max_physical_face_position_gap_m": 6.939952614324262e-18,
+    "max_FE_cubic_trace_jump": 1.1102230246251565e-16,
+    "mean_absolute_normalized_z_gradient_jump": 0.003787946222299014,
+    "max_absolute_normalized_z_gradient_jump": 0.04668771049641496,
+    "median_absolute_normalized_z_gradient_jump": 0.0011034112938811402,
+    "faces_with_nonzero_jump_above_1e_minus_10": 96
+  },
+  "sum_absolute_and_signed_q_changes": [
+    {
+      "q_pair": [
+        4,
+        8
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 0.00026723517720707855,
+      "signed_bin_deltas_relative_to_L1_moment": 0.00024708376592534316,
+      "max_bin_relative_delta": 0.0005215547858648077,
+      "positive_deltas": 2,
+      "negative_deltas": 2
+    },
+    {
+      "q_pair": [
+        8,
+        12
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 3.579669572850854e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 2.112393481544713e-06,
+      "max_bin_relative_delta": 9.887451460157117e-05,
+      "positive_deltas": 3,
+      "negative_deltas": 1
+    },
+    {
+      "q_pair": [
+        12,
+        16
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 2.1535523071283562e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 1.7909646216571808e-05,
+      "max_bin_relative_delta": 0.0001057260825106951,
+      "positive_deltas": 2,
+      "negative_deltas": 2
+    },
+    {
+      "q_pair": [
+        16,
+        24
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 1.250787009274695e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 3.4453265209722082e-06,
+      "max_bin_relative_delta": 9.316461318292587e-05,
+      "positive_deltas": 1,
+      "negative_deltas": 3
+    }
+  ],
+  "warning": "Manufactured FE physical z gradient, not stress or a physical FEM output. q comparisons do not certify absolute integration error.",
+  "physical_4D_FEM_approved": false
+}

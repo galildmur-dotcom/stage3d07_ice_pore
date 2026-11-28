@@ -1,0 +1,116 @@
+{
+  "stage": "P10QG",
+  "status": "PASS_INDEPENDENT_CURVED_FACE_CLEARANCE_AND_DISCONTINUOUS_TET10_GRADIENT_PILOT_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "face_box_numeric_margin_m": 5e-12,
+  "not_formal_directed_rounding": true,
+  "exact_P10QE_wall_certificate_unchanged": true,
+  "face_AABB_vs_normal_projection_by_bin": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "AABB_only_d11_pure_fraction": 0.0,
+      "Bezier_normal_d11_pure_fraction": 0.054242711583861666,
+      "Bezier_normal_deep_pure_fraction": 0.3117824796757226,
+      "deep_visited_subboxes": 54111,
+      "deep_pure_subboxes": 4441
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "AABB_only_d11_pure_fraction": 0.0,
+      "Bezier_normal_d11_pure_fraction": 0.03994236034811644,
+      "Bezier_normal_deep_pure_fraction": 0.29934121524410756,
+      "deep_visited_subboxes": 54693,
+      "deep_pure_subboxes": 4328
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "AABB_only_d11_pure_fraction": 0.0,
+      "Bezier_normal_d11_pure_fraction": 0.009506477104438476,
+      "Bezier_normal_deep_pure_fraction": 0.21440768831378726,
+      "deep_visited_subboxes": 59365,
+      "deep_pure_subboxes": 3927
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "AABB_only_d11_pure_fraction": 0.0,
+      "Bezier_normal_d11_pure_fraction": 0.014111445500300525,
+      "Bezier_normal_deep_pure_fraction": 0.2281610615305845,
+      "deep_visited_subboxes": 58645,
+      "deep_pure_subboxes": 3944
+    }
+  ],
+  "random_spherical_box_checks": {
+    "independent_uniform_spherical_box_points": 2048,
+    "minimum_observed_spherical_box_to_AABB_face_clearance_m": 5.478490266766846e-09
+  },
+  "random_true_curved_Tet10_face_checks": {
+    "true_curved_Tet10_faces_checked": 128,
+    "independent_face_surface_points_checked": 1024,
+    "all_Bezier_3D_and_normal_projection_enclosures_pass": true
+  },
+  "continuous_FE_traces_and_discontinuous_FE_gradient": {
+    "shared_internal_faces_in_near_pore_region": 6103,
+    "faces_examined_independently": 96,
+    "max_physical_face_position_gap_m": 6.939952614324262e-18,
+    "max_FE_cubic_trace_jump": 1.1102230246251565e-16,
+    "mean_absolute_normalized_z_gradient_jump": 0.003787946222299014,
+    "max_absolute_normalized_z_gradient_jump": 0.04668771049641496,
+    "median_absolute_normalized_z_gradient_jump": 0.0011034112938811402,
+    "faces_with_nonzero_jump_above_1e_minus_10": 96
+  },
+  "gradient_quadrature_L1_q_changes": [
+    {
+      "q_pair": [
+        4,
+        8
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 0.00026723517720707855,
+      "signed_bin_deltas_relative_to_L1_moment": 0.00024708376592534316,
+      "max_bin_relative_delta": 0.0005215547858648077,
+      "positive_deltas": 2,
+      "negative_deltas": 2
+    },
+    {
+      "q_pair": [
+        8,
+        12
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 3.579669572850854e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 2.112393481544713e-06,
+      "max_bin_relative_delta": 9.887451460157117e-05,
+      "positive_deltas": 3,
+      "negative_deltas": 1
+    },
+    {
+      "q_pair": [
+        12,
+        16
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 2.1535523071283562e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 1.7909646216571808e-05,
+      "max_bin_relative_delta": 0.0001057260825106951,
+      "positive_deltas": 2,
+      "negative_deltas": 2
+    },
+    {
+      "q_pair": [
+        16,
+        24
+      ],
+      "L1_abs_bin_deltas_relative_to_L1_moment": 1.250787009274695e-05,
+      "signed_bin_deltas_relative_to_L1_moment": 3.4453265209722082e-06,
+      "max_bin_relative_delta": 9.316461318292587e-05,
+      "positive_deltas": 1,
+      "negative_deltas": 3
+    }
+  ],
+  "warning": "Numerical convex hull plus physical margin is conservative broad phase, NOT formal directed-rounded proof. Q series are empirical, not certified physical integration errors.",
+  "physical_4D_FEM_approved": false
+}
