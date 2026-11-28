@@ -1,0 +1,3479 @@
+{
+  "stage": "P10QC",
+  "status": "PASS_ALL48_PHYSICAL_ABSOLUTE_VOLUME_BUDGET_WORKLOAD_ONLY",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "fem_started": false,
+  "gmsh_generated": false,
+  "max_depth": 12,
+  "bin_count": 48,
+  "target_relative_to": "ideal spherical-sector volume used only as tolerance scale, not exact M8 cut volume",
+  "semantic_warning": "Budgets bound unintegrated mass IF selected local integrals were exact; actual quadrature error is NOT certified.",
+  "empirical_median_nodes_per_quartic_and_quadratic_q4": [
+    2208,
+    1344
+  ],
+  "empirical_median_nodes_per_quartic_and_quadratic_q8": [
+    17728,
+    10752
+  ],
+  "bins": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "original_candidate_count": 110,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.5203230178326685e-10,
+      "single_quartic_calls": 4256,
+      "single_quadratic_calls": 833,
+      "single_ready_physical_upper_m3": 3.671486705945852e-12,
+      "multi_remaining_physical_m3": 3.910951910270974e-13,
+      "multi_remaining_leaves": 3096,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "ready_total_physical_m3": 3.671486705945852e-12,
+          "estimated_unintegrated_upper_m3": 1.0682764920867635e-12,
+          "needed_calls": 2079,
+          "quartic_calls": 2062,
+          "quadratic_calls": 17,
+          "skipped_calls": 3010,
+          "scenario_nodes_q4": 4575744,
+          "scenario_nodes_q8": 36737920
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "ready_total_physical_m3": 3.671486705945852e-12,
+          "estimated_unintegrated_upper_m3": 4.273115716324807e-13,
+          "needed_calls": 4476,
+          "quartic_calls": 3986,
+          "quadratic_calls": 490,
+          "skipped_calls": 613,
+          "scenario_nodes_q4": 9459648,
+          "scenario_nodes_q8": 75932288
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.910951910270974e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 1,
+      "original_candidate_count": 127,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.72396664176484e-10,
+      "single_quartic_calls": 5734,
+      "single_quadratic_calls": 657,
+      "single_ready_physical_upper_m3": 3.665062257520441e-12,
+      "multi_remaining_physical_m3": 3.5200479194319884e-13,
+      "multi_remaining_leaves": 3007,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "ready_total_physical_m3": 3.665062257520441e-12,
+          "estimated_unintegrated_upper_m3": 1.0680439444351925e-12,
+          "needed_calls": 2151,
+          "quartic_calls": 2132,
+          "quadratic_calls": 19,
+          "skipped_calls": 4240,
+          "scenario_nodes_q4": 4732992,
+          "scenario_nodes_q8": 38000384
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "ready_total_physical_m3": 3.665062257520441e-12,
+          "estimated_unintegrated_upper_m3": 4.2730527692144724e-13,
+          "needed_calls": 5365,
+          "quartic_calls": 5030,
+          "quadratic_calls": 335,
+          "skipped_calls": 1026,
+          "scenario_nodes_q4": 11556480,
+          "scenario_nodes_q8": 92773760
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.5200479194319884e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 2,
+      "original_candidate_count": 103,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 9.421454609436697e-11,
+      "single_quartic_calls": 6660,
+      "single_quadratic_calls": 694,
+      "single_ready_physical_upper_m3": 3.6358370893218713e-12,
+      "multi_remaining_physical_m3": 3.282063654673332e-13,
+      "multi_remaining_leaves": 2956,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "ready_total_physical_m3": 3.6358370893218713e-12,
+          "estimated_unintegrated_upper_m3": 1.0680497091202185e-12,
+          "needed_calls": 2657,
+          "quartic_calls": 2622,
+          "quadratic_calls": 35,
+          "skipped_calls": 4697,
+          "scenario_nodes_q4": 5836416,
+          "scenario_nodes_q8": 46859136
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "ready_total_physical_m3": 3.6358370893218713e-12,
+          "estimated_unintegrated_upper_m3": 4.2731206604426087e-13,
+          "needed_calls": 6110,
+          "quartic_calls": 5864,
+          "quadratic_calls": 246,
+          "skipped_calls": 1244,
+          "scenario_nodes_q4": 13278336,
+          "scenario_nodes_q8": 106601984
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.282063654673332e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 3,
+      "original_candidate_count": 108,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 9.688485221542972e-11,
+      "single_quartic_calls": 6310,
+      "single_quadratic_calls": 741,
+      "single_ready_physical_upper_m3": 4.037523926462308e-12,
+      "multi_remaining_physical_m3": 3.009610367682472e-13,
+      "multi_remaining_leaves": 3017,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "ready_total_physical_m3": 4.037523926462308e-12,
+          "estimated_unintegrated_upper_m3": 1.067981046785495e-12,
+          "needed_calls": 2521,
+          "quartic_calls": 2460,
+          "quadratic_calls": 61,
+          "skipped_calls": 4530,
+          "scenario_nodes_q4": 5513664,
+          "scenario_nodes_q8": 44266752
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "ready_total_physical_m3": 4.037523926462308e-12,
+          "estimated_unintegrated_upper_m3": 4.272682292225292e-13,
+          "needed_calls": 5657,
+          "quartic_calls": 5328,
+          "quadratic_calls": 329,
+          "skipped_calls": 1394,
+          "scenario_nodes_q4": 12206400,
+          "scenario_nodes_q8": 97992192
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.009610367682472e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 4,
+      "original_candidate_count": 120,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.238382391069582e-10,
+      "single_quartic_calls": 5177,
+      "single_quadratic_calls": 685,
+      "single_ready_physical_upper_m3": 3.804437457830279e-12,
+      "multi_remaining_physical_m3": 3.2765801400559075e-13,
+      "multi_remaining_leaves": 2986,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "ready_total_physical_m3": 3.804437457830279e-12,
+          "estimated_unintegrated_upper_m3": 1.0680241498438142e-12,
+          "needed_calls": 2317,
+          "quartic_calls": 2294,
+          "quadratic_calls": 23,
+          "skipped_calls": 3545,
+          "scenario_nodes_q4": 5096064,
+          "scenario_nodes_q8": 40915328
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "ready_total_physical_m3": 3.804437457830279e-12,
+          "estimated_unintegrated_upper_m3": 4.2728654528786473e-13,
+          "needed_calls": 4770,
+          "quartic_calls": 4395,
+          "quadratic_calls": 375,
+          "skipped_calls": 1092,
+          "scenario_nodes_q4": 10208160,
+          "scenario_nodes_q8": 81946560
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.2765801400559075e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "original_candidate_count": 98,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.1899210475407012e-10,
+      "single_quartic_calls": 4955,
+      "single_quadratic_calls": 585,
+      "single_ready_physical_upper_m3": 3.164938529131332e-12,
+      "multi_remaining_physical_m3": 3.6140587532766214e-13,
+      "multi_remaining_leaves": 2804,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "ready_total_physical_m3": 3.164938529131332e-12,
+          "estimated_unintegrated_upper_m3": 1.0681202960033384e-12,
+          "needed_calls": 2282,
+          "quartic_calls": 2278,
+          "quadratic_calls": 4,
+          "skipped_calls": 3258,
+          "scenario_nodes_q4": 5035200,
+          "scenario_nodes_q8": 40427392
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "ready_total_physical_m3": 3.164938529131332e-12,
+          "estimated_unintegrated_upper_m3": 4.272342835482758e-13,
+          "needed_calls": 4771,
+          "quartic_calls": 4449,
+          "quadratic_calls": 322,
+          "skipped_calls": 769,
+          "scenario_nodes_q4": 10256160,
+          "scenario_nodes_q8": 82334016
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.6140587532766214e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "original_candidate_count": 113,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.3807363537699395e-10,
+      "single_quartic_calls": 6586,
+      "single_quadratic_calls": 511,
+      "single_ready_physical_upper_m3": 3.151837681219659e-12,
+      "multi_remaining_physical_m3": 3.822914920450874e-13,
+      "multi_remaining_leaves": 2826,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "ready_total_physical_m3": 3.151837681219659e-12,
+          "estimated_unintegrated_upper_m3": 1.0682282136693228e-12,
+          "needed_calls": 2809,
+          "quartic_calls": 2789,
+          "quadratic_calls": 20,
+          "skipped_calls": 4288,
+          "scenario_nodes_q4": 6184992,
+          "scenario_nodes_q8": 49658432
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "ready_total_physical_m3": 3.151837681219659e-12,
+          "estimated_unintegrated_upper_m3": 4.27266231015793e-13,
+          "needed_calls": 6581,
+          "quartic_calls": 6203,
+          "quadratic_calls": 378,
+          "skipped_calls": 516,
+          "scenario_nodes_q4": 14204256,
+          "scenario_nodes_q8": 114031040
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.822914920450874e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 7,
+      "original_candidate_count": 120,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.4174025465656404e-10,
+      "single_quartic_calls": 5158,
+      "single_quadratic_calls": 582,
+      "single_ready_physical_upper_m3": 3.471915928179031e-12,
+      "multi_remaining_physical_m3": 3.6078064578388276e-13,
+      "multi_remaining_leaves": 2852,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "ready_total_physical_m3": 3.471915928179031e-12,
+          "estimated_unintegrated_upper_m3": 1.0681282193081098e-12,
+          "needed_calls": 2154,
+          "quartic_calls": 2135,
+          "quadratic_calls": 19,
+          "skipped_calls": 3586,
+          "scenario_nodes_q4": 4739616,
+          "scenario_nodes_q8": 38053568
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "ready_total_physical_m3": 3.471915928179031e-12,
+          "estimated_unintegrated_upper_m3": 4.2727320865755667e-13,
+          "needed_calls": 5039,
+          "quartic_calls": 4735,
+          "quadratic_calls": 304,
+          "skipped_calls": 701,
+          "scenario_nodes_q4": 10863456,
+          "scenario_nodes_q8": 87210688
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.6078064578388276e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 8,
+      "original_candidate_count": 106,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.0939291304595255e-10,
+      "single_quartic_calls": 5096,
+      "single_quadratic_calls": 619,
+      "single_ready_physical_upper_m3": 3.6244455233422406e-12,
+      "multi_remaining_physical_m3": 3.254186379900849e-13,
+      "multi_remaining_leaves": 2873,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "ready_total_physical_m3": 3.6244455233422406e-12,
+          "estimated_unintegrated_upper_m3": 1.067957419236432e-12,
+          "needed_calls": 2315,
+          "quartic_calls": 2302,
+          "quadratic_calls": 13,
+          "skipped_calls": 3400,
+          "scenario_nodes_q4": 5100288,
+          "scenario_nodes_q8": 40949632
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "ready_total_physical_m3": 3.6244455233422406e-12,
+          "estimated_unintegrated_upper_m3": 4.272619433314617e-13,
+          "needed_calls": 4743,
+          "quartic_calls": 4479,
+          "quadratic_calls": 264,
+          "skipped_calls": 972,
+          "scenario_nodes_q4": 10244448,
+          "scenario_nodes_q8": 82242240
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.254186379900849e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "original_candidate_count": 99,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.1668389542579997e-10,
+      "single_quartic_calls": 5572,
+      "single_quadratic_calls": 571,
+      "single_ready_physical_upper_m3": 3.934551931514775e-12,
+      "multi_remaining_physical_m3": 3.8871801526699786e-13,
+      "multi_remaining_leaves": 2806,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "ready_total_physical_m3": 3.934551931514775e-12,
+          "estimated_unintegrated_upper_m3": 1.068113586751976e-12,
+          "needed_calls": 2554,
+          "quartic_calls": 2519,
+          "quadratic_calls": 35,
+          "skipped_calls": 3589,
+          "scenario_nodes_q4": 5608992,
+          "scenario_nodes_q8": 45033152
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "ready_total_physical_m3": 3.934551931514775e-12,
+          "estimated_unintegrated_upper_m3": 4.273050118943184e-13,
+          "needed_calls": 5742,
+          "quartic_calls": 5355,
+          "quadratic_calls": 387,
+          "skipped_calls": 401,
+          "scenario_nodes_q4": 12343968,
+          "scenario_nodes_q8": 99094464
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.8871801526699786e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "original_candidate_count": 123,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.7000042494984242e-10,
+      "single_quartic_calls": 6707,
+      "single_quadratic_calls": 535,
+      "single_ready_physical_upper_m3": 3.728642442373643e-12,
+      "multi_remaining_physical_m3": 3.5758692644683677e-13,
+      "multi_remaining_leaves": 2832,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "ready_total_physical_m3": 3.728642442373643e-12,
+          "estimated_unintegrated_upper_m3": 1.0682544930570924e-12,
+          "needed_calls": 2848,
+          "quartic_calls": 2811,
+          "quadratic_calls": 37,
+          "skipped_calls": 4394,
+          "scenario_nodes_q4": 6256416,
+          "scenario_nodes_q8": 50231232
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "ready_total_physical_m3": 3.728642442373643e-12,
+          "estimated_unintegrated_upper_m3": 4.272423529762672e-13,
+          "needed_calls": 6376,
+          "quartic_calls": 5951,
+          "quadratic_calls": 425,
+          "skipped_calls": 866,
+          "scenario_nodes_q4": 13711008,
+          "scenario_nodes_q8": 110068928
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.5758692644683677e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 11,
+      "original_candidate_count": 135,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.8161110598525852e-10,
+      "single_quartic_calls": 5312,
+      "single_quadratic_calls": 740,
+      "single_ready_physical_upper_m3": 3.754067077719628e-12,
+      "multi_remaining_physical_m3": 3.0844669752486445e-13,
+      "multi_remaining_leaves": 3191,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "ready_total_physical_m3": 3.754067077719628e-12,
+          "estimated_unintegrated_upper_m3": 1.067921771757742e-12,
+          "needed_calls": 2169,
+          "quartic_calls": 2148,
+          "quadratic_calls": 21,
+          "skipped_calls": 3883,
+          "scenario_nodes_q4": 4771008,
+          "scenario_nodes_q8": 38305536
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "ready_total_physical_m3": 3.754067077719628e-12,
+          "estimated_unintegrated_upper_m3": 4.272679557633584e-13,
+          "needed_calls": 4697,
+          "quartic_calls": 4443,
+          "quadratic_calls": 254,
+          "skipped_calls": 1355,
+          "scenario_nodes_q4": 10151520,
+          "scenario_nodes_q8": 81496512
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.0844669752486445e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "original_candidate_count": 116,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.0680169284981477e-10,
+      "single_quartic_calls": 5519,
+      "single_quadratic_calls": 1082,
+      "single_ready_physical_upper_m3": 3.439315059233346e-12,
+      "multi_remaining_physical_m3": 2.7734086834914926e-13,
+      "multi_remaining_leaves": 3349,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "ready_total_physical_m3": 3.439315059233346e-12,
+          "estimated_unintegrated_upper_m3": 1.0681798493154637e-12,
+          "needed_calls": 2253,
+          "quartic_calls": 2212,
+          "quadratic_calls": 41,
+          "skipped_calls": 4348,
+          "scenario_nodes_q4": 4939200,
+          "scenario_nodes_q8": 39655168
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "ready_total_physical_m3": 3.439315059233346e-12,
+          "estimated_unintegrated_upper_m3": 4.272505794303822e-13,
+          "needed_calls": 4699,
+          "quartic_calls": 4428,
+          "quadratic_calls": 271,
+          "skipped_calls": 1902,
+          "scenario_nodes_q4": 10141248,
+          "scenario_nodes_q8": 81413376
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 2.7734086834914926e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 1,
+      "original_candidate_count": 132,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 2.1057405433161893e-10,
+      "single_quartic_calls": 6142,
+      "single_quadratic_calls": 895,
+      "single_ready_physical_upper_m3": 3.2082497962509057e-12,
+      "multi_remaining_physical_m3": 2.919633110884656e-13,
+      "multi_remaining_leaves": 3162,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "ready_total_physical_m3": 3.2082497962509057e-12,
+          "estimated_unintegrated_upper_m3": 1.0680087360636484e-12,
+          "needed_calls": 2319,
+          "quartic_calls": 2261,
+          "quadratic_calls": 58,
+          "skipped_calls": 4718,
+          "scenario_nodes_q4": 5070240,
+          "scenario_nodes_q8": 40706624
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "ready_total_physical_m3": 3.2082497962509057e-12,
+          "estimated_unintegrated_upper_m3": 4.2729623653054604e-13,
+          "needed_calls": 5365,
+          "quartic_calls": 4998,
+          "quadratic_calls": 367,
+          "skipped_calls": 1672,
+          "scenario_nodes_q4": 11528832,
+          "scenario_nodes_q8": 92550528
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 2.919633110884656e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 2,
+      "original_candidate_count": 116,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 2.017512686911105e-10,
+      "single_quartic_calls": 4526,
+      "single_quadratic_calls": 898,
+      "single_ready_physical_upper_m3": 3.570666336448375e-12,
+      "multi_remaining_physical_m3": 3.259895426387093e-13,
+      "multi_remaining_leaves": 3041,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "ready_total_physical_m3": 3.570666336448375e-12,
+          "estimated_unintegrated_upper_m3": 1.0682115906843134e-12,
+          "needed_calls": 2134,
+          "quartic_calls": 2080,
+          "quadratic_calls": 54,
+          "skipped_calls": 3290,
+          "scenario_nodes_q4": 4665216,
+          "scenario_nodes_q8": 37454848
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "ready_total_physical_m3": 3.570666336448375e-12,
+          "estimated_unintegrated_upper_m3": 4.273093500711853e-13,
+          "needed_calls": 4298,
+          "quartic_calls": 3941,
+          "quadratic_calls": 357,
+          "skipped_calls": 1126,
+          "scenario_nodes_q4": 9181536,
+          "scenario_nodes_q8": 73704512
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.259895426387093e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "original_candidate_count": 112,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.646317295186426e-10,
+      "single_quartic_calls": 5644,
+      "single_quadratic_calls": 893,
+      "single_ready_physical_upper_m3": 3.774445393047533e-12,
+      "multi_remaining_physical_m3": 3.3401537158021293e-13,
+      "multi_remaining_leaves": 2937,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "ready_total_physical_m3": 3.774445393047533e-12,
+          "estimated_unintegrated_upper_m3": 1.0681648612254859e-12,
+          "needed_calls": 2349,
+          "quartic_calls": 2283,
+          "quadratic_calls": 66,
+          "skipped_calls": 4188,
+          "scenario_nodes_q4": 5129568,
+          "scenario_nodes_q8": 41182656
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "ready_total_physical_m3": 3.774445393047533e-12,
+          "estimated_unintegrated_upper_m3": 4.27292689180978e-13,
+          "needed_calls": 5369,
+          "quartic_calls": 4921,
+          "quadratic_calls": 448,
+          "skipped_calls": 1168,
+          "scenario_nodes_q4": 11467680,
+          "scenario_nodes_q8": 92056384
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.3401537158021293e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 4,
+      "original_candidate_count": 128,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 2.2536872545388525e-10,
+      "single_quartic_calls": 5112,
+      "single_quadratic_calls": 840,
+      "single_ready_physical_upper_m3": 3.790975775812004e-12,
+      "multi_remaining_physical_m3": 2.988272261429598e-13,
+      "multi_remaining_leaves": 3059,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "ready_total_physical_m3": 3.790975775812004e-12,
+          "estimated_unintegrated_upper_m3": 1.0681811205510574e-12,
+          "needed_calls": 2163,
+          "quartic_calls": 2131,
+          "quadratic_calls": 32,
+          "skipped_calls": 3789,
+          "scenario_nodes_q4": 4748256,
+          "scenario_nodes_q8": 38122432
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "ready_total_physical_m3": 3.790975775812004e-12,
+          "estimated_unintegrated_upper_m3": 4.2719950822092245e-13,
+          "needed_calls": 4546,
+          "quartic_calls": 4252,
+          "quadratic_calls": 294,
+          "skipped_calls": 1406,
+          "scenario_nodes_q4": 9783552,
+          "scenario_nodes_q8": 78540544
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 2.988272261429598e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "original_candidate_count": 104,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.5352795119958002e-10,
+      "single_quartic_calls": 5886,
+      "single_quadratic_calls": 769,
+      "single_ready_physical_upper_m3": 2.934001944494504e-12,
+      "multi_remaining_physical_m3": 3.6805352410386153e-13,
+      "multi_remaining_leaves": 2904,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "ready_total_physical_m3": 2.934001944494504e-12,
+          "estimated_unintegrated_upper_m3": 1.0680375796273846e-12,
+          "needed_calls": 2856,
+          "quartic_calls": 2823,
+          "quadratic_calls": 33,
+          "skipped_calls": 3799,
+          "scenario_nodes_q4": 6277536,
+          "scenario_nodes_q8": 50400960
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "ready_total_physical_m3": 2.934001944494504e-12,
+          "estimated_unintegrated_upper_m3": 4.2730652498458825e-13,
+          "needed_calls": 5894,
+          "quartic_calls": 5516,
+          "quadratic_calls": 378,
+          "skipped_calls": 761,
+          "scenario_nodes_q4": 12687360,
+          "scenario_nodes_q8": 101851904
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.6805352410386153e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "original_candidate_count": 111,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.918839468014672e-10,
+      "single_quartic_calls": 5554,
+      "single_quadratic_calls": 872,
+      "single_ready_physical_upper_m3": 3.0439827223907424e-12,
+      "multi_remaining_physical_m3": 3.2390598281961664e-13,
+      "multi_remaining_leaves": 3093,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "ready_total_physical_m3": 3.0439827223907424e-12,
+          "estimated_unintegrated_upper_m3": 1.0679512682015282e-12,
+          "needed_calls": 2362,
+          "quartic_calls": 2331,
+          "quadratic_calls": 31,
+          "skipped_calls": 4064,
+          "scenario_nodes_q4": 5188512,
+          "scenario_nodes_q8": 41657280
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "ready_total_physical_m3": 3.0439827223907424e-12,
+          "estimated_unintegrated_upper_m3": 4.2723635499011726e-13,
+          "needed_calls": 5114,
+          "quartic_calls": 4842,
+          "quadratic_calls": 272,
+          "skipped_calls": 1312,
+          "scenario_nodes_q4": 11056704,
+          "scenario_nodes_q8": 88763520
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.2390598281961664e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 7,
+      "original_candidate_count": 128,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.3833875746413015e-10,
+      "single_quartic_calls": 5093,
+      "single_quadratic_calls": 1006,
+      "single_ready_physical_upper_m3": 3.4453770236621883e-12,
+      "multi_remaining_physical_m3": 2.608719102397661e-13,
+      "multi_remaining_leaves": 3382,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "ready_total_physical_m3": 3.4453770236621883e-12,
+          "estimated_unintegrated_upper_m3": 1.0682289259777963e-12,
+          "needed_calls": 2234,
+          "quartic_calls": 2213,
+          "quadratic_calls": 21,
+          "skipped_calls": 3865,
+          "scenario_nodes_q4": 4914528,
+          "scenario_nodes_q8": 39457856
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "ready_total_physical_m3": 3.4453770236621883e-12,
+          "estimated_unintegrated_upper_m3": 4.271857681248416e-13,
+          "needed_calls": 4259,
+          "quartic_calls": 4055,
+          "quadratic_calls": 204,
+          "skipped_calls": 1840,
+          "scenario_nodes_q4": 9227616,
+          "scenario_nodes_q8": 74080448
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 2.608719102397661e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 8,
+      "original_candidate_count": 105,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.0518860323355588e-10,
+      "single_quartic_calls": 6164,
+      "single_quadratic_calls": 915,
+      "single_ready_physical_upper_m3": 3.3758765610264932e-12,
+      "multi_remaining_physical_m3": 3.069566905298823e-13,
+      "multi_remaining_leaves": 3091,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "ready_total_physical_m3": 3.3758765610264932e-12,
+          "estimated_unintegrated_upper_m3": 1.0681682547990675e-12,
+          "needed_calls": 2689,
+          "quartic_calls": 2633,
+          "quadratic_calls": 56,
+          "skipped_calls": 4390,
+          "scenario_nodes_q4": 5888928,
+          "scenario_nodes_q8": 47279936
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "ready_total_physical_m3": 3.3758765610264932e-12,
+          "estimated_unintegrated_upper_m3": 4.272734099249018e-13,
+          "needed_calls": 5626,
+          "quartic_calls": 5295,
+          "quadratic_calls": 331,
+          "skipped_calls": 1453,
+          "scenario_nodes_q4": 12136224,
+          "scenario_nodes_q8": 97428672
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.069566905298823e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 9,
+      "original_candidate_count": 114,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.2943441091609093e-10,
+      "single_quartic_calls": 4468,
+      "single_quadratic_calls": 866,
+      "single_ready_physical_upper_m3": 4.565693784228069e-12,
+      "multi_remaining_physical_m3": 3.082718402201289e-13,
+      "multi_remaining_leaves": 3124,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "ready_total_physical_m3": 4.565693784228069e-12,
+          "estimated_unintegrated_upper_m3": 1.0680151393042117e-12,
+          "needed_calls": 2012,
+          "quartic_calls": 1983,
+          "quadratic_calls": 29,
+          "skipped_calls": 3322,
+          "scenario_nodes_q4": 4417440,
+          "scenario_nodes_q8": 35466432
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "ready_total_physical_m3": 4.565693784228069e-12,
+          "estimated_unintegrated_upper_m3": 4.2717533963175126e-13,
+          "needed_calls": 4009,
+          "quartic_calls": 3706,
+          "quadratic_calls": 303,
+          "skipped_calls": 1325,
+          "scenario_nodes_q4": 8590080,
+          "scenario_nodes_q8": 68957824
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.082718402201289e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 10,
+      "original_candidate_count": 122,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.5607148499095135e-10,
+      "single_quartic_calls": 5034,
+      "single_quadratic_calls": 881,
+      "single_ready_physical_upper_m3": 4.40994410329112e-12,
+      "multi_remaining_physical_m3": 3.449482353172143e-13,
+      "multi_remaining_leaves": 3174,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "ready_total_physical_m3": 4.40994410329112e-12,
+          "estimated_unintegrated_upper_m3": 1.0679904149468911e-12,
+          "needed_calls": 2314,
+          "quartic_calls": 2253,
+          "quadratic_calls": 61,
+          "skipped_calls": 3601,
+          "scenario_nodes_q4": 5056608,
+          "scenario_nodes_q8": 40597056
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "ready_total_physical_m3": 4.40994410329112e-12,
+          "estimated_unintegrated_upper_m3": 4.2725503526824106e-13,
+          "needed_calls": 4864,
+          "quartic_calls": 4489,
+          "quadratic_calls": 375,
+          "skipped_calls": 1051,
+          "scenario_nodes_q4": 10415712,
+          "scenario_nodes_q8": 83612992
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 3.449482353172143e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 11,
+      "original_candidate_count": 129,
+      "ideal_spherical_sector_volume_m3": 2.136562257121387e-12,
+      "candidate_physical_volume_m3": 1.965021743599151e-10,
+      "single_quartic_calls": 4930,
+      "single_quadratic_calls": 1039,
+      "single_ready_physical_upper_m3": 3.5995713684134574e-12,
+      "multi_remaining_physical_m3": 2.7637730249047865e-13,
+      "multi_remaining_leaves": 3289,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-12,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "ready_total_physical_m3": 3.5995713684134574e-12,
+          "estimated_unintegrated_upper_m3": 1.0678664308840886e-12,
+          "needed_calls": 2009,
+          "quartic_calls": 1996,
+          "quadratic_calls": 13,
+          "skipped_calls": 3960,
+          "scenario_nodes_q4": 4424640,
+          "scenario_nodes_q8": 35524864
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.273124514242774e-13,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "ready_total_physical_m3": 3.5995713684134574e-12,
+          "estimated_unintegrated_upper_m3": 4.2718585192292956e-13,
+          "needed_calls": 4195,
+          "quartic_calls": 3948,
+          "quadratic_calls": 247,
+          "skipped_calls": 1774,
+          "scenario_nodes_q4": 9049152,
+          "scenario_nodes_q8": 72645888
+        },
+        "10.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-13,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "needed_calls": null
+        },
+        "5.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 1.0682811285606935e-13,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "needed_calls": null
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.273124514242774e-14,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 2.136562257121387e-14,
+          "multi_physical_floor_m3": 2.7637730249047865e-13,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "original_candidate_count": 212,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 6.585724202968693e-10,
+      "single_quartic_calls": 1733,
+      "single_quadratic_calls": 1731,
+      "single_ready_physical_upper_m3": 9.8993240298924e-11,
+      "multi_remaining_physical_m3": 1.547046501336143e-12,
+      "multi_remaining_leaves": 3056,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "ready_total_physical_m3": 9.8993240298924e-11,
+          "estimated_unintegrated_upper_m3": 2.478670991442759e-11,
+          "needed_calls": 224,
+          "quartic_calls": 126,
+          "quadratic_calls": 98,
+          "skipped_calls": 3240,
+          "scenario_nodes_q4": 409920,
+          "scenario_nodes_q8": 3287424
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "ready_total_physical_m3": 9.8993240298924e-11,
+          "estimated_unintegrated_upper_m3": 9.92363729966768e-12,
+          "needed_calls": 636,
+          "quartic_calls": 330,
+          "quadratic_calls": 306,
+          "skipped_calls": 2828,
+          "scenario_nodes_q4": 1139904,
+          "scenario_nodes_q8": 9140352
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "ready_total_physical_m3": 9.8993240298924e-11,
+          "estimated_unintegrated_upper_m3": 4.959292882112384e-12,
+          "needed_calls": 1149,
+          "quartic_calls": 601,
+          "quadratic_calls": 548,
+          "skipped_calls": 2315,
+          "scenario_nodes_q4": 2063520,
+          "scenario_nodes_q8": 16546624
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "ready_total_physical_m3": 9.8993240298924e-11,
+          "estimated_unintegrated_upper_m3": 2.4811442277832274e-12,
+          "needed_calls": 2034,
+          "quartic_calls": 1022,
+          "quadratic_calls": 1012,
+          "skipped_calls": 1430,
+          "scenario_nodes_q4": 3616704,
+          "scenario_nodes_q8": 28999040
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.547046501336143e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 1,
+      "original_candidate_count": 288,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 9.60556712646903e-10,
+      "single_quartic_calls": 1732,
+      "single_quadratic_calls": 1657,
+      "single_ready_physical_upper_m3": 9.390687020092546e-11,
+      "multi_remaining_physical_m3": 1.553755184155378e-12,
+      "multi_remaining_leaves": 3105,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "ready_total_physical_m3": 9.390687020092546e-11,
+          "estimated_unintegrated_upper_m3": 2.481317218693022e-11,
+          "needed_calls": 209,
+          "quartic_calls": 123,
+          "quadratic_calls": 86,
+          "skipped_calls": 3180,
+          "scenario_nodes_q4": 387168,
+          "scenario_nodes_q8": 3105216
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "ready_total_physical_m3": 9.390687020092546e-11,
+          "estimated_unintegrated_upper_m3": 9.9151480490607e-12,
+          "needed_calls": 543,
+          "quartic_calls": 283,
+          "quadratic_calls": 260,
+          "skipped_calls": 2846,
+          "scenario_nodes_q4": 974304,
+          "scenario_nodes_q8": 7812544
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "ready_total_physical_m3": 9.390687020092546e-11,
+          "estimated_unintegrated_upper_m3": 4.960787445717161e-12,
+          "needed_calls": 1017,
+          "quartic_calls": 509,
+          "quadratic_calls": 508,
+          "skipped_calls": 2372,
+          "scenario_nodes_q4": 1806624,
+          "scenario_nodes_q8": 14485568
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "ready_total_physical_m3": 9.390687020092546e-11,
+          "estimated_unintegrated_upper_m3": 2.481183130388734e-12,
+          "needed_calls": 1932,
+          "quartic_calls": 1001,
+          "quadratic_calls": 931,
+          "skipped_calls": 1457,
+          "scenario_nodes_q4": 3461472,
+          "scenario_nodes_q8": 27755840
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.553755184155378e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 2,
+      "original_candidate_count": 241,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 6.800243900705595e-10,
+      "single_quartic_calls": 1916,
+      "single_quadratic_calls": 1608,
+      "single_ready_physical_upper_m3": 9.587338610121853e-11,
+      "multi_remaining_physical_m3": 1.4666170728100262e-12,
+      "multi_remaining_leaves": 3141,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "ready_total_physical_m3": 9.587338610121853e-11,
+          "estimated_unintegrated_upper_m3": 2.4736868062921285e-11,
+          "needed_calls": 200,
+          "quartic_calls": 103,
+          "quadratic_calls": 97,
+          "skipped_calls": 3324,
+          "scenario_nodes_q4": 357792,
+          "scenario_nodes_q8": 2868928
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "ready_total_physical_m3": 9.587338610121853e-11,
+          "estimated_unintegrated_upper_m3": 9.912613700639966e-12,
+          "needed_calls": 543,
+          "quartic_calls": 311,
+          "quadratic_calls": 232,
+          "skipped_calls": 2981,
+          "scenario_nodes_q4": 998496,
+          "scenario_nodes_q8": 8007872
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "ready_total_physical_m3": 9.587338610121853e-11,
+          "estimated_unintegrated_upper_m3": 4.96004979879416e-12,
+          "needed_calls": 1017,
+          "quartic_calls": 559,
+          "quadratic_calls": 458,
+          "skipped_calls": 2507,
+          "scenario_nodes_q4": 1849824,
+          "scenario_nodes_q8": 14834368
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "ready_total_physical_m3": 9.587338610121853e-11,
+          "estimated_unintegrated_upper_m3": 2.4804357536650106e-12,
+          "needed_calls": 1866,
+          "quartic_calls": 1015,
+          "quadratic_calls": 851,
+          "skipped_calls": 1658,
+          "scenario_nodes_q4": 3384864,
+          "scenario_nodes_q8": 27143872
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.4666170728100262e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 3,
+      "original_candidate_count": 262,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.544279787867488e-10,
+      "single_quartic_calls": 1824,
+      "single_quadratic_calls": 1585,
+      "single_ready_physical_upper_m3": 1.0696173468567283e-10,
+      "multi_remaining_physical_m3": 1.3953250509652433e-12,
+      "multi_remaining_leaves": 3260,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "ready_total_physical_m3": 1.0696173468567283e-10,
+          "estimated_unintegrated_upper_m3": 2.4742076201737192e-11,
+          "needed_calls": 191,
+          "quartic_calls": 101,
+          "quadratic_calls": 90,
+          "skipped_calls": 3218,
+          "scenario_nodes_q4": 343968,
+          "scenario_nodes_q8": 2758208
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "ready_total_physical_m3": 1.0696173468567283e-10,
+          "estimated_unintegrated_upper_m3": 9.91540912116113e-12,
+          "needed_calls": 541,
+          "quartic_calls": 300,
+          "quadratic_calls": 241,
+          "skipped_calls": 2868,
+          "scenario_nodes_q4": 986304,
+          "scenario_nodes_q8": 7909632
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "ready_total_physical_m3": 1.0696173468567283e-10,
+          "estimated_unintegrated_upper_m3": 4.9617534974282364e-12,
+          "needed_calls": 998,
+          "quartic_calls": 554,
+          "quadratic_calls": 444,
+          "skipped_calls": 2411,
+          "scenario_nodes_q4": 1819968,
+          "scenario_nodes_q8": 14595200
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "ready_total_physical_m3": 1.0696173468567283e-10,
+          "estimated_unintegrated_upper_m3": 2.481434057862898e-12,
+          "needed_calls": 1766,
+          "quartic_calls": 963,
+          "quadratic_calls": 803,
+          "skipped_calls": 1643,
+          "scenario_nodes_q4": 3205536,
+          "scenario_nodes_q8": 25705920
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.3953250509652433e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 4,
+      "original_candidate_count": 287,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.996167484614328e-10,
+      "single_quartic_calls": 2029,
+      "single_quadratic_calls": 1594,
+      "single_ready_physical_upper_m3": 9.323259740274242e-11,
+      "multi_remaining_physical_m3": 1.5270880247789087e-12,
+      "multi_remaining_leaves": 3248,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "ready_total_physical_m3": 9.323259740274242e-11,
+          "estimated_unintegrated_upper_m3": 2.4765290549781666e-11,
+          "needed_calls": 199,
+          "quartic_calls": 106,
+          "quadratic_calls": 93,
+          "skipped_calls": 3424,
+          "scenario_nodes_q4": 359040,
+          "scenario_nodes_q8": 2879104
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "ready_total_physical_m3": 9.323259740274242e-11,
+          "estimated_unintegrated_upper_m3": 9.913936341894209e-12,
+          "needed_calls": 564,
+          "quartic_calls": 286,
+          "quadratic_calls": 278,
+          "skipped_calls": 3059,
+          "scenario_nodes_q4": 1005120,
+          "scenario_nodes_q8": 8059264
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "ready_total_physical_m3": 9.323259740274242e-11,
+          "estimated_unintegrated_upper_m3": 4.959867963922698e-12,
+          "needed_calls": 1083,
+          "quartic_calls": 564,
+          "quadratic_calls": 519,
+          "skipped_calls": 2540,
+          "scenario_nodes_q4": 1942848,
+          "scenario_nodes_q8": 15578880
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "ready_total_physical_m3": 9.323259740274242e-11,
+          "estimated_unintegrated_upper_m3": 2.4814293784347184e-12,
+          "needed_calls": 2024,
+          "quartic_calls": 1125,
+          "quadratic_calls": 899,
+          "skipped_calls": 1599,
+          "scenario_nodes_q4": 3692256,
+          "scenario_nodes_q8": 29610048
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5270880247789087e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 5,
+      "original_candidate_count": 211,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 6.102119446170222e-10,
+      "single_quartic_calls": 1708,
+      "single_quadratic_calls": 1699,
+      "single_ready_physical_upper_m3": 8.929482726132074e-11,
+      "multi_remaining_physical_m3": 1.5606686617584355e-12,
+      "multi_remaining_leaves": 3160,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "ready_total_physical_m3": 8.929482726132074e-11,
+          "estimated_unintegrated_upper_m3": 2.472074196845507e-11,
+          "needed_calls": 218,
+          "quartic_calls": 119,
+          "quadratic_calls": 99,
+          "skipped_calls": 3189,
+          "scenario_nodes_q4": 395808,
+          "scenario_nodes_q8": 3174080
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "ready_total_physical_m3": 8.929482726132074e-11,
+          "estimated_unintegrated_upper_m3": 9.920324089858626e-12,
+          "needed_calls": 533,
+          "quartic_calls": 303,
+          "quadratic_calls": 230,
+          "skipped_calls": 2874,
+          "scenario_nodes_q4": 978144,
+          "scenario_nodes_q8": 7844544
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "ready_total_physical_m3": 8.929482726132074e-11,
+          "estimated_unintegrated_upper_m3": 4.961465899795965e-12,
+          "needed_calls": 991,
+          "quartic_calls": 508,
+          "quadratic_calls": 483,
+          "skipped_calls": 2416,
+          "scenario_nodes_q4": 1770816,
+          "scenario_nodes_q8": 14199040
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "ready_total_physical_m3": 8.929482726132074e-11,
+          "estimated_unintegrated_upper_m3": 2.4806026612652638e-12,
+          "needed_calls": 1875,
+          "quartic_calls": 960,
+          "quadratic_calls": 915,
+          "skipped_calls": 1532,
+          "scenario_nodes_q4": 3349440,
+          "scenario_nodes_q8": 26856960
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5606686617584355e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 6,
+      "original_candidate_count": 275,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.673342883760589e-10,
+      "single_quartic_calls": 1740,
+      "single_quadratic_calls": 1729,
+      "single_ready_physical_upper_m3": 9.971958729383583e-11,
+      "multi_remaining_physical_m3": 1.5298390453819614e-12,
+      "multi_remaining_leaves": 3136,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "ready_total_physical_m3": 9.971958729383583e-11,
+          "estimated_unintegrated_upper_m3": 2.473480326345764e-11,
+          "needed_calls": 182,
+          "quartic_calls": 81,
+          "quadratic_calls": 101,
+          "skipped_calls": 3287,
+          "scenario_nodes_q4": 314592,
+          "scenario_nodes_q8": 2521920
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "ready_total_physical_m3": 9.971958729383583e-11,
+          "estimated_unintegrated_upper_m3": 9.909135300282716e-12,
+          "needed_calls": 488,
+          "quartic_calls": 244,
+          "quadratic_calls": 244,
+          "skipped_calls": 2981,
+          "scenario_nodes_q4": 866688,
+          "scenario_nodes_q8": 6949120
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "ready_total_physical_m3": 9.971958729383583e-11,
+          "estimated_unintegrated_upper_m3": 4.960921308319051e-12,
+          "needed_calls": 990,
+          "quartic_calls": 542,
+          "quadratic_calls": 448,
+          "skipped_calls": 2479,
+          "scenario_nodes_q4": 1798848,
+          "scenario_nodes_q8": 14425472
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "ready_total_physical_m3": 9.971958729383583e-11,
+          "estimated_unintegrated_upper_m3": 2.481247507924835e-12,
+          "needed_calls": 1924,
+          "quartic_calls": 1036,
+          "quadratic_calls": 888,
+          "skipped_calls": 1545,
+          "scenario_nodes_q4": 3480960,
+          "scenario_nodes_q8": 27913984
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5298390453819614e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 7,
+      "original_candidate_count": 295,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 9.376770211151774e-10,
+      "single_quartic_calls": 1728,
+      "single_quadratic_calls": 1629,
+      "single_ready_physical_upper_m3": 9.78048303307812e-11,
+      "multi_remaining_physical_m3": 1.4839248489944353e-12,
+      "multi_remaining_leaves": 3098,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "ready_total_physical_m3": 9.78048303307812e-11,
+          "estimated_unintegrated_upper_m3": 2.4783494366009063e-11,
+          "needed_calls": 185,
+          "quartic_calls": 93,
+          "quadratic_calls": 92,
+          "skipped_calls": 3172,
+          "scenario_nodes_q4": 328992,
+          "scenario_nodes_q8": 2637888
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "ready_total_physical_m3": 9.78048303307812e-11,
+          "estimated_unintegrated_upper_m3": 9.908222945881514e-12,
+          "needed_calls": 486,
+          "quartic_calls": 227,
+          "quadratic_calls": 259,
+          "skipped_calls": 2871,
+          "scenario_nodes_q4": 849312,
+          "scenario_nodes_q8": 6809024
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "ready_total_physical_m3": 9.78048303307812e-11,
+          "estimated_unintegrated_upper_m3": 4.962014343319869e-12,
+          "needed_calls": 940,
+          "quartic_calls": 456,
+          "quadratic_calls": 484,
+          "skipped_calls": 2417,
+          "scenario_nodes_q4": 1657344,
+          "scenario_nodes_q8": 13287936
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "ready_total_physical_m3": 9.78048303307812e-11,
+          "estimated_unintegrated_upper_m3": 2.4806907263303524e-12,
+          "needed_calls": 1805,
+          "quartic_calls": 936,
+          "quadratic_calls": 869,
+          "skipped_calls": 1552,
+          "scenario_nodes_q4": 3234624,
+          "scenario_nodes_q8": 25936896
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.4839248489944353e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 8,
+      "original_candidate_count": 252,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.480013279264979e-10,
+      "single_quartic_calls": 1803,
+      "single_quadratic_calls": 1827,
+      "single_ready_physical_upper_m3": 9.942283345282169e-11,
+      "multi_remaining_physical_m3": 1.4913269238911724e-12,
+      "multi_remaining_leaves": 3046,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "ready_total_physical_m3": 9.942283345282169e-11,
+          "estimated_unintegrated_upper_m3": 2.4737434727736483e-11,
+          "needed_calls": 233,
+          "quartic_calls": 155,
+          "quadratic_calls": 78,
+          "skipped_calls": 3397,
+          "scenario_nodes_q4": 447072,
+          "scenario_nodes_q8": 3586496
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "ready_total_physical_m3": 9.942283345282169e-11,
+          "estimated_unintegrated_upper_m3": 9.909979491331909e-12,
+          "needed_calls": 626,
+          "quartic_calls": 336,
+          "quadratic_calls": 290,
+          "skipped_calls": 3004,
+          "scenario_nodes_q4": 1131648,
+          "scenario_nodes_q8": 9074688
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "ready_total_physical_m3": 9.942283345282169e-11,
+          "estimated_unintegrated_upper_m3": 4.9607027680429426e-12,
+          "needed_calls": 1158,
+          "quartic_calls": 577,
+          "quadratic_calls": 581,
+          "skipped_calls": 2472,
+          "scenario_nodes_q4": 2054880,
+          "scenario_nodes_q8": 16475968
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "ready_total_physical_m3": 9.942283345282169e-11,
+          "estimated_unintegrated_upper_m3": 2.480710329204141e-12,
+          "needed_calls": 2094,
+          "quartic_calls": 1021,
+          "quadratic_calls": 1073,
+          "skipped_calls": 1536,
+          "scenario_nodes_q4": 3696480,
+          "scenario_nodes_q8": 29637184
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.4913269238911724e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 9,
+      "original_candidate_count": 262,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.253218857492715e-10,
+      "single_quartic_calls": 1719,
+      "single_quadratic_calls": 1695,
+      "single_ready_physical_upper_m3": 1.0410335868560102e-10,
+      "multi_remaining_physical_m3": 1.5707201857884097e-12,
+      "multi_remaining_leaves": 3104,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "ready_total_physical_m3": 1.0410335868560102e-10,
+          "estimated_unintegrated_upper_m3": 2.4767018899593764e-11,
+          "needed_calls": 227,
+          "quartic_calls": 129,
+          "quadratic_calls": 98,
+          "skipped_calls": 3187,
+          "scenario_nodes_q4": 416544,
+          "scenario_nodes_q8": 3340608
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "ready_total_physical_m3": 1.0410335868560102e-10,
+          "estimated_unintegrated_upper_m3": 9.912476470919725e-12,
+          "needed_calls": 560,
+          "quartic_calls": 289,
+          "quadratic_calls": 271,
+          "skipped_calls": 2854,
+          "scenario_nodes_q4": 1002336,
+          "scenario_nodes_q8": 8037184
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "ready_total_physical_m3": 1.0410335868560102e-10,
+          "estimated_unintegrated_upper_m3": 4.959777107517962e-12,
+          "needed_calls": 1046,
+          "quartic_calls": 554,
+          "quadratic_calls": 492,
+          "skipped_calls": 2368,
+          "scenario_nodes_q4": 1884480,
+          "scenario_nodes_q8": 15111296
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "ready_total_physical_m3": 1.0410335868560102e-10,
+          "estimated_unintegrated_upper_m3": 2.48147658303091e-12,
+          "needed_calls": 1984,
+          "quartic_calls": 1032,
+          "quadratic_calls": 952,
+          "skipped_calls": 1430,
+          "scenario_nodes_q4": 3558144,
+          "scenario_nodes_q8": 28531200
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5707201857884097e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 10,
+      "original_candidate_count": 290,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 9.307965315987161e-10,
+      "single_quartic_calls": 1795,
+      "single_quadratic_calls": 1719,
+      "single_ready_physical_upper_m3": 8.928179435407923e-11,
+      "multi_remaining_physical_m3": 1.5820088703023959e-12,
+      "multi_remaining_leaves": 3114,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "ready_total_physical_m3": 8.928179435407923e-11,
+          "estimated_unintegrated_upper_m3": 2.480818602857638e-11,
+          "needed_calls": 252,
+          "quartic_calls": 134,
+          "quadratic_calls": 118,
+          "skipped_calls": 3262,
+          "scenario_nodes_q4": 454464,
+          "scenario_nodes_q8": 3644288
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "ready_total_physical_m3": 8.928179435407923e-11,
+          "estimated_unintegrated_upper_m3": 9.915829463726285e-12,
+          "needed_calls": 620,
+          "quartic_calls": 318,
+          "quadratic_calls": 302,
+          "skipped_calls": 2894,
+          "scenario_nodes_q4": 1108032,
+          "scenario_nodes_q8": 8884608
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "ready_total_physical_m3": 8.928179435407923e-11,
+          "estimated_unintegrated_upper_m3": 4.962762143073159e-12,
+          "needed_calls": 1102,
+          "quartic_calls": 552,
+          "quadratic_calls": 550,
+          "skipped_calls": 2412,
+          "scenario_nodes_q4": 1958016,
+          "scenario_nodes_q8": 15699456
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "ready_total_physical_m3": 8.928179435407923e-11,
+          "estimated_unintegrated_upper_m3": 2.4811134033731816e-12,
+          "needed_calls": 2010,
+          "quartic_calls": 1038,
+          "quadratic_calls": 972,
+          "skipped_calls": 1504,
+          "scenario_nodes_q4": 3598272,
+          "scenario_nodes_q8": 28852608
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5820088703023959e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 11,
+      "original_candidate_count": 257,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.859737622099064e-10,
+      "single_quartic_calls": 1873,
+      "single_quadratic_calls": 1766,
+      "single_ready_physical_upper_m3": 1.0371565596190577e-10,
+      "multi_remaining_physical_m3": 1.556229631308851e-12,
+      "multi_remaining_leaves": 3021,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "ready_total_physical_m3": 1.0371565596190577e-10,
+          "estimated_unintegrated_upper_m3": 2.4741294154608684e-11,
+          "needed_calls": 227,
+          "quartic_calls": 115,
+          "quadratic_calls": 112,
+          "skipped_calls": 3412,
+          "scenario_nodes_q4": 404448,
+          "scenario_nodes_q8": 3242944
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "ready_total_physical_m3": 1.0371565596190577e-10,
+          "estimated_unintegrated_upper_m3": 9.911770343973928e-12,
+          "needed_calls": 629,
+          "quartic_calls": 332,
+          "quadratic_calls": 297,
+          "skipped_calls": 3010,
+          "scenario_nodes_q4": 1132224,
+          "scenario_nodes_q8": 9079040
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "ready_total_physical_m3": 1.0371565596190577e-10,
+          "estimated_unintegrated_upper_m3": 4.961768098338735e-12,
+          "needed_calls": 1157,
+          "quartic_calls": 613,
+          "quadratic_calls": 544,
+          "skipped_calls": 2482,
+          "scenario_nodes_q4": 2084640,
+          "scenario_nodes_q8": 16716352
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "ready_total_physical_m3": 1.0371565596190577e-10,
+          "estimated_unintegrated_upper_m3": 2.48074863614482e-12,
+          "needed_calls": 2132,
+          "quartic_calls": 1149,
+          "quadratic_calls": 983,
+          "skipped_calls": 1507,
+          "scenario_nodes_q4": 3858144,
+          "scenario_nodes_q8": 30938688
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.556229631308851e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "original_candidate_count": 187,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 6.207649901832901e-10,
+      "single_quartic_calls": 1812,
+      "single_quadratic_calls": 1710,
+      "single_ready_physical_upper_m3": 8.667653918946536e-11,
+      "multi_remaining_physical_m3": 1.6070569783905088e-12,
+      "multi_remaining_leaves": 3011,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "ready_total_physical_m3": 8.667653918946536e-11,
+          "estimated_unintegrated_upper_m3": 2.480645248119107e-11,
+          "needed_calls": 236,
+          "quartic_calls": 118,
+          "quadratic_calls": 118,
+          "skipped_calls": 3286,
+          "scenario_nodes_q4": 419136,
+          "scenario_nodes_q8": 3360640
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "ready_total_physical_m3": 8.667653918946536e-11,
+          "estimated_unintegrated_upper_m3": 9.924497659396662e-12,
+          "needed_calls": 626,
+          "quartic_calls": 338,
+          "quadratic_calls": 288,
+          "skipped_calls": 2896,
+          "scenario_nodes_q4": 1133376,
+          "scenario_nodes_q8": 9088640
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "ready_total_physical_m3": 8.667653918946536e-11,
+          "estimated_unintegrated_upper_m3": 4.9631382871571094e-12,
+          "needed_calls": 1139,
+          "quartic_calls": 602,
+          "quadratic_calls": 537,
+          "skipped_calls": 2383,
+          "scenario_nodes_q4": 2050944,
+          "scenario_nodes_q8": 16446080
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "ready_total_physical_m3": 8.667653918946536e-11,
+          "estimated_unintegrated_upper_m3": 2.4805628118776174e-12,
+          "needed_calls": 2121,
+          "quartic_calls": 1086,
+          "quadratic_calls": 1035,
+          "skipped_calls": 1401,
+          "scenario_nodes_q4": 3788928,
+          "scenario_nodes_q8": 30380928
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6070569783905088e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 1,
+      "original_candidate_count": 243,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.818814084070925e-10,
+      "single_quartic_calls": 1623,
+      "single_quadratic_calls": 1448,
+      "single_ready_physical_upper_m3": 9.705820558233571e-11,
+      "multi_remaining_physical_m3": 1.6109173272226224e-12,
+      "multi_remaining_leaves": 2873,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "ready_total_physical_m3": 9.705820558233571e-11,
+          "estimated_unintegrated_upper_m3": 2.477859992341044e-11,
+          "needed_calls": 214,
+          "quartic_calls": 99,
+          "quadratic_calls": 115,
+          "skipped_calls": 2857,
+          "scenario_nodes_q4": 373152,
+          "scenario_nodes_q8": 2991552
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "ready_total_physical_m3": 9.705820558233571e-11,
+          "estimated_unintegrated_upper_m3": 9.914573638528197e-12,
+          "needed_calls": 520,
+          "quartic_calls": 264,
+          "quadratic_calls": 256,
+          "skipped_calls": 2551,
+          "scenario_nodes_q4": 926976,
+          "scenario_nodes_q8": 7432704
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "ready_total_physical_m3": 9.705820558233571e-11,
+          "estimated_unintegrated_upper_m3": 4.96216302454138e-12,
+          "needed_calls": 963,
+          "quartic_calls": 478,
+          "quadratic_calls": 485,
+          "skipped_calls": 2108,
+          "scenario_nodes_q4": 1707264,
+          "scenario_nodes_q8": 13688704
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "ready_total_physical_m3": 9.705820558233571e-11,
+          "estimated_unintegrated_upper_m3": 2.481520573331549e-12,
+          "needed_calls": 1824,
+          "quartic_calls": 968,
+          "quadratic_calls": 856,
+          "skipped_calls": 1247,
+          "scenario_nodes_q4": 3287808,
+          "scenario_nodes_q8": 26364416
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6109173272226224e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 2,
+      "original_candidate_count": 218,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.63735540749408e-10,
+      "single_quartic_calls": 1636,
+      "single_quadratic_calls": 1553,
+      "single_ready_physical_upper_m3": 9.96874512914365e-11,
+      "multi_remaining_physical_m3": 1.6943497929939343e-12,
+      "multi_remaining_leaves": 2866,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "ready_total_physical_m3": 9.96874512914365e-11,
+          "estimated_unintegrated_upper_m3": 2.4804567429933735e-11,
+          "needed_calls": 198,
+          "quartic_calls": 101,
+          "quadratic_calls": 97,
+          "skipped_calls": 2991,
+          "scenario_nodes_q4": 353376,
+          "scenario_nodes_q8": 2833472
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "ready_total_physical_m3": 9.96874512914365e-11,
+          "estimated_unintegrated_upper_m3": 9.918320678662591e-12,
+          "needed_calls": 554,
+          "quartic_calls": 295,
+          "quadratic_calls": 259,
+          "skipped_calls": 2635,
+          "scenario_nodes_q4": 999456,
+          "scenario_nodes_q8": 8014528
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "ready_total_physical_m3": 9.96874512914365e-11,
+          "estimated_unintegrated_upper_m3": 4.963057484069579e-12,
+          "needed_calls": 1047,
+          "quartic_calls": 533,
+          "quadratic_calls": 514,
+          "skipped_calls": 2142,
+          "scenario_nodes_q4": 1867680,
+          "scenario_nodes_q8": 14975552
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "ready_total_physical_m3": 9.96874512914365e-11,
+          "estimated_unintegrated_upper_m3": 2.481193995769434e-12,
+          "needed_calls": 1997,
+          "quartic_calls": 1017,
+          "quadratic_calls": 980,
+          "skipped_calls": 1192,
+          "scenario_nodes_q4": 3562656,
+          "scenario_nodes_q8": 28566336
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6943497929939343e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 3,
+      "original_candidate_count": 216,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.623811909617336e-10,
+      "single_quartic_calls": 1567,
+      "single_quadratic_calls": 1487,
+      "single_ready_physical_upper_m3": 1.0738383423814183e-10,
+      "multi_remaining_physical_m3": 1.6918489626774138e-12,
+      "multi_remaining_leaves": 2899,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "ready_total_physical_m3": 1.0738383423814183e-10,
+          "estimated_unintegrated_upper_m3": 2.478993375383105e-11,
+          "needed_calls": 189,
+          "quartic_calls": 111,
+          "quadratic_calls": 78,
+          "skipped_calls": 2865,
+          "scenario_nodes_q4": 349920,
+          "scenario_nodes_q8": 2806464
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "ready_total_physical_m3": 1.0738383423814183e-10,
+          "estimated_unintegrated_upper_m3": 9.920817798451806e-12,
+          "needed_calls": 496,
+          "quartic_calls": 271,
+          "quadratic_calls": 225,
+          "skipped_calls": 2558,
+          "scenario_nodes_q4": 900768,
+          "scenario_nodes_q8": 7223488
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "ready_total_physical_m3": 1.0738383423814183e-10,
+          "estimated_unintegrated_upper_m3": 4.958448099006447e-12,
+          "needed_calls": 932,
+          "quartic_calls": 488,
+          "quadratic_calls": 444,
+          "skipped_calls": 2122,
+          "scenario_nodes_q4": 1674240,
+          "scenario_nodes_q8": 13425152
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "ready_total_physical_m3": 1.0738383423814183e-10,
+          "estimated_unintegrated_upper_m3": 2.480415090409614e-12,
+          "needed_calls": 1861,
+          "quartic_calls": 982,
+          "quadratic_calls": 879,
+          "skipped_calls": 1193,
+          "scenario_nodes_q4": 3349632,
+          "scenario_nodes_q8": 26859904
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6918489626774138e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 4,
+      "original_candidate_count": 249,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 1.0047427211843035e-09,
+      "single_quartic_calls": 1732,
+      "single_quadratic_calls": 1530,
+      "single_ready_physical_upper_m3": 9.473829646238975e-11,
+      "multi_remaining_physical_m3": 1.5938493902673279e-12,
+      "multi_remaining_leaves": 3026,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "ready_total_physical_m3": 9.473829646238975e-11,
+          "estimated_unintegrated_upper_m3": 2.480774753330997e-11,
+          "needed_calls": 188,
+          "quartic_calls": 103,
+          "quadratic_calls": 85,
+          "skipped_calls": 3074,
+          "scenario_nodes_q4": 341664,
+          "scenario_nodes_q8": 2739904
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "ready_total_physical_m3": 9.473829646238975e-11,
+          "estimated_unintegrated_upper_m3": 9.924362149331799e-12,
+          "needed_calls": 561,
+          "quartic_calls": 295,
+          "quadratic_calls": 266,
+          "skipped_calls": 2701,
+          "scenario_nodes_q4": 1008864,
+          "scenario_nodes_q8": 8089792
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "ready_total_physical_m3": 9.473829646238975e-11,
+          "estimated_unintegrated_upper_m3": 4.963193170932976e-12,
+          "needed_calls": 1048,
+          "quartic_calls": 574,
+          "quadratic_calls": 474,
+          "skipped_calls": 2214,
+          "scenario_nodes_q4": 1904448,
+          "scenario_nodes_q8": 15272320
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "ready_total_physical_m3": 9.473829646238975e-11,
+          "estimated_unintegrated_upper_m3": 2.4814063478796864e-12,
+          "needed_calls": 1957,
+          "quartic_calls": 1088,
+          "quadratic_calls": 869,
+          "skipped_calls": 1305,
+          "scenario_nodes_q4": 3570240,
+          "scenario_nodes_q8": 28631552
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5938493902673279e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 5,
+      "original_candidate_count": 202,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.30006301059395e-10,
+      "single_quartic_calls": 1766,
+      "single_quadratic_calls": 1641,
+      "single_ready_physical_upper_m3": 9.139629405502453e-11,
+      "multi_remaining_physical_m3": 1.5055785758439206e-12,
+      "multi_remaining_leaves": 2898,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "ready_total_physical_m3": 9.139629405502453e-11,
+          "estimated_unintegrated_upper_m3": 2.4757690552132853e-11,
+          "needed_calls": 214,
+          "quartic_calls": 107,
+          "quadratic_calls": 107,
+          "skipped_calls": 3193,
+          "scenario_nodes_q4": 380064,
+          "scenario_nodes_q8": 3047360
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "ready_total_physical_m3": 9.139629405502453e-11,
+          "estimated_unintegrated_upper_m3": 9.919134942789213e-12,
+          "needed_calls": 585,
+          "quartic_calls": 333,
+          "quadratic_calls": 252,
+          "skipped_calls": 2822,
+          "scenario_nodes_q4": 1073952,
+          "scenario_nodes_q8": 8612928
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "ready_total_physical_m3": 9.139629405502453e-11,
+          "estimated_unintegrated_upper_m3": 4.9578404797886436e-12,
+          "needed_calls": 1075,
+          "quartic_calls": 601,
+          "quadratic_calls": 474,
+          "skipped_calls": 2332,
+          "scenario_nodes_q4": 1964064,
+          "scenario_nodes_q8": 15750976
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "ready_total_physical_m3": 9.139629405502453e-11,
+          "estimated_unintegrated_upper_m3": 2.4808672831928166e-12,
+          "needed_calls": 1974,
+          "quartic_calls": 1056,
+          "quadratic_calls": 918,
+          "skipped_calls": 1433,
+          "scenario_nodes_q4": 3565440,
+          "scenario_nodes_q8": 28591104
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5055785758439206e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 6,
+      "original_candidate_count": 219,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.66374402519357e-10,
+      "single_quartic_calls": 1704,
+      "single_quadratic_calls": 1700,
+      "single_ready_physical_upper_m3": 9.858268084801765e-11,
+      "multi_remaining_physical_m3": 1.5748738964881265e-12,
+      "multi_remaining_leaves": 2950,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "ready_total_physical_m3": 9.858268084801765e-11,
+          "estimated_unintegrated_upper_m3": 2.4779309420183814e-11,
+          "needed_calls": 221,
+          "quartic_calls": 131,
+          "quadratic_calls": 90,
+          "skipped_calls": 3183,
+          "scenario_nodes_q4": 410208,
+          "scenario_nodes_q8": 3290048
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "ready_total_physical_m3": 9.858268084801765e-11,
+          "estimated_unintegrated_upper_m3": 9.923753223904523e-12,
+          "needed_calls": 583,
+          "quartic_calls": 303,
+          "quadratic_calls": 280,
+          "skipped_calls": 2821,
+          "scenario_nodes_q4": 1045344,
+          "scenario_nodes_q8": 8382144
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "ready_total_physical_m3": 9.858268084801765e-11,
+          "estimated_unintegrated_upper_m3": 4.962097896212715e-12,
+          "needed_calls": 1089,
+          "quartic_calls": 552,
+          "quadratic_calls": 537,
+          "skipped_calls": 2315,
+          "scenario_nodes_q4": 1940544,
+          "scenario_nodes_q8": 15559680
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "ready_total_physical_m3": 9.858268084801765e-11,
+          "estimated_unintegrated_upper_m3": 2.4805241246775785e-12,
+          "needed_calls": 2001,
+          "quartic_calls": 1002,
+          "quadratic_calls": 999,
+          "skipped_calls": 1403,
+          "scenario_nodes_q4": 3555072,
+          "scenario_nodes_q8": 28504704
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5748738964881265e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 7,
+      "original_candidate_count": 230,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 9.073234764599441e-10,
+      "single_quartic_calls": 1581,
+      "single_quadratic_calls": 1564,
+      "single_ready_physical_upper_m3": 1.030419982729184e-10,
+      "multi_remaining_physical_m3": 1.7580593570415772e-12,
+      "multi_remaining_leaves": 2860,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "ready_total_physical_m3": 1.030419982729184e-10,
+          "estimated_unintegrated_upper_m3": 2.4741579169301018e-11,
+          "needed_calls": 176,
+          "quartic_calls": 104,
+          "quadratic_calls": 72,
+          "skipped_calls": 2969,
+          "scenario_nodes_q4": 326400,
+          "scenario_nodes_q8": 2617856
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "ready_total_physical_m3": 1.030419982729184e-10,
+          "estimated_unintegrated_upper_m3": 9.921215028624753e-12,
+          "needed_calls": 534,
+          "quartic_calls": 293,
+          "quadratic_calls": 241,
+          "skipped_calls": 2611,
+          "scenario_nodes_q4": 970848,
+          "scenario_nodes_q8": 7785536
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "ready_total_physical_m3": 1.030419982729184e-10,
+          "estimated_unintegrated_upper_m3": 4.958976328112388e-12,
+          "needed_calls": 1015,
+          "quartic_calls": 522,
+          "quadratic_calls": 493,
+          "skipped_calls": 2130,
+          "scenario_nodes_q4": 1815168,
+          "scenario_nodes_q8": 14554752
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "ready_total_physical_m3": 1.030419982729184e-10,
+          "estimated_unintegrated_upper_m3": 2.480895250616165e-12,
+          "needed_calls": 1988,
+          "quartic_calls": 1015,
+          "quadratic_calls": 973,
+          "skipped_calls": 1157,
+          "scenario_nodes_q4": 3548832,
+          "scenario_nodes_q8": 28455616
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.7580593570415772e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 8,
+      "original_candidate_count": 208,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 7.206145526549333e-10,
+      "single_quartic_calls": 1873,
+      "single_quadratic_calls": 1495,
+      "single_ready_physical_upper_m3": 9.165914168423394e-11,
+      "multi_remaining_physical_m3": 1.6610216230178675e-12,
+      "multi_remaining_leaves": 3077,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "ready_total_physical_m3": 9.165914168423394e-11,
+          "estimated_unintegrated_upper_m3": 2.4744235861316174e-11,
+          "needed_calls": 236,
+          "quartic_calls": 138,
+          "quadratic_calls": 98,
+          "skipped_calls": 3132,
+          "scenario_nodes_q4": 436416,
+          "scenario_nodes_q8": 3500160
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "ready_total_physical_m3": 9.165914168423394e-11,
+          "estimated_unintegrated_upper_m3": 9.925380490431589e-12,
+          "needed_calls": 584,
+          "quartic_calls": 352,
+          "quadratic_calls": 232,
+          "skipped_calls": 2784,
+          "scenario_nodes_q4": 1089024,
+          "scenario_nodes_q8": 8734720
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "ready_total_physical_m3": 9.165914168423394e-11,
+          "estimated_unintegrated_upper_m3": 4.959711975422164e-12,
+          "needed_calls": 1030,
+          "quartic_calls": 595,
+          "quadratic_calls": 435,
+          "skipped_calls": 2338,
+          "scenario_nodes_q4": 1898400,
+          "scenario_nodes_q8": 15225280
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "ready_total_physical_m3": 9.165914168423394e-11,
+          "estimated_unintegrated_upper_m3": 2.480482448749016e-12,
+          "needed_calls": 1972,
+          "quartic_calls": 1160,
+          "quadratic_calls": 812,
+          "skipped_calls": 1396,
+          "scenario_nodes_q4": 3652608,
+          "scenario_nodes_q8": 29295104
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6610216230178675e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 9,
+      "original_candidate_count": 232,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.09948460935179e-10,
+      "single_quartic_calls": 1840,
+      "single_quadratic_calls": 1572,
+      "single_ready_physical_upper_m3": 1.0523952973105074e-10,
+      "multi_remaining_physical_m3": 1.6182018428500735e-12,
+      "multi_remaining_leaves": 3087,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "ready_total_physical_m3": 1.0523952973105074e-10,
+          "estimated_unintegrated_upper_m3": 2.4805683576890305e-11,
+          "needed_calls": 206,
+          "quartic_calls": 113,
+          "quadratic_calls": 93,
+          "skipped_calls": 3206,
+          "scenario_nodes_q4": 374496,
+          "scenario_nodes_q8": 3003200
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "ready_total_physical_m3": 1.0523952973105074e-10,
+          "estimated_unintegrated_upper_m3": 9.92077766676404e-12,
+          "needed_calls": 545,
+          "quartic_calls": 306,
+          "quadratic_calls": 239,
+          "skipped_calls": 2867,
+          "scenario_nodes_q4": 996864,
+          "scenario_nodes_q8": 7994496
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "ready_total_physical_m3": 1.0523952973105074e-10,
+          "estimated_unintegrated_upper_m3": 4.9625915335652386e-12,
+          "needed_calls": 1064,
+          "quartic_calls": 580,
+          "quadratic_calls": 484,
+          "skipped_calls": 2348,
+          "scenario_nodes_q4": 1931136,
+          "scenario_nodes_q8": 15486208
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "ready_total_physical_m3": 1.0523952973105074e-10,
+          "estimated_unintegrated_upper_m3": 2.480606912225062e-12,
+          "needed_calls": 2037,
+          "quartic_calls": 1097,
+          "quadratic_calls": 940,
+          "skipped_calls": 1375,
+          "scenario_nodes_q4": 3685536,
+          "scenario_nodes_q8": 29554496
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6182018428500735e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 10,
+      "original_candidate_count": 252,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 9.106164048642596e-10,
+      "single_quartic_calls": 1711,
+      "single_quadratic_calls": 1592,
+      "single_ready_physical_upper_m3": 1.190275267055604e-10,
+      "multi_remaining_physical_m3": 1.6852529207284607e-12,
+      "multi_remaining_leaves": 2955,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "ready_total_physical_m3": 1.190275267055604e-10,
+          "estimated_unintegrated_upper_m3": 2.4701107450351242e-11,
+          "needed_calls": 194,
+          "quartic_calls": 94,
+          "quadratic_calls": 100,
+          "skipped_calls": 3109,
+          "scenario_nodes_q4": 341952,
+          "scenario_nodes_q8": 2741632
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "ready_total_physical_m3": 1.190275267055604e-10,
+          "estimated_unintegrated_upper_m3": 9.918104332934472e-12,
+          "needed_calls": 509,
+          "quartic_calls": 254,
+          "quadratic_calls": 255,
+          "skipped_calls": 2794,
+          "scenario_nodes_q4": 903552,
+          "scenario_nodes_q8": 7244672
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "ready_total_physical_m3": 1.190275267055604e-10,
+          "estimated_unintegrated_upper_m3": 4.963241907074794e-12,
+          "needed_calls": 1042,
+          "quartic_calls": 524,
+          "quadratic_calls": 518,
+          "skipped_calls": 2261,
+          "scenario_nodes_q4": 1853184,
+          "scenario_nodes_q8": 14859008
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "ready_total_physical_m3": 1.190275267055604e-10,
+          "estimated_unintegrated_upper_m3": 2.4804983484135125e-12,
+          "needed_calls": 2032,
+          "quartic_calls": 1010,
+          "quadratic_calls": 1022,
+          "skipped_calls": 1271,
+          "scenario_nodes_q4": 3603648,
+          "scenario_nodes_q8": 28893824
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.6852529207284607e-12,
+          "needed_calls": null
+        }
+      }
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 11,
+      "original_candidate_count": 242,
+      "ideal_spherical_sector_volume_m3": 4.963280060358874e-11,
+      "candidate_physical_volume_m3": 8.489193553393193e-10,
+      "single_quartic_calls": 1490,
+      "single_quadratic_calls": 1635,
+      "single_ready_physical_upper_m3": 1.0212861630186371e-10,
+      "multi_remaining_physical_m3": 1.5103102858967964e-12,
+      "multi_remaining_leaves": 2976,
+      "budgets_percent_ideal": {
+        "50.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-11,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "ready_total_physical_m3": 1.0212861630186371e-10,
+          "estimated_unintegrated_upper_m3": 2.4748414938814666e-11,
+          "needed_calls": 212,
+          "quartic_calls": 108,
+          "quadratic_calls": 104,
+          "skipped_calls": 2913,
+          "scenario_nodes_q4": 378240,
+          "scenario_nodes_q8": 3032832
+        },
+        "20.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 9.926560120717748e-12,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "ready_total_physical_m3": 1.0212861630186371e-10,
+          "estimated_unintegrated_upper_m3": 9.917391806912895e-12,
+          "needed_calls": 549,
+          "quartic_calls": 270,
+          "quadratic_calls": 279,
+          "skipped_calls": 2576,
+          "scenario_nodes_q4": 971136,
+          "scenario_nodes_q8": 7786368
+        },
+        "10.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 4.963280060358874e-12,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "ready_total_physical_m3": 1.0212861630186371e-10,
+          "estimated_unintegrated_upper_m3": 4.956871892760577e-12,
+          "needed_calls": 961,
+          "quartic_calls": 471,
+          "quadratic_calls": 490,
+          "skipped_calls": 2164,
+          "scenario_nodes_q4": 1698528,
+          "scenario_nodes_q8": 13618368
+        },
+        "5.0": {
+          "state": "POSSIBLE_IF_SELECTED_CUT_INTEGRALS_ARE_EXACT",
+          "ideal_absolute_budget_m3": 2.481640030179437e-12,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "ready_total_physical_m3": 1.0212861630186371e-10,
+          "estimated_unintegrated_upper_m3": 2.481096017678286e-12,
+          "needed_calls": 1727,
+          "quartic_calls": 833,
+          "quadratic_calls": 894,
+          "skipped_calls": 1398,
+          "scenario_nodes_q4": 3040800,
+          "scenario_nodes_q8": 24379712
+        },
+        "2.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 9.926560120717747e-13,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "needed_calls": null
+        },
+        "1.0": {
+          "state": "BLOCKED_BY_MULTI_BOUNDARY_FLOOR",
+          "ideal_absolute_budget_m3": 4.963280060358874e-13,
+          "multi_physical_floor_m3": 1.5103102858967964e-12,
+          "needed_calls": null
+        }
+      }
+    }
+  ],
+  "physical_4D_FEM_approved": false
+}
