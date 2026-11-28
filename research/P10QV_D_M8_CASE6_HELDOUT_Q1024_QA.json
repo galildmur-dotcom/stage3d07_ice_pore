@@ -1,0 +1,55 @@
+{
+  "stage": "P10QV_D_HELDOUT_Q1024",
+  "case": 6,
+  "pilot_index": 19,
+  "active_constraints": [
+    0,
+    4
+  ],
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "real_child_sha256": "11b9a8ab4bbbc3e121308921ce96c95489e0832ce82a3a0204fc9fecea5e3e0e",
+  "frozen_uniform_q512_sha256": "9b682145eec146bd1be3875810ca7a21927180056636703f6a2f60c97475e705",
+  "no_panel_info_used_in_computation": true,
+  "outer_t_nodes": 1024,
+  "inner_s_budget_per_t": 128,
+  "q1024_not_mathematical_exact_solution": true,
+  "root_interval_certificate_obtained": false,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "full_child_gradient_m3": 1.0846126088820453e-15,
+  "full_child_volume_m3": 6.508676774656234e-16,
+  "axes": {
+    "0": {
+      "cut_gradient_m3": 6.1786645550175185e-19,
+      "cut_volume_m3": 3.654203043025426e-19,
+      "transverse_points": 131072,
+      "outer_t_order": 1024,
+      "inner_s_budget_per_t": 128,
+      "critical_s_intervals_total": 5892,
+      "numerical_azimuth_degree_trims": 1023,
+      "maximum_higher_ray_coefficient_rel": 3.137188959401354e-12,
+      "maximum_reconstruction_relative": 8.313903648668602e-12
+    },
+    "1": {
+      "cut_gradient_m3": 6.178689834058067e-19,
+      "cut_volume_m3": 3.6542180264171918e-19,
+      "transverse_points": 131072,
+      "outer_t_order": 1024,
+      "inner_s_budget_per_t": 128,
+      "critical_s_intervals_total": 4932,
+      "numerical_azimuth_degree_trims": 1023,
+      "maximum_higher_ray_coefficient_rel": 1.698445572200478e-13,
+      "maximum_reconstruction_relative": 1.833453081130995e-11
+    },
+    "2": {
+      "cut_gradient_m3": 6.178662617991866e-19,
+      "cut_volume_m3": 3.654201902086322e-19,
+      "transverse_points": 131072,
+      "outer_t_order": 1024,
+      "inner_s_budget_per_t": 128,
+      "critical_s_intervals_total": 5179,
+      "numerical_azimuth_degree_trims": 1023,
+      "maximum_higher_ray_coefficient_rel": 2.547759311105908e-12,
+      "maximum_reconstruction_relative": 4.3620030919783364e-12
+    }
+  }
+}
