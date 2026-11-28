@@ -1,0 +1,111 @@
+{
+  "protocol": "P10PT_PUBLISHED_CUT_CELL_CONCEPT_SYNTHETIC_GEOMETRY_QA",
+  "status": "PASS_SYNTHETIC_ONLY_NOT_PRODUCTION_NOT_PHYSICAL",
+  "CXX_STD": "C++20",
+  "compiler_flags": "-O2 -Wall -Wextra -pedantic",
+  "source_sha256": "1f99388d09d434471e4a27636199e1e745d5f8ea3919facb03d8d0ef0e36b357",
+  "tests": [
+    "quadratic Tet10 interpolation of volume-preserving curved map",
+    "negative test corrupted Tet10 edge midpoint",
+    "conservative positive complementary volume partition",
+    "analytic curved-element x-plane cut",
+    "analytic octant spherical annular polar/azimuthal sector",
+    "adaptive longest-edge refinement 0/8/12/16/20/24"
+  ],
+  "curves": {
+    "CURVED_TET10_PLANE": {
+      "0": {
+        "estimate": 0.125,
+        "reference": 0.104458666666667,
+        "relative_error": 0.196645563157357,
+        "visited": 1.0,
+        "cut_leaves": 1.0
+      },
+      "8": {
+        "estimate": 0.105305989583333,
+        "reference": 0.104458666666667,
+        "relative_error": 0.00811156167032578,
+        "visited": 169.0,
+        "cut_leaves": 51.0
+      },
+      "12": {
+        "estimate": 0.104543050130209,
+        "reference": 0.104458666666667,
+        "relative_error": 0.000807816778013773,
+        "visited": 1189.0,
+        "cut_leaves": 370.0
+      },
+      "16": {
+        "estimate": 0.104698816935231,
+        "reference": 0.104458666666667,
+        "relative_error": 0.00229899802694605,
+        "visited": 8483.0,
+        "cut_leaves": 2673.0
+      },
+      "20": {
+        "estimate": 0.104341944058796,
+        "reference": 0.104458666666667,
+        "relative_error": 0.00111740472663167,
+        "visited": 57193.0,
+        "cut_leaves": 17350.0
+      },
+      "24": {
+        "estimate": 0.104431060453433,
+        "reference": 0.104458666666667,
+        "relative_error": 0.000264278820653142,
+        "visited": 376737.0,
+        "cut_leaves": 110045.0
+      }
+    },
+    "AFFINE_TET_POLAR_SECTOR": {
+      "0": {
+        "estimate": 0.0,
+        "reference": 0.000707626291928581,
+        "relative_error": 1.0,
+        "visited": 1.0,
+        "cut_leaves": 1.0
+      },
+      "8": {
+        "estimate": 0.000651041666666667,
+        "reference": 0.000707626291928581,
+        "relative_error": 0.0799639949890741,
+        "visited": 91.0,
+        "cut_leaves": 22.0
+      },
+      "12": {
+        "estimate": 0.000712076822916667,
+        "reference": 0.000707626291928581,
+        "relative_error": 0.00628938048070006,
+        "visited": 413.0,
+        "cut_leaves": 97.0
+      },
+      "16": {
+        "estimate": 0.000710805257161457,
+        "reference": 0.000707626291928581,
+        "relative_error": 0.00449243515841197,
+        "visited": 2047.0,
+        "cut_leaves": 556.0
+      },
+      "20": {
+        "estimate": 0.000708142916361486,
+        "reference": 0.000707626291928581,
+        "relative_error": 0.000730080889868171,
+        "visited": 12213.0,
+        "cut_leaves": 3566.0
+      },
+      "24": {
+        "estimate": 0.000707636276880821,
+        "reference": 0.000707626291928581,
+        "relative_error": 1.41104879141987e-05,
+        "visited": 77011.0,
+        "cut_leaves": 22637.0
+      }
+    }
+  },
+  "limitations": [
+    "geometric-only reference elements, no physical state",
+    "no general guaranteed curved-Tet10 intersection enclosure",
+    "no claimed high-order asymptotic convergence",
+    "no same-mesh re-evaluation of EDV internal variables"
+  ]
+}
