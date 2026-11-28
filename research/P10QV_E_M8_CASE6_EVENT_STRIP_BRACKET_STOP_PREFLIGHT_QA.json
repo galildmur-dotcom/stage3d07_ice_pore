@@ -1,0 +1,163 @@
+{
+  "stage": "P10QV_E_EVENT_STRIP_ROOT_BRACKET_PREFLIGHT",
+  "case": 6,
+  "pilot_index": 19,
+  "active_constraints": [
+    0,
+    4
+  ],
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "archived_real_child_sha256": "11b9a8ab4bbbc3e121308921ce96c95489e0832ce82a3a0204fc9fecea5e3e0e",
+  "frozen_uniform_q512_sha256": "9b682145eec146bd1be3875810ca7a21927180056636703f6a2f60c97475e705",
+  "event_t_samples": 257,
+  "transition_bisections": 12,
+  "no_cut_integration_executed": true,
+  "all_axes_tested": true,
+  "axes_with_geometry_stop": [
+    1
+  ],
+  "global_q512_event_strip_pilot_approved": false,
+  "numerical_roots_not_interval_certified": true,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "physical_4D_FEM_approved": false,
+  "axes": {
+    "0": {
+      "status": "GEOMETRY_ONLY_READY_NOT_CERTIFIED",
+      "outer_t_panel_breaks": [
+        0.0,
+        0.6188542109982976,
+        0.6596066961028696,
+        0.6707953664579279,
+        0.8211907412755349,
+        0.827912683152967,
+        0.8428271104389592,
+        0.8470506482551069,
+        1.0
+      ],
+      "outer_t_panel_nodes": [
+        313,
+        18,
+        8,
+        74,
+        8,
+        8,
+        8,
+        75
+      ],
+      "diagnostics": {
+        "event_strips_evaluated": 257,
+        "initial_t_grid_count": 257,
+        "bisected_transition_count": 7,
+        "geometry_t_brackets": [
+          {
+            "last_left_t": 0.6188537360165369,
+            "first_right_t": 0.6188546859800583,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.6188542109982976
+          },
+          {
+            "last_left_t": 0.6596062211211089,
+            "first_right_t": 0.6596071710846303,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.6596066961028696
+          },
+          {
+            "last_left_t": 0.6707948914761672,
+            "first_right_t": 0.6707958414396886,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.6707953664579279
+          },
+          {
+            "last_left_t": 0.8211902662937742,
+            "first_right_t": 0.8211912162572956,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.8211907412755349
+          },
+          {
+            "last_left_t": 0.8279122081712063,
+            "first_right_t": 0.8279131581347277,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.827912683152967
+          },
+          {
+            "last_left_t": 0.8428266354571985,
+            "first_right_t": 0.8428275854207199,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.8428271104389592
+          },
+          {
+            "last_left_t": 0.8470501732733462,
+            "first_right_t": 0.8470511232368676,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.8470506482551069
+          }
+        ],
+        "distinct_event_strip_words": 8,
+        "max_initial_s_event_intervals": 8,
+        "initial_s_numerical_degree_trims": 257,
+        "third_topologies_in_bracket": 0,
+        "unobserved_t_changes_between_probes_not_excluded": true,
+        "not_continuous_interval_certification": true
+      }
+    },
+    "1": {
+      "status": "NUMERICAL_TOPOLOGY_STOP",
+      "stop_reason": "P10QV_E_PHYSICAL_ROOT_STOP axis=1 bin=246 bisect=11 interval=[0.9587962822227627,0.9587981821498055] probe_t=0.9587972321862841 cause=P10QV_B_UNRESOLVED_TOPOLOGY_NEAR_TANGENCY_STOP count=1"
+    },
+    "2": {
+      "status": "GEOMETRY_ONLY_READY_NOT_CERTIFIED",
+      "outer_t_panel_breaks": [
+        0.0,
+        0.022512710511916348,
+        0.041202292831955256,
+        0.2101704044564689,
+        0.8220295590649319,
+        1.0
+      ],
+      "outer_t_panel_nodes": [
+        12,
+        10,
+        86,
+        313,
+        91
+      ],
+      "diagnostics": {
+        "event_strips_evaluated": 257,
+        "initial_t_grid_count": 257,
+        "bisected_transition_count": 4,
+        "geometry_t_brackets": [
+          {
+            "last_left_t": 0.022512235530155647,
+            "first_right_t": 0.02251318549367705,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.022512710511916348
+          },
+          {
+            "last_left_t": 0.041201817850194555,
+            "first_right_t": 0.04120276781371596,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.041202292831955256
+          },
+          {
+            "last_left_t": 0.2101699294747082,
+            "first_right_t": 0.2101708794382296,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.2101704044564689
+          },
+          {
+            "last_left_t": 0.8220290840831712,
+            "first_right_t": 0.8220300340466926,
+            "uncertainty_width_t": 9.499635214016422e-07,
+            "new_panel_break_t": 0.8220295590649319
+          }
+        ],
+        "distinct_event_strip_words": 5,
+        "max_initial_s_event_intervals": 8,
+        "initial_s_numerical_degree_trims": 257,
+        "third_topologies_in_bracket": 0,
+        "unobserved_t_changes_between_probes_not_excluded": true,
+        "not_continuous_interval_certification": true
+      }
+    }
+  }
+}

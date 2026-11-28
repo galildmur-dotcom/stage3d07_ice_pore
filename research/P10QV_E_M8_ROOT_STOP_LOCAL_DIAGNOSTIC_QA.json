@@ -1,0 +1,475 @@
+{
+  "stage": "P10QV_E_LOCAL_PHYSICAL_ROOT_TOPOLOGY_STOP_EXPLANATION",
+  "mesh_sha256_from_archived_provenance": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "preflight_sha256": {
+    "6": "78c189cfb90b4c93031e1ec4ca425e4278fa1f9629fe4566bb0a2887c383b54f",
+    "7": "d85c4bd12f62435720b858f534eec03396fb0dc260a6b9d4a57d7e9cc54fbbdd"
+  },
+  "unguarded_s_partitions_never_used_for_integration": true,
+  "physical_s_scans_finite_not_certified": true,
+  "no_Gmsh_no_mesh_change_no_FEM": true,
+  "physical_4D_FEM_approved": false,
+  "rows": [
+    {
+      "case": 6,
+      "axis": 1,
+      "preflight_stop_reason": "P10QV_E_PHYSICAL_ROOT_STOP axis=1 bin=246 bisect=11 interval=[0.9587962822227627,0.9587981821498055] probe_t=0.9587972321862841 cause=P10QV_B_UNRESOLVED_TOPOLOGY_NEAR_TANGENCY_STOP count=1",
+      "bracket": [
+        0.9587962822227627,
+        0.9587981821498055
+      ],
+      "t_probe_at_STOP": 0.9587972321862841,
+      "test_slices": [
+        {
+          "physical_t": 0.9587962822227627,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.2621832358674464,
+              0.26413255360623783
+            ],
+            [
+              0.31871345029239767,
+              0.3206627680311891
+            ],
+            [
+              0.3304093567251462,
+              0.33235867446393763
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "PASS",
+          "frozen_projected_s_intervals": 8,
+          "frozen_projected_numerical_degree_trims": 1,
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 8,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 1,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 0,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 2
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 3.8793641375992695e-12
+          }
+        },
+        {
+          "physical_t": 0.9587972321862841,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.2621832358674464,
+              0.26413255360623783
+            ],
+            [
+              0.31871345029239767,
+              0.3206627680311891
+            ],
+            [
+              0.3304093567251462,
+              0.33235867446393763
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "STOP",
+          "frozen_projected_stop_reason": "P10QV_B_UNRESOLVED_TOPOLOGY_NEAR_TANGENCY_STOP count=1",
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 8,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 1,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 1,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 2
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [
+              {
+                "s_low": 0.33101084589771457,
+                "s_high": 0.3310108903553591,
+                "probe_signatures": [
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ]
+              }
+            ],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 3.237548347017882e-12
+          }
+        },
+        {
+          "physical_t": 0.9587981821498055,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.2621832358674464,
+              0.26413255360623783
+            ],
+            [
+              0.31871345029239767,
+              0.3206627680311891
+            ],
+            [
+              0.3304093567251462,
+              0.33235867446393763
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "PASS",
+          "frozen_projected_s_intervals": 8,
+          "frozen_projected_numerical_degree_trims": 1,
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 8,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 1,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 1,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 1
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 3.5668960725239316e-12
+          }
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "axis": 2,
+      "preflight_stop_reason": "P10QV_E_THIRD_TOPOLOGY_WITHIN_TRANSITION_BRACKET_STOP axis=2 bin=186 bisect=8 interval=[0.72253465466926059,0.72254985408560302] probe_t=0.7225422543774318 low=((0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1), (1, 0, 1), (0, 0, 0)) high=((0, 0, 0), (0, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 0)) third=((0, 0, 0), (1, 0, 0), (1, 1, 1), (1, 0, 1), (0, 0, 0))",
+      "bracket": [
+        0.7225346546692606,
+        0.722549854085603
+      ],
+      "t_probe_at_STOP": 0.7225422543774318,
+      "test_slices": [
+        {
+          "physical_t": 0.7225346546692606,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.5311890838206628,
+              0.5331384015594542
+            ],
+            [
+              0.5350877192982456,
+              0.5370370370370371
+            ],
+            [
+              0.6715399610136452,
+              0.6734892787524367
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "PASS",
+          "frozen_projected_s_intervals": 8,
+          "frozen_projected_numerical_degree_trims": 1,
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 8,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 1,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 2,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 1
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 3.2817330492757676e-12
+          }
+        },
+        {
+          "physical_t": 0.7225422543774318,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.5311890838206628,
+              0.5331384015594542
+            ],
+            [
+              0.5350877192982456,
+              0.5370370370370371
+            ],
+            [
+              0.6715399610136452,
+              0.6734892787524367
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "PASS",
+          "frozen_projected_s_intervals": 7,
+          "frozen_projected_numerical_degree_trims": 1,
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 7,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 0,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 1,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 2
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 4.6912037694782065e-12
+          }
+        },
+        {
+          "physical_t": 0.722549854085603,
+          "physical_s_scan_points": 513,
+          "physical_s_scan_unique_topologies": 3,
+          "physical_s_scan_transitions": [
+            [
+              0.5311890838206628,
+              0.5331384015594542
+            ],
+            [
+              0.5350877192982456,
+              0.5370370370370371
+            ],
+            [
+              0.6715399610136452,
+              0.6734892787524367
+            ]
+          ],
+          "finite_s_scan_not_interval_certificate": true,
+          "frozen_projected_event_status": "PASS",
+          "frozen_projected_s_intervals": 7,
+          "frozen_projected_numerical_degree_trims": 1,
+          "unguarded_explanation_only": {
+            "unguarded_event_interval_count": 7,
+            "unguarded_event_root_count_by_kind": {
+              "radial_double_root": 0,
+              "radial_origin": 1,
+              "radial_endpoint": 1,
+              "radial_degree_change": 0,
+              "azimuth_origin": 1,
+              "azimuth_endpoint": 1,
+              "azimuth_degree_change": 0,
+              "radial_azimuth_resultant": 2
+            },
+            "unguarded_event_strips_root_signature_word": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "missed_topology_in_event_s_intervals": [],
+            "unguarded_partition_is_diagnostic_only_not_approved": true,
+            "maximum_reconstruction_relative": 3.569463410539508e-12
+          }
+        }
+      ]
+    }
+  ]
+}
