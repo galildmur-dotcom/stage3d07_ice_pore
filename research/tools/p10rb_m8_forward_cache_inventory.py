@@ -35,9 +35,9 @@ def main():
     p.add_argument("--hash", action="store_true", help="Compute complete SHA256 of potentially multi-GiB cache")
     args = p.parse_args()
     root = args.runs_root
-    if not root.is_dir():
-        raise SystemExit(f"P10RB_INPUT_STOP: LOCAL_RUNS directory not found: {root}")
-    matches = sorted(root.glob("P10KV_M8_R_DT25_*/P10FN_M8_DT25_R/forward_history.bin"))
+    root_present = root.is_dir()
+    run_folders = sorted(root.glob("P10KV_M8_R_DT25_*")) if root_present else []
+    matches = sorted(root.glob("P10KV_M8_R_DT25_*/P10FN_M8_DT25_R/forward_history.bin")) if root_present else []
     data = []
     for path in matches:
         folder = path.parent.parent
@@ -60,7 +60,12 @@ def main():
         data.append(item)
     result = {
         "protocol": "P10RB_M8_EXISTING_HISTORY_INVENTORY_NO_FEM",
-        "status": "EXISTING_HISTORY_CANDIDATE_FOUND" if data else "NO_EXISTING_HISTORY_FOUND",
+        "status": ("RUNS_ROOT_MISSING" if not root_present else
+                   "EXISTING_HISTORY_CANDIDATE_FOUND" if data else "NO_EXISTING_HISTORY_FOUND"),
+        "runs_root": str(root),
+        "runs_root_exists": root_present,
+        "p10kv_run_folder_count": len(run_folders),
+        "p10kv_run_folders": [str(x) for x in run_folders],
         "run_directories_examined_pattern": "P10KV_M8_R_DT25_*/P10FN_M8_DT25_R/forward_history.bin",
         "history_candidates": data,
         "no_solver_or_adjoint_started": True,
