@@ -1,0 +1,298 @@
+{
+  "stage": "P10QH",
+  "status": "PASS_EQUAL_BUDGET_ACTUAL_TET10_GRADIENT_FACE_AWARE_VS_WIDTH_EMPIRICAL",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_changed": false,
+  "Gmsh_run": false,
+  "physical_FEM_run": false,
+  "field": "piecewise actual curved Tet10 physical z gradient of nodal interpolated cubic; not physical stress",
+  "holdout_is_exact": false,
+  "q2_q4_indicator_is_certified_bound": false,
+  "q2_q4_local_indicator_can_miss_face_jumps": true,
+  "holdouts": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "q_holdout": 32,
+      "q_holdout_evaluations": 32768,
+      "q32_gradient_moment_m3": 2.3509049675883184e-12,
+      "previous_q24_gradient_moment_m3": 2.350888211541013e-12,
+      "q24_q32_relative_difference": 7.127488153031326e-06,
+      "distinct_real_Tet10_at_q32": 67
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "q_holdout": 32,
+      "q_holdout_evaluations": 32768,
+      "q32_gradient_moment_m3": 2.3565883673574287e-12,
+      "previous_q24_gradient_moment_m3": 2.3566365507621637e-12,
+      "q24_q32_relative_difference": 2.044625417080832e-05,
+      "distinct_real_Tet10_at_q32": 63
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "q_holdout": 32,
+      "q_holdout_evaluations": 32768,
+      "q32_gradient_moment_m3": 1.0314275979558412e-10,
+      "previous_q24_gradient_moment_m3": 1.0314253230317623e-10,
+      "q24_q32_relative_difference": 2.2056071443787417e-06,
+      "distinct_real_Tet10_at_q32": 107
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "q_holdout": 32,
+      "q_holdout_evaluations": 32768,
+      "q32_gradient_moment_m3": 1.0315640952563992e-10,
+      "previous_q24_gradient_moment_m3": 1.0315646326241722e-10,
+      "q24_q32_relative_difference": 5.209252391789209e-07,
+      "distinct_real_Tet10_at_q32": 94
+    }
+  ],
+  "equal_work_cases": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "equal_nodes": 23976,
+      "width_indicator_rel": 6.95660444819634e-05,
+      "face_indicator_rel": 6.3461428788139e-05,
+      "width_vs_q32_rel": 1.6074273986537734e-05,
+      "face_vs_q32_rel": 1.509282000231075e-05,
+      "face_policy_has_lower_L1_indicator": true,
+      "face_policy_closer_to_q32": true
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "equal_nodes": 23976,
+      "width_indicator_rel": 6.309374394058279e-05,
+      "face_indicator_rel": 5.504600899379871e-05,
+      "width_vs_q32_rel": 7.1033971590676966e-06,
+      "face_vs_q32_rel": 6.294098675614936e-06,
+      "face_policy_has_lower_L1_indicator": true,
+      "face_policy_closer_to_q32": true
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "equal_nodes": 23976,
+      "width_indicator_rel": 7.652495249958149e-05,
+      "face_indicator_rel": 6.501882373206646e-05,
+      "width_vs_q32_rel": 4.370511755694702e-06,
+      "face_vs_q32_rel": 8.286334415683747e-06,
+      "face_policy_has_lower_L1_indicator": true,
+      "face_policy_closer_to_q32": false
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "equal_nodes": 23976,
+      "width_indicator_rel": 5.4690086333341e-05,
+      "face_indicator_rel": 3.7981524640731664e-05,
+      "width_vs_q32_rel": 8.268119774343165e-06,
+      "face_vs_q32_rel": 8.376599803448599e-06,
+      "face_policy_has_lower_L1_indicator": true,
+      "face_policy_closer_to_q32": false
+    }
+  ],
+  "runs": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "policy": "width",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 2.350867178497753e-12,
+      "L1_local_q2_q4_indicator_m3": 1.635431595481177e-16,
+      "L1_local_indicator_relative_to_q32": 6.95660444819634e-05,
+      "relative_difference_to_independent_q32": 1.6074273986537734e-05,
+      "face_crossing_driven_splits": 0,
+      "width_driven_splits": 166,
+      "split_axis_counts_radial_mu_phi": [
+        10,
+        87,
+        69
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 14.21173429800001
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "policy": "face",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 2.3508694858028e-12,
+      "L1_local_q2_q4_indicator_m3": 1.4919178818828828e-16,
+      "L1_local_indicator_relative_to_q32": 6.3461428788139e-05,
+      "relative_difference_to_independent_q32": 1.509282000231075e-05,
+      "face_crossing_driven_splits": 166,
+      "width_driven_splits": 0,
+      "split_axis_counts_radial_mu_phi": [
+        13,
+        79,
+        74
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 17.117600368999774
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "policy": "width",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 2.3566051071405425e-12,
+      "L1_local_q2_q4_indicator_m3": 1.4868598302340565e-16,
+      "L1_local_indicator_relative_to_q32": 6.309374394058279e-05,
+      "relative_difference_to_independent_q32": 7.1033971590676966e-06,
+      "face_crossing_driven_splits": 0,
+      "width_driven_splits": 166,
+      "split_axis_counts_radial_mu_phi": [
+        15,
+        82,
+        69
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 12.009993039999245
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "policy": "face",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 2.3566031999571507e-12,
+      "L1_local_q2_q4_indicator_m3": 1.2972078446423843e-16,
+      "L1_local_indicator_relative_to_q32": 5.504600899379871e-05,
+      "relative_difference_to_independent_q32": 6.294098675614936e-06,
+      "face_crossing_driven_splits": 166,
+      "width_driven_splits": 0,
+      "split_axis_counts_radial_mu_phi": [
+        14,
+        73,
+        79
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 11.69647079599963
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "policy": "width",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 1.0314230900893992e-10,
+      "L1_local_q2_q4_indicator_m3": 7.892994794032818e-15,
+      "L1_local_indicator_relative_to_q32": 7.652495249958149e-05,
+      "relative_difference_to_independent_q32": 4.370511755694702e-06,
+      "face_crossing_driven_splits": 0,
+      "width_driven_splits": 166,
+      "split_axis_counts_radial_mu_phi": [
+        57,
+        56,
+        53
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 7.4892951370002265
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "phi_bin": 0,
+      "policy": "face",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 1.031419051201839e-10,
+      "L1_local_q2_q4_indicator_m3": 6.706220918387956e-15,
+      "L1_local_indicator_relative_to_q32": 6.501882373206646e-05,
+      "relative_difference_to_independent_q32": 8.286334415683747e-06,
+      "face_crossing_driven_splits": 166,
+      "width_driven_splits": 0,
+      "split_axis_counts_radial_mu_phi": [
+        61,
+        63,
+        42
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 7.610253671000464
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "policy": "width",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 1.0315726243518937e-10,
+      "L1_local_q2_q4_indicator_m3": 5.641632942794727e-15,
+      "L1_local_indicator_relative_to_q32": 5.4690086333341e-05,
+      "relative_difference_to_independent_q32": 8.268119774343165e-06,
+      "face_crossing_driven_splits": 0,
+      "width_driven_splits": 166,
+      "split_axis_counts_radial_mu_phi": [
+        66,
+        52,
+        48
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 7.479054835999705
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "phi_bin": 0,
+      "policy": "face",
+      "q2_q4_node_evaluations": 23976,
+      "node_cap": 24000,
+      "binary_splits": 166,
+      "max_depth": 13,
+      "adaptive_gradient_moment_m3": 1.0315727362559967e-10,
+      "L1_local_q2_q4_indicator_m3": 3.918037710247499e-15,
+      "L1_local_indicator_relative_to_q32": 3.7981524640731664e-05,
+      "relative_difference_to_independent_q32": 8.376599803448599e-06,
+      "face_crossing_driven_splits": 166,
+      "width_driven_splits": 0,
+      "split_axis_counts_radial_mu_phi": [
+        68,
+        50,
+        48
+      ],
+      "capped_depth_priority_cells": 0,
+      "elapsed_s": 7.4403203669990035
+    }
+  ],
+  "face_policy_L1_abs_signed_q32_discrepancy": {
+    "L1_absolute_relative_to_q32_L1": 8.384046849282103e-06,
+    "signed_absolute_relative_to_q32_L1": 5.319560112894187e-08,
+    "positive_deltas": 2,
+    "negative_deltas": 2
+  },
+  "runtime_seconds": 140.82457070700002,
+  "physical_4D_FEM_approved": false
+}

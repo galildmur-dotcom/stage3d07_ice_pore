@@ -1,0 +1,60 @@
+{
+  "stage": "P10QH",
+  "status": "PASS_INDEPENDENT_DEPTH11_DEPTH15_GEOMETRIC_GRADIENT_CONTRACT_AUDIT",
+  "mesh_sha256": "40949482ac74d80ae7ac44c88af527a705650d34c1ffcd0de7cd01dc2bd2fa8d",
+  "mesh_unchanged": true,
+  "physical_FEM_performed": false,
+  "checked_depth11_original_algorithm_regression": true,
+  "checked_subpatch_refinement_monotonicity": true,
+  "checked_depth15_improvement_and_less_work": true,
+  "checked_equal_gradient_quadrature_work": true,
+  "improved_polar_cases": 4,
+  "comparison_depth15": [
+    {
+      "radial_bin": 0,
+      "mu_bin": 0,
+      "P10QG_depth15_pure_fraction": 0.3117824796757226,
+      "P10QH_depth15_pure_fraction": 0.44852463988101887,
+      "absolute_pure_fraction_gain_percentage_points": 13.674216020529627,
+      "relative_pure_fraction_multiplier": 1.4385819252817493,
+      "P10QG_boxes": 54111,
+      "P10QH_boxes": 45493,
+      "relative_box_count_reduction": 0.15926521409694883
+    },
+    {
+      "radial_bin": 0,
+      "mu_bin": 9,
+      "P10QG_depth15_pure_fraction": 0.29934121524410756,
+      "P10QH_depth15_pure_fraction": 0.4435338788275039,
+      "absolute_pure_fraction_gain_percentage_points": 14.419266358339634,
+      "relative_pure_fraction_multiplier": 1.4817000006691685,
+      "P10QG_boxes": 54693,
+      "P10QH_boxes": 46149,
+      "relative_box_count_reduction": 0.15621743184685422
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 0,
+      "P10QG_depth15_pure_fraction": 0.21440768831378726,
+      "P10QH_depth15_pure_fraction": 0.3568352408461536,
+      "absolute_pure_fraction_gain_percentage_points": 14.242755253236632,
+      "relative_pure_fraction_multiplier": 1.664283793424061,
+      "P10QG_boxes": 59365,
+      "P10QH_boxes": 53047,
+      "relative_box_count_reduction": 0.1064263454897667
+    },
+    {
+      "radial_bin": 4,
+      "mu_bin": 9,
+      "P10QG_depth15_pure_fraction": 0.2281610615305845,
+      "P10QH_depth15_pure_fraction": 0.3854537632439168,
+      "absolute_pure_fraction_gain_percentage_points": 15.729270171333228,
+      "relative_pure_fraction_multiplier": 1.6893932762153088,
+      "P10QG_boxes": 58645,
+      "P10QH_boxes": 51609,
+      "relative_box_count_reduction": 0.11997612754710552
+    }
+  ],
+  "conclusions_limited_to_manufactured_gradient_and_conservative_floating_broad_phase": true,
+  "physical_4D_FEM_approved": false
+}
